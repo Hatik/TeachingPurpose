@@ -1,0 +1,268 @@
+1
+00:00:01,700 --> 00:00:08,100
+Well we all just finished our forum let's work on the last type of input here a select input a dropdown
+
+2
+00:00:08,600 --> 00:00:13,590
+the AGM all killed can be found here and here I want to do two things.
+
+3
+00:00:13,830 --> 00:00:17,200
+I of course want to use view just to get the value.
+
+4
+00:00:17,370 --> 00:00:23,010
+But I also want to view chess to populate this select distraught down with options you see right now.
+
+5
+00:00:23,040 --> 00:00:27,690
+It's a normal select input here set up with some bootstrap styling.
+
+6
+00:00:27,690 --> 00:00:32,940
+And then we would add a couple of options like this of course options should also contain a bit more
+
+7
+00:00:32,940 --> 00:00:35,740
+information than just an opening and closing tag.
+
+8
+00:00:35,970 --> 00:00:42,030
+The reason why I only have an empty option here is that I want to add them dynamically so let it go
+
+9
+00:00:42,030 --> 00:00:48,080
+down into my data property and here I first want to add an array of options.
+
+10
+00:00:48,090 --> 00:00:55,800
+I want to populate my form with a name and priority T's so and a number of different priorities.
+
+11
+00:00:55,830 --> 00:01:00,670
+And here we get high medium and of course low.
+
+12
+00:01:00,750 --> 00:01:03,570
+So these are the three options I want to use.
+
+13
+00:01:03,570 --> 00:01:10,330
+Now do you use that as dial up to select here and the first thing I'll do is of course on my option
+
+14
+00:01:10,330 --> 00:01:18,540
+here I want to set up a for loop to loop through my priority in priorities like that priority is here
+
+15
+00:01:18,540 --> 00:01:22,350
+of course river to the priorities set up down there.
+
+16
+00:01:22,380 --> 00:01:24,900
+This will create all these options.
+
+17
+00:01:24,900 --> 00:01:33,250
+Now I can also add it here priority by simply outputting it like is westering and translation between
+
+18
+00:01:33,250 --> 00:01:34,980
+the opening and closing tag.
+
+19
+00:01:35,010 --> 00:01:42,270
+Now this will add a couple of options as we can already see here high medium and low.
+
+20
+00:01:42,270 --> 00:01:49,170
+Now of course you could select a number option by default by binding to the selected property de-selected
+
+21
+00:01:49,170 --> 00:01:56,460
+attribute of colon selected and then as a value for determining if this should be selected we could
+
+22
+00:01:56,460 --> 00:01:58,290
+simply check if priority.
+
+23
+00:01:58,290 --> 00:02:02,760
+So the value of the current loop iteration equals medium.
+
+24
+00:02:02,760 --> 00:02:05,520
+This is a string of single quotes.
+
+25
+00:02:05,520 --> 00:02:11,970
+Now this will when this reloads select medium by default and I of course can still switch to high or
+
+26
+00:02:11,970 --> 00:02:12,460
+low.
+
+27
+00:02:12,570 --> 00:02:18,660
+But now we change default by simply adding this property bind this attribute bind here with the colon
+
+28
+00:02:18,660 --> 00:02:24,170
+and the name of the attribute and then the logic which determines if that should be bound or not.
+
+29
+00:02:24,180 --> 00:02:29,750
+Because select that keep this in mind is an attribute which in the end once a true or false data field
+
+30
+00:02:29,760 --> 00:02:33,010
+so what it wants to know whether there should be a selected or not.
+
+31
+00:02:33,090 --> 00:02:38,260
+So the value passed to it has to be a condition giving us back true or false.
+
+32
+00:02:38,310 --> 00:02:41,710
+And I do this by checking if priority is mid medium.
+
+33
+00:02:41,730 --> 00:02:44,910
+So all structuralism are multiple lines so it's easier to read.
+
+34
+00:02:45,120 --> 00:02:47,100
+With that we set up our option.
+
+35
+00:02:47,100 --> 00:02:49,110
+Now of course I want to bind this input.
+
+36
+00:02:49,110 --> 00:02:52,300
+We're not doing that right now we're only populating it with values.
+
+37
+00:02:52,320 --> 00:02:54,780
+So how do I bind my select field here.
+
+38
+00:02:54,800 --> 00:02:56,800
+My select input control.
+
+39
+00:02:56,940 --> 00:02:59,840
+Of course we do that by using the model again.
+
+40
+00:02:59,850 --> 00:03:05,390
+Now important we modeless now not used on the individual option but on the overall control which is
+
+41
+00:03:05,390 --> 00:03:06,490
+select here.
+
+42
+00:03:06,510 --> 00:03:11,040
+So here again we use the model and a want to bind.
+
+43
+00:03:11,160 --> 00:03:17,600
+Well a new property or trade for that DB property I will create a simply name.
+
+44
+00:03:17,730 --> 00:03:25,750
+Say selected priority and I would set this too high by default
+
+45
+00:03:28,390 --> 00:03:37,000
+and now if I go back there and add selected priority as the model which binding and let this reload
+
+46
+00:03:37,530 --> 00:03:40,120
+you'll now see highest selected by default.
+
+47
+00:03:40,270 --> 00:03:46,530
+Yes I do have my check to override this but it is in the end written by the model were binding to.
+
+48
+00:03:46,540 --> 00:03:48,740
+So that's number way to set the default.
+
+49
+00:03:48,760 --> 00:03:55,060
+We do have our view model which has a default value select a proper priority and this will always override
+
+50
+00:03:55,180 --> 00:03:57,360
+whatever I said year was selected.
+
+51
+00:03:57,430 --> 00:04:03,310
+So selectable only work if we're not using the model here or if we're not pre-populated we model with
+
+52
+00:04:03,310 --> 00:04:04,680
+a default value.
+
+53
+00:04:04,970 --> 00:04:08,110
+So that's the reason why I will remove this code.
+
+54
+00:04:08,110 --> 00:04:11,200
+Keep in mind you could use it though if you don't have a default value.
+
+55
+00:04:11,470 --> 00:04:17,270
+And with that I set this up as I wanted with the default value of high selected.
+
+56
+00:04:17,440 --> 00:04:22,300
+Now this all of course means that it works the other way around so that if we change the selection we'll
+
+57
+00:04:22,350 --> 00:04:23,720
+update our property.
+
+58
+00:04:23,920 --> 00:04:31,940
+Therefore we can output a tier selector priority in this paragraph and with that finally can see why
+
+59
+00:04:31,970 --> 00:04:32,630
+down there.
+
+60
+00:04:32,650 --> 00:04:37,360
+If I changed it to low it changes there too as it does for a change to medium.
+
+61
+00:04:37,360 --> 00:04:40,610
+And that is the last type of input field I wanted to show you.
+
+62
+00:04:40,620 --> 00:04:46,780
+The last time a form control we have the dropdown de-select control here with that you learn about the
+
+63
+00:04:46,780 --> 00:04:54,100
+basic HDMI controls we do have and how to use view Che's to get the values to set the values to work
+
+64
+00:04:54,100 --> 00:04:58,270
+with them all the time using the model.
+
+65
+00:04:58,270 --> 00:05:03,730
+Now in the next hour you will have a look at how we can build our own input field our own form control
+
+66
+00:05:03,940 --> 00:05:05,470
+by using components.
+
+67
+00:05:05,470 --> 00:05:07,590
+So let's dive into that in the next video.
+

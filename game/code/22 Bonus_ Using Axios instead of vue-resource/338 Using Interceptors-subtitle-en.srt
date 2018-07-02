@@ -1,0 +1,288 @@
+1
+00:00:02,850 --> 00:00:09,260
+In the last lecture we had a look at global default global request configuration in this lecture I want
+
+2
+00:00:09,260 --> 00:00:11,050
+to dive into interceptors.
+
+3
+00:00:11,150 --> 00:00:17,960
+That's another useful feature X supports interceptors are functions you can define which should get
+
+4
+00:00:17,960 --> 00:00:24,700
+executed on every request that leaves the app or every response that reaches it.
+
+5
+00:00:24,740 --> 00:00:30,960
+You also do this on the x' insense itself by accessing the interceptors object there.
+
+6
+00:00:31,220 --> 00:00:35,900
+Then you can choose between request or response depending on which kind of re intercept are you want
+
+7
+00:00:35,900 --> 00:00:38,480
+to create or choose requests here.
+
+8
+00:00:38,810 --> 00:00:44,440
+And then you add a new interceptor by using the use method they use method.
+
+9
+00:00:44,450 --> 00:00:51,560
+Now takes a function a normal function or an arrow function which I will use here.
+
+10
+00:00:51,560 --> 00:00:56,210
+This function receives the request configuration as an argument.
+
+11
+00:00:56,410 --> 00:01:02,150
+And inside this function you at least have to return this configuration Otherwise you will block the
+
+12
+00:01:02,150 --> 00:01:03,250
+request.
+
+13
+00:01:03,260 --> 00:01:06,100
+No I will simply lock the conflict here.
+
+14
+00:01:06,110 --> 00:01:09,340
+But of course and that's the cool thing about an interceptor.
+
+15
+00:01:09,350 --> 00:01:11,100
+You could also manipulate it.
+
+16
+00:01:11,150 --> 00:01:18,350
+You could set config headers and there simply said some global offer a cessation header or something
+
+17
+00:01:18,350 --> 00:01:19,410
+like that.
+
+18
+00:01:19,790 --> 00:01:26,630
+You can do whatever you want here you can manipulate the request configuration to for example step in
+
+19
+00:01:26,660 --> 00:01:33,200
+check if something is the case and then on the fly adjust de-conflict for cases where some generic set
+
+20
+00:01:33,200 --> 00:01:38,990
+up like here where every request is targeted might be too generic.
+
+21
+00:01:40,310 --> 00:01:46,340
+So for now again I would just log it and that will also add a number interceptor again by using the
+
+22
+00:01:46,340 --> 00:01:50,510
+interceptors object and then targeting their response.
+
+23
+00:01:50,560 --> 00:01:57,080
+They are WE CAN ALL the register and you enter center by using to use keyword and there I will actually
+
+24
+00:01:57,080 --> 00:01:58,960
+get the response and input.
+
+25
+00:01:58,970 --> 00:02:04,900
+We could use a normal function or two and there will also need to return a response.
+
+26
+00:02:04,970 --> 00:02:09,970
+Otherwise either a code in my application which waits for it will never receive it.
+
+27
+00:02:09,980 --> 00:02:12,930
+Keep in mind interceptors are always just like middleware.
+
+28
+00:02:12,950 --> 00:02:14,360
+They run in between.
+
+29
+00:02:14,360 --> 00:02:18,200
+They should really block the response or their request.
+
+30
+00:02:18,670 --> 00:02:24,750
+So here I returned a response and I want to console log the response here too.
+
+31
+00:02:25,080 --> 00:02:32,150
+We now save this and we go back to the application and reload and go back to the console.
+
+32
+00:02:32,210 --> 00:02:37,350
+You actually see we got more locks here now to identify what's coming from where.
+
+33
+00:02:37,460 --> 00:02:39,310
+Let me adjust the console locks.
+
+34
+00:02:39,440 --> 00:02:46,600
+Let's say request enter center here for the first one and still is a print de-conflict.
+
+35
+00:02:46,880 --> 00:02:52,800
+And here we got the response interceptor and still present print their response.
+
+36
+00:02:52,820 --> 00:03:00,520
+So now with that let me clear the console and simply reload.
+
+37
+00:03:00,670 --> 00:03:07,100
+And now we see response intercept are here and request intercept or earlier.
+
+38
+00:03:07,390 --> 00:03:09,930
+Now the request interceptor locks de-conflict.
+
+39
+00:03:09,970 --> 00:03:15,280
+And as I said there you could have stepped in and added or just adjusted the headers.
+
+40
+00:03:15,280 --> 00:03:23,080
+Here we see our cast and except Hetter which of course deliberately is not the valid normal except hador
+
+41
+00:03:23,140 --> 00:03:28,860
+so that we can see that it was added otherwise to steepled had or would have been added by X-ists anyways
+
+42
+00:03:28,930 --> 00:03:31,590
+so we wouldn't have seen if our head works or not.
+
+43
+00:03:31,750 --> 00:03:34,090
+We see our custom all phrase sation header.
+
+44
+00:03:34,300 --> 00:03:40,990
+And as I said we could have stepped in and we could have said Conne thick headers and that for example
+
+45
+00:03:40,990 --> 00:03:48,960
+added something to add our own head or there we don't have to access comment or get or post because
+
+46
+00:03:48,960 --> 00:03:51,500
+we already are on a quest level.
+
+47
+00:03:51,960 --> 00:03:55,380
+So this is the request conflict which we could have edited.
+
+48
+00:03:55,710 --> 00:04:02,430
+We can also see the responses or setter which of course holds the exact same response as we later use
+
+49
+00:04:03,000 --> 00:04:07,770
+and we could have stepped in and transform the response here to you though of course you should always
+
+50
+00:04:07,770 --> 00:04:13,620
+use all these features with caution to not accidentally break your app.
+
+51
+00:04:13,640 --> 00:04:22,370
+Now these are intercessors how we can add them sometimes you also want to remove them and to demonstrate
+
+52
+00:04:22,370 --> 00:04:23,060
+this.
+
+53
+00:04:23,180 --> 00:04:26,540
+I will simply instantly remove both.
+
+54
+00:04:26,630 --> 00:04:32,240
+So we actually shouldn't see something locked to the console so we can remove interceptors by still
+
+55
+00:04:32,240 --> 00:04:36,120
+accessing interceptors request or response.
+
+56
+00:04:36,320 --> 00:04:38,710
+Here I'll start with request again.
+
+57
+00:04:39,050 --> 00:04:40,100
+And then you can call.
+
+58
+00:04:40,140 --> 00:04:48,100
+Eject eject now needs to get the idea of interceptor and that idea is actually returned from the use
+
+59
+00:04:48,110 --> 00:04:48,860
+method.
+
+60
+00:04:48,860 --> 00:04:50,420
+You just have to store it.
+
+61
+00:04:50,630 --> 00:04:59,310
+So I'll create a new constant request enter center where I store the result of that use call where I
+
+62
+00:04:59,520 --> 00:05:05,940
+set my request interceptor and then I'll do the same for the response interceptor here.
+
+63
+00:05:06,030 --> 00:05:14,520
+Now I can eject request interceptor and then duplicate it to do the same for the response interceptor.
+
+64
+00:05:14,520 --> 00:05:17,460
+Now with that we instantly eject our interceptors.
+
+65
+00:05:17,460 --> 00:05:19,640
+So we actually shouldn't see any effect.
+
+66
+00:05:19,650 --> 00:05:22,940
+We shouldn't see any console loss in our application anymore.
+
+67
+00:05:23,250 --> 00:05:30,660
+If I reload this page we indeed only see our old console logs and no longer see the console locked from
+
+68
+00:05:30,660 --> 00:05:35,940
+within the interceptor because it's basically jacked up right before it ever has a chance to intercept
+
+69
+00:05:35,970 --> 00:05:36,760
+anything.
+
+70
+00:05:36,960 --> 00:05:42,480
+It does of course is not that most useful example but you might have cases where you want to eject them
+
+71
+00:05:42,480 --> 00:05:43,960
+depending on some condition.
+
+72
+00:05:44,040 --> 00:05:47,260
+Well the ject function is how you can do that.
+

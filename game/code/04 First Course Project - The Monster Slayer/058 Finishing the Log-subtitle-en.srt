@@ -1,0 +1,92 @@
+1
+00:00:02,050 --> 00:00:06,300
+We want to hook up the other buttons to also print deep layer damage.
+
+2
+00:00:06,370 --> 00:00:10,060
+And then I want to improve the styling so that we can easier see here.
+
+3
+00:00:10,080 --> 00:00:13,960
+That was the monster or the player attacking here to do so.
+
+4
+00:00:13,990 --> 00:00:19,930
+I'll go to the app chase file here and I'll copy this Turin's and shift code.
+
+5
+00:00:19,930 --> 00:00:22,650
+And yes again this could all be refactored.
+
+6
+00:00:22,750 --> 00:00:30,400
+But since it isn't that much code I'll keep it like this and all the edits here hits monster hard for
+
+7
+00:00:30,520 --> 00:00:31,870
+the damage let's say.
+
+8
+00:00:31,960 --> 00:00:40,040
+Of course before does have to store damage in a separate variable again like that and then deduct this
+
+9
+00:00:40,060 --> 00:00:41,950
+variable from the monster health.
+
+10
+00:00:42,190 --> 00:00:48,970
+We don't need to change monster attacks we already got our logging edition there and for healing.
+
+11
+00:00:49,000 --> 00:00:57,630
+We of course also want to note that we all want to copy that code here or put it in your and say layer
+
+12
+00:00:57,660 --> 00:01:06,980
+heals for and we know it's always 10 so we can say for 10 simply you were an industry like this.
+
+13
+00:01:07,140 --> 00:01:09,280
+These are the actions I have.
+
+14
+00:01:09,600 --> 00:01:16,440
+Now one thing I also want to do is up on giving up or let's say up on starting a new game I want to
+
+15
+00:01:16,440 --> 00:01:23,570
+set this turns back to an empty string an empty array excuse me so that I reset the log.
+
+16
+00:01:23,570 --> 00:01:31,260
+With that with this I added log actions to all items we can see that if I reload and now I attack here
+
+17
+00:01:31,260 --> 00:01:38,110
+we see that we get the lock for that and is for a healing and that if I hit it give up and start a new
+
+18
+00:01:38,110 --> 00:01:38,580
+game.
+
+19
+00:01:38,620 --> 00:01:40,450
+The log is cleared.
+
+20
+00:01:40,450 --> 00:01:41,600
+Missing pieces.
+
+21
+00:01:41,600 --> 00:01:48,310
+It would be nice to have some coloring to quickly see which action stems from the player and which attack
+
+22
+00:01:48,310 --> 00:01:50,010
+was launched by the monster.
+
+23
+00:01:50,260 --> 00:01:55,100
+So let's do this by conditionally attaching some styles or classes to.
+

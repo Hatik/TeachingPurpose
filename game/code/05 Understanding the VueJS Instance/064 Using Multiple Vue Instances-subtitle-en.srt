@@ -1,0 +1,132 @@
+1
+00:00:01,730 --> 00:00:08,080
+Let's first focus on using multiple instances here we get is death with the idea app.
+
+2
+00:00:08,310 --> 00:00:17,360
+Now the simplest thing is to simply copy this death and treat a new one named app to rename the first
+
+3
+00:00:17,360 --> 00:00:25,050
+one to app one all rename the selector here the element Ted the element property there for here to at
+
+4
+00:00:25,070 --> 00:00:32,660
+one or change it to app 1 and then I can simply scroll down and create a new view instance below the
+
+5
+00:00:32,660 --> 00:00:33,510
+first one.
+
+6
+00:00:33,590 --> 00:00:36,110
+So does this in normal Schulthess crypt code.
+
+7
+00:00:36,350 --> 00:00:41,250
+And here I set up this as selector selecting app to with the hash tag.
+
+8
+00:00:41,690 --> 00:00:47,290
+And now on to delete everything but title to Chesed showed that it works.
+
+9
+00:00:47,330 --> 00:00:55,190
+I'll set up a new data property or my new instance and there I will save to title the second instance
+
+10
+00:00:55,460 --> 00:00:57,470
+if I now hit Control enter.
+
+11
+00:00:57,590 --> 00:01:00,300
+We see the second instance on the right too.
+
+12
+00:01:00,350 --> 00:01:07,060
+So it's perfectly fine to control multiple pieces on your page with multiple instances.
+
+13
+00:01:07,070 --> 00:01:13,790
+Be aware though that of course inside of an instance you can only access the properties of that specific
+
+14
+00:01:13,790 --> 00:01:15,710
+instance with the this keyword.
+
+15
+00:01:15,920 --> 00:01:22,850
+So in the first instance here if I access this title here this of course will always refer to the title
+
+16
+00:01:22,850 --> 00:01:28,590
+in the data property of this instance here and not to the title in the second instance.
+
+17
+00:01:28,790 --> 00:01:31,360
+There is no connection between the two instances.
+
+18
+00:01:31,370 --> 00:01:38,040
+These are two separate kind of beauteous apps if you want to call them or basically just different.
+
+19
+00:01:38,140 --> 00:01:42,590
+You chase instances controlling different parts of your dorm.
+
+20
+00:01:42,590 --> 00:01:49,250
+It's perfectly fine to use this set up and actually you will see this in real applications where you
+
+21
+00:01:49,250 --> 00:01:55,070
+don't want to create a complex single page application using the chaps but only one to throw in some
+
+22
+00:01:55,080 --> 00:02:00,620
+widgets let's say let's say you want to create your own calendar which it then you could place your
+
+23
+00:02:00,620 --> 00:02:06,860
+calendar named Dave ideologue's calendar control with you chaps and then you might on the same page
+
+24
+00:02:07,070 --> 00:02:08,780
+have a number which to where.
+
+25
+00:02:08,780 --> 00:02:13,970
+For example you have some tabs to click through and display different content and you could create a
+
+26
+00:02:13,970 --> 00:02:15,640
+new instance for this.
+
+27
+00:02:15,770 --> 00:02:17,290
+So that is perfectly fine.
+
+28
+00:02:17,300 --> 00:02:23,960
+You may have multiple instances for different tasks as long as this is the key as long as there is no
+
+29
+00:02:23,960 --> 00:02:31,100
+connection between them if you need to call the function from one instance from number instance why
+
+30
+00:02:31,100 --> 00:02:37,790
+Lou will soon see that there technically will be a possible as you do so I recommend putting it all
+
+31
+00:02:37,790 --> 00:02:43,600
+into one instance because well it seems to belong to Gabr from a business logic perspective anyways
+
+32
+00:02:43,620 --> 00:02:44,240
+right.
+
+33
+00:02:44,450 --> 00:02:49,700
+But if that's not the case you're perfectly fine to use multiple instances just like dead.
+

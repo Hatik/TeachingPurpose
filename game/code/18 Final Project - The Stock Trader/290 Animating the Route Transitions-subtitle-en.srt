@@ -1,0 +1,152 @@
+1
+00:00:01,760 --> 00:00:03,510
+Let's start with any mentions.
+
+2
+00:00:03,620 --> 00:00:09,380
+And this of course again is a challenge where you make sure that these switches between the different
+
+3
+00:00:09,380 --> 00:00:11,110
+routes are animated of course.
+
+4
+00:00:11,110 --> 00:00:18,110
+Choose any animation of your choice or whatever you like animating the transition between routes as
+
+5
+00:00:18,110 --> 00:00:20,310
+easy as he learned in the last module.
+
+6
+00:00:20,570 --> 00:00:23,060
+All we have to do is go in the app you follow.
+
+7
+00:00:23,060 --> 00:00:30,260
+We have a router view and add a transition here now and this transition will place the router view and
+
+8
+00:00:30,260 --> 00:00:31,850
+then we can choose any name.
+
+9
+00:00:31,850 --> 00:00:34,250
+Let's say we name or animation slide.
+
+10
+00:00:34,280 --> 00:00:40,280
+This will influence which C S-Class we're using set the mode to out into first and he made the old route
+
+11
+00:00:40,340 --> 00:00:42,650
+out before adding the new one.
+
+12
+00:00:43,000 --> 00:00:46,030
+All of this I go to my styles here.
+
+13
+00:00:46,130 --> 00:00:48,810
+And then I want to add the slide enter.
+
+14
+00:00:48,830 --> 00:00:58,820
+Since I named it slide your slide enter active class and I'll add the slide slide Leave Act of class.
+
+15
+00:00:58,820 --> 00:01:03,740
+These are the only two classes I need because I'm going to use animations.
+
+16
+00:01:03,740 --> 00:01:10,760
+So I'll set up some keyframes here for a slide in for example where I want to animate from somewhere
+
+17
+00:01:10,760 --> 00:01:18,550
+to somewhere and this is somewhere is in the From case that I want to have this nice sliding animation
+
+18
+00:01:18,560 --> 00:01:26,300
+so I will translate y minus 40 pixels and Zabdiel pasty to zero.
+
+19
+00:01:26,690 --> 00:01:33,490
+And the goal is to then reach trends for him translate y of zeros so do you.
+
+20
+00:01:33,620 --> 00:01:37,670
+And position of this item and set the opacity to one of course.
+
+21
+00:01:37,670 --> 00:01:39,700
+Now all handled in this keyframe.
+
+22
+00:01:40,130 --> 00:01:46,460
+And I also need keyframes for sliding it out of course because I want to animate this in the opposite
+
+23
+00:01:46,460 --> 00:01:47,610
+direction.
+
+24
+00:01:47,720 --> 00:01:58,400
+So therefore here I will set up a from position of translate wise 0 because I want to start at the real
+
+25
+00:01:58,400 --> 00:02:00,200
+position of this element.
+
+26
+00:02:00,380 --> 00:02:11,030
+And your pace of course is one and the goal is to then go to transform translate y minus for the pixels
+
+27
+00:02:11,510 --> 00:02:13,790
+and set the pace to Ciro.
+
+28
+00:02:13,850 --> 00:02:16,140
+So this will fade and slide it.
+
+29
+00:02:16,280 --> 00:02:23,840
+And now it can use these keyframes here in my classes with the animation keyword or property play slide
+
+30
+00:02:23,840 --> 00:02:31,490
+in when entering a to over let's say 200 milliseconds ease out and then four words to keep dnt position
+
+31
+00:02:32,150 --> 00:02:39,290
+and upon leaving also want to play animation slide out it is all also 200 milliseconds ease out and
+
+32
+00:02:39,340 --> 00:02:46,010
+forwards and that is all that should take these few keyframes and classes together with the transition
+
+33
+00:02:46,010 --> 00:02:51,710
+component wrapping around all of you with the names sleights it up slide of course here refers to the
+
+34
+00:02:51,710 --> 00:02:58,950
+names these classes and have to have this in place we already see a nice animation here.
+
+35
+00:02:59,060 --> 00:03:02,460
+So let's fill our portfolio to also see the change there.
+
+36
+00:03:02,570 --> 00:03:03,530
+Looks good.
+
+37
+00:03:03,710 --> 00:03:05,590
+So now we get the animation in place.
+
+38
+00:03:05,720 --> 00:03:12,000
+Let's now wrap this up by making the save and load buttons work or the dropdown to begin with.
+

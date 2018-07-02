@@ -1,0 +1,272 @@
+1
+00:00:01,890 --> 00:00:05,320
+We learned about all these lifecycle hooks and The Last Lecture.
+
+2
+00:00:05,320 --> 00:00:07,070
+Now let's see them in action.
+
+3
+00:00:07,330 --> 00:00:14,280
+We can easily execute some code at different points of the lifecycle by adding them here functions tudy
+
+4
+00:00:14,290 --> 00:00:16,300
+Optik we're passing to the view instance.
+
+5
+00:00:16,300 --> 00:00:23,440
+So to review instance basically the first one is before create so we can at the before before create
+
+6
+00:00:23,440 --> 00:00:25,070
+function like this.
+
+7
+00:00:25,180 --> 00:00:30,280
+And here I will simply cancel LOC before create so we can see we to this hook.
+
+8
+00:00:30,280 --> 00:00:33,640
+You might of course execute any other code you need to execute there.
+
+9
+00:00:34,330 --> 00:00:37,080
+There after we have created.
+
+10
+00:00:37,150 --> 00:00:39,770
+So let's also add this function here.
+
+11
+00:00:40,090 --> 00:00:43,100
+And of course I shall also renamed this here to treat it.
+
+12
+00:00:44,220 --> 00:00:51,930
+Then we have before MT We now created this view Cheras instance but it hasn't been mounted to the done
+
+13
+00:00:51,930 --> 00:00:52,390
+yet.
+
+14
+00:00:52,440 --> 00:00:57,430
+So it is yet to be reflected on what we see in the browser.
+
+15
+00:00:58,740 --> 00:01:04,980
+Thereafter of course we have mounted now mounted as the name implies means now it is attached to our
+
+16
+00:01:05,070 --> 00:01:05,790
+real Dom.
+
+17
+00:01:05,790 --> 00:01:07,020
+We can see it in the browser.
+
+18
+00:01:07,020 --> 00:01:16,050
+Now if some data changes we have before update which is executed right before the dom or the part which
+
+19
+00:01:16,050 --> 00:01:23,130
+needs to be updated in a dorm is re rendered and then we get updated which as you might guess is called
+
+20
+00:01:23,130 --> 00:01:26,610
+right after this part of the bomb has been updated.
+
+21
+00:01:27,240 --> 00:01:35,010
+And then when it comes to it and for our instance we get the destroy it which is called right before
+
+22
+00:01:35,010 --> 00:01:36,220
+the instance.
+
+23
+00:01:36,330 --> 00:01:42,600
+Well yeah like you guess is removed so it's destroyed not only removed it is destroyed.
+
+24
+00:01:42,900 --> 00:01:46,370
+And finally at the very end we got destroyed.
+
+25
+00:01:46,410 --> 00:01:50,810
+This would be a hook where it's good to do some cleanup work or before destroy hook.
+
+26
+00:01:50,820 --> 00:01:56,450
+To be precise to do some cleanup work if you need to release some resources or anything like that.
+
+27
+00:01:56,840 --> 00:01:58,750
+This is the whole cycle.
+
+28
+00:01:58,800 --> 00:02:04,390
+Now we could already see some of these functions but not all to be able to see before update and updated.
+
+29
+00:02:04,410 --> 00:02:10,460
+We need to implement something which changes something and to see before destroy and destroy.
+
+30
+00:02:10,450 --> 00:02:14,940
+We need to implement some code to actually destroy this instance.
+
+31
+00:02:15,120 --> 00:02:18,450
+I'll do both with buttons here.
+
+32
+00:02:18,900 --> 00:02:26,140
+The first button should say update title and all I want to do here is on a click listener.
+
+33
+00:02:26,250 --> 00:02:35,750
+I simply want to set the title equal to changed and then I will add a button where I say destroy it.
+
+34
+00:02:37,040 --> 00:02:45,670
+And here I went to call the destroy method let's say which I'll add down here in the methods property
+
+35
+00:02:45,690 --> 00:02:50,890
+that's important to realize all these lifecycle hooks are not inside the methods property.
+
+36
+00:02:50,910 --> 00:02:56,930
+These are all functions registered directly on the root object be passed to the constructor.
+
+37
+00:02:56,940 --> 00:03:05,430
+So in the methods property here I will set up destroy which is of course a function where I will call
+
+38
+00:03:05,460 --> 00:03:10,430
+this referring to this view instance and then destroy with a dollar sign at the beginning.
+
+39
+00:03:10,470 --> 00:03:13,050
+This will destroy this instance.
+
+40
+00:03:13,620 --> 00:03:19,130
+Well let's see it in action by opening up the console hitting control enter to re-enter this.
+
+41
+00:03:19,230 --> 00:03:24,530
+And we already see before create created before mount and mount it which makes sense.
+
+42
+00:03:24,540 --> 00:03:29,190
+These are the first hooks get which get executed in this order.
+
+43
+00:03:29,190 --> 00:03:35,520
+Now let me hit update title and you'll see that before update an updated was executed of course because
+
+44
+00:03:35,580 --> 00:03:36,840
+this is what we did.
+
+45
+00:03:36,840 --> 00:03:43,010
+We updated something we update at a property we update at a property which required the dorm to be changed
+
+46
+00:03:43,230 --> 00:03:46,050
+and hence we saw before update and updated.
+
+47
+00:03:46,290 --> 00:03:47,110
+Interesting.
+
+48
+00:03:47,130 --> 00:03:53,750
+If I hit update Tyla again it will set tile to change again which is to value the title already has
+
+49
+00:03:54,680 --> 00:04:03,160
+see that no method gets executed now because as I explained in the how does view as updated Dom lecture.
+
+50
+00:04:03,230 --> 00:04:11,220
+It doesn't do this if there is no real change to be taken care of it recognize us dead even though we.
+
+51
+00:04:11,240 --> 00:04:14,570
+Yes touched is title property.
+
+52
+00:04:14,570 --> 00:04:18,020
+We didn't change the value it's the same value as before.
+
+53
+00:04:18,170 --> 00:04:20,450
+Hence no need to rerun or anything.
+
+54
+00:04:20,450 --> 00:04:25,200
+Hence no need to call either before update nor updated.
+
+55
+00:04:25,550 --> 00:04:31,490
+And finally let's destroyed by hitting the destroy button and you see before destroy and destroy.
+
+56
+00:04:31,490 --> 00:04:39,440
+Got called and now the changed text is still here but it's not longer control by future as the future
+
+57
+00:04:39,660 --> 00:04:42,560
+instance is gone and no longer available.
+
+58
+00:04:42,650 --> 00:04:48,650
+So every Abaroa code we would have here all these buttons will no longer work and I can't prove this
+
+59
+00:04:49,040 --> 00:04:50,690
+by resetting it.
+
+60
+00:04:50,720 --> 00:04:56,660
+Call control again and hit update title you see even though we now read it you should see an update
+
+61
+00:04:56,660 --> 00:04:59,590
+because the text isn't different one then changed.
+
+62
+00:04:59,750 --> 00:05:03,250
+It doesn't work because the view chair's instance is dead.
+
+63
+00:05:03,440 --> 00:05:08,390
+This does not mean that it removes all the code from the dharma as you can clearly see it only means
+
+64
+00:05:08,480 --> 00:05:10,900
+it removes all the javascript logic.
+
+65
+00:05:10,970 --> 00:05:19,120
+So all our connections are now dead and this is the view as life cycle and a tiny bit of how Boucek
+
+66
+00:05:19,130 --> 00:05:26,170
+is updates Saddam Dom with the before update and update at Moffats year in action.
+
+67
+00:05:26,180 --> 00:05:30,160
+With that let's move on to more practice driven modules.
+
+68
+00:05:30,230 --> 00:05:37,110
+But that was a core module to understand how chess works behind the scenes and how you may utilize it.
+

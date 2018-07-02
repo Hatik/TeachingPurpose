@@ -1,0 +1,116 @@
+1
+00:00:02,230 --> 00:00:07,030
+In your first course section here I will use chess fiddle because it allows me to really focus on the
+
+2
+00:00:07,030 --> 00:00:12,010
+core things I want to bring to you and allows you to easily follow along.
+
+3
+00:00:12,280 --> 00:00:18,020
+Now maybe you don't want to use it or you want to use a local set up right from the beginning.
+
+4
+00:00:18,280 --> 00:00:21,950
+Well we will have a look at the real work flow later in the course.
+
+5
+00:00:22,060 --> 00:00:27,460
+But if you want to start locally that is of course possible you simply head to the installation page
+
+6
+00:00:27,460 --> 00:00:28,720
+of beauteous.
+
+7
+00:00:28,930 --> 00:00:32,410
+And there you can also download Mujeres to use it locally.
+
+8
+00:00:32,530 --> 00:00:37,450
+Now for a production ready you would of course choose the production Worthen but for development you
+
+9
+00:00:37,450 --> 00:00:40,940
+should use the development version which gives you some extra warnings and errors.
+
+10
+00:00:41,110 --> 00:00:47,130
+While you can simply download this and store it in some folder I prepared this uder Acharyas file and
+
+11
+00:00:47,130 --> 00:00:50,080
+with that you got your files stored here.
+
+12
+00:00:50,080 --> 00:00:53,530
+Then you want to open up your favorite editor could be sublime could be Adam.
+
+13
+00:00:53,550 --> 00:00:58,990
+You will find a list of some example editors in the last lecture of this module and there you probably
+
+14
+00:00:58,990 --> 00:01:00,920
+want to set up your favorite.
+
+15
+00:01:00,940 --> 00:01:05,530
+Or like your favorite by default HDMI 5 skeleton like this.
+
+16
+00:01:05,980 --> 00:01:11,890
+And then of course we have to go to Chase fiddle copy all the HD female killed and pasted in the body
+
+17
+00:01:11,890 --> 00:01:13,040
+section.
+
+18
+00:01:13,090 --> 00:01:14,870
+We can remove the script import.
+
+19
+00:01:14,920 --> 00:01:16,590
+We will use our local file if we're dead.
+
+20
+00:01:16,600 --> 00:01:19,370
+So let's add a script import and he had S..
+
+21
+00:01:19,380 --> 00:01:22,760
+Whoops I need a source of course pointing to the view that js file.
+
+22
+00:01:23,020 --> 00:01:30,030
+And we also need our script down here so let's copy that to and then add a script tag below our death
+
+23
+00:01:30,040 --> 00:01:35,210
+def remove the source here at this end with that if you now saved us.
+
+24
+00:01:35,320 --> 00:01:40,300
+Let's say as index HVM all in the same folder as the view that yes file lives.
+
+25
+00:01:40,540 --> 00:01:44,330
+You can simply double click on it when viewed in the browser here.
+
+26
+00:01:44,410 --> 00:01:48,700
+And of course here if you type something it should work as it shares fiddle and this is how you could
+
+27
+00:01:48,700 --> 00:01:50,220
+follow along locally.
+
+28
+00:01:50,230 --> 00:01:56,260
+Again a more complex were the will be set up later but with Dad you can get started and I'd say let's
+
+29
+00:01:56,260 --> 00:02:00,850
+now start diving deeper into view as in the next course module.
+

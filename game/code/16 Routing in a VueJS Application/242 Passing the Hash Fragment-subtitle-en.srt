@@ -1,0 +1,176 @@
+1
+00:00:02,290 --> 00:00:04,680
+So noted we're able to animate this.
+
+2
+00:00:04,690 --> 00:00:09,060
+Let me also have a look at something else which we haven't covered yet.
+
+3
+00:00:09,250 --> 00:00:16,660
+Sometimes you want to navigate to a specific part on the page you're navigating to marked with a hash
+
+4
+00:00:16,660 --> 00:00:22,480
+tag at the end and then the anchor name of some element in your age HTML code which has this anchor
+
+5
+00:00:22,480 --> 00:00:23,940
+as an ID.
+
+6
+00:00:23,950 --> 00:00:30,710
+Let me simulate this for example on the user added page here.
+
+7
+00:00:30,730 --> 00:00:41,080
+Let's say we do have a div in there and this div does have a height of 700 pixels so that it needs sort.
+
+8
+00:00:41,100 --> 00:00:43,940
+And it makes sure that we need to scroll.
+
+9
+00:00:43,990 --> 00:00:51,130
+So we do have does height of this day of and below this if we get some extra data in a paragraph and
+
+10
+00:00:51,130 --> 00:00:55,690
+this paragraph has an ID of data let's say.
+
+11
+00:00:55,690 --> 00:01:01,690
+Now if I go to the edit page I'm on it right now you see here's data at the bottom.
+
+12
+00:01:01,690 --> 00:01:08,230
+If I now enter a hash tag data the browser will automatically come down their default browser behavior.
+
+13
+00:01:08,230 --> 00:01:15,400
+Now if we navigate in our application we first also might want to be able to pass this extra data hash
+
+14
+00:01:15,400 --> 00:01:16,520
+fragment here.
+
+15
+00:01:16,720 --> 00:01:20,590
+And second we want to simulate this behavior of jumping down there.
+
+16
+00:01:20,740 --> 00:01:26,330
+Or maybe generally we want to control where the page scrolls to when we navigate.
+
+17
+00:01:26,830 --> 00:01:33,130
+So we can do this by first having a look at how we can pass this hash segment.
+
+18
+00:01:33,460 --> 00:01:39,050
+So let's say when we click on user detail here what we already passed equerry poems.
+
+19
+00:01:39,190 --> 00:01:41,620
+We're now passing a third parameter here.
+
+20
+00:01:41,920 --> 00:01:47,780
+And this third parameter is now the fragment we want to use.
+
+21
+00:01:47,800 --> 00:01:55,060
+Now since this is getting Rob Long here I will quickly set up a script here and export my javascript
+
+22
+00:01:55,060 --> 00:02:01,090
+object and store it in a separate property year in my variable and my data object.
+
+23
+00:02:01,300 --> 00:02:04,900
+So here this shall be my link.
+
+24
+00:02:04,900 --> 00:02:05,680
+Let's say.
+
+25
+00:02:05,890 --> 00:02:12,130
+And now here to simply is this javascript object from up here so I can simply grab the whole object
+
+26
+00:02:12,640 --> 00:02:14,450
+and enter it here.
+
+27
+00:02:14,560 --> 00:02:22,450
+But now I'll simply restructure it is to make it look nicer here so that it's easier to see or to understand
+
+28
+00:02:22,450 --> 00:02:26,200
+what we're all passing with this object.
+
+29
+00:02:26,240 --> 00:02:30,120
+So I'd say that looks much better and then I can simply pass the link here.
+
+30
+00:02:30,130 --> 00:02:35,130
+It is a dynamic binding in the end so I can pass my property which represents this object.
+
+31
+00:02:35,440 --> 00:02:40,160
+And for this to work I need to make sure that here I hate this route because I'm now inside this new
+
+32
+00:02:40,210 --> 00:02:41,350
+instance.
+
+33
+00:02:41,620 --> 00:02:45,160
+And with that I can all to pass my hash fragment.
+
+34
+00:02:45,160 --> 00:02:46,450
+Now it is simply a string.
+
+35
+00:02:46,450 --> 00:02:48,460
+For example hash tag data.
+
+36
+00:02:48,460 --> 00:02:53,620
+What this will do is that once I go back to my application to the user page here and I select the user
+
+37
+00:02:53,620 --> 00:02:56,790
+and click Edit user we see hash tag data appended to the end.
+
+38
+00:02:56,920 --> 00:03:00,890
+But what you also notice is it doesn't scroll down there.
+
+39
+00:03:01,150 --> 00:03:07,390
+But if I were to load this in a browser and come from a number of pages I should say so if I first go
+
+40
+00:03:07,390 --> 00:03:11,590
+to home and now introduce you see it does jump to the end.
+
+41
+00:03:11,590 --> 00:03:16,450
+Now I want the same behavior with the U.K.'s because right now it doesn't.
+
+42
+00:03:16,450 --> 00:03:18,850
+So you see how we can pass a hash fragment.
+
+43
+00:03:18,910 --> 00:03:24,190
+But now in the next video we want to have a look at how we can control the scrolling behavior when we
+
+44
+00:03:24,190 --> 00:03:26,010
+do navigate to a number page.
+

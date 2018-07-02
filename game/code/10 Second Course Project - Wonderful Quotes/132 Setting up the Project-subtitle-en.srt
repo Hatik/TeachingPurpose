@@ -1,0 +1,76 @@
+1
+00:00:01,750 --> 00:00:03,810
+So let's try to solve it together.
+
+2
+00:00:03,850 --> 00:00:10,090
+Make sure to download the setup for this project attached to the last lecture and the special thing
+
+3
+00:00:10,090 --> 00:00:12,310
+is that there we all get these.
+
+4
+00:00:12,370 --> 00:00:16,510
+Already ordered this handwritten font I'm using.
+
+5
+00:00:16,510 --> 00:00:18,820
+So let's think about this application.
+
+6
+00:00:18,820 --> 00:00:25,520
+How do we want to structure and which parts should this application have well it should have a header
+
+7
+00:00:25,610 --> 00:00:27,480
+this progress bar.
+
+8
+00:00:27,620 --> 00:00:30,170
+We also want a place where we create new quotes.
+
+9
+00:00:30,200 --> 00:00:36,860
+This text area and the button and then a place where we display all the quotes where each single quote
+
+10
+00:00:36,920 --> 00:00:38,710
+is a component on its own.
+
+11
+00:00:38,720 --> 00:00:41,570
+So we get four components thus far in header.
+
+12
+00:00:41,620 --> 00:00:45,240
+And you quote All quotes and then a single quote.
+
+13
+00:00:45,500 --> 00:00:52,390
+Well and this in message at the bottom we can simply put it in our main rude object the apt Epcot view
+
+14
+00:00:52,400 --> 00:00:53,550
+file.
+
+15
+00:00:53,570 --> 00:01:00,950
+This would be how we could structure that and how we could logically break it into single pieces with
+
+16
+00:01:00,950 --> 00:01:02,770
+their own business logic.
+
+17
+00:01:03,110 --> 00:01:10,610
+Well I'd say let's get started working on this grid and then adding the possibility to add new words
+
+18
+00:01:10,790 --> 00:01:14,260
+before we finished at all way of tracking the state.
+
+19
+00:01:14,270 --> 00:01:19,520
+So tracking the number of quotes and adding the progress bar to display the current state.
+

@@ -1,0 +1,124 @@
+1
+00:00:01,990 --> 00:00:04,180
+Now let's make the dropdown work.
+
+2
+00:00:04,220 --> 00:00:09,250
+I don't know if you already solved this but it's part of the head or component.
+
+3
+00:00:09,320 --> 00:00:13,330
+So here is the place where we can simply put some code to make it work.
+
+4
+00:00:13,370 --> 00:00:20,150
+You could outsource the top down in it's own component but I'll leave it in this component and therefore
+
+5
+00:00:20,150 --> 00:00:24,530
+I will add some data in my Dator property here.
+
+6
+00:00:24,740 --> 00:00:31,280
+I want to store the is dropdown open property of course you might choose another name.
+
+7
+00:00:31,490 --> 00:00:35,020
+And additionally it's false because it shouldn't be open as surely.
+
+8
+00:00:35,030 --> 00:00:37,850
+Now how is a bootstrapped dropdown opened.
+
+9
+00:00:37,880 --> 00:00:43,940
+That's important to understand to know how to proceed here with the code while we get this list item
+
+10
+00:00:43,940 --> 00:00:45,290
+class dropdown.
+
+11
+00:00:45,290 --> 00:00:49,620
+And if we add the open class here you see it's now open.
+
+12
+00:00:49,640 --> 00:00:56,600
+So the goal is to dynamically add this we can add a dynamically binding to class here and then in the
+
+13
+00:00:56,600 --> 00:01:05,840
+object one to bind the open class to my is dropdown open data field which is true or false so it's false
+
+14
+00:01:05,870 --> 00:01:07,780
+initially therefore it's not open.
+
+15
+00:01:07,790 --> 00:01:09,770
+The Open Class is not attached.
+
+16
+00:01:09,830 --> 00:01:13,810
+So the goal now is to listen to a click and change this.
+
+17
+00:01:13,820 --> 00:01:20,870
+So whenever we click on it I want to change this or toggle this is drop drop down open state here.
+
+18
+00:01:21,080 --> 00:01:26,790
+All I need to do is on this list item where I need to add this class.
+
+19
+00:01:27,080 --> 00:01:35,810
+I'll also add a click listener and I will simply set is dropdown dropdown open to what it currently
+
+20
+00:01:35,810 --> 00:01:36,350
+is not.
+
+21
+00:01:36,380 --> 00:01:40,210
+So the opposite is dropdown open this toggles.
+
+22
+00:01:40,210 --> 00:01:42,970
+It doesn't replace you.
+
+23
+00:01:42,970 --> 00:01:48,080
+Now see I got a working trot down where I can toggle between opening and closing it by conditionally
+
+24
+00:01:48,180 --> 00:01:50,240
+appending or not appending.
+
+25
+00:01:50,240 --> 00:01:54,290
+This is Does this open class here excuse me this class here.
+
+26
+00:01:54,530 --> 00:01:55,940
+And this is how this works.
+
+27
+00:01:55,940 --> 00:02:03,710
+Now the next step is to make the save and load data buttons work and to actually send HTP requests.
+
+28
+00:02:03,710 --> 00:02:05,530
+Again a challenge for you.
+
+29
+00:02:05,660 --> 00:02:09,170
+I will use view resource as we learned it in the HGP module.
+
+30
+00:02:09,170 --> 00:02:11,360
+You of course may choose a different approach.
+
+31
+00:02:11,430 --> 00:02:15,110
+See the next video when we go from my solution to every.
+

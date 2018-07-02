@@ -1,0 +1,48 @@
+1
+00:00:01,640 --> 00:00:07,590
+So throughout this module we've learned how we couldn't flexibly distribute content with slots and name
+
+2
+00:00:07,590 --> 00:00:14,690
+slots which gives us the power to create reusable components may be used in widgets like a slideshow
+
+3
+00:00:14,730 --> 00:00:21,680
+widget which has the same frame all the time but the content then has to be distributed in this frame
+
+4
+00:00:21,680 --> 00:00:22,690
+somehow.
+
+5
+00:00:22,970 --> 00:00:30,290
+And how to use dynamic components to change which component is loaded in a specific part of the page
+
+6
+00:00:30,460 --> 00:00:30,990
+depending.
+
+7
+00:00:31,010 --> 00:00:38,660
+For example on the state of a property like we do it here when we save the currently selected component
+
+8
+00:00:38,660 --> 00:00:46,040
+of that property with that we get two amazing features which really allow us to create reusable and
+
+9
+00:00:46,040 --> 00:00:53,970
+flexible components and we're all dead we've learned so much about components in the last few modules.
+
+10
+00:00:54,020 --> 00:01:02,480
+Now I'd say it's time to move on and learn about more fantastic features chase offers us but components
+
+11
+00:01:02,540 --> 00:01:06,740
+already are one of the best features and one of the most powerful ones.
+
+12
+00:01:06,860 --> 00:01:08,610
+But with that let's continue.
+

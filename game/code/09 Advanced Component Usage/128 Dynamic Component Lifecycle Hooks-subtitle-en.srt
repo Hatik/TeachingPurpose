@@ -1,0 +1,64 @@
+1
+00:00:01,870 --> 00:00:09,250
+Were able to keep our components alive with keep alive here now as it is kept alive will we lose they
+
+2
+00:00:09,300 --> 00:00:10,850
+destroy lifecycle hook.
+
+3
+00:00:11,000 --> 00:00:17,240
+What if we wanted to react to the navigating a way so that another component gets lower that we do have
+
+4
+00:00:17,240 --> 00:00:22,740
+to lifecycle hooks to control if either namak component is currently visited.
+
+5
+00:00:22,760 --> 00:00:29,180
+So if it was activated or if we navigate the way so if it was deactivated and there were the two names
+
+6
+00:00:29,180 --> 00:00:30,880
+of these lifecycle hogs.
+
+7
+00:00:31,100 --> 00:00:34,460
+So any new component I can implement them here.
+
+8
+00:00:34,490 --> 00:00:37,080
+The first one is deactivated.
+
+9
+00:00:37,130 --> 00:00:43,350
+This will be executed whenever we are on the component and load and number one and number dynamic component.
+
+10
+00:00:43,550 --> 00:00:52,820
+So here I will simply log de-activated and the other hook is the active way that method well and that
+
+11
+00:00:52,850 --> 00:00:55,440
+obviously is called whenever we do load.
+
+12
+00:00:55,560 --> 00:00:59,770
+There's a dynamic component here so activated like this.
+
+13
+00:01:00,050 --> 00:01:08,590
+And now if we let this reload Let's go to you and you see activate it gets executed.
+
+14
+00:01:08,780 --> 00:01:09,410
+And when I click.
+
+15
+00:01:09,500 --> 00:01:11,590
+All for we see de-activated.
+
+16
+00:01:11,600 --> 00:01:15,570
+So these are just two new lifecycle hooks we can use now.
+

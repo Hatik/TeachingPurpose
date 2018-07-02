@@ -1,0 +1,108 @@
+1
+00:00:01,810 --> 00:00:08,460
+Let's stick to this example and let's say I want to have a data or does data object here as well as
+
+2
+00:00:08,460 --> 00:00:14,730
+does compute property faltered fruit's in both my list and my app don't you file for this.
+
+3
+00:00:14,730 --> 00:00:21,840
+I will create such a mix and show we want to outsource all that code into such a mix in and here all
+
+4
+00:00:21,840 --> 00:00:26,930
+create a new fall in the source folder What's all that which I'll name fruit mix in DOD.
+
+5
+00:00:26,970 --> 00:00:33,500
+J.S. name is truly up to you and they're able export a constant fruit mix in the name which she was
+
+6
+00:00:33,660 --> 00:00:36,670
+and that's what we had Shabbas script object which holds all the data.
+
+7
+00:00:36,700 --> 00:00:39,940
+It's shust copied or kept from my component.
+
+8
+00:00:40,230 --> 00:00:46,080
+Now with that I can go back to my list here and I want to import this newly created mix in which I export
+
+9
+00:00:46,080 --> 00:00:46,630
+there.
+
+10
+00:00:46,800 --> 00:00:51,170
+So I import that from my fruit mix in file.
+
+11
+00:00:51,380 --> 00:00:54,480
+And the thing I want to import of course my fruit makes in.
+
+12
+00:00:54,740 --> 00:01:01,850
+And now I can simply replace the data here with the mix ins property on that instance which is an array
+
+13
+00:01:02,120 --> 00:01:07,160
+where I specify all the mix in all the code snippets I want to add to this instance.
+
+14
+00:01:07,160 --> 00:01:13,670
+Now if I save this and navigate back to the app you'll see this still works ask for it.
+
+15
+00:01:13,790 --> 00:01:20,090
+But now we're sharing this code which also means I can now go to my app or the view file and here I
+
+16
+00:01:20,090 --> 00:01:25,760
+get all of my text in the data field so I'm not completely removing it Mullaly removing fruits and this
+
+17
+00:01:25,850 --> 00:01:36,470
+and remove the computed property here and now here I will also import this fruit mix in I just created
+
+18
+00:01:36,890 --> 00:01:45,740
+from the from the fruit mix in file I just created this one here and I will add mix ins here to the
+
+19
+00:01:45,740 --> 00:01:47,000
+fruit mix in.
+
+20
+00:01:47,390 --> 00:01:51,540
+If I save this and reload Let's all the Riady up here.
+
+21
+00:01:51,560 --> 00:01:55,030
+You see it still works in my Apter you fall again.
+
+22
+00:01:55,340 --> 00:01:58,910
+And interesting enough here we still have the data property.
+
+23
+00:01:58,910 --> 00:02:04,970
+So even though we mix in a new one we can clearly see as we see the string up here still exists that
+
+24
+00:02:05,080 --> 00:02:10,620
+future as cleverly merges our mix in a. already existing data.
+
+25
+00:02:10,670 --> 00:02:14,760
+In our app that view follow or in any instance where we add a mix in.
+
+26
+00:02:15,020 --> 00:02:17,870
+So that's how we generally create and use mix ins.
+
+27
+00:02:17,960 --> 00:02:23,080
+Let me dive into that merging process and some really interesting things about mix ins.
+

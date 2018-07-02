@@ -1,0 +1,136 @@
+1
+00:00:01,730 --> 00:00:07,670
+We saw how to use a resource and the last video with default action and Watts is a bit shorter than
+
+2
+00:00:07,670 --> 00:00:12,980
+this age of the post and then setting up like this we didn't save that much space.
+
+3
+00:00:13,000 --> 00:00:16,810
+Now it becomes more powerful if you create your own actions.
+
+4
+00:00:16,850 --> 00:00:22,640
+So I will create a new constant custom actions here in the create that hook and be aware you could of
+
+5
+00:00:22,640 --> 00:00:29,330
+course also set up these resources here in a more central place and access them on a central object
+
+6
+00:00:29,330 --> 00:00:34,410
+or whatever you like so that you can share it across multiple components.
+
+7
+00:00:34,460 --> 00:00:36,300
+But here I'll keep it in this one.
+
+8
+00:00:36,500 --> 00:00:42,530
+So here custom actions are once you create an action which all names safe old for a safe alternative
+
+9
+00:00:42,530 --> 00:00:46,990
+or something like this and this will now be an object reconfigured this action.
+
+10
+00:00:47,000 --> 00:00:48,860
+I set up the Mefford.
+
+11
+00:00:49,030 --> 00:00:52,440
+This shall be post though it will be overwritten to put anyways.
+
+12
+00:00:52,640 --> 00:01:03,250
+But then it will also set up you are l and I want to have a u r l of all turn active dots Jason instead
+
+13
+00:01:03,250 --> 00:01:04,040
+of data.
+
+14
+00:01:04,080 --> 00:01:05,010
+Jason.
+
+15
+00:01:05,260 --> 00:01:14,830
+Now with that set up I can go up to my submit method here and now I can simply use this though in order
+
+16
+00:01:14,830 --> 00:01:16,950
+to be able to use my own custom method.
+
+17
+00:01:17,110 --> 00:01:21,690
+I have to pass new arguments to my resource set up here.
+
+18
+00:01:22,030 --> 00:01:23,980
+The second argument will be empty.
+
+19
+00:01:23,990 --> 00:01:26,900
+This would allow me to pass a variable data into Durell.
+
+20
+00:01:26,950 --> 00:01:28,880
+I'll come back to this soon.
+
+21
+00:01:28,990 --> 00:01:31,960
+And a third argument are my custom actions.
+
+22
+00:01:31,960 --> 00:01:36,550
+So this object is set up here which only has one action right now but that's enough.
+
+23
+00:01:36,550 --> 00:01:42,300
+Now with this custom action place I can access my resource again and call save all.
+
+24
+00:01:42,380 --> 00:01:50,150
+The thing and just set up and of course I also pass this user like before but now we should see that
+
+25
+00:01:50,160 --> 00:01:53,850
+a new node gets created on the back and on firebase.
+
+26
+00:01:53,980 --> 00:02:01,270
+Well let's try this out by reloading the application entering some data here and submit and on the back
+
+27
+00:02:01,270 --> 00:02:07,840
+end we did see a new node alternative was created and our data is stored here because now we're using
+
+28
+00:02:07,840 --> 00:02:10,300
+the same old resource here.
+
+29
+00:02:10,360 --> 00:02:16,990
+And you can hopefully see how it would easily be possible to treat multiple quick resources here with
+
+30
+00:02:16,990 --> 00:02:22,570
+different where else and then use them just like this in different places having a highest degree of
+
+31
+00:02:22,570 --> 00:02:28,450
+flexibility without having to hard code everything over and over again if you remove used the same resource
+
+32
+00:02:28,450 --> 00:02:30,740
+twice and above resource three times.
+
+33
+00:02:30,790 --> 00:02:35,440
+While this is how you can easily store it in a central place down there and then simply use it here
+
+34
+00:02:35,470 --> 00:02:36,770
+on this resource.
+

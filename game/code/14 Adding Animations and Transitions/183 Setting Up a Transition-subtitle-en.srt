@@ -1,0 +1,180 @@
+1
+00:00:01,660 --> 00:00:08,680
+Well one of the typical cases you would use transition is transition component with what be you at Hache
+
+2
+00:00:08,680 --> 00:00:09,850
+see s as classes.
+
+3
+00:00:09,900 --> 00:00:15,580
+You chest asked us for you I will show you how to tailor it better what it will then basically do is
+
+4
+00:00:15,880 --> 00:00:23,400
+it will determine when you for example use V.F. when it should attach element and that will at least
+
+5
+00:00:23,480 --> 00:00:30,340
+two classes as classes for animating it in and animating it out and by styling these classes you can
+
+6
+00:00:30,340 --> 00:00:32,500
+therefore set up an animation.
+
+7
+00:00:32,560 --> 00:00:36,160
+How does this look in the actual application.
+
+8
+00:00:36,400 --> 00:00:38,540
+Well we animate an element.
+
+9
+00:00:38,860 --> 00:00:45,710
+And once you Chesterton's that should be attached to the conditional before the show becomes true.
+
+10
+00:00:45,730 --> 00:00:52,390
+And that is important to realize I guess you use it and we show to animate in such element we will learn
+
+11
+00:00:52,390 --> 00:00:56,500
+about other ways dynamic components for example later.
+
+12
+00:00:56,620 --> 00:01:02,200
+But typically if and we show what tools we have to decide that element should only conditionally be
+
+13
+00:01:02,200 --> 00:01:03,290
+attached to the dawn.
+
+14
+00:01:03,430 --> 00:01:06,230
+This is where transition will work fine with it.
+
+15
+00:01:06,280 --> 00:01:13,480
+You can use transition if you add an element let's say for your javascript code by appending a newly
+
+16
+00:01:13,480 --> 00:01:15,090
+created element or something like that.
+
+17
+00:01:15,130 --> 00:01:17,720
+You have to have this in your template already with.
+
+18
+00:01:17,740 --> 00:01:21,670
+Again the if the show ends on our tools you learn later.
+
+19
+00:01:21,950 --> 00:01:24,810
+So back to this UTSA attacked.
+
+20
+00:01:24,840 --> 00:01:25,150
+OK.
+
+21
+00:01:25,150 --> 00:01:30,250
+I have the F on element which is wrapped in a transition I should animated in what does.
+
+22
+00:01:30,250 --> 00:01:34,690
+You just do it first attaches as yes ask class which has a name.
+
+23
+00:01:34,690 --> 00:01:38,080
+You can set up indicated by the star here and then enter.
+
+24
+00:01:38,080 --> 00:01:41,870
+So for example you could say I want to name my animation fate.
+
+25
+00:01:41,920 --> 00:01:49,030
+Then you chaps would add a fait ENTRAR animation class excuse me C S S Class 2 this element only for
+
+26
+00:01:49,030 --> 00:01:52,850
+one frame at the beginning of this animation duration.
+
+27
+00:01:52,900 --> 00:01:54,250
+This is important.
+
+28
+00:01:54,250 --> 00:01:55,960
+This is the initial state.
+
+29
+00:01:55,960 --> 00:02:01,050
+So if you want to for example fade an element this would be the place where you set your pace to zero
+
+30
+00:02:01,150 --> 00:02:09,130
+so that it is not visible that it is fully transparent offered as one frame the enter act of class appended
+
+31
+00:02:09,190 --> 00:02:13,060
+to your class name so Faid interactive for example will be attached.
+
+32
+00:02:13,150 --> 00:02:16,020
+And this will be attached until the animation finishes.
+
+33
+00:02:16,150 --> 00:02:21,730
+The length of the animation will be determined by Chares automatically by the length of the transitions
+
+34
+00:02:21,730 --> 00:02:24,090
+were animations you set up and you're seeing as code.
+
+35
+00:02:24,130 --> 00:02:29,890
+So your chest does sniff your C S S code and have a look at it to determine how long these these classes
+
+36
+00:02:29,890 --> 00:02:32,010
+should be unhedged pretty clever.
+
+37
+00:02:32,020 --> 00:02:33,780
+Now once the elements in DS.
+
+38
+00:02:33,850 --> 00:02:35,440
+This class is also removed.
+
+39
+00:02:35,440 --> 00:02:40,350
+You will have a chance to set up any transitions and the final state in this interactive class.
+
+40
+00:02:40,990 --> 00:02:43,060
+And if you remove it it's pretty much the same.
+
+41
+00:02:43,060 --> 00:02:48,770
+Here we had first the teched the your name Lifeclass and then for the whole duration.
+
+42
+00:02:48,780 --> 00:02:55,590
+Did your name Leave Act of class and default if you don't enter a name is the answer.
+
+43
+00:02:55,600 --> 00:02:57,590
+So you can always use that.
+
+44
+00:02:57,640 --> 00:03:02,280
+Now that's the theory to make it really clear and to make it easier to understand.
+
+45
+00:03:02,320 --> 00:03:06,680
+Let's now use it in our application and set up a nice supplicated and and animation.
+

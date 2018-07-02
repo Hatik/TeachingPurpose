@@ -1,0 +1,40 @@
+1
+00:00:01,860 --> 00:00:05,150
+Thus far we only had a look at how to any made single items.
+
+2
+00:00:05,190 --> 00:00:11,250
+Yes we had transition between multiple items but in the end we only saw one element now in lists which
+
+3
+00:00:11,250 --> 00:00:13,260
+aren't that uncommon to be animated.
+
+4
+00:00:13,380 --> 00:00:18,660
+You have multiple items at once or you might have different collections on your page where you want
+
+5
+00:00:18,660 --> 00:00:23,860
+to have multiple animations at once or model items which can be animated the ones at least.
+
+6
+00:00:24,240 --> 00:00:30,240
+So we might have such a list and we want to animate the removal of that item as well as the addition
+
+7
+00:00:30,240 --> 00:00:31,500
+of a new item.
+
+8
+00:00:31,680 --> 00:00:38,280
+And we can do this with Transition Group which is another component or satchel wrapper you chase ships
+
+9
+00:00:38,280 --> 00:00:39,800
+with just like transition.
+
+10
+00:00:39,810 --> 00:00:41,480
+But now for multiple items.
+

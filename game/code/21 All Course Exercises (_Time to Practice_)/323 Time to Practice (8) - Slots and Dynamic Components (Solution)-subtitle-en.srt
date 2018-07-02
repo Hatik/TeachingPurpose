@@ -1,0 +1,156 @@
+1
+00:00:01,560 --> 00:00:04,080
+So here's my solution for this.
+
+2
+00:00:04,110 --> 00:00:07,080
+Of course it's up to you which content you want to pass.
+
+3
+00:00:07,200 --> 00:00:13,220
+But I chose to pass the following paragraph so very simple content.
+
+4
+00:00:13,410 --> 00:00:16,610
+This is the content because it's not really about the content.
+
+5
+00:00:16,650 --> 00:00:23,880
+As you probably recognized I'll do the same for the dream and for Duret component as the first part
+
+6
+00:00:23,940 --> 00:00:25,270
+of this exercise.
+
+7
+00:00:25,270 --> 00:00:28,580
+And of course we need a slot to now display this.
+
+8
+00:00:28,590 --> 00:00:34,920
+We could use named slots if we would pass more complicated content which you want to distribute in several
+
+9
+00:00:34,920 --> 00:00:39,950
+different pieces in this Target template and that will be a great challenge for you all.
+
+10
+00:00:40,020 --> 00:00:43,220
+Keep it simple and I will use one slot here.
+
+11
+00:00:43,260 --> 00:00:51,310
+The default slot I'll do the same in all three templates here in all three components.
+
+12
+00:00:51,420 --> 00:00:57,300
+And when I save this we see this is to conduct in all three of them.
+
+13
+00:00:57,300 --> 00:00:58,570
+This is very nice.
+
+14
+00:00:58,590 --> 00:01:05,220
+And this is all really the first part of the exercise using slots to display the content we're passing
+
+15
+00:01:05,220 --> 00:01:06,370
+in from outside.
+
+16
+00:01:06,380 --> 00:01:14,900
+Between opening and closing selector the average challenge was to now dynamically switch these components.
+
+17
+00:01:15,120 --> 00:01:21,660
+So I'm going to comment this out so that we have it for reference but now I want to store the currently
+
+18
+00:01:21,720 --> 00:01:26,310
+active component in a data property here in the data field.
+
+19
+00:01:26,310 --> 00:01:30,470
+So at data and return an object in my function here.
+
+20
+00:01:30,750 --> 00:01:34,500
+And it is object returning here.
+
+21
+00:01:35,760 --> 00:01:41,400
+Allagash have let's say my selected component key this name is totally up to you.
+
+22
+00:01:41,400 --> 00:01:43,840
+You don't have to use selected component.
+
+23
+00:01:43,980 --> 00:01:47,030
+And by default I want to use app blue.
+
+24
+00:01:47,150 --> 00:01:51,640
+Now here I want to change this with click listeners of course.
+
+25
+00:01:51,690 --> 00:01:58,060
+So here what I said selected component equal to Baloo.
+
+26
+00:01:58,080 --> 00:02:00,220
+Because this is the blue button.
+
+27
+00:02:00,420 --> 00:02:07,710
+But on the Obert few buttons here I want to change this to green though of course that should be blue
+
+28
+00:02:08,010 --> 00:02:11,630
+and green and here it should be red.
+
+29
+00:02:11,640 --> 00:02:18,120
+So with this set up it's time to add the dynamic component with the component keyword here with this
+
+30
+00:02:18,120 --> 00:02:20,350
+built in component component.
+
+31
+00:02:20,610 --> 00:02:28,930
+And there we want to bind with Colon is to the selected component property.
+
+32
+00:02:28,930 --> 00:02:33,220
+Now once I say that we only see the blue one.
+
+33
+00:02:33,330 --> 00:02:39,640
+Now let's still pass in this constant year so that we see that too.
+
+34
+00:02:39,980 --> 00:02:47,300
+And now I can switch between green and red and back to blue and that already is all I wanted to do in
+
+35
+00:02:47,300 --> 00:02:48,310
+this exercise.
+
+36
+00:02:48,320 --> 00:02:55,070
+With that we practice using dynamic components and slots and even the combination of both in the last
+
+37
+00:02:55,160 --> 00:02:55,730
+well part.
+
+38
+00:02:55,730 --> 00:02:57,410
+We add to year with that.
+
+39
+00:02:57,440 --> 00:02:58,470
+Let's continue.
+

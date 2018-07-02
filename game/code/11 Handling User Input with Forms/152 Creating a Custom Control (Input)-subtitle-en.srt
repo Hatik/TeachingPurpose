@@ -1,0 +1,304 @@
+1
+00:00:01,950 --> 00:00:07,620
+Now what I did behind the scenes since this is not really about the stylings I created this switch Capone
+
+2
+00:00:07,620 --> 00:00:10,550
+and now you will find the code attached to this lecture.
+
+3
+00:00:10,560 --> 00:00:13,520
+But I will quickly walk you through that of course in the template.
+
+4
+00:00:13,530 --> 00:00:14,910
+I suddenly have two divs.
+
+5
+00:00:14,940 --> 00:00:20,790
+One has the ID one on excuse me and one has the idea off both as a click listener whereas simply toggle
+
+6
+00:00:20,850 --> 00:00:27,780
+is on to True or false depending on which as which I click well and then I add a class which is the
+
+7
+00:00:27,840 --> 00:00:28,920
+active class.
+
+8
+00:00:29,040 --> 00:00:34,100
+And this depends on whether it's on is true or false depending on which switch we are.
+
+9
+00:00:34,350 --> 00:00:40,260
+And then down there I have a couple of styles on and off my two boxes basically got a with a white background
+
+10
+00:00:40,260 --> 00:00:41,850
+color some padding.
+
+11
+00:00:41,850 --> 00:00:46,920
+I want to display them in lamp locked and have him sit next to each other and negative margin to left
+
+12
+00:00:46,920 --> 00:00:53,550
+and right to have them sit directly on each other at some box sizing make the cursor a pointer and centered
+
+13
+00:00:53,550 --> 00:00:54,110
+a text.
+
+14
+00:00:54,120 --> 00:00:59,550
+And then I got this active class which has the same effect as when they hover over a switch Well light
+
+15
+00:00:59,580 --> 00:00:59,960
+green.
+
+16
+00:00:59,970 --> 00:01:05,830
+In the case of the on switch and light Curle indicate of the off switch.
+
+17
+00:01:05,880 --> 00:01:11,850
+Then I went to the Apter view file where I simply imported the switch up here and added it as a local
+
+18
+00:01:11,850 --> 00:01:14,240
+component here in the components property.
+
+19
+00:01:14,340 --> 00:01:21,150
+That of course allows me to use it in my template there where I inserted this row right below the select
+
+20
+00:01:21,150 --> 00:01:21,990
+dropdown.
+
+21
+00:01:22,050 --> 00:01:26,180
+So this is an old bootstrap row with the same column class as we had before.
+
+22
+00:01:26,220 --> 00:01:27,750
+And then my custom input.
+
+23
+00:01:27,750 --> 00:01:31,730
+Now I don't have any input related logic there that's just the styling.
+
+24
+00:01:31,920 --> 00:01:33,110
+It leads to this layout.
+
+25
+00:01:33,120 --> 00:01:34,970
+We got on an off switch here.
+
+26
+00:01:35,040 --> 00:01:37,020
+However I'm not able to listen to that.
+
+27
+00:01:37,050 --> 00:01:38,770
+I'm not able to set a value.
+
+28
+00:01:38,790 --> 00:01:41,100
+This is what we'll work on together.
+
+29
+00:01:41,160 --> 00:01:44,600
+So let's make this component more than just some optical sugar.
+
+30
+00:01:44,730 --> 00:01:48,500
+Let's actually turn it into a real control we can use.
+
+31
+00:01:48,580 --> 00:01:59,090
+I want to use it here with a new component where I simply say data switch and set this to true by default.
+
+32
+00:01:59,090 --> 00:02:04,360
+Now I want to be able to use these on my custom component.
+
+33
+00:02:04,370 --> 00:02:11,600
+I added here by adding the model to it and binding to data switch into a shell pass.
+
+34
+00:02:11,600 --> 00:02:15,530
+True or false or react to changes in this component.
+
+35
+00:02:15,530 --> 00:02:21,560
+Now as I explained earlier that means that I have to set up the value prop in my component and emit
+
+36
+00:02:21,680 --> 00:02:22,470
+input event.
+
+37
+00:02:22,470 --> 00:02:24,840
+So let's work on this next.
+
+38
+00:02:24,980 --> 00:02:28,880
+I want to set up the value prop and to input event in switch component.
+
+39
+00:02:29,150 --> 00:02:36,170
+So to do so I will go to my object export here and I will add my props and this will be an array and
+
+40
+00:02:36,170 --> 00:02:40,940
+I know that I should be able to handle value because this is what the model will give me in the end
+
+41
+00:02:41,780 --> 00:02:44,160
+these values shall be true or false.
+
+42
+00:02:44,180 --> 00:02:46,590
+I could add proper validation here.
+
+43
+00:02:46,640 --> 00:02:50,210
+I'll leave it simple like that and then I want to use value.
+
+44
+00:02:50,300 --> 00:02:53,810
+Now how do I want to use value in this component here though.
+
+45
+00:02:53,990 --> 00:02:56,840
+Well I no longer want to use is on here.
+
+46
+00:02:56,870 --> 00:03:07,520
+I can actually remove this instead here I want to use value and said value to True or false here.
+
+47
+00:03:07,820 --> 00:03:12,550
+And also check value here because this is my new it is on property.
+
+48
+00:03:12,560 --> 00:03:13,570
+This will be true or false.
+
+49
+00:03:13,580 --> 00:03:16,680
+Passed from outside but that is changeable from inside.
+
+50
+00:03:16,940 --> 00:03:19,710
+So you're able to use it and change it.
+
+51
+00:03:19,730 --> 00:03:22,510
+Now of course I also need to submit an event.
+
+52
+00:03:22,760 --> 00:03:27,650
+So here when clicking setting value to True or false is not really all I need.
+
+53
+00:03:27,800 --> 00:03:36,060
+Instead I should use my methods objects here to simply add the so which method let's say.
+
+54
+00:03:36,290 --> 00:03:40,330
+Or since as is the reserve name let's use switched.
+
+55
+00:03:40,340 --> 00:03:44,000
+So here I want to output switched and I want to pass.
+
+56
+00:03:44,030 --> 00:03:50,060
+True since as the on case and you don't want to use switched and pass false because you want to set
+
+57
+00:03:50,060 --> 00:03:51,280
+it to false.
+
+58
+00:03:51,380 --> 00:03:55,340
+So what I'll do here is I will simply emit with this emit.
+
+59
+00:03:55,340 --> 00:04:01,010
+We learnt that before a custom event and event has to have the name input because that is what the model
+
+60
+00:04:01,250 --> 00:04:02,590
+is waiting for.
+
+61
+00:04:02,900 --> 00:04:11,880
+And then here I can simply output Well the value I'm passing here on aim at is on again and I will pass
+
+62
+00:04:11,880 --> 00:04:13,230
+that on.
+
+63
+00:04:13,310 --> 00:04:22,010
+Now with this let's go back to our main component where we use our own switch and let's add a new paragraph
+
+64
+00:04:22,010 --> 00:04:31,130
+here where I will say switched to output the data switch property this data which property again is
+
+65
+00:04:31,130 --> 00:04:32,930
+bound to my custom component.
+
+66
+00:04:32,930 --> 00:04:35,970
+Let's see if this works how should we see true here.
+
+67
+00:04:35,990 --> 00:04:39,030
+And if I switch this to off it changes to false.
+
+68
+00:04:39,140 --> 00:04:45,680
+And with that we built our own control very very easily as you see by adding a new component which has
+
+69
+00:04:45,680 --> 00:04:47,020
+these two key features.
+
+70
+00:04:47,030 --> 00:04:49,490
+It has to have to work with we model.
+
+71
+00:04:49,520 --> 00:04:52,920
+It takes a prop of value and it emits an input event.
+
+72
+00:04:53,000 --> 00:04:56,120
+All the other logic inside this component is totally up to you.
+
+73
+00:04:56,120 --> 00:04:58,550
+This may be much more complex than just two deaths.
+
+74
+00:04:58,550 --> 00:05:00,470
+Of course this is up to you.
+
+75
+00:05:00,470 --> 00:05:06,860
+The key thing is that what you get in value and what you output the input event and with that you can
+
+76
+00:05:06,860 --> 00:05:10,610
+use your own components as controls in your foreigns awesome.
+

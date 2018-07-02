@@ -1,0 +1,432 @@
+1
+00:00:01,840 --> 00:00:04,290
+So we want to make these action buttons your work.
+
+2
+00:00:04,300 --> 00:00:07,630
+We want to be able to deal damage and to heal ourselves.
+
+3
+00:00:08,020 --> 00:00:12,910
+That will involve a bit more code since this really is our core logic of this game.
+
+4
+00:00:12,910 --> 00:00:18,940
+But let's start simple by hooking up these buttons to events or two event listeners in my HD I'm all
+
+5
+00:00:18,940 --> 00:00:20,060
+killed.
+
+6
+00:00:20,080 --> 00:00:21,140
+Here are the buttons.
+
+7
+00:00:21,160 --> 00:00:26,710
+And of course I want to add listeners with the AT or the onset and text whatever you prefer.
+
+8
+00:00:26,980 --> 00:00:33,850
+So I want to listen to a click event here and here I want to execute the attack method for a special
+
+9
+00:00:33,850 --> 00:00:34,410
+attack.
+
+10
+00:00:34,440 --> 00:00:38,240
+Also want to listen to click and execute special attack.
+
+11
+00:00:38,260 --> 00:00:44,010
+I will have to treat all these methods here of course for he'll I want to execute.
+
+12
+00:00:44,260 --> 00:00:45,540
+Unsurprisingly.
+
+13
+00:00:45,940 --> 00:00:48,660
+And you guessed it what I want to execute here for.
+
+14
+00:00:48,650 --> 00:00:53,200
+Give up give up even though we never give up do we.
+
+15
+00:00:53,200 --> 00:00:56,440
+So this is the Collect listener part.
+
+16
+00:00:56,440 --> 00:01:00,450
+Next I want to create disfunctions in my app chess file.
+
+17
+00:01:00,730 --> 00:01:07,830
+So here I end the methods object I add the attack function like this.
+
+18
+00:01:08,910 --> 00:01:14,760
+Then I add these special attack function like this.
+
+19
+00:01:14,770 --> 00:01:18,800
+I also want to add the heal function here.
+
+20
+00:01:20,640 --> 00:01:25,360
+And let's add the give up function.
+
+21
+00:01:25,380 --> 00:01:29,870
+These are the four functions we can execute for the Spartans.
+
+22
+00:01:29,940 --> 00:01:34,370
+Now let's think about which logic belongs into these functions in attack.
+
+23
+00:01:34,380 --> 00:01:36,890
+We want to deal damage to the monster the monster.
+
+24
+00:01:36,890 --> 00:01:41,740
+Also in each of these cases except for give up all the deals damage to us.
+
+25
+00:01:41,970 --> 00:01:47,140
+So we want to deal damage to the monster in attack gets damage and then kind of yes.
+
+26
+00:01:47,280 --> 00:01:53,970
+And to turn or simply be finished with dead in special attack it's the same but we want to do more damage
+
+27
+00:01:54,360 --> 00:01:54,980
+and then heal.
+
+28
+00:01:54,990 --> 00:02:00,510
+We want to heal ourselves instead of deal damage and give up we want to reset and restart the game or
+
+29
+00:02:00,570 --> 00:02:02,320
+start a new game.
+
+30
+00:02:02,370 --> 00:02:03,700
+How do we do that.
+
+31
+00:02:03,750 --> 00:02:06,870
+Let's start at the top with attack here.
+
+32
+00:02:06,930 --> 00:02:11,770
+The first thing is that we need to calculate the damage we deal.
+
+33
+00:02:12,000 --> 00:02:19,880
+So I create a new variable called damage here and damage shall be a random number.
+
+34
+00:02:19,890 --> 00:02:24,680
+Now we also want to control the highest and lowest possible damage.
+
+35
+00:02:24,810 --> 00:02:31,230
+So how could we do this we could create where we can generate a random number with Moff read them but
+
+36
+00:02:31,230 --> 00:02:34,740
+this will be between 0 and 1 1 exclude it.
+
+37
+00:02:34,770 --> 00:02:37,350
+So this is not what we want.
+
+38
+00:02:37,350 --> 00:02:47,340
+We want to have a maximum damage so let's create Max here and let's set it to 10 for example.
+
+39
+00:02:47,580 --> 00:02:52,280
+We also will set up a minimum damage damage men which is free.
+
+40
+00:02:52,350 --> 00:03:01,600
+Now since Moff random was between Ciro and 1 we showed multiplied with Max to now be between 0 and well-tended
+
+41
+00:03:01,650 --> 00:03:02,690
+but 10 excluded.
+
+42
+00:03:02,700 --> 00:03:04,770
+So 9 dot dot 9 9 9.
+
+43
+00:03:04,800 --> 00:03:06,580
+It's a floating point number.
+
+44
+00:03:06,780 --> 00:03:14,530
+So does is STILL do what we want we want to have an integer 10 included not excluded to get there.
+
+45
+00:03:14,550 --> 00:03:20,880
+I will wrap this in parentheses and I will get the floor off.
+
+46
+00:03:20,940 --> 00:03:28,110
+With the more floor function where I pass this random number between 0 and 9 9 9 9 9 9.
+
+47
+00:03:28,230 --> 00:03:33,970
+Now we have a random number an integer number between 0 and 9.
+
+48
+00:03:34,350 --> 00:03:38,330
+Well if I add one here we get 1 between 1 and 10.
+
+49
+00:03:38,350 --> 00:03:39,750
+We're almost there.
+
+50
+00:03:39,990 --> 00:03:44,950
+But I said I want to have a minimum then and damage free and not 1.
+
+51
+00:03:45,240 --> 00:03:52,350
+So in order to do this I will use the math max function to get the maximum number and that either is
+
+52
+00:03:52,350 --> 00:03:55,000
+my random number here or the minimum.
+
+53
+00:03:55,020 --> 00:04:00,130
+So if my random number is 1 or 2 then will take the minimum free.
+
+54
+00:04:00,240 --> 00:04:02,060
+Otherwise we'll will take the random number.
+
+55
+00:04:02,250 --> 00:04:06,240
+So with that we get a random number between free and 10.
+
+56
+00:04:06,480 --> 00:04:08,320
+That's some general arithmetic.
+
+57
+00:04:08,340 --> 00:04:10,320
+Nice to know anyway I guess.
+
+58
+00:04:10,500 --> 00:04:12,330
+So this is the random damage.
+
+59
+00:04:12,330 --> 00:04:14,640
+I want a deal here.
+
+60
+00:04:14,700 --> 00:04:19,420
+And also I will use a similar calculation for the monster damage.
+
+61
+00:04:19,860 --> 00:04:27,570
+So here for this random damage I then want to take the monster health and reduce it by this damage we
+
+62
+00:04:27,570 --> 00:04:28,530
+dealt.
+
+63
+00:04:28,890 --> 00:04:36,360
+Now of course the monster altar's shell damage to us here and therefore we basically to run the same
+
+64
+00:04:36,360 --> 00:04:39,510
+logic for the monster.
+
+65
+00:04:39,510 --> 00:04:44,210
+Now let's say the monster should have a little action us and should deal more damage.
+
+66
+00:04:44,250 --> 00:04:49,020
+So for dead you might set Max back to or change it to 12.
+
+67
+00:04:49,200 --> 00:04:56,650
+And mittened you five and then here all recalculate the damage based on that.
+
+68
+00:04:56,790 --> 00:05:02,460
+And then I can't say this player health is reduced by damage.
+
+69
+00:05:02,490 --> 00:05:04,980
+Now clearly we're repeating ourselves here.
+
+70
+00:05:05,010 --> 00:05:12,620
+We have a lot of duplicate code so we should we factor this and outsourcing to different functions.
+
+71
+00:05:12,690 --> 00:05:16,890
+But before doing zil Let's see if this generally works.
+
+72
+00:05:16,890 --> 00:05:25,050
+If I save this and I reload my application and start a new game let's click attack on it just change.
+
+73
+00:05:25,050 --> 00:05:27,440
+So let's see it here in the next age.
+
+74
+00:05:27,480 --> 00:05:30,690
+Well yeah that should be attacked not attach that CD.
+
+75
+00:05:30,700 --> 00:05:38,650
+Our command should be right so we're dead reloading should now correctly reduce the health.
+
+76
+00:05:38,740 --> 00:05:44,040
+Now let's reduce the health and seems like we're losing which is not surprising with because we would
+
+77
+00:05:44,040 --> 00:05:49,730
+require a lot of luck since the monster has a higher minimum and maximum damage.
+
+78
+00:05:49,950 --> 00:05:55,080
+So let's continue and lose our battle and we're dead and nothing happens.
+
+79
+00:05:55,080 --> 00:05:57,970
+We're getting a negative health here now.
+
+80
+00:05:58,350 --> 00:06:00,470
+So the app is not working how.
+
+81
+00:06:00,470 --> 00:06:05,280
+Should we also need to check if we're winning or not.
+
+82
+00:06:05,280 --> 00:06:12,660
+So the next tasks are really factoring this code and checking if we're losing or not let's implement
+
+83
+00:06:12,660 --> 00:06:18,380
+this check first so that we can correctly recognize if we're dead or not.
+
+84
+00:06:18,570 --> 00:06:24,830
+How do we check for that well after we dealt damage to the monster we want to check if we won.
+
+85
+00:06:25,150 --> 00:06:29,430
+And after the monster dealt damage to us we went to check if the monster won.
+
+86
+00:06:29,530 --> 00:06:31,000
+So let's start here.
+
+87
+00:06:31,330 --> 00:06:38,770
+If the monster health here is smaller or equal to zero then we won.
+
+88
+00:06:39,040 --> 00:06:43,230
+So here we wanna outpoured alert for now.
+
+89
+00:06:43,240 --> 00:06:47,050
+You one like this.
+
+90
+00:06:47,050 --> 00:06:47,730
+We all do.
+
+91
+00:06:47,740 --> 00:06:52,900
+Let's say when I said gameness running to falls again I'll change this later on but for now it is all
+
+92
+00:06:52,900 --> 00:06:53,850
+at want.
+
+93
+00:06:54,010 --> 00:06:57,370
+Also I don't want to execute the code down there.
+
+94
+00:06:57,370 --> 00:07:01,860
+The monster shouldn't deal damage to us because we won the game is over.
+
+95
+00:07:02,200 --> 00:07:05,230
+So I'll return here to finish this function.
+
+96
+00:07:05,230 --> 00:07:06,510
+Exit out of it.
+
+97
+00:07:06,850 --> 00:07:13,240
+The same issue after the monster Dud's damage to us here we want to check if the player health is smaller
+
+98
+00:07:13,240 --> 00:07:14,440
+or equal to zero.
+
+99
+00:07:14,470 --> 00:07:19,520
+In which case he would have lost and now the game is also over and we don't need a return here.
+
+100
+00:07:19,570 --> 00:07:21,470
+There is no code after that.
+
+101
+00:07:21,850 --> 00:07:27,130
+So with dead if my reload does start a new game and we lose again.
+
+102
+00:07:27,370 --> 00:07:35,710
+You see now we got you lost and correctly the game is reset and we can start a new one here so that
+
+103
+00:07:35,770 --> 00:07:37,670
+already works.
+
+104
+00:07:37,680 --> 00:07:43,870
+Now we get even more to the factor now because we are all kind of repeating this code here and we will
+
+105
+00:07:43,870 --> 00:07:50,020
+have to copy this checking here if we lost or one into each of the following functions here where we
+
+106
+00:07:50,020 --> 00:07:51,870
+have a special attack and heal.
+
+107
+00:07:51,970 --> 00:07:58,750
+So it's definitely time to refactor our code and create some new functions for checking the wind condition
+
+108
+00:07:59,020 --> 00:08:00,570
+and calculating the damage.
+

@@ -1,0 +1,164 @@
+1
+00:00:02,560 --> 00:00:11,030
+This starting set up I'm well it's starting with it's the default set up we use throughout the course
+
+2
+00:00:11,290 --> 00:00:16,580
+is the web page simple template installed with the view Seelye.
+
+3
+00:00:16,580 --> 00:00:18,250
+And I haven't added that much.
+
+4
+00:00:18,300 --> 00:00:20,650
+The after View fall is pretty empty.
+
+5
+00:00:20,650 --> 00:00:26,380
+Only added to this container day of year with the bootstrap container class which I as always also added
+
+6
+00:00:26,390 --> 00:00:29,740
+here as I import and my index H.T. a mouthful.
+
+7
+00:00:29,780 --> 00:00:35,450
+The main touchiest file is pretty much untouched so you can simply install the MPEG symbol template
+
+8
+00:00:35,450 --> 00:00:37,760
+and should get the same result.
+
+9
+00:00:37,760 --> 00:00:44,720
+Now one thing we can do right away is since we're going to use you x we want to install this stage to
+
+10
+00:00:44,780 --> 00:00:47,260
+reset which gives us access to the spread.
+
+11
+00:00:47,280 --> 00:00:49,010
+OPERATOR We're going to use it later on.
+
+12
+00:00:49,010 --> 00:00:56,940
+So let's get started right away with NPM install minus minus say death as it's development only dependency.
+
+13
+00:00:57,080 --> 00:01:07,940
+We can install Babel preset stage 2 and this will download it and once it is downloaded we can go to
+
+14
+00:01:07,940 --> 00:01:12,710
+the Bible RC file and simply add it here to our presets.
+
+15
+00:01:12,740 --> 00:01:15,860
+So here I want to add it to this array of pre-sets.
+
+16
+00:01:15,890 --> 00:01:17,570
+The stage to reset.
+
+17
+00:01:17,620 --> 00:01:20,030
+This again locks does spread.
+
+18
+00:01:20,030 --> 00:01:21,040
+Operator.
+
+19
+00:01:21,260 --> 00:01:24,170
+Well besides dad we get everything we need.
+
+20
+00:01:24,170 --> 00:01:29,830
+And with that let's let's first think about how should our application be laid out.
+
+21
+00:01:30,080 --> 00:01:33,680
+If you recall the app from the last video the app will go into bult.
+
+22
+00:01:33,770 --> 00:01:39,680
+We had a header so that certainly makes up for a good separate component and then we had basically three
+
+23
+00:01:39,680 --> 00:01:40,190
+routes.
+
+24
+00:01:40,220 --> 00:01:43,280
+We had a home page where we had d.
+
+25
+00:01:43,490 --> 00:01:46,600
+Please go somewhere you have so much fun.
+
+26
+00:01:47,240 --> 00:01:47,800
+Text.
+
+27
+00:01:47,810 --> 00:01:55,190
+Then we had the stocks page where we could buy stocks and then we had the portfolio page where we could
+
+28
+00:01:56,030 --> 00:01:59,520
+look at our Scott stocks and sell them of course.
+
+29
+00:01:59,570 --> 00:02:05,690
+So these were the free pages we had plus the header sound like we at least need these four components.
+
+30
+00:02:05,690 --> 00:02:12,290
+Now 40 individual stocks on the stocks and on the portfolio page we're probably also needing some extra
+
+31
+00:02:12,290 --> 00:02:15,070
+components or at least that makes sense to create them.
+
+32
+00:02:15,170 --> 00:02:21,180
+You want to choose your components to be granular enough but you also don't want to make every badness
+
+33
+00:02:21,820 --> 00:02:23,090
+its own component.
+
+34
+00:02:23,120 --> 00:02:25,230
+So kind of find the right balance there.
+
+35
+00:02:25,460 --> 00:02:26,390
+So this what the delay.
+
+36
+00:02:26,450 --> 00:02:27,700
+I have in mind.
+
+37
+00:02:27,980 --> 00:02:34,220
+And with that I'd say Why don't we get started in the next video with setting up all these main components
+
+38
+00:02:34,220 --> 00:02:39,560
+we can think of right now and then setting up the routing so that we can switch between them and then
+
+39
+00:02:39,560 --> 00:02:40,670
+we go from there.
+
+40
+00:02:40,670 --> 00:02:41,730
+Sounds like a plan.
+
+41
+00:02:41,870 --> 00:02:42,900
+Let's start with that.
+

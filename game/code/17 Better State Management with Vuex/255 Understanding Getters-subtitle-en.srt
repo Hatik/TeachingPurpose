@@ -1,0 +1,40 @@
+1
+00:00:02,120 --> 00:00:08,180
+For debt problem I just described the last video where we do have more complex calculations when fetching
+
+2
+00:00:08,180 --> 00:00:13,700
+our state and possibly do we have this in multiple parts of her application for this problem.
+
+3
+00:00:13,700 --> 00:00:19,400
+We do have a solution instead of directly accessing our state in a computer and where we want to access
+
+4
+00:00:19,400 --> 00:00:20,040
+it.
+
+5
+00:00:20,060 --> 00:00:27,870
+We can create a Gedor such a getter would then get the state from the store and perform any calculations
+
+6
+00:00:27,870 --> 00:00:29,220
+that should perform.
+
+7
+00:00:29,420 --> 00:00:33,260
+But then we X-ists does getter from our different components.
+
+8
+00:00:33,290 --> 00:00:40,220
+Hence our calculation our code is stored in one place and then we only reach out to that Geter from
+
+9
+00:00:40,220 --> 00:00:44,750
+the pieces in our application where we want to reach and let's have a look at how we could implement
+
+10
+00:00:44,750 --> 00:00:46,400
+this in the next video.
+

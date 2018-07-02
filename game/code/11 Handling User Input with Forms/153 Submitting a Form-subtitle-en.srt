@@ -1,0 +1,140 @@
+1
+00:00:01,710 --> 00:00:06,300
+Now let's finish up this module by having a look at the submit button here.
+
+2
+00:00:06,310 --> 00:00:07,740
+Right now we're not using it.
+
+3
+00:00:07,800 --> 00:00:10,530
+I'm always displaying all the data down there.
+
+4
+00:00:10,530 --> 00:00:13,670
+Now I want to simply hook up this submit button.
+
+5
+00:00:13,710 --> 00:00:17,140
+So I want to add a click listener to it.
+
+6
+00:00:17,190 --> 00:00:23,460
+And on this click listener I will add pre-event to prevent inform submission because this button here
+
+7
+00:00:23,460 --> 00:00:26,490
+is the only button in my form element.
+
+8
+00:00:26,760 --> 00:00:32,160
+And if you get a button in a form element it will by default once you hit it submit that form to the
+
+9
+00:00:32,160 --> 00:00:32,670
+server.
+
+10
+00:00:32,670 --> 00:00:36,450
+Now we don't want to do that because our server is not the place where we want to handle it.
+
+11
+00:00:36,450 --> 00:00:37,990
+We want to hand lead with view.
+
+12
+00:00:38,070 --> 00:00:38,940
+Yes.
+
+13
+00:00:38,990 --> 00:00:43,860
+Therefore do you prevent modify mixture of it not sending a request to the server instead we prevent
+
+14
+00:00:43,920 --> 00:00:47,200
+this default behavior and let you chase handle that.
+
+15
+00:00:47,430 --> 00:00:50,350
+So a year I will simply add event or method.
+
+16
+00:00:50,370 --> 00:00:52,410
+I want to execute submitted.
+
+17
+00:00:52,650 --> 00:01:00,590
+And then I need to add this here to my methods property or object down there in my view instance here
+
+18
+00:01:00,600 --> 00:01:07,940
+I got my submitted method and here I simply want to say it is submitted Of course I have to create this
+
+19
+00:01:07,940 --> 00:01:09,970
+property to True.
+
+20
+00:01:10,010 --> 00:01:14,390
+That means that here I can now create a new property or I have to create this new property which is
+
+21
+00:01:14,390 --> 00:01:20,660
+set to false initially and I want to use this property to conditionally show or not yield this data
+
+22
+00:01:20,690 --> 00:01:21,290
+panel.
+
+23
+00:01:21,320 --> 00:01:29,720
+So this whole row here I will add the if here I can simply check if it is submitted that will be a boolean
+
+24
+00:01:29,720 --> 00:01:30,660
+true or false.
+
+25
+00:01:30,770 --> 00:01:35,560
+And if it is false like it is initially we shouldn't see that data field only after we hit the button.
+
+26
+00:01:35,600 --> 00:01:36,720
+Should we see it.
+
+27
+00:01:36,770 --> 00:01:38,430
+So if safe doesn't go back.
+
+28
+00:01:38,600 --> 00:01:40,970
+We indeed see the data field is gone.
+
+29
+00:01:40,970 --> 00:01:44,300
+Now let's enter some data in our input here.
+
+30
+00:01:44,480 --> 00:01:50,050
+And if I hit submit we see up here down there with the data we add it.
+
+31
+00:01:50,120 --> 00:01:53,690
+And with this we can still update it of course because this is how does this set up.
+
+32
+00:01:53,810 --> 00:01:56,060
+But now we're able to use that reset button.
+
+33
+00:01:56,060 --> 00:01:57,390
+Very important here.
+
+34
+00:01:57,440 --> 00:02:01,670
+The pre-event option year which makes sure I'm not submitting it to the server.
+
+35
+00:02:01,670 --> 00:02:05,940
+And then we can go from there and handle our data in the submitted method.
+

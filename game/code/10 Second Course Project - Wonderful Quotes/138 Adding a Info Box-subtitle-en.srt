@@ -1,0 +1,52 @@
+1
+00:00:01,980 --> 00:00:06,780
+Let's implement the functionality to delete quotes for data.
+
+2
+00:00:06,780 --> 00:00:14,190
+First of all the app that you file one add the little info box telling me that I should click on a quote
+
+3
+00:00:14,190 --> 00:00:17,940
+to delete it for dad or use a bootstrap row.
+
+4
+00:00:18,210 --> 00:00:25,230
+And in that row simply a column which spans over the whole width and in their.
+
+5
+00:00:25,450 --> 00:00:32,520
+I also want to center my text text center is a helper class provide a bootstrap which does just that.
+
+6
+00:00:32,770 --> 00:00:34,560
+And then I will have an alert.
+
+7
+00:00:34,610 --> 00:00:41,560
+This is the box with the rounded quarter corner but do not make it read all at alert info class.
+
+8
+00:00:41,770 --> 00:00:47,600
+And then I can simply say in full click on a code to delete it like this.
+
+9
+00:00:47,740 --> 00:00:50,330
+Delete with lowercase D.
+
+10
+00:00:50,350 --> 00:00:51,870
+Now we see the box here.
+
+11
+00:00:52,030 --> 00:00:57,970
+Now to make quoad still eatable I need to make them clickable and then and when I click them I kind
+
+12
+00:00:57,970 --> 00:01:02,450
+of need to access my array year and delete the quote from it.
+
+13
+00:01:02,500 --> 00:01:03,770
+Let's do that next.
+

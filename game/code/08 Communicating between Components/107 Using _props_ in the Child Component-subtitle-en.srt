@@ -1,0 +1,56 @@
+1
+00:00:01,680 --> 00:00:04,520
+So the passing of the property works fine.
+
+2
+00:00:04,520 --> 00:00:11,380
+You can use props like it is important to note we not only output in the template of course we could
+
+3
+00:00:11,380 --> 00:00:20,710
+also have a method here so methods array where we have switch name and as a function where I simply
+
+4
+00:00:20,710 --> 00:00:27,910
+want to return this my name so I can access it with this like I can access any property in the data
+
+5
+00:00:27,910 --> 00:00:36,280
+property it set up in the same way this my name split because it is an array in the end a string is
+
+6
+00:00:36,280 --> 00:00:43,660
+just an array of character split with well an empty string so to split on each character then rewords
+
+7
+00:00:43,660 --> 00:00:47,190
+set and then shown it on each character.
+
+8
+00:00:47,940 --> 00:00:52,260
+This simply will reverse the name and that of course you're executed.
+
+9
+00:00:52,260 --> 00:01:00,630
+So switch name and that will as you see work fine to say on Max of course.
+
+10
+00:01:00,630 --> 00:01:08,340
+The reason why it works fine is that I can of course use this props here like a normal property in my
+
+11
+00:01:08,340 --> 00:01:11,310
+whole view object they have down there.
+
+12
+00:01:11,370 --> 00:01:18,240
+I can access it with this I can access it like a normal brute like a normal property set up in the data
+
+13
+00:01:18,390 --> 00:01:19,350
+object.
+
+14
+00:01:19,350 --> 00:01:25,920
+This is so important to understand dessous why that is a perfectly valid way to use my props.
+

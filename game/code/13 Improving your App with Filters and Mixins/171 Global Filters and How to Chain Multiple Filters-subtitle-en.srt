@@ -1,0 +1,92 @@
+1
+00:00:02,130 --> 00:00:07,240
+So in the last lecture we learned how to treat a local folder with the folders property and our view
+
+2
+00:00:07,240 --> 00:00:11,600
+instance or view component and how to use it with the pipe symbol there.
+
+3
+00:00:11,740 --> 00:00:17,230
+You also learned that we need to pass a value and return to transform value important again that only
+
+4
+00:00:17,230 --> 00:00:20,290
+transforms the value that we see are in the template.
+
+5
+00:00:20,290 --> 00:00:24,240
+It doesn't transform the data property it solves so it doesn't transform text.
+
+6
+00:00:24,250 --> 00:00:25,620
+It only transforms the output.
+
+7
+00:00:25,670 --> 00:00:27,280
+That's important to understand.
+
+8
+00:00:27,280 --> 00:00:29,720
+Now that let's create a global filter here.
+
+9
+00:00:29,740 --> 00:00:35,470
+I already have a name to lowercase and there we want to pass the function as the second argument which
+
+10
+00:00:35,470 --> 00:00:39,150
+should get executed here of course we also get the value.
+
+11
+00:00:39,190 --> 00:00:45,350
+And here I want to return the value to whip's to lower case like this.
+
+12
+00:00:45,430 --> 00:00:49,330
+So it does the opposite of the uppercase folder with this folder set up.
+
+13
+00:00:49,330 --> 00:00:50,100
+I want to use it.
+
+14
+00:00:50,110 --> 00:00:55,080
+And now I can also show you how to change faulter as I can simply add another pipe.
+
+15
+00:00:55,090 --> 00:01:00,660
+Now this folder here will then use all the content in front of it as an input.
+
+16
+00:01:00,840 --> 00:01:08,480
+So the text transform to uppercase is now a new value passed to two lowercase year.
+
+17
+00:01:08,490 --> 00:01:10,310
+Now let's save this.
+
+18
+00:01:10,600 --> 00:01:14,470
+And we see now it's all lowercase because now the following happens.
+
+19
+00:01:14,590 --> 00:01:20,380
+I pass text to uppercase there it gets transformed to be all uppercase letters.
+
+20
+00:01:20,590 --> 00:01:24,040
+And then I take this result and pass it to two lowercase.
+
+21
+00:01:24,100 --> 00:01:28,730
+There it gets transform to be all lower case letters which is what we see here.
+
+22
+00:01:29,020 --> 00:01:35,830
+And that really is it that are folder's does this is how we create our own folders both Clovelly here
+
+23
+00:01:36,220 --> 00:01:42,490
+and locally here with the folders property how we pass value how we returned and how we can change them.
+

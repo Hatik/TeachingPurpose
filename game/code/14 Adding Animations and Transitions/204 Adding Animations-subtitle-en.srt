@@ -1,0 +1,360 @@
+1
+00:00:01,740 --> 00:00:05,050
+So the application is working but it's not really pretty.
+
+2
+00:00:05,100 --> 00:00:08,480
+This instance snapping here now we can animate this.
+
+3
+00:00:08,670 --> 00:00:10,290
+So let's do that.
+
+4
+00:00:10,290 --> 00:00:13,820
+I actually will use a simple transition as we learned it.
+
+5
+00:00:13,980 --> 00:00:15,580
+So here I will add.
+
+6
+00:00:15,580 --> 00:00:18,560
+Transition like this.
+
+7
+00:00:18,900 --> 00:00:26,490
+And then for this transition I want to set up a name and the name is fliped because I want to flip this.
+
+8
+00:00:26,490 --> 00:00:31,980
+Now it could also dynamically bind this to some property if I wanted to switch the transition and that
+
+9
+00:00:31,980 --> 00:00:34,120
+could be a nice challenge for you to do.
+
+10
+00:00:34,200 --> 00:00:40,110
+But hirable hard code it and it will set the mode to out in sort of the old component is first removed
+
+11
+00:00:40,110 --> 00:00:42,610
+before the new one is animated in.
+
+12
+00:00:42,750 --> 00:00:46,030
+Now of course since I add Phlip here I need to add a couple of.
+
+13
+00:00:46,110 --> 00:00:53,940
+See us as classes down there specifically I need to have Phlip enter but as a side note of course you
+
+14
+00:00:53,940 --> 00:00:58,170
+don't need to have it if you don't enter any code in there or just want to show which classes we could
+
+15
+00:00:58,170 --> 00:00:58,920
+use.
+
+16
+00:00:58,920 --> 00:01:00,530
+Flip ENTRAR active.
+
+17
+00:01:00,750 --> 00:01:04,750
+And then of course we also have Phlip leave whip's like that
+
+18
+00:01:07,880 --> 00:01:14,110
+and of course also Phlip leave active like this.
+
+19
+00:01:14,130 --> 00:01:20,370
+These are the classes and since I want to flip it I will need some keyframes to use a C as s animation
+
+20
+00:01:20,370 --> 00:01:21,220
+to do that.
+
+21
+00:01:21,450 --> 00:01:29,640
+So hearable have flipped out from and and let's say of course you could be more granular by specifying
+
+22
+00:01:29,640 --> 00:01:30,690
+in-between steps.
+
+23
+00:01:30,690 --> 00:01:38,160
+For example and I will also have keyframes Fulop in like this.
+
+24
+00:01:38,280 --> 00:01:44,950
+And here I also want to have simply from and to now which animations do I want to set up here.
+
+25
+00:01:45,210 --> 00:01:53,640
+Well for flip out I want to transform and I want to rotate twice a rotate around the y axis which is
+
+26
+00:01:53,640 --> 00:01:58,580
+this animation so Knot's not x y rotate Y.
+
+27
+00:01:58,920 --> 00:02:06,150
+And initially I want to rotate at base 0 degrees because I will start at having it well not rotated
+
+28
+00:02:06,150 --> 00:02:07,100
+at all.
+
+29
+00:02:07,210 --> 00:02:15,360
+That having it really like this not like this not like this really at zero degrees but I want to transform
+
+30
+00:02:15,360 --> 00:02:24,950
+to rotate wide 90 degrees so that it now is from this switch to this.
+
+31
+00:02:24,980 --> 00:02:29,800
+Of course you want to do a full flip and the other half will be done and flip in because that should
+
+32
+00:02:29,800 --> 00:02:31,150
+already be the new card.
+
+33
+00:02:31,180 --> 00:02:37,510
+The new component if it would animate the old car to do a full flip well and we would just see an empty
+
+34
+00:02:37,510 --> 00:02:41,460
+background a white or a gray background and not a new card as a background.
+
+35
+00:02:41,470 --> 00:02:45,700
+Therefore the second half of the Flip has to be done on the new component.
+
+36
+00:02:45,700 --> 00:02:49,750
+Therefore here for flip in which we'll add new one.
+
+37
+00:02:49,750 --> 00:02:53,660
+We we have to start at this point where the first one stops.
+
+38
+00:02:53,680 --> 00:03:02,530
+So at 90 degrees and we when one to transform all the way down to zero degrees again so that the new
+
+39
+00:03:03,220 --> 00:03:08,130
+component which gets added in is now rotated fully talked you.
+
+40
+00:03:08,140 --> 00:03:09,250
+I hope that makes sense.
+
+41
+00:03:09,280 --> 00:03:15,370
+Rotate your old one out until it is exactly at 90 degrees so almost invisible so to say.
+
+42
+00:03:15,610 --> 00:03:20,450
+And then if you would leave it to continue to 1 had an 80 percent we would see the back side of it which
+
+43
+00:03:20,470 --> 00:03:22,560
+says some default gray color.
+
+44
+00:03:22,720 --> 00:03:24,870
+Therefore the back side should be the new component.
+
+45
+00:03:24,910 --> 00:03:31,430
+Which is why this takes over at 90 degrees well with that animation set up here.
+
+46
+00:03:31,570 --> 00:03:33,780
+Let's see what do we need to set here.
+
+47
+00:03:34,090 --> 00:03:40,320
+Well flip enter this should be transform
+
+48
+00:03:42,760 --> 00:03:43,570
+rotate.
+
+49
+00:03:43,570 --> 00:03:44,470
+Why not.
+
+50
+00:03:44,470 --> 00:03:50,410
+Zero degrees though we shouldn't need that because that is the starting state here and from there we
+
+51
+00:03:50,410 --> 00:03:55,030
+could remove the whole flip entry class I'm just leaving it here so that again you see all the classes
+
+52
+00:03:55,030 --> 00:03:59,000
+you could use flip ENTRAR act active year desires.
+
+53
+00:03:59,070 --> 00:04:07,510
+While Steve Phlip in any mation place well this shell used the flip in any mation over let's say half
+
+54
+00:04:07,510 --> 00:04:12,210
+a second of course choose any timeframe of your choice or your preference.
+
+55
+00:04:12,250 --> 00:04:18,430
+I want to use the ease out easing function and forwards to stay in the final place and not snap back
+
+56
+00:04:18,430 --> 00:04:20,850
+to the initial from state.
+
+57
+00:04:20,950 --> 00:04:25,740
+Now for Flip leaf we also want to transform rotate.
+
+58
+00:04:25,750 --> 00:04:30,690
+Why 0 degrees shouldn't be needed too though.
+
+59
+00:04:30,720 --> 00:04:37,110
+So let's Calment this out too and flip leave active Well here I want to have my animation where I want
+
+60
+00:04:37,110 --> 00:04:40,360
+to play flip out over half a second.
+
+61
+00:04:40,650 --> 00:04:45,730
+Ease out and forwards as well just like for Flip interactive Of course you could group them together.
+
+62
+00:04:45,750 --> 00:04:47,290
+But I want to be explicit here.
+
+63
+00:04:47,700 --> 00:04:52,200
+Now with that set up let's see this in the running application if I reload.
+
+64
+00:04:52,410 --> 00:04:58,640
+That should be minus two it almost works but we don't see the flip.
+
+65
+00:04:58,650 --> 00:05:00,570
+Our We only see it then flipped in.
+
+66
+00:05:00,700 --> 00:05:06,410
+But what's happening to the average part of the animation Well what's happening is that this should
+
+67
+00:05:06,410 --> 00:05:07,780
+be called flip out here.
+
+68
+00:05:07,820 --> 00:05:11,930
+So let's reload it again and try this again.
+
+69
+00:05:12,170 --> 00:05:14,270
+Now it looks how it should look like.
+
+70
+00:05:14,430 --> 00:05:19,950
+And if they get the wrong answer like this one I get a warning and the right one flips it.
+
+71
+00:05:20,060 --> 00:05:23,580
+So I know that it's a small practice about animations.
+
+72
+00:05:23,630 --> 00:05:29,560
+Now you could continue practicing by adding more animations here or it for example go back to the monster
+
+73
+00:05:29,570 --> 00:05:31,120
+slay application.
+
+74
+00:05:31,310 --> 00:05:39,070
+And on that try to make a list of the dialogue we use there to lock the player actions and so on.
+
+75
+00:05:39,110 --> 00:05:41,060
+That could be animated with transition group.
+
+76
+00:05:41,060 --> 00:05:44,280
+That would be a nice practice in the next lecture.
+
+77
+00:05:44,390 --> 00:05:51,890
+You will see my updated Monster Slayer code where I added these animations to that application for the
+
+78
+00:05:51,890 --> 00:05:53,200
+group specifically.
+
+79
+00:05:53,330 --> 00:05:57,090
+And then you can compare this because this really is what I want to encourage you to do.
+
+80
+00:05:57,230 --> 00:06:04,180
+Challenge my code and challenge yourself and use the things you learn here especially about animations
+
+81
+00:06:04,190 --> 00:06:08,490
+for example and practice it in existing applications to try to.
+
+82
+00:06:08,490 --> 00:06:12,460
+Any made certain things and play around with it with debt.
+
+83
+00:06:12,470 --> 00:06:13,340
+We achieved a lot.
+
+84
+00:06:13,340 --> 00:06:16,630
+We learned a lot of the basics in this animation.
+
+85
+00:06:16,640 --> 00:06:17,690
+We're all the way in the future.
+
+86
+00:06:17,690 --> 00:06:19,310
+Yes we're old already.
+
+87
+00:06:19,370 --> 00:06:23,640
+Now a one to move on to how we can leave the future.
+
+88
+00:06:23,640 --> 00:06:29,390
+Yes app for a moment and reach out to some server if we need to fetch or store some data something we
+
+89
+00:06:29,390 --> 00:06:31,340
+haven't had a look at yet.
+
+90
+00:06:31,460 --> 00:06:35,960
+So there we will have a look at how we can use HTP in our view Chia's application.
+

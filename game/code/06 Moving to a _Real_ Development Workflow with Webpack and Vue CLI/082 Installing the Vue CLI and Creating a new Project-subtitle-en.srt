@@ -1,0 +1,244 @@
+1
+00:00:01,720 --> 00:00:07,750
+Well that was a lot of talking let's install these Selye Eleazar Adamek we will have to write sudo on
+
+2
+00:00:07,750 --> 00:00:10,380
+windows you don't need this and then NPM.
+
+3
+00:00:10,540 --> 00:00:14,120
+And what is NPM NPM missed the node package manager.
+
+4
+00:00:14,140 --> 00:00:18,330
+So for this to work you will need to install node J.S..
+
+5
+00:00:18,610 --> 00:00:22,300
+You don't need no chest because you are going to write any node Jasc code.
+
+6
+00:00:22,300 --> 00:00:24,600
+We're not going to write any node code.
+
+7
+00:00:24,640 --> 00:00:27,320
+We're not going to write our own server side code.
+
+8
+00:00:27,410 --> 00:00:28,250
+We will need it.
+
+9
+00:00:28,300 --> 00:00:35,860
+So slowly for now four days node package manager which is the de-facto tool to use for front end development
+
+10
+00:00:35,860 --> 00:00:39,810
+to manage your dependencies so we will definitely need this.
+
+11
+00:00:39,940 --> 00:00:46,270
+And also because this development server which will be included in the template we're using so we don't
+
+12
+00:00:46,270 --> 00:00:50,200
+have to write it on our own but it will still use no chance to run.
+
+13
+00:00:50,200 --> 00:00:51,560
+So we need for this too.
+
+14
+00:00:51,700 --> 00:00:56,300
+So make sure to download the current Worsham thirty six point eight point in one word.
+
+15
+00:00:56,350 --> 00:00:59,290
+In this case well at the time I record this video.
+
+16
+00:00:59,380 --> 00:01:05,440
+But the latest one you see here and then downloaded run Freudians Stolar and after it finishes you will
+
+17
+00:01:05,440 --> 00:01:10,810
+have no genius installed and you're ready to use NPM and no chairs for the server.
+
+18
+00:01:11,110 --> 00:01:12,620
+And then you can continue here.
+
+19
+00:01:12,700 --> 00:01:19,380
+So sudo NPM and then install minus g to install it locally on your machine.
+
+20
+00:01:19,460 --> 00:01:20,070
+View.
+
+21
+00:01:20,140 --> 00:01:28,600
+Seelye now after hitting enter all have to enter my password here and that will pull down and install
+
+22
+00:01:28,600 --> 00:01:32,050
+the Seelye on my machine and I'll be back once it is finished.
+
+23
+00:01:32,840 --> 00:01:39,470
+Now that the installation did finish I can get into the folder where I want to store my project full
+
+24
+00:01:39,470 --> 00:01:45,440
+the way I went to create my view Seelye project or my view Jasp project and I can then do this by simply
+
+25
+00:01:45,440 --> 00:01:46,420
+running the view.
+
+26
+00:01:46,460 --> 00:01:49,630
+This is a whaleboat since we just installed the U.S. ally.
+
+27
+00:01:49,850 --> 00:01:56,540
+And then which template I want to use so which template of my project I want to use.
+
+28
+00:01:56,690 --> 00:02:02,690
+If we have a look at the official Bucy I get her page you can find it by googling for view Seelye.
+
+29
+00:02:02,970 --> 00:02:09,180
+You will also find the explanations here but you will also find your way allowable templates I was mentioning
+
+30
+00:02:09,180 --> 00:02:10,370
+on these slides earlier.
+
+31
+00:02:10,440 --> 00:02:15,360
+So I'll just wet Peggs simple set up which has everything we need for discourse.
+
+32
+00:02:15,390 --> 00:02:20,880
+So here it's all about writing the you need to initialize a new project then the template you want to
+
+33
+00:02:20,880 --> 00:02:22,980
+use which is where simple.
+
+34
+00:02:22,980 --> 00:02:25,180
+And then the project full you want to create.
+
+35
+00:02:25,200 --> 00:02:28,730
+I'm going to name my views Seelye this name is totally up to you.
+
+36
+00:02:28,830 --> 00:02:34,230
+Now after hitting enter this will set up this project as you will see it will use the two point X version
+
+37
+00:02:34,230 --> 00:02:38,730
+by default which is what you want if you wanted to use view 1 point x.
+
+38
+00:02:38,730 --> 00:02:42,420
+You have to add that teched is hash tag after the template.
+
+39
+00:02:42,620 --> 00:02:49,960
+So I will confirm the default project name default description as well as my name here.
+
+40
+00:02:50,190 --> 00:02:51,270
+And then we're done.
+
+41
+00:02:51,270 --> 00:02:57,540
+So now let's follow these commands and entered the Seelye folder we just created with that.
+
+42
+00:02:57,720 --> 00:03:03,840
+And then we have to run NPM install to pull down all the dependencies dys needs because this just created
+
+43
+00:03:03,900 --> 00:03:07,740
+the template with the package daat Jason and indice package.
+
+44
+00:03:07,800 --> 00:03:08,830
+Jason File.
+
+45
+00:03:08,830 --> 00:03:14,820
+That's our dependency management files or to say all the dependencies of this project are listed and
+
+46
+00:03:14,820 --> 00:03:17,300
+we're installing all these dependencies here.
+
+47
+00:03:17,310 --> 00:03:21,310
+That being said there is almost only development only dependencies.
+
+48
+00:03:21,360 --> 00:03:27,000
+The only production dependency should be viewed as the rest will be web peg and so on quite a bit.
+
+49
+00:03:27,000 --> 00:03:27,690
+As you can see it.
+
+50
+00:03:27,710 --> 00:03:28,460
+But no worries.
+
+51
+00:03:28,500 --> 00:03:32,130
+We don't do deep we don't need to deploy all of them as I just said.
+
+52
+00:03:32,130 --> 00:03:34,580
+Most of them are only needed for development.
+
+53
+00:03:34,830 --> 00:03:40,990
+So going back up we see that thereafter we should run NPM run Deppe inside this project folder.
+
+54
+00:03:41,070 --> 00:03:44,420
+So let's do this and this will start the development server.
+
+55
+00:03:44,420 --> 00:03:50,460
+We can use and it will keep running so keep this process running and will automatically recompile everything
+
+56
+00:03:50,490 --> 00:03:54,990
+and reload our server automatically whenever we change a file.
+
+57
+00:03:55,020 --> 00:04:00,960
+So let's wisit this you are Ehle here in case it didn't open up automatically which it did here and
+
+58
+00:04:00,960 --> 00:04:03,450
+you should see this starting page.
+
+59
+00:04:03,450 --> 00:04:08,310
+Now that's just a little starting page which shipped with the template of course we're going to edit
+
+60
+00:04:08,310 --> 00:04:10,500
+this and this is what we'll do next.
+
+61
+00:04:10,500 --> 00:04:15,940
+Have a look at the folder structure which was created and how we can work with that project.
+

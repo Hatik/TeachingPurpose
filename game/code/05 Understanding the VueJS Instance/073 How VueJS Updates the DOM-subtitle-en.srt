@@ -1,0 +1,160 @@
+1
+00:00:01,840 --> 00:00:08,050
+One important part of understanding Duchessa is to understand how it handles changes so how it detects
+
+2
+00:00:08,050 --> 00:00:12,490
+that change has occurred and how it then updates the page because neander does what it's doing it's
+
+3
+00:00:12,490 --> 00:00:16,500
+not really loading it it's updating parts of it for a script.
+
+4
+00:00:16,660 --> 00:00:19,860
+We have to view instance on one side and the bomb on the site.
+
+5
+00:00:19,900 --> 00:00:26,290
+I already explained that Devu instance creates and holds a template ever derived from the age HTML code
+
+6
+00:00:26,320 --> 00:00:32,490
+or past to have the template property in this template we might have a message where we say hello.
+
+7
+00:00:32,650 --> 00:00:35,130
+And there's of course also is represented in the dorm.
+
+8
+00:00:35,130 --> 00:00:40,600
+After it has been rendered and you might have other properties used in the dorm were used not a template
+
+9
+00:00:40,690 --> 00:00:45,670
+like this but then finally being printed or painted to dawn.
+
+10
+00:00:45,670 --> 00:00:52,420
+Now what if we changed a message we could think that you chest constantly what's just a message sent.
+
+11
+00:00:52,450 --> 00:00:54,580
+Updates darm if required.
+
+12
+00:00:54,580 --> 00:00:56,010
+The first part is right.
+
+13
+00:00:56,020 --> 00:01:02,650
+Each property we set up has its own watcher and I explained this earlier that you chase when we pass
+
+14
+00:01:02,650 --> 00:01:08,350
+an object to the constructor creates these watchers for all the properties in our data property thus
+
+15
+00:01:08,410 --> 00:01:15,070
+allowing us or thus allowing itself to watch for changes to just properties which announce or which
+
+16
+00:01:15,070 --> 00:01:19,870
+means that it probably needs to update something but it's not updating like dead.
+
+17
+00:01:19,930 --> 00:01:24,970
+It's not constantly updating everything and there are real Dombeck just because it changed.
+
+18
+00:01:24,970 --> 00:01:33,220
+Think of this if we changed message and set it to how low again then technically we touched this property.
+
+19
+00:01:33,220 --> 00:01:39,400
+We changed it but we changed it to the same value as before it would render the part of the dom or worst
+
+20
+00:01:39,400 --> 00:01:45,070
+of all it may be the complete Dom and that would be a real performance hit because accessing the real
+
+21
+00:01:45,070 --> 00:01:48,400
+Dom is the part which takes the most performance.
+
+22
+00:01:48,400 --> 00:01:52,400
+Javascript is super fast but accessing the Dharma's super slow.
+
+23
+00:01:52,480 --> 00:01:56,210
+So we want to do this as seldom as possible.
+
+24
+00:01:56,560 --> 00:02:01,020
+Hence this is not what it does neber for master nor for any other property.
+
+25
+00:02:01,240 --> 00:02:07,480
+Instead it has an extra layer the work till dawn and on the virtual Dom.
+
+26
+00:02:07,480 --> 00:02:14,110
+This is a representation of the real Dom kind of a copy but a copy parsed Inshalla script and therefore
+
+27
+00:02:14,140 --> 00:02:23,260
+very very quick to be accessed viewed S10 simply checks DS or watches IDs changes writes them to does
+
+28
+00:02:23,260 --> 00:02:24,360
+virtual Dom.
+
+29
+00:02:24,430 --> 00:02:29,530
+If we update message for example to Hello everyone even though it might have been set to Hello everyone
+
+30
+00:02:29,530 --> 00:02:32,810
+before it it recreates does virtual.
+
+31
+00:02:32,950 --> 00:02:39,250
+And then it takes the difference between the template and the virtual Dom and only updates this part.
+
+32
+00:02:39,250 --> 00:02:44,540
+In the real dawn so it knows which property did change.
+
+33
+00:02:44,680 --> 00:02:49,420
+Which part of template disaffected What is the current state of the Dawn represented by the word chill
+
+34
+00:02:49,440 --> 00:02:50,080
+Dom.
+
+35
+00:02:50,300 --> 00:02:56,320
+OK I got this heading here or just paragraph or whatever which actually needs to be updated.
+
+36
+00:02:56,410 --> 00:03:02,270
+And now it goes out to the actual Dom to the real Dom and changes this paragraph.
+
+37
+00:03:02,350 --> 00:03:08,620
+And since it also updated D word trolldom it now automatically got an up to date representations of
+
+38
+00:03:08,620 --> 00:03:14,560
+the real Dom without having to take a full copy of that again because again it constantly updates this.
+
+39
+00:03:14,640 --> 00:03:20,110
+Does this how does change detection with the Watchers and updating with the word show on works which
+
+40
+00:03:20,110 --> 00:03:22,750
+makes future as very performant and very fast.
+

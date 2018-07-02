@@ -1,0 +1,284 @@
+1
+00:00:01,300 --> 00:00:08,260
+Off after learning about slots which allow us to distribute content I now want to add some other dynamic
+
+2
+00:00:08,260 --> 00:00:14,740
+thing we can add to our components specifically how we can use something called Dynamic components.
+
+3
+00:00:14,740 --> 00:00:17,150
+Now what are dynamic components.
+
+4
+00:00:17,500 --> 00:00:23,700
+Well imagine you not only have your quote here which you registered as a component but you do have to
+
+5
+00:00:23,790 --> 00:00:25,090
+Aberg components.
+
+6
+00:00:25,300 --> 00:00:32,320
+Let's say you also have the app offer component and the app new component.
+
+7
+00:00:32,440 --> 00:00:39,640
+Now will strictly true Yate these files he earth so I have my offer that you file and then I have my
+
+8
+00:00:39,880 --> 00:00:48,740
+new dog view file for a lower case the here and then I'll quickly copy my code in there.
+
+9
+00:00:48,850 --> 00:00:50,580
+Remove the styling.
+
+10
+00:00:50,590 --> 00:00:51,930
+Don't need that.
+
+11
+00:00:51,930 --> 00:00:58,280
+And all I want to display here inside this div is age free tag where I say the offer.
+
+12
+00:00:58,300 --> 00:01:00,440
+So it's just some dummy content.
+
+13
+00:01:00,640 --> 00:01:07,480
+And in my new quote or excuse me my new component I also only want to display new code so we're not
+
+14
+00:01:07,480 --> 00:01:10,300
+able to do anything here because I want to show something else.
+
+15
+00:01:10,360 --> 00:01:13,110
+But we do have three distinct components now.
+
+16
+00:01:13,410 --> 00:01:17,280
+With that I can quickly import them here so the offer.
+
+17
+00:01:17,440 --> 00:01:19,100
+And of course all too.
+
+18
+00:01:19,270 --> 00:01:21,980
+Didn't you file and then assign it to your
+
+19
+00:01:27,850 --> 00:01:29,880
+so free component someplace.
+
+20
+00:01:29,890 --> 00:01:31,720
+We know that set up.
+
+21
+00:01:31,720 --> 00:01:36,690
+Now I want to dynamically decide which one to display here.
+
+22
+00:01:36,760 --> 00:01:38,620
+I don't want to display all free.
+
+23
+00:01:38,650 --> 00:01:41,120
+I'm not going to add an offer and so on.
+
+24
+00:01:41,140 --> 00:01:43,440
+I'm not going to add all the selectors.
+
+25
+00:01:43,600 --> 00:01:50,050
+Instead I only have one place here where I want to display any of the free components depending on which
+
+26
+00:01:50,050 --> 00:01:51,640
+button was pressed.
+
+27
+00:01:51,640 --> 00:01:54,270
+So I will add three buttons here.
+
+28
+00:01:54,370 --> 00:01:56,870
+Above is component part.
+
+29
+00:01:56,950 --> 00:02:00,640
+The first one will select the code component.
+
+30
+00:02:00,640 --> 00:02:08,710
+The second one will select the offer a component and the last one will select the new component.
+
+31
+00:02:09,310 --> 00:02:18,510
+To make this happen I'll add a new field in my data property and there I want to store the new property
+
+32
+00:02:19,550 --> 00:02:24,560
+selected component lets say and by default this shall be my
+
+33
+00:02:27,180 --> 00:02:30,560
+quote component or code written like this.
+
+34
+00:02:30,570 --> 00:02:33,330
+So the name of this selector here basically.
+
+35
+00:02:33,360 --> 00:02:35,860
+So this will be my default component.
+
+36
+00:02:36,150 --> 00:02:39,570
+And here when I click this I will set and click.
+
+37
+00:02:40,230 --> 00:02:44,770
+Well in this case here I want to say selected component.
+
+38
+00:02:44,880 --> 00:02:47,580
+Walts app quote.
+
+39
+00:02:47,700 --> 00:02:55,670
+So the default but in the average you case of course one to select app offer and here I want to select
+
+40
+00:02:55,680 --> 00:02:57,090
+app new.
+
+41
+00:02:57,090 --> 00:02:59,010
+Now that's not doing anything though.
+
+42
+00:02:59,170 --> 00:03:03,950
+Set this up so I can change this property but it doesn't have any effect.
+
+43
+00:03:03,990 --> 00:03:12,540
+We can see it if I printed out here and then simply output selected component to see if it generally
+
+44
+00:03:12,540 --> 00:03:13,710
+works.
+
+45
+00:03:13,710 --> 00:03:18,510
+So if you save this and I click it all for you we see it change.
+
+46
+00:03:18,540 --> 00:03:21,080
+But now I want you all to change d.
+
+47
+00:03:21,120 --> 00:03:28,820
+Actually loaded component down there to do this or should use a so called dynamic component.
+
+48
+00:03:29,100 --> 00:03:31,550
+How do we do that for this.
+
+49
+00:03:31,590 --> 00:03:39,780
+I will comment out the old selector here so that we still can see it but now I use the component components
+
+50
+00:03:39,780 --> 00:03:40,260
+here.
+
+51
+00:03:40,260 --> 00:03:47,340
+This selector is a reserved word just like slot component is also recognized by UJA and component allows
+
+52
+00:03:47,340 --> 00:03:55,950
+us to dynamically add components I can bind component to a property which holds the component which
+
+53
+00:03:55,950 --> 00:03:58,120
+should sketch which should get loaded.
+
+54
+00:03:58,290 --> 00:04:06,540
+So here to bind it I have to use D is attribute and use a colon to bind it to a data property so due
+
+55
+00:04:06,780 --> 00:04:08,540
+to a dynamic property.
+
+56
+00:04:08,790 --> 00:04:13,710
+And then I want to bind this to selected component like that.
+
+57
+00:04:13,740 --> 00:04:16,980
+What this does is an is a keyword of course.
+
+58
+00:04:16,980 --> 00:04:23,700
+What this does is that this component now gets bound to the selected component property down there which
+
+59
+00:04:23,700 --> 00:04:30,390
+is ABC1 by default and it will then have a look at the value of selected component which has to be a
+
+60
+00:04:30,390 --> 00:04:37,410
+string and that string is then interpreted as the selector of the component which now should get loaded
+
+61
+00:04:37,410 --> 00:04:38,370
+dynamically.
+
+62
+00:04:38,370 --> 00:04:40,260
+So AB code by default.
+
+63
+00:04:40,350 --> 00:04:46,920
+Therefore if I save this and I reload this while we still see it work but we don't pass any content
+
+64
+00:04:46,920 --> 00:04:56,880
+of course because I don't have a content in between if I now say default content here in between and
+
+65
+00:04:57,000 --> 00:05:01,720
+what we see that gets occupied by down there in our default slot.
+
+66
+00:05:01,720 --> 00:05:04,540
+Now watch what happens if I load the offer.
+
+67
+00:05:04,750 --> 00:05:11,530
+Now we the offer component and with new we see the new quote component end quote We go back to the default
+
+68
+00:05:11,530 --> 00:05:12,790
+content.
+
+69
+00:05:12,790 --> 00:05:20,770
+This is how we can use dynamic components to dynamically replace a part in our template with different
+
+70
+00:05:20,770 --> 00:05:27,890
+components triggered by for example button clicks and stored in a property which is bound with the East
+
+71
+00:05:27,890 --> 00:05:28,670
+keyword here.
+

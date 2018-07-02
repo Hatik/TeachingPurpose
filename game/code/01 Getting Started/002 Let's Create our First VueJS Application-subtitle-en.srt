@@ -1,0 +1,268 @@
+1
+00:00:02,080 --> 00:00:06,990
+Getting started with the beauty and creating your first application is actually very simple.
+
+2
+00:00:07,000 --> 00:00:12,310
+We start on the future as Todd or it gets official home page and there you see this nice get started
+
+3
+00:00:12,310 --> 00:00:17,560
+button let's click on it it takes you to the official documentation which is always worth having a look
+
+4
+00:00:17,560 --> 00:00:18,130
+anyways.
+
+5
+00:00:18,190 --> 00:00:20,910
+But there we want to go to installation.
+
+6
+00:00:21,010 --> 00:00:25,660
+Now here you've got a couple of different options depending on which kind of setup you want to use later
+
+7
+00:00:25,660 --> 00:00:29,960
+and of course we'll use a more complex set up using weapons to bundle all our files.
+
+8
+00:00:29,980 --> 00:00:31,750
+But let's start with a simple one.
+
+9
+00:00:32,020 --> 00:00:34,050
+You could either simply download your chest.
+
+10
+00:00:34,070 --> 00:00:37,590
+I will show this in the later video or as I want it now.
+
+11
+00:00:37,690 --> 00:00:39,440
+Simply grab it from a CD.
+
+12
+00:00:39,490 --> 00:00:41,650
+So imported from another server.
+
+13
+00:00:42,160 --> 00:00:46,100
+Here I'll take the first one and then simply copy this whole link.
+
+14
+00:00:46,210 --> 00:00:52,350
+Now if dad can import this link to get access to UK as well I want to do this year on chess.
+
+15
+00:00:52,420 --> 00:00:59,050
+We're just kind of a Web editor you could say for a very simple javascript AGM L and C S S only projects.
+
+16
+00:00:59,410 --> 00:01:03,780
+Here we got our HDMI out section and what we should add a script import.
+
+17
+00:01:03,910 --> 00:01:10,110
+So lets add script and then by hitting tab it will automatically expanded to script text there.
+
+18
+00:01:10,120 --> 00:01:14,680
+I want to add my source attribute and now insert tooling could just copy it.
+
+19
+00:01:14,680 --> 00:01:20,340
+Now you can leave the link like this or you can remove as world number two always automatically fetched
+
+20
+00:01:20,340 --> 00:01:21,560
+the latest version.
+
+21
+00:01:21,880 --> 00:01:27,180
+With that we imported huge S And We can now already use it and all its features.
+
+22
+00:01:27,250 --> 00:01:31,220
+So let's use it and bolt our first little application for dat.
+
+23
+00:01:31,240 --> 00:01:35,390
+I want to add a paragraph in which I want to say hello world.
+
+24
+00:01:35,410 --> 00:01:38,200
+Now saying it like this clearly is not very interesting.
+
+25
+00:01:38,200 --> 00:01:40,930
+There is no javascript involved at any place.
+
+26
+00:01:40,930 --> 00:01:46,280
+Instead I want to output this fruit view as now in order to do so.
+
+27
+00:01:46,510 --> 00:01:53,970
+I will simply go to each script section here and use the word up there to now use one of the major objects
+
+28
+00:01:54,030 --> 00:01:54,350
+does.
+
+29
+00:01:54,400 --> 00:01:58,680
+Import this view Chez framework gives me the view object.
+
+30
+00:01:58,900 --> 00:02:04,050
+Let's create a new instance based on that with the new keyword and then view.
+
+31
+00:02:04,090 --> 00:02:13,000
+This gives us a new view instance and view instances created like this are the core of each view application
+
+32
+00:02:13,000 --> 00:02:14,510
+of each piece of code.
+
+33
+00:02:14,530 --> 00:02:22,750
+You want to use Mujeres and you create such instances and then these instances have one major job control
+
+34
+00:02:22,750 --> 00:02:27,610
+their own template of code of HVM all code which they render to the screen.
+
+35
+00:02:27,650 --> 00:02:34,920
+Now in order to will let you instance do this we have to pass an argument to the constructor function.
+
+36
+00:02:34,930 --> 00:02:39,910
+The argument is a challenge to an object and then we have one very important property beauteous will
+
+37
+00:02:39,910 --> 00:02:42,820
+recognize the L property.
+
+38
+00:02:42,850 --> 00:02:44,940
+This is kind of a research property obviously.
+
+39
+00:02:44,950 --> 00:02:49,080
+You chaps will recognize it and l takes a string as a value.
+
+40
+00:02:49,210 --> 00:02:51,610
+And with this string we set up.
+
+41
+00:02:51,610 --> 00:02:57,930
+Which part of our HVM our code here should be under control of this view instance.
+
+42
+00:02:58,000 --> 00:02:58,920
+Under control.
+
+43
+00:02:58,930 --> 00:03:03,910
+I mean we can then change it frood this view instance you will see this in a few seconds.
+
+44
+00:03:04,210 --> 00:03:10,060
+So here I want to control this part but I want to wrap it in a day of let's say a day which encloses
+
+45
+00:03:10,060 --> 00:03:17,380
+my template for this view instance 0 at a div and the hash tag app and then tab automatically gives
+
+46
+00:03:17,380 --> 00:03:19,060
+me a div with the idea.
+
+47
+00:03:19,330 --> 00:03:25,100
+Now insert my paragraph inside of the Stiv and then I can select this Dave with the idea.
+
+48
+00:03:25,240 --> 00:03:28,760
+By using a string like s.c.s as selector.
+
+49
+00:03:28,780 --> 00:03:34,720
+So with hash tag app I select the element with the idea with dot app I would select the first element
+
+50
+00:03:34,720 --> 00:03:36,460
+with a class of app..
+
+51
+00:03:36,460 --> 00:03:39,660
+Now here I therefore have no control of this day.
+
+52
+00:03:39,670 --> 00:03:42,210
+It is not a template of this view instance.
+
+53
+00:03:42,470 --> 00:03:45,250
+And now in order to output something we need some data.
+
+54
+00:03:45,430 --> 00:03:48,220
+Well Beauty has got a special property for this.
+
+55
+00:03:48,220 --> 00:03:54,580
+The data property and number research property and now this isn't a string it's an object instead and
+
+56
+00:03:54,580 --> 00:03:57,020
+in there we store all the data we want to use.
+
+57
+00:03:57,040 --> 00:03:58,550
+In this view instance.
+
+58
+00:03:58,750 --> 00:04:02,090
+So let's say we want to have a title and his name is totally up to you.
+
+59
+00:04:02,170 --> 00:04:04,480
+Where I say hello world.
+
+60
+00:04:04,480 --> 00:04:09,760
+Now is the time I want to output in my template and before I hardcoded it in here.
+
+61
+00:04:09,790 --> 00:04:15,840
+Now with this template being under control of Eugenius It's as simple as using this special syntax view
+
+62
+00:04:15,850 --> 00:04:21,880
+Chase will recognize with double curly braces opening and closing and in between I can simply write.
+
+63
+00:04:21,910 --> 00:04:25,950
+Title and as will automatically look into the state object.
+
+64
+00:04:25,960 --> 00:04:28,050
+As I said this is a reserved word.
+
+65
+00:04:28,090 --> 00:04:32,000
+Look into this object find the title property and output it here.
+
+66
+00:04:32,170 --> 00:04:38,350
+If we now had control enter chase fiddle to see the result we see Hello world on the right because now
+
+67
+00:04:38,380 --> 00:04:42,880
+we're outputting this title through view chase which now controls this template.
+

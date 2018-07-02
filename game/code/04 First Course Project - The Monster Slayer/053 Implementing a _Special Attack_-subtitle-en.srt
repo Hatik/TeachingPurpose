@@ -1,0 +1,112 @@
+1
+00:00:01,990 --> 00:00:08,560
+In the last lecture we refactored our code so that we have to check with function checking if we are
+
+2
+00:00:08,560 --> 00:00:13,840
+lost or won and that we also have a new function for calculating the damage.
+
+3
+00:00:13,850 --> 00:00:16,630
+With that the attack function working fine.
+
+4
+00:00:16,630 --> 00:00:24,080
+We now want to implement the special attack in general he copied the code from up here as a side note.
+
+5
+00:00:24,100 --> 00:00:27,100
+Always a good sign that you can refactoring something.
+
+6
+00:00:27,270 --> 00:00:33,670
+But for hearable leave it like this and I set up this to deal damage between 10 and 20 sensitives are
+
+7
+00:00:33,670 --> 00:00:35,440
+a special attack.
+
+8
+00:00:35,740 --> 00:00:42,820
+Now in here of course all they want to check if one after dealing this special attack here and there
+
+9
+00:00:42,820 --> 00:00:47,600
+after we again want the monster to attack and this should always steal the same damage.
+
+10
+00:00:47,740 --> 00:00:50,200
+So I can copy the code from up there.
+
+11
+00:00:50,510 --> 00:00:58,970
+And yet we get some code duplication here especially the monster attack which is always the same deal
+
+12
+00:00:59,010 --> 00:01:00,130
+the same damage.
+
+13
+00:01:00,310 --> 00:01:02,460
+That is something we might outsource.
+
+14
+00:01:02,470 --> 00:01:07,690
+Yes we could also refactored the player damage but I will leave it here so that we can quickly see what
+
+15
+00:01:07,690 --> 00:01:08,850
+each attack does.
+
+16
+00:01:09,040 --> 00:01:18,130
+But I definitely want to refactor the monster damage so let's do this all add a new function which all
+
+17
+00:01:18,190 --> 00:01:21,670
+name monster attacks.
+
+18
+00:01:21,700 --> 00:01:29,740
+This is a function here and in this function here I simply copy in the code I just copied where I reduced
+
+19
+00:01:29,740 --> 00:01:32,580
+the player health and deal this damage.
+
+20
+00:01:32,590 --> 00:01:39,820
+This now means that here where the monster dealt damage I can now simply execute this monster attacks
+
+21
+00:01:39,820 --> 00:01:41,620
+like that here.
+
+22
+00:01:41,630 --> 00:01:46,290
+Q And with this emplace Let's have a look at the application again.
+
+23
+00:01:46,420 --> 00:01:51,640
+Let's start a attack special attack dealing more damage yet we're clearly winning here.
+
+24
+00:01:51,850 --> 00:01:52,590
+You won.
+
+25
+00:01:52,600 --> 00:01:56,410
+New game works just as well as before.
+
+26
+00:01:56,410 --> 00:02:01,760
+Now with the extra tech and the monster damage now also really factored.
+
+27
+00:02:01,780 --> 00:02:03,990
+To have a bit more cleaner code.
+
+28
+00:02:04,030 --> 00:02:09,530
+Next we want to implement the healing and go away from dealing damage to healing damage.
+

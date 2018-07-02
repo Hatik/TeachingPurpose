@@ -1,0 +1,104 @@
+1
+00:00:02,140 --> 00:00:03,000
+Thus far be you.
+
+2
+00:00:03,000 --> 00:00:09,040
+S. s. s. s. s. s. transition's and animations to animate our elements in and out and to animate the
+
+3
+00:00:09,040 --> 00:00:11,010
+transition between two elements.
+
+4
+00:00:11,050 --> 00:00:16,300
+We can also use Chavez script because with a script we can of course also influenced the style position
+
+5
+00:00:16,300 --> 00:00:20,270
+and much more of such element or anything we want basically.
+
+6
+00:00:20,290 --> 00:00:24,310
+Now chess allows us to also listen to certain events.
+
+7
+00:00:24,340 --> 00:00:29,740
+This transition element this transition element view chair shifts with Emmets.
+
+8
+00:00:29,770 --> 00:00:36,160
+So there's a transition component we wrap our elements in at some events at certain points of time and
+
+9
+00:00:36,160 --> 00:00:41,170
+we can listen to these events to execute our own Chavez script code.
+
+10
+00:00:41,170 --> 00:00:45,650
+Now the missing piece is to know which events are emitted at which point of time.
+
+11
+00:00:45,790 --> 00:00:50,040
+And here we see a similar pattern as with DC s s classes.
+
+12
+00:00:50,050 --> 00:00:57,070
+We add our element and then we remove it and upon adding We first have to before enter hook.
+
+13
+00:00:57,130 --> 00:01:03,130
+This is kind of comparable to D and C S S class being attached for one frame.
+
+14
+00:01:03,130 --> 00:01:09,400
+Then right after we get the enter hook this is where we would then typically play our animation then
+
+15
+00:01:09,400 --> 00:01:10,680
+we have offerer enter.
+
+16
+00:01:10,680 --> 00:01:17,740
+Does this new Endace executed once the animation finished and port note you can combine all that with
+
+17
+00:01:17,890 --> 00:01:19,420
+Roscius as classes.
+
+18
+00:01:19,420 --> 00:01:25,660
+You can also expect some abro code in each of these hooks so that it's perfectly possible and we have
+
+19
+00:01:25,660 --> 00:01:31,690
+the after entry cancell took which is called whenever we kind of say Ill change the condition which
+
+20
+00:01:31,690 --> 00:01:35,320
+would add to the element before the animation finished.
+
+21
+00:01:35,690 --> 00:01:40,750
+Well and that year we get the same hooks for leaving it or for moving and I'll pick up the four leaf
+
+22
+00:01:40,960 --> 00:01:44,080
+leave after leaf and after leaf cancel.
+
+23
+00:01:44,200 --> 00:01:46,250
+These are the hooks we've got a whaleboat.
+
+24
+00:01:46,420 --> 00:01:52,090
+As I said you can mix them with C S S they get executed any ways you can change the style of the element
+
+25
+00:01:52,090 --> 00:01:56,840
+here or do something completely different or nothing at all like we did before.
+
+26
+00:01:57,010 --> 00:02:03,980
+But now let's have a look at how we can use these hooks to play a nice animation purely for chala script.
+

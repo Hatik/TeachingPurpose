@@ -1,0 +1,120 @@
+1
+00:00:02,570 --> 00:00:09,140
+Let's dive into authenticating users as I mentioned all use firebase sensors ready to use back backend
+
+2
+00:00:09,500 --> 00:00:15,980
+because I don't want to focus on the back and lodging data is something for a node ph P Ruby or whatever
+
+3
+00:00:15,980 --> 00:00:23,090
+back in language are using cores on firebase we can simply get working authentication by going to the
+
+4
+00:00:23,090 --> 00:00:30,350
+off indication area and then selecting a sign in Methot and I want to use the traditional method of
+
+5
+00:00:30,470 --> 00:00:33,940
+storing email and password on our own server.
+
+6
+00:00:34,040 --> 00:00:37,750
+You're on the firebase servers for that.
+
+7
+00:00:37,790 --> 00:00:44,460
+Click on email password and I'll simply enable it by setting the switch to enabled and hitting save.
+
+8
+00:00:44,480 --> 00:00:49,280
+Now users can sign in with their email and password.
+
+9
+00:00:49,280 --> 00:00:54,130
+Now let's all go to the database and they're on the rules tab.
+
+10
+00:00:54,320 --> 00:01:02,210
+I want to ensure that we only grant read access to users if we are often negated.
+
+11
+00:01:02,570 --> 00:01:10,700
+So on read I will reword this to all of us equal to now off as some object firebase knows which simply
+
+12
+00:01:10,700 --> 00:01:15,570
+means is the user of any kind and it stores information about the authentic user.
+
+13
+00:01:15,740 --> 00:01:19,430
+And if it is no then it means the user is not an indicator.
+
+14
+00:01:19,550 --> 00:01:21,010
+So by checking if it's not.
+
+15
+00:01:21,020 --> 00:01:28,100
+Now we check if the user is of indicated so let's simply published it and with that we already should
+
+16
+00:01:28,100 --> 00:01:29,090
+see one effect.
+
+17
+00:01:29,150 --> 00:01:35,180
+If you go back to the application and reload this page on the dashboard we actually get an on off riced
+
+18
+00:01:35,240 --> 00:01:37,100
+error here and that's good.
+
+19
+00:01:37,100 --> 00:01:38,810
+Now we'll fix this later.
+
+20
+00:01:39,050 --> 00:01:42,260
+So important we enabled authentication.
+
+21
+00:01:42,260 --> 00:01:45,760
+Now we could have indicated fruity firebase STK.
+
+22
+00:01:45,920 --> 00:01:53,000
+But actually I want to show you an approach which is reusable with any back end which is a restful API.
+
+23
+00:01:53,300 --> 00:02:01,280
+And thankfully firebase also gives us some rest API endpoints we can use to create new users or assign
+
+24
+00:02:01,280 --> 00:02:02,700
+existing users.
+
+25
+00:02:02,900 --> 00:02:07,960
+You can find these endpoints by simply searching for firebase of arrest API.
+
+26
+00:02:08,270 --> 00:02:14,970
+Then it should be the first result the reference documentation for de-stressed API.
+
+27
+00:02:15,170 --> 00:02:21,500
+And they're on the right you see a couple of well typical tasks like sign up with email and password
+
+28
+00:02:22,100 --> 00:02:27,500
+then you see the rest API endpoint to which you have to send that request and that data which you should
+
+29
+00:02:27,500 --> 00:02:28,510
+pass along.
+
+30
+00:02:28,580 --> 00:02:33,170
+Now will of course do this together we'll do this in the next lecture.
+

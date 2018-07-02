@@ -1,0 +1,36 @@
+1
+00:00:02,070 --> 00:00:09,050
+Welcome to discourse model where we really start diving into UJA as we already had a look at our first
+
+2
+00:00:09,110 --> 00:00:15,500
+Eugenius application the last course module we learned about this basic connection how to interact with
+
+3
+00:00:15,500 --> 00:00:16,990
+our age team our code.
+
+4
+00:00:17,000 --> 00:00:23,720
+Now it's time to really understand what's going on there and which other tools Mujeres offers us for
+
+5
+00:00:23,720 --> 00:00:24,050
+this.
+
+6
+00:00:24,050 --> 00:00:29,000
+I will continue working with Chase Fidele though as I explained that the last module you are free to
+
+7
+00:00:29,000 --> 00:00:32,320
+use your local set up and attached to this video.
+
+8
+00:00:32,420 --> 00:00:36,230
+You will find a code with which I'll start in the next with you.
+
+9
+00:00:36,380 --> 00:00:43,350
+Well with that enough to talking let's finally dive really deep into chess and start learning it.
+

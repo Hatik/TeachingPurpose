@@ -1,0 +1,32 @@
+1
+00:00:02,010 --> 00:00:05,820
+Thus far I showed all these animations using the F here.
+
+2
+00:00:05,820 --> 00:00:12,090
+Now it's important to understand you can also use the show here and that will work just the same as
+
+3
+00:00:12,090 --> 00:00:13,930
+you will see if I reload.
+
+4
+00:00:13,980 --> 00:00:18,770
+This also works though keep in mind of course the show still works as you know it will work.
+
+5
+00:00:18,780 --> 00:00:24,120
+It doesn't remove or attach elements it only triggers the display property.
+
+6
+00:00:24,120 --> 00:00:26,990
+So you can also use animations with the show.
+
+7
+00:00:27,000 --> 00:00:29,880
+The alternative is we have whatever you prefer.
+
+8
+00:00:29,880 --> 00:00:30,990
+Bofors animator Bill.
+

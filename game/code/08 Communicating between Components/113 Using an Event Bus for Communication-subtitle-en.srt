@@ -1,0 +1,252 @@
+1
+00:00:01,940 --> 00:00:09,590
+Deferred the effort of one show it's using a central class or object to pass the data.
+
+2
+00:00:09,690 --> 00:00:15,060
+If you're coming from England to you might know this as services would also be a central part of the
+
+3
+00:00:15,060 --> 00:00:20,720
+app you can check them places you needed which holds some task or methods you want to use in your whole
+
+4
+00:00:20,730 --> 00:00:21,900
+application.
+
+5
+00:00:21,900 --> 00:00:29,850
+That's basically what we're using now to do so I will create a new view instance in my main Chia's file
+
+6
+00:00:29,850 --> 00:00:36,210
+here where I have access to the You and I will store it in a constant which I export.
+
+7
+00:00:36,210 --> 00:00:44,340
+So you're able export a constant named Alima event bus since it will serve as a bus for our events but
+
+8
+00:00:44,340 --> 00:00:48,720
+you may give it another name and this is a new view object.
+
+9
+00:00:48,750 --> 00:00:54,210
+No I'm not defining any method or something like this because the methods I need already exist on this
+
+10
+00:00:54,210 --> 00:00:58,440
+by default because they are shipped by the U.K.'s.
+
+11
+00:00:58,530 --> 00:01:06,060
+So with this bus or with this object set up I can go to my user edit component and there I want to import
+
+12
+00:01:06,060 --> 00:01:06,860
+this.
+
+13
+00:01:07,290 --> 00:01:17,630
+So importing this from the mainsheet as file and I'm using curly braces this is E6 syntax for importing
+
+14
+00:01:17,630 --> 00:01:19,000
+named exports.
+
+15
+00:01:19,160 --> 00:01:21,400
+And here it's the event bus.
+
+16
+00:01:21,440 --> 00:01:31,010
+With this I can comment out my existing imit method and instead call event bus dollar sign emit because
+
+17
+00:01:31,010 --> 00:01:32,660
+even buzz is just a few.
+
+18
+00:01:32,730 --> 00:01:36,200
+And again a view instance has this imit method here.
+
+19
+00:01:36,230 --> 00:01:42,680
+I want to embed the same data as the event above but here the important thing is this is not limited
+
+20
+00:01:42,740 --> 00:01:47,720
+on this view instance here it's limited on this event bus instance.
+
+21
+00:01:47,780 --> 00:01:52,850
+Now since this is a separate instance I can go to my user Dettol component and there I want to add a
+
+22
+00:01:52,850 --> 00:01:55,580
+new lifecycle hook Deeksha created hook.
+
+23
+00:01:55,580 --> 00:02:01,370
+We learned about this in the life cycle hook lecture and the understanding the view instance course
+
+24
+00:02:01,390 --> 00:02:07,300
+module and I'm using iOS 6 syntax instead of this normal use fifes and takes year to create this create
+
+25
+00:02:07,300 --> 00:02:13,970
+a hook and I want to use this hook because I now want to set up a listener to this event this listener
+
+26
+00:02:14,000 --> 00:02:20,270
+should keep running from the beginning of this component on therefore created a place where I want to
+
+27
+00:02:20,270 --> 00:02:23,020
+set it up because the component is now created.
+
+28
+00:02:23,030 --> 00:02:29,650
+Now it's time to register this listener for that I will need to add the order of the event bus there
+
+29
+00:02:29,660 --> 00:02:39,860
+too like this that here I can set up event thus on and this will now listen to events emitted on this
+
+30
+00:02:40,070 --> 00:02:43,660
+new instance I created and stored here in the bus.
+
+31
+00:02:44,060 --> 00:02:50,330
+So here I know I want to listen to the page was edited even because this is the name I chose in the
+
+32
+00:02:50,330 --> 00:02:54,270
+user edit component and then note that I get some data.
+
+33
+00:02:54,440 --> 00:03:00,290
+This data is always used and the second argument here which is always a callback which should get executed
+
+34
+00:03:00,290 --> 00:03:02,690
+when every such event occurs.
+
+35
+00:03:02,710 --> 00:03:08,690
+I'm using iOS 6 and text with the arrow function here and this callback which will get executed automatically
+
+36
+00:03:08,690 --> 00:03:15,140
+by view as always gets the data we pass with the event passed as an argument.
+
+37
+00:03:15,230 --> 00:03:16,850
+So we always get data here.
+
+38
+00:03:16,850 --> 00:03:18,390
+The name is totally up to you.
+
+39
+00:03:18,410 --> 00:03:21,630
+You can name it data or since I know it will be age.
+
+40
+00:03:21,650 --> 00:03:30,290
+I can also name it age and then year I can access my existing instance with this and said user age this
+
+41
+00:03:30,290 --> 00:03:34,580
+prop were getting passed from outside directly to age.
+
+42
+00:03:35,030 --> 00:03:40,810
+However in the main case file this will not work like this tiny error I just recognize.
+
+43
+00:03:40,940 --> 00:03:45,800
+We have to put this in front of our viewer instance here of course because this is the instance holding
+
+44
+00:03:45,800 --> 00:03:47,110
+all our components.
+
+45
+00:03:47,200 --> 00:03:51,080
+Therefore we have to treat our event but before loading all these components.
+
+46
+00:03:51,100 --> 00:03:56,370
+Otherwise you won't have access to them because the code here would get executed after that instance.
+
+47
+00:03:56,420 --> 00:04:02,950
+So the order is important now when saving this we can go back the application and if an archaic edit
+
+48
+00:04:02,990 --> 00:04:09,730
+age it's updated instantly but important thing is it's not taking the route over the user component.
+
+49
+00:04:09,920 --> 00:04:17,090
+And I can prove this by Also printing the H year age is the name of the property set up here in the
+
+50
+00:04:17,090 --> 00:04:22,520
+data field and by loading we see age 27.
+
+51
+00:04:22,580 --> 00:04:28,620
+And if I edited here it stays 27 and a user component but not to shawled components.
+
+52
+00:04:28,700 --> 00:04:35,420
+This is how you can implement a communication between children without having to take the route using
+
+53
+00:04:35,630 --> 00:04:36,540
+the parent.
+
+54
+00:04:36,830 --> 00:04:42,320
+Though that being said managing state and that is what we're doing here we're managing the state of
+
+55
+00:04:42,320 --> 00:04:49,340
+our property across multiple components can quickly get very very complicated if you add more complex
+
+56
+00:04:49,340 --> 00:04:50,450
+structures.
+
+57
+00:04:50,450 --> 00:04:55,710
+Use a component in different places update a property in different places and so on.
+
+58
+00:04:56,710 --> 00:05:05,140
+To make this simpler you chase has a great tool we can use called view X and we will use it in this
+
+59
+00:05:05,140 --> 00:05:12,430
+course in a later module where it will dive deeply into that tool and which will show you how easy state
+
+60
+00:05:12,430 --> 00:05:14,260
+management then becomes.
+
+61
+00:05:14,260 --> 00:05:19,660
+That being said for a simple two medium sized applications there's nothing wrong with this approach
+
+62
+00:05:19,810 --> 00:05:23,750
+and it's perfectly fine to pass data ever using these parents.
+
+63
+00:05:23,780 --> 00:05:29,610
+Child change you saw earlier with customer events and props or by using a van bus like this.
+

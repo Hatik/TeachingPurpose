@@ -1,0 +1,92 @@
+1
+00:00:02,100 --> 00:00:09,540
+This is especially important to keep in mind because in our instance if we here wanted to output the
+
+2
+00:00:09,540 --> 00:00:15,450
+title in this function so we don't want to return how low but we want to return the title then this
+
+3
+00:00:15,450 --> 00:00:21,570
+will not work because unlike in the template where we do have direct access to all these properties
+
+4
+00:00:21,570 --> 00:00:28,580
+and math that's UK as proxies them for us here in the javascript code that does not work.
+
+5
+00:00:28,830 --> 00:00:31,550
+But we still have an easy access.
+
+6
+00:00:31,560 --> 00:00:36,950
+You notice that the title property sits on an object which is called data.
+
+7
+00:00:37,170 --> 00:00:44,730
+And normally we wouldn't be able to access it by calling this title because this would not refer to
+
+8
+00:00:44,730 --> 00:00:46,660
+this data object here.
+
+9
+00:00:47,230 --> 00:00:51,070
+Thankfully ukase also provides us some magic here.
+
+10
+00:00:51,080 --> 00:00:56,070
+It proxies these properties and the same is by the way true for the method.
+
+11
+00:00:56,070 --> 00:00:59,260
+So it would all work that we call a method like this.
+
+12
+00:00:59,400 --> 00:01:08,040
+It proxy them in a way that by simply calling this anywhere in our instance object here will give us
+
+13
+00:01:08,070 --> 00:01:13,020
+access to these proxy properties methods whatever it is.
+
+14
+00:01:13,020 --> 00:01:19,200
+So we can call this tidal to access the tile in the data field because behind the scenes and I will
+
+15
+00:01:19,200 --> 00:01:20,590
+come back to this in the future.
+
+16
+00:01:20,600 --> 00:01:20,840
+Yes.
+
+17
+00:01:20,850 --> 00:01:28,020
+Instance module in this course behind the scenes viewed as kind of creates an easy access for us to
+
+18
+00:01:28,040 --> 00:01:29,600
+these properties.
+
+19
+00:01:29,700 --> 00:01:35,190
+That is the important thing to keep in mind here and especially keep in mind there is a difference in
+
+20
+00:01:35,190 --> 00:01:35,880
+a template.
+
+21
+00:01:35,880 --> 00:01:37,000
+We don't need this.
+
+22
+00:01:37,050 --> 00:01:42,990
+Here we do well and with this change in place if I update it again we see Hello world again but this
+
+23
+00:01:42,990 --> 00:01:47,340
+time by calling a function which now excesses our title property.
+

@@ -1,0 +1,100 @@
+1
+00:00:01,980 --> 00:00:08,250
+We saw event Molly fires in the last video we not only have event modifiers we also have key modifiers
+
+2
+00:00:08,520 --> 00:00:09,870
+to demonstrate them.
+
+3
+00:00:09,900 --> 00:00:14,010
+Let me add an input field here in this input field.
+
+4
+00:00:14,100 --> 00:00:20,700
+I want to listen to the key event which obviously is fired whenever the user releases the key and the
+
+5
+00:00:20,700 --> 00:00:22,680
+key goes up here.
+
+6
+00:00:22,700 --> 00:00:30,540
+What I want to do is I want to throw and alert so called is alert me here and then down there in the
+
+7
+00:00:30,540 --> 00:00:36,540
+methods property at the alert me function.
+
+8
+00:00:36,540 --> 00:00:40,940
+So this shall get executed whenever we type something into the input field.
+
+9
+00:00:41,070 --> 00:00:45,120
+And here I simply want to throw in an alert which says alert.
+
+10
+00:00:45,520 --> 00:00:48,210
+Now this will probably get very spammy.
+
+11
+00:00:48,330 --> 00:00:52,950
+I saved this and I type here and yeah I get alerts.
+
+12
+00:00:53,100 --> 00:00:59,130
+Not really the best user experience maybe I only want to send an alert if I submit this.
+
+13
+00:00:59,130 --> 00:01:04,460
+So if I hit Enter lets say we can add a key modifier for days.
+
+14
+00:01:04,500 --> 00:01:11,940
+So like before with daubs stop for the event modifier a key modifier is also added by adding dot and
+
+15
+00:01:11,940 --> 00:01:13,030
+then the name of the key.
+
+16
+00:01:13,050 --> 00:01:21,180
+For example enter you will find attached to this letter a list of salable modifiers where to find out
+
+17
+00:01:21,390 --> 00:01:26,630
+which modifiers exist that enter exist exists you would also have dot tap dot e.
+
+18
+00:01:26,650 --> 00:01:31,450
+C You can also change them for example by typing Daut space.
+
+19
+00:01:31,590 --> 00:01:37,300
+And now if I hit enter or control enter and type here we don't see anything but I hit space.
+
+20
+00:01:37,320 --> 00:01:39,530
+We saw the alert I hit enter.
+
+21
+00:01:39,540 --> 00:01:41,430
+We see an Amber Alert.
+
+22
+00:01:41,430 --> 00:01:45,730
+This is how we can add our own key modifiers here.
+
+23
+00:01:45,750 --> 00:01:51,210
+And again a link to all the forest can be found attached to this lecture.
+
+24
+00:01:51,210 --> 00:01:57,410
+This enables us to only listen to specific keys but of course these modifiers are only available for
+
+25
+00:01:57,450 --> 00:02:01,360
+key related events like Key up here which makes sense I guess.
+

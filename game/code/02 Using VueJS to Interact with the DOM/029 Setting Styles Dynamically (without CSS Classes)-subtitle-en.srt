@@ -1,0 +1,136 @@
+1
+00:00:02,070 --> 00:00:08,440
+Get the same set of us for free boxes and also already the input field which is bound to does color
+
+2
+00:00:08,440 --> 00:00:14,590
+property with two way data mining now I showed you how to use classes siestas classes how to attach
+
+3
+00:00:14,590 --> 00:00:20,560
+and detach them and how to select them both either by having key value Paris with name and condition
+
+4
+00:00:20,830 --> 00:00:23,600
+or just the name of the class here.
+
+5
+00:00:23,650 --> 00:00:28,780
+I want to show you how you can directly interact with the styles attached to an element so you don't
+
+6
+00:00:28,780 --> 00:00:31,190
+have to use classes necessarily.
+
+7
+00:00:31,390 --> 00:00:38,120
+Let's say you only want to change to style and let's say you want to change to color while then it is
+
+8
+00:00:38,120 --> 00:00:45,940
+as easy as binding to style and then as a child script object the key is the style you want to bind
+
+9
+00:00:45,940 --> 00:00:47,840
+to background color.
+
+10
+00:00:47,890 --> 00:00:49,330
+No no it does will not work.
+
+11
+00:00:49,330 --> 00:00:55,660
+You have to enclose it ever in single quotation marks because the dash is not a valid character in a
+
+12
+00:00:55,660 --> 00:01:03,640
+property name or remove the single quotation marks remove the dash and use camel case syntax background
+
+13
+00:01:03,640 --> 00:01:05,190
+color like this.
+
+14
+00:01:05,410 --> 00:01:10,090
+With that de-valued then is color this property.
+
+15
+00:01:10,090 --> 00:01:17,310
+If I now save this I can change this to green and you see I can now set it directly like this.
+
+16
+00:01:17,320 --> 00:01:21,870
+And of course again they are saurus source of this value doesn't matter.
+
+17
+00:01:21,880 --> 00:01:24,720
+I use the input here because it's easiest for us to edit.
+
+18
+00:01:24,880 --> 00:01:30,860
+But this could also be the end result of the asynchronous task of a calculation what ever asked before.
+
+19
+00:01:30,910 --> 00:01:33,910
+You don't have to pass the object like this.
+
+20
+00:01:33,910 --> 00:01:36,300
+You could also set up a style object here.
+
+21
+00:01:36,460 --> 00:01:43,690
+So again since I want to use this color I'll set up a computed property and I'll name it my style which
+
+22
+00:01:43,690 --> 00:01:50,290
+will be a function as all computed properties are as are very return an object since I expect an object
+
+23
+00:01:50,560 --> 00:02:00,250
+in life style binding here I will set background color camel case important pointers to this color and
+
+24
+00:02:00,280 --> 00:02:03,580
+I also want to be able to input the with let's say.
+
+25
+00:02:03,790 --> 00:02:09,790
+So here are all to bind to with let's add this new property here.
+
+26
+00:02:09,870 --> 00:02:21,520
+Set it to 100 initially and then here I will easily set this by setting the width to.
+
+27
+00:02:21,700 --> 00:02:30,580
+And now this width plus pixels to convert it into a pixel value which is needed for the style with dead
+
+28
+00:02:30,610 --> 00:02:39,730
+I can now refer to this new object here to set style equal to my style to compute a property and if
+
+29
+00:02:39,730 --> 00:02:48,550
+I say this You see I can now change the width of this second block as well as the color as I set it
+
+30
+00:02:48,550 --> 00:02:55,530
+up as a computed property or just because it's depending on other properties and I set it as a new object
+
+31
+00:02:55,570 --> 00:02:59,270
+which allows me to directly bind to this object here.
+
+32
+00:02:59,620 --> 00:03:05,920
+So that is really the same as it were with classes but here focused on individual styles.
+
+33
+00:03:05,920 --> 00:03:11,680
+And I think it's easy to imagine how easy you could create a progress bar by dynamically adjusting the
+
+34
+00:03:11,680 --> 00:03:13,640
+width as we do here.
+

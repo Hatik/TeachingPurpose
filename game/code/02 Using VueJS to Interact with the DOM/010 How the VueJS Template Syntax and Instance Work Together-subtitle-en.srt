@@ -1,0 +1,132 @@
+1
+00:00:02,050 --> 00:00:08,800
+So we saw how we can output a single property stored in the data field of view instance.
+
+2
+00:00:08,830 --> 00:00:15,470
+And it's important data stored in the view instance in the data property for example the title here
+
+3
+00:00:15,890 --> 00:00:18,820
+can be output in our template just like that.
+
+4
+00:00:18,920 --> 00:00:21,350
+We don't need to ride this stock title.
+
+5
+00:00:21,440 --> 00:00:27,800
+We don't need to write data it's title we have access to all the properties in the state object just
+
+6
+00:00:27,800 --> 00:00:28,850
+like that.
+
+7
+00:00:29,120 --> 00:00:34,550
+And that's really important to keep in mind of course this makes outputting it very easy as we don't
+
+8
+00:00:34,550 --> 00:00:41,780
+have to manually access or view instance or save it in a variable which we then would access no.
+
+9
+00:00:41,810 --> 00:00:44,480
+All of that happens behind the scenes for us.
+
+10
+00:00:44,600 --> 00:00:48,990
+We can access all properties in the data object just like that.
+
+11
+00:00:49,110 --> 00:00:51,400
+Not only data object though.
+
+12
+00:00:51,710 --> 00:00:58,490
+If we reintroduce the methods key which we already saw in the first much of this course where we can
+
+13
+00:00:58,490 --> 00:01:05,900
+store some methods of this future instance then I can create a new method here and I will name it.
+
+14
+00:01:05,930 --> 00:01:07,480
+Say hello.
+
+15
+00:01:07,820 --> 00:01:14,540
+Now say hello of course is a function and all it does is it returns Hello.
+
+16
+00:01:14,900 --> 00:01:17,810
+So it returns a string.
+
+17
+00:01:17,810 --> 00:01:21,870
+We can take our paragraph here and then execute.
+
+18
+00:01:21,890 --> 00:01:23,640
+Say hello here.
+
+19
+00:01:23,750 --> 00:01:25,470
+Don't forget the parentheses.
+
+20
+00:01:25,670 --> 00:01:32,970
+What this will do is that whenever Mujeres renders our template it will still parse is call embraced
+
+21
+00:01:33,010 --> 00:01:37,520
+syntax and it will then execute the function inside of this.
+
+22
+00:01:37,520 --> 00:01:39,200
+Now what do you think we'll get.
+
+23
+00:01:39,560 --> 00:01:46,280
+I'll hit Control enter here and James for Will to quickly update the HDL code and we can clearly see
+
+24
+00:01:46,280 --> 00:01:52,700
+how low this happens because it's perfectly fine to execute a function in between a call he braces.
+
+25
+00:01:52,730 --> 00:01:58,310
+The important thing is that it returns something which can be output here in the dorm.
+
+26
+00:01:58,310 --> 00:02:06,680
+So basically something which can be called Word it to a string no complex object or no return value
+
+27
+00:02:06,680 --> 00:02:07,160
+at all.
+
+28
+00:02:07,160 --> 00:02:12,890
+It has to be something which can be converted to a string and then it's perfectly fine to call a function
+
+29
+00:02:12,890 --> 00:02:14,490
+like this.
+
+30
+00:02:14,540 --> 00:02:22,000
+Second important take away as you can clearly see I'm accessing say hello in the same way I before Access
+
+31
+00:02:22,010 --> 00:02:26,530
+title without this without Moffats without anything in front of it.
+
+32
+00:02:26,780 --> 00:02:33,740
+So we not only have access to everything stored in the data just by typing the name here but also to
+
+33
+00:02:33,740 --> 00:02:39,900
+anything stored in the methods property that is also something important to keep in mind.
+

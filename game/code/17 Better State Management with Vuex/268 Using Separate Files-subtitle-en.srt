@@ -1,0 +1,188 @@
+1
+00:00:01,770 --> 00:00:08,110
+So we made our central story of chess for much slimmer by having this counter module.
+
+2
+00:00:08,250 --> 00:00:13,670
+I could outsource de-value related things into the volume which will then store would be really slim
+
+3
+00:00:14,100 --> 00:00:17,970
+but I don't want to do it because I want to show something else.
+
+4
+00:00:17,970 --> 00:00:25,410
+Sometimes you also have some stayed some action some getters which don't really belong into one module
+
+5
+00:00:25,620 --> 00:00:32,040
+in your application let's say you have a users part and you have your blog part and there will be two
+
+6
+00:00:32,040 --> 00:00:33,280
+great modules.
+
+7
+00:00:33,540 --> 00:00:38,130
+But then also you've got some state which is only displayed in the header which has to be displayed
+
+8
+00:00:38,160 --> 00:00:38,790
+everywhere.
+
+9
+00:00:38,910 --> 00:00:44,540
+Therefore you don't want to put the header related stayed into either of the two modules.
+
+10
+00:00:44,730 --> 00:00:49,920
+You can leave it in your main store file but maybe you've got a lot of different actions and so on.
+
+11
+00:00:49,920 --> 00:00:53,870
+So you store Cheese-Bob will grow pretty big again.
+
+12
+00:00:54,210 --> 00:01:01,710
+Well for that you can create our files like let's say action start ups not a new module's folder but
+
+13
+00:01:01,710 --> 00:01:07,600
+immediately in the store folder you can then take your actions only one action here.
+
+14
+00:01:07,610 --> 00:01:11,040
+But yeah that's it for dental purposes I guess.
+
+15
+00:01:11,100 --> 00:01:18,760
+And then the actions yes file you simply export a constant and give it a name update values in the name
+
+16
+00:01:18,820 --> 00:01:19,940
+of your action.
+
+17
+00:01:20,250 --> 00:01:22,830
+And then of course now is a function.
+
+18
+00:01:22,830 --> 00:01:27,060
+So turn it into a E-6 function by adding the arrow and the equal sign.
+
+19
+00:01:27,210 --> 00:01:30,660
+And if you have more actions you'll simply add more exports.
+
+20
+00:01:30,690 --> 00:01:34,970
+So here we use named exports to export all our actions.
+
+21
+00:01:35,010 --> 00:01:39,750
+So action number two would be a number function and for example.
+
+22
+00:01:40,200 --> 00:01:46,740
+So these are the actions we still can call commed like this because we still will get this commit or
+
+23
+00:01:46,740 --> 00:01:51,300
+this context argument here will still work as before.
+
+24
+00:01:51,320 --> 00:01:57,930
+So with the constant export Let's go to our restore and here we now want to import our actions fled
+
+25
+00:01:57,980 --> 00:02:02,690
+at the import from these actions file here.
+
+26
+00:02:02,970 --> 00:02:07,980
+And I'm not going to import all the export constants one by one even though it would only be one year
+
+27
+00:02:08,010 --> 00:02:14,190
+but it could be more we're a real application and still use the stars syntax and that ass actions does
+
+28
+00:02:14,230 --> 00:02:22,770
+name is up to you to let javascript create an object here which I can access with the name actions.
+
+29
+00:02:22,770 --> 00:02:29,310
+So this is an object where all my export that values here are basically just properties in that object.
+
+30
+00:02:29,580 --> 00:02:31,940
+So since actions here also is an object.
+
+31
+00:02:32,160 --> 00:02:33,780
+Well I can just use actions.
+
+32
+00:02:33,780 --> 00:02:37,680
+So my imported actions object here and that should work fine.
+
+33
+00:02:37,680 --> 00:02:40,450
+Now we can do the same for mutations.
+
+34
+00:02:40,470 --> 00:02:50,160
+So let me quickly add mutation mutations not just here where we also export the update value constants
+
+35
+00:02:50,160 --> 00:03:02,000
+so export Konst update value and of course all is let's create a gatherer's dot chase file for my whip's
+
+36
+00:03:02,000 --> 00:03:06,610
+here for my Geter possibly could be more than one of course.
+
+37
+00:03:06,640 --> 00:03:08,630
+Then this would make more sense.
+
+38
+00:03:08,890 --> 00:03:14,770
+So let's add this getter let's add the equal sign year and then in the store.
+
+39
+00:03:14,770 --> 00:03:24,760
+Of course they also want to add the imports so getters and two mutations like this and then here as
+
+40
+00:03:24,760 --> 00:03:30,380
+with actions we use these imported objects and with this place if I save this.
+
+41
+00:03:30,400 --> 00:03:37,410
+You see this still works as before but now we get a very very lean file here.
+
+42
+00:03:37,540 --> 00:03:45,970
+We outsource both our centralized tasks and the actions getters mutations file and we have modules for
+
+43
+00:03:46,120 --> 00:03:48,320
+more specialized things.
+
+44
+00:03:48,550 --> 00:03:56,560
+And of course you could even split your modules into actions getters and mutations files so you could
+
+45
+00:03:56,560 --> 00:04:05,400
+create a counter folder and endless folder you could then have the action start js file and so on.
+
+46
+00:04:05,410 --> 00:04:11,710
+I'm not going to do this here but you can do this and this really allows you to split this up and to
+
+47
+00:04:11,710 --> 00:04:15,430
+keep the individual Fahd's manageable and lean.
+

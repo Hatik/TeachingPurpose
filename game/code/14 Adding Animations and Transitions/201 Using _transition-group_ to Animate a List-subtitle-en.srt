@@ -1,0 +1,316 @@
+1
+00:00:01,570 --> 00:00:10,230
+The cool thing is you don't need to add any new C-s as classes to be able to use transition group.
+
+2
+00:00:10,460 --> 00:00:12,400
+It works just like transition.
+
+3
+00:00:12,410 --> 00:00:18,140
+So you can use the same skills as classes your name enter your name enter active and so on.
+
+4
+00:00:18,140 --> 00:00:20,070
+The same is true for javascript hooks.
+
+5
+00:00:20,120 --> 00:00:21,730
+That's exactly the same.
+
+6
+00:00:21,830 --> 00:00:29,050
+The only difference is the name of the component you are using here but that is only relevant for the
+
+7
+00:00:29,060 --> 00:00:35,970
+future as you use a just like transition wrapping the code you want to have in your transition group.
+
+8
+00:00:36,050 --> 00:00:41,180
+By the way that should not include the unordered lists since we don't want to animate that.
+
+9
+00:00:41,210 --> 00:00:42,870
+Let me remove this.
+
+10
+00:00:43,280 --> 00:00:44,820
+So just like this.
+
+11
+00:00:45,320 --> 00:00:49,980
+And now this of course is more than one element because a list item will be replicated.
+
+12
+00:00:50,030 --> 00:00:52,570
+So therefore we need such a transition group.
+
+13
+00:00:52,820 --> 00:00:55,790
+And now again usage is the same as for translation.
+
+14
+00:00:55,790 --> 00:00:59,450
+But behind the scenes it now also works for multiply dms.
+
+15
+00:00:59,570 --> 00:01:04,100
+So let's say we want to use our slide animation so name slide.
+
+16
+00:01:04,100 --> 00:01:10,850
+We always set up all the class we need year and with that being set up let's see if it now works out
+
+17
+00:01:10,850 --> 00:01:12,130
+of the box.
+
+18
+00:01:12,510 --> 00:01:14,480
+Nope the whole list is gone.
+
+19
+00:01:14,480 --> 00:01:15,970
+What happened here.
+
+20
+00:01:16,520 --> 00:01:23,180
+It's kind of similar to the problem we had before with transitioning between two elements which used
+
+21
+00:01:23,270 --> 00:01:27,290
+the same HDMI tech like they have here.
+
+22
+00:01:27,380 --> 00:01:33,650
+We had to key them to let us know which element is which and for transition group we always have two
+
+23
+00:01:33,650 --> 00:01:34,660
+key elements here.
+
+24
+00:01:34,670 --> 00:01:42,410
+Even if they were using a several separate tech name so here we need to add a key because otherwise
+
+25
+00:01:42,490 --> 00:01:46,920
+the future is not able to identify the individual items in the list.
+
+26
+00:01:46,980 --> 00:01:51,760
+However it needs to be able to identify them because when it animates them it allows.
+
+27
+00:01:51,770 --> 00:01:54,210
+It also needs to move the existing elements.
+
+28
+00:01:54,260 --> 00:01:59,540
+And for that it needs to be sure that it moves the right element and for Dad it needs a key because
+
+29
+00:01:59,540 --> 00:02:00,950
+it can't identify them.
+
+30
+00:02:00,950 --> 00:02:03,640
+Otherwise each element needs a unique ID.
+
+31
+00:02:04,010 --> 00:02:07,480
+So you can choose anything which is unique here.
+
+32
+00:02:07,520 --> 00:02:12,280
+I will bind key with the colon because it's dynamic binding.
+
+33
+00:02:12,280 --> 00:02:18,290
+I want to set up here to my number because each number is only part of desire once it's a perfectly
+
+34
+00:02:18,290 --> 00:02:20,260
+valid unique key.
+
+35
+00:02:20,270 --> 00:02:26,810
+Now with this and last if we reload this we see that the list is back and if I added we see we now move
+
+36
+00:02:26,810 --> 00:02:34,430
+smoothly and inmates in though the one ugly thing is also the case for removing it that everything champs.
+
+37
+00:02:34,490 --> 00:02:39,060
+So it snaps de-list to Gavron after the element is removed.
+
+38
+00:02:39,170 --> 00:02:44,050
+And if I add one it instantly jumps down forward to make room for a new element.
+
+39
+00:02:44,240 --> 00:02:50,390
+It would be nice if that moving of elements would all be any made so that we really have a smooth animation
+
+40
+00:02:50,390 --> 00:02:52,620
+going on here in our list.
+
+41
+00:02:52,670 --> 00:02:54,690
+Turns out we can animated.
+
+42
+00:02:54,980 --> 00:02:58,170
+That's a big difference between transition group and transition.
+
+43
+00:02:58,220 --> 00:03:02,610
+Yes we can use it the same way but it also has extra here.
+
+44
+00:03:02,900 --> 00:03:05,920
+It gives us access to a new S class.
+
+45
+00:03:06,200 --> 00:03:11,540
+Besides slide enter slide interactive and so on because we're using slide animation here the same would
+
+46
+00:03:11,540 --> 00:03:13,910
+be true for fade of course if you use that.
+
+47
+00:03:13,910 --> 00:03:21,680
+Besides these classes we also got slide move and this class is attached to any element which needs to
+
+48
+00:03:21,740 --> 00:03:27,110
+change its place for example because a new element was added and the element therefore needs to change
+
+49
+00:03:27,110 --> 00:03:32,210
+to place because it means move down or when deleting element it needs to move up.
+
+50
+00:03:32,390 --> 00:03:38,030
+And for this movement process this slide move class here is attached to allow us to animate this as
+
+51
+00:03:38,030 --> 00:03:38,900
+well.
+
+52
+00:03:38,900 --> 00:03:40,920
+How shall we animate this then.
+
+53
+00:03:41,270 --> 00:03:48,110
+Well we could simply say transition and then transition the change of the transformed property over
+
+54
+00:03:48,110 --> 00:03:56,180
+one second transform is this property we use year in the animation for example a wedge UK will use behind
+
+55
+00:03:56,180 --> 00:03:58,560
+the scenes for moving elements.
+
+56
+00:03:58,580 --> 00:04:01,260
+So does this not related to our keyframes here.
+
+57
+00:04:01,420 --> 00:04:08,150
+The chairs will always move elements behind the scenes by using transform translate Y or X whatever
+
+58
+00:04:08,150 --> 00:04:12,110
+is appropriate to make them move their position.
+
+59
+00:04:12,110 --> 00:04:19,910
+Now since you chaps will do that behind the scenes to change the position of element we can transition
+
+60
+00:04:19,910 --> 00:04:26,500
+this property to transform property to take advantage of this being used by chess to animate it.
+
+61
+00:04:26,630 --> 00:04:33,860
+So what I'm telling CSSA here is what ever did transform property is somehow changed and it is changed
+
+62
+00:04:33,860 --> 00:04:39,390
+when beauty as use translate X or trancelike why y whenever that happens.
+
+63
+00:04:39,780 --> 00:04:41,570
+Animated over one second.
+
+64
+00:04:41,720 --> 00:04:43,930
+And this is why we will see such animation.
+
+65
+00:04:44,170 --> 00:04:51,170
+However if I use it like this what you will notice is that if I reload this and add the item it moves
+
+66
+00:04:51,170 --> 00:04:56,200
+down perfectly looks great it looks exactly how we want it to behave.
+
+67
+00:04:56,330 --> 00:05:01,510
+But if a removal item we still have this snapping going on now why is that.
+
+68
+00:05:01,520 --> 00:05:05,880
+Why is it working for adding items but not for removing items.
+
+69
+00:05:06,620 --> 00:05:15,260
+The answer is because when we remove the item the old items which are sitting below the new items still
+
+70
+00:05:15,260 --> 00:05:22,810
+have their position in the document flow and that position will only change if the old item is removed.
+
+71
+00:05:23,120 --> 00:05:27,850
+And the fact that we want to estimate it doesn't change just because it can't be animated with translate.
+
+72
+00:05:27,850 --> 00:05:32,600
+Why if we would hurt the document flow with that kind of.
+
+73
+00:05:32,870 --> 00:05:38,360
+So we have to go to Slide leave act if we're just a class attached to the element which is removed during
+
+74
+00:05:38,360 --> 00:05:40,110
+the removal process.
+
+75
+00:05:40,160 --> 00:05:47,630
+And here we have to switch its position to absolute desk make sure that other elements may move above
+
+76
+00:05:47,630 --> 00:05:54,980
+this element was this element is still being animated and therefore if I now reload this we can see
+
+77
+00:05:54,980 --> 00:06:04,400
+I can add items but if we remove one this now looks fine and it moves the other items correctly just
+
+78
+00:06:04,400 --> 00:06:05,630
+like that.
+
+79
+00:06:05,630 --> 00:06:10,560
+So this looks much better now with the whole list being animated now.
+

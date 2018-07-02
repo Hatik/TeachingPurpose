@@ -1,0 +1,348 @@
+1
+00:00:02,000 --> 00:00:06,980
+We set up our applications such that we can submit this simple form here and send it to our firebase
+
+2
+00:00:06,980 --> 00:00:09,910
+sir which we also set up or our firebase app.
+
+3
+00:00:10,150 --> 00:00:14,710
+The next step now is to do that to actually send it now to send it.
+
+4
+00:00:14,720 --> 00:00:21,320
+I will grab this link here on firebase my firebase project which is modeling to my personal project
+
+5
+00:00:21,320 --> 00:00:24,970
+which allows me to send data out there and then on Submit.
+
+6
+00:00:25,010 --> 00:00:27,500
+Well I now want to send that instead.
+
+7
+00:00:27,680 --> 00:00:30,610
+So here I will no longer log this to the console.
+
+8
+00:00:30,710 --> 00:00:34,640
+Instead the goal is to send the data to firebase.
+
+9
+00:00:34,640 --> 00:00:41,310
+Now since we registered the resource here on our global view object here.
+
+10
+00:00:41,330 --> 00:00:49,130
+And when we import from view up here since we did this every few instance we create has access to HTP
+
+11
+00:00:49,310 --> 00:00:51,260
+through the resource.
+
+12
+00:00:51,290 --> 00:00:54,370
+Therefore I can now call this and then resign HTP.
+
+13
+00:00:54,380 --> 00:00:57,860
+Now Dolorosa signage was added by the resource.
+
+14
+00:00:57,860 --> 00:01:03,740
+It's not available by default but now it was added due to us implementing this plug in with the new
+
+15
+00:01:03,810 --> 00:01:05,060
+use function.
+
+16
+00:01:05,270 --> 00:01:13,010
+So I can then access these HTP objects here and on this object I get a couple of different methods I
+
+17
+00:01:13,010 --> 00:01:19,910
+can call basically one method for each HTP request type so equites and a get request of the get method
+
+18
+00:01:20,330 --> 00:01:26,870
+or as we want to do it here a post request with the post Meffert post because we want to send that data
+
+19
+00:01:26,900 --> 00:01:28,200
+to the server.
+
+20
+00:01:28,220 --> 00:01:33,340
+Now this method then as a first argument expects or else we want to send it like this.
+
+21
+00:01:33,370 --> 00:01:39,320
+That's you all just copied though with firebase the special thing is sending it to do you do this you
+
+22
+00:01:39,330 --> 00:01:40,880
+l won't do anything.
+
+23
+00:01:40,880 --> 00:01:44,290
+We have to specify a date and no we want to create.
+
+24
+00:01:44,390 --> 00:01:51,650
+So in this database here we want to create a special node let's say data that we have this data node
+
+25
+00:01:51,650 --> 00:01:52,940
+which holds our data.
+
+26
+00:01:53,120 --> 00:01:56,460
+So we therefore have to go to or you are Elen at data.
+
+27
+00:01:56,540 --> 00:01:57,920
+And that still would not work.
+
+28
+00:01:57,920 --> 00:02:02,510
+Firebase only allows requests which target dot Jason resources.
+
+29
+00:02:02,540 --> 00:02:06,850
+So we have to simply add dot Jason for firebase to handle this correctly.
+
+30
+00:02:06,920 --> 00:02:09,590
+The DOT chastens mandatory the name here.
+
+31
+00:02:09,620 --> 00:02:10,910
+Data is up to you.
+
+32
+00:02:10,910 --> 00:02:15,530
+This will create such a data package or node on our server where we are.
+
+33
+00:02:15,530 --> 00:02:17,230
+This will be stored in our database.
+
+34
+00:02:17,240 --> 00:02:20,350
+I should say that we set up the are out though.
+
+35
+00:02:20,360 --> 00:02:23,470
+We of course also need to send some data don't we.
+
+36
+00:02:23,500 --> 00:02:25,400
+All sendings data is very easy.
+
+37
+00:02:25,400 --> 00:02:31,570
+We simply need to supply a second argument which allows us to send the data or to set up that data.
+
+38
+00:02:31,580 --> 00:02:35,480
+We want to send by default now which did we want to send here.
+
+39
+00:02:35,570 --> 00:02:37,340
+Well we want to send our users.
+
+40
+00:02:37,330 --> 00:02:41,800
+So let's try sending this user and let's see if that works.
+
+41
+00:02:41,950 --> 00:02:45,920
+This is how we generally set up a post request for a get request.
+
+42
+00:02:45,920 --> 00:02:49,610
+The second argument here of course wouldn't be needed but I'll come back to this.
+
+43
+00:02:49,850 --> 00:02:57,020
+Now that will send the request though we also might want to do something with the response the view
+
+44
+00:02:57,020 --> 00:03:03,410
+resource package users deprogrammers library Orie uses this promises approach.
+
+45
+00:03:03,410 --> 00:03:09,440
+So this will be a promise which means it's good for asynchronous action because it promises us to give
+
+46
+00:03:09,440 --> 00:03:15,890
+us back some data in the future and it can only promise us this in the future because today it is reaching
+
+47
+00:03:15,890 --> 00:03:19,760
+out to a server it's no synchronous task it takes time.
+
+48
+00:03:19,820 --> 00:03:27,320
+So therefore I can now add then the then function we do have available on promises which will allow
+
+49
+00:03:27,320 --> 00:03:32,030
+me to add a function to be executed once this operation is done.
+
+50
+00:03:32,030 --> 00:03:36,680
+So once this request has been sent and once we did get a response back.
+
+51
+00:03:36,710 --> 00:03:43,580
+So here in this then function I can use the response I get back and I use the E-6 function here with
+
+52
+00:03:43,580 --> 00:03:46,960
+the arrow and then I can handle it here.
+
+53
+00:03:46,970 --> 00:03:53,900
+So in this case you or I could simply say console log response to have a look at what we're actually
+
+54
+00:03:53,900 --> 00:03:55,490
+getting back.
+
+55
+00:03:55,550 --> 00:03:56,910
+Also important.
+
+56
+00:03:57,020 --> 00:04:01,380
+You can add the second argument here to on this then.
+
+57
+00:04:01,460 --> 00:04:04,890
+Function that would be any error we get back.
+
+58
+00:04:04,970 --> 00:04:07,210
+So here we can simply awls a log.
+
+59
+00:04:07,370 --> 00:04:10,350
+Any error response we do get back.
+
+60
+00:04:10,700 --> 00:04:16,890
+Well and with that set up let's see if this now works I'll go back to my application.
+
+61
+00:04:16,910 --> 00:04:20,710
+Open up the console to see any errors we might get.
+
+62
+00:04:20,870 --> 00:04:23,330
+And then all sets a sense testate.
+
+63
+00:04:23,390 --> 00:04:31,440
+Let's hit submit and does looks good we do get back a response which has some body where we do have
+
+64
+00:04:31,470 --> 00:04:33,500
+a name which is very cryptical.
+
+65
+00:04:33,570 --> 00:04:35,190
+I'll explain this in a second.
+
+66
+00:04:35,340 --> 00:04:38,910
+And then we do have the status 200 and that looks all good.
+
+67
+00:04:38,910 --> 00:04:42,580
+Now we have a look in our firebase console console in the database.
+
+68
+00:04:42,630 --> 00:04:49,460
+You see this new data node was created of course because that last name I set up here in the URL.
+
+69
+00:04:49,460 --> 00:04:54,990
+And if we have a look into this node we see the same cryptical string and underdosed string.
+
+70
+00:04:55,000 --> 00:04:56,950
+We see email and username data.
+
+71
+00:04:56,970 --> 00:05:03,450
+I submit it all to recognize that all the extra stuff you just created when we printed the optic to
+
+72
+00:05:03,450 --> 00:05:05,750
+the console before wasn't sent here.
+
+73
+00:05:05,760 --> 00:05:12,260
+So that is really clever by you here only sends our real object.
+
+74
+00:05:12,270 --> 00:05:14,600
+Now what does this cryptical string here though.
+
+75
+00:05:14,760 --> 00:05:21,230
+Well since we posted the data it means we can submit the data over and over again as you saw now and
+
+76
+00:05:21,250 --> 00:05:23,650
+no new node was added under data.
+
+77
+00:05:23,760 --> 00:05:25,190
+And that is what the strings for.
+
+78
+00:05:25,200 --> 00:05:29,890
+It's a unique ID and ID is necessary because otherwise the data would be cool.
+
+79
+00:05:29,970 --> 00:05:34,650
+And since we use post we append new data to the existing one we're not overwriting it.
+
+80
+00:05:34,740 --> 00:05:35,720
+We're appending it.
+
+81
+00:05:35,760 --> 00:05:41,100
+And you can only append that if each resource has a unique identifier Otherwise there is no way to retrieve
+
+82
+00:05:41,100 --> 00:05:43,340
+it securely in the future.
+
+83
+00:05:43,350 --> 00:05:45,280
+This is what this strange string is.
+
+84
+00:05:45,450 --> 00:05:52,080
+Which we also get back into response by firebase and that more importantly is how easy it is to send
+
+85
+00:05:52,080 --> 00:05:59,700
+the post request and to send it with your own data to your own your L and then as we see handling the
+
+86
+00:05:59,700 --> 00:06:06,590
+response here in the forest our function or in the first thunked you can pass to the then function the
+
+87
+00:06:06,660 --> 00:06:07,590
+first callback.
+

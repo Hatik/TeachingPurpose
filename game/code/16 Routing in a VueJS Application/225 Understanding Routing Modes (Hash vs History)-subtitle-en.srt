@@ -1,0 +1,248 @@
+1
+00:00:02,030 --> 00:00:05,430
+So we were able to set up our routes navigate their last video.
+
+2
+00:00:05,540 --> 00:00:11,470
+What we also saw is that we have this hashtag of your L which was added automatically by The View rowdier.
+
+3
+00:00:11,690 --> 00:00:15,140
+Now it was edit because it's a default set up the router uses.
+
+4
+00:00:15,230 --> 00:00:20,970
+It's a style you see a lot and single page applications due to a specific reason.
+
+5
+00:00:21,080 --> 00:00:26,080
+If you have a normal route normal you are all I should say without the hash tag.
+
+6
+00:00:26,390 --> 00:00:30,810
+Then each request once you hit enter on your keyboard gets sent to the server.
+
+7
+00:00:30,860 --> 00:00:34,810
+This is how the browser and how the web works and which makes sense would be hard to visit web site
+
+8
+00:00:34,820 --> 00:00:38,120
+web pages if it wouldn't get sent to the server.
+
+9
+00:00:38,120 --> 00:00:43,580
+The problem with sending it to the server is that we want to handle the route in our single page application
+
+10
+00:00:43,580 --> 00:00:46,320
+that we don't want to get the route to the server.
+
+11
+00:00:46,430 --> 00:00:54,030
+We want to handle it on our local page here though if we wisit our page for the first time in this case
+
+12
+00:00:54,030 --> 00:00:57,620
+you want to get it to the server because we need to get a single page.
+
+13
+00:00:57,710 --> 00:01:03,620
+But if for example with a slash user without a hash tag we would like to get our single page the next
+
+14
+00:01:03,630 --> 00:01:10,550
+aged a file and then take over and handle the rest of the well with our single page instead with the
+
+15
+00:01:10,550 --> 00:01:12,040
+browser or the server.
+
+16
+00:01:12,040 --> 00:01:18,230
+I should say well the hash tag allows us to do just that the part in front of the hash tag is sent to
+
+17
+00:01:18,230 --> 00:01:22,910
+the server so to say this will give it it give us back our index page to him of the file.
+
+18
+00:01:23,090 --> 00:01:29,630
+And the part after the hash tag is then handed over to our running Javascript application and may be
+
+19
+00:01:29,630 --> 00:01:31,490
+handled by that application.
+
+20
+00:01:31,490 --> 00:01:35,200
+So that now we can extract our payoffs from there.
+
+21
+00:01:35,210 --> 00:01:41,960
+This works fine and it spares us the issues you might face if we would have to configure our server
+
+22
+00:01:42,020 --> 00:01:46,610
+in a certain way that it kind of gives us back the right thing though.
+
+23
+00:01:46,640 --> 00:01:51,970
+It turns out configuring our our server isn't that difficult and having these you're out.
+
+24
+00:01:51,980 --> 00:01:53,240
+Isn't that pretty.
+
+25
+00:01:53,300 --> 00:01:59,360
+It would be nicer to have the normal you are where we don't have a hash tag and still be able to use
+
+26
+00:01:59,360 --> 00:02:02,700
+our single page application as we are used to do.
+
+27
+00:02:03,020 --> 00:02:05,040
+Well turns out it's not that hard.
+
+28
+00:02:05,060 --> 00:02:11,360
+The thing you will have to do on your server which I can't show you here is that you need to return
+
+29
+00:02:11,360 --> 00:02:12,920
+the next HVM file.
+
+30
+00:02:12,920 --> 00:02:14,090
+In all cases.
+
+31
+00:02:14,090 --> 00:02:19,550
+So even in 4 0 4 aero cases because that is what your server will throw with you with this route which
+
+32
+00:02:19,550 --> 00:02:21,860
+hasn't registered on your server.
+
+33
+00:02:21,860 --> 00:02:24,020
+This is what your server needs to do.
+
+34
+00:02:24,050 --> 00:02:31,430
+Always return the index HVM file because that in the index each team will file our view Cheras application
+
+35
+00:02:31,430 --> 00:02:36,250
+gets launched and hence is able to then parse out your L and take over.
+
+36
+00:02:36,470 --> 00:02:39,530
+This is very convenient and gives us nicer routes.
+
+37
+00:02:39,620 --> 00:02:46,640
+Now in order to tell the future has router that you want to use this way of setting up or you or else
+
+38
+00:02:46,670 --> 00:02:53,370
+and that our server is configured correctly is simply to go to our router which we create here.
+
+39
+00:02:53,420 --> 00:02:58,920
+And not only passed the routes but also demoed property which you may set to history.
+
+40
+00:02:59,000 --> 00:03:00,770
+That's the name for this.
+
+41
+00:03:00,800 --> 00:03:02,230
+No hash textile.
+
+42
+00:03:02,240 --> 00:03:03,580
+It's called history mode.
+
+43
+00:03:03,740 --> 00:03:08,190
+The default mode is hash which you don't have to set because well it's the default.
+
+44
+00:03:08,240 --> 00:03:12,520
+You can override it with history and this will lead to the falling behavior.
+
+45
+00:03:12,530 --> 00:03:15,570
+Now hit enter here excuse me reload.
+
+46
+00:03:15,650 --> 00:03:16,740
+Hit enter.
+
+47
+00:03:16,910 --> 00:03:19,280
+You now see estilo at the user page.
+
+48
+00:03:19,430 --> 00:03:23,040
+You'll see it reloads the page but then it navigates correctly.
+
+49
+00:03:23,060 --> 00:03:28,340
+That of course works because our development server we're using here in the web pic project is automatically
+
+50
+00:03:28,340 --> 00:03:30,720
+set up in a way to give us back to index.
+
+51
+00:03:30,730 --> 00:03:32,770
+Tim all fall in all circumstances.
+
+52
+00:03:32,810 --> 00:03:34,080
+Revised as would not work.
+
+53
+00:03:34,130 --> 00:03:40,530
+You'd need to configure your server appropriately and to learn more about that wizard or google for
+
+54
+00:03:40,600 --> 00:03:41,720
+the router.
+
+55
+00:03:41,990 --> 00:03:46,650
+And then you may wisit the official documentation on it.
+
+56
+00:03:46,750 --> 00:03:49,130
+They're generally a good place to dive deeper.
+
+57
+00:03:49,130 --> 00:03:55,070
+There you will find th's you will find history more point which explains how you may set up your server
+
+58
+00:03:55,160 --> 00:03:59,660
+to serve the correct file but that's just a little addition.
+
+59
+00:03:59,780 --> 00:04:03,340
+Let's now head back in now that we understood how we can change this.
+
+60
+00:04:03,350 --> 00:04:05,640
+I will keep this history mode here.
+
+61
+00:04:05,840 --> 00:04:11,660
+Let's now go back to the question how we can add links in our page to actually be able to click there
+
+62
+00:04:11,660 --> 00:04:12,650
+and navigate around.
+

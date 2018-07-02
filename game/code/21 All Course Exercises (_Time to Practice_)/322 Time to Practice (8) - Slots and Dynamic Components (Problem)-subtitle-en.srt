@@ -1,0 +1,68 @@
+1
+00:00:02,080 --> 00:00:05,200
+Time for our exercise this is a little application.
+
+2
+00:00:05,200 --> 00:00:10,540
+We get three buttons for three different templates and then it looks like we got free this year with
+
+3
+00:00:10,540 --> 00:00:11,820
+different colors.
+
+4
+00:00:12,130 --> 00:00:17,830
+Well these devs are actually free components which have absolutely nothing inside their template except
+
+5
+00:00:17,830 --> 00:00:24,340
+that the div which had style with scope's styles so that it stays inside this component and then the
+
+6
+00:00:24,340 --> 00:00:30,100
+up file is simply have the buttons and these free components which I loaded my object down there so
+
+7
+00:00:30,100 --> 00:00:31,960
+far so straightforward.
+
+8
+00:00:32,140 --> 00:00:39,010
+Now maybe you already guess what the exercise is but as a first step I want you to pass in some content
+
+9
+00:00:39,010 --> 00:00:47,410
+of your choice can be some text can be aged him out code to each of these templates here the same text
+
+10
+00:00:47,410 --> 00:00:53,850
+or the same content it should be because in the next lesson I want to dynamically switch that.
+
+11
+00:00:53,870 --> 00:00:56,720
+Now back to the first part passing in some content.
+
+12
+00:00:56,770 --> 00:01:02,910
+Of course we want to pass it in between the opening and closing select or so not as a prop.
+
+13
+00:01:02,920 --> 00:01:09,610
+Now regarding the second part dynamically switching these components I want you to hook up buttons and
+
+14
+00:01:09,610 --> 00:01:16,060
+add some code so that only one of the free templates is displayed and the arrow will do are not.
+
+15
+00:01:16,120 --> 00:01:20,170
+And we can switch between them while of slots and dynamic components.
+
+16
+00:01:20,170 --> 00:01:22,390
+You should be well prepared to do that.
+
+17
+00:01:22,570 --> 00:01:25,190
+Let's meet forward a solution in the next video.
+

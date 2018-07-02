@@ -1,0 +1,344 @@
+1
+00:00:02,170 --> 00:00:05,780
+So over the last lectures we learned a lot about the basics of validation.
+
+2
+00:00:05,780 --> 00:00:07,590
+With this email validation.
+
+3
+00:00:07,640 --> 00:00:08,630
+And that's great.
+
+4
+00:00:08,630 --> 00:00:13,340
+Let's now move on to the Avro controls and let's find out how we can validate these.
+
+5
+00:00:13,370 --> 00:00:17,800
+And let's dive into some other built in validators Yulee date offers.
+
+6
+00:00:17,960 --> 00:00:19,540
+Let's work on D.H..
+
+7
+00:00:19,700 --> 00:00:23,990
+Let's say we only want to accept people which are at least 18 years old.
+
+8
+00:00:24,110 --> 00:00:26,490
+And of course age should be a number.
+
+9
+00:00:26,750 --> 00:00:29,090
+So what can we do here.
+
+10
+00:00:29,450 --> 00:00:29,780
+We can.
+
+11
+00:00:29,780 --> 00:00:38,570
+First of all set up a control or rule set for the age so I'll name this age and we have to name it age
+
+12
+00:00:38,600 --> 00:00:45,800
+because our property in the data Meffert here also is named age were binding to age with the model and
+
+13
+00:00:45,800 --> 00:00:53,030
+for a date to successfully synchronize this it has to be named age does that is a javascript object
+
+14
+00:00:53,030 --> 00:00:56,300
+where you register all the validate you want to use.
+
+15
+00:00:56,410 --> 00:00:58,170
+No one is required.
+
+16
+00:00:58,220 --> 00:00:59,920
+It should not be empty.
+
+17
+00:01:00,200 --> 00:01:07,320
+But actually all the way to ensure that people enter a number and that this number is at least 18.
+
+18
+00:01:07,700 --> 00:01:12,750
+So what you can do is we can import two additional built in validators.
+
+19
+00:01:12,770 --> 00:01:18,590
+The first is numeric and it simply checks whatever the value is a number.
+
+20
+00:01:18,590 --> 00:01:24,580
+The second is men and now you have men length and men value.
+
+21
+00:01:24,640 --> 00:01:30,100
+Now mid-length is interesting if you validate a string which should be at least six characters long
+
+22
+00:01:30,200 --> 00:01:34,000
+maybe four to password men value is what I want to use here.
+
+23
+00:01:34,010 --> 00:01:41,600
+It allows us to check if a numeric or date value is higher than a specific value you enter.
+
+24
+00:01:41,600 --> 00:01:45,070
+Now let's assign both validators to the 8 here.
+
+25
+00:01:45,110 --> 00:01:46,050
+Numeric is easy.
+
+26
+00:01:46,070 --> 00:01:48,020
+We assign it just as required.
+
+27
+00:01:48,020 --> 00:01:54,380
+Taking advantage of it is de-value expansion shortcut mid-length is different though.
+
+28
+00:01:54,500 --> 00:01:58,100
+Here you can assign men or whatever you want.
+
+29
+00:01:58,100 --> 00:02:01,070
+Again this name of the key is up to you.
+
+30
+00:02:01,550 --> 00:02:06,520
+But then here are named men Velle the value now is men value.
+
+31
+00:02:06,530 --> 00:02:12,390
+So what I am importing this built in validator men value now is special.
+
+32
+00:02:12,410 --> 00:02:19,520
+And that's also why I'm assigning it like this unlike required in numeric min value is a function which
+
+33
+00:02:19,520 --> 00:02:26,720
+requires an argument to be configured because you of course need to pass our minimum value our criteria.
+
+34
+00:02:26,720 --> 00:02:32,080
+So here I could pass 18 so that the minimum value is 18.
+
+35
+00:02:32,090 --> 00:02:35,120
+Otherwise it's treated as invalid.
+
+36
+00:02:35,150 --> 00:02:41,600
+Now with that we got this age control let's now connected to our input here.
+
+37
+00:02:41,780 --> 00:02:44,220
+So I'll go back to the input field here.
+
+38
+00:02:44,390 --> 00:02:51,770
+I'll also listen to the player event your and reach out to Dollar Sign be a age and call dollar sign.
+
+39
+00:02:51,800 --> 00:02:53,990
+Touch as before.
+
+40
+00:02:53,990 --> 00:02:56,280
+With that we connected this.
+
+41
+00:02:56,300 --> 00:03:00,520
+Let's not also mark this as invalid if it is invalid.
+
+42
+00:03:00,740 --> 00:03:01,830
+And it is super simple.
+
+43
+00:03:01,850 --> 00:03:03,690
+We already defined dishtowels.
+
+44
+00:03:03,710 --> 00:03:11,140
+Let's now just set the class and bind it to a javascript object where we set the invalid Class IV dollar
+
+45
+00:03:11,160 --> 00:03:16,860
+sign the H that's the name of the control we create it has an error.
+
+46
+00:03:16,880 --> 00:03:18,660
+It's as simple as that.
+
+47
+00:03:19,040 --> 00:03:21,120
+And with that we shall have all we need.
+
+48
+00:03:21,270 --> 00:03:23,560
+Now safe does and find out if it works.
+
+49
+00:03:23,630 --> 00:03:28,680
+If I go back to my application all reload just to make sure it really is reset.
+
+50
+00:03:28,700 --> 00:03:30,780
+Now here does this type numeric.
+
+51
+00:03:30,950 --> 00:03:38,840
+If I enter in E and I click out of there it's invalid Fancher a 1 it's still invalid because it's not
+
+52
+00:03:38,840 --> 00:03:41,530
+hired an 18 or 18.
+
+53
+00:03:41,630 --> 00:03:45,850
+Now it becomes developed because it's a number and it's higher than 18.
+
+54
+00:03:45,970 --> 00:03:50,210
+If I enter nothing it's invalid again causes while there is no value.
+
+55
+00:03:50,210 --> 00:03:52,580
+And we did have the required validator.
+
+56
+00:03:52,580 --> 00:03:54,180
+So this seems to work.
+
+57
+00:03:54,230 --> 00:04:00,560
+Now of course you can also output an error message and we can all take advantage off this validator
+
+58
+00:04:00,770 --> 00:04:06,500
+which takes a value to all output that value in our error message.
+
+59
+00:04:06,560 --> 00:04:12,080
+So below the age input I'll add a paragraph where I output.
+
+60
+00:04:12,350 --> 00:04:15,070
+You have to be at least.
+
+61
+00:04:15,200 --> 00:04:22,210
+And then I want to output the value I find in my validation rule years old something like that.
+
+62
+00:04:22,250 --> 00:04:28,840
+Now that should be output if Dollar Sign the H min.
+
+63
+00:04:28,870 --> 00:04:31,510
+Well if that's not true.
+
+64
+00:04:31,760 --> 00:04:35,940
+Mendell now refers to my property to find here.
+
+65
+00:04:35,990 --> 00:04:41,590
+As I said you can pick this name totally free or you don't have any limitations.
+
+66
+00:04:41,670 --> 00:04:47,120
+Now I want to access this parameter I passed and I can't do this because really it exposes it to me
+
+67
+00:04:47,690 --> 00:04:54,320
+here in my sentence between double curly braces I can reach out to Dulles and the H.
+
+68
+00:04:54,380 --> 00:04:57,710
+And now there's a special parents dollar sign.
+
+69
+00:04:57,710 --> 00:05:00,100
+Parents object.
+
+70
+00:05:00,100 --> 00:05:08,640
+It does not hold parents for all our different validators including Manvel which I can now access air
+
+71
+00:05:08,970 --> 00:05:19,040
+and on men well there now will be men property and you can always output does as I did earlier in this
+
+72
+00:05:19,140 --> 00:05:24,880
+model where it just locked all are we you can of course all the local or regional or Perens to see what's
+
+73
+00:05:24,880 --> 00:05:25,770
+inside there.
+
+74
+00:05:25,780 --> 00:05:32,920
+There will be an invalid property with this main property which is the value we passed to the main value
+
+75
+00:05:32,920 --> 00:05:34,400
+function down there.
+
+76
+00:05:34,510 --> 00:05:41,980
+So now it should output you have to be at least 18 years old if we don't enter a value that is higher
+
+77
+00:05:42,220 --> 00:05:44,350
+then the minimum value here.
+
+78
+00:05:44,410 --> 00:05:47,790
+So if we go back right at the start we don't see anything.
+
+79
+00:05:47,800 --> 00:05:54,920
+But if I enter a one you see you OK there's a typo but you see you have to be at least 18 years old.
+
+80
+00:05:54,970 --> 00:06:03,760
+Now if I go back and quickly fix this typo and now we only output this correctly only if I'm lower than
+
+81
+00:06:03,760 --> 00:06:07,690
+18 if I enter 18 or higher we don't get this error.
+
+82
+00:06:07,720 --> 00:06:13,990
+So now we have this too we can get access to the data we used to configure our validators which of course
+
+83
+00:06:13,990 --> 00:06:19,300
+makes them really reusable and gives us a lot of power that can only encourage you to dive into the
+
+84
+00:06:19,300 --> 00:06:22,900
+official docs to learn about all the built in validators.
+
+85
+00:06:22,900 --> 00:06:28,390
+That being said though let's move on to the password because here we got another interesting feature
+
+86
+00:06:28,630 --> 00:06:31,270
+we want to ensure that they both are equal.
+

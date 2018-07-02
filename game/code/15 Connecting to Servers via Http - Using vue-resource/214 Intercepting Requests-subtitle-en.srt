@@ -1,0 +1,184 @@
+1
+00:00:02,250 --> 00:00:08,530
+Now in the last video we already saw a way how we can store some data on our general agent object how
+
+2
+00:00:08,550 --> 00:00:14,980
+we could for example configure deep rooted route or the route you are Allaf all our requests.
+
+3
+00:00:14,980 --> 00:00:15,930
+That's nice.
+
+4
+00:00:15,930 --> 00:00:21,330
+Sometimes you want to do a bit more than that though sometimes you really want to step in on a request
+
+5
+00:00:21,420 --> 00:00:25,370
+and or on the response and intercept it.
+
+6
+00:00:25,380 --> 00:00:31,530
+Now the resource allows you to set up such intra satirise which are executed upon each request or each
+
+7
+00:00:31,540 --> 00:00:33,660
+response very easily.
+
+8
+00:00:33,990 --> 00:00:40,200
+The place to create such Winterset or is here where we configure our new instance where we are where
+
+9
+00:00:40,200 --> 00:00:47,880
+we start our rude instance or where we add a DV resource package there on the HTP object again I can
+
+10
+00:00:47,880 --> 00:00:54,490
+access entire Centaurus which is an array of functions we want to execute on each request.
+
+11
+00:00:54,500 --> 00:01:01,350
+Basically here we can push a new interceptor on this array all interceptors and xray will be executed
+
+12
+00:01:01,800 --> 00:01:04,800
+and their function has the following structure.
+
+13
+00:01:04,830 --> 00:01:11,370
+It gets the request and it gets a second argument which I will call next because this is a function
+
+14
+00:01:11,380 --> 00:01:17,190
+we then can execute to allow the request to continue on because most of the time you don't want to let
+
+15
+00:01:17,220 --> 00:01:18,370
+your request.
+
+16
+00:01:18,390 --> 00:01:19,960
+And in this function.
+
+17
+00:01:20,220 --> 00:01:24,780
+But in order to allow it to travel on you need some callback function to execute.
+
+18
+00:01:24,780 --> 00:01:30,330
+Once you're done doing things with the request now in this function you may do whatever you like.
+
+19
+00:01:30,330 --> 00:01:36,260
+For example you can print the request right to our log or of course all the modify it.
+
+20
+00:01:36,270 --> 00:01:42,660
+You could change the request you could change request method you put for example here and let's see
+
+21
+00:01:42,690 --> 00:01:43,870
+what this will do.
+
+22
+00:01:44,130 --> 00:01:46,280
+Let's enhance But let's see.
+
+23
+00:01:46,350 --> 00:01:53,020
+We want to check the request method whether it's post and if it is post we want to change it to put.
+
+24
+00:01:53,070 --> 00:01:58,800
+So get requests will still be able to make it through but post requests will be converted into a put
+
+25
+00:01:58,800 --> 00:02:04,740
+request and we will also see what this will do on our back and on firebase and thereafter again we have
+
+26
+00:02:04,740 --> 00:02:06,360
+to execute next.
+
+27
+00:02:06,720 --> 00:02:09,780
+Well OK let's see how this will work out if.
+
+28
+00:02:09,820 --> 00:02:18,960
+Why no go to the application and reload this and I create a new user here and I will open up my console
+
+29
+00:02:18,960 --> 00:02:20,730
+and whoops like this.
+
+30
+00:02:20,730 --> 00:02:22,840
+Clear it and hit submit.
+
+31
+00:02:22,860 --> 00:02:29,490
+We see the request was presented here the request here is of type put because it's an object.
+
+32
+00:02:29,490 --> 00:02:34,560
+So even though we printed before changing it it is changed here because objects are reference types
+
+33
+00:02:34,750 --> 00:02:38,500
+and if we have a fired look at the firebase console we see that our data and.
+
+34
+00:02:38,520 --> 00:02:42,110
+Now it changed it no longer has these cryptic IDs.
+
+35
+00:02:42,120 --> 00:02:45,230
+Instead we immediately see the email and username here.
+
+36
+00:02:45,630 --> 00:02:52,010
+And if I submit a new user we now see this got overwritten.
+
+37
+00:02:52,220 --> 00:02:58,370
+So this is the difference between Put and post on firebase post creates new resource appended to the
+
+38
+00:02:58,370 --> 00:02:59,170
+existing ones.
+
+39
+00:02:59,180 --> 00:03:02,670
+Hence the need for a unique identifier is cryptic string.
+
+40
+00:03:02,840 --> 00:03:03,440
+Well put.
+
+41
+00:03:03,440 --> 00:03:05,290
+Always overwrites the old data.
+
+42
+00:03:05,300 --> 00:03:07,940
+That's just a side note on how to use that on firebase.
+
+43
+00:03:07,940 --> 00:03:13,730
+The cool thing we see here is though that we were able to use our own intercept or here check to request
+
+44
+00:03:13,820 --> 00:03:19,310
+you will see get requests still work though the data is not output correctly of course because well
+
+45
+00:03:19,310 --> 00:03:27,050
+we still have a method set up which extracts it differently but we see that now we're successfully intercepting
+
+46
+00:03:27,110 --> 00:03:31,630
+all requests we're sending and exchanging the method in case it is a put request.
+

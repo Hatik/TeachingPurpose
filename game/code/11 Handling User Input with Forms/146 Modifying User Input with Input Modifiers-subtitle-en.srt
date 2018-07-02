@@ -1,0 +1,140 @@
+1
+00:00:02,030 --> 00:00:04,630
+The Last Lecture we use the default value for H.
+
+2
+00:00:04,670 --> 00:00:07,230
+And we also nest our properties.
+
+3
+00:00:07,550 --> 00:00:14,870
+Now let's dive a bit deeper into how we can modify the way the model works with these inputs.
+
+4
+00:00:15,080 --> 00:00:21,590
+Right now the data down there is updated with each keystroke and I can prove this by going to my password
+
+5
+00:00:22,370 --> 00:00:28,850
+and outputting the current value directly below the password simply so that we can see it on the same
+
+6
+00:00:28,850 --> 00:00:30,800
+page as the input field.
+
+7
+00:00:31,100 --> 00:00:36,400
+So if I saved this if I now enter a password here we can see it updated with each keystroke.
+
+8
+00:00:36,410 --> 00:00:37,560
+That is the default.
+
+9
+00:00:37,580 --> 00:00:44,360
+It reacts to the input event which means it updates whenever the input here changes.
+
+10
+00:00:44,370 --> 00:00:51,150
+Now maybe we only want to update it after we enter default password and well clicked in the number inputs.
+
+11
+00:00:51,160 --> 00:00:57,500
+Basically once we're done finishing this input we can do this by adding a modifier to the model here.
+
+12
+00:00:57,710 --> 00:01:03,470
+I can add the lazy modifier with lazy what this will do is that behind the scenes that will now not
+
+13
+00:01:03,470 --> 00:01:06,130
+listen to the input event.
+
+14
+00:01:06,140 --> 00:01:11,810
+So whenever we type something whenever we enter something new but to the change we went which is only
+
+15
+00:01:11,810 --> 00:01:17,340
+fired once we click somewhere else once we leave that input you can see it in action here.
+
+16
+00:01:17,510 --> 00:01:23,990
+If I now remove this you'll see task is still there only once a click into another input field does
+
+17
+00:01:23,990 --> 00:01:25,350
+tasks disappear.
+
+18
+00:01:25,460 --> 00:01:31,310
+And on the same hand if y now type here it will only appear if I leave that input that might be the
+
+19
+00:01:31,310 --> 00:01:34,760
+behavior what you want if you don't want to update on each keystroke.
+
+20
+00:01:34,760 --> 00:01:41,300
+For example if you know you're going to rise your values only upon hitting submit anyways or that is
+
+21
+00:01:41,300 --> 00:01:44,490
+the place where you then want to validate them and use them.
+
+22
+00:01:44,630 --> 00:01:48,230
+Well you might use lazy to not update this instantly.
+
+23
+00:01:48,260 --> 00:01:55,250
+On the other hand if you want to provide real time validation or give the user some hints and or a completion
+
+24
+00:01:55,490 --> 00:01:59,990
+you might need that behavior of automatically detecting each keystroke.
+
+25
+00:02:00,020 --> 00:02:06,110
+And not only react once the user is done but it's great to know that you get this option as remote as
+
+26
+00:02:06,110 --> 00:02:10,960
+you can use our trim to trim any excess whitespace at the beginning and end.
+
+27
+00:02:10,970 --> 00:02:15,720
+If you want to force that you don't have such whitespace or a number.
+
+28
+00:02:15,740 --> 00:02:22,310
+So DOT number but trim would have been the alternative for trimming that number to four is that behind
+
+29
+00:02:22,310 --> 00:02:26,900
+the scenes the input is converted to a number right away but they will be a string.
+
+30
+00:02:26,900 --> 00:02:30,680
+Everything you input here is a string that is how age chemo works.
+
+31
+00:02:30,680 --> 00:02:36,710
+But if you know you want to work with number in your view code you could add that number as a modifier
+
+32
+00:02:36,800 --> 00:02:42,950
+like we talked last year so that number like that and that would force it to be transformed to a number
+
+33
+00:02:42,980 --> 00:02:45,280
+automatically so that you can work with that.
+
+34
+00:02:45,440 --> 00:02:49,570
+That is how you can use modifiers to add just the input way.
+
+35
+00:02:49,610 --> 00:02:56,170
+So when you react as well as format with trim and number in the way you need it to behave.
+

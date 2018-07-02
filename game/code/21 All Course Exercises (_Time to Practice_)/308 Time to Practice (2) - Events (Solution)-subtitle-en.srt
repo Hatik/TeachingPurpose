@@ -1,0 +1,232 @@
+1
+00:00:01,860 --> 00:00:08,510
+Get started with the first exercise year of course we want to execute a function here so I will add
+
+2
+00:00:08,510 --> 00:00:15,270
+DV underactive to listen to you a user event for iste I then pass the argument of the colon which is
+
+3
+00:00:15,270 --> 00:00:17,100
+the name of the year when I want to listen to you.
+
+4
+00:00:17,220 --> 00:00:19,450
+And that's the click event here now.
+
+5
+00:00:19,450 --> 00:00:20,660
+But do we need quotation marks.
+
+6
+00:00:20,670 --> 00:00:26,560
+I specified a code to execute on each click and here as us just set a one to execute a function.
+
+7
+00:00:26,580 --> 00:00:32,930
+So down there I'll edit my methods and I will name and alert me just like that.
+
+8
+00:00:32,970 --> 00:00:40,080
+Now in this function all I'll do is I will throw an alert where I say Alert really straight forward.
+
+9
+00:00:40,170 --> 00:00:46,640
+And now it can use to alert me function from down there to pass a served ball reference here in the
+
+10
+00:00:46,650 --> 00:00:50,660
+quotation marks as de-value for this directive binding.
+
+11
+00:00:51,000 --> 00:00:56,880
+If I now had control enter and click on Show alert we see just alert over here.
+
+12
+00:00:57,150 --> 00:01:03,180
+So this is now working this is the first task and the second one I now want to listen to a different
+
+13
+00:01:03,180 --> 00:01:08,910
+he went on a different element on this input here the user is of course able to type something here
+
+14
+00:01:09,090 --> 00:01:12,010
+and I want to listen to each keystroke the user does.
+
+15
+00:01:12,300 --> 00:01:17,790
+So again with we on that can set up such a listener I can bind a vent to some code I want to execute
+
+16
+00:01:17,790 --> 00:01:23,670
+when the event occurs and the way I want to listen to is key down I could also use key up key downness
+
+17
+00:01:23,790 --> 00:01:29,130
+as the name implies fired whatever keys pressed the for the just released key up would be pressed after
+
+18
+00:01:29,130 --> 00:01:30,060
+it is released.
+
+19
+00:01:30,060 --> 00:01:36,870
+Choose whatever suits your needs here I'll choose key down and in there I want to change the value.
+
+20
+00:01:36,910 --> 00:01:40,250
+Notice initially it's set to an empty string.
+
+21
+00:01:40,350 --> 00:01:49,860
+I can update it by simply saying value equals and then event dollar aside even to be precise because
+
+22
+00:01:49,860 --> 00:01:51,410
+disasters are served.
+
+23
+00:01:52,050 --> 00:01:58,410
+Name you chase creates for us this reserved variable which stores the default event object automatically
+
+24
+00:01:58,410 --> 00:02:04,290
+created for us by javascript which holds valuable information like the target of the event.
+
+25
+00:02:04,290 --> 00:02:09,510
+Now the target clearly is this input field and since the input field has a value property.
+
+26
+00:02:09,510 --> 00:02:12,480
+This is where I can get the input value from.
+
+27
+00:02:12,480 --> 00:02:19,680
+So on my U-bend object I can access the target of the event again the input element here and then the
+
+28
+00:02:19,680 --> 00:02:20,380
+value.
+
+29
+00:02:20,430 --> 00:02:26,280
+And with that I'm assigning the value of the target of this event to this value property down there.
+
+30
+00:02:26,460 --> 00:02:31,260
+I could have of course all that called a function where I passed Thaller aside event as an argument
+
+31
+00:02:31,440 --> 00:02:34,450
+and use it in the function body to do to say.
+
+32
+00:02:34,540 --> 00:02:37,860
+Now add control enter let's output something here.
+
+33
+00:02:37,980 --> 00:02:44,370
+As you can see the value gets updated below both inputs because this is where I outputted with stinging.
+
+34
+00:02:44,520 --> 00:02:49,310
+And this is the behavior I was looking for here in the third exercise.
+
+35
+00:02:49,320 --> 00:02:55,240
+I want to take the second one and adjusted to only fire if the keyboard press is entered.
+
+36
+00:02:55,410 --> 00:03:00,750
+So I still want to be able to enter something you're not restricting this to enter but I only want to
+
+37
+00:03:00,780 --> 00:03:08,110
+update de-value which will then be output y is triggered appellation whenever we hit the enter key so
+
+38
+00:03:08,110 --> 00:03:10,610
+that we don't update it up on every keystroke.
+
+39
+00:03:10,720 --> 00:03:16,500
+We listen for every keystroke but we then decide should we do something or should we do something.
+
+40
+00:03:16,510 --> 00:03:23,390
+So in order to do this I will generally copy the same code up here as we want the same functionality
+
+41
+00:03:23,680 --> 00:03:26,470
+but of course that won't restricted to the entry key.
+
+42
+00:03:26,650 --> 00:03:30,600
+I can restrict it by adding a key modifier here with the dot.
+
+43
+00:03:30,640 --> 00:03:36,010
+I add such a modifier and then the name for the enter key simply is enter.
+
+44
+00:03:36,100 --> 00:03:42,250
+This tells of Mujeres only fired fire code or execute the code between quotation marks.
+
+45
+00:03:42,310 --> 00:03:48,990
+If we have a key down event and b very important decie which is down is the enter key.
+
+46
+00:03:49,150 --> 00:03:55,630
+With that if I had control enter you can see on the upper input where I don't have to check I can still
+
+47
+00:03:55,630 --> 00:04:01,690
+type and see the values reflected but down there we don't see an updating but as soon as it hit enter
+
+48
+00:04:01,780 --> 00:04:05,930
+it changes to Max and Maximilien and so on.
+
+49
+00:04:05,950 --> 00:04:11,500
+This is of course a very useful behavior because oftentimes you want to listen to every keystroke but
+
+50
+00:04:11,500 --> 00:04:13,950
+not update the value up on every keystroke.
+
+51
+00:04:13,960 --> 00:04:19,090
+You only want to update it once the user kind of hits enter to tell you well and then editing it take
+
+52
+00:04:19,090 --> 00:04:19,760
+the value.
+
+53
+00:04:19,780 --> 00:04:24,680
+For example this word that free exercise is an event.
+
+54
+00:04:24,790 --> 00:04:31,540
+Again very concise but should get you really started with it showing you how to listen to events with
+
+55
+00:04:31,540 --> 00:04:36,550
+the under active how to call functions how to use the event object.
+
+56
+00:04:36,550 --> 00:04:43,510
+Again you would have been able to pass this to a function as an argument and then how to use modifiers
+
+57
+00:04:43,540 --> 00:04:50,440
+like the key modifier here to control Vence specifically your event ochreous with that.
+
+58
+00:04:50,500 --> 00:04:52,180
+Let's move on to the next lectures.
+

@@ -1,0 +1,208 @@
+1
+00:00:01,790 --> 00:00:06,680
+We're starting off with this simple form you know what we can file a complaint for example where we
+
+2
+00:00:06,680 --> 00:00:12,080
+get a couple of input fields and at the bottom we want to output the data the user entered at the beginning
+
+3
+00:00:12,130 --> 00:00:15,550
+and output the data right away so that we can always see what we entered.
+
+4
+00:00:15,710 --> 00:00:22,040
+And thereafter I will change as such that this data fields only displayed once we hit submit button.
+
+5
+00:00:22,280 --> 00:00:28,220
+So we'll start hooking up this form step by step walking our way through all these input fields and
+
+6
+00:00:28,220 --> 00:00:30,460
+learning about the different options.
+
+7
+00:00:30,830 --> 00:00:32,850
+You chase forums offer us.
+
+8
+00:00:33,140 --> 00:00:37,190
+Let's start with the top with a normal text input field.
+
+9
+00:00:37,190 --> 00:00:44,630
+This email input field I want to hook this up to a property in my code so that I can see what the user
+
+10
+00:00:44,630 --> 00:00:49,370
+entered there and used that in my code to validate it or whatever I want to do with that.
+
+11
+00:00:49,370 --> 00:00:55,850
+So outside of that the HDMI representation of the Ismaili input field is this year it's normal input
+
+12
+00:00:55,850 --> 00:00:57,310
+field with some bootstrap classes.
+
+13
+00:00:57,310 --> 00:01:02,750
+Overall I do have some bootstrap classes here and you can find this HVM I'll kill it attached to this
+
+14
+00:01:02,750 --> 00:01:05,060
+lecture so that you can start with the same code.
+
+15
+00:01:05,060 --> 00:01:06,270
+I do have here.
+
+16
+00:01:06,650 --> 00:01:11,440
+Well this input data is the one I want to hook up to a property in my view instance.
+
+17
+00:01:11,630 --> 00:01:14,990
+Well right now my new instance is an empty object down there.
+
+18
+00:01:14,990 --> 00:01:19,890
+Notice I'm in the app view file but that is a normal setup where I rendered this file so no components
+
+19
+00:01:19,910 --> 00:01:21,790
+just as rude instance.
+
+20
+00:01:22,160 --> 00:01:27,410
+Well in a year I now want to create some well some properties.
+
+21
+00:01:27,410 --> 00:01:32,840
+First of all I want to set up the data and I'll use this syntax here where I just write it as a ESX
+
+22
+00:01:32,840 --> 00:01:38,270
+function as it is shust a function and we wrote it like this before one week but it can also well take
+
+23
+00:01:38,270 --> 00:01:41,750
+the shorter route here and just write that as a E6 function.
+
+24
+00:01:41,840 --> 00:01:42,770
+It doesn't change that.
+
+25
+00:01:42,770 --> 00:01:45,930
+Here we return an object which then represents our data.
+
+26
+00:01:46,160 --> 00:01:53,420
+Now in this object here I want to have an email property let's say and by default that shell be empty.
+
+27
+00:01:53,420 --> 00:02:00,740
+Now how do I hook up my HMO input field here with that property down there in my data field.
+
+28
+00:02:00,830 --> 00:02:02,980
+We use the model for that.
+
+29
+00:02:03,170 --> 00:02:10,570
+So the way to do that is to add the model two way data binding therefore and then simply say email here.
+
+30
+00:02:10,610 --> 00:02:14,700
+Since that is the property name it shows down there.
+
+31
+00:02:14,750 --> 00:02:21,620
+Now you might correctly ask well if it's two way binding How do I ensure that I bind the correct direction
+
+32
+00:02:21,680 --> 00:02:23,200
+so that the user types something.
+
+33
+00:02:23,210 --> 00:02:28,160
+And I opted to property and that if I update the property in some other place let's say I click a button
+
+34
+00:02:28,160 --> 00:02:33,800
+that would show pre-populated input field that it does this and this right direction and not override
+
+35
+00:02:33,800 --> 00:02:37,370
+it because the input field already has a value.
+
+36
+00:02:37,370 --> 00:02:41,900
+The short answer is you chaps will figure this out automatically.
+
+37
+00:02:41,900 --> 00:02:47,980
+That might sound kind of magical but basically you just simply checks what's the source of the editing.
+
+38
+00:02:47,990 --> 00:02:51,470
+If we type in the input field the property the code will be overwritten.
+
+39
+00:02:51,590 --> 00:02:57,480
+If we change this property from some place let's say by clicking a button the input in the OR de-value
+
+40
+00:02:57,560 --> 00:02:59,060
+in the input will be overwritten.
+
+41
+00:02:59,060 --> 00:03:00,490
+This is how that works.
+
+42
+00:03:00,620 --> 00:03:06,950
+Now with the input field being bound I can now go to my user data at the bottom there and simply output
+
+43
+00:03:07,020 --> 00:03:07,460
+e-mail.
+
+44
+00:03:07,460 --> 00:03:09,080
+Here we have string interpolation.
+
+45
+00:03:09,080 --> 00:03:15,890
+So if these stubbled curly braces now after saving this we'll see that if I head over there we don't
+
+46
+00:03:15,890 --> 00:03:21,500
+see a value there but as soon as I enter a test email address we do see it down there in our data field
+
+47
+00:03:21,500 --> 00:03:21,960
+too.
+
+48
+00:03:21,970 --> 00:03:26,690
+This is how easy we can hook up as a normal input field to our property.
+
+49
+00:03:26,690 --> 00:03:27,830
+We've seen this before.
+
+50
+00:03:27,830 --> 00:03:31,880
+It's normal two way data binding but that is how you handle the forms.
+
+51
+00:03:31,960 --> 00:03:38,900
+Of course for this model here I'll dive into other types of controls as well and also show you which
+
+52
+00:03:38,900 --> 00:03:44,080
+additional features you chess offers us when it comes to listening to such inputs.
+

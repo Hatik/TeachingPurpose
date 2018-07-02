@@ -1,0 +1,264 @@
+1
+00:00:02,390 --> 00:00:05,060
+In the last lecture we configured firebase.
+
+2
+00:00:05,060 --> 00:00:11,240
+Now let's make sure we do actually create new users through this restful API endpoint firebase gives
+
+3
+00:00:11,240 --> 00:00:12,170
+us.
+
+4
+00:00:12,170 --> 00:00:15,230
+I'm going to copy this endpoint here.
+
+5
+00:00:16,720 --> 00:00:20,970
+And I will use it in a sign upload you file.
+
+6
+00:00:21,010 --> 00:00:29,680
+Now actually there we target users Jason and we are using our custom X-ists instance in case you don't
+
+7
+00:00:29,680 --> 00:00:31,270
+know where this is coming from.
+
+8
+00:00:31,270 --> 00:00:37,190
+I added it in the module D-New module where I should use x yes.
+
+9
+00:00:37,240 --> 00:00:43,600
+It essentially is a file which creates instance an X is in synch with our own settings which we can
+
+10
+00:00:43,600 --> 00:00:45,420
+use across the application.
+
+11
+00:00:45,670 --> 00:00:52,960
+And then we can set up a base u r l which is used in every file where we import and use this instance.
+
+12
+00:00:52,960 --> 00:00:55,910
+I plan on using this to sign up to you file.
+
+13
+00:00:56,080 --> 00:01:05,610
+So we'll actually store my L in here in base you are l not the entire You are Eldo only up to relying
+
+14
+00:01:05,620 --> 00:01:09,640
+party everything thereafter which is Sign-Up new user.
+
+15
+00:01:09,640 --> 00:01:15,940
+And then does query parameter should be cut out and move back in to sign up the view.
+
+16
+00:01:16,100 --> 00:01:23,400
+Because I want to send my post request no longer to slash users Jason but to sign up new user here.
+
+17
+00:01:23,530 --> 00:01:29,290
+This will now target this rest the API provided by firebase.
+
+18
+00:01:29,290 --> 00:01:35,070
+Now DHP IGY which of the Montse here can be found in your firebase account.
+
+19
+00:01:35,170 --> 00:01:41,740
+Simply make sure to click on WEP set up here on the offending occasion tab and then the window which
+
+20
+00:01:41,770 --> 00:01:45,210
+opens you can copy that AP key.
+
+21
+00:01:45,670 --> 00:01:52,870
+Once you copy that head over to your application and there simply replace API key including the square
+
+22
+00:01:52,870 --> 00:01:54,730
+brackets with that key.
+
+23
+00:01:54,940 --> 00:01:57,130
+That is your identification criteria.
+
+24
+00:01:57,130 --> 00:02:04,340
+So to say now with that we are targeting the right and point where sending the wrong data though.
+
+25
+00:02:04,540 --> 00:02:06,150
+And of course data you need to send.
+
+26
+00:02:06,160 --> 00:02:08,430
+Always depends on the back end you're using.
+
+27
+00:02:08,800 --> 00:02:16,090
+Our back at firebase expects to get a javascript object which has an email property a password property
+
+28
+00:02:16,600 --> 00:02:21,820
+and then does return secure token property which is a Boolean which should always be true as it says
+
+29
+00:02:21,820 --> 00:02:22,660
+here.
+
+30
+00:02:23,020 --> 00:02:24,830
+So we can do that.
+
+31
+00:02:25,120 --> 00:02:32,530
+Let's change the data we send to not be our foreign data object but instead to be a javascript object
+
+32
+00:02:32,530 --> 00:02:36,070
+where email is foreign data e-mail.
+
+33
+00:02:36,100 --> 00:02:43,570
+I do have an email key there where we also have this password field field that requires foreign data
+
+34
+00:02:43,600 --> 00:02:56,440
+password and where we also have does return secure token here does return secure token property which
+
+35
+00:02:56,440 --> 00:02:58,240
+should just be true.
+
+36
+00:02:58,470 --> 00:03:04,990
+Does the post request I want to send Does the request which actually you should give us a valid user.
+
+37
+00:03:05,490 --> 00:03:10,200
+Now let's save as a file and let's go back to our application.
+
+38
+00:03:10,350 --> 00:03:14,100
+Let's head back to the running app and go to the Sign-Up page.
+
+39
+00:03:14,100 --> 00:03:18,330
+And now we need to enter a e-mail address which hasn't been taken yet.
+
+40
+00:03:18,330 --> 00:03:20,640
+I haven't signed up any user for that.
+
+41
+00:03:20,760 --> 00:03:21,780
+Firebase API.
+
+42
+00:03:21,780 --> 00:03:26,280
+So all email addresses should be valid dialler fields are totally up to you.
+
+43
+00:03:26,280 --> 00:03:27,790
+They won't be checked.
+
+44
+00:03:27,960 --> 00:03:32,590
+The password for firebase has to be at least six characters long.
+
+45
+00:03:33,000 --> 00:03:35,310
+And then you don't need to check anything else.
+
+46
+00:03:35,310 --> 00:03:37,400
+We're not validating the form yet.
+
+47
+00:03:37,470 --> 00:03:39,450
+You can hit submit.
+
+48
+00:03:39,450 --> 00:03:49,260
+Now here I'm getting an error or that error is coming from my offer I sation had or I'm setting on this
+
+49
+00:03:49,260 --> 00:03:50,270
+request right now.
+
+50
+00:03:50,290 --> 00:03:58,410
+Let's go back to our application to access off J.S. and let's simply comment out this global conflict
+
+51
+00:03:58,410 --> 00:04:05,380
+here as well as in the main dodgiest fall our global offer sation header here.
+
+52
+00:04:05,460 --> 00:04:11,000
+It's actually a problem.
+
+53
+00:04:11,200 --> 00:04:13,080
+So now with that let's try this again.
+
+54
+00:04:13,090 --> 00:04:18,230
+Let's quickly enter a valid email address and a valid password and hit submit.
+
+55
+00:04:18,490 --> 00:04:19,880
+And now it works.
+
+56
+00:04:19,900 --> 00:04:27,250
+I get back a successful response and the data I get back I get such a token which I mentioned earlier.
+
+57
+00:04:27,400 --> 00:04:33,610
+I also get an additional token a refreshed token which can always be used to refresh this ID token which
+
+58
+00:04:33,610 --> 00:04:34,950
+is very short lived.
+
+59
+00:04:34,960 --> 00:04:39,200
+It only lasts one hour expire as it is in seconds.
+
+60
+00:04:39,340 --> 00:04:47,420
+And the e-mail address I used we can verify that the user was created on our firebase backend on education
+
+61
+00:04:47,440 --> 00:04:52,320
+if we refreshed this users page here we see this email address.
+
+62
+00:04:52,330 --> 00:04:53,400
+We just used.
+
+63
+00:04:53,500 --> 00:04:56,990
+And a user ID which was generated automatically.
+
+64
+00:04:57,400 --> 00:05:01,690
+So with that we got a way to sign users up.
+
+65
+00:05:01,690 --> 00:05:09,280
+Now in the next lecture let's add logic to sign them in before we finally start working on that token
+
+66
+00:05:09,550 --> 00:05:11,810
+and learn how to use that token.
+

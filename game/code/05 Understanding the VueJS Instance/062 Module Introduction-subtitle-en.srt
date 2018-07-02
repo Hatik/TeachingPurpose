@@ -1,0 +1,56 @@
+1
+00:00:02,020 --> 00:00:09,760
+Welcome to discourse Marchal after two modules of diving super deep into view shapes and learning how
+
+2
+00:00:09,760 --> 00:00:15,160
+to interact with the DOM how to change it how to react to events how to conditionally show Condon how
+
+3
+00:00:15,160 --> 00:00:16,700
+to render lists.
+
+4
+00:00:16,780 --> 00:00:18,830
+I now want to focus on The View.
+
+5
+00:00:18,850 --> 00:00:25,730
+Instance this thing we created all the time with new view and then passing this object.
+
+6
+00:00:25,750 --> 00:00:27,330
+Let's take a closer look.
+
+7
+00:00:27,370 --> 00:00:28,560
+How does it work.
+
+8
+00:00:28,570 --> 00:00:30,810
+Which properties do we have.
+
+9
+00:00:31,030 --> 00:00:36,660
+How is it created which will lifecycle doesn't run through how we may we use it in ways we haven't used
+
+10
+00:00:36,660 --> 00:00:38,790
+it before and much more.
+
+11
+00:00:38,980 --> 00:00:45,250
+This module will be a bit more theoretical and if you're not interested and all feel free to skip it
+
+12
+00:00:45,520 --> 00:00:52,510
+though for really understanding how VTES works I strongly recommend having a look at it or at least
+
+13
+00:00:52,510 --> 00:00:56,950
+having a look at the specific videos which sound interesting to you.
+
+14
+00:00:57,160 --> 00:01:02,090
+Well with that let's dive in and work our way of fruity vouchsafes instance.
+

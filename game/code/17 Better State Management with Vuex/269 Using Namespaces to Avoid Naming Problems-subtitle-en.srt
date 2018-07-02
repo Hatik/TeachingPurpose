@@ -1,0 +1,352 @@
+1
+00:00:01,780 --> 00:00:06,970
+So after learning how we can structure our application over a multiple files and folders and you can
+
+2
+00:00:06,970 --> 00:00:08,740
+be as granular as you want.
+
+3
+00:00:09,010 --> 00:00:13,810
+I want to bring a number problem potential problem to your attention.
+
+4
+00:00:13,810 --> 00:00:20,230
+If you use multiple You modules like we do here you have to make sure that you're not using the same
+
+5
+00:00:20,230 --> 00:00:21,640
+name twice.
+
+6
+00:00:21,640 --> 00:00:27,340
+For example here double the counter in the ganders in my counterterrorists file and then in my shared
+
+7
+00:00:27,340 --> 00:00:36,790
+getters if I were to rename this to dabble counter if I save this you'll see that I get an error that
+
+8
+00:00:36,790 --> 00:00:39,430
+decie double the counter is duplicate.
+
+9
+00:00:39,850 --> 00:00:41,520
+So I shall not do that.
+
+10
+00:00:41,530 --> 00:00:48,290
+I must not do this actually because all the things here are in the end merged into one central storage.
+
+11
+00:00:48,340 --> 00:00:50,520
+State shared the same namespace.
+
+12
+00:00:50,560 --> 00:00:57,970
+So you absolutely need to make sure that all your getters your actions your mutations have a unique
+
+13
+00:00:57,970 --> 00:01:04,540
+name and not only in the wild a sit in but in all the files which in the end get merged together in
+
+14
+00:01:04,550 --> 00:01:05,660
+the store.
+
+15
+00:01:05,800 --> 00:01:10,230
+Now for small to medium sized applications that are something you might be able to handle.
+
+16
+00:01:10,240 --> 00:01:13,480
+You can just claim make sure that you're not repeating your names.
+
+17
+00:01:13,660 --> 00:01:20,770
+Also maybe you choose to give your getters actions and on some prefix like shared values something like
+
+18
+00:01:20,770 --> 00:01:21,030
+that.
+
+19
+00:01:21,040 --> 00:01:22,500
+Whatever works for you.
+
+20
+00:01:22,990 --> 00:01:28,330
+But for large applications Here's a number pattern you may consider using.
+
+21
+00:01:28,330 --> 00:01:32,710
+You can create a new file in the store file folder and I will name it.
+
+22
+00:01:32,710 --> 00:01:33,520
+Type start.
+
+23
+00:01:33,650 --> 00:01:41,230
+Yes and here I will set up some constants which will get unique names which are all stored in this file
+
+24
+00:01:41,260 --> 00:01:47,520
+which I will then assign as names for my methods and properties and so on and all the other files thereafter.
+
+25
+00:01:47,710 --> 00:01:48,880
+How does this work.
+
+26
+00:01:49,180 --> 00:01:51,620
+Well let's create the double counter here.
+
+27
+00:01:51,910 --> 00:01:58,040
+It's all capital case because that kind of is the convention for global const constants double counters
+
+28
+00:01:58,100 --> 00:02:02,750
+shall be a string which I'll now name counter slash double counter.
+
+29
+00:02:02,950 --> 00:02:06,380
+So generally the same name as the constant has.
+
+30
+00:02:06,550 --> 00:02:12,020
+But with this counter slash prefix to indicate to which part it belongs.
+
+31
+00:02:12,040 --> 00:02:18,260
+You can do the same with the click counter here to also Xchange does.
+
+32
+00:02:18,580 --> 00:02:24,700
+And now I can go to my counter just fall and here I want to import from this type's file and I want
+
+33
+00:02:24,700 --> 00:02:27,550
+to import all the types in one object.
+
+34
+00:02:27,550 --> 00:02:30,000
+So from the type start.
+
+35
+00:02:30,010 --> 00:02:36,700
+JS file and then due to iOS 6 we can use to send text where we set up a dynamic property name.
+
+36
+00:02:36,700 --> 00:02:42,630
+So we're using square brackets we can tell javascript assigned this name on runtime.
+
+37
+00:02:42,790 --> 00:02:46,730
+So it then fetches the name from types and then double counter.
+
+38
+00:02:46,810 --> 00:02:52,870
+So this will in the end be a string name here we just use the square brackets to do that dynamically
+
+39
+00:02:52,870 --> 00:02:56,150
+so that we can use a constant which stores the name.
+
+40
+00:02:56,380 --> 00:02:58,890
+And here I do the same for the click counter.
+
+41
+00:02:58,890 --> 00:03:01,860
+Now now have these names replaced.
+
+42
+00:03:02,020 --> 00:03:06,970
+Of course I also need to go to my results for a used that.
+
+43
+00:03:06,970 --> 00:03:12,160
+And here if I map it like this just won't work anymore because double counter and string counter don't
+
+44
+00:03:12,160 --> 00:03:13,340
+exist.
+
+45
+00:03:13,360 --> 00:03:17,720
+So instead here now I also have to import my types.
+
+46
+00:03:17,830 --> 00:03:28,180
+So from the store types file and then a map gathers here I also now want to pass an object instead of
+
+47
+00:03:28,180 --> 00:03:36,040
+an array so that I can still use my names here so that I can say double counter Shelby types double
+
+48
+00:03:36,040 --> 00:03:41,620
+counter and string counter should be types.
+
+49
+00:03:41,650 --> 00:03:48,130
+String count click count row name there so that I can still use the names I use in my template but I
+
+50
+00:03:48,130 --> 00:03:52,710
+assign Now the names which are actually used in my gatherer's.
+
+51
+00:03:52,720 --> 00:03:58,450
+So this allows me to use different names in template and in my getter.
+
+52
+00:03:58,450 --> 00:04:04,020
+Now that is one thing I will now is a copy that adds to our result here.
+
+53
+00:04:04,060 --> 00:04:07,090
+And replace this here of course.
+
+54
+00:04:07,090 --> 00:04:11,880
+I don't need the string counter and that should be just renamed to counter.
+
+55
+00:04:12,030 --> 00:04:13,750
+And with that if we reload.
+
+56
+00:04:13,930 --> 00:04:14,910
+It still works.
+
+57
+00:04:14,920 --> 00:04:22,410
+Ask for it which is great but now we're using the types file to manage all our global names for a while
+
+58
+00:04:22,420 --> 00:04:28,000
+right now only getters but you would do the same for all the actions and mutations because as you store
+
+59
+00:04:28,000 --> 00:04:35,290
+everything in this file and you'd choose a prefix here you ensure that a it's unique because since everything
+
+60
+00:04:35,290 --> 00:04:39,520
+is stored in one file you can't use the same name twice.
+
+61
+00:04:39,520 --> 00:04:45,370
+And you also ensure that the strings are unique because the strings are what ISDE or what are the method
+
+62
+00:04:45,370 --> 00:04:48,940
+names in the end because we assign them dynamically here.
+
+63
+00:04:49,090 --> 00:04:55,830
+We ensure that these strings are unique because we prefix them with well the module name kind of.
+
+64
+00:04:56,230 --> 00:05:02,860
+And does this how you could also set it up for all the actions all the getters all the mutations and
+
+65
+00:05:02,890 --> 00:05:04,650
+debt is a lot of work.
+
+66
+00:05:04,660 --> 00:05:05,800
+I do agree.
+
+67
+00:05:06,040 --> 00:05:12,640
+But it might be worth it since in large applications this really ensures that you're not using the same
+
+68
+00:05:12,640 --> 00:05:13,440
+them twice.
+
+69
+00:05:13,510 --> 00:05:19,360
+If you want to use a different approach or if your application just is not that large that this extra
+
+70
+00:05:19,360 --> 00:05:20,680
+effort is worth it.
+
+71
+00:05:20,770 --> 00:05:22,710
+You of course don't have to do it.
+
+72
+00:05:22,980 --> 00:05:30,790
+So I'll quickly finish this and I'll be back once I exchanged everything with global types like this.
+
+73
+00:05:32,670 --> 00:05:34,560
+So I finished it.
+
+74
+00:05:34,560 --> 00:05:40,500
+You can find it attached to the last lecture of this module of course work quite a lot of changes.
+
+75
+00:05:40,620 --> 00:05:47,670
+I changed all the files actions getters and mutations Cheras here to now export a default object instead
+
+76
+00:05:47,670 --> 00:05:49,160
+of a named constant.
+
+77
+00:05:49,350 --> 00:05:56,550
+And therefore I also changed the imports in the store to longer have star s actions but only actions.
+
+78
+00:05:56,730 --> 00:06:02,520
+I did these changes or I implemented them because I need to export an object here so that I can use
+
+79
+00:06:02,760 --> 00:06:07,620
+this dynamic setting of the name here for the property which I couldn't use and a constant.
+
+80
+00:06:07,800 --> 00:06:09,600
+Therefore this change was taken.
+
+81
+00:06:09,600 --> 00:06:14,430
+And besides that I simply replaced all the names here with this.
+
+82
+00:06:14,610 --> 00:06:21,540
+Well with the names stored in these types file where I'd then created these constants for all the operations
+
+83
+00:06:21,540 --> 00:06:25,260
+we do have now again honestly that is quite a lot of work.
+
+84
+00:06:25,260 --> 00:06:26,540
+It might be worth it.
+
+85
+00:06:26,580 --> 00:06:28,760
+I at least wanted to show it to you.
+
+86
+00:06:28,770 --> 00:06:35,010
+It's up to you if you choose this path or if you just want to be careful when assigning your names.
+
+87
+00:06:35,160 --> 00:06:41,880
+And with that I'd say we're really went through a lot in this module and had a detailed look at the
+
+88
+00:06:42,000 --> 00:06:42,480
+x.
+

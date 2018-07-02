@@ -1,0 +1,352 @@
+1
+00:00:01,730 --> 00:00:07,550
+So far we had a look at the general set up but we got one major new thing here this dubbed the new file
+
+2
+00:00:07,550 --> 00:00:14,960
+which seems to be important in one of the earlier widows I was talking about so called single file templates
+
+3
+00:00:14,960 --> 00:00:22,640
+which basically means we have a special kind of file which gets compiled during the whole process so
+
+4
+00:00:22,640 --> 00:00:31,530
+that we can ship compiled code to the browser so that we don't have to use the L ref or the L property
+
+5
+00:00:31,820 --> 00:00:38,120
+to have our HVM our code converted to a template so that we don't have to use the template property
+
+6
+00:00:38,120 --> 00:00:39,850
+to create a string template.
+
+7
+00:00:40,070 --> 00:00:46,370
+But then we have a third option which you will learn about now which allows us to outsource our template
+
+8
+00:00:46,370 --> 00:00:52,400
+in our view chess code in separate files which will get compile to normal javascript therefore are able
+
+9
+00:00:52,400 --> 00:00:53,950
+to run natively in the browser.
+
+10
+00:00:53,960 --> 00:00:58,610
+You can compile any template and each team will code to follow a script in the end because there are
+
+11
+00:00:58,850 --> 00:01:05,120
+javascript object representations of your HDMI elements and that is how we want to build our applications
+
+12
+00:01:05,340 --> 00:01:11,740
+to first don't have to ship the compiler when deploying our app that reduces the file size of the U.K.'s
+
+13
+00:01:11,750 --> 00:01:14,630
+package by 30 percent as we learned earlier.
+
+14
+00:01:14,900 --> 00:01:21,590
+And second to unlock some features which are not possible to be used in the name of Dom if we were to
+
+15
+00:01:21,590 --> 00:01:27,410
+use the native Dom as our template because there are some limitations apply which don't apply when having
+
+16
+00:01:27,410 --> 00:01:30,270
+our challenged script compiled template.
+
+17
+00:01:30,350 --> 00:01:32,560
+So enough of the talking but do we have here.
+
+18
+00:01:33,110 --> 00:01:33,930
+We have remained.
+
+19
+00:01:33,960 --> 00:01:40,370
+JS file and that will be the first fall which gets executed when the bundle here gets loaded in the
+
+20
+00:01:40,370 --> 00:01:41,840
+index page HTML file.
+
+21
+00:01:41,870 --> 00:01:50,720
+Now all what's happening here is that we create a new instance here and we import you from the new folder.
+
+22
+00:01:50,980 --> 00:01:55,560
+So that is how we have access to view Chason can create a new instance here.
+
+23
+00:01:55,750 --> 00:02:04,240
+Then we select d l d element with D app here with the app selectors So this element and I was just saying
+
+24
+00:02:04,240 --> 00:02:06,580
+that we don't need the property anymore.
+
+25
+00:02:06,580 --> 00:02:12,700
+Well we need to select a place where we want to load our view app but we don't use it to then infer
+
+26
+00:02:12,700 --> 00:02:13,600
+a template.
+
+27
+00:02:13,770 --> 00:02:19,780
+Instead by using this new property here this new function to be precise the surrender function we haven't
+
+28
+00:02:19,780 --> 00:02:21,190
+seen that before.
+
+29
+00:02:21,260 --> 00:02:27,760
+We're telling Buquet as well take this place and the DOM specified with the L property but don't infer
+
+30
+00:02:27,760 --> 00:02:35,440
+the template instead as with template where we alter would provide an average template to overwrite
+
+31
+00:02:35,530 --> 00:02:40,570
+this place in the DOM instead here overwrite it with this code we render here.
+
+32
+00:02:40,660 --> 00:02:46,690
+Now that is a E-6 function arrow function where h is the argument which actually seems to be a function
+
+33
+00:02:46,690 --> 00:02:47,980
+we didn't execute.
+
+34
+00:02:47,980 --> 00:02:49,410
+This is provided by you.
+
+35
+00:02:49,410 --> 00:02:49,920
+Yes.
+
+36
+00:02:49,930 --> 00:02:55,210
+So Gujju execute surrender function and automatically passes as a natural function in there.
+
+37
+00:02:55,210 --> 00:03:02,170
+The one we capture here with H which we didn't execute and this function takes a template a Buquet as
+
+38
+00:03:02,170 --> 00:03:04,180
+template to be rendered.
+
+39
+00:03:04,270 --> 00:03:10,870
+So all we need to know here is that this function will automatically render a certain template in the
+
+40
+00:03:10,870 --> 00:03:19,890
+place of these Selecta or so where we select our view instance to be run at like template.
+
+41
+00:03:20,120 --> 00:03:25,710
+But here we're not specifying a template as a string but as a compiled template so to say.
+
+42
+00:03:25,970 --> 00:03:32,330
+Now what we load here when running this age function which seems to be responsible for rendering it
+
+43
+00:03:32,870 --> 00:03:37,060
+is our app from the App Store view fine.
+
+44
+00:03:37,070 --> 00:03:40,120
+Now what's inside this app the file.
+
+45
+00:03:40,130 --> 00:03:45,590
+Here is our actual due application and view files to view files.
+
+46
+00:03:45,590 --> 00:03:47,420
+Always follow this structure.
+
+47
+00:03:47,420 --> 00:03:55,460
+We get a template at the top enclosed by template tax then we got a script holding our review cheapass
+
+48
+00:03:55,460 --> 00:03:57,480
+code for this template.
+
+49
+00:03:57,500 --> 00:03:59,940
+So like a new view instance Kind of.
+
+50
+00:04:00,110 --> 00:04:05,250
+And indeed we do have a data field here too though it looks a bit different I'll come back to this and
+
+51
+00:04:05,250 --> 00:04:07,820
+then we get some possible styling we want to use.
+
+52
+00:04:07,910 --> 00:04:10,210
+Now you don't have to specify styles.
+
+53
+00:04:10,220 --> 00:04:15,860
+You definitely do have to specify a template though because we need something to be displayed and actually
+
+54
+00:04:15,860 --> 00:04:17,480
+we can replace all of that.
+
+55
+00:04:17,500 --> 00:04:26,360
+We're inside this app and instead say H-1 hello world like this.
+
+56
+00:04:26,360 --> 00:04:30,850
+Now regarding this name here you can simply get rid of that.
+
+57
+00:04:30,850 --> 00:04:33,280
+It's not related to this div idea.
+
+58
+00:04:33,280 --> 00:04:34,790
+Up here you can also get rid of that.
+
+59
+00:04:34,790 --> 00:04:36,220
+It will work like this.
+
+60
+00:04:37,060 --> 00:04:43,100
+And what's now happening here is that we now have our template which only says hello world.
+
+61
+00:04:43,280 --> 00:04:49,150
+We have some data which we can remove for now I will come back to the data thing here when talking about
+
+62
+00:04:49,150 --> 00:04:50,950
+components in the next section.
+
+63
+00:04:51,130 --> 00:04:57,620
+And even though we now only export an empty object what we do behind the scenes is this will compound.
+
+64
+00:04:57,660 --> 00:05:03,310
+Q javascript code where we have a connection between template and our view instance even though we don't
+
+65
+00:05:03,310 --> 00:05:07,650
+specify any options there and then we can import a tear and render it.
+
+66
+00:05:07,780 --> 00:05:12,390
+And if we don't have any options here in the object we still have a template to get rendered right.
+
+67
+00:05:12,400 --> 00:05:16,440
+So now I'm all for removing your my styles and with this in place.
+
+68
+00:05:16,480 --> 00:05:18,070
+All I need to do is save it.
+
+69
+00:05:18,160 --> 00:05:23,980
+And then if we run NPM run death again or if you still had it running it will automatically recompile
+
+70
+00:05:23,980 --> 00:05:26,300
+actually so you don't need to rerun it.
+
+71
+00:05:26,590 --> 00:05:30,630
+Then if we head over to our local host we see Hello world.
+
+72
+00:05:30,670 --> 00:05:32,270
+So this still works.
+
+73
+00:05:32,290 --> 00:05:40,030
+Now I'm going to dive deeper into these UV files and how we can use them as well actually components
+
+74
+00:05:40,030 --> 00:05:44,520
+in our application in the next module when we dive into components.
+
+75
+00:05:44,530 --> 00:05:50,980
+For now I want to know you a view file has a template has a script and it might have a style.
+
+76
+00:05:50,980 --> 00:05:55,120
+Now with these free parts your template script and style.
+
+77
+00:05:55,180 --> 00:06:02,080
+We got a valid view for a so-called single file template where we outsource a template and script logic
+
+78
+00:06:02,110 --> 00:06:03,660
+in a separate file.
+
+79
+00:06:03,670 --> 00:06:10,150
+And the important thing is in our both browsers with web pick days we'll get compiled to javascript
+
+80
+00:06:10,150 --> 00:06:16,330
+code which is why we can then render it here render basically just means overwrite the content selected
+
+81
+00:06:16,330 --> 00:06:17,690
+here with the element.
+
+82
+00:06:17,860 --> 00:06:19,470
+So it will render it here.
+
+83
+00:06:19,480 --> 00:06:23,290
+It would replace everything which is inside of this app here.
+
+84
+00:06:23,620 --> 00:06:30,760
+And with that we are able to now use this and have our compiled template stripping out decompiler of
+
+85
+00:06:30,760 --> 00:06:33,850
+the package we're shipping to the deployment server.
+
+86
+00:06:33,850 --> 00:06:35,310
+That was a lot of talking about that.
+
+87
+00:06:35,320 --> 00:06:38,840
+But it's key to understand how these single fathers here work.
+
+88
+00:06:38,890 --> 00:06:43,860
+We will see them in action in the next module when we dive deeper into components.
+

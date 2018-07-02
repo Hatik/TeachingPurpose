@@ -1,0 +1,204 @@
+1
+00:00:01,640 --> 00:00:08,840
+I'm back in a brand new Js fellow project very simple task can see just my view instance which is show
+
+2
+00:00:08,840 --> 00:00:14,210
+property in a data field and then two paragraphs in my day of the year.
+
+3
+00:00:14,210 --> 00:00:16,740
+So if we run this you can see me.
+
+4
+00:00:16,760 --> 00:00:23,750
+And do you also see me now ask these techs already imply we're now going to work with conditionally
+
+5
+00:00:23,750 --> 00:00:28,390
+showing and hiding or attaching and detaching aliments to the dawn.
+
+6
+00:00:28,610 --> 00:00:32,970
+That's a task you'll probably see in all the applications you've built.
+
+7
+00:00:32,990 --> 00:00:36,740
+You don't want to show everything on your template all the time.
+
+8
+00:00:36,890 --> 00:00:39,930
+Sometimes you only want to show an error message.
+
+9
+00:00:39,950 --> 00:00:44,690
+Let's say in case of a wrong input in a form input or something like that.
+
+10
+00:00:44,690 --> 00:00:50,350
+So you want it conditionally shows certain messages or elements on your page.
+
+11
+00:00:50,510 --> 00:00:55,970
+Now you chaps of course include some efforts to allow you to easily do that.
+
+12
+00:00:55,970 --> 00:00:58,100
+So let's dive into them and have a look at them.
+
+13
+00:00:58,130 --> 00:01:06,740
+And I'm going to start with Vi if that's a directive we can add to a paragraph or two any element B
+
+14
+00:01:06,740 --> 00:01:08,520
+if just like that.
+
+15
+00:01:08,840 --> 00:01:16,940
+And it allows us to bind it to a condition or to a property whatever which resolves to True or false
+
+16
+00:01:16,970 --> 00:01:19,030
+in the end is the important thing.
+
+17
+00:01:19,190 --> 00:01:22,070
+So it could find it to show here too.
+
+18
+00:01:22,080 --> 00:01:29,930
+Well Chaudiere since this is set to Drew if I now add a button where I'd say switch or whatever you
+
+19
+00:01:29,930 --> 00:01:34,650
+like and then add a click listener where I said show it you.
+
+20
+00:01:34,670 --> 00:01:36,140
+Well the opposite of show.
+
+21
+00:01:36,140 --> 00:01:38,050
+So basically switch it.
+
+22
+00:01:38,390 --> 00:01:46,400
+If I now save this you can see that once I hit this button you see the you can see text disappear and
+
+23
+00:01:46,400 --> 00:01:48,230
+now it's back there.
+
+24
+00:01:48,230 --> 00:01:51,400
+Important thing if we inspect this.
+
+25
+00:01:51,480 --> 00:01:53,710
+This is the paragraph element.
+
+26
+00:01:53,870 --> 00:01:58,000
+If I now switch you see it disappeared entirely.
+
+27
+00:01:58,010 --> 00:02:04,550
+We only get this comment left which kind of shows us that something was there but it is gone.
+
+28
+00:02:04,580 --> 00:02:06,720
+It's not hidden it's not transparent.
+
+29
+00:02:06,770 --> 00:02:14,940
+It's gone and thus is important to understand the if really attaches or detaches elements to the dorm.
+
+30
+00:02:14,990 --> 00:02:21,950
+It not just Height's them it completely removes them if you will have a false condition here or if the
+
+31
+00:02:21,950 --> 00:02:23,330
+condition returns false.
+
+32
+00:02:23,330 --> 00:02:26,710
+Here we can also be extended.
+
+33
+00:02:26,990 --> 00:02:29,150
+I'll add a new paragraph.
+
+34
+00:02:29,150 --> 00:02:37,850
+Now you see me and I'll add the else the else will automatically refer to the latest we if in front
+
+35
+00:02:37,850 --> 00:02:38,300
+of it.
+
+36
+00:02:38,300 --> 00:02:46,370
+So this one here and if we compile these you see that we switch now between now you see me and you can
+
+37
+00:02:46,370 --> 00:02:46,940
+see me.
+
+38
+00:02:46,970 --> 00:02:53,240
+So I showed the else condition whenever the if condition is false which makes sense like a normal if
+
+39
+00:02:53,240 --> 00:02:54,500
+else statement.
+
+40
+00:02:54,610 --> 00:02:57,770
+Notice you don't have the Altes if and so on.
+
+41
+00:02:57,830 --> 00:03:03,110
+You would simply need to create a new statement if you want to check multiple conditions.
+
+42
+00:03:03,230 --> 00:03:04,520
+This is just a shortcut.
+
+43
+00:03:04,550 --> 00:03:10,010
+If you know you get it either or decision then the infant Veals allows you to quickly get started and
+
+44
+00:03:10,010 --> 00:03:11,210
+set this up.
+
+45
+00:03:11,210 --> 00:03:16,340
+Also notice the if shows the entire element and all nested elements.
+
+46
+00:03:16,340 --> 00:03:21,640
+So if I nest the element inside this paragraph for example does span well.
+
+47
+00:03:21,680 --> 00:03:23,520
+This is also a fact that Biot.
+
+48
+00:03:23,570 --> 00:03:29,600
+So it really removes the complete aliment and all nested elements not just the element leaving behind
+
+49
+00:03:29,600 --> 00:03:30,400
+the nested ones.
+
+50
+00:03:30,410 --> 00:03:31,880
+No that's not how it works.
+
+51
+00:03:31,880 --> 00:03:35,630
+Everything gets removed or attached whatever the condition says.
+

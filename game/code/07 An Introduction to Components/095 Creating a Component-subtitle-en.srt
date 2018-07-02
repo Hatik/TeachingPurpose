@@ -1,0 +1,240 @@
+1
+00:00:01,850 --> 00:00:08,450
+Now let's create a new component for that I will create a new file in the source folder and I will image
+
+2
+00:00:08,570 --> 00:00:13,180
+home that you know in there we need a template.
+
+3
+00:00:13,980 --> 00:00:17,940
+We need a script and we might need styles.
+
+4
+00:00:17,940 --> 00:00:22,320
+Now let's stick to template and script no template.
+
+5
+00:00:22,320 --> 00:00:30,350
+I want to output my server status as before and I want to set it to status using this property binding
+
+6
+00:00:30,390 --> 00:00:32,380
+exclusionist strings appellation.
+
+7
+00:00:32,790 --> 00:00:39,850
+And here I want to export an object export as default since it is the only export in this file.
+
+8
+00:00:39,900 --> 00:00:46,110
+And here I want to have my data field which again is a function where I return an object whereas status
+
+9
+00:00:46,110 --> 00:00:56,020
+is set to critical as before it and I want to have my methods where I now also have an object defining
+
+10
+00:00:56,020 --> 00:00:56,930
+my methods.
+
+11
+00:00:57,010 --> 00:01:01,470
+And now we can use it as 6 cents in this project.
+
+12
+00:01:01,600 --> 00:01:05,470
+It is getting compiled to ESX or two is five.
+
+13
+00:01:05,470 --> 00:01:07,770
+We can use iOS 6 to get a composite.
+
+14
+00:01:07,800 --> 00:01:08,970
+Ears 5.
+
+15
+00:01:09,160 --> 00:01:15,180
+Now in iOS 6 I can also write a method in an object not like by writing.
+
+16
+00:01:15,400 --> 00:01:24,280
+Let's say change stators colon function but instead by simply writing change status parentheses like
+
+17
+00:01:24,280 --> 00:01:27,790
+this like a method call kind of this creates the same.
+
+18
+00:01:27,790 --> 00:01:30,400
+Just gives us a method we can execute.
+
+19
+00:01:30,580 --> 00:01:33,060
+And in here I want to set this status.
+
+20
+00:01:33,070 --> 00:01:38,170
+Remember we can access the status even though it's an object returned by a function.
+
+21
+00:01:38,320 --> 00:01:39,520
+You chaps takes care of it.
+
+22
+00:01:39,520 --> 00:01:44,820
+We still can access it and it can set this status to normal here.
+
+23
+00:01:44,950 --> 00:01:47,630
+Now with that I got a function I can execute.
+
+24
+00:01:47,770 --> 00:01:51,310
+So in here I'll add a horizontal line and then add a button.
+
+25
+00:01:51,310 --> 00:01:59,820
+And here I want to say change status and use at click and execute change status down there.
+
+26
+00:01:59,830 --> 00:02:02,010
+Now with this set up I gave up my component.
+
+27
+00:02:02,020 --> 00:02:03,640
+Now I want to use it.
+
+28
+00:02:03,640 --> 00:02:05,260
+How can I use it.
+
+29
+00:02:05,290 --> 00:02:14,620
+We can't even work registred globally in the main Shiahs file here by saying view component giving it
+
+30
+00:02:14,620 --> 00:02:24,370
+a selector let's say app server status to have a unique selector and then the object that's named home
+
+31
+00:02:24,760 --> 00:02:25,400
+for dead.
+
+32
+00:02:25,420 --> 00:02:27,540
+We will need to add an import.
+
+33
+00:02:27,770 --> 00:02:28,880
+I'll name it home.
+
+34
+00:02:28,910 --> 00:02:33,780
+This name is up to use since we export only one object you export default.
+
+35
+00:02:33,790 --> 00:02:36,370
+We don't have a name here.
+
+36
+00:02:36,400 --> 00:02:41,830
+So we may choose any name when importing it and we have to imported from the same folder.
+
+37
+00:02:41,860 --> 00:02:47,700
+Therefore dot slash or well-packed find it home dot view.
+
+38
+00:02:47,860 --> 00:02:54,040
+Now with this set up I can use apps service status as a selector in my whole application.
+
+39
+00:02:54,040 --> 00:02:56,490
+Therefore also in my root file here.
+
+40
+00:02:56,680 --> 00:02:58,890
+So I'll add observer status here.
+
+41
+00:02:58,930 --> 00:03:05,000
+Remove the data object remove the whole export script here maybe even and we're getting an error.
+
+42
+00:03:05,140 --> 00:03:10,800
+The error we got here is a key thing we have to keep in mind.
+
+43
+00:03:10,930 --> 00:03:16,530
+It's just component template should contain exactly one root element and that's pretty clear.
+
+44
+00:03:16,690 --> 00:03:17,950
+This is not allowed.
+
+45
+00:03:17,950 --> 00:03:22,870
+We may not have free or two or any amount of sibling elements.
+
+46
+00:03:23,050 --> 00:03:26,330
+Instead we only have to use one.
+
+47
+00:03:26,530 --> 00:03:33,220
+So this can be a div and then we have to wrap everything else inside of this element the template element
+
+48
+00:03:33,220 --> 00:03:36,220
+doesn't count because that will be removed in the end.
+
+49
+00:03:36,220 --> 00:03:39,180
+This is one restriction with face.
+
+50
+00:03:39,250 --> 00:03:40,500
+It's not too bad though.
+
+51
+00:03:40,510 --> 00:03:46,690
+But it's important to keep in mind wrap all your template code inside of one root element.
+
+52
+00:03:46,690 --> 00:03:47,530
+This is key.
+
+53
+00:03:47,580 --> 00:03:50,300
+Otherwise this will not work now.
+
+54
+00:03:50,310 --> 00:03:58,560
+And with that if you save it it recompiles and you see service say that's critical in the browser now.
+
+55
+00:03:58,670 --> 00:04:01,520
+And if we change it it gets changed to normal.
+
+56
+00:04:01,540 --> 00:04:03,490
+So that works as intended.
+
+57
+00:04:03,490 --> 00:04:10,960
+The key thing to keep in mind is it has to be one root element and then we're able to register our application
+
+58
+00:04:10,960 --> 00:04:14,760
+or our component as a global component like this.
+
+59
+00:04:14,830 --> 00:04:20,170
+But this one root element restriction also applies for local components.
+
+60
+00:04:20,170 --> 00:04:22,280
+It applies for every component.
+

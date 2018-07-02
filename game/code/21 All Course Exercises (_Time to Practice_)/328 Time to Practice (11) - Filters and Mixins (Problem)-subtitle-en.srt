@@ -1,0 +1,60 @@
+1
+00:00:02,410 --> 00:00:07,150
+So now that we learned a lot about falters and makes ends it's time to practice it.
+
+2
+00:00:07,350 --> 00:00:10,580
+For little exercises for you and the first exercise.
+
+3
+00:00:10,870 --> 00:00:18,550
+I want you to build your local field or your own local folder which resists any text 8 folders in a
+
+4
+00:00:18,550 --> 00:00:19,620
+second exercise.
+
+5
+00:00:19,630 --> 00:00:25,360
+I want you to build a global filter which then counts the length of the word and ended up hands it to
+
+6
+00:00:25,360 --> 00:00:28,900
+the end of it like this you have a paragraph where you output test.
+
+7
+00:00:28,900 --> 00:00:31,030
+Let's say then I want to filter it.
+
+8
+00:00:31,030 --> 00:00:37,950
+So task gets transformed to test whitespace and in parentheses the length of this word in exercise number
+
+9
+00:00:37,960 --> 00:00:41,060
+three I want you to repeat exercises 1 and 2.
+
+10
+00:00:41,070 --> 00:00:47,080
+But now with computer properties so that you see how you can also solve that with our folders and exercise
+
+11
+00:00:47,080 --> 00:00:52,350
+number four I want you to share the computed property you build for exercise 2.
+
+12
+00:00:52,660 --> 00:01:00,070
+So the global filter which now is a computer propertied you to exercise free to share it via a mix and
+
+13
+00:01:00,640 --> 00:01:01,600
+well with that.
+
+14
+00:01:01,720 --> 00:01:03,100
+I wish you good luck with that.
+
+15
+00:01:03,100 --> 00:01:06,170
+See you on the next video where I will show you my solution.
+

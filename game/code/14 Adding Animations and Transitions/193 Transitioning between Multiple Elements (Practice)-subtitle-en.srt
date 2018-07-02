@@ -1,0 +1,264 @@
+1
+00:00:01,680 --> 00:00:10,770
+Back in the application here let's say I add a new transition down here and to fix this problem we had
+
+2
+00:00:10,770 --> 00:00:15,250
+before where we do have different variations here in our slide class.
+
+3
+00:00:15,270 --> 00:00:17,790
+I will switch just to one second.
+
+4
+00:00:18,000 --> 00:00:22,880
+In both cases so that it is fixed even without a setting the type explicitly.
+
+5
+00:00:22,890 --> 00:00:27,750
+So now I do have my new day of your menu transition and now I want a toddler I want to switch between
+
+6
+00:00:27,750 --> 00:00:28,650
+two deaths.
+
+7
+00:00:28,680 --> 00:00:31,780
+I have my info alert and I have my warning alert let's say.
+
+8
+00:00:31,860 --> 00:00:33,590
+So this is some warning.
+
+9
+00:00:33,690 --> 00:00:39,820
+Now of course like this it wouldn't work if they both have the same condition like here.
+
+10
+00:00:39,930 --> 00:00:46,050
+So here we definitely want to reverse these conditions so that only one of two elements is shown now
+
+11
+00:00:46,060 --> 00:00:46,820
+important.
+
+12
+00:00:46,830 --> 00:00:48,890
+This will not work with the show.
+
+13
+00:00:48,900 --> 00:00:51,520
+Here we have to use scores.
+
+14
+00:00:51,550 --> 00:00:55,200
+Is also use vi if any else and then remove this one.
+
+15
+00:00:55,200 --> 00:00:57,300
+So this second conditions are both will work.
+
+16
+00:00:57,300 --> 00:01:01,710
+We if with reverse conditions or the if and be out we show will not work.
+
+17
+00:01:01,710 --> 00:01:02,960
+Important.
+
+18
+00:01:03,030 --> 00:01:08,000
+So now with this set up if I reload my application and we show alert.
+
+19
+00:01:08,370 --> 00:01:11,310
+Well we don't really see a faint animation here.
+
+20
+00:01:11,520 --> 00:01:14,700
+We just see this instant popping between both.
+
+21
+00:01:15,000 --> 00:01:20,080
+And the reason for this is that when using the same element twice as we do here with.
+
+22
+00:01:20,100 --> 00:01:26,050
+But it would be the case for any element viewed as is not able to differentiate the two for YouTube
+
+23
+00:01:26,110 --> 00:01:32,130
+as it's the same so it only swaps the content it's not able to really swap the elements themselves which
+
+24
+00:01:32,130 --> 00:01:35,410
+would be needed to test the classes correctly.
+
+25
+00:01:35,490 --> 00:01:37,400
+Therefore we have to keep them.
+
+26
+00:01:37,440 --> 00:01:44,400
+We have to add this key property attribute here which is an attribute not available by default but recognized
+
+27
+00:01:44,400 --> 00:01:49,920
+by the future as to give each div or each element here in general a unique key.
+
+28
+00:01:49,920 --> 00:01:56,920
+Now that unique key here could simply be info for the first death and then warning for the second.
+
+29
+00:01:56,940 --> 00:01:57,740
+That's enough.
+
+30
+00:01:57,750 --> 00:02:04,670
+The important thing is just that they are well different that they differ and that they are unique.
+
+31
+00:02:04,680 --> 00:02:11,890
+Now what is in place if we save this here now you see at least we get some fading going on.
+
+32
+00:02:11,900 --> 00:02:16,800
+But what's really ugly is that they Schempp like this cell.
+
+33
+00:02:16,820 --> 00:02:21,600
+The new one gets animated in the form the old one was removed from the dawn.
+
+34
+00:02:21,620 --> 00:02:27,580
+This is why we have these extra line and then have it snap up once the space is there.
+
+35
+00:02:27,800 --> 00:02:30,650
+Well that is really not beautiful.
+
+36
+00:02:30,710 --> 00:02:32,630
+Really not what we want here.
+
+37
+00:02:32,720 --> 00:02:35,470
+Now how can we fix that.
+
+38
+00:02:35,480 --> 00:02:39,630
+This issue stems from the default behavior transition.
+
+39
+00:02:39,650 --> 00:02:41,240
+It is not really the issue.
+
+40
+00:02:41,420 --> 00:02:45,820
+If you were to have these positions Susanin these elements placed with position.
+
+41
+00:02:45,860 --> 00:02:52,120
+Absolute For example they would lie on top of each other and you would maybe get the desired result.
+
+42
+00:02:52,310 --> 00:02:58,460
+But like here when you have the documents or the elements excuse me really position beneath each other
+
+43
+00:02:58,620 --> 00:03:03,230
+that not looking great we can override this default mode.
+
+44
+00:03:03,240 --> 00:03:09,230
+The chair uses here and again as everything you can dynamically bind this with a colon hearable hardcoded
+
+45
+00:03:09,320 --> 00:03:12,680
+though you have two modes to choose from.
+
+46
+00:03:12,680 --> 00:03:15,470
+You can use out in and out.
+
+47
+00:03:15,510 --> 00:03:18,200
+Now out in means let the old element.
+
+48
+00:03:18,230 --> 00:03:23,670
+Any made out first and then animate in the new one and in our does the opposite.
+
+49
+00:03:23,930 --> 00:03:25,900
+So with Mode out incept.
+
+50
+00:03:25,900 --> 00:03:32,240
+Now if I reload this we should see that the spot and if not first fades out before the new one fades
+
+51
+00:03:32,270 --> 00:03:33,400
+and.
+
+52
+00:03:33,590 --> 00:03:38,340
+And that's in case that's actually what we see now the Champix still occurs because we got free Argives
+
+53
+00:03:38,430 --> 00:03:44,210
+which get removed but we see that this dev really does animate out before then animating it.
+
+54
+00:03:44,430 --> 00:03:48,130
+And that looks much much nicer than the average case.
+
+55
+00:03:48,150 --> 00:03:53,200
+Again ignore the jumping which stems from the aberrative on page this that here animates fine.
+
+56
+00:03:53,220 --> 00:03:57,330
+It waits for the old one to be removed before it animates and the new one.
+
+57
+00:03:57,390 --> 00:04:04,090
+So with key and mode we make sure that we get the transition between two elements we want to get.
+
+58
+00:04:04,110 --> 00:04:09,450
+Now of course all the other things you learned applies just as well for these transitions between two
+
+59
+00:04:09,450 --> 00:04:10,030
+elements.
+
+60
+00:04:10,200 --> 00:04:12,400
+Just make sure to use AVF and be out.
+
+61
+00:04:12,420 --> 00:04:19,350
+Or we have multiple times with different conditions so that in the end only one element is visible on
+
+62
+00:04:19,350 --> 00:04:19,840
+the page.
+
+63
+00:04:19,890 --> 00:04:22,940
+This is important and we show won't work.
+
+64
+00:04:22,950 --> 00:04:30,090
+And with that we really learned a lot about the transitioning of one element or of two elements.
+
+65
+00:04:30,090 --> 00:04:36,570
+Now I want to wrap up these basics about this transition component here by having a look at how we can
+
+66
+00:04:36,570 --> 00:04:40,220
+use javascript to animate everything instead of Seus.
+

@@ -1,0 +1,152 @@
+1
+00:00:02,630 --> 00:00:09,340
+How it does authentication work and single page applications that's an important question for non-single
+
+2
+00:00:09,370 --> 00:00:10,650
+page applications.
+
+3
+00:00:10,690 --> 00:00:15,490
+It works just as you've learned it in all these traditional web development courses.
+
+4
+00:00:15,520 --> 00:00:18,340
+You have a session which you manage with the server.
+
+5
+00:00:18,340 --> 00:00:19,540
+Nothing special here.
+
+6
+00:00:19,630 --> 00:00:21,590
+Not really related to view.
+
+7
+00:00:21,920 --> 00:00:27,760
+However if we have a single page application powered entirely by view it becomes important to understand
+
+8
+00:00:27,760 --> 00:00:29,640
+how authentication works.
+
+9
+00:00:29,800 --> 00:00:35,890
+We still have a server and a client where our singly application runs the browser.
+
+10
+00:00:35,890 --> 00:00:42,780
+Now let's say a user logs in or signs up we send that information let's say for a log in to the server
+
+11
+00:00:43,210 --> 00:00:44,960
+and there we check if it's correct.
+
+12
+00:00:44,980 --> 00:00:52,480
+If we do find a user with that password in our database that's the case we sent back some information.
+
+13
+00:00:52,480 --> 00:00:55,430
+And traditionally this would have been a session.
+
+14
+00:00:55,720 --> 00:01:03,120
+Now in a single page application we work with restful API that are stateless that don't care about connect
+
+15
+00:01:03,120 --> 00:01:07,480
+the clients and that therefore don't manage sessions.
+
+16
+00:01:07,510 --> 00:01:15,460
+So instead of a session we receive a token now the token then is stored on the server and the token
+
+17
+00:01:15,460 --> 00:01:23,350
+essentially is a very long string which can be decoded to adjustable object with some information about
+
+18
+00:01:23,350 --> 00:01:24,280
+the user.
+
+19
+00:01:24,460 --> 00:01:31,780
+And well the validity of the token when it expires and so on at the token all is generated in a way
+
+20
+00:01:32,080 --> 00:01:36,700
+that the server can always verify if it was created by him.
+
+21
+00:01:36,700 --> 00:01:41,150
+So if the token was created on the server or if you're trying to fake it Hogan.
+
+22
+00:01:41,410 --> 00:01:43,870
+So that is not possible.
+
+23
+00:01:43,900 --> 00:01:47,460
+So we then store this token on the browser on the front end.
+
+24
+00:01:47,470 --> 00:01:52,330
+For example in the browsers local storage frood a local storage API.
+
+25
+00:01:52,510 --> 00:01:58,940
+This has nothing to do with the U.K.'s local storage is something we can simply access in the browser.
+
+26
+00:01:59,290 --> 00:02:07,270
+And if we ever then request some data on the server from an API endpoint that actually requires us to
+
+27
+00:02:07,510 --> 00:02:08,950
+be logged in.
+
+28
+00:02:08,950 --> 00:02:16,690
+We simply send our request and we attached a token to it so that we always have this token which we
+
+29
+00:02:16,690 --> 00:02:22,570
+can't fake which can be validated on the server as our identification criteria.
+
+30
+00:02:22,570 --> 00:02:26,620
+We can pass on with our requests.
+
+31
+00:02:26,620 --> 00:02:34,080
+Now this token we which we store on the front end is always only valid for a short amount of time to
+
+32
+00:02:34,230 --> 00:02:40,990
+for security issues though be aware that stealing it also isn't that trivial since local storage can
+
+33
+00:02:40,990 --> 00:02:47,180
+only be accessed from javascript and view prevents cross-site scripting attacks by default.
+
+34
+00:02:47,410 --> 00:02:54,350
+But again tokens only valid for a limited amount of time and this token den is what allows us to offend
+
+35
+00:02:54,470 --> 00:02:55,530
+the user.
+
+36
+00:02:55,540 --> 00:02:59,620
+Now we're going to see all these things in action of course in this module.
+
+37
+00:02:59,620 --> 00:03:01,850
+This is how it works in theory.
+
+38
+00:03:01,990 --> 00:03:08,230
+Now with that let's dive in and let's make sure that we can actually authenticate a user.
+

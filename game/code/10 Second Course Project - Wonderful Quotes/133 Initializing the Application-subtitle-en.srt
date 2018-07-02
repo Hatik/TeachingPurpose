@@ -1,0 +1,76 @@
+1
+00:00:01,830 --> 00:00:08,740
+So back in the project I will run the development server here again and of course we don't see anything
+
+2
+00:00:08,740 --> 00:00:16,300
+here because it's empty and then after you file at first when I actually ate my data function to return
+
+3
+00:00:16,300 --> 00:00:24,460
+this data object I'm going to use and in this data object I now want to track the maximum number of
+
+4
+00:00:24,460 --> 00:00:28,350
+quotes and I'll set this to 10 as you saw in the demo.
+
+5
+00:00:28,780 --> 00:00:33,790
+And I also want to set up the array of quotes.
+
+6
+00:00:33,790 --> 00:00:40,000
+So a simple property name quotes which is an empty array at the beginning or maybe let's start with
+
+7
+00:00:40,000 --> 00:00:42,360
+one quote to have something to view.
+
+8
+00:00:42,370 --> 00:00:48,790
+So this is daz just a code to see some string because each quote shall simply be a string.
+
+9
+00:00:48,790 --> 00:00:50,220
+Let's say to keep this simple.
+
+10
+00:00:50,230 --> 00:00:53,200
+It could be an object if it had other properties.
+
+11
+00:00:53,290 --> 00:00:55,360
+But here I really only want to have the content.
+
+12
+00:00:55,390 --> 00:00:57,580
+So why not use a string.
+
+13
+00:00:57,580 --> 00:00:59,120
+This is my code.
+
+14
+00:00:59,140 --> 00:01:03,560
+Therefore with that I got the array I get the maximum number.
+
+15
+00:01:03,580 --> 00:01:08,970
+Well I'd say let's start working on this grid of quotes we saw before.
+
+16
+00:01:09,160 --> 00:01:12,220
+And for this all treat new components.
+
+17
+00:01:12,280 --> 00:01:16,430
+So in the components folder let's create the code.
+
+18
+00:01:16,450 --> 00:01:23,200
+Great view file which will hold this quote create anti quote dot you fall which holds a single quote.
+
+19
+00:01:23,310 --> 00:01:26,240
+I'll work on these two components next.
+

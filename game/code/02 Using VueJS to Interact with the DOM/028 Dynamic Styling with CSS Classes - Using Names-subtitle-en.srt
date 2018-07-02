@@ -1,0 +1,184 @@
+1
+00:00:01,940 --> 00:00:08,660
+Sometimes you don't want to decide if a certain class should be attached or not but you want to calculate
+
+2
+00:00:08,690 --> 00:00:12,390
+or dynamically the arrive which class should be attached or not.
+
+3
+00:00:12,680 --> 00:00:22,130
+Let's say we add a horizontal line and then the user input down there are blinded to my color property
+
+4
+00:00:22,190 --> 00:00:24,960
+which I'll set up here initially.
+
+5
+00:00:25,110 --> 00:00:32,980
+Also color to Green referring to does green C-s as close as I will use it on my last remaining Unseld
+
+6
+00:00:32,990 --> 00:00:35,780
+day of year where I want to set up class.
+
+7
+00:00:35,900 --> 00:00:37,380
+And now what.
+
+8
+00:00:37,580 --> 00:00:42,560
+Now here I simply will set this equal to color.
+
+9
+00:00:42,650 --> 00:00:45,890
+Well why did I call this property should be called Color.
+
+10
+00:00:46,120 --> 00:00:46,790
+Yep.
+
+11
+00:00:47,030 --> 00:00:55,070
+So now this is connected to the color property here and to color property is set for this input field.
+
+12
+00:00:55,070 --> 00:01:00,460
+If I now save this we see the Krien class here and we see green in the input field.
+
+13
+00:01:00,650 --> 00:01:02,260
+That said I can go down there.
+
+14
+00:01:02,270 --> 00:01:09,110
+Delete Did you see the green class disappearing and I can change it to blue or two red whatever a C
+
+15
+00:01:09,110 --> 00:01:09,830
+S S class.
+
+16
+00:01:09,830 --> 00:01:11,810
+I have set up.
+
+17
+00:01:12,050 --> 00:01:13,680
+Now what's happening here.
+
+18
+00:01:13,880 --> 00:01:19,720
+I'm not determining if the green glass should be attached or not to have true or false.
+
+19
+00:01:19,760 --> 00:01:26,060
+Instead I'm directly outputting a class name here and this class name happens to be stored in this color
+
+20
+00:01:26,060 --> 00:01:28,730
+property which is settable for the input.
+
+21
+00:01:28,730 --> 00:01:34,940
+It could be set for anything doesn't have to be set fruit and put the key thing here is that I'm storing
+
+22
+00:01:35,030 --> 00:01:37,550
+the value and not if or not.
+
+23
+00:01:37,550 --> 00:01:41,570
+But instead what should be attached to class name.
+
+24
+00:01:41,570 --> 00:01:47,140
+You can also attach multiple classes but using the aere syntax no.
+
+25
+00:01:47,180 --> 00:01:53,650
+This syntax here will still work as you can see but now I could also add this condition here.
+
+26
+00:01:53,720 --> 00:01:55,690
+This Optik as a second argument.
+
+27
+00:01:55,820 --> 00:01:57,490
+Now I get a mixture.
+
+28
+00:01:57,740 --> 00:02:03,730
+I now always have my green KLOS years since I rode Kloot green here.
+
+29
+00:02:03,740 --> 00:02:04,920
+Now it's blue.
+
+30
+00:02:05,150 --> 00:02:11,530
+And now it's red but if I switch this back to blue and now I click on the first diff and remove blue
+
+31
+00:02:11,540 --> 00:02:17,120
+here you now see as red because now it also has to is red class attached to it.
+
+32
+00:02:17,120 --> 00:02:24,080
+Because I'm now setting up an array of classes which I want view chest to analyze and then merge it
+
+33
+00:02:24,140 --> 00:02:31,210
+all into one list of C S S classes based on whatever these items in the array resolves to.
+
+34
+00:02:31,310 --> 00:02:40,010
+And what do they resolve to they resolve to this color property which is a C as as class and to an object.
+
+35
+00:02:40,010 --> 00:02:42,270
+If it's an object then you chaps knows.
+
+36
+00:02:42,290 --> 00:02:42,800
+OK.
+
+37
+00:02:42,830 --> 00:02:48,130
+It's a key value pair where the key is C C S S class and the value is C condition.
+
+38
+00:02:48,140 --> 00:02:54,680
+If this class should be at Hach or not here attached to read is the property deciding whether to attach
+
+39
+00:02:54,680 --> 00:02:55,760
+a class or not.
+
+40
+00:02:56,000 --> 00:03:04,250
+So we get both syntaxes using DC as S class directly or using an object where Denn the key s c is S
+
+41
+00:03:04,250 --> 00:03:06,920
+class and the value is to condition.
+
+42
+00:03:06,980 --> 00:03:11,360
+This is important to keep in mind because it gives you a lot of flexibility.
+
+43
+00:03:11,480 --> 00:03:13,690
+You see how much flexibility we got here.
+
+44
+00:03:13,700 --> 00:03:18,580
+We got so many different ways of calculating our classes and attaching them.
+
+45
+00:03:18,650 --> 00:03:24,620
+That really is amazing and should give you all the tools you need in your application to get the desired
+
+46
+00:03:24,620 --> 00:03:25,380
+result.
+

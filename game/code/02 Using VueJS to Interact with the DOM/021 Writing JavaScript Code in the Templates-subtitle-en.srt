@@ -1,0 +1,144 @@
+1
+00:00:01,870 --> 00:00:10,930
+Before concluding these videos lectures here on outputting data with the interpellation or before the
+
+2
+00:00:10,930 --> 00:00:17,980
+bind and listening to events there's one important thing I need you to know or I need you to be aware
+
+3
+00:00:17,980 --> 00:00:18,800
+of.
+
+4
+00:00:19,000 --> 00:00:24,490
+Right now we're most of the time using this in a way that once we output something we output a single
+
+5
+00:00:24,490 --> 00:00:31,840
+property like for the counter or x and y before we saw though that we also could call a function which
+
+6
+00:00:31,850 --> 00:00:33,120
+work fine.
+
+7
+00:00:33,430 --> 00:00:39,340
+That is by the way how we mostly use it for events here we simply pass the reference to a function to
+
+8
+00:00:39,340 --> 00:00:41,450
+a method we want to execute.
+
+9
+00:00:41,470 --> 00:00:46,420
+Be aware that in all the places where you can access your view instance.
+
+10
+00:00:46,420 --> 00:00:51,970
+So here when listening to a click event or here when outputting to counter so whatever we access or
+
+11
+00:00:52,030 --> 00:00:59,050
+you instance you can write any valid javascript code as long as it's only as one expression and doesn't
+
+12
+00:00:59,050 --> 00:01:03,050
+contain if or in statement or a for loop or something like that.
+
+13
+00:01:03,340 --> 00:01:07,420
+So simple charmless trip statements can be evaluated here.
+
+14
+00:01:07,420 --> 00:01:17,230
+So for example here I could duplicate my click button and here I don't want to call in trees but I directly
+
+15
+00:01:17,230 --> 00:01:19,310
+want to increment a counter by one.
+
+16
+00:01:19,450 --> 00:01:25,990
+Well I can simply call counterplot plus here and if I save this you see now I can click this button
+
+17
+00:01:25,990 --> 00:01:32,950
+just fine and it increments my code or my calendar excuse me the same Astrue here for the strange place.
+
+18
+00:01:33,220 --> 00:01:37,480
+I could easily output counter times to after saving.
+
+19
+00:01:37,480 --> 00:01:44,620
+You see that now I can buy two here even though I normally would only increment by one and here where
+
+20
+00:01:44,620 --> 00:01:46,310
+I do increment by two.
+
+21
+00:01:46,480 --> 00:01:48,180
+Well it's by for now.
+
+22
+00:01:48,460 --> 00:01:50,210
+So this is perfectly valid.
+
+23
+00:01:50,440 --> 00:01:56,230
+You could even write short Terminator expressions here like for example check if this is greater than
+
+24
+00:01:56,230 --> 00:02:00,210
+10 in which case you could say greater than 10.
+
+25
+00:02:00,220 --> 00:02:08,780
+Otherwise you could say smaller than 10 if you now had control and her you see that it is smaller than
+
+26
+00:02:08,800 --> 00:02:11,810
+then until I get a typo here.
+
+27
+00:02:11,890 --> 00:02:21,470
+But until I obviously sell to past 10 border this is how you can work with the templates here.
+
+28
+00:02:21,520 --> 00:02:25,920
+It really is a mixture of HDMI and Chava script code.
+
+29
+00:02:25,960 --> 00:02:32,680
+As long as you use template expressions like double curly braces here and this gives you this very strong
+
+30
+00:02:32,680 --> 00:02:40,180
+connection between your HDMI code your template up here and your javascript code your view instance
+
+31
+00:02:40,240 --> 00:02:49,150
+down there all managed automatically by chance and giving you thus the power to write very well powerful
+
+32
+00:02:49,180 --> 00:02:54,230
+and user friendly applications where you have this natural connection.
+
+33
+00:02:54,310 --> 00:03:00,610
+Think about the effort code like this would take to write with Cheikh query especially once you introduce
+
+34
+00:03:00,610 --> 00:03:07,930
+more complex relations and need to do all this checking for possible changes in one part of your application
+
+35
+00:03:08,350 --> 00:03:09,640
+on your own.
+
+36
+00:03:09,640 --> 00:03:17,140
+Speaking of that we'll dive deeper into the reactivity of our properties in the next few ELECTRESS.
+

@@ -1,0 +1,224 @@
+1
+00:00:01,840 --> 00:00:09,040
+Know to use group transitions I'll add an humorous line here and then I went out put out an order list
+
+2
+00:00:09,220 --> 00:00:14,590
+I'll add de-list group class which just gives to some nice bootstrap styling.
+
+3
+00:00:14,590 --> 00:00:21,790
+And then my list item to you list group item class here again just to have a nice style being applied
+
+4
+00:00:21,790 --> 00:00:23,380
+to it like this.
+
+5
+00:00:23,390 --> 00:00:27,370
+So this is my list item and now I also need some data.
+
+6
+00:00:27,460 --> 00:00:31,420
+I will say that a simple array of numbers here because it's not really about the data it's about the
+
+7
+00:00:31,420 --> 00:00:36,230
+animations which Shelby the number is 1 3 4 5 let's say.
+
+8
+00:00:36,820 --> 00:00:46,250
+And I want you loob freedom of course so I will add the for loop for my number in numbers like this.
+
+9
+00:00:46,270 --> 00:00:50,000
+And the output the number here with string and tribulation.
+
+10
+00:00:50,170 --> 00:00:53,920
+Having a look at this we see this list down there looks great.
+
+11
+00:00:54,040 --> 00:01:01,000
+And as we know it now I want to add a way to add and delete items and then as a last that we want to
+
+12
+00:01:01,010 --> 00:01:02,350
+animate this.
+
+13
+00:01:02,410 --> 00:01:05,730
+Now let's add a way to add and delete the items first.
+
+14
+00:01:06,070 --> 00:01:17,360
+Here I will simply add a new button button button primary which will get the add item caption and then
+
+15
+00:01:17,420 --> 00:01:23,810
+upon clicking I want to execute an item a method I have yet to add and on the individual item I want
+
+16
+00:01:23,810 --> 00:01:30,580
+to add a click listener so that when I click on an item I execute remove the item and therefore remove
+
+17
+00:01:30,610 --> 00:01:37,940
+items I need to know which item and to be able to know I will adjust this code a bit Richenda over multiple
+
+18
+00:01:37,940 --> 00:01:38,590
+lines too.
+
+19
+00:01:38,610 --> 00:01:43,450
+So it is easier to read and I will get more arguments than just one.
+
+20
+00:01:43,450 --> 00:01:47,650
+We learned this we can always retrieve the index of the current iteration like this.
+
+21
+00:01:47,840 --> 00:01:52,640
+And then I can pass this index like this to know which items shall be removed.
+
+22
+00:01:52,640 --> 00:01:53,750
+Now I get these two methods.
+
+23
+00:01:53,750 --> 00:01:55,610
+I don't have set up right now.
+
+24
+00:01:55,760 --> 00:02:02,300
+So let's set them up next to make this work though before doing so I will add some style here to make
+
+25
+00:02:02,300 --> 00:02:07,730
+the cursor a pointer so that when we hover over them we can see that we actually can click them or should
+
+26
+00:02:07,730 --> 00:02:09,410
+be able to click them.
+
+27
+00:02:09,410 --> 00:02:11,460
+Now let's add the two methods here.
+
+28
+00:02:11,630 --> 00:02:17,780
+The two methods are an item which doesn't take an argument and then remove an item which has the index
+
+29
+00:02:17,780 --> 00:02:19,690
+of the item as an argument.
+
+30
+00:02:19,700 --> 00:02:21,620
+Now removing is very simple.
+
+31
+00:02:21,680 --> 00:02:24,070
+I simply get my numbers right.
+
+32
+00:02:24,110 --> 00:02:30,200
+Does this property as set up here in my data which is just an array and then have to splice method I
+
+33
+00:02:30,200 --> 00:02:37,340
+can edit this existing array to remove item for example and I want to remove the item at the index and
+
+34
+00:02:37,340 --> 00:02:41,530
+then only one item to remove just the item at this index.
+
+35
+00:02:41,540 --> 00:02:43,870
+This is how I remove the item.
+
+36
+00:02:43,900 --> 00:02:48,260
+And we can already see this action if and I'll click on an item it's gone.
+
+37
+00:02:49,040 --> 00:02:53,150
+And then for adding a item I went to randomize this.
+
+38
+00:02:53,150 --> 00:03:00,890
+So I want to get a position which all determined randomly with more floor to get a full integer and
+
+39
+00:03:00,890 --> 00:03:02,110
+then ma friend them.
+
+40
+00:03:02,150 --> 00:03:06,410
+Which gives me a random number between Ciro and Dot 9 9 9 9.
+
+41
+00:03:06,830 --> 00:03:13,880
+And this multiplied with the current length of my array will give me to get with more floor some number
+
+42
+00:03:13,880 --> 00:03:21,620
+between 0 and the highest indexes of the last item in disarray which is exactly what I want to have
+
+43
+00:03:21,620 --> 00:03:23,750
+a position to add it at.
+
+44
+00:03:23,870 --> 00:03:29,540
+And then I can simply use the splice method here too because it can not only be used for moving elements
+
+45
+00:03:29,960 --> 00:03:35,450
+but instead I want to start splicing at the position here don't remove any element which is why a pass
+
+46
+00:03:35,450 --> 00:03:36,970
+0 as the second argument.
+
+47
+00:03:37,130 --> 00:03:43,210
+But then splice also has a third argument which allows me to add a new element to desir at dispositioned
+
+48
+00:03:43,230 --> 00:03:47,780
+and so here I want to add this number is length plus 1.
+
+49
+00:03:47,780 --> 00:03:52,510
+This is important so that I don't add a number which are currently as part of the array.
+
+50
+00:03:52,600 --> 00:03:58,250
+Now we can see this in action by simply starting to add here and you see these numbers like the 7 here
+
+51
+00:03:58,310 --> 00:04:00,390
+are added in random places.
+
+52
+00:04:00,500 --> 00:04:00,900
+Nice.
+
+53
+00:04:00,900 --> 00:04:08,450
+The last thing is I want to add a horizontal line after some breaks after the button yours so that we
+
+54
+00:04:08,450 --> 00:04:11,750
+do have a nice separation here some distance in between.
+
+55
+00:04:11,930 --> 00:04:15,980
+And now I went to Eddie made both the addition and deletion of items.
+
+56
+00:04:15,980 --> 00:04:17,730
+This is what I'll work on next.
+

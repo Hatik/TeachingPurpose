@@ -1,0 +1,484 @@
+1
+00:00:02,070 --> 00:00:05,970
+Well that's come back to the reactivity I was talking about earlier.
+
+2
+00:00:06,070 --> 00:00:13,180
+Until now we had Robert simplex samples we clicked a button we changed one property we kind of touched
+
+3
+00:00:13,180 --> 00:00:20,000
+on that if we wanted to output some text depending on the number property remembered that counter whereas
+
+4
+00:00:20,010 --> 00:00:25,730
+had greater than 10 and smaller than 10 while it kind of rebuilt the example here.
+
+5
+00:00:25,780 --> 00:00:31,930
+This time I'm not outputting the text or I'm not outputting this code here where I'd check for this
+
+6
+00:00:31,930 --> 00:00:36,550
+greater than 5 here in my template in the string relation.
+
+7
+00:00:36,560 --> 00:00:39,800
+Though I could do that but I outsourced it here.
+
+8
+00:00:40,030 --> 00:00:41,710
+This leads to the following behavior.
+
+9
+00:00:41,800 --> 00:00:48,430
+If I click here we see smaller than 5 at the beginning but once we go over 5 it changes to greater than
+
+10
+00:00:48,430 --> 00:00:55,540
+5 or greater or 5 that is nice and that's easy to maintain for this simple application.
+
+11
+00:00:55,540 --> 00:01:00,080
+Now imagine this counter variable would be used in a lot of different places.
+
+12
+00:01:00,100 --> 00:01:04,060
+A lot of other properties would depend on the counter here.
+
+13
+00:01:04,060 --> 00:01:09,400
+It could quickly get problematic to manage them all and is increased function or think you would have
+
+14
+00:01:09,400 --> 00:01:15,700
+a natural place where you set this calendar and then you would need to keep both in sync and well that
+
+15
+00:01:15,730 --> 00:01:18,380
+is really hard to maintain.
+
+16
+00:01:18,400 --> 00:01:21,450
+It would already get harder to maintain.
+
+17
+00:01:21,580 --> 00:01:30,220
+If I were to add the decrease button here execute the decrease method and simply duplicate the increase
+
+18
+00:01:30,230 --> 00:01:35,160
+method here to now also have the decrease method.
+
+19
+00:01:35,410 --> 00:01:37,860
+And I do the same check as before again.
+
+20
+00:01:38,050 --> 00:01:42,650
+So here I can go over 5 and then back to smaller.
+
+21
+00:01:42,820 --> 00:01:48,620
+This works but you notice that I have this code in two places and if I would have a source setting the
+
+22
+00:01:48,640 --> 00:01:57,700
+counter it would quickly get unmaintainable thankfully beauteous makes it much easier than that to model
+
+23
+00:01:57,700 --> 00:02:00,740
+such cross property dependencies.
+
+24
+00:02:01,390 --> 00:02:04,140
+I'll get rid of both the functions here.
+
+25
+00:02:04,150 --> 00:02:11,380
+I'll get rid of the whole methods object and rewrite the code to simply increase the counter here and
+
+26
+00:02:11,380 --> 00:02:12,970
+decrease that here.
+
+27
+00:02:12,970 --> 00:02:15,340
+Now how do I update my result.
+
+28
+00:02:15,340 --> 00:02:19,240
+Now I can set the logic here.
+
+29
+00:02:19,240 --> 00:02:21,800
+Data is not reactive.
+
+30
+00:02:21,850 --> 00:02:28,320
+So I can say this counter grade or five and then execute my code here.
+
+31
+00:02:28,330 --> 00:02:29,590
+This will not work.
+
+32
+00:02:29,800 --> 00:02:37,120
+That is not how the data property works but turns out we do have a way to still do that.
+
+33
+00:02:37,210 --> 00:02:40,450
+The first one would be one we already saw in action.
+
+34
+00:02:40,480 --> 00:02:46,130
+If I reintroduce my methods I could add a salt method here.
+
+35
+00:02:46,330 --> 00:02:54,670
+And all I could do here would be I can simply return this statement from the four where I simply check
+
+36
+00:02:54,730 --> 00:03:03,760
+if this counter is greater than 5 in which case I could say great or five an hour away say smaller than
+
+37
+00:03:03,830 --> 00:03:06,030
+five whatever text you want output.
+
+38
+00:03:06,160 --> 00:03:13,330
+I would think call resolved here get rid of this result property and upon re-entering this you would
+
+39
+00:03:13,330 --> 00:03:15,120
+see it now works again.
+
+40
+00:03:15,150 --> 00:03:17,070
+This is one way of doing it.
+
+41
+00:03:17,080 --> 00:03:23,350
+Now we already improved as a lot because now we don't have to worry about different sources influencing
+
+42
+00:03:23,350 --> 00:03:24,360
+our accounts.
+
+43
+00:03:24,970 --> 00:03:35,290
+It still has a disadvantage though if I add a third partner here where I do something totally different
+
+44
+00:03:35,690 --> 00:03:47,190
+let's say I have my second counter which by increment your so increment would increase second and then
+
+45
+00:03:47,190 --> 00:03:57,150
+I'll add it here if I have such a set up this resoled method here will still get executed on upon each
+
+46
+00:03:57,240 --> 00:04:03,540
+updating of the page you chaps will update the page whenever it finds the need to do so which will be
+
+47
+00:04:03,540 --> 00:04:06,000
+whenever one of its data properties changes.
+
+48
+00:04:06,000 --> 00:04:13,210
+We obviously since we output them here need to update the page and it doesn't know if the result function
+
+49
+00:04:13,210 --> 00:04:18,040
+or we execute here does use one of the properties we changed.
+
+50
+00:04:18,150 --> 00:04:24,090
+So it doesn't know if the change of second counter influences the result meved and therefore it really
+
+51
+00:04:24,090 --> 00:04:26,520
+executes this method as well.
+
+52
+00:04:26,520 --> 00:04:32,520
+This might not be a problem forwarders rubber lightweight function here but imagine you have a function
+
+53
+00:04:32,520 --> 00:04:36,360
+which takes longer to run which runs more complicated code.
+
+54
+00:04:36,510 --> 00:04:44,750
+And what you don't want to re execute even though it is not needed to be executed for this case.
+
+55
+00:04:44,760 --> 00:04:48,960
+We got a new property on our global and our view.
+
+56
+00:04:48,960 --> 00:04:51,670
+Instance here it's called computed.
+
+57
+00:04:51,810 --> 00:05:01,140
+And it also takes a shallow object just like data and methods the computed property or object here also
+
+58
+00:05:01,140 --> 00:05:03,390
+allows us to store properties.
+
+59
+00:05:03,570 --> 00:05:07,460
+For example output to Nadra reuse result.
+
+60
+00:05:08,040 --> 00:05:11,890
+But here it is not directly to data.
+
+61
+00:05:11,940 --> 00:05:19,710
+Instead this also is a function where we return the value does Property years should eventually have.
+
+62
+00:05:19,710 --> 00:05:22,360
+So I can copy the code from down there.
+
+63
+00:05:24,280 --> 00:05:25,510
+It looks the same.
+
+64
+00:05:25,510 --> 00:05:32,340
+Asked is resolved method here which as a side note I just realized a road as iOS 6 function.
+
+65
+00:05:32,350 --> 00:05:37,090
+This would be the ears five syntax Beaufort's as you see just a little spoiler on what it showed us
+
+66
+00:05:37,090 --> 00:05:37,560
+later.
+
+67
+00:05:37,600 --> 00:05:41,710
+But anyways this is de-code which will run in every browser the server will not.
+
+68
+00:05:41,710 --> 00:05:43,300
+Sorry about that.
+
+69
+00:05:43,330 --> 00:05:44,720
+Back to the output though.
+
+70
+00:05:44,740 --> 00:05:46,200
+That's the interesting part.
+
+71
+00:05:46,210 --> 00:05:48,410
+It looks like the result Moffit here.
+
+72
+00:05:48,430 --> 00:05:50,290
+It just has a different name.
+
+73
+00:05:50,560 --> 00:05:53,350
+But actually we use it differently.
+
+74
+00:05:53,410 --> 00:05:55,330
+I can output both.
+
+75
+00:05:55,340 --> 00:05:56,540
+Here let's say.
+
+76
+00:05:56,860 --> 00:06:01,570
+So all use string place again and I'll use output like this.
+
+77
+00:06:01,570 --> 00:06:02,550
+Notice the difference.
+
+78
+00:06:02,620 --> 00:06:03,790
+No parentheses.
+
+79
+00:06:03,790 --> 00:06:05,820
+I don't call that as a function.
+
+80
+00:06:05,860 --> 00:06:11,800
+I use it like a property like property stored in my data object it isn't stored there.
+
+81
+00:06:11,820 --> 00:06:13,960
+But I can use it in just the same way.
+
+82
+00:06:13,960 --> 00:06:20,860
+And that's important to keep in mind everything stored in computer it can be used just like you use
+
+83
+00:06:20,860 --> 00:06:23,800
+a property in the data object.
+
+84
+00:06:23,800 --> 00:06:31,380
+The interesting thing about it is for does of-I safe that we see smaller than five twice.
+
+85
+00:06:31,390 --> 00:06:34,300
+And we see that both updates just fine.
+
+86
+00:06:34,470 --> 00:06:40,750
+The difference behind the scenes is the result function gets called every time because Eugenius doesn't
+
+87
+00:06:40,810 --> 00:06:49,060
+know if it needs to rerun this it doesn't know if we use any property in this function which was changed
+
+88
+00:06:49,540 --> 00:06:51,800
+for compute properties.
+
+89
+00:06:51,820 --> 00:06:55,420
+It just analyzed the code and it is aware of this.
+
+90
+00:06:55,570 --> 00:07:03,160
+So for a computed property it is aware that output is not interested in the second counter at all and
+
+91
+00:07:03,160 --> 00:07:04,610
+thus will not be run.
+
+92
+00:07:04,660 --> 00:07:08,880
+If I hit to increase second button and I can prove this to you.
+
+93
+00:07:09,250 --> 00:07:17,800
+Let's simply add a console log where I would say computed here in the case of my computer function and
+
+94
+00:07:17,800 --> 00:07:24,380
+for the normal method here I will say method with that set up.
+
+95
+00:07:24,460 --> 00:07:29,800
+And I just realized this should be second counter here of course with that correct that I can go to
+
+96
+00:07:29,800 --> 00:07:36,440
+my counter and simply output my second counter here as well.
+
+97
+00:07:36,640 --> 00:07:41,440
+And if I now had control enter and opened up my console.
+
+98
+00:07:41,440 --> 00:07:42,640
+Watch what happens.
+
+99
+00:07:42,640 --> 00:07:46,350
+I'm going to hit increase First we see method and computed.
+
+100
+00:07:46,540 --> 00:07:53,320
+So both get executed here which makes sense because I changed my counter and my output my computed property
+
+101
+00:07:53,320 --> 00:07:55,000
+here depends on this counter.
+
+102
+00:07:55,030 --> 00:07:59,690
+So it makes sense that it gets recalculated because again it depends on it.
+
+103
+00:07:59,890 --> 00:08:02,000
+The result Nefert gets executed anyways.
+
+104
+00:08:02,020 --> 00:08:04,540
+As I explained and I can prove this.
+
+105
+00:08:04,540 --> 00:08:06,940
+Watch what happens if I hit increase second.
+
+106
+00:08:07,030 --> 00:08:12,700
+Keep in mind this only increases to second counter something which is not used to my computed output
+
+107
+00:08:12,700 --> 00:08:13,830
+property here.
+
+108
+00:08:14,200 --> 00:08:20,180
+Thus if I hit it we only see Methot being added computed is not getting executed.
+
+109
+00:08:20,350 --> 00:08:24,460
+So dysfunction here is not getting executed at all.
+
+110
+00:08:24,460 --> 00:08:30,640
+Only this function because again it gets executed all the time because view chess is not aware of what's
+
+111
+00:08:30,640 --> 00:08:31,910
+inside of it.
+
+112
+00:08:31,990 --> 00:08:37,940
+It is off my computer property here though which is why we don't see computer when clicking increase.
+
+113
+00:08:37,960 --> 00:08:44,240
+Second this is how we can use and how we should use computer properties.
+
+114
+00:08:44,410 --> 00:08:51,160
+If we get dependencies like this it is the best way to do it because we're caching the result.
+
+115
+00:08:51,250 --> 00:08:54,370
+We're not unnecessarily recalculating it.
+
+116
+00:08:54,430 --> 00:08:57,030
+If there is no need to recalculate.
+
+117
+00:08:57,220 --> 00:09:05,200
+So only use does function way here if you know that you don't want to cash or assault that you want
+
+118
+00:09:05,200 --> 00:09:11,980
+to recalculate every time the dom gets updated because for some reason you know that this is required
+
+119
+00:09:12,250 --> 00:09:18,700
+even though you might update a property which is not used in this function you're calling here at all.
+
+120
+00:09:18,700 --> 00:09:23,130
+There might be such cases but most of the time it probably isn't the case.
+
+121
+00:09:23,200 --> 00:09:29,380
+So make sure to really take advantage of this great concept of computer properties here.
+

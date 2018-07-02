@@ -1,0 +1,48 @@
+1
+00:00:01,860 --> 00:00:04,830
+In this module we had a detailed look at animations.
+
+2
+00:00:04,890 --> 00:00:11,970
+We learned how to make the change of one single element the transition between multiple elements or
+
+3
+00:00:11,970 --> 00:00:17,760
+how to any made a whole list of elements where for example add and delete items or move items within
+
+4
+00:00:17,760 --> 00:00:18,980
+the list.
+
+5
+00:00:19,050 --> 00:00:26,280
+You also learned how to do that or how to add this in a real application and which different options
+
+6
+00:00:26,310 --> 00:00:31,490
+you have for animating for example using CSSA classes custom class names.
+
+7
+00:00:31,710 --> 00:00:35,730
+Pure javascript to which events you may Eleison and so on.
+
+8
+00:00:35,910 --> 00:00:42,150
+With that you should have a basic toolset to play around with it and add animations to your application.
+
+9
+00:00:42,150 --> 00:00:49,200
+Try out some things and see what you can animate how that works which C-s as set up you need to make
+
+10
+00:00:49,200 --> 00:00:52,380
+it work any the way you want to make it work and so on.
+
+11
+00:00:52,560 --> 00:00:57,740
+With that let's move on and keep animations in mind for the rest of this course.
+
+12
+00:00:57,780 --> 00:01:01,000
+I will use them again in later sections too.
+

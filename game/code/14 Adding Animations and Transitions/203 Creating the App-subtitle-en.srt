@@ -1,0 +1,648 @@
+1
+00:00:02,080 --> 00:00:09,060
+So as we see here what we want to build is a quiz where we get addition and subtraction tasks here and
+
+2
+00:00:09,120 --> 00:00:10,940
+one which we don't have to answer.
+
+3
+00:00:11,020 --> 00:00:13,600
+And if we're right we want to flip this page and show.
+
+4
+00:00:13,610 --> 00:00:18,610
+That's correct and give us the possibility to go to the next question and then if were wrong then I
+
+5
+00:00:18,610 --> 00:00:20,590
+simply want to show in alert here.
+
+6
+00:00:20,770 --> 00:00:24,920
+So we need two components at least a question and the answer.
+
+7
+00:00:24,970 --> 00:00:33,190
+And when you do animation we maybe want to switch between the components with our our animation our
+
+8
+00:00:33,190 --> 00:00:34,810
+transition here say.
+
+9
+00:00:35,140 --> 00:00:37,840
+And I think these are all things we learned how to do both.
+
+10
+00:00:37,840 --> 00:00:39,110
+So let's start with it.
+
+11
+00:00:39,310 --> 00:00:41,340
+So I'm starting a brand new project here.
+
+12
+00:00:41,350 --> 00:00:42,730
+It's pretty empty.
+
+13
+00:00:42,740 --> 00:00:48,340
+I think God is my default bootstrap contrite container again there from the next team of all the import
+
+14
+00:00:48,340 --> 00:00:49,290
+of bootstrap.
+
+15
+00:00:49,450 --> 00:00:54,640
+And that really is all the instance here is totally empty no data has been entered yet.
+
+16
+00:00:54,670 --> 00:00:59,630
+Now I want to start by building up my main interface on this rude page here.
+
+17
+00:00:59,710 --> 00:01:07,060
+So in the first row I may want to have a title which I give to class text center to well centered a
+
+18
+00:01:07,080 --> 00:01:07,740
+text.
+
+19
+00:01:07,780 --> 00:01:12,830
+This is a bootstrap helper class where I say the Superquinn choose any name you want of course.
+
+20
+00:01:13,150 --> 00:01:19,390
+And then I want to have a div for a number row below there maybe at a horizontal line in between.
+
+21
+00:01:19,390 --> 00:01:22,870
+And in this row I don't want to have to question empty answer.
+
+22
+00:01:22,930 --> 00:01:26,250
+So here I want to use my dynamic component.
+
+23
+00:01:26,290 --> 00:01:31,330
+I can already insert component here but of course I need to create these components as well so that
+
+24
+00:01:31,330 --> 00:01:33,410
+I can set them dynamically.
+
+25
+00:01:34,090 --> 00:01:35,380
+Well I will do that.
+
+26
+00:01:35,410 --> 00:01:43,710
+So let me add the components subfolder here and in this folder I want to have my answer and view file.
+
+27
+00:01:43,810 --> 00:01:48,130
+And my question Does the view file for.
+
+28
+00:01:48,190 --> 00:01:56,800
+Well the question of course now these two files here shall be switched dynamically now to be able to
+
+29
+00:01:56,800 --> 00:01:59,530
+switch them I will already import these components.
+
+30
+00:01:59,530 --> 00:02:03,740
+I know the files are empty We're going to add this but I can already Edhi imports here because I know
+
+31
+00:02:03,740 --> 00:02:04,550
+I will fold.
+
+32
+00:02:04,600 --> 00:02:10,800
+I will fold these files so import the questions from components.
+
+33
+00:02:10,810 --> 00:02:17,120
+Question that view and I do also import the answer from the answer to you file.
+
+34
+00:02:17,290 --> 00:02:23,930
+This allows me to add my components here to them locally without question which points to question and
+
+35
+00:02:23,970 --> 00:02:27,810
+an answer which points to an answer like this.
+
+36
+00:02:28,120 --> 00:02:33,400
+And then in my data I want to set up a property which holds the currently loaded component because we
+
+37
+00:02:33,400 --> 00:02:39,010
+want to use dynamic components here with this component placeholder we could say there.
+
+38
+00:02:39,130 --> 00:02:42,260
+Let's say I want to set the mode which initially is.
+
+39
+00:02:42,260 --> 00:02:47,770
+QUESTION So did we see a question at first at the beginning and then I can't simply bind it here with
+
+40
+00:02:47,840 --> 00:02:54,240
+Colon is to bind this dynamically to mode and this will be no question or answer.
+
+41
+00:02:54,400 --> 00:03:00,340
+No that won't do it though because mode is questions are answered though the component has a selector
+
+42
+00:03:00,350 --> 00:03:12,210
+or app question or app answer so I can simply change this here in my mode property to app question let's
+
+43
+00:03:12,210 --> 00:03:17,100
+say and I'm loading the app question component here at the beginning.
+
+44
+00:03:17,100 --> 00:03:22,880
+Now as I said this is empty at the beginning because well I haven't added any code to question that
+
+45
+00:03:22,910 --> 00:03:25,500
+view but will do this next.
+
+46
+00:03:25,500 --> 00:03:27,020
+Now any question of you fall.
+
+47
+00:03:27,030 --> 00:03:32,700
+I'm going to copy in some prepared code Now this might look like a lot but I don't want to focus on
+
+48
+00:03:32,700 --> 00:03:35,010
+writing just javascript logic for digging here.
+
+49
+00:03:35,010 --> 00:03:37,740
+Feel free to dig into the code to learn more about it.
+
+50
+00:03:37,950 --> 00:03:40,690
+But I want to focus on adding this animation.
+
+51
+00:03:40,770 --> 00:03:43,640
+Therefore I will walk you through what I'll do here.
+
+52
+00:03:43,800 --> 00:03:50,580
+I do have this title which outputs some questions stored in some property and then I do have some buttons
+
+53
+00:03:50,580 --> 00:03:58,290
+here which are basically just executing on answer where we pass this strange argument to which I'll
+
+54
+00:03:58,290 --> 00:03:58,770
+come back.
+
+55
+00:03:58,770 --> 00:04:00,370
+And which then showed the answer.
+
+56
+00:04:00,390 --> 00:04:02,070
+So one of the four answers.
+
+57
+00:04:02,210 --> 00:04:07,500
+Of course I need to generate the answers and I don't want to have the same button which holds the correct
+
+58
+00:04:07,500 --> 00:04:10,170
+answer at the same position all the time.
+
+59
+00:04:10,170 --> 00:04:15,950
+This is why I passed the second argument or where I do have something else and just answer on my answers
+
+60
+00:04:15,960 --> 00:04:18,480
+which seem to be stored in the array correct.
+
+61
+00:04:18,480 --> 00:04:20,850
+So this determines if this answer is correct or not.
+
+62
+00:04:20,880 --> 00:04:24,210
+So did any button here may hold the correct or false answer.
+
+63
+00:04:24,330 --> 00:04:30,710
+And we determined that upon clicking because it gets passed here to the array as to the method on answer.
+
+64
+00:04:31,200 --> 00:04:34,550
+So let's have a look and the answer arrayed there for that button.
+
+65
+00:04:34,590 --> 00:04:36,330
+Data array to be precise.
+
+66
+00:04:36,750 --> 00:04:42,750
+And there we do have a couple of objects which either each have to answer set to initially to zero.
+
+67
+00:04:42,810 --> 00:04:46,640
+That will change of course and then whether it's correct or true.
+
+68
+00:04:46,680 --> 00:04:48,730
+This will also change.
+
+69
+00:04:48,870 --> 00:04:56,340
+Now these are my button data fields or any button data objects and then in methods I get together generate
+
+70
+00:04:56,340 --> 00:04:57,990
+question method here.
+
+71
+00:04:58,020 --> 00:05:03,530
+Now generate questioners called here in the created lifecycle look so whenever this component is loaded
+
+72
+00:05:04,170 --> 00:05:11,070
+and in this method here which is quite long what I do is I generate a first and a second number because
+
+73
+00:05:11,070 --> 00:05:14,170
+you want to add or subtract subtract them.
+
+74
+00:05:14,310 --> 00:05:17,260
+Then I generate which mode you want to use.
+
+75
+00:05:17,280 --> 00:05:19,370
+That is a random number between 1 and 2.
+
+76
+00:05:19,410 --> 00:05:24,750
+Generate random numbers as a side note is a helper method here which I wrote to give me a random number
+
+77
+00:05:24,750 --> 00:05:33,000
+between the minimum and maximum border and then maybe also exclude some numbers from getting generated
+
+78
+00:05:33,090 --> 00:05:36,210
+that will become important when generating the answers.
+
+79
+00:05:36,600 --> 00:05:41,970
+So here I do generated these three random numbers the first and the second number for the addition or
+
+80
+00:05:41,970 --> 00:05:48,430
+subtraction and then the mode subtract or add and then the correct answer is set to 0 initially.
+
+81
+00:05:48,500 --> 00:05:51,350
+I then switch between the mode and mode.
+
+82
+00:05:51,390 --> 00:06:01,180
+Addition is just one whereas mode substraction just it's just a global constant to use your and if mode
+
+83
+00:06:01,200 --> 00:06:07,610
+number a random number between 1 and 2 is one that is what's stored in motivation in the end.
+
+84
+00:06:07,860 --> 00:06:15,000
+Then we well set the correct answer to first number plus second number and we set the question to what's
+
+85
+00:06:15,360 --> 00:06:19,710
+first number plus second number using literal here string literal.
+
+86
+00:06:19,720 --> 00:06:26,570
+That's a E6 feature which allows me to output our property or variable like this inside of a string.
+
+87
+00:06:26,570 --> 00:06:28,390
+So say 6 feature.
+
+88
+00:06:28,830 --> 00:06:33,360
+And then I break of course and in subtraction I do the same but with a minus sign in between because
+
+89
+00:06:33,360 --> 00:06:38,690
+now we're subtracting and the default is that we get an error because well if we do get anything else
+
+90
+00:06:38,700 --> 00:06:44,290
+than one or two something failed horribly costis generate method should only give us one or two.
+
+91
+00:06:44,730 --> 00:06:49,740
+Well that's the determining of the mode and off the correct answer.
+
+92
+00:06:49,770 --> 00:06:57,450
+And then we need to generate some fake fake answers so I make sure that for all the four buttons I do
+
+93
+00:06:57,450 --> 00:07:07,440
+set some values the value on the first button is the correct answer minus 10 and then the correct answer
+
+94
+00:07:07,440 --> 00:07:08,100
+plus 10.
+
+95
+00:07:08,100 --> 00:07:12,470
+So these are the minimum or maximum borders for the generate number function.
+
+96
+00:07:12,540 --> 00:07:15,340
+But I never want to set the correct answer itself.
+
+97
+00:07:15,420 --> 00:07:21,240
+So I populate all four buttons with wrong answers which is why I said the correct property to false
+
+98
+00:07:21,270 --> 00:07:30,330
+for all four buttons here initially I need to accept or I need to exclude I should say this is the correct
+
+99
+00:07:30,330 --> 00:07:32,800
+answer here from the random number generation.
+
+100
+00:07:32,910 --> 00:07:35,820
+Because otherwise I might have two buttons with the same answer.
+
+101
+00:07:35,850 --> 00:07:41,470
+But one of them gives me that is wrong which would not be the desart behavior.
+
+102
+00:07:41,760 --> 00:07:49,470
+So all buttons are initially set to two wrong answers and then you're on the correct button I see where
+
+103
+00:07:49,470 --> 00:07:56,170
+I generate the correct button so I generate a random number between 0 and free because I have four elements
+
+104
+00:07:56,170 --> 00:08:01,980
+in the button data array which holds my buttons or the data 14 buttons and then a generator and the
+
+105
+00:08:01,980 --> 00:08:07,530
+number to determine which button should now get the correct answer 0 to free because the first button
+
+106
+00:08:07,530 --> 00:08:12,310
+has the index of zero and the last button has the index of three because we have four buttons again.
+
+107
+00:08:12,540 --> 00:08:16,150
+And then I simply generate which button should hold the correct data.
+
+108
+00:08:16,200 --> 00:08:18,810
+And then I set to correct data on that button.
+
+109
+00:08:18,810 --> 00:08:21,340
+So on this button that would be precise.
+
+110
+00:08:21,480 --> 00:08:27,200
+This is how I populate my buttons with wrong and right answers or data.
+
+111
+00:08:27,450 --> 00:08:35,400
+And then finally I do have this on Anzur method which gets executed in the on ends or afraid I get is
+
+112
+00:08:35,400 --> 00:08:38,790
+correct passed which is stored in the button data object.
+
+113
+00:08:38,790 --> 00:08:39,540
+Keep that in mind.
+
+114
+00:08:39,540 --> 00:08:41,490
+Correct as past is stored here.
+
+115
+00:08:41,520 --> 00:08:49,050
+And they do pass have been calling on answer and I simply admit an event here answered where I also
+
+116
+00:08:49,070 --> 00:08:51,760
+admit WEBER This is correct or not.
+
+117
+00:08:51,780 --> 00:08:54,310
+Now this is all I do here is a lot of code.
+
+118
+00:08:54,330 --> 00:08:58,770
+Most of the code is for the number generation which is why I didn't want to show it in detail here.
+
+119
+00:08:58,830 --> 00:09:00,850
+I hope it was still understandable.
+
+120
+00:09:00,870 --> 00:09:04,980
+Otherwise feel free to answer any quick question in a section of course.
+
+121
+00:09:05,280 --> 00:09:10,530
+And with that let's move onto the answer that you file and also populate that here.
+
+122
+00:09:10,530 --> 00:09:12,740
+I'm also going to copy in some prepared code.
+
+123
+00:09:12,870 --> 00:09:16,080
+And of course you will find all the code attached to this lecture.
+
+124
+00:09:16,470 --> 00:09:21,920
+And here I basically say that's correct because I always showed as if it's correct otherwise I showed
+
+125
+00:09:21,920 --> 00:09:23,010
+us alert.
+
+126
+00:09:23,400 --> 00:09:28,560
+And if we then click on next question I admit an event called confirmed.
+
+127
+00:09:28,860 --> 00:09:31,870
+So I have it disconfirmed event here.
+
+128
+00:09:32,100 --> 00:09:37,020
+And any question that view I M-80 answered event.
+
+129
+00:09:37,020 --> 00:09:41,320
+So now to jump in or after you fall is to listen to both events.
+
+130
+00:09:41,340 --> 00:09:48,630
+Wherever answer was picked or was given or if we offered giving a correct answer clicked on next question
+
+131
+00:09:49,260 --> 00:09:53,000
+hence here I will add two event listeners at answered.
+
+132
+00:09:53,000 --> 00:09:56,970
+This is my answer custom event emitted from the question that you file.
+
+133
+00:09:57,050 --> 00:10:06,260
+And here I want to execute answered and pass on the event data stored in these specific dollar sign
+
+134
+00:10:06,260 --> 00:10:09,920
+event property or variable I should say treated by you chaps.
+
+135
+00:10:10,010 --> 00:10:14,140
+And keep in mind this comes from the question property here.
+
+136
+00:10:14,150 --> 00:10:17,420
+Question component excuse me and here I pass.
+
+137
+00:10:17,420 --> 00:10:22,650
+If this is correct or not and this is specifically what I want to store here in dollar sign event.
+
+138
+00:10:22,700 --> 00:10:28,340
+Now if every component is loaded then I need to add the answer component.
+
+139
+00:10:28,430 --> 00:10:33,640
+I need to listen to confirmed so that the answer was confirmed them we want to see the next question.
+
+140
+00:10:33,920 --> 00:10:38,330
+And then I simply switched the mode to app question again.
+
+141
+00:10:38,330 --> 00:10:43,680
+Right now we don't have a place to switch it to answer or come to this but here we definitely switch
+
+142
+00:10:43,680 --> 00:10:44,780
+it back.
+
+143
+00:10:45,230 --> 00:10:51,340
+Now the place to switch it to app answer of course is in the methods object here.
+
+144
+00:10:51,350 --> 00:10:53,320
+All right this to Gabr here.
+
+145
+00:10:53,330 --> 00:11:00,110
+I do have my answered method I want to execute up here and a pass is correct here as an argument which
+
+146
+00:11:00,110 --> 00:11:07,390
+gets passed from this loaded component from the questioned view file and here a check if it's correct
+
+147
+00:11:07,400 --> 00:11:08,700
+if this is true.
+
+148
+00:11:09,110 --> 00:11:13,590
+Well then I want to set this mode to app answer.
+
+149
+00:11:13,910 --> 00:11:17,600
+So I want to load my answer component.
+
+150
+00:11:17,970 --> 00:11:20,400
+But if it is it's not correct.
+
+151
+00:11:20,430 --> 00:11:22,500
+So in the L's case here.
+
+152
+00:11:22,820 --> 00:11:27,180
+Well then I want to set this most definitely to app question it should be in that mode already.
+
+153
+00:11:27,180 --> 00:11:29,880
+But just to make sure or to ensure it.
+
+154
+00:11:29,970 --> 00:11:31,970
+And I want to show wrong.
+
+155
+00:11:31,980 --> 00:11:35,260
+Try again as the alert here.
+
+156
+00:11:35,280 --> 00:11:36,680
+Really simple.
+
+157
+00:11:37,260 --> 00:11:40,560
+Well and this is all the initial set up it should need.
+
+158
+00:11:40,560 --> 00:11:47,960
+If I save this my server is already running an alert this we see it here and let's see.
+
+159
+00:11:47,970 --> 00:11:50,250
+That should be this result we see.
+
+160
+00:11:50,250 --> 00:11:51,420
+That's correct.
+
+161
+00:11:51,540 --> 00:11:59,550
+And we can now switch between that the missing piece of course is that we animate this and this is what
+
+162
+00:11:59,550 --> 00:12:01,830
+we'll do together in the next Electra's.
+

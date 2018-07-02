@@ -1,0 +1,292 @@
+1
+00:00:02,030 --> 00:00:05,080
+We set up our stocks to be visible like this.
+
+2
+00:00:05,090 --> 00:00:07,530
+Now we all want to fill them with some data.
+
+3
+00:00:07,760 --> 00:00:12,980
+We get some dummy data here we'll soon replace this but for now it's good to use that here.
+
+4
+00:00:13,310 --> 00:00:20,300
+Of course once you send the stock I'm at in this loop here Tudor's stock component.
+
+5
+00:00:20,540 --> 00:00:22,810
+We learned how to do this with props.
+
+6
+00:00:22,940 --> 00:00:30,460
+So I'm going to add this stock prop here and notice to call into binded dynamically to the stock Berryville
+
+7
+00:00:30,470 --> 00:00:32,020
+we're creating in this loop.
+
+8
+00:00:32,150 --> 00:00:37,280
+And with that I can go to my stock component and in here I'll add a script part to it.
+
+9
+00:00:37,280 --> 00:00:43,930
+Now and I want to export the default object and then this object of course set up my props and props
+
+10
+00:00:43,980 --> 00:00:49,990
+as at least stock because I'm getting individual stock sent to this component here.
+
+11
+00:00:51,190 --> 00:00:57,430
+Now with the stock being a whaleboat here I can of course replace my placeholders to output the actual
+
+12
+00:00:57,430 --> 00:01:07,770
+stock name the actual stock price and also to the start setting up my input and despite button because
+
+13
+00:01:07,830 --> 00:01:13,000
+I want to make them I want to make them work right at least the basic functionality.
+
+14
+00:01:13,000 --> 00:01:20,920
+Now for the input I want to bind this to my data object so here I will return a new object of course
+
+15
+00:01:21,280 --> 00:01:30,790
+which is one quantity which is 0 initially and I will bind my input here by passing the model equals
+
+16
+00:01:31,210 --> 00:01:41,320
+quantity like this quantity does will now bind my inputs to just stay that field and we can see this
+
+17
+00:01:41,330 --> 00:01:47,340
+if we switch over we now see the names the real prizes and all the inputs are populated with zero.
+
+18
+00:01:47,360 --> 00:01:49,850
+The next step now is to set up the button.
+
+19
+00:01:49,850 --> 00:01:55,910
+For now I only want to log it to the console will soon change this though in order to set up the button
+
+20
+00:01:57,210 --> 00:02:05,280
+I'll add a click listener here and all I want to execute by stockier let's say Now of course to be able
+
+21
+00:02:05,280 --> 00:02:10,000
+to execute as I need to add my methods property in this instance.
+
+22
+00:02:10,230 --> 00:02:14,720
+And I want to have my buy stock method in there.
+
+23
+00:02:15,000 --> 00:02:17,530
+And here I will create a new order.
+
+24
+00:02:17,610 --> 00:02:24,960
+Now this order is basically a Charles script object where I do have my stock ID and for that I can simply
+
+25
+00:02:24,990 --> 00:02:26,870
+access the stock I get passed.
+
+26
+00:02:26,880 --> 00:02:30,110
+Why prop spining or why are you property binding here.
+
+27
+00:02:30,120 --> 00:02:36,090
+The prop up there this idea of a stock I want to have a stock price.
+
+28
+00:02:36,090 --> 00:02:39,510
+This of course is this stock price.
+
+29
+00:02:39,510 --> 00:02:41,610
+That's the price of the individual stock.
+
+30
+00:02:41,910 --> 00:02:45,960
+And I want to have the quantity this quantity.
+
+31
+00:02:45,960 --> 00:02:47,210
+This is my order.
+
+32
+00:02:47,250 --> 00:02:52,230
+And what if there were of course able to calculate the total price with quantity times the individual
+
+33
+00:02:52,230 --> 00:02:54,850
+stock price.
+
+34
+00:02:54,870 --> 00:03:00,120
+Now with that I kind of want to buy it for now.
+
+35
+00:03:00,120 --> 00:03:01,430
+We don't do that because dead.
+
+36
+00:03:01,430 --> 00:03:02,660
+We will indeed view x.
+
+37
+00:03:02,660 --> 00:03:08,040
+We need our global state BENNETT-JONES where I'd then want to of course change my funds and so on so
+
+38
+00:03:08,520 --> 00:03:10,080
+I don't do that right now.
+
+39
+00:03:10,110 --> 00:03:19,050
+Instead I want to simply console doctors order and I will set this quantity back to you now thereafter
+
+40
+00:03:19,080 --> 00:03:21,190
+to zero to be precise.
+
+41
+00:03:21,210 --> 00:03:27,330
+So to reset it after the order if we save this and have a look at our application.
+
+42
+00:03:27,330 --> 00:03:37,670
+If I open the console here and enter 10 and click on by we see this almost worked though the stock price
+
+43
+00:03:37,670 --> 00:03:38,590
+of undefined.
+
+44
+00:03:38,590 --> 00:03:39,930
+That doesn't look right.
+
+45
+00:03:40,910 --> 00:03:45,840
+Well the reason is that this should be stock price not stock price and that Caml the case.
+
+46
+00:03:46,070 --> 00:03:51,390
+So with this if we try this again too that looks much better.
+
+47
+00:03:51,650 --> 00:03:55,280
+So we got our buyback nuked up we got the it put hooked up.
+
+48
+00:03:55,280 --> 00:04:02,300
+Now one thing we can do right now is I can enter minus 10 for example and bitis and you see it in the
+
+49
+00:04:02,300 --> 00:04:06,380
+console that if we have a look at this object this worked.
+
+50
+00:04:06,380 --> 00:04:08,590
+This of course is certainly not what I want.
+
+51
+00:04:08,610 --> 00:04:14,810
+Also I could buy more than I have funds though at the moment I don't have any fun so that something
+
+52
+00:04:14,810 --> 00:04:16,250
+will fix in the future.
+
+53
+00:04:16,370 --> 00:04:22,010
+But at least I want to make sure that we can't buy a negative amount of stocks right now for debt.
+
+54
+00:04:22,010 --> 00:04:28,540
+I will add a new attribute binding to this button where I disable it under certain conditions.
+
+55
+00:04:28,700 --> 00:04:30,380
+What are these conditions.
+
+56
+00:04:30,620 --> 00:04:36,980
+Well one of it is that the one to me is smaller or equal to zero.
+
+57
+00:04:36,980 --> 00:04:43,490
+I can buy stocks if I don't buy at least one of them now all the way I want to make sure that my number
+
+58
+00:04:43,490 --> 00:04:44,520
+is an integer.
+
+59
+00:04:44,540 --> 00:04:49,600
+Therefore I check if it's not an integer year in which case and what does able to button.
+
+60
+00:04:49,820 --> 00:04:54,920
+So if it's not an integer I want to disable the button with dimsum place.
+
+61
+00:04:54,920 --> 00:04:59,660
+If we go back we see that but this disabled by default if I enter minus one and stays disabled.
+
+62
+00:04:59,660 --> 00:05:07,370
+If I enter one it gets this disabled enabled if I enter one Dadds to aid gets disabled again because
+
+63
+00:05:07,400 --> 00:05:12,110
+that's not an entry was that I got this functionality in place.
+
+64
+00:05:12,110 --> 00:05:14,080
+I'd say that looks pretty good.
+
+65
+00:05:14,090 --> 00:05:19,340
+We already see that we're now reaching the point where it's hard to continue as long as we don't have
+
+66
+00:05:19,340 --> 00:05:22,910
+a proper state management in place because we want to check our funds.
+
+67
+00:05:22,910 --> 00:05:25,090
+We want to be able to execute the order.
+
+68
+00:05:25,100 --> 00:05:31,400
+It won't make sense to work on the portfolio if we're not able to restore our pre-Chase somewhere.
+
+69
+00:05:31,400 --> 00:05:36,760
+So the next three years are definitely about setting up view x setting up our state management.
+
+70
+00:05:36,830 --> 00:05:42,020
+And that again is a great challenge for you to take over at this part and try setting this up as your
+
+71
+00:05:42,020 --> 00:05:46,660
+own think about which What's in your state which mutations do you have.
+
+72
+00:05:46,700 --> 00:05:51,920
+How do you dispatch these mutations which getters do you need and so on.
+
+73
+00:05:51,950 --> 00:05:54,350
+I'll see you on the next video when I started working on that.
+

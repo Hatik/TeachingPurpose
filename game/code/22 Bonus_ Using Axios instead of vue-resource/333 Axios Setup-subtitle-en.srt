@@ -1,0 +1,104 @@
+1
+00:00:02,590 --> 00:00:08,720
+So in the last lecture we set up our project and the firebase back and let's now install X yes.
+
+2
+00:00:08,770 --> 00:00:10,510
+As I said it's a party package.
+
+3
+00:00:10,510 --> 00:00:16,950
+It's not integrated into view so all Quittner lie NPM run def Burroughs's for a second.
+
+4
+00:00:17,170 --> 00:00:24,020
+And in the terminal all now run NPM install dash dash save to also store an entry in the package dodgiest
+
+5
+00:00:24,030 --> 00:00:27,860
+and fall X. Yes that's the name of the package.
+
+6
+00:00:28,240 --> 00:00:33,070
+As a side note if you want to learn more about this package and dive deeply into it don't miss a chance
+
+7
+00:00:33,070 --> 00:00:38,560
+to wizard its web page on get up dot com or it's repository I should say.
+
+8
+00:00:38,560 --> 00:00:42,430
+You can simply search for access and get up and you should instantly find this.
+
+9
+00:00:42,550 --> 00:00:46,180
+There you will find detailed instructions about installation about the usage.
+
+10
+00:00:46,200 --> 00:00:48,120
+The whole API and so on.
+
+11
+00:00:48,220 --> 00:00:51,750
+But of course I'm going to show you the most important things here.
+
+12
+00:00:51,760 --> 00:00:59,230
+So with that I installed Yes I can now rerun NPM run death to go back into my development server mode
+
+13
+00:00:59,500 --> 00:01:06,460
+and into watch mode which was just my coat with excess installed the first important thing to note is
+
+14
+00:01:06,790 --> 00:01:12,300
+that we don't add it or don't have to use it on our viewer app.
+
+15
+00:01:12,340 --> 00:01:20,260
+So unlike the router which we use with viewer use or the store which we use with you as view x axis
+
+16
+00:01:20,260 --> 00:01:24,500
+is a third party package and by default not integrated into view like this.
+
+17
+00:01:24,550 --> 00:01:30,560
+Now there actually are packages which bind access to view and then give you access to it on.
+
+18
+00:01:30,570 --> 00:01:35,430
+This instance so in any component with the this keyword.
+
+19
+00:01:35,620 --> 00:01:38,570
+But I want to show you the wrong way of using axes.
+
+20
+00:01:38,680 --> 00:01:44,620
+You can always look into Albert for party packages if you are interested in more deeply integrating
+
+21
+00:01:44,710 --> 00:01:45,830
+x' interview.
+
+22
+00:01:45,850 --> 00:01:49,290
+But for now let's just stick to the role library itself.
+
+23
+00:01:49,690 --> 00:01:55,930
+So the goal is to submit data on the Sign-Up page and then later I want to be able to get this data
+
+24
+00:01:55,930 --> 00:01:58,120
+on the dashboard page.
+
+25
+00:01:58,120 --> 00:02:05,770
+So this simple way of using Access in the sign up page is to just make it actually be request through
+
+26
+00:02:05,820 --> 00:02:09,730
+a package from there let's do this in the next lecture.
+

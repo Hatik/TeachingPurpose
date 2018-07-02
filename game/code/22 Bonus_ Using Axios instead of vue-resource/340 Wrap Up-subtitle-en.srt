@@ -1,0 +1,44 @@
+1
+00:00:02,600 --> 00:00:06,430
+So over this module you'll learn a lot about access.
+
+2
+00:00:06,530 --> 00:00:10,230
+A very popular alternative to new resource.
+
+3
+00:00:10,250 --> 00:00:17,150
+You can use access in any javascript project and therefore also view projects now.
+
+4
+00:00:17,360 --> 00:00:23,660
+You'll see that Xs offers many great features like global configuration interceptors custom instances
+
+5
+00:00:23,980 --> 00:00:30,560
+and of course that using it is as simple as calling one method and then using the method to handle the
+
+6
+00:00:30,560 --> 00:00:36,190
+incoming response exis is very popular and I recommend looking into it.
+
+7
+00:00:36,410 --> 00:00:43,220
+If you want to dive deeper into it of course the place to go is the official documentation which you
+
+8
+00:00:43,220 --> 00:00:46,480
+can find on the Get up page for access.
+
+9
+00:00:46,610 --> 00:00:51,880
+It's a great place to dive deeper and really fine tune it to your needs.
+
+10
+00:00:52,100 --> 00:00:53,860
+So I hope this was helpful.
+
+11
+00:00:54,050 --> 00:00:56,030
+Let's continue with the other modules den.
+

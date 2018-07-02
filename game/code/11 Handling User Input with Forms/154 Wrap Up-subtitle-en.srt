@@ -1,0 +1,32 @@
+1
+00:00:01,760 --> 00:00:06,750
+With that we learned a lot about forms and this module will learn how to use all the default HVM our
+
+2
+00:00:06,770 --> 00:00:13,170
+controls how to use the model to set their data and to extract the data how to use modifiers to really
+
+3
+00:00:13,170 --> 00:00:15,050
+fine tune in to our needs.
+
+4
+00:00:15,060 --> 00:00:20,340
+We also had a look at how to treat our own control with our own component and how such a component has
+
+5
+00:00:20,340 --> 00:00:26,390
+to look like to be used as a form control by view as the model.
+
+6
+00:00:26,390 --> 00:00:32,190
+With that we had a look at all the key things you need to work with before you can then go from the
+
+7
+00:00:32,190 --> 00:00:37,000
+submitted method to evaluate the input and use it in your application.
+
+8
+00:00:37,000 --> 00:00:41,100
+With that let's move on to some our features beauteous offering Princess.
+

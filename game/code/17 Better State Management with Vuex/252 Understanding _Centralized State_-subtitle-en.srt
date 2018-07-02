@@ -1,0 +1,64 @@
+1
+00:00:02,340 --> 00:00:09,490
+The X and the name does already give us a hint that it might be kind of similar to redux or flock's
+
+2
+00:00:09,920 --> 00:00:14,820
+implementation's kind of is though it has some differences compared to these approaches.
+
+3
+00:00:14,840 --> 00:00:22,490
+It's kind of also directly aimed at view chase and it actually is written by The View chase team so
+
+4
+00:00:22,910 --> 00:00:28,790
+it does as does have some adjustments but the general ideas seem so view x this pattern we're going
+
+5
+00:00:28,790 --> 00:00:36,530
+to learn in this module has the idea of using a central store where our estate is stored and that is
+
+6
+00:00:36,530 --> 00:00:37,210
+key.
+
+7
+00:00:37,370 --> 00:00:45,050
+We have one file we could say in our application where we store our estate our application state that
+
+8
+00:00:45,050 --> 00:00:48,760
+does not mean that our components can't have their own state.
+
+9
+00:00:48,830 --> 00:00:54,200
+If you have a property component which is only used in this component and the only change in this component
+
+10
+00:00:54,230 --> 00:01:00,620
+there is no need to put it in the application state but everything watch you use in different parts
+
+11
+00:01:00,620 --> 00:01:08,180
+of your application should go in there with such a central state we could access it from one child or
+
+12
+00:01:08,180 --> 00:01:10,190
+from one component and change it.
+
+13
+00:01:10,190 --> 00:01:15,680
+And then in another component where we want to get our data we can simply exit to get that data.
+
+14
+00:01:15,950 --> 00:01:23,340
+So before adding more parts or more components to this picture which is a part of you xx.
+
+15
+00:01:23,450 --> 00:01:28,580
+Let's start with this simple concept of having a central state and let's see how that already improves
+
+16
+00:01:28,640 --> 00:01:29,820
+existing application.
+

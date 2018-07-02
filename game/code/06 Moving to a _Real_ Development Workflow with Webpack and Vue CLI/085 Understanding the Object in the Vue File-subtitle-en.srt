@@ -1,0 +1,60 @@
+1
+00:00:01,790 --> 00:00:10,610
+The important thing to know here is that whatever we export here this object is of view instance or
+
+2
+00:00:10,610 --> 00:00:16,140
+is the same object we use in a view instance we will later on use this as a component.
+
+3
+00:00:16,340 --> 00:00:22,940
+We can use it like here with the render function to render that it is used as a view instance and therefore
+
+4
+00:00:22,940 --> 00:00:24,860
+it has the same properties.
+
+5
+00:00:24,890 --> 00:00:28,500
+So we can set up methods where we can set up a computer there.
+
+6
+00:00:28,720 --> 00:00:33,890
+We all can set up data there but I'll come back today that because there's something special about using
+
+7
+00:00:33,890 --> 00:00:34,740
+data there.
+
+8
+00:00:34,760 --> 00:00:40,160
+So the key takeaway is this object behaves like a view instance as a side note.
+
+9
+00:00:40,160 --> 00:00:43,850
+You don't have to export this using this file like this is fine too.
+
+10
+00:00:43,880 --> 00:00:50,240
+It will work as you can see here we see Hello world still because the script is not required but it
+
+11
+00:00:50,270 --> 00:00:54,420
+is required if you want to attach some business logic to this template.
+
+12
+00:00:54,530 --> 00:00:59,890
+And if you for example want to use stringin to Appalachian there well then you would hear in this object
+
+13
+00:00:59,900 --> 00:01:04,580
+set up your data field with the data properties you want to import into plate and so on.
+
+14
+00:01:04,580 --> 00:01:06,560
+So this is how this file works.
+
+15
+00:01:06,560 --> 00:01:08,850
+And what's so important to understand about it.
+

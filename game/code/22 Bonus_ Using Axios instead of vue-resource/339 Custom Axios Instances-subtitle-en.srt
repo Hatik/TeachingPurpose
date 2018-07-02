@@ -1,0 +1,236 @@
+1
+00:00:02,480 --> 00:00:07,420
+Over the last lectures we covered a lot of core features of Access.
+
+2
+00:00:07,440 --> 00:00:14,040
+There's a one hour supercool feature which I also want to share with you and that is the creation of
+
+3
+00:00:14,070 --> 00:00:16,280
+custom X-ists instances.
+
+4
+00:00:16,440 --> 00:00:22,350
+Right now what we're doing is we're always using the global access instance which we import from the
+
+5
+00:00:22,350 --> 00:00:23,430
+Access package.
+
+6
+00:00:23,430 --> 00:00:24,540
+Nothing wrong with that.
+
+7
+00:00:24,600 --> 00:00:31,180
+If your whole application shares the same global con thing as we set it up here that's perfectly fine.
+
+8
+00:00:31,530 --> 00:00:38,640
+But imagine an application where you target different you or else and for one set of you or else you
+
+9
+00:00:38,640 --> 00:00:42,500
+want to attach does offer a station for the average set.
+
+10
+00:00:42,510 --> 00:00:46,310
+You don't want to do that with custom instances.
+
+11
+00:00:46,410 --> 00:00:49,440
+You can easily get into such a world.
+
+12
+00:00:49,530 --> 00:00:55,650
+Now to use a custom instance ultrathin you filed for that even though that's of course optional all
+
+13
+00:00:55,650 --> 00:01:00,660
+name it xes off datcha.
+
+14
+00:01:00,680 --> 00:01:07,070
+Yes because let's pretend that for authenticating and for sending requests from the sign up and sign
+
+15
+00:01:07,070 --> 00:01:12,690
+in the files we actually want to set a different base or L here it's the same.
+
+16
+00:01:12,740 --> 00:01:17,210
+But later when we entered the off indication module does will actually become relevant.
+
+17
+00:01:17,210 --> 00:01:20,510
+So let's already prepare a tear in xes off.
+
+18
+00:01:20,510 --> 00:01:25,790
+The first thing I'll do is all import axioms from axioms like this.
+
+19
+00:01:25,790 --> 00:01:32,900
+Now with that we can create a new AXS instance or create a instance constant here and then that also
+
+20
+00:01:32,950 --> 00:01:39,600
+store x yes and then call create create will eventually return this new instance.
+
+21
+00:01:39,890 --> 00:01:44,810
+We can now configure this instance with the same config you learned about already.
+
+22
+00:01:44,870 --> 00:01:53,450
+So we pass a javascript object and then here we could set some headers or we simply set up the base
+
+23
+00:01:53,450 --> 00:01:56,830
+you are l all to show how to set headers in a second.
+
+24
+00:01:56,840 --> 00:01:59,650
+So base your effort here of course is always the same.
+
+25
+00:01:59,650 --> 00:02:01,880
+But let's pretend that would be a different one.
+
+26
+00:02:02,120 --> 00:02:07,440
+So I'll copy the base your L from my main dot just fall.
+
+27
+00:02:07,550 --> 00:02:13,900
+Here does one copy this string and use it here as a value for base you are l.
+
+28
+00:02:14,120 --> 00:02:19,900
+If you all want to set up your own headers you can simply x' instance defaults.
+
+29
+00:02:19,910 --> 00:02:24,920
+So this instance again has a default object but these defaults will now only apply to this instance
+
+30
+00:02:24,920 --> 00:02:27,150
+and not to the global x' instance.
+
+31
+00:02:27,530 --> 00:02:34,790
+And on this default object you can set up exactly the same as you could before on the global instance.
+
+32
+00:02:34,790 --> 00:02:39,740
+So here you can also access headers Carmen.
+
+33
+00:02:39,860 --> 00:02:47,480
+And let me simply set something had or year to something.
+
+34
+00:02:47,490 --> 00:02:53,710
+Now all I have to do is I have to export this constant of all exported as the default here.
+
+35
+00:02:53,730 --> 00:03:00,270
+So default incense and now we can import it from anywhere in our application where we want to use this
+
+36
+00:03:00,270 --> 00:03:01,070
+instance.
+
+37
+00:03:01,080 --> 00:03:07,110
+Now as I said I want to use it in the off related files so I'll go to the sign up the view fall and
+
+38
+00:03:07,110 --> 00:03:13,380
+there I now no longer want to import the global X-ists instance by a but my own one so I'll adjust the
+
+39
+00:03:13,380 --> 00:03:24,550
+path and simply import from 2 levels up X is off and I can still name does X.
+
+40
+00:03:24,570 --> 00:03:27,980
+You can named is X years instance whatever you want.
+
+41
+00:03:27,980 --> 00:03:33,780
+I'll stick to access so that I don't even have to adjust any of the code because that's a cool thing.
+
+42
+00:03:33,850 --> 00:03:36,950
+DXi this instance works just like the global instance.
+
+43
+00:03:36,950 --> 00:03:43,100
+It's just a customized Werben and we can create as many custom instances as we want and need.
+
+44
+00:03:43,280 --> 00:03:50,210
+And therefore we get many customized instances each with its own set of set up and configuration so
+
+45
+00:03:50,210 --> 00:03:57,200
+that we can really have the best of both world very detailed and request specific configuration and
+
+46
+00:03:57,200 --> 00:04:00,110
+still using this on a global level.
+
+47
+00:04:00,110 --> 00:04:01,870
+As far as possible.
+
+48
+00:04:02,240 --> 00:04:03,730
+So now let's save this.
+
+49
+00:04:03,740 --> 00:04:08,810
+We're now using our customer instance we will be able to tell by the fact that we have does something
+
+50
+00:04:08,860 --> 00:04:12,010
+habere if we now go back to signing up.
+
+51
+00:04:12,050 --> 00:04:13,940
+This is where we use that instance.
+
+52
+00:04:14,300 --> 00:04:19,820
+If I do sign up here that's not my real age.
+
+53
+00:04:19,830 --> 00:04:21,620
+By the way a little bit older.
+
+54
+00:04:21,870 --> 00:04:25,620
+So if we do sign up here submit this.
+
+55
+00:04:25,800 --> 00:04:32,650
+We actually see that it still works if we inspect the network and the post request they're under headers.
+
+56
+00:04:32,670 --> 00:04:36,470
+We also see that we did set this something header.
+
+57
+00:04:36,600 --> 00:04:42,090
+So we did indeed use our own custom instance and it still worked as before.
+
+58
+00:04:42,150 --> 00:04:48,790
+Of course so does the dashboard so custom instances are the last feature I want to show you.
+
+59
+00:04:48,900 --> 00:04:54,390
+It's super useful and gives you a lot of power for your viewer applications.
+

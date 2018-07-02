@@ -1,0 +1,84 @@
+1
+00:00:02,190 --> 00:00:07,070
+Time to practice what you learn thus far as mean a new application here and I imported bootstrapped
+
+2
+00:00:07,080 --> 00:00:14,280
+for this application I simply grabbed this link here from the bootstrap web page this CDN link and inserted
+
+3
+00:00:14,280 --> 00:00:16,700
+in the next HVM file.
+
+4
+00:00:16,740 --> 00:00:22,500
+Now in this application I basically have the same set up as before but without my home and service status
+
+5
+00:00:22,500 --> 00:00:27,020
+components I'm not registering any components globally or locally.
+
+6
+00:00:27,060 --> 00:00:29,420
+Instead I only have my main app.
+
+7
+00:00:29,450 --> 00:00:34,900
+Europe does object exporting you're not not even exporting your but they could export here.
+
+8
+00:00:35,040 --> 00:00:36,400
+And I have my template.
+
+9
+00:00:36,430 --> 00:00:42,410
+This is all just HVM all code with one little view Che's addition here.
+
+10
+00:00:42,600 --> 00:00:47,310
+I do have my loop here where I loop through a couple of servers.
+
+11
+00:00:47,310 --> 00:00:53,140
+Couple of list items which I don't see your on the left and then add the details on the right side note.
+
+12
+00:00:53,190 --> 00:00:55,720
+It's not possible to click a server to update.
+
+13
+00:00:55,710 --> 00:01:02,160
+This will work on this in the next course module and we dive deeper into components but it looks like
+
+14
+00:01:02,160 --> 00:01:04,150
+a dashboard kind of Elle's.
+
+15
+00:01:04,150 --> 00:01:10,950
+Got this folder here and this header does task for you now is take this application take this code which
+
+16
+00:01:10,950 --> 00:01:18,120
+you find attached to this lecture and restructure it such that you use components so that in your app
+
+17
+00:01:18,210 --> 00:01:23,500
+you file you only use components for a header or a folder and so on.
+
+18
+00:01:23,550 --> 00:01:29,800
+Try to be very granular to really Spoleto the app as far as it makes sense.
+
+19
+00:01:29,880 --> 00:01:33,210
+And then in the next with you we can compare the solutions.
+
+20
+00:01:33,480 --> 00:01:39,300
+It is up to you if you register your components globally or locally pick whatever you like and I'll
+
+21
+00:01:39,300 --> 00:01:42,560
+be back in the next with you where I will show you what I ended up with.
+

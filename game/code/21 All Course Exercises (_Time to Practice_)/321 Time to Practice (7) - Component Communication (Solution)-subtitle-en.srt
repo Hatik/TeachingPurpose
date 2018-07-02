@@ -1,0 +1,460 @@
+1
+00:00:01,520 --> 00:00:04,130
+So I hope you were successful.
+
+2
+00:00:04,150 --> 00:00:05,860
+This is the array of service.
+
+3
+00:00:05,960 --> 00:00:09,550
+Now let's start by creating a new component first.
+
+4
+00:00:09,560 --> 00:00:16,360
+This is the server that you file and I will copy my servers if you file in there.
+
+5
+00:00:16,400 --> 00:00:22,780
+Remove this object though and also remove the order list and the wrapping.
+
+6
+00:00:22,970 --> 00:00:25,520
+I only want to have the list item here.
+
+7
+00:00:25,700 --> 00:00:26,900
+I'll leave the class.
+
+8
+00:00:26,900 --> 00:00:33,840
+I'll remove the for loop and now I only want to output the ID here.
+
+9
+00:00:34,010 --> 00:00:41,240
+Well for that I will need my default object and set up some props because the idea shall be passed in
+
+10
+00:00:41,240 --> 00:00:45,980
+from outside from my servers to the file here.
+
+11
+00:00:46,080 --> 00:00:54,200
+I get the ID so when the server restart the file here I want to remove the list item here and say that
+
+12
+00:00:54,200 --> 00:00:57,840
+I want to import the component I just created in the server.
+
+13
+00:00:57,950 --> 00:01:06,860
+If you followed address on name server from top slash server view and then I'll set it up as a local
+
+14
+00:01:06,860 --> 00:01:09,310
+component in my object here.
+
+15
+00:01:09,320 --> 00:01:18,320
+So under components all registred with a selector of app server which remember I can use with app Dasch
+
+16
+00:01:18,320 --> 00:01:20,620
+server in the template and if I want.
+
+17
+00:01:21,020 --> 00:01:28,580
+So assignees server I'm importing to it and therefore I can use app server here like this or if I prefer
+
+18
+00:01:28,580 --> 00:01:34,680
+a dad with a dash in between app server and I want to pass the ID to that.
+
+19
+00:01:34,680 --> 00:01:39,070
+Now in order to be able to pass an ID I'd first need to loop through it.
+
+20
+00:01:39,110 --> 00:01:48,570
+So with we for a loop for my server in servers where servers of course refers to the service properties
+
+21
+00:01:48,600 --> 00:01:50,390
+the data field here.
+
+22
+00:01:50,750 --> 00:01:57,290
+And since I do that I can then pass an ID to each component which gets created throughout this loop
+
+23
+00:01:58,190 --> 00:02:08,330
+where I want to set id equal to server that Id accessing the individual objects here for which I'm looping.
+
+24
+00:02:08,350 --> 00:02:18,170
+And then the ID field in each object in each while loop iteration with this I am creating a couple of
+
+25
+00:02:18,170 --> 00:02:18,730
+servers.
+
+26
+00:02:18,740 --> 00:02:21,700
+We're seeing it here and outputting the IDs.
+
+27
+00:02:21,710 --> 00:02:23,330
+That's the first step.
+
+28
+00:02:23,330 --> 00:02:29,390
+Now I also want to be able to click on a server to load the details here in the average component.
+
+29
+00:02:29,810 --> 00:02:38,780
+Well to be able to click on a server I will add a click listener to this list item and to see just hand
+
+30
+00:02:38,780 --> 00:02:43,740
+cursor symbol I will simply add the cursor pointer style to that.
+
+31
+00:02:43,760 --> 00:02:45,860
+That's not yes that's normal.
+
+32
+00:02:45,860 --> 00:02:48,560
+C s s and h t m l.
+
+33
+00:02:48,560 --> 00:02:59,210
+So here I will then listen to a click and execute servers selected let's say therefore we should add
+
+34
+00:02:59,270 --> 00:03:00,970
+a method here.
+
+35
+00:03:01,350 --> 00:03:08,680
+The methods object server selected would be the name of the method which I am executing up there.
+
+36
+00:03:08,870 --> 00:03:14,380
+And here I want to inform the parent that a server was selected.
+
+37
+00:03:14,750 --> 00:03:17,360
+What do I want to do with that information.
+
+38
+00:03:17,360 --> 00:03:22,120
+I want to change my server details now for debt to be changed.
+
+39
+00:03:22,170 --> 00:03:27,860
+Informing these servers which just the parent of the individual server is not enough because server
+
+40
+00:03:27,860 --> 00:03:31,610
+detail Lifson the apt to view file.
+
+41
+00:03:31,730 --> 00:03:41,460
+So I could go from server with a custom event to servers with a cost me went to app and ID to do this
+
+42
+00:03:41,480 --> 00:03:44,180
+because casting events don't propagate up.
+
+43
+00:03:44,510 --> 00:03:45,990
+But that's not what I want to do.
+
+44
+00:03:46,160 --> 00:03:48,130
+I will use a bus instead.
+
+45
+00:03:48,170 --> 00:03:58,600
+So here I will export a constant and I'll name it Server bus which is a new view instance and then employ
+
+46
+00:03:58,700 --> 00:04:05,610
+server file here I will import this DS server bus here.
+
+47
+00:04:05,610 --> 00:04:09,510
+The naming is of course important because I named it in the main chair's fault.
+
+48
+00:04:09,540 --> 00:04:17,580
+It has a name there and I need to import that from going up one file at one folder excuse me and going
+
+49
+00:04:17,580 --> 00:04:20,620
+up another folder from the main chess file.
+
+50
+00:04:20,810 --> 00:04:28,370
+And with that in here I can call server bus dollar sign IMET and I want to aim at an event here.
+
+51
+00:04:28,710 --> 00:04:34,740
+I will name it Server selected and I will pass the IDs.
+
+52
+00:04:34,730 --> 00:04:41,400
+So this I.D. referring to the idea I get in here as a prop now with the event being admitted here I
+
+53
+00:04:41,400 --> 00:04:49,200
+can go to the server details where I want to import this server bus as well because here is the place
+
+54
+00:04:49,200 --> 00:04:56,790
+where I want to change something so import is from the main Che's file too.
+
+55
+00:04:57,210 --> 00:05:00,120
+And then Indee object I have here.
+
+56
+00:05:00,310 --> 00:05:08,820
+I also need the created lifecycle hook to then listen to server bus on so with the on method to listen
+
+57
+00:05:08,820 --> 00:05:14,110
+to the server select that event and then I want to change some data.
+
+58
+00:05:14,190 --> 00:05:22,850
+So here I will add the data property which again is a function returning the data object.
+
+59
+00:05:22,950 --> 00:05:30,460
+And here I want to set up the server which is loaded and this is null at the beginning because its undefined
+
+60
+00:05:30,460 --> 00:05:32,620
+we haven't loaded a server yet.
+
+61
+00:05:32,680 --> 00:05:39,010
+And here in the cold like I want to set this and I want to get the news server as an argument therefore
+
+62
+00:05:39,010 --> 00:05:46,240
+as I said this server equal to server that will then allow me to access things like a service status
+
+63
+00:05:46,240 --> 00:05:47,500
+and ID.
+
+64
+00:05:47,500 --> 00:05:55,170
+Now to do that however I need to go back to server and here I only get the ID passed in as a prop.
+
+65
+00:05:55,510 --> 00:05:57,090
+Well let's change this.
+
+66
+00:05:57,100 --> 00:06:02,320
+Let's instead get the whole server and output server ID instead.
+
+67
+00:06:02,320 --> 00:06:08,950
+Here in the template and for this to work I need to go to my server's component here too and not only
+
+68
+00:06:08,950 --> 00:06:16,030
+pass the ID but the whole server in each loop iteration just holds server object.
+
+69
+00:06:16,240 --> 00:06:23,180
+With that in place I'm now outputting it here or I'm getting it here to my server details correctly.
+
+70
+00:06:23,530 --> 00:06:28,060
+And whenever I select a server server it is set to something else.
+
+71
+00:06:28,360 --> 00:06:36,550
+And this allows me to override this template add a new paragraph where I use the if to check if server
+
+72
+00:06:36,730 --> 00:06:46,660
+is actually set and if it is not set I want to say Please select a server and otherwise I can use the
+
+73
+00:06:46,660 --> 00:06:48,920
+else if.
+
+74
+00:06:49,350 --> 00:06:59,760
+If this is the case of a service selected I'd say server number and then we said server ID selected
+
+75
+00:07:00,510 --> 00:07:05,600
+stators and then output the server status.
+
+76
+00:07:05,730 --> 00:07:09,210
+So if that was too fast what I did is any server component.
+
+77
+00:07:09,240 --> 00:07:10,830
+I implemented a method.
+
+78
+00:07:10,830 --> 00:07:14,870
+Q Well basically listened to clicks on this list item.
+
+79
+00:07:14,880 --> 00:07:21,090
+Where I emit the service selected event on my server bus the server bus is set up here in the main Chia's
+
+80
+00:07:21,090 --> 00:07:21,880
+file.
+
+81
+00:07:21,990 --> 00:07:26,750
+And with that server select that event I want to pass.
+
+82
+00:07:26,770 --> 00:07:28,630
+Well not the ID but the server.
+
+83
+00:07:28,660 --> 00:07:30,540
+This needs to be adjusted.
+
+84
+00:07:30,700 --> 00:07:33,820
+The server is a prop I'm getting set from outside.
+
+85
+00:07:34,000 --> 00:07:41,020
+It gets said here in the servers view fall where I loop through all the service and create the app server
+
+86
+00:07:41,350 --> 00:07:42,440
+component.
+
+87
+00:07:42,440 --> 00:07:49,510
+This is the one living in the server dog file and I passed the server of the current Lubitz ration with
+
+88
+00:07:49,510 --> 00:07:53,630
+the server prop's I set up there this process.
+
+89
+00:07:53,680 --> 00:07:58,900
+So it is set in this loop where a loop from my array of servers with this set up.
+
+90
+00:07:58,900 --> 00:08:06,620
+We still see all these Cirus but if I click on one we see it now changes to the server we actually selected
+
+91
+00:08:07,360 --> 00:08:13,780
+the missing piece now is a Vachan button on the right which allows me to change to service status back
+
+92
+00:08:13,780 --> 00:08:20,510
+to normal need to change the service status back to normal.
+
+93
+00:08:20,540 --> 00:08:27,350
+I will go to my server details component and there I will add a horizontal line say change to normal
+
+94
+00:08:27,350 --> 00:08:28,860
+on a button I added.
+
+95
+00:08:29,060 --> 00:08:35,150
+And here I want to execute will listen to a click event and set reset status.
+
+96
+00:08:35,150 --> 00:08:40,490
+For example add this in the methods object.
+
+97
+00:08:40,490 --> 00:08:43,330
+I have to add to my view instance therefore.
+
+98
+00:08:43,580 --> 00:08:48,090
+So here I have reset stators as a method.
+
+99
+00:08:48,320 --> 00:08:56,580
+And then here I can do it very very easily by simply saying this server status equals normal.
+
+100
+00:08:56,720 --> 00:09:03,500
+And then you might say OK now we need to pass it back and updated in this array of servers here.
+
+101
+00:09:03,620 --> 00:09:07,200
+But we don't keep in mind this is an object.
+
+102
+00:09:07,280 --> 00:09:15,470
+And I said earlier objects are reference types therefore the objects in this array only exist of once
+
+103
+00:09:15,560 --> 00:09:20,180
+each one place in memory for each of these objects.
+
+104
+00:09:20,180 --> 00:09:27,020
+Now when I pass them to another component it's still the same object I'm only copying the pointer to
+
+105
+00:09:27,020 --> 00:09:28,710
+this place in memory.
+
+106
+00:09:28,730 --> 00:09:35,690
+Hence if I added my server in such a component like here in the server detail component it still edits
+
+107
+00:09:35,690 --> 00:09:37,370
+the same place and memory.
+
+108
+00:09:37,640 --> 00:09:39,430
+You will see this in action here.
+
+109
+00:09:39,800 --> 00:09:46,910
+If I click on any sort of very critical here I change it to normal I navigate away and I select server
+
+110
+00:09:46,910 --> 00:09:54,320
+2 again it's still normal because it was edited in this array because server or because this object
+
+111
+00:09:54,620 --> 00:09:59,390
+is a reference type that was a rather long exercise.
+
+112
+00:09:59,510 --> 00:10:03,130
+But we practice a lot of the things we saw in this lecture.
+
+113
+00:10:03,290 --> 00:10:10,160
+I hope you feel confident using props and casting events and even buses to communicate across components
+
+114
+00:10:10,430 --> 00:10:13,000
+and manage your state and pass data.
+
+115
+00:10:13,280 --> 00:10:15,020
+With that let's move on.
+

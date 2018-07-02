@@ -1,0 +1,108 @@
+1
+00:00:01,650 --> 00:00:08,290
+With the individual stocks set up any portfolio you fall I'll add a script because now when I get all
+
+2
+00:00:08,290 --> 00:00:16,020
+my stocks here so I will export a default object here and this object now has a few properties.
+
+3
+00:00:16,210 --> 00:00:17,960
+And here are set up by gatherer's.
+
+4
+00:00:17,980 --> 00:00:23,770
+Now I'm only interested in one getters could access it directly but ask before with the actions I want
+
+5
+00:00:23,770 --> 00:00:31,630
+to show how to use Map getters so imported from view X and then computed all used as free dots indexed
+
+6
+00:00:31,660 --> 00:00:32,390
+eats bread.
+
+7
+00:00:32,390 --> 00:00:33,300
+Operator.
+
+8
+00:00:33,460 --> 00:00:40,120
+And then I call map getters and it could simply pass an array to map stock portfolio which is the name
+
+9
+00:00:40,120 --> 00:00:41,650
+of the getter here.
+
+10
+00:00:41,870 --> 00:00:45,150
+To name stock portfolio in this local file.
+
+11
+00:00:45,280 --> 00:00:51,700
+But if I want to use a different name and this file for example stocks then I set it up as an object
+
+12
+00:00:51,700 --> 00:00:57,970
+where I map stocks to the name and the store which is a stock portfolio with that all that's left to
+
+13
+00:00:57,970 --> 00:01:06,360
+do for me is I need to add my components this local portfolio stock component which are there for also
+
+14
+00:01:06,480 --> 00:01:15,170
+import from the stock view file and all named app stock stock.
+
+15
+00:01:15,190 --> 00:01:21,580
+I don't have any naming conflicts with using AP's stock here and also in this file because both are
+
+16
+00:01:22,180 --> 00:01:30,420
+local components and left the thing left for me to do is here I want to loop through all my stocks.
+
+17
+00:01:30,460 --> 00:01:37,940
+So with the four I want to loop through stock in stocks stocks now referring to my getting here so this
+
+18
+00:01:38,200 --> 00:01:41,260
+will be a proper deal but directly from the state.
+
+19
+00:01:41,770 --> 00:01:48,110
+And of course they do pass stock as a Purab to ABS stock because they're I do expect it.
+
+20
+00:01:48,520 --> 00:01:50,980
+Well let's see if that all works as intended.
+
+21
+00:01:51,190 --> 00:02:01,700
+If we buy a new share of BMW and go to the portfolio we now see William W. quantity one here and if
+
+22
+00:02:01,700 --> 00:02:08,310
+we now sell one well then we get an error or a source selling doesn't work yet.
+
+23
+00:02:08,310 --> 00:02:10,710
+However buying it it works.
+
+24
+00:02:10,720 --> 00:02:12,500
+Now let's fix the selling.
+
+25
+00:02:12,510 --> 00:02:15,990
+And let's also change this from a Dreambox to let's say a blue box.
+
+26
+00:02:15,990 --> 00:02:17,710
+Just some stylistic change.
+
+27
+00:02:17,730 --> 00:02:19,330
+I'll do both in the next video.
+

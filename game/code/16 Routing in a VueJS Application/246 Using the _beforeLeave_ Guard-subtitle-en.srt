@@ -1,0 +1,200 @@
+1
+00:00:01,740 --> 00:00:06,540
+In the last video we had a look at how to check if a user is allowed to enter somewhere.
+
+2
+00:00:06,540 --> 00:00:12,510
+Now we want to check if the user is allowed to leave out or is set up to use or editor out to have to
+
+3
+00:00:12,570 --> 00:00:13,820
+confirm button.
+
+4
+00:00:14,010 --> 00:00:21,210
+So now quickly add a script here to export my default object belonging to this view component and then
+
+5
+00:00:21,260 --> 00:00:23,190
+I want to have some methods.
+
+6
+00:00:23,310 --> 00:00:31,050
+And I also want to have some or some data my data object and in there I will simply return an object
+
+7
+00:00:31,050 --> 00:00:35,020
+where I said edited to false or not edited.
+
+8
+00:00:35,040 --> 00:00:35,870
+Let's name it.
+
+9
+00:00:36,000 --> 00:00:37,040
+Confirmed.
+
+10
+00:00:37,040 --> 00:00:38,530
+Confirmed to false.
+
+11
+00:00:38,530 --> 00:00:46,090
+Don't need the method to be honest I can simply click Lisner here and said confirmed equal to true insight
+
+12
+00:00:46,110 --> 00:00:46,760
+there.
+
+13
+00:00:47,000 --> 00:00:49,530
+So this now controls Weber.
+
+14
+00:00:49,530 --> 00:00:51,550
+I clicked the button or not.
+
+15
+00:00:51,960 --> 00:00:58,150
+And now on this component and this is not the only place where I can specify this ask before in user
+
+16
+00:00:58,170 --> 00:01:00,720
+detail with before route enter.
+
+17
+00:01:00,930 --> 00:01:07,260
+I can now set up a for roud leave again is the only place where I can do this because while it is in
+
+18
+00:01:07,260 --> 00:01:12,880
+the component where I want to check this right this is right before I actually do navigate away.
+
+19
+00:01:12,990 --> 00:01:16,350
+So checking this on a global level would be too late.
+
+20
+00:01:16,350 --> 00:01:18,840
+The navigation would already be on its way.
+
+21
+00:01:19,080 --> 00:01:21,920
+So instead it's here in the component which decides.
+
+22
+00:01:21,930 --> 00:01:24,450
+Are you even allowed to go somewhere else.
+
+23
+00:01:24,720 --> 00:01:28,610
+And here I checked you from and then also next.
+
+24
+00:01:28,830 --> 00:01:33,210
+And I have to call next to let the requests continue.
+
+25
+00:01:33,210 --> 00:01:37,540
+I can also board and redirect here just like with before route enter.
+
+26
+00:01:37,560 --> 00:01:41,220
+And here it could check if disconfirmed is true.
+
+27
+00:01:41,370 --> 00:01:48,210
+Here of course I do have access to this confirmed because I am in the component and I'm talking about.
+
+28
+00:01:48,210 --> 00:01:49,630
+Are you allowed to leave.
+
+29
+00:01:49,650 --> 00:01:54,450
+Of course to combo when it has been created at this point of time we were using it all the time.
+
+30
+00:01:54,450 --> 00:02:00,210
+So here I may exit is make may access it with this and it can check if this is confirmed in which case
+
+31
+00:02:00,210 --> 00:02:01,650
+I want to navigate.
+
+32
+00:02:01,890 --> 00:02:03,730
+If it is not confirmed.
+
+33
+00:02:04,200 --> 00:02:08,750
+Well then I want to throw or show the confirmed die Diallo LOEG.
+
+34
+00:02:08,760 --> 00:02:13,310
+Are you sure to let the user decide if he wants to continue.
+
+35
+00:02:13,360 --> 00:02:19,200
+Confirm this dialog voter turn true or false depending on whether the user clicked yes or no.
+
+36
+00:02:19,560 --> 00:02:24,010
+And if this was yes then I also want to navigate away overwise.
+
+37
+00:02:24,040 --> 00:02:28,800
+I want to abort the navigation so we have to double check if the button was clicked.
+
+38
+00:02:28,810 --> 00:02:35,040
+You're always free to leave if the button was not clicked while then asking you with the confirmed dialog.
+
+39
+00:02:35,100 --> 00:02:40,230
+If you say yes they're OK you're allowed to leave if you say no you'll stay on this page.
+
+40
+00:02:40,290 --> 00:02:45,150
+Does what a typical set up where you want to ensure that a user doesn't navigate away by accidentally
+
+41
+00:02:45,150 --> 00:02:47,260
+hitting the back button or something like this.
+
+42
+00:02:48,430 --> 00:02:52,610
+So if this let's loads again go to added user where they are.
+
+43
+00:02:52,930 --> 00:02:55,820
+And now let's try to go to home.
+
+44
+00:02:55,840 --> 00:03:01,000
+I didn't click to confirm button since I ask if I want to leave and if I click on cancel I'm staying
+
+45
+00:03:01,000 --> 00:03:01,910
+on this page.
+
+46
+00:03:02,020 --> 00:03:08,300
+If I click on OK well then I'm allowed to leave and therefore if I now go there again.
+
+47
+00:03:08,770 --> 00:03:12,450
+And now I click confirm first and click now on go to home.
+
+48
+00:03:12,490 --> 00:03:17,260
+I'm instantly allowed to leave because confirmed was set to true and does the first check.
+
+49
+00:03:17,260 --> 00:03:23,380
+I do half year and these are the two navigation cards you have before entering and before leaving so
+
+50
+00:03:23,380 --> 00:03:28,730
+that you can really control when the user is allowed to beware in your application.
+

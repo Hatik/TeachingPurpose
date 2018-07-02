@@ -1,0 +1,152 @@
+1
+00:00:01,840 --> 00:00:03,980
+In the last lecture we started simple.
+
+2
+00:00:04,000 --> 00:00:12,160
+We hooked up this male input field with our male property here in our view instance that is a great
+
+3
+00:00:12,160 --> 00:00:12,640
+start.
+
+4
+00:00:12,640 --> 00:00:18,520
+It shows us that we use the model to connect our age team input with our property to web doing that
+
+5
+00:00:18,520 --> 00:00:23,240
+as I also explained that the future will magically updated correctly.
+
+6
+00:00:23,260 --> 00:00:29,170
+Now let's dive a bit deeper and let's say I don't only want to have this email property instead of want
+
+7
+00:00:29,170 --> 00:00:35,860
+to have a user data object here which then has the email field and what else have we got here.
+
+8
+00:00:35,860 --> 00:00:38,020
+We also get a password and age.
+
+9
+00:00:38,050 --> 00:00:42,890
+So when I grew up these three and puts year together so that we have them in one Optik down there.
+
+10
+00:00:42,940 --> 00:00:49,630
+So that would be the email here that will be the password and then that would be the age that should
+
+11
+00:00:49,630 --> 00:00:51,190
+be grouped together.
+
+12
+00:00:51,190 --> 00:00:55,540
+And therefore I can eat this and she'll actually be a string but a number.
+
+13
+00:00:55,540 --> 00:01:01,690
+And let's repopulate this with a default number 27 year that is my real age and I want to repopulate
+
+14
+00:01:01,690 --> 00:01:03,260
+the forum with that.
+
+15
+00:01:03,370 --> 00:01:09,790
+Now with that optic set up I can simply point to that by accessing my object here user data.
+
+16
+00:01:09,820 --> 00:01:10,720
+Email now.
+
+17
+00:01:10,720 --> 00:01:14,760
+Now I'm whining to a property in an object and that's perfectly valid.
+
+18
+00:01:15,040 --> 00:01:21,900
+I can now take this approach and also hook up my password with we model here to also store it in the
+
+19
+00:01:21,910 --> 00:01:24,600
+user data and then get in the password field.
+
+20
+00:01:24,730 --> 00:01:28,830
+And well for the age we want to do the same for the H.
+
+21
+00:01:28,870 --> 00:01:32,590
+We also want to hook this up to user data and then age.
+
+22
+00:01:32,590 --> 00:01:33,560
+In this case.
+
+23
+00:01:33,670 --> 00:01:41,980
+Now if I save this and we head over we see that age isn't indeed pre-populated with that 27 eyes set
+
+24
+00:01:41,980 --> 00:01:44,890
+up down there as a default value.
+
+25
+00:01:44,890 --> 00:01:48,130
+Now I can also fill out all the other fields of course.
+
+26
+00:01:48,130 --> 00:01:53,260
+And my secret password and well now we're not seeing it down there.
+
+27
+00:01:53,260 --> 00:01:59,350
+The reason for that of course simply is that I still use e-mail here but that changed to user data on
+
+28
+00:01:59,380 --> 00:01:59,800
+email.
+
+29
+00:01:59,800 --> 00:02:03,620
+It's an object now and I'm not outputting it for password and age.
+
+30
+00:02:03,640 --> 00:02:05,770
+So let's do that user data.
+
+31
+00:02:05,800 --> 00:02:14,150
+Email and also output user data age year like that.
+
+32
+00:02:14,220 --> 00:02:16,950
+Now I save this and head back.
+
+33
+00:02:16,950 --> 00:02:21,450
+We now see the values populated in this data box down there.
+
+34
+00:02:21,600 --> 00:02:29,160
+This how we can use a more complex object to nest our properties and how to pre populate a field by
+
+35
+00:02:29,160 --> 00:02:31,560
+simply setting the property initially.
+
+36
+00:02:31,560 --> 00:02:34,330
+Now as you will see I can of course overwrite those.
+
+37
+00:02:34,350 --> 00:02:36,950
+If I set this to 30 30 then there too.
+
+38
+00:02:37,140 --> 00:02:39,730
+So this is how we can use this set of.
+

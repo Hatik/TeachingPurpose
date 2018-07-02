@@ -1,0 +1,104 @@
+1
+00:00:02,210 --> 00:00:05,990
+Over the last lectures we learn a lot about control validation.
+
+2
+00:00:05,990 --> 00:00:13,760
+Now it's always nice to show validation errors next to the controls but maybe we all want to disable
+
+3
+00:00:13,940 --> 00:00:21,440
+the form submit button if we get any validation errors in our form.
+
+4
+00:00:21,450 --> 00:00:34,580
+No the hard way of doing that would be to bind disabled here to Dolor V email air and so on to disable
+
+5
+00:00:34,580 --> 00:00:35,150
+it.
+
+6
+00:00:35,260 --> 00:00:36,800
+If not and but.
+
+7
+00:00:36,830 --> 00:00:38,410
+Or to disable this.
+
+8
+00:00:38,510 --> 00:00:47,720
+If any of our control groups has an error the Quaker way conveniently is to just excess bowler V error
+
+9
+00:00:47,900 --> 00:00:56,630
+because that simply means if any of our validations here fails then this error is set to True and this
+
+10
+00:00:56,630 --> 00:01:02,620
+will be disabled and maybe we even want to set it to invalid to disable it right from the start.
+
+11
+00:01:02,660 --> 00:01:07,890
+And not only after the user started typing we now save this and we go back.
+
+12
+00:01:08,030 --> 00:01:12,590
+We see that right at the start the button is disabled and I can't click it.
+
+13
+00:01:12,840 --> 00:01:17,030
+We can also confirmed is that the console can click if nothing happens.
+
+14
+00:01:17,030 --> 00:01:22,170
+I have to enter Veldts data into all of these fields.
+
+15
+00:01:22,390 --> 00:01:23,950
+So let me quickly do that.
+
+16
+00:01:24,900 --> 00:01:28,780
+Except an ad hobby's
+
+17
+00:01:31,720 --> 00:01:33,340
+and only after I did this.
+
+18
+00:01:33,460 --> 00:01:35,790
+I can click Submit now.
+
+19
+00:01:35,800 --> 00:01:42,910
+This simply fails because I submitted an email address which is already taken on the back and we don't
+
+20
+00:01:42,910 --> 00:01:45,060
+have to care about this year.
+
+21
+00:01:45,070 --> 00:01:50,050
+The validation worked and this obviously is what this mortal is about though.
+
+22
+00:01:50,050 --> 00:01:52,420
+Does email address already taken.
+
+23
+00:01:52,420 --> 00:01:54,300
+Thing is interesting.
+
+24
+00:01:54,460 --> 00:01:59,640
+Wouldn't it be great if we warned the user right during validating his email address.
+
+25
+00:01:59,690 --> 00:02:03,830
+Weber does is a valid email address or not or if it is already taken.
+
+26
+00:02:04,060 --> 00:02:10,090
+Well let's dive into debt and therefore into asynchronous validators in the next lecture.
+

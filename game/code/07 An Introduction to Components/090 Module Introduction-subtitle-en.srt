@@ -1,0 +1,48 @@
+1
+00:00:02,040 --> 00:00:07,320
+Walk into a new module we traveled through a lot of the features Eucerin offers us.
+
+2
+00:00:07,470 --> 00:00:13,110
+We'll learn about how we can interact with the DOM how we can use events and how they view instance
+
+3
+00:00:13,110 --> 00:00:13,830
+works.
+
+4
+00:00:13,830 --> 00:00:16,800
+All of that is extremely important and still valid.
+
+5
+00:00:16,800 --> 00:00:24,610
+Now that we learn about components the components are a major piece of view Seamus and all the other
+
+6
+00:00:24,630 --> 00:00:31,230
+things were basics we needed to understand how components work and we use the same basics with components
+
+7
+00:00:31,530 --> 00:00:38,640
+but now components introduce a whole new feature to our view chess application namely the feature to
+
+8
+00:00:38,640 --> 00:00:45,300
+create real usable pieces in our application which we then can dump in in different places in our lab
+
+9
+00:00:45,570 --> 00:00:50,300
+to rerent or the same kind of code or business logic in different places.
+
+10
+00:00:50,550 --> 00:00:55,500
+Now we'll see this year in action and we will learn how we can use components which different ways of
+
+11
+00:00:55,500 --> 00:01:01,560
+using we have how we can register them how we can let them interact with each other and much more.
+
+12
+00:01:01,560 --> 00:01:02,700
+So let's dive in.
+

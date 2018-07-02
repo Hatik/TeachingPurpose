@@ -1,0 +1,336 @@
+1
+00:00:01,840 --> 00:00:06,910
+So as mentioned in the last book you want to start working on these stocks component and the individual
+
+2
+00:00:06,910 --> 00:00:08,000
+stocks.
+
+3
+00:00:08,050 --> 00:00:13,180
+So I'll head over to the stocks that you fall where right now we only got this template and I'll go.
+
+4
+00:00:13,180 --> 00:00:15,540
+I'm going to replace it with a div now.
+
+5
+00:00:15,580 --> 00:00:21,280
+In this div what I want to do is I kind of want a loop through all my individual stocks and then simply
+
+6
+00:00:21,280 --> 00:00:28,120
+output them here and lead bootstrap handle the place them in a grid problematic.
+
+7
+00:00:28,210 --> 00:00:33,790
+So therefore what I want to do here first is I want to set up some dummy stocks just sort of you can
+
+8
+00:00:33,790 --> 00:00:39,040
+see something we will soon change changes and manage our states differently.
+
+9
+00:00:39,040 --> 00:00:47,050
+So first of all our export default object in here and in this object I'll have my data function to return
+
+10
+00:00:47,500 --> 00:00:48,940
+an array of stocks.
+
+11
+00:00:48,970 --> 00:00:52,500
+And again that's just some dummy data will replace soon.
+
+12
+00:00:52,900 --> 00:00:57,400
+That's true of course not the right set up that should be a call like this.
+
+13
+00:00:57,400 --> 00:01:01,590
+So how is a stock defined in this application.
+
+14
+00:01:01,840 --> 00:01:11,410
+Well I want to have ID for each stock I want to have a name BMW maybe and then a price but say 110 and
+
+15
+00:01:11,410 --> 00:01:18,910
+then I'm going to repeat this to also get our stocks with unique IDs that will make it easier to manage
+
+16
+00:01:18,910 --> 00:01:19,920
+them.
+
+17
+00:01:20,110 --> 00:01:26,260
+With Google let's say and let's let's give it a price of 200 yes I no that's too low but just so that
+
+18
+00:01:26,260 --> 00:01:28,900
+we are actually able to buy some of them.
+
+19
+00:01:28,990 --> 00:01:36,360
+Apple let's say 250 and Twitter while that can't be much right.
+
+20
+00:01:36,410 --> 00:01:37,910
+So what's eight.
+
+21
+00:01:38,300 --> 00:01:40,390
+So these are the stocks are one they use.
+
+22
+00:01:40,580 --> 00:01:46,650
+And with these stocks and I want to loop through them and create as many stock components as needed.
+
+23
+00:01:46,820 --> 00:01:52,570
+So with that let's work on that stock component next because it seems to be the more interesting one.
+
+24
+00:01:52,970 --> 00:01:55,490
+I want to start with the lay out here.
+
+25
+00:01:55,550 --> 00:01:59,470
+So first how should this generally look like.
+
+26
+00:01:59,720 --> 00:02:06,280
+Well as I said I want to have some boxes with charts and distribute it across the page by bootstrap.
+
+27
+00:02:06,320 --> 00:02:19,280
+So we'll certainly wrap the stock in its own column class and I'll name it call as sex call M.D for
+
+28
+00:02:19,300 --> 00:02:25,420
+maybe so that we can fit three stock boxes next to each other on a medium sized screen and two of them
+
+29
+00:02:25,450 --> 00:02:29,230
+on a small screen and so on in there.
+
+30
+00:02:29,230 --> 00:02:36,790
+I want to use a div or creative which uses the panel class and also the panels success plus this will
+
+31
+00:02:36,790 --> 00:02:45,910
+give it these green panel like look bootstrap offers me just to let you know what I'm talking about.
+
+32
+00:02:45,920 --> 00:02:52,440
+If you go any bootstrap pates under components you're You'll also get these panels.
+
+33
+00:02:52,540 --> 00:02:54,280
+And that's what our panel looks like.
+
+34
+00:02:54,280 --> 00:02:59,700
+And there you got different panels and I want to use to screen one here to hold my stock data.
+
+35
+00:02:59,950 --> 00:03:03,030
+So that is the inclosing day.
+
+36
+00:03:03,040 --> 00:03:04,420
+I'm going to use now.
+
+37
+00:03:04,450 --> 00:03:09,970
+In this day of course when the panel having this again is a bootstrap class to give it some nice headings
+
+38
+00:03:09,970 --> 00:03:16,300
+style and they are one to have each read tag which will give a class of panel title and again these
+
+39
+00:03:16,300 --> 00:03:18,630
+are all bootstrap classes make it look nice.
+
+40
+00:03:18,730 --> 00:03:22,650
+And here we want to output the stock name will soon be replaced.
+
+41
+00:03:22,650 --> 00:03:24,240
+For now I'll keep it like this.
+
+42
+00:03:24,460 --> 00:03:29,910
+And also inside of this free tag I'll use a number of feature bootstrap offers me.
+
+43
+00:03:29,980 --> 00:03:32,010
+I can only output my name here.
+
+44
+00:03:32,020 --> 00:03:39,000
+I can also add small and then some extra data which will be fit nicely into that title by bootstrap.
+
+45
+00:03:39,070 --> 00:03:44,600
+So a year will set the price which with a placeholder right now and then looks good.
+
+46
+00:03:44,980 --> 00:03:49,430
+So does my panel heading now after the panel heading.
+
+47
+00:03:49,450 --> 00:03:53,920
+I want to have my panel body which holds the content.
+
+48
+00:03:53,980 --> 00:03:56,180
+Now the content are now a device.
+
+49
+00:03:56,180 --> 00:04:00,100
+Basically one with the input form and one with the buy button.
+
+50
+00:04:00,100 --> 00:04:03,090
+Therefore I'll have a div with declasse pool laughed.
+
+51
+00:04:03,100 --> 00:04:08,770
+This is a bootstrap class to make it float on the left pull it on the left side and then there I simply
+
+52
+00:04:08,770 --> 00:04:11,380
+want to have my input field which is of type.
+
+53
+00:04:11,650 --> 00:04:17,440
+While we can make it of type number actually I will still implement a check to make sure we do have
+
+54
+00:04:17,440 --> 00:04:21,470
+a number of valid number in there zero type number.
+
+55
+00:04:21,700 --> 00:04:29,440
+And then I'll give it a class of form control bootstrap class of course then I'll give it a placeholder
+
+56
+00:04:29,500 --> 00:04:37,050
+of quantity so that the user actually knows what we want to see here and that's it for now.
+
+57
+00:04:37,060 --> 00:04:39,680
+Of course we'll revisit this later on.
+
+58
+00:04:39,700 --> 00:04:44,290
+Then it's time to add another div with the class pool right for this by button.
+
+59
+00:04:44,290 --> 00:04:52,270
+So there a want to have a button which says Boy I though will also work on this caption of the button
+
+60
+00:04:52,300 --> 00:04:57,020
+because I wanna say insufficient funds if you want to buy something we can't afford.
+
+61
+00:04:57,460 --> 00:05:04,690
+So on this button all now add a class which button and then button success because you want the green
+
+62
+00:05:04,690 --> 00:05:07,210
+button let's say always makes buying easier.
+
+63
+00:05:07,720 --> 00:05:09,070
+And that's it for now.
+
+64
+00:05:09,160 --> 00:05:13,140
+So this list is button and is input field.
+
+65
+00:05:13,150 --> 00:05:18,550
+With that we got our template for this stock set up.
+
+66
+00:05:18,550 --> 00:05:24,790
+Now before we fill it with some life let's see if this works as intended by going back to the stock
+
+67
+00:05:24,790 --> 00:05:25,090
+start.
+
+68
+00:05:25,090 --> 00:05:27,230
+View file here and here.
+
+69
+00:05:27,280 --> 00:05:30,130
+Now one of the import is stark.
+
+70
+00:05:30,130 --> 00:05:35,440
+So import Stark from well and from the stock that you file.
+
+71
+00:05:35,500 --> 00:05:37,390
+And of course the other one to register it.
+
+72
+00:05:37,390 --> 00:05:40,870
+And I'm going to register this as a local component here too.
+
+73
+00:05:40,960 --> 00:05:43,340
+Again because I'm only using it it is important.
+
+74
+00:05:43,360 --> 00:05:47,130
+If it were to use it somewhere else does of course be a great global component.
+
+75
+00:05:47,410 --> 00:05:55,720
+So app stock is a stock here and then I want to have my stock and use the 4 on it to loop through all
+
+76
+00:05:55,720 --> 00:05:56,710
+my stocks.
+
+77
+00:05:56,860 --> 00:05:59,410
+Now and looping through all the stocks here.
+
+78
+00:05:59,470 --> 00:06:05,850
+I will say stock in stocks referring to my stocks I read on there and that's it for now.
+
+79
+00:06:05,860 --> 00:06:08,870
+We don't pass the data right now we'll do this soon.
+
+80
+00:06:08,890 --> 00:06:11,310
+For now I only want to see if this works.
+
+81
+00:06:11,320 --> 00:06:14,170
+So let's head over to the application and this looks pretty good.
+
+82
+00:06:14,170 --> 00:06:20,260
+We got four boxes which makes sense because we've got four stock items we don't see the data in there
+
+83
+00:06:20,260 --> 00:06:22,630
+of course because we don't pass it right now.
+
+84
+00:06:22,750 --> 00:06:28,930
+So let's work on setting up this communication and passing that data down next.
+

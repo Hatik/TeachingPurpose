@@ -1,0 +1,212 @@
+1
+00:00:02,510 --> 00:00:08,420
+So over the last lectures we added code to post data and to there for a sign up and sign and now we
+
+2
+00:00:08,420 --> 00:00:14,680
+want to also store the data we get back that token and we got to store the store.
+
+3
+00:00:14,780 --> 00:00:16,650
+I only set up the basics here.
+
+4
+00:00:16,730 --> 00:00:19,090
+It's totally empty as you can tell.
+
+5
+00:00:19,250 --> 00:00:28,520
+Now here I simply want to add ID token field which should be null initially to my state and then I also
+
+6
+00:00:28,520 --> 00:00:35,300
+want to let's say add a user ID which should be null initially and then let's see what else we eventually
+
+7
+00:00:35,300 --> 00:00:36,210
+need.
+
+8
+00:00:36,230 --> 00:00:41,750
+Now the goal is to of course stored the token in user ID here in the store.
+
+9
+00:00:41,870 --> 00:00:42,810
+Now for that.
+
+10
+00:00:42,860 --> 00:00:48,920
+Why don't we start by simply making the sign up and sign in requests from within actions here.
+
+11
+00:00:49,220 --> 00:00:51,740
+So we could have a sign up action your
+
+12
+00:00:54,450 --> 00:01:01,440
+and of course log in action to now for these actions.
+
+13
+00:01:01,550 --> 00:01:08,660
+We will obviously need to extract our committee method which allows us to commit a mutation.
+
+14
+00:01:08,690 --> 00:01:12,710
+We don't have any commit any mutations yet but we will create them.
+
+15
+00:01:12,920 --> 00:01:18,890
+And if you don't know how Buick's works make sure to check out my X Marchal first of course.
+
+16
+00:01:18,890 --> 00:01:24,810
+Now the second argument we can expect here in the sign up method is the payload.
+
+17
+00:01:24,860 --> 00:01:29,390
+So let's say you of data you can name this argument whatever you want.
+
+18
+00:01:29,390 --> 00:01:32,500
+I also expect to get some of data in the log in method.
+
+19
+00:01:32,900 --> 00:01:41,030
+And I'll just grab my code from the sign up for this post request your quoted from there and go to the
+
+20
+00:01:41,030 --> 00:01:44,590
+store and added to the sign up method for this to work.
+
+21
+00:01:44,710 --> 00:01:51,980
+Of course also need to grab the access import remove it from the sign up the view file and add it to
+
+22
+00:01:51,980 --> 00:01:53,470
+the store instead.
+
+23
+00:01:53,570 --> 00:01:56,850
+I just need to adjust the pot here.
+
+24
+00:01:56,960 --> 00:01:58,610
+Now it's in the same folder.
+
+25
+00:01:59,950 --> 00:02:04,890
+Now we can reach out to this access instance here sent the post request for signing up.
+
+26
+00:02:05,170 --> 00:02:08,150
+And of course do the same for signing in there.
+
+27
+00:02:08,170 --> 00:02:10,660
+Also simply remove the access import.
+
+28
+00:02:10,660 --> 00:02:12,860
+We don't need that anymore in that file.
+
+29
+00:02:12,940 --> 00:02:19,420
+And I'll wrap this access post request here and add it to the log in method.
+
+30
+00:02:19,420 --> 00:02:24,050
+Now I need to extract my e-mail and so on from the off data.
+
+31
+00:02:24,160 --> 00:02:29,300
+So I replace foreign data with Off data in both log in and sign up.
+
+32
+00:02:29,650 --> 00:02:33,580
+And now we have our redactions set up to send their requests.
+
+33
+00:02:33,580 --> 00:02:41,410
+They don't commit any mutations yet but at least we moved our code into the right place because these
+
+34
+00:02:41,410 --> 00:02:46,330
+should really be actions we should really be able to handle the result of our requests.
+
+35
+00:02:46,330 --> 00:02:53,370
+Here in the Buick's store now the golf course now is to use these actions.
+
+36
+00:02:53,380 --> 00:02:57,120
+The store already is injected in the main dodgiest fall.
+
+37
+00:02:57,280 --> 00:03:01,930
+So in sign up that view I can now dispatched this action here on submit.
+
+38
+00:03:02,090 --> 00:03:09,130
+I can simply access this stored dispatch and dispatch do you log in action excuse me the sign up action
+
+39
+00:03:09,130 --> 00:03:16,540
+here and simply pass a javascript object where the email is foreign data e-mail and where the password
+
+40
+00:03:16,630 --> 00:03:22,480
+is form data password that will constitute this of data object.
+
+41
+00:03:22,480 --> 00:03:31,690
+I expect to get in my actions the same logic of course applies to the sign in our view fall there.
+
+42
+00:03:31,700 --> 00:03:33,800
+I also want to dispatch an action.
+
+43
+00:03:33,860 --> 00:03:38,210
+It's easy logging an action here but it receives the same data though.
+
+44
+00:03:38,690 --> 00:03:41,100
+With that we are dispatching the actions.
+
+45
+00:03:41,240 --> 00:03:48,260
+Let's now see if that works before we actually dive into mutating the store and storing the token back
+
+46
+00:03:48,260 --> 00:03:55,190
+to our application therefore here on sign up let me create a new user with a new unused email address
+
+47
+00:03:56,060 --> 00:03:57,780
+and let me click submit.
+
+48
+00:03:59,000 --> 00:04:02,500
+And we see that we now successfully created a user.
+
+49
+00:04:02,510 --> 00:04:07,930
+Now however using our store there to sign up action.
+
+50
+00:04:08,210 --> 00:04:10,500
+Now that is how we move that logic to the store.
+
+51
+00:04:10,500 --> 00:04:14,510
+That's the first step in the next picture we'll make the more important step.
+
+52
+00:04:14,510 --> 00:04:21,920
+I'd say we'll add a mutation which that also allows us to store data token in our state so that we may
+
+53
+00:04:21,920 --> 00:04:24,410
+use it for subsequent requests.
+

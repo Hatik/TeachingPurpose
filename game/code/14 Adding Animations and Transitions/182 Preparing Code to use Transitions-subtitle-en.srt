@@ -1,0 +1,192 @@
+1
+00:00:01,680 --> 00:00:06,530
+I'm in a new project which looks like there's a browser at the beginning and then the project itself
+
+2
+00:00:06,540 --> 00:00:11,760
+it's basically the APTA view fall which is pretty empty just get the bootstrap container row and column
+
+3
+00:00:11,760 --> 00:00:15,830
+set up here and an empty object which doesn't return any data yet.
+
+4
+00:00:16,080 --> 00:00:18,800
+And well all the other files are pretty empty as well.
+
+5
+00:00:18,810 --> 00:00:22,640
+Just import it would strip here and the next to each team will follow.
+
+6
+00:00:22,830 --> 00:00:24,300
+So this is what I'll start with.
+
+7
+00:00:24,390 --> 00:00:31,380
+And the goal now is to showed this simple case of adding an element to the DOM we learnt before and
+
+8
+00:00:31,380 --> 00:00:32,420
+then animating it.
+
+9
+00:00:32,430 --> 00:00:39,270
+So let's add an element first we'll add a new let's say horizontal line here first and thereafter I
+
+10
+00:00:39,270 --> 00:00:44,270
+want to have a button with closet's button and Button primary to give it some styling where we can say
+
+11
+00:00:44,760 --> 00:00:46,400
+show alert.
+
+12
+00:00:46,400 --> 00:00:51,660
+And I want to show such a brooch Driveller it's so using this see as class bootstrap framework offers
+
+13
+00:00:51,750 --> 00:00:53,170
+me which is alert.
+
+14
+00:00:53,190 --> 00:00:57,740
+And then let's say to enfold like this deserves some info.
+
+15
+00:00:57,750 --> 00:01:02,670
+Now if we have a look at this the application it doesn't say what it will look like if it's always attached
+
+16
+00:01:03,150 --> 00:01:05,430
+something a bit too close to the button for my tastes.
+
+17
+00:01:05,430 --> 00:01:07,210
+Let me add some other line breaks here.
+
+18
+00:01:07,410 --> 00:01:08,630
+So that is what it should look like.
+
+19
+00:01:08,640 --> 00:01:14,440
+Now I want to show to learn Additionally and we learned how to do that in order to show it conditionally.
+
+20
+00:01:14,490 --> 00:01:19,760
+I will add a new property named show and also the two falls initially to not show it.
+
+21
+00:01:20,160 --> 00:01:25,830
+And then on this alert Div I will simply add Vi if I could also use the show that is also animate table
+
+22
+00:01:25,890 --> 00:01:28,890
+as you will learn so it will use the IF here.
+
+23
+00:01:29,010 --> 00:01:30,050
+And then I will check.
+
+24
+00:01:30,050 --> 00:01:36,570
+Show and on this button therefore I will set a click listener or add a click listener where I simply
+
+25
+00:01:36,570 --> 00:01:38,780
+said show to what it currently is not.
+
+26
+00:01:38,820 --> 00:01:43,250
+So to toggle it if it's true it will be set to false and the other way around.
+
+27
+00:01:43,260 --> 00:01:49,440
+Now if we save this and have a look at this application we can now show the old order like this does
+
+28
+00:01:49,440 --> 00:01:50,040
+this nice.
+
+29
+00:01:50,040 --> 00:01:53,060
+This is what you learned before and this is not animated.
+
+30
+00:01:53,220 --> 00:01:54,790
+So we should change this.
+
+31
+00:01:54,930 --> 00:02:02,250
+And as I showed you on the slides before it we can change this by simply wrapping this div in this transition
+
+32
+00:02:02,250 --> 00:02:04,830
+component here V-chips offices.
+
+33
+00:02:04,990 --> 00:02:13,290
+This is a special component which we can use to animate anything which is between the opening and closing
+
+34
+00:02:13,290 --> 00:02:13,820
+tag.
+
+35
+00:02:13,920 --> 00:02:15,190
+Important here.
+
+36
+00:02:15,540 --> 00:02:18,840
+You can only animate one element with transition.
+
+37
+00:02:18,840 --> 00:02:24,370
+Now you can have multiple elements inside of this transition component like this.
+
+38
+00:02:24,510 --> 00:02:28,560
+But then the conditions of these elements have to alternate.
+
+39
+00:02:28,620 --> 00:02:31,940
+You cannot animate a list in there let's say you cannot.
+
+40
+00:02:31,940 --> 00:02:38,370
+Any made that the addition or deletion of list items you can have multiple elements in here to transition
+
+41
+00:02:38,370 --> 00:02:41,500
+between them but you can only show one at a time.
+
+42
+00:02:41,520 --> 00:02:46,460
+So doing this year will instantly give me an error in the console.
+
+43
+00:02:48,080 --> 00:02:54,170
+As you can see because we only may use it for a single element and should we use another element we
+
+44
+00:02:54,170 --> 00:02:55,060
+will learn about later.
+
+45
+00:02:55,070 --> 00:02:56,640
+You'll see it here later.
+
+46
+00:02:56,810 --> 00:02:58,340
+So let me remove this.
+
+47
+00:02:58,520 --> 00:03:05,750
+Now as you could see if I put it or if I was one element this is shown but it's still not animate yet.
+
+48
+00:03:05,780 --> 00:03:08,920
+So how do we animated with this transition element.
+

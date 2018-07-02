@@ -1,0 +1,92 @@
+1
+00:00:01,880 --> 00:00:10,640
+What if we wanted to pass our own argument for example here when increasing the counter we're currently
+
+2
+00:00:10,640 --> 00:00:12,230
+incrementing by one.
+
+3
+00:00:12,380 --> 00:00:18,890
+What if we wanted to pass our own step by which is should get incremented nothing easier than that here
+
+4
+00:00:18,890 --> 00:00:25,310
+when calling Reise or setting up this reference I can also add parentheses and pass my own argument
+
+5
+00:00:25,490 --> 00:00:33,230
+for example to now of this I'd say or a one to say that I want to increase this countered by two since
+
+6
+00:00:33,230 --> 00:00:35,070
+I've passed a dozen arguments year.
+
+7
+00:00:35,090 --> 00:00:39,560
+I can go down there to my method and indeed increase function.
+
+8
+00:00:39,590 --> 00:00:45,500
+I simply listened to step or add the arguments step here.
+
+9
+00:00:45,690 --> 00:00:52,290
+I can then say this counter-protests equals Step 2 now increase it by ideas step instead of one.
+
+10
+00:00:52,290 --> 00:00:57,660
+So if I say this you're now a z i click and it increases by 2 all the time.
+
+11
+00:00:57,780 --> 00:01:00,760
+This is how easy I can pass my own argument.
+
+12
+00:01:01,020 --> 00:01:07,800
+And finally what if I not only wanted to pass my own argument but both my own argument and does automatically
+
+13
+00:01:07,800 --> 00:01:09,530
+created event object.
+
+14
+00:01:09,660 --> 00:01:11,340
+That's also very simple.
+
+15
+00:01:11,460 --> 00:01:13,540
+I can simply add a second argument.
+
+16
+00:01:13,680 --> 00:01:16,160
+And now here the naming is important.
+
+17
+00:01:16,440 --> 00:01:23,130
+Buquet us automatically fetches this default event argument and stores it in a kind of a variable we
+
+18
+00:01:23,130 --> 00:01:26,260
+can access your named dollar sign event.
+
+19
+00:01:26,340 --> 00:01:28,260
+So this is a protected name.
+
+20
+00:01:28,260 --> 00:01:32,300
+Don't write it and make sure to not get it wrong.
+
+21
+00:01:32,640 --> 00:01:38,460
+Doing it this way I can now also fetch this event here and it could use it in my increase method if
+
+22
+00:01:38,460 --> 00:01:45,430
+I wanted to too conveniently well use both my own argument and the automatically created.
+
+23
+00:01:45,450 --> 00:01:50,730
+And now also past event object future Chase gives us access to.
+

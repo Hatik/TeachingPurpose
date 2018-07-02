@@ -1,0 +1,148 @@
+1
+00:00:02,230 --> 00:00:05,790
+Thus far we're creating components with you component here.
+
+2
+00:00:05,920 --> 00:00:12,280
+This means in our app we're using it with a selector and we're adding them now if I create a second
+
+3
+00:00:12,310 --> 00:00:17,790
+app and therefore I create a second instance down there app too.
+
+4
+00:00:18,070 --> 00:00:20,060
+Now if I hit enter.
+
+5
+00:00:20,320 --> 00:00:26,350
+Well we see it four times because our a second app here also now uses the same component.
+
+6
+00:00:26,560 --> 00:00:31,240
+What if we wanted to register different components globally and locally.
+
+7
+00:00:31,240 --> 00:00:38,050
+So we want to use the same selector maybe but use it or use different components in the end.
+
+8
+00:00:38,050 --> 00:00:40,060
+We can't do this to do this.
+
+9
+00:00:40,090 --> 00:00:41,980
+I'll do a little change here.
+
+10
+00:00:41,980 --> 00:00:46,840
+I don't call view component which registers it globally instead.
+
+11
+00:00:46,840 --> 00:00:51,540
+Now I want to store this as a variable cell to do so.
+
+12
+00:00:51,610 --> 00:00:55,830
+I will say waar component equals.
+
+13
+00:00:55,900 --> 00:01:01,420
+And now does equal is just the object configuring decompile and so the selector is gone.
+
+14
+00:01:01,720 --> 00:01:10,960
+Now in my view instance I can now execute or I can add a new property components which basically touts
+
+15
+00:01:10,960 --> 00:01:18,520
+does instance which local components do you have some components only usable in this instance here.
+
+16
+00:01:18,760 --> 00:01:26,380
+Well and here I want to set up my selector does this now completely freely usable by myself my component
+
+17
+00:01:26,380 --> 00:01:27,480
+for example.
+
+18
+00:01:27,640 --> 00:01:31,480
+And I will refer to my component data up there.
+
+19
+00:01:31,480 --> 00:01:39,430
+Now I set up a local component and if I hit Control enter therefore the app breaks which happens because
+
+20
+00:01:39,460 --> 00:01:44,860
+I need to remove this unnecessary parentheses here coming from the component function but have an on
+
+21
+00:01:44,870 --> 00:01:46,070
+hit and try again.
+
+22
+00:01:46,120 --> 00:01:51,850
+We only see the service status in the first app because in the second where I also use my component
+
+23
+00:01:51,970 --> 00:01:53,300
+it's not registered.
+
+24
+00:01:53,470 --> 00:01:58,570
+We only registered it here on the first view instance with the component property on the second we don't
+
+25
+00:01:58,570 --> 00:01:59,260
+have that.
+
+26
+00:01:59,260 --> 00:02:01,920
+So my component is not recognized there.
+
+27
+00:02:02,080 --> 00:02:04,550
+And this is how we can register it locally.
+
+28
+00:02:04,600 --> 00:02:09,760
+We could no longer just search on the second one Oulds use a different selector and thereby simply setting
+
+29
+00:02:09,760 --> 00:02:11,710
+up a different selector.
+
+30
+00:02:11,710 --> 00:02:16,910
+But if you want to do that this is how to do it if you want to use a global component instead.
+
+31
+00:02:17,020 --> 00:02:23,950
+Well then you need view component this method where you have your selector forest my component and then
+
+32
+00:02:23,950 --> 00:02:26,770
+your component object.
+
+33
+00:02:26,830 --> 00:02:33,160
+These are the two different ways of registering a globally with view component or locally with the components
+
+34
+00:02:33,160 --> 00:02:34,870
+property a view instance.
+
+35
+00:02:35,110 --> 00:02:37,570
+And with that now it's really time to leave.
+
+36
+00:02:37,630 --> 00:02:45,640
+A fiddle and work on these single file templates I explained before to see how we can use them in conjunction
+
+37
+00:02:45,640 --> 00:02:47,470
+with components of their.
+

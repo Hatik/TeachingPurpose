@@ -1,0 +1,232 @@
+1
+00:00:01,950 --> 00:00:06,320
+It's important to understand what map actions does behind the scenes though.
+
+2
+00:00:06,600 --> 00:00:10,360
+So here I mapping to the increment and Dekho and actions.
+
+3
+00:00:10,500 --> 00:00:16,410
+And actually this will truly aid the following two methods for me and I'm just writing it out so that
+
+4
+00:00:16,410 --> 00:00:18,700
+you understand what my actions does here.
+
+5
+00:00:18,900 --> 00:00:21,480
+We use map actions to get access to our actions.
+
+6
+00:00:21,630 --> 00:00:28,050
+But in the end what these map actions function or help are here does is it gives us the increment method
+
+7
+00:00:28,320 --> 00:00:36,960
+where we can then call this store dispatch increment that is all these map actions function does.
+
+8
+00:00:36,960 --> 00:00:46,880
+Now increment year could of course also take a value like the buy property or argument here which you
+
+9
+00:00:47,090 --> 00:00:54,800
+can pass to increment to tell it by how much to increment or to increase this counter.
+
+10
+00:00:55,310 --> 00:01:01,280
+And then we could call increment with let's say 100 here to increase it by 100 by each on each click
+
+11
+00:01:01,280 --> 00:01:02,610
+instead of one.
+
+12
+00:01:02,780 --> 00:01:08,660
+That would be how we can do this and map X and thankfully crew Yeates the method in just such a way
+
+13
+00:01:08,720 --> 00:01:16,440
+that we are able to pass on an argument automatically so we can pass 100 year with increment and store
+
+14
+00:01:16,440 --> 00:01:23,300
+to a chase here where we get to or when we call our action where we can pass the second argument here
+
+15
+00:01:23,300 --> 00:01:24,980
+to which is named payload.
+
+16
+00:01:25,040 --> 00:01:29,100
+You can name it whatever you like but payload is something you will see pretty often.
+
+17
+00:01:29,210 --> 00:01:32,490
+Now it's named payload because it's the payload of our action.
+
+18
+00:01:32,630 --> 00:01:39,830
+And we can simply pasters onto our mutation because it turns out mutations also not only get to state
+
+19
+00:01:40,100 --> 00:01:43,150
+but as a second argument they may also get a payload.
+
+20
+00:01:43,310 --> 00:01:50,500
+So we can then increment this by payload like this and if we saved this and we click increment you now
+
+21
+00:01:50,570 --> 00:01:57,510
+see it gets increased by 200 actually because we still duplicated our getter or we take a time to get
+
+22
+00:01:57,590 --> 00:01:58,160
+her.
+
+23
+00:01:58,340 --> 00:02:00,320
+But you see a number of clicks.
+
+24
+00:02:00,350 --> 00:02:05,920
+We actually increase by 100 upon each click so this how we can pass a payload.
+
+25
+00:02:06,080 --> 00:02:10,290
+And of course we can do the same here for our Decora main function.
+
+26
+00:02:10,400 --> 00:02:17,420
+So let me quickly do this add the payload here too and decrease that by the payload and Fridella also
+
+27
+00:02:17,420 --> 00:02:20,080
+need to expect the payload here on deck end.
+
+28
+00:02:20,150 --> 00:02:25,520
+And then does allows me to go to the counter that you file or for that I should still pass this of course
+
+29
+00:02:26,090 --> 00:02:31,570
+to the ground or do you file and actually let's say degrees by 50 on each click.
+
+30
+00:02:31,850 --> 00:02:37,570
+And this will make sure it gets decreased but 100 because again I do multiplied with two of my Geter.
+
+31
+00:02:37,580 --> 00:02:41,450
+But on that Clix you see it gets reduced by 50 actually.
+
+32
+00:02:41,450 --> 00:02:44,600
+So this is how it can pass a payload.
+
+33
+00:02:44,600 --> 00:02:47,870
+Now what if you want to pass more than one argument.
+
+34
+00:02:48,110 --> 00:02:51,830
+What doesn't work is to add multiple arguments here.
+
+35
+00:02:51,950 --> 00:02:59,680
+So let's say in the end number account or when we use teazing increment we want to set D with of the
+
+36
+00:02:59,690 --> 00:03:04,100
+size for which you want to increase it for example to 15.
+
+37
+00:03:04,110 --> 00:03:06,740
+So increase it by 50 on each click.
+
+38
+00:03:06,920 --> 00:03:12,760
+But then as a second argument you also want to pastie duration for decent basing task.
+
+39
+00:03:12,860 --> 00:03:16,670
+Right now data is one second hardcoded into my code here.
+
+40
+00:03:16,820 --> 00:03:22,850
+But if I want to set this manually I can pass it as a second argument because that's not how dispatch
+
+41
+00:03:22,850 --> 00:03:24,120
+works.
+
+42
+00:03:24,140 --> 00:03:30,410
+Instead what I can do is I can simply pass an object here as an argument and here I can of course add
+
+43
+00:03:30,410 --> 00:03:32,660
+as many properties as I want.
+
+44
+00:03:32,660 --> 00:03:39,670
+For example deep by property to set the step by which I want to increase to counter so why 50.
+
+45
+00:03:39,830 --> 00:03:44,830
+And then let's say the duration property that's up to 500 milliseconds.
+
+46
+00:03:45,170 --> 00:03:52,670
+And of course that can do the same for async decrement of course then I have to adjust my actions here
+
+47
+00:03:52,670 --> 00:03:55,030
+to also be able to fetch the payload here.
+
+48
+00:03:55,070 --> 00:04:02,870
+That still only is one argument here of course but we know this argument now is object Sanai can simply
+
+49
+00:04:02,870 --> 00:04:08,460
+commit payload by here by SD step size payload by it.
+
+50
+00:04:08,720 --> 00:04:15,910
+And down there I want to set this with payload duration because I know that is stored in this property.
+
+51
+00:04:16,130 --> 00:04:21,890
+And with that it feels safe to say again you now see the top upturns work as before.
+
+52
+00:04:21,970 --> 00:04:26,200
+But the bottom buttons they take a little while before it takes effect.
+
+53
+00:04:26,240 --> 00:04:28,140
+We see it actually is 50.
+
+54
+00:04:28,160 --> 00:04:33,020
+Regarding the step size and timing wise I'd say it feels like half a second.
+
+55
+00:04:33,140 --> 00:04:35,820
+So seems like the duration also works.
+
+56
+00:04:35,990 --> 00:04:44,510
+And this is how I can pass a payload with my actions to my mutations and I can either either pass a
+
+57
+00:04:44,510 --> 00:04:51,410
+string or a number or if I need to pass more than one argument I just pass an object as payload where
+
+58
+00:04:51,410 --> 00:04:55,700
+I set up all my key value Paris for as many properties I want to use.
+

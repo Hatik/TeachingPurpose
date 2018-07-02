@@ -1,0 +1,284 @@
+1
+00:00:01,940 --> 00:00:10,260
+Novel or component's reorganized here and having them with different letters and in a nice folder structure.
+
+2
+00:00:10,360 --> 00:00:12,120
+There's one other thing I want to mention.
+
+3
+00:00:12,170 --> 00:00:14,300
+We're not using the style right now.
+
+4
+00:00:14,300 --> 00:00:16,610
+We're not applying any styles.
+
+5
+00:00:16,730 --> 00:00:19,700
+Now let's change this let's add some styling.
+
+6
+00:00:19,700 --> 00:00:22,660
+Let's say the server details here.
+
+7
+00:00:22,670 --> 00:00:24,230
+There we do have a death.
+
+8
+00:00:24,260 --> 00:00:33,170
+And I want to give this idea of let's say a border of one pixel solid and red and then light servers
+
+9
+00:00:33,310 --> 00:00:34,090
+here.
+
+10
+00:00:34,280 --> 00:00:41,050
+I want to set up a diff style for this wrapping Dith where I set up a border of one pixel solid and
+
+11
+00:00:41,060 --> 00:00:43,410
+blue lead might not be super beautiful.
+
+12
+00:00:43,430 --> 00:00:44,950
+But let's see how this looks.
+
+13
+00:00:45,080 --> 00:00:47,310
+Oh everything is red now.
+
+14
+00:00:47,540 --> 00:00:52,190
+Well the issue is I only said the red style here on the server details.
+
+15
+00:00:52,190 --> 00:00:54,190
+Why is everything Borda red.
+
+16
+00:00:54,190 --> 00:00:57,260
+Now why was every day of select it.
+
+17
+00:00:57,500 --> 00:01:03,020
+The reason for this behavior is that we're not scoping the styles which means the styles are not contained
+
+18
+00:01:03,020 --> 00:01:03,970
+in this component.
+
+19
+00:01:03,980 --> 00:01:11,180
+By default any style we set up and any component will be applied globally like in a global stylesheet.
+
+20
+00:01:11,180 --> 00:01:13,020
+Now that might not be the behavior you want.
+
+21
+00:01:13,010 --> 00:01:19,340
+And you could easily overwrite it by adding scoped to the style tag here in your component in a single
+
+22
+00:01:19,340 --> 00:01:22,750
+file template and that will work in any single file template.
+
+23
+00:01:22,790 --> 00:01:25,940
+So do the same here in my servers and we had over.
+
+24
+00:01:25,970 --> 00:01:29,120
+You see now we get the borders only around us.
+
+25
+00:01:29,140 --> 00:01:33,060
+This is where we want to have them reload the page if you're not seeing this.
+
+26
+00:01:33,290 --> 00:01:40,400
+So with this we're now containing the styles we apply in a single file here in a new file due to content
+
+27
+00:01:40,490 --> 00:01:45,080
+of this view fall to this HD Ammal template there behind the scenes.
+
+28
+00:01:45,080 --> 00:01:48,520
+This emulates a behavior known as the shadow.
+
+29
+00:01:48,710 --> 00:01:53,720
+The shadow on basically means dead in the upcoming and upcoming browsers.
+
+30
+00:01:53,720 --> 00:01:56,380
+Basically the dom in there.
+
+31
+00:01:56,400 --> 00:02:00,110
+Each element has a dom B side behind this element.
+
+32
+00:02:00,110 --> 00:02:07,430
+So you not only have one global Dom but many sub Doms so that your age one take your normal HVM old
+
+33
+00:02:07,430 --> 00:02:13,070
+hag could have a different style in one place than in the natural place because there are due to different
+
+34
+00:02:13,070 --> 00:02:15,880
+Doms behind each of this H-1 tags.
+
+35
+00:02:16,130 --> 00:02:19,630
+Well that's something which we will probably see in the future.
+
+36
+00:02:19,910 --> 00:02:25,660
+Meucci emulates it today and we can see how it emulates it if we inspect this.
+
+37
+00:02:25,820 --> 00:02:32,570
+So if we inspect this Dave with the blue border we see we have this strange attribute being added to
+
+38
+00:02:32,570 --> 00:02:32,890
+it.
+
+39
+00:02:32,900 --> 00:02:38,780
+Data minus V minus and then some ID and the same is true for today with the red border.
+
+40
+00:02:38,780 --> 00:02:41,920
+Here we all got such an attribute with a different idea though.
+
+41
+00:02:42,050 --> 00:02:47,840
+You will see the idea stays the same within each component but changes across components like here between
+
+42
+00:02:47,840 --> 00:02:51,010
+the two different components red and blue bordered.
+
+43
+00:02:51,110 --> 00:02:52,960
+Now here we clearly see it.
+
+44
+00:02:53,180 --> 00:02:58,700
+This attribute which was added by beauty as we did place it there is important.
+
+45
+00:02:58,730 --> 00:03:05,090
+It's of course not a default HDMI attribute but it's also not one which is in conflict with any default
+
+46
+00:03:05,120 --> 00:03:05,990
+attribute.
+
+47
+00:03:05,990 --> 00:03:12,110
+Indeed it's using the default HCM alday the edge but which allows us to attach custom data to elements
+
+48
+00:03:12,110 --> 00:03:15,910
+so it's in line with a good HVM old style.
+
+49
+00:03:16,070 --> 00:03:18,610
+But where do we use this attribute for.
+
+50
+00:03:19,010 --> 00:03:28,610
+Well the styles we append here in our single files are in the end pulled up into the head of our document.
+
+51
+00:03:28,620 --> 00:03:31,840
+This is why here we see all these styles.
+
+52
+00:03:31,850 --> 00:03:36,800
+We set up in the single files attached in this section of the document.
+
+53
+00:03:36,800 --> 00:03:39,660
+This is something new Chesters for us.
+
+54
+00:03:39,680 --> 00:03:48,350
+Now here you see an empty style but once we click on the style of the blue and the red border these
+
+55
+00:03:48,350 --> 00:03:53,060
+two here you see the red border and the blue border.
+
+56
+00:03:53,060 --> 00:03:58,550
+This is the reason why before we only saw the red border because this comes second so it overrides the
+
+57
+00:03:58,550 --> 00:04:04,550
+average style and this makes sense because we load the server details after the servers because this
+
+58
+00:04:04,550 --> 00:04:07,760
+is how we ordered them their services are loaded first.
+
+59
+00:04:08,270 --> 00:04:09,940
+So this is how they are ordered.
+
+60
+00:04:10,010 --> 00:04:13,620
+And now you see future has added something to our selector.
+
+61
+00:04:13,620 --> 00:04:19,940
+It's now not only selecting by death instead it's selecting by death and the attribute and this of course
+
+62
+00:04:19,940 --> 00:04:24,150
+is the attribute also added in the bottom so to our devs.
+
+63
+00:04:24,340 --> 00:04:30,500
+This is how it emulates this behavior that our styles are only applied to the elements in a certain
+
+64
+00:04:30,500 --> 00:04:31,370
+component.
+
+65
+00:04:31,490 --> 00:04:34,040
+It adds our styles in the head section.
+
+66
+00:04:34,090 --> 00:04:39,640
+Adust is always for all our files which are which is the reason why we have these empty style text here
+
+67
+00:04:39,650 --> 00:04:42,290
+for the average components the other files we're using.
+
+68
+00:04:42,620 --> 00:04:50,650
+And then for the Fahd's where we have scoped added to our cell there it adds this ID to bouffe de-select
+
+69
+00:04:50,650 --> 00:04:55,660
+or any element in the dorm so that now the style is indeed scoped.
+
+70
+00:04:55,700 --> 00:04:58,420
+That's something to keep in mind and something to use.
+
+71
+00:04:58,430 --> 00:05:02,470
+If you want to make sure you're styling only gets applied one component.
+

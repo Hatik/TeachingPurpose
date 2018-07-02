@@ -1,0 +1,360 @@
+1
+00:00:01,840 --> 00:00:05,040
+So elastically we set up our portfolio here.
+
+2
+00:00:05,090 --> 00:00:08,740
+Now we need to add it to our store by importing it.
+
+3
+00:00:08,740 --> 00:00:17,060
+First of all this portfolio module we just created add it here to the modules object again and here
+
+4
+00:00:17,060 --> 00:00:22,280
+I'm just computing this portfolio means that we have two long words it would be Portfolio portfolio.
+
+5
+00:00:22,670 --> 00:00:24,370
+So this is now set up.
+
+6
+00:00:24,410 --> 00:00:35,140
+Now we can use all the actions and the Geter this year to also update our portfolio and to make these
+
+7
+00:00:35,230 --> 00:00:37,130
+buyback can work.
+
+8
+00:00:37,210 --> 00:00:38,770
+Let's look at the buy button.
+
+9
+00:00:38,830 --> 00:00:41,830
+So any stock did you fall here.
+
+10
+00:00:41,830 --> 00:00:45,000
+I do have my buy stock method here.
+
+11
+00:00:45,010 --> 00:00:51,510
+And in this method I now finally won a Eustice order I created to dispatch it.
+
+12
+00:00:51,670 --> 00:00:57,520
+So here I can say this store this patch of course that could also map my actions and then call this
+
+13
+00:00:57,520 --> 00:00:58,550
+action here.
+
+14
+00:00:58,720 --> 00:01:01,380
+But I want to do it like this dispatch.
+
+15
+00:01:01,390 --> 00:01:04,790
+And now the name of the action is Bligh's stock.
+
+16
+00:01:04,990 --> 00:01:10,580
+Now this action is in the stocks Marchal whereas the mutation is in the portfolio module.
+
+17
+00:01:10,630 --> 00:01:15,680
+You could argue that both should be in the same module and I wouldn't necessarily disagree.
+
+18
+00:01:15,700 --> 00:01:21,340
+I also want to show though that you can of course commit mutations across March of this year.
+
+19
+00:01:21,340 --> 00:01:26,470
+This is why I chose to use this set up and of course you could also say that the action should occur
+
+20
+00:01:26,770 --> 00:01:32,750
+in these stocks Marchal where as then the updating of the portfolio really belongs to the portfolio.
+
+21
+00:01:32,750 --> 00:01:35,240
+Much of that would be a different argument.
+
+22
+00:01:35,350 --> 00:01:42,040
+So with that I can simply dispatch buy stock here and I need to pass the order Asnes second argument
+
+23
+00:01:42,070 --> 00:01:43,650
+as my payload.
+
+24
+00:01:43,670 --> 00:01:48,890
+Now the stocks chase filed by stock doesn't do much right now does it.
+
+25
+00:01:48,900 --> 00:01:50,870
+It doesn't commit anything.
+
+26
+00:01:50,980 --> 00:01:56,980
+So here we need to commit buy stock and we see those global namespace even though it's a different Marchal
+
+27
+00:01:57,040 --> 00:01:58,210
+buy stock here.
+
+28
+00:01:58,330 --> 00:02:00,850
+We'll refer to despise stock mutation.
+
+29
+00:02:01,150 --> 00:02:05,700
+And there of course we also need to pass our order as an argument.
+
+30
+00:02:05,800 --> 00:02:10,600
+Judas mutation so that this mutation is able to pull the data it needs to pull.
+
+31
+00:02:11,040 --> 00:02:18,580
+So with that if we set it up like this we're actually able to dispatch just action and we can already
+
+32
+00:02:18,580 --> 00:02:20,890
+have a tiny look at this.
+
+33
+00:02:21,100 --> 00:02:26,660
+If we open up the console and try bite at least we don't see an error.
+
+34
+00:02:26,710 --> 00:02:27,930
+So that looks good.
+
+35
+00:02:28,120 --> 00:02:30,810
+Now to finally see if that works.
+
+36
+00:02:30,830 --> 00:02:36,610
+I removed US consulate and now I want to go to my portfolio and make sure that the portfolio is actually
+
+37
+00:02:36,610 --> 00:02:39,890
+printed to the screen sort of can't see if it gets updated.
+
+38
+00:02:39,910 --> 00:02:43,700
+If that works for that let's head over to the portfolio.
+
+39
+00:02:43,750 --> 00:02:50,500
+You fall and you're a first of all all that one has set up a day of which wraps everything that I need
+
+40
+00:02:50,500 --> 00:02:55,630
+some stock components like I do have here my stocks module.
+
+41
+00:02:55,870 --> 00:02:59,650
+Now I will copy the code from this stock view file.
+
+42
+00:02:59,650 --> 00:03:04,570
+And of course that's always a good sign that you might want to refactored though a will change quite
+
+43
+00:03:04,570 --> 00:03:10,420
+a lot of that code which as I explained at the beginning of this show is the reason why I decided to
+
+44
+00:03:10,420 --> 00:03:17,050
+use two different components instead of one but you may feel free of course to merge them into one.
+
+45
+00:03:17,050 --> 00:03:18,450
+Now first of all what else changes.
+
+46
+00:03:18,460 --> 00:03:23,340
+I'll get rid of the bias stock method and then I need to work on this template.
+
+47
+00:03:23,410 --> 00:03:27,770
+The general layout here is fine though it starts here at the subtitle.
+
+48
+00:03:27,970 --> 00:03:32,040
+Well not only have a price will also have a quantity here.
+
+49
+00:03:32,140 --> 00:03:36,090
+So I also want to output stock quantity of field we do have.
+
+50
+00:03:36,100 --> 00:03:39,390
+Because that is what I'll set up here in my stocks.
+
+51
+00:03:39,410 --> 00:03:42,630
+Rate when I add a new stock it has this quantity field.
+
+52
+00:03:42,760 --> 00:03:46,780
+Therefore I can access it here with outputting individual stock.
+
+53
+00:03:46,990 --> 00:03:52,620
+Of course we also have an input where we are able to buy things with the model here.
+
+54
+00:03:52,810 --> 00:03:58,650
+So that's all fine and I also want to make sure that we're not selling less than we have so that we're
+
+55
+00:03:58,660 --> 00:04:00,670
+not selling less than zero.
+
+56
+00:04:00,670 --> 00:04:07,930
+I will soon add some checks to all to make sure we're not selling more than we have as well as on the
+
+57
+00:04:07,990 --> 00:04:12,240
+stocks module to make sure we're not buying more than we can afford.
+
+58
+00:04:12,580 --> 00:04:16,540
+But for now I'll do it like it is and here I'll name this sell again.
+
+59
+00:04:16,540 --> 00:04:22,760
+We'll soon be adjusted to you then really differ a bit more from the average stock file.
+
+60
+00:04:22,780 --> 00:04:27,580
+So with this in place we get is hooked up.
+
+61
+00:04:27,580 --> 00:04:36,130
+We should name does sales start here and then I want to add my stock Methot so I'll implement sell stock
+
+62
+00:04:36,130 --> 00:04:38,980
+here and sell stock.
+
+63
+00:04:38,980 --> 00:04:42,670
+We'll now read that order as well in this order.
+
+64
+00:04:42,680 --> 00:04:48,990
+I of course will have a stock ID so this stock ID I want to have a stock price.
+
+65
+00:04:49,080 --> 00:04:51,100
+This stock price.
+
+66
+00:04:51,370 --> 00:04:57,370
+And we also want to have a quantity the quantity we enter into this field which is bind with bound with
+
+67
+00:04:57,430 --> 00:05:00,870
+the model to our return property here.
+
+68
+00:05:01,240 --> 00:05:06,300
+Our quantity property or excuse I do have access to the price.
+
+69
+00:05:06,580 --> 00:05:08,160
+So that should be a colon.
+
+70
+00:05:08,470 --> 00:05:16,780
+So I do have access to the price here because in my portfolio module in my store when getting a stock
+
+71
+00:05:16,780 --> 00:05:23,250
+portfolio I'm mapping each object in the xray and I do at this price field.
+
+72
+00:05:23,290 --> 00:05:27,950
+Now the only thing we're not doing right now is we're never using the stock portfolio Geter we're not
+
+73
+00:05:28,060 --> 00:05:33,430
+using it here in the singles stock I don't because that's not the place where we should use it and the
+
+74
+00:05:33,430 --> 00:05:35,380
+portfolio component is pretty empty.
+
+75
+00:05:35,380 --> 00:05:36,620
+We'll work on this soon.
+
+76
+00:05:36,670 --> 00:05:43,570
+But let me first finished is stock component because after creating the order we of course want to dispatch
+
+77
+00:05:43,570 --> 00:05:44,230
+it.
+
+78
+00:05:44,230 --> 00:05:53,140
+And now I'll show a different way to DUDAS by importing map actions from the U.S. since I only have
+
+79
+00:05:53,140 --> 00:05:59,200
+one action here that is a bit well too much work or you wouldn't actually need to do that you could
+
+80
+00:05:59,200 --> 00:06:00,760
+directly dispatch it here.
+
+81
+00:06:00,910 --> 00:06:02,640
+But I'll show it anyways.
+
+82
+00:06:02,770 --> 00:06:07,990
+So here I'll use the free dots to then call map actions and distribute all the properties.
+
+83
+00:06:07,980 --> 00:06:16,800
+Is this going to create for us and then to pass an array and I will simply import sell stock.
+
+84
+00:06:16,810 --> 00:06:22,170
+This now gives me access to this sell stock here.
+
+85
+00:06:22,240 --> 00:06:27,850
+I can now execute the Savely because I know this action will be created by MAP actions for me.
+
+86
+00:06:27,850 --> 00:06:33,540
+You could also pass an object here and map a different name for you to use in this component here.
+
+87
+00:06:33,640 --> 00:06:41,020
+Then the one you set up in the store sell stock is the name of Smurfit in the story.
+
+88
+00:06:41,410 --> 00:06:47,650
+With that we set up this note The next step is to go to our portfolio and actually load all our stocks
+
+89
+00:06:47,650 --> 00:06:47,910
+there.
+
+90
+00:06:47,920 --> 00:06:49,060
+So let's do that next.
+

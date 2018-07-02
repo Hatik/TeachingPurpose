@@ -1,0 +1,120 @@
+1
+00:00:01,700 --> 00:00:08,970
+To manage some law here or treat to slog I'll add a new property to the data object.
+
+2
+00:00:09,050 --> 00:00:16,630
+I'll name it turns because I want to store and separate turns of the game there and then lock them to
+
+3
+00:00:16,630 --> 00:00:20,070
+this page to this area I'd set up for this.
+
+4
+00:00:20,510 --> 00:00:23,800
+So how should turd's get updated.
+
+5
+00:00:23,900 --> 00:00:27,900
+How do we want to manage our turns.
+
+6
+00:00:28,190 --> 00:00:34,870
+Now if we attack for example then I want to push a new turn on this Turin's aere.
+
+7
+00:00:35,150 --> 00:00:44,720
+So here after attacks I want to add and U-turn so I can say this torrents and I don't want to push it.
+
+8
+00:00:44,720 --> 00:00:47,160
+Actually I don't want to add it at the end.
+
+9
+00:00:47,180 --> 00:00:49,940
+Let's say I want to add it at the beginning.
+
+10
+00:00:50,000 --> 00:00:52,360
+The opposite of pushed is on shift.
+
+11
+00:00:52,370 --> 00:00:58,780
+So this adds just turn as the first item in the array and shift all the items one element to the right.
+
+12
+00:00:58,790 --> 00:01:05,960
+So to say so I want to shift a new item on this turn every disappear.
+
+13
+00:01:06,170 --> 00:01:11,330
+Object where I determine if it is the player who did this turn.
+
+14
+00:01:11,330 --> 00:01:15,380
+I'll set this to true here and then some text.
+
+15
+00:01:15,380 --> 00:01:22,710
+Now the text should be what we did and how much damage we dealt or how much we healed.
+
+16
+00:01:22,910 --> 00:01:32,660
+So here we could say player hits monster 4 and then here the value should be the damage.
+
+17
+00:01:32,660 --> 00:01:37,040
+Now for that I need to store damage in a separate variable.
+
+18
+00:01:37,040 --> 00:01:44,320
+I can use it like this anymore so let's simply use a separate variable here to have the damage Idel
+
+19
+00:01:44,360 --> 00:01:48,160
+to your and this should store this in days.
+
+20
+00:01:48,180 --> 00:01:50,240
+Turin's array.
+
+21
+00:01:50,280 --> 00:01:56,330
+Now let's see if this works and we'll have to fine tune this little bit later.
+
+22
+00:01:56,340 --> 00:02:02,990
+But for now let's also all added for the monster and the monster attacks a year.
+
+23
+00:02:03,000 --> 00:02:12,870
+Here we want to say monster hits player 4 and all the stored damage year in a separate variable so that
+
+24
+00:02:12,900 --> 00:02:16,190
+we lock the correct damage here.
+
+25
+00:02:16,320 --> 00:02:20,600
+We clearly can't call this calculate damage down there again.
+
+26
+00:02:20,610 --> 00:02:24,630
+We would get a new random number and of course this is not the player.
+
+27
+00:02:24,630 --> 00:02:26,920
+So let's set it to False.
+
+28
+00:02:27,060 --> 00:02:31,440
+With this set up we are adding items to our array.
+
+29
+00:02:31,440 --> 00:02:36,740
+Now we also want to print this array in the index HVM Alphonso that we can see it.
+
+30
+00:02:36,750 --> 00:02:38,980
+So let's do this in the next video.
+

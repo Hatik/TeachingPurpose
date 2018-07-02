@@ -1,0 +1,68 @@
+1
+00:00:01,830 --> 00:00:08,310
+Time to use the things we all learn in this module and put it into practice with a few little exercises
+
+2
+00:00:08,310 --> 00:00:14,070
+about forms Specifically here's what I want you to try before then and the next would you show you which
+
+3
+00:00:14,070 --> 00:00:16,330
+solution I came up with.
+
+4
+00:00:16,350 --> 00:00:21,630
+So the first exercises that we should create as sign up form where you are treat the following information
+
+5
+00:00:21,630 --> 00:00:28,470
+full name which is a first and last name field mail password and then a radio button if we want to store
+
+6
+00:00:28,470 --> 00:00:34,440
+the data yes or no at the bottom of this template you can find this template and attached to this lecture
+
+7
+00:00:34,440 --> 00:00:34,920
+here.
+
+8
+00:00:35,100 --> 00:00:41,240
+You'll find the simple output data sheet as we saw it before where we can then present this information
+
+9
+00:00:41,620 --> 00:00:44,200
+in the second exercise here.
+
+10
+00:00:44,340 --> 00:00:51,000
+I want you to enhance that by making sure that the form which you have to read up here of course is
+
+11
+00:00:51,000 --> 00:00:57,780
+only visible as long as we haven't hit the reset button which you have to create as well where as the
+
+12
+00:00:57,870 --> 00:01:02,220
+data sheet here is only visible after you hit the submit button.
+
+13
+00:01:02,220 --> 00:01:03,640
+So that's a little addition.
+
+14
+00:01:03,900 --> 00:01:10,650
+And the third exercise I want you to take your full name which is a first and last name input field
+
+15
+00:01:10,980 --> 00:01:16,740
+and create your own component which kind of combines both inputs into one single control you can then
+
+16
+00:01:16,740 --> 00:01:21,390
+dump into your project here to get a full name out of the box.
+
+17
+00:01:21,480 --> 00:01:27,280
+Well of that I wish you good luck or good experience with that and I'll see you in a solution video.
+

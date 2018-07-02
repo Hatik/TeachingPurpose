@@ -1,0 +1,156 @@
+1
+00:00:02,270 --> 00:00:05,390
+In the last lecture we added Raut protection.
+
+2
+00:00:05,420 --> 00:00:10,830
+Now of course it would also be nice to not even show a link to that route if we can go there.
+
+3
+00:00:10,880 --> 00:00:13,400
+So I need to adjust what output in the header.
+
+4
+00:00:13,430 --> 00:00:15,530
+Depending on the off state.
+
+5
+00:00:15,640 --> 00:00:17,480
+Now that's super simple.
+
+6
+00:00:17,510 --> 00:00:18,640
+Let's go to the store.
+
+7
+00:00:18,650 --> 00:00:24,470
+First of all and let's add a new Geter and their own name it is authenticated.
+
+8
+00:00:24,530 --> 00:00:31,260
+You can choose any name you want is indicated as a method as all getters which receives the state and
+
+9
+00:00:31,260 --> 00:00:45,910
+they simply return the result of a very trivial check all see if state ID token is equal to no not equal
+
+10
+00:00:45,910 --> 00:00:46,240
+to nil.
+
+11
+00:00:46,240 --> 00:00:52,080
+I mean if it's not equal to NULL we are offene get it because then we have a token.
+
+12
+00:00:52,240 --> 00:00:56,190
+So that is why the return is authentic it is a getter.
+
+13
+00:00:56,200 --> 00:01:01,730
+I can now use in my head a component there I'll add my script Tex.
+
+14
+00:01:02,080 --> 00:01:10,750
+Export the default object and add a computed property to map my Geter to some property I can use in
+
+15
+00:01:10,750 --> 00:01:13,360
+the header component here.
+
+16
+00:01:13,390 --> 00:01:15,600
+I will name it off.
+
+17
+00:01:15,700 --> 00:01:17,420
+You can change any name you want.
+
+18
+00:01:17,590 --> 00:01:24,190
+It's a method as all computer properties and I will return the result of this reach out to the store
+
+19
+00:01:24,490 --> 00:01:33,580
+gatherer's and there reach out to this new is offene hated Gadar we just added a second ago as all getters
+
+20
+00:01:33,730 --> 00:01:35,870
+don't executed as a function.
+
+21
+00:01:35,920 --> 00:01:37,690
+Use it as a property.
+
+22
+00:01:37,930 --> 00:01:39,900
+X will do the rest.
+
+23
+00:01:39,940 --> 00:01:46,840
+So now we get this is often we get information from the store in the header we can now use is off property
+
+24
+00:01:46,840 --> 00:01:52,510
+which disinformation is mapped to to only rendered the links we want to render.
+
+25
+00:01:52,780 --> 00:01:59,290
+So for sign up we can use AVF to only render this if we're not often the case that because signing up
+
+26
+00:01:59,290 --> 00:02:07,270
+only makes sense if we're not of indicated the same foresight in we if not off is the right check here
+
+27
+00:02:07,690 --> 00:02:09,660
+for that dashboard on the average hand.
+
+28
+00:02:09,820 --> 00:02:12,250
+I want to check if we are authentic.
+
+29
+00:02:12,490 --> 00:02:16,320
+So does is what I don't map with this.
+
+30
+00:02:16,560 --> 00:02:22,520
+If I go back to my application and reload we can already see it.
+
+31
+00:02:22,590 --> 00:02:29,010
+We get sign up and sign in as soon as it was signed and though we only got the dashboard.
+
+32
+00:02:29,010 --> 00:02:30,390
+Now that's great.
+
+33
+00:02:30,390 --> 00:02:32,810
+Now we got a working UI update.
+
+34
+00:02:32,820 --> 00:02:40,100
+Depending on the of state is speaking on the off state we can always reload to log out.
+
+35
+00:02:40,200 --> 00:02:44,700
+By the way something we'll all to work on later so that we persists the state.
+
+36
+00:02:44,970 --> 00:02:49,490
+We haven't used dead local storage thing from the sleights at all yet.
+
+37
+00:02:49,830 --> 00:02:54,790
+But before we move onto debt why don't we add a log out button to.
+
+38
+00:02:54,810 --> 00:02:56,330
+Wouldn't that be nice.
+
+39
+00:02:56,340 --> 00:02:58,510
+Let's do this in the next lecture.
+

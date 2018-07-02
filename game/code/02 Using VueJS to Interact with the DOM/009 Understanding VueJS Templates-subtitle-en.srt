@@ -1,0 +1,116 @@
+1
+00:00:02,220 --> 00:00:08,340
+So back it cheers in a brand new project the very simple one as you can tell I do have my paragraph
+
+2
+00:00:08,340 --> 00:00:12,330
+where output a title and the title is simply as hello world here.
+
+3
+00:00:12,600 --> 00:00:18,030
+So pretty much the same as we had in the first module Chester Frontex and a little bit leaner.
+
+4
+00:00:18,030 --> 00:00:25,410
+No event as of now because what I want to start with is this connection between this new instance and
+
+5
+00:00:25,520 --> 00:00:27,530
+does HVM all code.
+
+6
+00:00:27,960 --> 00:00:34,080
+I already explained that we have this kind of connection but there is one important thing to understand
+
+7
+00:00:34,410 --> 00:00:36,140
+which I want to highlight right now.
+
+8
+00:00:36,420 --> 00:00:42,210
+By creating this new view Chasey instance there and nodes that we don't store in any variable it is
+
+9
+00:00:42,210 --> 00:00:50,160
+still created though by instantiating DISA instance we do create this connection and view chance then
+
+10
+00:00:50,160 --> 00:00:51,000
+takes this.
+
+11
+00:00:51,030 --> 00:00:55,920
+Each team will call it up there and creates a template based on that code.
+
+12
+00:00:56,040 --> 00:01:04,410
+And this is important to understand Buquet asked does not add runtime use our aged Yamal code and have
+
+13
+00:01:04,410 --> 00:01:06,670
+these commands in our age HTML code.
+
+14
+00:01:06,720 --> 00:01:11,470
+You can actually see this if we inspected Hello World text here.
+
+15
+00:01:11,820 --> 00:01:13,060
+Then you'll see that here.
+
+16
+00:01:13,080 --> 00:01:18,540
+Of course we only have hello world we don't see any Colie bracers we don't see any AVL code which was
+
+17
+00:01:18,540 --> 00:01:23,680
+added by Buga has no hidden hint that there would be some magic going on.
+
+18
+00:01:23,790 --> 00:01:33,270
+Nothing at all future US creates a template based on our HTL code store staed internally and then basically
+
+19
+00:01:33,270 --> 00:01:40,870
+uses this template to create a real paged him out code which then is rendered as to dawn.
+
+20
+00:01:40,890 --> 00:01:47,460
+This is important to understand because this allows us to use templates syntax like that and like all
+
+21
+00:01:47,460 --> 00:01:53,040
+the other things that will teach you for all the scores in the HMO code we write because it's not the
+
+22
+00:01:53,040 --> 00:01:55,980
+one running in the browser in the end.
+
+23
+00:01:55,980 --> 00:02:01,080
+There is this layer in the middle and this layer is the Eugenius instance which takes our age do you
+
+24
+00:02:01,080 --> 00:02:09,030
+mean the code creates a template renders this template by example entering the title year and then outputs
+
+25
+00:02:09,030 --> 00:02:12,570
+the final HVM all code which gets rendered here.
+
+26
+00:02:12,600 --> 00:02:18,660
+You might have been aware of that already but if not this is really important to understand why we were
+
+27
+00:02:18,660 --> 00:02:23,560
+able to write the code as we do up here on the top left corner.
+
+28
+00:02:23,640 --> 00:02:24,820
+With that out of the way.
+
+29
+00:02:24,910 --> 00:02:32,700
+Well let's dive deeper into how we can interact with the DOM Brutus template approach by using Gujarat's.
+

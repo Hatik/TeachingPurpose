@@ -1,0 +1,156 @@
+1
+00:00:01,890 --> 00:00:06,410
+Now let's continue with our forum how shall you deal with a text area like this one.
+
+2
+00:00:06,420 --> 00:00:07,670
+How does this work.
+
+3
+00:00:07,920 --> 00:00:11,700
+Well let's go back to the forum and here is my text area.
+
+4
+00:00:11,910 --> 00:00:15,460
+Unsurprisingly it also works with V model.
+
+5
+00:00:15,600 --> 00:00:19,480
+So life does not already have a node up there though.
+
+6
+00:00:19,560 --> 00:00:25,650
+Interpellation between the text area or opening a closing tag like interpolating a task variable does
+
+7
+00:00:25,650 --> 00:00:26,870
+not work.
+
+8
+00:00:26,880 --> 00:00:31,440
+Instead you should use the model to set the default value for want to do this.
+
+9
+00:00:31,680 --> 00:00:34,000
+Well let's bind to message here.
+
+10
+00:00:34,020 --> 00:00:40,140
+And of course I need to create a new property named message in my data field therefore message.
+
+11
+00:00:40,140 --> 00:00:42,890
+Now this could be a long text by default.
+
+12
+00:00:43,020 --> 00:00:49,490
+I'll simply pick a short one and you will see that this now prae populates this message box here.
+
+13
+00:00:49,620 --> 00:00:53,080
+So this is how you pre-populated that that's just important to keep in mind.
+
+14
+00:00:53,190 --> 00:00:55,980
+You use the model like with average input fields.
+
+15
+00:00:55,980 --> 00:01:01,680
+But if you want to set a default value year don't do it between the opening and closing tag of the text
+
+16
+00:01:01,680 --> 00:01:02,110
+area.
+
+17
+00:01:02,130 --> 00:01:07,380
+Use vi mall for that like you do the input fields but with the text area having the opening and closing
+
+18
+00:01:07,380 --> 00:01:15,210
+tag you could think that you can access this between area here and use string interpolation there and
+
+19
+00:01:15,210 --> 00:01:17,810
+that will actually not work as intended.
+
+20
+00:01:17,850 --> 00:01:22,790
+So make sure to not use this area and use the model instead.
+
+21
+00:01:22,800 --> 00:01:29,870
+So let me look at my data field Oh and that should be of course the password of my user data.
+
+22
+00:01:30,030 --> 00:01:37,850
+And then your message shell of course output My message that we see how easy it is to to see and you
+
+23
+00:01:37,860 --> 00:01:39,030
+text here.
+
+24
+00:01:39,060 --> 00:01:48,140
+And if I change that to change text something else well then we see whoops that it also updates sound
+
+25
+00:01:48,150 --> 00:01:48,820
+there.
+
+26
+00:01:48,820 --> 00:01:53,650
+Now what you also see is that it doesn't keep the line break though.
+
+27
+00:01:53,860 --> 00:02:00,070
+What if you want to keep that structure what you wanted to keep that line break and not can word it
+
+28
+00:02:00,130 --> 00:02:03,540
+to a single line string like it does right now.
+
+29
+00:02:03,850 --> 00:02:06,000
+Well actually it does sort of multi-line.
+
+30
+00:02:06,070 --> 00:02:11,620
+I'm just not outputting it like this but outputting it with multiple lines is as easy as adding a new
+
+31
+00:02:11,620 --> 00:02:16,570
+style to my paragraph down there and that's normal style knobbing view Che aspecific.
+
+32
+00:02:16,570 --> 00:02:23,470
+And here you want to set whitespace to prie that's a C S S option which will keep your multi-line string
+
+33
+00:02:23,890 --> 00:02:30,850
+so as you can now see I am keeping the line breaks now what so it was a pure output styling thing not
+
+34
+00:02:30,850 --> 00:02:32,570
+something you messed up.
+
+35
+00:02:32,590 --> 00:02:37,740
+It is stored as a multi-line string that's important to understand and keep in mind if you wanted and
+
+36
+00:02:37,740 --> 00:02:43,660
+sent it to a server let's say and save it there you can contain the styling or the formatting you have
+
+37
+00:02:43,660 --> 00:02:44,470
+set up here.
+
+38
+00:02:44,490 --> 00:02:50,010
+And with that I basically mean adding line breaks and this de-evolved input field or default text area
+
+39
+00:02:50,010 --> 00:02:50,460
+here.
+

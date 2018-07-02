@@ -1,0 +1,296 @@
+1
+00:00:01,920 --> 00:00:06,990
+So we pass data from parent to child and the other way around and we saw two different ways of doing
+
+2
+00:00:06,990 --> 00:00:10,730
+that with a customer event or using a callback.
+
+3
+00:00:11,040 --> 00:00:14,690
+Now I went to get some data from one child to number one.
+
+4
+00:00:14,970 --> 00:00:16,770
+And how can we do this.
+
+5
+00:00:16,800 --> 00:00:23,850
+We got to or depending on how you counted three different ways of doing so let's start with method number
+
+6
+00:00:23,850 --> 00:00:24,820
+one.
+
+7
+00:00:25,230 --> 00:00:35,520
+Let's say in the user added component here I will have a new button which allows me to edit D.H. here
+
+8
+00:00:35,520 --> 00:00:44,450
+I will have a new click listener where I say added age and I need to add an object to your where I say
+
+9
+00:00:44,700 --> 00:00:54,400
+or where have some methods one of them being at that age where I want to set some age to let's say 30.
+
+10
+00:00:54,470 --> 00:00:57,460
+But I don't have the age object there yet.
+
+11
+00:00:57,710 --> 00:01:03,800
+So I will store that in the parent component and the user component here in my data object and also
+
+12
+00:01:03,840 --> 00:01:07,170
+have an age which is 27 by default.
+
+13
+00:01:07,260 --> 00:01:17,210
+I went past us as a prop let's name it user age and refer it to the age in my data property to the user
+
+14
+00:01:17,270 --> 00:01:18,520
+added component.
+
+15
+00:01:18,680 --> 00:01:20,560
+This is how we learned it before.
+
+16
+00:01:20,930 --> 00:01:26,150
+And they're there for now only to set up my props and I'll keep it simple and stick to an array.
+
+17
+00:01:26,150 --> 00:01:30,830
+Don't want to set up validation here and simply named user age.
+
+18
+00:01:30,830 --> 00:01:34,810
+So this is just a name I'm using in my computer and here for the prob..
+
+19
+00:01:34,880 --> 00:01:39,540
+Now that gives me the age in the user edit component I can change it there.
+
+20
+00:01:39,560 --> 00:01:41,900
+And with that it will stay there.
+
+21
+00:01:41,900 --> 00:01:45,880
+Now let's say in user detail or is it want to output the age.
+
+22
+00:01:46,040 --> 00:01:54,100
+So there I also PAHs user age referring to this age in the data object again and in user detail.
+
+23
+00:01:54,110 --> 00:01:59,620
+I therefore added here user age which will be a number actually.
+
+24
+00:01:59,720 --> 00:02:09,960
+So let's set it up type number and in there I now want to get the update from the user edit component.
+
+25
+00:02:09,960 --> 00:02:19,250
+Now let's see this in action by adding a new field user age and outputting user age this prob I'm getting
+
+26
+00:02:19,430 --> 00:02:21,230
+there it is.
+
+27
+00:02:21,380 --> 00:02:29,060
+Loads we see 27 year and let's maybe also output it in the user edit component so that we can see the
+
+28
+00:02:29,300 --> 00:02:37,090
+current value we have there user age is user HOTU the prompt we're getting again.
+
+29
+00:02:37,430 --> 00:02:40,390
+And of course they also need to set this to user age.
+
+30
+00:02:40,390 --> 00:02:42,740
+Therefore since this is the problem.
+
+31
+00:02:42,770 --> 00:02:47,870
+So now if I click added age and well maybe load first.
+
+32
+00:02:47,970 --> 00:02:54,940
+So now victory EDID age here it changes to 30 in user edit component but not to user DTL component here.
+
+33
+00:02:54,970 --> 00:02:58,050
+There it is still 27.
+
+34
+00:02:58,360 --> 00:03:03,220
+And the reason for this of course is that the change only happened then the user added component were
+
+35
+00:03:03,250 --> 00:03:05,490
+not passing it to our parent component.
+
+36
+00:03:05,650 --> 00:03:08,570
+And we don't want to get to the parent component.
+
+37
+00:03:08,590 --> 00:03:12,520
+We only want to get it to let's say the user detailed component.
+
+38
+00:03:12,550 --> 00:03:17,310
+However as I explained on the slides this direct connection is not possible.
+
+39
+00:03:17,350 --> 00:03:21,250
+We have to take route over the parent component.
+
+40
+00:03:21,520 --> 00:03:28,860
+So one way to change it and that is the first way of doing so would be to set up a custom event we met.
+
+41
+00:03:28,870 --> 00:03:40,390
+So here when we added the age I also called emet and pass and he went named age was edited and passing
+
+42
+00:03:40,390 --> 00:03:43,450
+this user age as an argument here.
+
+43
+00:03:43,690 --> 00:03:54,070
+And then on the user component I can on my user edit component I can set up a listener with Ad Age was
+
+44
+00:03:54,190 --> 00:03:54,970
+edited.
+
+45
+00:03:55,100 --> 00:03:59,360
+There's a city name I'd shot chose here for the event.
+
+46
+00:03:59,680 --> 00:04:05,260
+And then the code execute I can simply say age equals dollars Sonnabend referring to the data which
+
+47
+00:04:05,260 --> 00:04:09,640
+was passed with the event which was the updated age.
+
+48
+00:04:09,670 --> 00:04:16,480
+Now with this emplace if I save this and go back to the application and reload it if I now click and
+
+49
+00:04:16,510 --> 00:04:22,870
+edit each year what's the age and the user detail component it was set to 30 now too because now we
+
+50
+00:04:22,870 --> 00:04:24,320
+take the following route.
+
+51
+00:04:24,490 --> 00:04:31,600
+We have the age set up in the user component and we pass it as a prop to both the user detail and user
+
+52
+00:04:31,660 --> 00:04:37,750
+edit component there after we change it in the user edit component and we emit a cast.
+
+53
+00:04:37,760 --> 00:04:43,570
+We went back to the user component there we were that he went we listened on the end or we listened
+
+54
+00:04:43,570 --> 00:04:50,490
+to this event and once the event is executed or happens we update the page in the user component.
+
+55
+00:04:50,560 --> 00:04:57,770
+Hence passing the new value down as a property to all components which use this property again.
+
+56
+00:04:57,820 --> 00:04:59,510
+Therefore also updating it.
+
+57
+00:04:59,590 --> 00:05:02,180
+Any user detailed component.
+
+58
+00:05:02,200 --> 00:05:07,100
+The second approach would have been to use this callback solution.
+
+59
+00:05:07,170 --> 00:05:08,850
+Now I'm not going to show it here.
+
+60
+00:05:08,920 --> 00:05:14,560
+We would have basically set up a method in the user component in the parent component like we did with
+
+61
+00:05:14,560 --> 00:05:22,080
+reset name then pass a pointer to that function like we did for the user detail component to the user
+
+62
+00:05:22,120 --> 00:05:28,330
+edit component as a property as a prop and then executed the user edit component.
+
+63
+00:05:28,330 --> 00:05:33,030
+So basically the same approach we used for the user name and reset name here.
+
+64
+00:05:33,130 --> 00:05:35,810
+I'm not going to show this because it's identical.
+
+65
+00:05:35,860 --> 00:05:42,340
+The third alternative however is brand new and this might be the solution you're looking for because
+
+66
+00:05:42,340 --> 00:05:49,230
+building these from child to parent to child Cheyne's can become very complicated quickly.
+
+67
+00:05:49,270 --> 00:05:55,150
+Imagine you got a child component in a child component in a parent component and you want to get to
+
+68
+00:05:55,210 --> 00:05:58,120
+another child component in an average child component.
+
+69
+00:05:58,270 --> 00:06:04,200
+So you have the child components as siblings and indeed child components have an average child component
+
+70
+00:06:04,690 --> 00:06:09,040
+then you would have to go from child to child to parent to child to child.
+
+71
+00:06:09,100 --> 00:06:10,730
+No that's no fun.
+
+72
+00:06:10,960 --> 00:06:14,300
+Instead we can use our event bus for days.
+
+73
+00:06:14,310 --> 00:06:21,300
+So kind of an object serving as a place to listen to events and passing data on.
+
+74
+00:06:21,370 --> 00:06:22,770
+Let's see how that would work.
+

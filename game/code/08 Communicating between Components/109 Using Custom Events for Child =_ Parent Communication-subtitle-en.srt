@@ -1,0 +1,312 @@
+1
+00:00:02,110 --> 00:00:08,290
+Well there was a lot of work and now we know how to pass data from a parent to a child and how to work
+
+2
+00:00:08,290 --> 00:00:10,900
+with that how to validate it and so on.
+
+3
+00:00:10,900 --> 00:00:13,070
+Now what if we want to do it the other way around.
+
+4
+00:00:13,270 --> 00:00:19,130
+Let's say here in our child we want to execute a function we want to pass.
+
+5
+00:00:19,150 --> 00:00:25,510
+And he went to our parent component so that the parent component gets informed about something or gets
+
+6
+00:00:25,510 --> 00:00:26,860
+a new value.
+
+7
+00:00:27,190 --> 00:00:34,330
+So let's say in our user detailed component here where right now output the name I went to have a button
+
+8
+00:00:34,810 --> 00:00:38,660
+which allows me to reset the name.
+
+9
+00:00:39,250 --> 00:00:43,830
+And here I want to execute a click function or on click.
+
+10
+00:00:43,840 --> 00:00:46,980
+I want to execute a function called Reset name.
+
+11
+00:00:47,080 --> 00:00:50,280
+Now for that of course I need to add it here.
+
+12
+00:00:50,290 --> 00:00:56,410
+Recept name and reset name should somehow change my name.
+
+13
+00:00:56,410 --> 00:01:01,090
+So he said this my name equal to Max.
+
+14
+00:01:01,090 --> 00:01:02,500
+Now here's an important note.
+
+15
+00:01:02,590 --> 00:01:06,220
+It's perfectly fine to access your property like this.
+
+16
+00:01:06,220 --> 00:01:10,210
+It's a property of does the new component here in the end.
+
+17
+00:01:10,480 --> 00:01:17,110
+But if that word a primitive so no string number or bullion but instead specially if that were an object
+
+18
+00:01:17,140 --> 00:01:18,300
+or an array.
+
+19
+00:01:18,310 --> 00:01:25,340
+Keep in mind that object and arrays are reference types which means they only exist in memory once.
+
+20
+00:01:25,420 --> 00:01:27,530
+And the variables are properties.
+
+21
+00:01:27,550 --> 00:01:32,910
+Storing them actually only store a pointer to a place and memory.
+
+22
+00:01:32,950 --> 00:01:39,070
+So if you pass an object or array from your parent to the child component you're actually passing the
+
+23
+00:01:39,070 --> 00:01:41,530
+pointer to that place in memory.
+
+24
+00:01:41,530 --> 00:01:48,070
+Hence if you change it in the child component you're changing the object in memory which only exists
+
+25
+00:01:48,100 --> 00:01:48,800
+once.
+
+26
+00:01:48,850 --> 00:01:52,210
+So you're also changing it in your parent component.
+
+27
+00:01:52,420 --> 00:01:57,940
+Now here it would actually be helpful because I want to reset the name and I could do it from my child
+
+28
+00:01:57,940 --> 00:02:01,200
+component and get it updated in the parent component automatically.
+
+29
+00:02:01,270 --> 00:02:03,750
+But oftentimes that will not be what you want.
+
+30
+00:02:03,910 --> 00:02:09,460
+And whether in this case it won't happen because you simply pass a string which is passed by copying
+
+31
+00:02:09,460 --> 00:02:11,710
+it and not by passing a pointer.
+
+32
+00:02:11,710 --> 00:02:17,490
+But it's important to keep this in mind the difference between reference types and primitive types.
+
+33
+00:02:17,530 --> 00:02:23,280
+So here we have a string and I'm now setting it back to Max when it clicked the reset button.
+
+34
+00:02:23,560 --> 00:02:24,640
+This is nice.
+
+35
+00:02:24,670 --> 00:02:30,110
+And if we have a look at this application here you can see it can change it to Anna.
+
+36
+00:02:30,120 --> 00:02:37,260
+And now I can reset it works fine but I also want to pass this back to the parent component which now
+
+37
+00:02:37,260 --> 00:02:43,710
+if I changed the name doesn't reset it because the parent component that name is still Annah.
+
+38
+00:02:43,830 --> 00:02:49,230
+Therefore Well it's not changing it it's not passing it again because the parent component the name
+
+39
+00:02:49,230 --> 00:02:51,010
+didn't change it still Anna.
+
+40
+00:02:51,030 --> 00:02:51,950
+I hope this is clear.
+
+41
+00:02:51,960 --> 00:02:54,110
+We only changed it in the child component.
+
+42
+00:02:54,450 --> 00:03:00,630
+So we need to inform the parent component that the name did indeed change and to do so we will need
+
+43
+00:03:00,630 --> 00:03:09,510
+to emit a custom event emitting a custom event may sound complicated but it is not in each view instance.
+
+44
+00:03:09,570 --> 00:03:16,980
+And keep in mind components only extend to view instant so they are kind of instances of U-2s you get
+
+45
+00:03:16,980 --> 00:03:25,590
+access to the emit event or emit method I should say with the dollar sign we can see that this is a
+
+46
+00:03:25,590 --> 00:03:32,020
+built in math that you chase gives us we could use it again in every component in every instance.
+
+47
+00:03:32,070 --> 00:03:35,930
+And this allows me to emit a custom event just like that.
+
+48
+00:03:36,060 --> 00:03:45,690
+Now on immured I specify the name of do you want I want to emit and hear its name was reset.
+
+49
+00:03:45,770 --> 00:03:48,200
+For example choose whatever name you like.
+
+50
+00:03:49,220 --> 00:03:52,260
+As a second argument you can pass some data.
+
+51
+00:03:52,280 --> 00:03:53,920
+So here is this.
+
+52
+00:03:54,050 --> 00:04:02,890
+My name the updated name that emits an event now in the parent component and the user view file.
+
+53
+00:04:02,960 --> 00:04:04,210
+We can listen to that.
+
+54
+00:04:04,220 --> 00:04:11,330
+How do we listen to an event like will listen to all events on the selector of my user detail component
+
+55
+00:04:11,360 --> 00:04:13,430
+which is the component emitting event.
+
+56
+00:04:13,640 --> 00:04:21,470
+I can add a event listener with the on or short cut at and then the name of the event remember the name
+
+57
+00:04:21,470 --> 00:04:23,300
+is name was reset.
+
+58
+00:04:23,300 --> 00:04:30,960
+So here I can listen to name was reset like this and then I can execute some code.
+
+59
+00:04:31,020 --> 00:04:38,100
+Now I could execute a method here or I can simply say name which is the property I'm using to store
+
+60
+00:04:38,100 --> 00:04:44,460
+the name and the user component equals dollar sign event where dollar sign event refers to the data
+
+61
+00:04:44,460 --> 00:04:46,350
+which was player passed from the event.
+
+62
+00:04:46,470 --> 00:04:50,650
+And remember I'm passing the updated name here as data.
+
+63
+00:04:51,060 --> 00:04:57,630
+So if I do this and reload my application you can see I can change my name to Anna.
+
+64
+00:04:57,660 --> 00:04:59,820
+I can reset it.
+
+65
+00:05:00,020 --> 00:05:06,290
+And now I can change it again because now it was updated in the user component and we can actually see
+
+66
+00:05:06,290 --> 00:05:15,110
+this if I simply print that in my user component here let's say below the button I have name is and
+
+67
+00:05:15,110 --> 00:05:19,190
+then I output the name in the parent component here.
+
+68
+00:05:19,280 --> 00:05:22,790
+If I do this we see let's the name of Max.
+
+69
+00:05:22,850 --> 00:05:23,570
+Change it.
+
+70
+00:05:23,570 --> 00:05:24,320
+It changes to.
+
+71
+00:05:24,320 --> 00:05:28,990
+And both components add up all resetting it changes back.
+
+72
+00:05:29,180 --> 00:05:35,380
+And before we had the behavior I can demonstrate this by removing the event that this will not will
+
+73
+00:05:35,430 --> 00:05:36,290
+was not the case.
+
+74
+00:05:36,290 --> 00:05:37,010
+We changed it.
+
+75
+00:05:37,010 --> 00:05:41,240
+We reset it and it stayed an independent component nonetheless.
+
+76
+00:05:41,240 --> 00:05:47,090
+So now we're admitting our customer event and we're listening to it in the parent component.
+
+77
+00:05:47,180 --> 00:05:50,730
+And this is how we can pass data from the child to the bird.
+
+78
+00:05:50,930 --> 00:05:52,730
+And not only the other way around.
+

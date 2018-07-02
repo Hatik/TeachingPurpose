@@ -1,0 +1,108 @@
+1
+00:00:01,870 --> 00:00:05,090
+So we've played around with routeing quite a bit here now.
+
+2
+00:00:05,110 --> 00:00:07,400
+One case we haven't covered is the following.
+
+3
+00:00:07,540 --> 00:00:13,090
+What if the user enters anything here which is not covered by the app.
+
+4
+00:00:13,180 --> 00:00:16,510
+While we don't see an error here but we also don't see a fitting page.
+
+5
+00:00:16,570 --> 00:00:23,140
+So we want to redirect in some cases especially in cases like this where any route not covered by our
+
+6
+00:00:23,140 --> 00:00:24,570
+router is entered.
+
+7
+00:00:24,930 --> 00:00:31,790
+Well the two things work together well here but you can of course also redirect on any specific path.
+
+8
+00:00:31,990 --> 00:00:35,450
+So let me first Chodas I'll add a new route here.
+
+9
+00:00:35,500 --> 00:00:39,060
+At the end so that my more specific POVs come first.
+
+10
+00:00:39,070 --> 00:00:44,090
+And here are set up a path of redirect me like this.
+
+11
+00:00:44,350 --> 00:00:48,490
+And I want to set up a redirection so I'm not going to load a component here.
+
+12
+00:00:48,700 --> 00:00:52,290
+Instead what I will do here is I'll add the redirect key.
+
+13
+00:00:52,300 --> 00:00:56,780
+This allows me to specify a path to which I should redirect the user.
+
+14
+00:00:56,980 --> 00:01:02,800
+So here let's say you want to redirect to just user so I specify the path as a string here.
+
+15
+00:01:02,800 --> 00:01:09,010
+And with that we should have an application where if a wizard slash redirect me I should add a slash
+
+16
+00:01:09,010 --> 00:01:09,930
+there for here.
+
+17
+00:01:10,030 --> 00:01:15,930
+If a wizard slash redirect me were redirected to slash user as a let's try this out.
+
+18
+00:01:15,940 --> 00:01:20,340
+Let's go to slash redirect me and we're back to slash user.
+
+19
+00:01:20,400 --> 00:01:22,120
+This is how we can redirect.
+
+20
+00:01:22,300 --> 00:01:30,850
+You can also specify an object here to again use a name drought's for example to go to user edit for
+
+21
+00:01:30,850 --> 00:01:36,500
+example and then pass some parameter parameters or you go to home for example like this.
+
+22
+00:01:36,580 --> 00:01:39,270
+So you can specify a normal object.
+
+23
+00:01:39,310 --> 00:01:47,380
+You also used in your router link or here for pushing when navigating in code this is the normal object
+
+24
+00:01:47,380 --> 00:01:52,540
+for setting up a route you want to navigate to and you can use that for redirecting to.
+
+25
+00:01:52,840 --> 00:01:59,290
+So does this how we can redirect the user and make sure we're navigating him where we want him to be
+
+26
+00:01:59,290 --> 00:02:04,940
+navigated but we're not capturing the case that I enter anything in here.
+
+27
+00:02:05,020 --> 00:02:10,680
+Now in order to be able to handle such Trout's will have a different set up in the next video.
+

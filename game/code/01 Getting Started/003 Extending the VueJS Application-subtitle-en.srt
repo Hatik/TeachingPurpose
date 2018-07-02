@@ -1,0 +1,264 @@
+1
+00:00:01,900 --> 00:00:07,530
+Now in the last lecture we already create our first view application and got started with it.
+
+2
+00:00:07,540 --> 00:00:09,860
+Now let's enhance it a little bit more before I.
+
+3
+00:00:09,880 --> 00:00:14,410
+Then of course dive much deeper into it in the next course sections.
+
+4
+00:00:14,410 --> 00:00:18,790
+So what I want to do right now though is I want to add an input field.
+
+5
+00:00:18,790 --> 00:00:24,150
+I can do this by typing input and hitting tab which will give me that and cheers for Will and now this
+
+6
+00:00:24,170 --> 00:00:29,740
+input here I want to allow the user to type something there and update my title depending on what the
+
+7
+00:00:29,740 --> 00:00:30,880
+user enters.
+
+8
+00:00:31,210 --> 00:00:37,810
+Well I can do this by adding a command to the input field instruction view chiasm will recognize this
+
+9
+00:00:37,810 --> 00:00:39,690
+is called a directive.
+
+10
+00:00:39,720 --> 00:00:45,970
+The directive and Eolas V dash on and does as just set a special command view class will recognize.
+
+11
+00:00:45,970 --> 00:00:49,300
+Keep in mind this whole part is under control of you.
+
+12
+00:00:49,630 --> 00:00:55,170
+And then the thing does the on command tells of Mujeres is.
+
+13
+00:00:55,240 --> 00:00:58,470
+Please listen to some event know which you went.
+
+14
+00:00:58,480 --> 00:01:04,330
+I passed this as an argument and arguments are passed to directives by adding a colon and then the name
+
+15
+00:01:04,330 --> 00:01:05,000
+of the argument.
+
+16
+00:01:05,020 --> 00:01:09,790
+In this case the name of the event I want to listen to it's the input event which is fired on every
+
+17
+00:01:09,790 --> 00:01:10,880
+keystroke.
+
+18
+00:01:11,080 --> 00:01:17,260
+And then I assign a value to this and between the quotation marks I would now write the code which I
+
+19
+00:01:17,260 --> 00:01:18,550
+want to execute.
+
+20
+00:01:18,590 --> 00:01:20,770
+When ever this gets updated.
+
+21
+00:01:20,950 --> 00:01:26,720
+So a year what I want to do is I want to call a method and calling a method is very simple.
+
+22
+00:01:26,740 --> 00:01:29,450
+I can simply call change title here.
+
+23
+00:01:29,470 --> 00:01:31,420
+Now of course this method doesn't exist yet.
+
+24
+00:01:31,540 --> 00:01:35,780
+So that's created creating Navitas as simple as data.
+
+25
+00:01:35,790 --> 00:01:40,990
+Beauty has also got a reserved property in the view instance which is called methods and the worries
+
+26
+00:01:41,020 --> 00:01:46,630
+you will learn about all these reserved property names and how the word for the course method is again
+
+27
+00:01:46,630 --> 00:01:47,610
+an object.
+
+28
+00:01:47,620 --> 00:01:53,350
+And here we simply set up all the methods we want to use either in our template work from within our
+
+29
+00:01:53,350 --> 00:01:54,620
+view instance.
+
+30
+00:01:54,640 --> 00:01:56,810
+So here I named it change tile up there.
+
+31
+00:01:56,830 --> 00:01:57,500
+So let's name it.
+
+32
+00:01:57,520 --> 00:02:01,300
+Change Heiliger here to does as a function there for.
+
+33
+00:02:01,520 --> 00:02:05,040
+And now in this function I want to change my title.
+
+34
+00:02:05,040 --> 00:02:06,870
+And here's the first important thing.
+
+35
+00:02:07,030 --> 00:02:08,240
+I won't say that.
+
+36
+00:02:08,260 --> 00:02:09,720
+Tile or something like that.
+
+37
+00:02:09,880 --> 00:02:12,980
+Instead I can say this title equals.
+
+38
+00:02:13,180 --> 00:02:19,280
+Now this referring to the data object certainly looks a bit strange and it is strange.
+
+39
+00:02:19,330 --> 00:02:26,500
+It's some magic being done in the background by you chase it proxies all our data properties like title
+
+40
+00:02:26,770 --> 00:02:29,740
+to the top view instance object automatically.
+
+41
+00:02:29,770 --> 00:02:31,820
+Which is why we can access it with this.
+
+42
+00:02:31,870 --> 00:02:36,520
+I will come back to this later in the course but for now it's just important to keep in mind you got
+
+43
+00:02:36,520 --> 00:02:42,880
+access to all the properties stored in data and also to all the methods stored and methods by accessing
+
+44
+00:02:42,880 --> 00:02:44,030
+them with this.
+
+45
+00:02:44,080 --> 00:02:44,960
+And then the name.
+
+46
+00:02:45,100 --> 00:02:51,010
+So this title gives me access to the title stored here and now I want to assign you value to user entered
+
+47
+00:02:51,010 --> 00:02:52,150
+into the input.
+
+48
+00:02:52,430 --> 00:02:58,870
+Well thankfully as with that knowledge javascript there is this event object being created automatically
+
+49
+00:02:58,870 --> 00:02:59,390
+for me.
+
+50
+00:02:59,410 --> 00:03:04,230
+This has nothing to do with view taste is as vanilla javascript and how that Dom works.
+
+51
+00:03:04,270 --> 00:03:09,790
+I get this event object which for example all the stores target the event which of course will be this
+
+52
+00:03:09,790 --> 00:03:11,380
+input field.
+
+53
+00:03:11,390 --> 00:03:18,340
+Now this event object which is created automatically by chala script is passed to this method automatically
+
+54
+00:03:18,340 --> 00:03:19,600
+by the U.K.'s.
+
+55
+00:03:19,600 --> 00:03:25,180
+So I can fetch it because I know it will receive an argument and I'll name it event does against a default
+
+56
+00:03:25,180 --> 00:03:27,730
+event object created by javascript.
+
+57
+00:03:27,730 --> 00:03:34,210
+Now you can simply say and I know that the Stevel object has a target property and I know that the target
+
+58
+00:03:34,210 --> 00:03:39,700
+will be the input field of which I know it will have a value property holding the value the user entered.
+
+59
+00:03:40,090 --> 00:03:45,790
+Well and with this emplace That's all if we now control enter again we see this input and if we type
+
+60
+00:03:45,790 --> 00:03:48,910
+something there we see that it updates our title.
+
+61
+00:03:48,940 --> 00:03:50,340
+This is awesome I'd say.
+
+62
+00:03:50,380 --> 00:03:55,150
+Our first duty as application and we bolted in like eight minutes.
+
+63
+00:03:55,150 --> 00:03:56,320
+Really awesome.
+
+64
+00:03:56,590 --> 00:04:02,380
+So with that let's see how you can work your way through discours what this course has to offer how
+
+65
+00:04:02,380 --> 00:04:05,860
+you could set up the same example locally on your machine.
+
+66
+00:04:05,920 --> 00:04:09,870
+Before we Denne dive super deep into view chairs and the next lectures.
+

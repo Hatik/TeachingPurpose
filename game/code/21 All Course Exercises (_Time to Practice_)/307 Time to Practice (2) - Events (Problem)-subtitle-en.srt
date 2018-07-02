@@ -1,0 +1,88 @@
+1
+00:00:01,830 --> 00:00:07,110
+Time we're number exercise we learn about events and how we could work with them time to put this into
+
+2
+00:00:07,110 --> 00:00:12,670
+practice and get deeper into when to really work with them without any issues.
+
+3
+00:00:12,690 --> 00:00:16,240
+Here are the exercises I prepared in the first task.
+
+4
+00:00:16,290 --> 00:00:20,310
+I want you to simply show an alert whenever we click this button.
+
+5
+00:00:20,340 --> 00:00:25,280
+This should be pretty straightforward to handle with an event handler and probably a function just a
+
+6
+00:00:25,270 --> 00:00:26,300
+little bit.
+
+7
+00:00:26,460 --> 00:00:33,670
+The second exercise here then is a bit of a more advanced technique but we also learn this here.
+
+8
+00:00:33,750 --> 00:00:41,470
+I want you to listen to a key down event on this input here and store the value in a data property.
+
+9
+00:00:41,490 --> 00:00:47,580
+So we kind of need access to the value of this input field here of this input element.
+
+10
+00:00:47,580 --> 00:00:48,670
+And here's a hint.
+
+11
+00:00:48,690 --> 00:00:55,980
+Event target of value might give us value the key down event might be one you want to listen to to successfully
+
+12
+00:00:55,980 --> 00:01:01,890
+store the value in a data property and we output this value property below this input so that you can
+
+13
+00:01:01,890 --> 00:01:03,810
+see what we entered.
+
+14
+00:01:03,810 --> 00:01:08,330
+The third exercise here then takes the last one the second one.
+
+15
+00:01:08,400 --> 00:01:14,660
+But here we want to make sure that yes we still listen to key down but only if the entry keys pressed.
+
+16
+00:01:14,670 --> 00:01:17,760
+Do we want to refresh this value property.
+
+17
+00:01:17,760 --> 00:01:22,620
+We also learn a way to well constrain the keys we're listening to.
+
+18
+00:01:22,620 --> 00:01:28,530
+These are the free exercises using how you call functions how you execute code how you pass arguments
+
+19
+00:01:28,530 --> 00:01:30,870
+how you work with the default event argument.
+
+20
+00:01:31,050 --> 00:01:33,690
+And with that said let's get started.
+
+21
+00:01:33,720 --> 00:01:39,450
+And in the next video we can solve this together in case you got stuck somewhere or simply want to compare
+
+22
+00:01:39,450 --> 00:01:40,350
+your solution.
+

@@ -1,0 +1,280 @@
+1
+00:00:01,610 --> 00:00:06,170
+So we want to use mutations to change our state.
+
+2
+00:00:06,200 --> 00:00:12,620
+So let's gorj go to the store to cheers fallen at some mutations like getters and state does of course
+
+3
+00:00:12,650 --> 00:00:20,450
+is a reserve property name which view X will detect and recognize and now mutations is again last or
+
+4
+00:00:20,510 --> 00:00:23,540
+just a couple of methods we can execute.
+
+5
+00:00:23,540 --> 00:00:30,740
+For example let's add the increment mutation the increment mutation takes the state as input like a
+
+6
+00:00:30,740 --> 00:00:31,500
+getter.
+
+7
+00:00:31,520 --> 00:00:33,010
+But here of course we don't return it.
+
+8
+00:00:33,020 --> 00:00:34,370
+Instead we change it.
+
+9
+00:00:34,520 --> 00:00:41,030
+So here we say state plus plus state Kountry excuse me counter plus plus for example.
+
+10
+00:00:41,030 --> 00:00:49,360
+Now we also want to have a decrement mutation so at this decrement where I then decrements to counter.
+
+11
+00:00:49,460 --> 00:00:52,300
+Now we centralize dysfunctional 1:52.
+
+12
+00:00:52,310 --> 00:00:56,780
+Now we only have one place where we do call this here encounter.
+
+13
+00:00:57,080 --> 00:01:02,840
+But if we would call that from multiple components again then we would have the advantage of having
+
+14
+00:01:02,840 --> 00:01:04,040
+a central place.
+
+15
+00:01:04,220 --> 00:01:09,100
+So let's actually simulate this by creating a new Followill name and number.
+
+16
+00:01:09,140 --> 00:01:12,000
+Counter-argue now and another counter.
+
+17
+00:01:12,020 --> 00:01:19,050
+Basically just whip's copies to code from counter in here and in Apter you file.
+
+18
+00:01:19,070 --> 00:01:28,310
+I of course now all want to import and Navaira counter and added as a component to yours so let's add
+
+19
+00:01:28,440 --> 00:01:37,400
+up the number counter and also add it up here so that we get these two counter someplace so app and
+
+20
+00:01:37,400 --> 00:01:39,000
+number counter.
+
+21
+00:01:39,020 --> 00:01:40,630
+Now we get to two counters.
+
+22
+00:01:40,640 --> 00:01:42,470
+Now let's use our mutations.
+
+23
+00:01:42,710 --> 00:01:45,200
+We could use a mutation like this.
+
+24
+00:01:45,200 --> 00:01:50,200
+We access our store like before and then we simply can't commit.
+
+25
+00:01:50,210 --> 00:01:57,170
+As I learned a mutation we're running to emit and then the name of the mutation as a string that's important
+
+26
+00:01:57,200 --> 00:01:58,610
+as a string.
+
+27
+00:01:58,610 --> 00:02:03,730
+So here we have increment and you x will then search for a method named increment in ours.
+
+28
+00:02:03,750 --> 00:02:09,710
+Your store Cheras mutations object and build and execute this method and pass the state automatically
+
+29
+00:02:09,710 --> 00:02:11,140
+so we don't have to do that.
+
+30
+00:02:11,150 --> 00:02:12,010
+That's always true.
+
+31
+00:02:12,010 --> 00:02:14,180
+The state is passed automatically by View X..
+
+32
+00:02:14,180 --> 00:02:17,890
+This is why we imported this fruit party package in the first place.
+
+33
+00:02:18,140 --> 00:02:21,480
+So I use this setup then forward DEC romantic.
+
+34
+00:02:21,500 --> 00:02:23,230
+I use detriment.
+
+35
+00:02:23,240 --> 00:02:24,500
+Eyes see your face.
+
+36
+00:02:24,500 --> 00:02:26,360
+That's not really getting shorter does it.
+
+37
+00:02:26,360 --> 00:02:32,660
+But we'll soon find a way to decrease the number of characters we are writing here and with all that
+
+38
+00:02:32,660 --> 00:02:33,200
+implies.
+
+39
+00:02:33,200 --> 00:02:38,840
+If I now reload this you now see I got a couple of buttons and I can all click them and they all work
+
+40
+00:02:38,840 --> 00:02:39,360
+here.
+
+41
+00:02:39,380 --> 00:02:48,020
+They all adjust our central story now through mutations which we commit though as of gatherers we do
+
+42
+00:02:48,020 --> 00:02:52,660
+have the problem that we're repeating discovered here over and over again.
+
+43
+00:02:52,760 --> 00:02:58,410
+So it would be nice as with MAP getters if we could somehow map our mutations.
+
+44
+00:02:58,700 --> 00:03:04,350
+So turns out we can do this and actually it works exactly as MAP gatherers worked.
+
+45
+00:03:04,370 --> 00:03:06,970
+We have to import this helper method.
+
+46
+00:03:07,010 --> 00:03:08,540
+Import map.
+
+47
+00:03:08,540 --> 00:03:09,650
+Mutations
+
+48
+00:03:12,850 --> 00:03:14,820
+from view x.
+
+49
+00:03:14,860 --> 00:03:16,720
+So import this.
+
+50
+00:03:16,720 --> 00:03:21,520
+And then you can either replace all your methods with MAP mutations.
+
+51
+00:03:21,520 --> 00:03:27,880
+But since you probably also want to have your own methods mixed with the mapped mutations here the better
+
+52
+00:03:27,880 --> 00:03:29,930
+way is to use the free dots again.
+
+53
+00:03:29,930 --> 00:03:31,470
+Mabbe mutations.
+
+54
+00:03:31,570 --> 00:03:32,950
+And then as an argument.
+
+55
+00:03:33,070 --> 00:03:39,850
+Whoops you again pass an array where you have the names of the mutations you want to map like increment
+
+56
+00:03:40,270 --> 00:03:45,090
+and that criminate so you can write to us all like this.
+
+57
+00:03:45,490 --> 00:03:50,990
+And if you write it like this then calling these methods up here will automatically work.
+
+58
+00:03:51,010 --> 00:03:57,250
+Since these are the same names so I will quickly copy the code from here into an opera counter and replace
+
+59
+00:03:57,250 --> 00:03:58,330
+it here too.
+
+60
+00:03:58,690 --> 00:04:02,300
+And now let's see if this reloads it still works.
+
+61
+00:04:02,300 --> 00:04:05,020
+Ask before but now I think you agree.
+
+62
+00:04:05,020 --> 00:04:10,990
+It's much shorter since we map our mutations automatically and it has to be a big advantage that if
+
+63
+00:04:10,990 --> 00:04:17,540
+you want to change the way we adjust our state let's say we want to automatically increase the increased
+
+64
+00:04:17,680 --> 00:04:18,590
+by 2.
+
+65
+00:04:18,700 --> 00:04:24,400
+Or that would not be valid syntax but let's say you want to run some calculation here and do more than
+
+66
+00:04:24,400 --> 00:04:25,410
+just increment this.
+
+67
+00:04:25,450 --> 00:04:30,070
+Then you only have to change it in one place year and not all over your application again.
+
+68
+00:04:30,070 --> 00:04:37,360
+So like with getters we're now making sure that our changing the state code is in one central place
+
+69
+00:04:37,570 --> 00:04:44,590
+and that we get easy access to these change functions or to just mutations by having the map mutations
+
+70
+00:04:44,590 --> 00:04:48,670
+helper method which basically gives us easy access to these functions.
+

@@ -1,0 +1,196 @@
+1
+00:00:01,740 --> 00:00:06,080
+Well we achieved a lot before sending you off to the next module.
+
+2
+00:00:06,120 --> 00:00:15,430
+Here's one more important thing you got to know about the for loop in UJA is the for loop as we use
+
+3
+00:00:15,430 --> 00:00:15,850
+it here.
+
+4
+00:00:15,880 --> 00:00:18,420
+Works fine as you can clearly see.
+
+5
+00:00:19,090 --> 00:00:26,680
+It's important to understand what happens behind the scenes though if butis needs to update one of these
+
+6
+00:00:26,680 --> 00:00:31,020
+values because somewhere in your code you change one of the elements here.
+
+7
+00:00:31,120 --> 00:00:36,140
+And let's show this by building credence aere adding a button here.
+
+8
+00:00:36,550 --> 00:00:42,900
+I'll add a button which says add new wearables simply push a new item on the arrays.
+
+9
+00:00:42,910 --> 00:00:46,390
+So will say ingredients which is disarrayed down there.
+
+10
+00:00:46,510 --> 00:00:54,680
+Push and then LEDs simply push some spices fanout control enter.
+
+11
+00:00:54,970 --> 00:01:00,580
+You see I can add spices to my array just like that works fine.
+
+12
+00:01:00,580 --> 00:01:02,710
+Two important things are to be noted here.
+
+13
+00:01:02,830 --> 00:01:10,240
+First Mujeres chairs conveniently proxies is push method here because generally the push method does
+
+14
+00:01:10,240 --> 00:01:17,010
+not create a new array it simply adds items to the existing one and that is a bit hard to track since
+
+15
+00:01:17,080 --> 00:01:23,650
+the object itself the array doesn't change here because it's a reference type and the pointer to the
+
+16
+00:01:23,650 --> 00:01:27,240
+type hasn't changed only the value in memory.
+
+17
+00:01:27,250 --> 00:01:33,340
+But for data realize you have to watch this value in memory which you test does for us automatically
+
+18
+00:01:33,550 --> 00:01:39,970
+which is why we get this expect the behavior here which if you really think about it is not necessarily
+
+19
+00:01:40,180 --> 00:01:41,530
+expected but it works.
+
+20
+00:01:41,560 --> 00:01:42,310
+That's fine.
+
+21
+00:01:42,310 --> 00:01:44,320
+Nothing to do from our side.
+
+22
+00:01:44,320 --> 00:01:51,130
+The other important thing is how does the chase update this list if some item needs to be changed or
+
+23
+00:01:51,130 --> 00:01:52,060
+something like that.
+
+24
+00:01:52,090 --> 00:01:58,390
+It updates the list by simply updating the position in the array where something changed.
+
+25
+00:01:58,390 --> 00:02:05,410
+So if you were to override the second element two way binding for example it would update the second
+
+26
+00:02:05,440 --> 00:02:07,470
+element in this list.
+
+27
+00:02:07,510 --> 00:02:11,920
+It does not keep track of this specific element it create it.
+
+28
+00:02:12,070 --> 00:02:15,240
+It will only patch it in the second position.
+
+29
+00:02:15,610 --> 00:02:22,660
+Oftentimes this is the behavior you want but if you want to be super safe and want to make sure that
+
+30
+00:02:22,660 --> 00:02:31,870
+future as is not only aware of the position but the actual last item on which the value you're working
+
+31
+00:02:31,870 --> 00:02:36,430
+with sets you need to assign a unique key to that list item.
+
+32
+00:02:36,430 --> 00:02:43,950
+So here for example Uta's by using the bind syntax or shortend colon key.
+
+33
+00:02:44,320 --> 00:02:46,780
+And then you pass a unique key.
+
+34
+00:02:46,780 --> 00:02:54,880
+Now you might pass the index though that is kind of tricky as this index is derived from the list itself
+
+35
+00:02:54,940 --> 00:03:02,210
+and said Well dynamically while rendering the list a better key would be a real unique value.
+
+36
+00:03:02,260 --> 00:03:07,390
+So for example here you know that each ingredient will only be on this list once.
+
+37
+00:03:07,570 --> 00:03:10,360
+You might very well use that ingredient here.
+
+38
+00:03:10,960 --> 00:03:18,380
+With that if I read render does it works as before but behind the scenes you are now a save and view
+
+39
+00:03:18,380 --> 00:03:24,940
+chess not only store is the position of that element but the element itself which means should it ever
+
+40
+00:03:24,940 --> 00:03:28,170
+need to re order them or do something like that.
+
+41
+00:03:28,300 --> 00:03:34,930
+It will take the actual element and reorder it and not just override the values in some of the positions
+
+42
+00:03:35,170 --> 00:03:37,820
+it will find in the array.
+
+43
+00:03:38,050 --> 00:03:41,430
+Does a show some background knowledge to be aware of.
+
+44
+00:03:41,440 --> 00:03:48,880
+Oftentimes you won't recognize the difference but if you run into any strange bugs with your for loop
+
+45
+00:03:49,180 --> 00:03:55,870
+that some items are updated in a different place than you expect them to be well check if you are assigning
+
+46
+00:03:55,870 --> 00:03:56,670
+a key.
+
+47
+00:03:56,740 --> 00:04:03,630
+If not you might add one and this might resolve this issue with that we really had a detailed look at
+
+48
+00:04:03,670 --> 00:04:05,230
+before NPF.
+
+49
+00:04:05,350 --> 00:04:06,430
+Let's continue.
+

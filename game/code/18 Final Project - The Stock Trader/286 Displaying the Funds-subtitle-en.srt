@@ -1,0 +1,188 @@
+1
+00:00:01,650 --> 00:00:06,060
+Right now we're able to buy and sell stocks at least it looks like it works.
+
+2
+00:00:06,120 --> 00:00:11,760
+But now let's also add our funds let's display how much funds we have and let's see if they get updated
+
+3
+00:00:11,760 --> 00:00:14,310
+correctly once we implemented the funds.
+
+4
+00:00:14,310 --> 00:00:18,520
+We also want to make sure that we're not able to buy more and we can afford and so on.
+
+5
+00:00:18,690 --> 00:00:21,220
+So this is what I'll work on next.
+
+6
+00:00:21,300 --> 00:00:23,560
+Let's start by displaying funds.
+
+7
+00:00:23,670 --> 00:00:25,300
+Where do we display funds.
+
+8
+00:00:25,530 --> 00:00:31,050
+Well for one on their home page which generally is not really in the state a wanted to have.
+
+9
+00:00:31,260 --> 00:00:37,830
+So let's quickly work on this let's wrap it in a day of Ada age one take where we say trade or view
+
+10
+00:00:37,830 --> 00:00:43,280
+your portfolio to kind of describe what travel to do then age 6.
+
+11
+00:00:43,410 --> 00:00:51,740
+You may save and load your data and also age 6.
+
+12
+00:00:51,850 --> 00:00:58,300
+Click on and day which doesn't work yet but will soon be added to begin anew.
+
+13
+00:01:00,260 --> 00:01:01,790
+Day like that.
+
+14
+00:01:02,200 --> 00:01:04,450
+All nice but now we also want to display the funds.
+
+15
+00:01:04,460 --> 00:01:10,520
+So here we have a paragraph which says whoops which says your funds.
+
+16
+00:01:10,790 --> 00:01:13,860
+And then we want to output our funds like this.
+
+17
+00:01:13,880 --> 00:01:15,980
+No we clearly don't have access to them yet.
+
+18
+00:01:16,010 --> 00:01:25,320
+So let me add a new script part here where I now export a default object and in there I will simply
+
+19
+00:01:25,320 --> 00:01:29,410
+set up a computed property or it does computed property and I'll name it funds.
+
+20
+00:01:29,430 --> 00:01:35,640
+I could use map getters again but since I'm only interested in one Gedor all exits my store like this
+
+21
+00:01:36,390 --> 00:01:40,290
+my getters stair and then the funds to get my funds.
+
+22
+00:01:40,320 --> 00:01:43,280
+Now we should be able to see this if we visit the home page.
+
+23
+00:01:43,350 --> 00:01:45,460
+We see funds 10000.
+
+24
+00:01:45,510 --> 00:01:50,640
+Now let's see if this updates if I slide ten times BMW it's less.
+
+25
+00:01:50,730 --> 00:01:54,090
+And if I now sell it 10 times we're back to 10000.
+
+26
+00:01:54,090 --> 00:01:55,870
+So this indeed seems to work.
+
+27
+00:01:56,010 --> 00:02:02,280
+Now with that in place let's also displayed in the header and let's make sure that I checked my funds
+
+28
+00:02:02,280 --> 00:02:05,940
+when buying stocks as well as my quantity when selling them.
+
+29
+00:02:06,360 --> 00:02:09,530
+So let's start by adding funds to a header.
+
+30
+00:02:10,440 --> 00:02:13,330
+And here I simply want to display them let's say here.
+
+31
+00:02:13,360 --> 00:02:16,200
+After my two links before the drop.
+
+32
+00:02:16,330 --> 00:02:25,930
+So here at is strong element where I say funds equals funds with strings of pollution and I'll add some
+
+33
+00:02:25,930 --> 00:02:34,040
+classes here to position this rightly there shall be nav bar text and nav bar right.
+
+34
+00:02:34,860 --> 00:02:40,200
+With that in place it will not work of course because what I need to do is I need to add my script down
+
+35
+00:02:40,200 --> 00:02:44,330
+there export my object and now load the funds there.
+
+36
+00:02:45,120 --> 00:02:51,640
+Now I could use map getters for this but since I'm interested in the funds only I can also say compute
+
+37
+00:02:51,640 --> 00:03:02,420
+that as we it before it funds and then simply year return these store getters funds like this.
+
+38
+00:03:02,420 --> 00:03:03,940
+Now let's see if this worked.
+
+39
+00:03:04,770 --> 00:03:05,210
+Looks good.
+
+40
+00:03:05,220 --> 00:03:07,400
+We get the funds on the very right on the very right.
+
+41
+00:03:07,440 --> 00:03:13,410
+Just because of dishtowels we added to this strong element that is why it's positioned over there and
+
+42
+00:03:13,410 --> 00:03:19,230
+we can of course see that these funds also update as soon as we try to do some things.
+
+43
+00:03:19,260 --> 00:03:22,020
+Now I sold more than I thought had as you saw.
+
+44
+00:03:22,140 --> 00:03:24,500
+So that's something we'll work on in the next few.
+
+45
+00:03:24,500 --> 00:03:29,760
+And again challenge for you try solving this issue try to make sure that we're not able to buy more
+
+46
+00:03:29,760 --> 00:03:34,250
+than we can afford like so or sell more than we have like so.
+
+47
+00:03:34,260 --> 00:03:38,490
+So that is where we should work on next try to fix it on your own risk though.
+

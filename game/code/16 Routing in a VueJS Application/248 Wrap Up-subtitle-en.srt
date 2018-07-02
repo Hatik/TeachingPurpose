@@ -1,0 +1,48 @@
+1
+00:00:02,140 --> 00:00:06,120
+Well in this module we really learn a lot about writing.
+
+2
+00:00:06,130 --> 00:00:10,350
+We really took a deep dive into the view chess router.
+
+3
+00:00:10,570 --> 00:00:17,080
+We learn so much about setting up routes navigating passing parameters reacting to parameter changes
+
+4
+00:00:17,080 --> 00:00:24,070
+passing query parameters scrolling loading components lazy loading protecting guards with guards protecting
+
+5
+00:00:24,070 --> 00:00:26,440
+routes with guards and so much more.
+
+6
+00:00:26,650 --> 00:00:33,550
+I think you're well-prepared to now use this router in your application and build a real big single
+
+7
+00:00:33,550 --> 00:00:35,140
+page application with it.
+
+8
+00:00:35,380 --> 00:00:42,460
+Actually we will soon build a bigger single page application in this course right after the next module
+
+9
+00:00:42,810 --> 00:00:47,390
+and I can only encourage you as always to play around with that and practice it.
+
+10
+00:00:47,410 --> 00:00:54,070
+Set your own challenges create your own little test applications and navigate around like crazy to really
+
+11
+00:00:54,070 --> 00:00:59,150
+understand how this all works and which features it has and how you may use them.
+
+12
+00:00:59,150 --> 00:01:00,440
+See you in the next module.
+

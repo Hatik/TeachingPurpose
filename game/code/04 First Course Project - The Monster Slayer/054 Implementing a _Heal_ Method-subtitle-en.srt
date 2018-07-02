@@ -1,0 +1,104 @@
+1
+00:00:01,680 --> 00:00:04,780
+So after dealing damage we now want to be able to heal.
+
+2
+00:00:04,800 --> 00:00:07,630
+We could also calculate the healing amount randomly.
+
+3
+00:00:07,770 --> 00:00:09,220
+But I want to hard code.
+
+4
+00:00:09,240 --> 00:00:11,770
+Let's say we always heal by 10.
+
+5
+00:00:11,820 --> 00:00:19,600
+So here I don't want to set this player health plus equal 10 to increase that by 10.
+
+6
+00:00:19,600 --> 00:00:22,470
+Also keep in mind the monster shella tech.
+
+7
+00:00:22,470 --> 00:00:26,740
+So here we also have to execute monster attacks thereafter.
+
+8
+00:00:27,090 --> 00:00:36,620
+Now after saving this let me reload start a new game special attack heal up special attack and we won.
+
+9
+00:00:37,630 --> 00:00:41,790
+Now here's an issue I can also heal if I'm old for health.
+
+10
+00:00:41,890 --> 00:00:44,710
+Well this really grows my health bar right.
+
+11
+00:00:44,710 --> 00:00:51,340
+So we don't want to be able to heal any higher than our maximum health of 100 let's say.
+
+12
+00:00:51,570 --> 00:00:59,740
+And therefore here we should all to implement if check if our player health is smaller or equal to 90
+
+13
+00:01:00,190 --> 00:01:03,540
+then we can heal for the full 10.
+
+14
+00:01:03,550 --> 00:01:12,670
+So then we want to ask tend to our health but otherwise we only want to set our player health back to
+
+15
+00:01:12,670 --> 00:01:20,590
+100 again so that we simply heal back to full if we're at a value higher than 90 anyways.
+
+16
+00:01:20,590 --> 00:01:26,800
+So if this plays if I reload healing does nothing when at full health it actually reduces our health
+
+17
+00:01:26,800 --> 00:01:32,850
+because the months are still attacks us but if we go lower Well then we can still heal.
+
+18
+00:01:32,860 --> 00:01:38,540
+So this is how we can heal up how we can implement this mechanic and as a side note.
+
+19
+00:01:38,650 --> 00:01:45,380
+I hope you recognize that since a couple of bridges were mostly riding normal Javascript code.
+
+20
+00:01:45,400 --> 00:01:48,530
+This shows you how powerful view says.
+
+21
+00:01:48,670 --> 00:01:51,270
+We set up our style by nothing here.
+
+22
+00:01:51,280 --> 00:01:58,630
+We hooked up our buttons and we showed our player healthier and now using the view its sense of normal
+
+23
+00:01:58,630 --> 00:01:59,830
+Charles group Code.
+
+24
+00:01:59,840 --> 00:02:06,880
+We're creating quite a nice game here without having to write any complicated code or manually updating
+
+25
+00:02:06,880 --> 00:02:12,680
+parts in a dorm manually checking if we need to update a certain values somewhere.
+
+26
+00:02:12,700 --> 00:02:19,120
+Really this is how you use your chess and why it is so powerful and wide helps you so much.
+

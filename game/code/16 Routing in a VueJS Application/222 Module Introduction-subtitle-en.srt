@@ -1,0 +1,72 @@
+1
+00:00:01,740 --> 00:00:08,070
+It's finally time after learning about all these core features of Mujeres after learning about how to
+
+2
+00:00:08,070 --> 00:00:13,980
+use beauty and your existing applications to build complex applications with it there's one thing we
+
+3
+00:00:13,980 --> 00:00:20,010
+haven't covered yet how to create a single page application with the chase and we couldn't cover it
+
+4
+00:00:20,010 --> 00:00:22,390
+yet because we didn't know about the router.
+
+5
+00:00:22,620 --> 00:00:28,740
+The router is the important thing about a single page application though because a single page application
+
+6
+00:00:28,740 --> 00:00:36,480
+means technically we only have one page the single page which is the index HVM all we load which hosts
+
+7
+00:00:36,540 --> 00:00:45,530
+our beauteous application and then we use this single page to simulate navigation for the users so our
+
+8
+00:00:45,570 --> 00:00:52,770
+eldest change but we catch all these changes and only really render this single page so that it looks
+
+9
+00:00:52,770 --> 00:00:55,590
+like as if we were revisiting different pages.
+
+10
+00:00:55,590 --> 00:01:00,320
+It looks like this to the user but behind the scenes it's always the same page.
+
+11
+00:01:00,330 --> 00:01:06,720
+So the big difference to the last lecture is as we no longer have application to where we need to reload
+
+12
+00:01:06,720 --> 00:01:12,510
+the page where we get different pages from the server and then only embed Mujeres to handle parts of
+
+13
+00:01:12,510 --> 00:01:13,410
+this page.
+
+14
+00:01:13,620 --> 00:01:17,540
+Now the whole application is handled through future.
+
+15
+00:01:17,760 --> 00:01:24,570
+And that is a huge thing that is really something which allows you to build very big applications based
+
+16
+00:01:24,630 --> 00:01:25,930
+on huge case.
+
+17
+00:01:26,070 --> 00:01:31,320
+Therefore in this section we're going to have a look at the remaining building block you'll need for
+
+18
+00:01:31,360 --> 00:01:35,580
+this the view chazzan router and how routing works in Utah has.
+

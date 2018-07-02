@@ -1,0 +1,120 @@
+1
+00:00:02,580 --> 00:00:07,070
+Last lecture we finally and code to pass on this token.
+
+2
+00:00:07,080 --> 00:00:14,250
+Now I want to make sure that we can reach the dashboard route if we're not of any kind to do this all
+
+3
+00:00:14,310 --> 00:00:19,940
+at a navigation guard a concept I taught you about in the routeing section.
+
+4
+00:00:20,160 --> 00:00:22,480
+We set it up on a per route level.
+
+5
+00:00:22,590 --> 00:00:29,070
+Well actually you can set up guards on different levels but to prevent the access to a given route the
+
+6
+00:00:29,070 --> 00:00:35,880
+per route level makes sense because it checks the guard condition before actually loading the component
+
+7
+00:00:36,240 --> 00:00:38,910
+which is of course what we want here.
+
+8
+00:00:38,940 --> 00:00:47,940
+Now here in my router set up I can add D before enter property that actually will be a method and I
+
+9
+00:00:47,940 --> 00:00:51,310
+will split this up over multiple lines to make it easier to eat.
+
+10
+00:00:51,720 --> 00:00:59,740
+This method will receive free arguments too that will hold information about the router going to from
+
+11
+00:01:00,130 --> 00:01:02,080
+information where we're coming from.
+
+12
+00:01:02,080 --> 00:01:08,590
+And next a function I have to execute to continue navigating inside the function.
+
+13
+00:01:08,590 --> 00:01:12,040
+I now want to check whether we do have a token or not.
+
+14
+00:01:12,220 --> 00:01:19,450
+Because only if we have a token the user is authenticated only then it makes sense to continue to get
+
+15
+00:01:19,450 --> 00:01:27,490
+this information from the store or import to store from dot slash store japes and distort and put it
+
+16
+00:01:27,490 --> 00:01:27,950
+here.
+
+17
+00:01:27,970 --> 00:01:33,480
+It's the same instance as the instance I x' in my components with this dollar signs store.
+
+18
+00:01:33,490 --> 00:01:42,220
+So we're talking about the same store in the four enter I now simply check if stores state so store
+
+19
+00:01:42,220 --> 00:01:46,540
+dot state ID token is set.
+
+20
+00:01:46,540 --> 00:01:47,580
+If this is true.
+
+21
+00:01:47,590 --> 00:01:51,010
+So if we have a valid token or execute next.
+
+22
+00:01:51,030 --> 00:02:00,940
+So the navigation may continue else if the token is false or null if it's invalid I will also call next.
+
+23
+00:02:00,940 --> 00:02:04,760
+But I'll pass the argument to it which will redirect the request.
+
+24
+00:02:04,810 --> 00:02:08,480
+If you pass a string Poth you will go to that path.
+
+25
+00:02:08,620 --> 00:02:15,760
+So I want to go to slash sign in this route here.
+
+26
+00:02:15,780 --> 00:02:23,340
+Now if that if I save this and I go back to my application and reloaded to invalidate all tokens I might
+
+27
+00:02:23,340 --> 00:02:29,500
+have to click on dashboard U.S. see instead I land on sign in.
+
+28
+00:02:29,550 --> 00:02:33,740
+I can't go to dashboard no matter how hard I try.
+
+29
+00:02:33,780 --> 00:02:41,070
+As soon as I do log in though and I have a token therefore I can access dashboard and this is how easy
+
+30
+00:02:41,070 --> 00:02:46,160
+we can protect a route with before enter and by accessing this store in their.
+

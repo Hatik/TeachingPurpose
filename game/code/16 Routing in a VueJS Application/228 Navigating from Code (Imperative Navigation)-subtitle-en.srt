@@ -1,0 +1,136 @@
+1
+00:00:01,840 --> 00:00:04,660
+It's nice that we're able to navigate with for our trolling.
+
+2
+00:00:04,690 --> 00:00:10,060
+But sometimes you want to trigger an application in your javascript code because some operation finished
+
+3
+00:00:10,060 --> 00:00:15,520
+and you want to navigate away let's say I'm going to simulate doesn't the user component here.
+
+4
+00:00:15,520 --> 00:00:22,630
+Here I will first add my script parts and export my challenged group object and in here I simply want
+
+5
+00:00:22,630 --> 00:00:29,910
+to set up a method to which I can bind a button thereafter after I'll name it navigate to home and all
+
+6
+00:00:29,910 --> 00:00:33,230
+I want to do here is well navigate to my home page.
+
+7
+00:00:33,360 --> 00:00:40,540
+So in the User page itself all set up a div because again we may only have one rude element in here.
+
+8
+00:00:40,650 --> 00:00:42,230
+So let's set up this.
+
+9
+00:00:42,480 --> 00:00:44,310
+And then there I want to have a button.
+
+10
+00:00:44,310 --> 00:00:49,090
+Now of course it could just use a fragile link but you get my point I think what I want to show here.
+
+11
+00:00:49,200 --> 00:00:56,240
+So go to a home and then I want to add a click listener and execute navigate to home.
+
+12
+00:00:56,240 --> 00:00:58,020
+So this method just set up.
+
+13
+00:00:58,050 --> 00:01:01,540
+Now how do we navigate from within our code.
+
+14
+00:01:01,830 --> 00:01:07,970
+Well in our method we can access our view instance and then we will have the router available with dollar
+
+15
+00:01:07,970 --> 00:01:08,930
+assigned router.
+
+16
+00:01:09,060 --> 00:01:16,140
+So this is the general theme of objects from view itself or from your router in this case having the
+
+17
+00:01:16,140 --> 00:01:21,120
+dollars and at the beginning to mark that this is not our own object but instead is provided by and
+
+18
+00:01:21,220 --> 00:01:29,550
+repackaged to us on this router we can now trigger navigation by calling push and push is the word we
+
+19
+00:01:29,550 --> 00:01:35,250
+use or because we want to push it on the stack of existing routes so that our back and forward buttons
+
+20
+00:01:35,250 --> 00:01:40,200
+will work fine because we will have the old route saved as well.
+
+21
+00:01:40,200 --> 00:01:47,550
+So this pushes pushes it on the stack of routes we're at Therefore now push in its simple case simply
+
+22
+00:01:47,540 --> 00:01:54,100
+takes the path where we want to go like this but we could also pass an object here where we say pauvres
+
+23
+00:01:54,120 --> 00:02:00,630
+should be this and that is of course not really an improvement just specifying the path but I will come
+
+24
+00:02:00,630 --> 00:02:07,650
+back to passing an object as a routing target for roud to link as well as a side note in one of the
+
+25
+00:02:07,650 --> 00:02:08,830
+next lectures.
+
+26
+00:02:08,850 --> 00:02:13,150
+For now let's keep it simple and simply go to slash.
+
+27
+00:02:13,560 --> 00:02:16,140
+Now to see us in action.
+
+28
+00:02:16,140 --> 00:02:20,500
+I'll just add some nice styling to the Spartan.
+
+29
+00:02:20,540 --> 00:02:23,660
+Let's head over to the user page and click go to home.
+
+30
+00:02:23,780 --> 00:02:25,580
+And we're back on the home page.
+
+31
+00:02:25,580 --> 00:02:28,700
+This is how easy it is to navigate in our code.
+
+32
+00:02:28,880 --> 00:02:36,420
+And of course you hopefully see the similarity to our routers link where we also have this to attribute
+
+33
+00:02:36,420 --> 00:02:38,080
+here where we specify a path.
+
+34
+00:02:38,190 --> 00:02:40,140
+While I do the same year with push.
+

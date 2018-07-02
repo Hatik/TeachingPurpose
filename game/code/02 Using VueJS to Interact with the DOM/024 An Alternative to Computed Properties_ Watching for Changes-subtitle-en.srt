@@ -1,0 +1,176 @@
+1
+00:00:02,300 --> 00:00:07,850
+When working with the penances future as also has another way of doing this.
+
+2
+00:00:08,000 --> 00:00:10,860
+We're using a computer property right now.
+
+3
+00:00:10,940 --> 00:00:17,180
+I can also use yet another property on the beauteous instance the watch object.
+
+4
+00:00:17,180 --> 00:00:22,090
+So that's a number of new object we're learning about right now in computing.
+
+5
+00:00:22,130 --> 00:00:28,490
+We set up the property and then as a function we set up the logic how this property should be computed
+
+6
+00:00:28,890 --> 00:00:29,210
+for.
+
+7
+00:00:29,210 --> 00:00:35,490
+Watch it kind of works the other way around here as a key I set up the property name.
+
+8
+00:00:35,550 --> 00:00:38,060
+When I watch for example counter.
+
+9
+00:00:38,150 --> 00:00:44,230
+So this has to match one of my properties in this case the data property counter here.
+
+10
+00:00:44,450 --> 00:00:52,340
+Then as a function I specify the code I want to execute when ever the counter changes and I pass or
+
+11
+00:00:52,470 --> 00:00:58,340
+Mujeres automatically passes the value of this upcoming change to dysfunction.
+
+12
+00:00:58,430 --> 00:01:05,480
+This allows me to react to changes and therefore here I could also set a global output variable if I
+
+13
+00:01:05,480 --> 00:01:06,190
+would have that.
+
+14
+00:01:06,200 --> 00:01:12,920
+And if it wasn't computed as it does here and set this up the other way around which certainly will
+
+15
+00:01:12,920 --> 00:01:18,440
+work though I will tell you right away that it is a best practice to use computer properties wherever
+
+16
+00:01:18,440 --> 00:01:23,860
+you can simply because they are more optimized due to caching and so on.
+
+17
+00:01:23,930 --> 00:01:29,860
+It really allows future to run more optimal to avoid unnecessary tasks.
+
+18
+00:01:30,060 --> 00:01:35,610
+Though there are cases where you need to react to every change although there is another case where
+
+19
+00:01:35,610 --> 00:01:38,000
+it computed properties won't do the trick.
+
+20
+00:01:38,330 --> 00:01:46,610
+And that is if you need a synchronous tasks to be run computer properties always need to run synchronously
+
+21
+00:01:47,060 --> 00:01:53,220
+which means you're returning something here and that needs to happen as soon as possible or immediately.
+
+22
+00:01:53,300 --> 00:01:59,060
+There is no way you can reach out to a server or do some of the asynchronous task in between if you
+
+23
+00:01:59,090 --> 00:02:02,980
+need to run such a task or as I just mentioned before.
+
+24
+00:02:03,050 --> 00:02:09,820
+You need to run some other code which really is triggered when the property updates and which is not
+
+25
+00:02:09,820 --> 00:02:13,510
+solved by a computed property then watch this for you.
+
+26
+00:02:13,750 --> 00:02:18,600
+So here we might simply want to reset the counter after let's say two seconds.
+
+27
+00:02:18,730 --> 00:02:27,770
+So add a timeout here and I'll say that after two seconds I want to execute does first function here.
+
+28
+00:02:30,770 --> 00:02:35,600
+Now important say this is now a closure does callback here.
+
+29
+00:02:35,840 --> 00:02:43,610
+I have to store in my view instance in a separate variable so this which allows me to conveniently access
+
+30
+00:02:43,610 --> 00:02:49,790
+my properties and so on needs to be stored in a variable because while it is a whaleboat with this all
+
+31
+00:02:49,790 --> 00:02:56,180
+three out in my default view chess objects and functions here this is not the case for a call callback
+
+32
+00:02:56,630 --> 00:02:58,760
+closure like this one here.
+
+33
+00:02:58,820 --> 00:03:01,130
+So here I can then call V.M..
+
+34
+00:03:01,280 --> 00:03:10,600
+But now again just like before x' counter and set it to Ciro to reset it after two seconds.
+
+35
+00:03:10,790 --> 00:03:17,210
+With this in place if I had now had control I'll rapidly increase to counter and we see you go back
+
+36
+00:03:17,210 --> 00:03:24,890
+to zero after two seconds because we had a watch in place which will be called whenever the counter
+
+37
+00:03:24,890 --> 00:03:25,880
+changes.
+
+38
+00:03:25,910 --> 00:03:27,530
+Does executing this code.
+
+39
+00:03:27,710 --> 00:03:31,870
+And as you see you're able of executing a synchronous task.
+
+40
+00:03:31,910 --> 00:03:38,900
+The reason for this of course is that here I'm not turning anything here and not setting a property
+
+41
+00:03:38,900 --> 00:03:41,290
+which needs to be recalculated here.
+
+42
+00:03:41,330 --> 00:03:47,900
+I'm simply specifying some code which should be run whenever some property was set up here as a key
+
+43
+00:03:48,170 --> 00:03:48,920
+changes.
+
+44
+00:03:48,950 --> 00:03:50,570
+In this case the counter.
+

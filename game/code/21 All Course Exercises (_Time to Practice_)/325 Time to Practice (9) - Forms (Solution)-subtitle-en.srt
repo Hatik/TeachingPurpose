@@ -1,0 +1,816 @@
+1
+00:00:02,180 --> 00:00:03,950
+So where are you successful.
+
+2
+00:00:04,070 --> 00:00:06,240
+Let's start with Exercise 1.
+
+3
+00:00:06,260 --> 00:00:08,710
+Creating this sign up for.
+
+4
+00:00:08,960 --> 00:00:13,100
+Now we're in a form element here already with some bootstrap columns.
+
+5
+00:00:13,100 --> 00:00:18,150
+So what I'll do here is I'll agree that they have with a class for any group to give it some nice pooched
+
+6
+00:00:18,260 --> 00:00:18,980
+styling.
+
+7
+00:00:18,980 --> 00:00:26,500
+And then there are want to have a label where I say first name and then I have my input which is which
+
+8
+00:00:26,500 --> 00:00:32,600
+is of type text of course which shall hold my first name.
+
+9
+00:00:32,710 --> 00:00:36,760
+I will give it a class for and control to improve the styling of it.
+
+10
+00:00:36,980 --> 00:00:38,500
+And then I'm going to copy that.
+
+11
+00:00:38,560 --> 00:00:44,260
+You also get a number of forms for for the last name and you could style this differently to have them
+
+12
+00:00:44,260 --> 00:00:46,250
+sit next to each other or something like that.
+
+13
+00:00:46,270 --> 00:00:48,210
+I'll keep that really simple.
+
+14
+00:00:48,320 --> 00:00:54,820
+They're off there we want to fetch the e-mail address so as Shelby the e-mail address here and then
+
+15
+00:00:54,910 --> 00:00:55,530
+let's see.
+
+16
+00:00:55,570 --> 00:00:57,630
+We shall fetch the password next.
+
+17
+00:00:57,670 --> 00:01:01,710
+Now here of course we shall Tabe to change the type to password.
+
+18
+00:01:01,720 --> 00:01:03,470
+I think that makes sense to hide it.
+
+19
+00:01:03,670 --> 00:01:07,140
+And lastly I want to create these radio buttons.
+
+20
+00:01:07,240 --> 00:01:12,180
+Now radio buttons with the bootstrap framework are created like this.
+
+21
+00:01:12,220 --> 00:01:15,200
+We still have our forum group here.
+
+22
+00:01:15,820 --> 00:01:23,080
+But then inside this form group we want to have a label and in this Laili we have already button then.
+
+23
+00:01:23,110 --> 00:01:30,510
+So the type is there for radio and we set a value which is assigned to you as a radio button.
+
+24
+00:01:30,580 --> 00:01:32,100
+And here this is yes.
+
+25
+00:01:32,470 --> 00:01:34,410
+And of course we display Yes here.
+
+26
+00:01:34,420 --> 00:01:41,210
+So the value in the HMO element is what will be stored thereafter and yes thereafter is basically just
+
+27
+00:01:41,210 --> 00:01:44,500
+the text we can see in our template.
+
+28
+00:01:44,890 --> 00:01:49,770
+Now the I've already but belongs to the same form group so I'll added like this.
+
+29
+00:01:49,930 --> 00:01:54,890
+And you I want to have no ass de-value and also as what I see here.
+
+30
+00:01:55,210 --> 00:01:58,140
+So let's see those in the running application.
+
+31
+00:01:58,150 --> 00:02:00,840
+I'm quickly going to split up my server here again.
+
+32
+00:02:01,360 --> 00:02:02,950
+And this is what I end up with.
+
+33
+00:02:02,950 --> 00:02:03,850
+Looks good.
+
+34
+00:02:03,910 --> 00:02:09,180
+Now with that for him to create an H-G amount the next one is to hook it up to you.
+
+35
+00:02:09,310 --> 00:02:13,270
+Well our properties and create these properties in the first place.
+
+36
+00:02:13,300 --> 00:02:15,790
+So let me create these properties quickly.
+
+37
+00:02:15,880 --> 00:02:22,350
+I've got an empty object down there so I'm changing this by using my data or by setting up my data.
+
+38
+00:02:22,600 --> 00:02:32,710
+And here I want to have first name which is empty by default.
+
+39
+00:02:32,880 --> 00:02:36,810
+Thereafter I want to have a last name which is empty by default.
+
+40
+00:02:36,930 --> 00:02:37,920
+Then I.
+
+41
+00:02:37,950 --> 00:02:39,850
+Empty by default and a password.
+
+42
+00:02:39,870 --> 00:02:41,760
+You guessed it empty by default.
+
+43
+00:02:41,880 --> 00:02:46,670
+And then also my store data field which is such a true initially.
+
+44
+00:02:46,710 --> 00:02:47,700
+Now I can hook them up.
+
+45
+00:02:47,700 --> 00:02:58,660
+So here I want to assign view model first name to this form group your full form control I should say
+
+46
+00:02:58,990 --> 00:03:05,500
+then for the next it's the last name and then for this one year it's the email forward the password
+
+47
+00:03:05,500 --> 00:03:11,940
+it's obviously the password property I'm assigning and then a year for this radio button.
+
+48
+00:03:12,130 --> 00:03:19,630
+Well to each of the two radio buttons I assigned the store data model because keep in mind we have to
+
+49
+00:03:19,630 --> 00:03:25,720
+assign the same model here to make them alternate to let fut. know that these two radio buttons are
+
+50
+00:03:25,720 --> 00:03:29,320
+alternatives and should be bound to the same property.
+
+51
+00:03:29,320 --> 00:03:35,820
+Now with that I can already output my content here and I can output the full name here which simply
+
+52
+00:03:35,820 --> 00:03:37,500
+is my first name.
+
+53
+00:03:38,700 --> 00:03:42,880
+And then whitespace and then my last name it's as easy as this.
+
+54
+00:03:42,880 --> 00:03:49,210
+We could also create a computer property named full name which kind of concatenates our string here
+
+55
+00:03:49,320 --> 00:03:50,530
+will be an alternative.
+
+56
+00:03:50,710 --> 00:03:53,430
+Nice little challenge you could do if you want to.
+
+57
+00:03:53,630 --> 00:03:59,950
+Then down there I of course want to output the email and then a year the password of course.
+
+58
+00:04:00,280 --> 00:04:05,470
+And finally here I want to output the choice regarding the data storage.
+
+59
+00:04:05,470 --> 00:04:14,760
+Now if I save this and we enter something here like Max Schwartz That's my name choose your name your
+
+60
+00:04:14,790 --> 00:04:18,120
+of course any email address of your choice.
+
+61
+00:04:18,120 --> 00:04:21,170
+And finally a password while that looks good to me.
+
+62
+00:04:21,330 --> 00:04:24,710
+I think we got a nice working simple form here.
+
+63
+00:04:24,720 --> 00:04:30,810
+Now the next step is that we take this form and enhanced by adding a submit button and only showed a
+
+64
+00:04:30,810 --> 00:04:35,880
+form as long as we haven't submitted it but once we submitted showed it data sheet here at the bottom.
+
+65
+00:04:35,880 --> 00:04:40,340
+So let's we're going to this next to you add a separate button to this.
+
+66
+00:04:40,470 --> 00:04:44,370
+Well surprisingly first add the button here.
+
+67
+00:04:44,790 --> 00:04:49,590
+Submit the form and set this to type submit.
+
+68
+00:04:49,590 --> 00:04:56,280
+Now I want to add a click listener of course and importantly I add pre-event year to prevent the default
+
+69
+00:04:56,310 --> 00:04:59,750
+which would be again to send this form to the server.
+
+70
+00:04:59,760 --> 00:05:00,900
+I don't want that to happen.
+
+71
+00:05:00,900 --> 00:05:02,980
+I don't want this form to reach a server.
+
+72
+00:05:03,000 --> 00:05:05,350
+I want to handle with you chaps.
+
+73
+00:05:05,670 --> 00:05:10,800
+So here instead I'd choose to do something up on a click that could execute a Mathare.
+
+74
+00:05:10,800 --> 00:05:15,140
+And typically you would probably do this to then use your data in this method.
+
+75
+00:05:15,360 --> 00:05:22,260
+But here all I need is really just a variable holding a true or false value which decides if I should
+
+76
+00:05:22,260 --> 00:05:24,580
+show the form or the data.
+
+77
+00:05:24,780 --> 00:05:32,040
+So here I will have my submitted property which is set to false initially and I will set this to true
+
+78
+00:05:32,040 --> 00:05:32,410
+here.
+
+79
+00:05:32,430 --> 00:05:41,130
+So submitted equals true now and this submitted property year decides whether I show this row here.
+
+80
+00:05:41,180 --> 00:05:47,370
+As for in so it's just form I want to show that.
+
+81
+00:05:47,370 --> 00:05:55,560
+So we if it was submitted or I should say not submitted so if it's not submitted then we showed a form
+
+82
+00:05:56,070 --> 00:05:57,790
+if it was submitted.
+
+83
+00:05:58,170 --> 00:06:03,050
+Well in this case I want to show this and here I use submitted therefore.
+
+84
+00:06:03,160 --> 00:06:05,190
+Now let's see this in action.
+
+85
+00:06:05,190 --> 00:06:05,950
+Looks good.
+
+86
+00:06:06,160 --> 00:06:09,480
+Let's give the butler some styling that looks that looks ugly.
+
+87
+00:06:09,480 --> 00:06:13,650
+So here it gets the button and Button primary bootstrap classes here.
+
+88
+00:06:13,800 --> 00:06:17,280
+Just going to restructure that so that everything is on one page here.
+
+89
+00:06:17,550 --> 00:06:24,120
+And now if safety's looks much better i'll let me quickly fill out this form again so that we have some
+
+90
+00:06:24,130 --> 00:06:28,450
+nice well used to play around with and set this to yes.
+
+91
+00:06:28,470 --> 00:06:31,420
+Again separate the form and we see yes here.
+
+92
+00:06:31,420 --> 00:06:39,600
+Q Now there was one thing I don't like the yes field is no pre-select that here I have to select one.
+
+93
+00:06:39,690 --> 00:06:41,290
+It's empty at the beginning.
+
+94
+00:06:41,460 --> 00:06:43,550
+So let's fix this too.
+
+95
+00:06:43,590 --> 00:06:49,890
+It is of course not pre-select because I'm storing true or false here in my stored variable but of course
+
+96
+00:06:49,890 --> 00:06:51,980
+here I have yes and no.
+
+97
+00:06:51,990 --> 00:06:53,580
+So that's a little mistake here.
+
+98
+00:06:53,640 --> 00:06:55,590
+We should of course change this too.
+
+99
+00:06:55,590 --> 00:06:56,040
+Yes.
+
+100
+00:06:56,040 --> 00:07:00,580
+For example and now we see it's pre-selected and I still can submit it an hour.
+
+101
+00:07:00,570 --> 00:07:06,430
+What's he know here since I switched it just a second ago so that we finished the second exercise added
+
+102
+00:07:06,450 --> 00:07:07,120
+the button.
+
+103
+00:07:07,260 --> 00:07:13,950
+Now let's turn to exercise right and maybe put the button here below exercise to sort of you can clearly
+
+104
+00:07:13,950 --> 00:07:14,670
+see this.
+
+105
+00:07:14,820 --> 00:07:25,460
+And now exercise free once is to basically go up to the fields here to the first and last name and put
+
+106
+00:07:25,460 --> 00:07:29,300
+that into a separate component which we then can use as a form control.
+
+107
+00:07:29,300 --> 00:07:30,780
+So let's do that now.
+
+108
+00:07:31,350 --> 00:07:34,460
+I first will create this component.
+
+109
+00:07:34,700 --> 00:07:35,480
+I will name it.
+
+110
+00:07:35,550 --> 00:07:37,840
+Full name dot view here.
+
+111
+00:07:38,060 --> 00:07:44,540
+And of course I will have a template in there and I will have a scrub tag I won't use any special styling
+
+112
+00:07:44,540 --> 00:07:45,330
+here.
+
+113
+00:07:45,590 --> 00:07:52,010
+Now what I'll do is I will quickly copy the code from there that will be my template here of course.
+
+114
+00:07:52,010 --> 00:07:57,470
+The two input fields though I have to grouped them in a separate div because we may only have one top
+
+115
+00:07:57,470 --> 00:07:59,840
+level element if you remember that.
+
+116
+00:08:00,050 --> 00:08:05,270
+And then you hopefully also remember how we set up our own control.
+
+117
+00:08:05,270 --> 00:08:08,300
+We need to be able to get a value passed in.
+
+118
+00:08:08,360 --> 00:08:13,990
+So this value prop and then to return the input event or emit the input event.
+
+119
+00:08:14,240 --> 00:08:23,770
+Well Therefore I set up props here and I expect to get a value and then I also need to have a Meffert
+
+120
+00:08:23,870 --> 00:08:28,810
+somehow in my methods array where I can emit an input.
+
+121
+00:08:28,880 --> 00:08:32,370
+Well let's first work with this value here.
+
+122
+00:08:32,390 --> 00:08:38,440
+The interesting thing is that I have two different inputs year and I kind of need to split up a value
+
+123
+00:08:38,450 --> 00:08:46,010
+I get passed in into two fields and concatenate any input I have into a field I can output to do that.
+
+124
+00:08:46,010 --> 00:08:51,630
+I'll first add a computer property all name ID first name.
+
+125
+00:08:51,650 --> 00:08:55,090
+This of course is a function of all computer properties are it or a method.
+
+126
+00:08:55,090 --> 00:08:56,050
+I should say.
+
+127
+00:08:56,300 --> 00:09:01,510
+And the goal is to take the first word from my value.
+
+128
+00:09:01,670 --> 00:09:03,000
+Now that could be complicated.
+
+129
+00:09:03,020 --> 00:09:08,930
+If I have let's say a name which has free parts like a middle name and between that is something we'll
+
+130
+00:09:08,960 --> 00:09:10,250
+have to handle differently.
+
+131
+00:09:10,280 --> 00:09:17,980
+I'll keep it simple and assume I only get two parts separated with whitespace so up empty space.
+
+132
+00:09:18,290 --> 00:09:27,520
+Then if this is the case I can simply say the first name is the value and then I call the split function
+
+133
+00:09:27,520 --> 00:09:31,450
+and split on the whitespace.
+
+134
+00:09:31,450 --> 00:09:32,790
+Now this is an array.
+
+135
+00:09:32,980 --> 00:09:36,370
+And the first element is of course the first name.
+
+136
+00:09:36,490 --> 00:09:41,170
+And I'm going to copy this to also get my last name here.
+
+137
+00:09:41,410 --> 00:09:47,920
+Just need to copy that though and there I want to get the second element in disarray I split.
+
+138
+00:09:48,010 --> 00:09:50,920
+So that should be my last name then.
+
+139
+00:09:51,070 --> 00:09:58,350
+And with that I can now go to my input here and pass the value to this.
+
+140
+00:09:58,780 --> 00:10:06,790
+And the value here is of course my first name and the value on the second input is of course my last
+
+141
+00:10:06,790 --> 00:10:07,370
+name.
+
+142
+00:10:08,220 --> 00:10:09,620
+This is one thing.
+
+143
+00:10:09,660 --> 00:10:13,450
+Now with that I'm not emitting my input event though.
+
+144
+00:10:13,470 --> 00:10:22,020
+But let's already see if that works or we can see that I pass my full name in there.
+
+145
+00:10:22,020 --> 00:10:28,500
+So if I go back to the Apter view file I have to register my components so I first have to import it
+
+146
+00:10:28,500 --> 00:10:34,500
+of course so import full name from full
+
+147
+00:10:37,010 --> 00:10:37,970
+AUPs from.
+
+148
+00:10:38,000 --> 00:10:46,160
+That is why I don't get support here from full named are you and register it as a local component components
+
+149
+00:10:46,570 --> 00:10:47,030
+shell.
+
+150
+00:10:47,030 --> 00:10:54,690
+Therefore I have my app full name where I have the full name here.
+
+151
+00:10:54,750 --> 00:11:00,330
+I also replace first name a last name here and instead only have my full name and I will provide a default
+
+152
+00:11:00,330 --> 00:11:05,040
+value so that I can see if I correctly passed it down to my component.
+
+153
+00:11:05,280 --> 00:11:08,730
+So you're able populate this with my name.
+
+154
+00:11:08,730 --> 00:11:12,640
+So that's my Apfel name all added here.
+
+155
+00:11:12,650 --> 00:11:22,920
+AB full name like this and I will use the model to set up or to pass my full name there.
+
+156
+00:11:23,010 --> 00:11:26,330
+I also need to just sit down there and restringing depletion.
+
+157
+00:11:26,340 --> 00:11:29,600
+I also want to put full name does new property just create it.
+
+158
+00:11:29,610 --> 00:11:30,460
+Let's have a look.
+
+159
+00:11:31,850 --> 00:11:32,960
+Already looks good.
+
+160
+00:11:32,960 --> 00:11:36,630
+We see it is correctly split up into component we inserted.
+
+161
+00:11:36,740 --> 00:11:37,910
+That's great.
+
+162
+00:11:37,910 --> 00:11:47,450
+Now the missing pieces to also correctly submitted so that once I added that here we see it updated
+
+163
+00:11:47,480 --> 00:11:49,120
+here which currently doesn't happen.
+
+164
+00:11:49,120 --> 00:11:51,920
+That of course doesn't happen because of a full name component.
+
+165
+00:11:51,970 --> 00:11:58,800
+I'm not emitting events upon changing it so I need to have listeners on both inputs.
+
+166
+00:11:58,820 --> 00:12:04,070
+I'll listen to an input here and fire name changed.
+
+167
+00:12:04,910 --> 00:12:08,490
+And the same is of course true for my last name here.
+
+168
+00:12:08,720 --> 00:12:15,500
+Now I need a name change method here then and I do get to event past in here.
+
+169
+00:12:15,560 --> 00:12:19,690
+Now the important thing is the name change event.
+
+170
+00:12:19,910 --> 00:12:25,640
+Well what do you have to do it depends on which input amidst this event because a noted event target
+
+171
+00:12:25,880 --> 00:12:31,200
+will be this input element and this will hold a value which I now need to update in my name.
+
+172
+00:12:31,490 --> 00:12:39,230
+But to do this I need to know if I need to append to the first name or pre-painted to the last name.
+
+173
+00:12:39,440 --> 00:12:47,390
+So in order to be able to notice I will pass an argument here whereas say first and here I say lost
+
+174
+00:12:48,470 --> 00:12:55,070
+and of course all that once you pass to devolvement which I get passed by the DOM kind of automatically
+
+175
+00:12:55,790 --> 00:13:02,880
+as you or I can now check is first and therefore lets even make this easier let's say true or false.
+
+176
+00:13:03,530 --> 00:13:06,230
+So I'd check if it is the first thing which changed.
+
+177
+00:13:06,350 --> 00:13:16,670
+If it is for Estamos so if is for is is true then a 1 to emit and he went which is called it and he
+
+178
+00:13:17,060 --> 00:13:18,000
+and some data.
+
+179
+00:13:18,020 --> 00:13:25,190
+Well I went to him it is in all cases so let's put it outside of this and instead let's create a variable
+
+180
+00:13:25,280 --> 00:13:34,130
+let name it's empty at the beginning and hearable and say name equals and now it's the first name which
+
+181
+00:13:34,130 --> 00:13:41,030
+changed so I can say you went target value because that will be the input of my first input element
+
+182
+00:13:41,030 --> 00:13:41,330
+here.
+
+183
+00:13:41,330 --> 00:13:43,040
+Event target value.
+
+184
+00:13:43,280 --> 00:13:51,740
+So the first name changed and now I of course also want to concatenate a whitespace and then my last
+
+185
+00:13:51,740 --> 00:13:52,180
+name.
+
+186
+00:13:52,250 --> 00:13:54,990
+The computer property last name here.
+
+187
+00:13:55,720 --> 00:13:56,930
+Our y is.
+
+188
+00:13:57,040 --> 00:14:02,700
+If it's not the first name I want to do the same here but now of course the other way around.
+
+189
+00:14:02,800 --> 00:14:04,990
+So now I do have my
+
+190
+00:14:07,920 --> 00:14:18,320
+first name which is constant and then I do add the changed value from the event which is now all referring
+
+191
+00:14:18,320 --> 00:14:20,380
+to the last name input.
+
+192
+00:14:20,390 --> 00:14:22,120
+Now if name set year.
+
+193
+00:14:22,130 --> 00:14:26,570
+I now have to set value equal to name of course to update my value property.
+
+194
+00:14:26,570 --> 00:14:32,510
+Otherwise my computed properties are not calculated correctly and then I should be able to output this
+
+195
+00:14:32,510 --> 00:14:33,720
+value here.
+
+196
+00:14:34,150 --> 00:14:39,760
+Let's see if this works as expected if I reload this page and I change this to Maximillian.
+
+197
+00:14:39,760 --> 00:14:41,180
+Submit the form.
+
+198
+00:14:41,180 --> 00:14:42,830
+While that looks good to me.
+
+199
+00:14:42,830 --> 00:14:46,660
+Now let's see what happens if I remove the last name.
+
+200
+00:14:46,670 --> 00:14:55,050
+All looks great and if I change the last name and the first name perfect cell the custom control seems
+
+201
+00:14:55,050 --> 00:14:56,390
+to work as it should.
+
+202
+00:14:56,520 --> 00:14:59,720
+And I hope it became clear how to bolt and control.
+
+203
+00:14:59,730 --> 00:15:07,110
+It always comes down to being able to handle the Purab named value and emit an event named input.
+
+204
+00:15:07,290 --> 00:15:14,760
+And with that I'd say that were great steps in getting deeper into forms and really understanding them.
+

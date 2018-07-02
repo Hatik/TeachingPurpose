@@ -1,0 +1,428 @@
+1
+00:00:02,300 --> 00:00:04,940
+In the last lecture we learn how to store the token.
+
+2
+00:00:04,970 --> 00:00:06,240
+Let's now use it.
+
+3
+00:00:06,470 --> 00:00:10,860
+We need it on that dashboard page for the outgoing request there.
+
+4
+00:00:10,880 --> 00:00:14,090
+If we have a look at our dashboard DOD if you follow it.
+
+5
+00:00:14,140 --> 00:00:17,450
+This gets request which requires the total First of all.
+
+6
+00:00:17,450 --> 00:00:20,790
+And once you move that request into an action too.
+
+7
+00:00:20,840 --> 00:00:26,660
+So in my store just fall I'll add a further action next to a log and dashboard.
+
+8
+00:00:26,810 --> 00:00:31,270
+And here I would simply name that fetch user.
+
+9
+00:00:31,430 --> 00:00:33,110
+You can name it whatever you want.
+
+10
+00:00:33,110 --> 00:00:37,940
+There we will get this context object where we can get the commit method out of it.
+
+11
+00:00:38,420 --> 00:00:43,160
+And inside the action I will use X just to get my user.
+
+12
+00:00:43,160 --> 00:00:44,860
+We have to be careful here.
+
+13
+00:00:45,110 --> 00:00:53,060
+The access instance I import in the store Jaspal actually the X is off instance which is the wrong one
+
+14
+00:00:53,060 --> 00:00:55,610
+for fetching user data.
+
+15
+00:00:55,700 --> 00:01:03,440
+Now to be even more precise and number problem we will face is dead here I got some user data on firebase
+
+16
+00:01:03,500 --> 00:01:04,380
+on there you are.
+
+17
+00:01:04,460 --> 00:01:10,640
+I want to reach out to fetch user due to an earlier module where we added x.
+
+18
+00:01:10,850 --> 00:01:17,810
+Right now when signing up however we never stored something or firebase database we only sign a user
+
+19
+00:01:17,810 --> 00:01:21,290
+up and that gets stored in some other database.
+
+20
+00:01:21,290 --> 00:01:24,970
+So there are two things I want to do before we can use our token.
+
+21
+00:01:24,980 --> 00:01:27,750
+The first is what do we sign the user up.
+
+22
+00:01:27,770 --> 00:01:34,190
+Once we did successfully sign up and then block I want to dispatch and Navarrete action and also store
+
+23
+00:01:34,250 --> 00:01:40,340
+user data in the firebase database and not just in the firebase authentication database to which we
+
+24
+00:01:40,340 --> 00:01:41,930
+have a way access.
+
+25
+00:01:41,930 --> 00:01:48,050
+The second thing I want to do is then fetch the user and for both storing and fetching user data outside
+
+26
+00:01:48,050 --> 00:01:52,420
+of the firebase authentication world we need to set a different base.
+
+27
+00:01:52,430 --> 00:01:53,290
+You are out.
+
+28
+00:01:53,570 --> 00:01:56,990
+We import the wrong ex-U.S. instance.
+
+29
+00:01:57,020 --> 00:02:00,190
+So to say well that's no problem.
+
+30
+00:02:00,340 --> 00:02:08,510
+We can still import the main indexes instance to all name it global axes from axes.
+
+31
+00:02:08,530 --> 00:02:10,330
+You can give it any name you want.
+
+32
+00:02:10,720 --> 00:02:16,370
+And now local access is the access instance I will use for storing and fetching user data.
+
+33
+00:02:16,480 --> 00:02:17,990
+Let's start with storing.
+
+34
+00:02:18,220 --> 00:02:27,190
+I want to do this once we did sign up and it will quickly create a new action store user there.
+
+35
+00:02:27,220 --> 00:02:34,960
+I want to extract the commit method like this and in store user I will use my global access instance
+
+36
+00:02:35,170 --> 00:02:38,900
+send the post request send it to.
+
+37
+00:02:38,920 --> 00:02:46,810
+Now we need that you are all we have in the manger as fall here that that's automatically used as a
+
+38
+00:02:46,930 --> 00:02:48,780
+starting you are l.
+
+39
+00:02:48,790 --> 00:02:56,350
+So now I only need to reach out to slash users adjacent as we did earlier as we did at the beginning
+
+40
+00:02:56,350 --> 00:02:58,200
+of this module too.
+
+41
+00:02:58,330 --> 00:03:06,850
+So I now post my data here the data I do want to post is that I expect to get year past two days.
+
+42
+00:03:06,850 --> 00:03:12,710
+Store user action so name it user data here and I just want to pass it on.
+
+43
+00:03:12,970 --> 00:03:20,740
+And then here we can also add a then block where I can so log the response and a catch block for potential
+
+44
+00:03:20,800 --> 00:03:21,730
+errors.
+
+45
+00:03:21,730 --> 00:03:24,730
+So Konsole log the error.
+
+46
+00:03:24,730 --> 00:03:34,560
+Now this actually should be dispatched when we actually get the user data as a one once we did authenticate.
+
+47
+00:03:34,630 --> 00:03:42,340
+The good thing is this context object where we pull out commit also ask the dispatch method as a property
+
+48
+00:03:42,340 --> 00:03:44,060
+so we can pull this out too.
+
+49
+00:03:44,290 --> 00:03:45,640
+And once we identified that.
+
+50
+00:03:45,670 --> 00:03:52,300
+So in this and then block I can not only commit our mutation because I can set the token the user is
+
+51
+00:03:52,340 --> 00:03:54,340
+afflicted at this point of time.
+
+52
+00:03:54,520 --> 00:03:57,700
+I can also dispatch store user.
+
+53
+00:03:57,760 --> 00:04:01,820
+So does every action year and pass on my user data.
+
+54
+00:04:01,840 --> 00:04:07,830
+So I'll simply pass on a javascript object where I want to pass all the user data we have.
+
+55
+00:04:08,170 --> 00:04:19,990
+And here I will simply pass on off data that's the data I receive from my sign up view file.
+
+56
+00:04:20,160 --> 00:04:25,120
+And here of data is basically does object.
+
+57
+00:04:25,140 --> 00:04:31,920
+Now I will change this to be my foreign data so that I get all this information in my actions to avoid
+
+58
+00:04:31,920 --> 00:04:32,860
+confusion.
+
+59
+00:04:32,880 --> 00:04:39,100
+I still only submit the email and password from that bigger object here on sign up.
+
+60
+00:04:39,270 --> 00:04:45,450
+But once we did sign up I take advantage of the same of data object which contains my overall foreign
+
+61
+00:04:45,450 --> 00:04:47,820
+data to pass the overall foreign data.
+
+62
+00:04:47,820 --> 00:04:53,490
+So do you hold off data object you're on to store user and in-store user.
+
+63
+00:04:53,490 --> 00:04:58,800
+I then use the global access instance to post this data and store it in the database.
+
+64
+00:04:59,040 --> 00:05:02,550
+Now let's see if that works.
+
+65
+00:05:02,610 --> 00:05:12,240
+And for that I will actually first of all go back to firebase to database there and then two rules and
+
+66
+00:05:12,240 --> 00:05:19,800
+I will also switch right to does alternative rule where only authenticated users may write because the
+
+67
+00:05:19,800 --> 00:05:22,620
+user should be authenticated at this point of time.
+
+68
+00:05:22,620 --> 00:05:30,630
+Now if we go back to our application here and click on sign up and use yet another e-mail address I
+
+69
+00:05:30,630 --> 00:05:32,180
+haven't used before.
+
+70
+00:05:33,900 --> 00:05:39,960
+You can enter with we want for all the fields doesn't really matter it's not checked right now.
+
+71
+00:05:40,210 --> 00:05:48,030
+If I hit submit I get an error or for this post request even though authentication was successful.
+
+72
+00:05:48,290 --> 00:05:54,710
+Well the reason for this of course is that I don't pass on my token I'll do that in a second before
+
+73
+00:05:54,710 --> 00:05:55,520
+I do that.
+
+74
+00:05:55,520 --> 00:06:03,890
+Let me quickly also use global access infects user so that when I fetch the user We also do that with
+
+75
+00:06:03,890 --> 00:06:06,280
+the global X-ists instance.
+
+76
+00:06:06,680 --> 00:06:09,700
+And there I also want to store the user data in my store.
+
+77
+00:06:09,740 --> 00:06:16,600
+So I'll add a user field which is null initially and then I want to store the first user here.
+
+78
+00:06:16,640 --> 00:06:21,680
+So I want to commit let's say store user.
+
+79
+00:06:21,680 --> 00:06:27,890
+This mutation doesn't exist yet and I want to pass on users zero.
+
+80
+00:06:27,980 --> 00:06:34,850
+I still have my old code which I set up in the Access Module where I pull out data transformed the optic
+
+81
+00:06:34,880 --> 00:06:38,160
+I get back from firebase and create an array of users.
+
+82
+00:06:38,300 --> 00:06:43,720
+And then I only store the first user in the store here in the store.
+
+83
+00:06:43,820 --> 00:06:49,100
+And that of course is not only a great app because the first user might not be the active user but here
+
+84
+00:06:49,190 --> 00:06:52,920
+I just want to demonstrate how we can access the database.
+
+85
+00:06:53,120 --> 00:06:56,890
+So I'm storing this in calling store user has a mutation.
+
+86
+00:06:57,050 --> 00:07:02,660
+Well obviously I need to create dead mutations so story user is created here.
+
+87
+00:07:02,750 --> 00:07:05,120
+It receives to state and the user.
+
+88
+00:07:05,240 --> 00:07:14,140
+And then I just want to set state user equal to user finally with that all add a getter and and to scatter.
+
+89
+00:07:14,270 --> 00:07:22,190
+I want to get the user and for that Indes user method where I also received a state as an argument as
+
+90
+00:07:22,190 --> 00:07:23,110
+you learned it.
+
+91
+00:07:23,120 --> 00:07:25,940
+I just want to return state user.
+
+92
+00:07:25,940 --> 00:07:28,650
+We can now use to scatter in the dashboard.
+
+93
+00:07:28,970 --> 00:07:34,450
+Let's use stairs getter here with a computed property and the dashboard component.
+
+94
+00:07:34,940 --> 00:07:44,420
+And here I will add a property named email and on there I will return this store gathers user and then
+
+95
+00:07:44,420 --> 00:07:48,470
+there will be a property on that user we stored in the store.
+
+96
+00:07:48,530 --> 00:07:50,320
+If this went a little bit too fast.
+
+97
+00:07:50,390 --> 00:07:52,370
+Carefully move all through all these files.
+
+98
+00:07:52,400 --> 00:07:55,300
+I'm just using view X to store some data.
+
+99
+00:07:55,640 --> 00:07:58,630
+None of that code will work though.
+
+100
+00:07:58,640 --> 00:08:03,760
+Now one reason why it won't work is that I never dispatch the fax user action.
+
+101
+00:08:03,830 --> 00:08:08,600
+So that's the first thing I'll actually do in the dashboard component in the Creator's hook.
+
+102
+00:08:08,660 --> 00:08:16,250
+I still want to access my store and dispatch fetch user but the main reason why not if that will work
+
+103
+00:08:16,370 --> 00:08:25,190
+even if I change it like this if I go to dashboard is of course that I can see by the on off price air
+
+104
+00:08:25,190 --> 00:08:30,100
+or that I never attach this token to my requests.
+
+105
+00:08:30,120 --> 00:08:32,350
+Now that is what I talked a lot about though.
+
+106
+00:08:32,370 --> 00:08:38,640
+So let's finally do it in the next lecture and we'll then also take care about this other error we see
+
+107
+00:08:38,640 --> 00:08:38,890
+here.
+

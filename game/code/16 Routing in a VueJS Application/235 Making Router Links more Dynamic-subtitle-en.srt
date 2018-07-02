@@ -1,0 +1,92 @@
+1
+00:00:01,750 --> 00:00:07,000
+So we're able to choose a user a year and Lotus in its own component.
+
+2
+00:00:07,000 --> 00:00:13,960
+Now let's fine tuned it and add edit button here on the user details so that we load the user edit component
+
+3
+00:00:13,960 --> 00:00:15,210
+in such a case.
+
+4
+00:00:15,370 --> 00:00:25,120
+So your eyes simply want to set up a router link which shell use a button as the tag team tag and it
+
+5
+00:00:25,120 --> 00:00:27,880
+should navigate you to what.
+
+6
+00:00:27,880 --> 00:00:29,310
+Let's look at our routes.
+
+7
+00:00:29,320 --> 00:00:30,820
+I want to go to this route.
+
+8
+00:00:30,820 --> 00:00:36,250
+So I need slash user slash the currently loaded ID slash at it.
+
+9
+00:00:36,430 --> 00:00:38,350
+Well that's shouldn't be too hard.
+
+10
+00:00:38,560 --> 00:00:47,850
+I can simply say user and then a year I somehow need to pass the id to do so I will bind to dynamically
+
+11
+00:00:47,850 --> 00:00:51,720
+by adding a colon or the bind for the long form.
+
+12
+00:00:51,720 --> 00:00:55,560
+And this allows me now to pass our things than just a simple string.
+
+13
+00:00:55,770 --> 00:01:00,360
+So here I will actually pass a string plus.
+
+14
+00:01:00,510 --> 00:01:11,040
+And now roud Perens ID plus slash edit and I will show you an alternative to constructing your POV like
+
+15
+00:01:11,130 --> 00:01:13,850
+this manually in one of the next videos.
+
+16
+00:01:13,860 --> 00:01:23,190
+But for now lets keep it like this and let say added link edit user here and go to my user and click
+
+17
+00:01:23,220 --> 00:01:23,990
+Edit user.
+
+18
+00:01:24,000 --> 00:01:28,570
+We now see him loading user one added and I'm on the added user page here.
+
+19
+00:01:30,110 --> 00:01:39,830
+Now I can also add my classes here today so lets add class Shelby button button primary to give to a
+
+20
+00:01:39,830 --> 00:01:45,380
+nice hairstyling that of course should work just fine like this.
+
+21
+00:01:45,470 --> 00:01:54,680
+And now again this is how I load my user or how I can pass a parameter dynamically with Colin.
+
+22
+00:01:54,740 --> 00:01:57,270
+And then constructing the path manually.
+
+23
+00:01:57,380 --> 00:02:01,990
+But now in the next video I will show you a more elegant way of doing this.
+

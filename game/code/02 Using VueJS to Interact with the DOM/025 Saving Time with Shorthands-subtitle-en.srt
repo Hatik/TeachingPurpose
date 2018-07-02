@@ -1,0 +1,68 @@
+1
+00:00:02,580 --> 00:00:10,180
+Well so over the last lectures we learn a lot about outputting data listening to events transforming
+
+2
+00:00:10,180 --> 00:00:17,410
+data dynamically recalculating properties with computer properties watching our properties and much
+
+3
+00:00:17,410 --> 00:00:19,470
+more all the time.
+
+4
+00:00:19,470 --> 00:00:25,750
+We used Centex like this be on for events and we bind for binding two attributes of our elements here
+
+5
+00:00:25,910 --> 00:00:28,210
+like the RAF element.
+
+6
+00:00:28,240 --> 00:00:34,300
+Now if you use that and you're going to use this a lot there is a short cut a short a way of writing
+
+7
+00:00:34,300 --> 00:00:37,370
+this for events.
+
+8
+00:00:37,420 --> 00:00:46,450
+You can replace the on and the colon with an at sign you will recognize this and behind the scenes rendered
+
+9
+00:00:46,450 --> 00:00:48,880
+it are treated as V on colon.
+
+10
+00:00:49,030 --> 00:00:53,540
+But with at claim we're basically saying at the click event do the following.
+
+11
+00:00:53,590 --> 00:00:57,940
+So it's the same as a V on and and coal and just a short way of writing it.
+
+12
+00:00:58,150 --> 00:01:04,840
+And for the bind we get a similar shortcut we can remove the bind and just use colon.
+
+13
+00:01:04,840 --> 00:01:10,810
+RATH So the code now is exactly the same ASP for but a bit shorter.
+
+14
+00:01:10,810 --> 00:01:15,600
+And for the rest of course I will use the shorter code as there is nothing wrong with it.
+
+15
+00:01:15,650 --> 00:01:18,610
+And why not save some characters especially in a sense.
+
+16
+00:01:18,640 --> 00:01:22,120
+I believe this syntax is very readable as well.
+
+17
+00:01:22,120 --> 00:01:24,410
+So that's just something to be aware of.
+

@@ -1,0 +1,64 @@
+1
+00:00:01,630 --> 00:00:06,390
+So I'm back to my own directive and we just learned that we get these hooks to work with it.
+
+2
+00:00:06,460 --> 00:00:09,590
+So let's implement rebind to here like a method.
+
+3
+00:00:09,640 --> 00:00:16,510
+This is like a lifecycle method in a component but here is a directive so blind as we learned gives
+
+4
+00:00:16,510 --> 00:00:20,680
+us access to the element to the binding and the virtual node.
+
+5
+00:00:21,040 --> 00:00:26,110
+Now we won't need all the arguments here or just wanted to list them and then let's say what I want
+
+6
+00:00:26,110 --> 00:00:32,440
+to do here is I want to simply set the style of my element the element here of course is the native
+
+7
+00:00:32,710 --> 00:00:37,870
+HTML elements I have access to the style properties that are normal Chalis good property of a built
+
+8
+00:00:37,900 --> 00:00:45,670
+in HDMI element and there are want to set the background color to let's say green to start simple.
+
+9
+00:00:45,700 --> 00:00:49,590
+We will soon update this to be more powerful.
+
+10
+00:00:49,810 --> 00:00:56,920
+Well with that set up I can go to my app view file and since it is a global directive with you highlight
+
+11
+00:00:57,040 --> 00:01:01,480
+selector here I can simply add v highlight like this.
+
+12
+00:01:01,600 --> 00:01:06,360
+No argument passed no value passed nothing at all just like this.
+
+13
+00:01:06,370 --> 00:01:10,330
+Now if I save this you'll see it indeed has the green background.
+
+14
+00:01:10,330 --> 00:01:13,600
+So our directive is already working.
+
+15
+00:01:13,600 --> 00:01:18,540
+Now of course it would be nice if we could manually control which color to should get.
+
+16
+00:01:18,550 --> 00:01:19,870
+So we'll work on this next.
+

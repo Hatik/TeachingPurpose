@@ -1,0 +1,240 @@
+1
+00:00:02,310 --> 00:00:05,030
+So let's have a look at the routing set up.
+
+2
+00:00:05,040 --> 00:00:13,800
+I chose to use I will first of all create a new file which will name a route start Shea's and that is
+
+3
+00:00:13,800 --> 00:00:14,400
+optional.
+
+4
+00:00:14,400 --> 00:00:17,170
+You don't need to outsource your out there.
+
+5
+00:00:17,190 --> 00:00:21,730
+But before we can set up any routes we first need to install the router right.
+
+6
+00:00:21,960 --> 00:00:25,130
+So let's run NPM install minus minus.
+
+7
+00:00:25,170 --> 00:00:28,270
+Save the router like that.
+
+8
+00:00:28,590 --> 00:00:35,340
+And that should give us the the router and what the router now install We can go to the main Che's file.
+
+9
+00:00:35,520 --> 00:00:45,210
+And here I want to add and you import and queue where I implored the new router from the router packets
+
+10
+00:00:45,210 --> 00:00:48,990
+here and then you'll learn that we first need to run.
+
+11
+00:00:49,090 --> 00:00:52,410
+You use your router in order to use it.
+
+12
+00:00:52,440 --> 00:00:54,390
+So let's do that here.
+
+13
+00:00:54,470 --> 00:00:56,510
+And able steal the router.
+
+14
+00:00:56,730 --> 00:00:59,130
+And next you want to set up the router for dad.
+
+15
+00:00:59,130 --> 00:01:00,960
+We need some file of files.
+
+16
+00:01:01,020 --> 00:01:06,810
+Some routes I should say so I'm going to set them up here an extra file export Konst routes give this
+
+17
+00:01:06,810 --> 00:01:12,670
+of course any name you like and then routes are really just an array of objects as you learned.
+
+18
+00:01:12,960 --> 00:01:19,790
+So we need three routes now to your home page to the portfolio and to the stocks page.
+
+19
+00:01:20,010 --> 00:01:26,640
+So for data I'll sort of set up the main road for just the empty lbf or just this last year which will
+
+20
+00:01:26,640 --> 00:01:32,370
+lead to our home page and there I want to load a component and this component I want to load is of course
+
+21
+00:01:32,640 --> 00:01:33,900
+the home component.
+
+22
+00:01:34,110 --> 00:01:37,340
+So your import home from.
+
+23
+00:01:37,410 --> 00:01:41,280
+And now it's from the components fall from the home that you fall.
+
+24
+00:01:41,280 --> 00:01:46,450
+So this now allows me to set the home component there for that first round.
+
+25
+00:01:46,770 --> 00:01:50,240
+The second Gracen now leads to the portfolio let's say.
+
+26
+00:01:50,250 --> 00:01:55,910
+So slash portfolio shell load the portfolio component of course.
+
+27
+00:01:55,950 --> 00:02:04,800
+So for that let's go up to our imports and add the import year of our portfolio from and out as Lefsetz
+
+28
+00:02:04,800 --> 00:02:09,720
+components folder in the portfolio folder in the portfolio view file.
+
+29
+00:02:09,780 --> 00:02:12,320
+So with that we can add the portfolio component.
+
+30
+00:02:12,450 --> 00:02:17,500
+And lastly the last drug want is set up now that of course has lead to our stocks.
+
+31
+00:02:17,640 --> 00:02:24,020
+So year let's links to our stocks and then adds the stocks component here.
+
+32
+00:02:24,020 --> 00:02:35,680
+So let me add this last import import stocks from components stocks Lupe's stocks and then the stock
+
+33
+00:02:36,010 --> 00:02:39,280
+not that fall this fall stocks that you file.
+
+34
+00:02:39,640 --> 00:02:41,290
+And then of course added years.
+
+35
+00:02:41,290 --> 00:02:47,160
+So these are the reroutes of what they use in this application no nested routes or anything like that
+
+36
+00:02:47,170 --> 00:02:50,490
+because routing Weiss's application is pretty straightforward.
+
+37
+00:02:50,500 --> 00:02:54,440
+So with Dadge you get all the routes configured here.
+
+38
+00:02:54,590 --> 00:03:00,050
+Now since we export this we can go back to the main case file and import our routes here.
+
+39
+00:03:00,220 --> 00:03:08,320
+So import d routes with equilibrate Bressant since it's a named export from the maps from the route
+
+40
+00:03:08,320 --> 00:03:08,710
+start.
+
+41
+00:03:08,710 --> 00:03:17,110
+JS file and we can then use our router or create our router here in a constant let's say by running
+
+42
+00:03:17,110 --> 00:03:18,450
+new via router.
+
+43
+00:03:18,490 --> 00:03:24,430
+Important is that you used the you used before and then we passed an object where we can figure out
+
+44
+00:03:24,430 --> 00:03:25,080
+a router.
+
+45
+00:03:25,180 --> 00:03:26,890
+Now how do we want to configure it.
+
+46
+00:03:27,130 --> 00:03:33,010
+Well I want to set the mode to history to get these nice are you or else and don't have the hash tag.
+
+47
+00:03:33,280 --> 00:03:34,820
+And then I'll set my routes.
+
+48
+00:03:34,840 --> 00:03:40,300
+So since I'm importing them I would say routes routes or again uses either 6 index of just setting up
+
+49
+00:03:40,300 --> 00:03:42,410
+routes of dead.
+
+50
+00:03:42,430 --> 00:03:44,350
+The routes are configured.
+
+51
+00:03:44,770 --> 00:03:51,200
+And now of course we also have to add the router a year to our new instance again with the shortcut
+
+52
+00:03:51,230 --> 00:03:58,070
+instead of writing router router since we need this constant we want to use as a value router as well.
+
+53
+00:03:58,210 --> 00:04:01,310
+With that the router has been added to the application.
+
+54
+00:04:01,330 --> 00:04:02,820
+We got our routes.
+
+55
+00:04:02,950 --> 00:04:09,910
+Now let's see the action by going to the Apter file and adding a first router the new years old place
+
+56
+00:04:09,910 --> 00:04:17,080
+where we can load these well these routes and with that in place let's run our server with NPM run Dev
+
+57
+00:04:17,350 --> 00:04:23,130
+D and workflow and the server and we see the home component.
+
+58
+00:04:23,250 --> 00:04:30,300
+Now that's manually enter portfolio here portfolio component and if we slash stocks the stocks component
+
+59
+00:04:30,380 --> 00:04:37,170
+and so have dad we got our first component someplace and routing to go there with that in the next let's
+
+60
+00:04:37,170 --> 00:04:39,880
+think about the next steps and start working on them.
+

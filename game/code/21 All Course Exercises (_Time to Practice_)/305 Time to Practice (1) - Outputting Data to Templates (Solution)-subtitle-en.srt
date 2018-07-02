@@ -1,0 +1,340 @@
+1
+00:00:02,160 --> 00:00:08,860
+Let's start holding this exercise the first task was to put your name and your age.
+
+2
+00:00:09,030 --> 00:00:16,390
+Well we already got the name field so populate this with Max and then it's also important or acquired.
+
+3
+00:00:16,540 --> 00:00:19,060
+Q Also at H field.
+
+4
+00:00:19,230 --> 00:00:24,360
+So let me quickly do this and also a 2:27 since this is my age up here.
+
+5
+00:00:24,360 --> 00:00:31,510
+You can then replace your name with double curly braces for E-string and oblations syntax and output
+
+6
+00:00:31,620 --> 00:00:35,430
+name you're referring to this name property and the data property.
+
+7
+00:00:35,430 --> 00:00:38,830
+Remember we don't need this or anything at the beginning.
+
+8
+00:00:38,880 --> 00:00:47,090
+No this no data nothing like that we can directly access name here in the parentheses and then one output
+
+9
+00:00:47,300 --> 00:00:50,680
+H using the same syntax and referring to H.
+
+10
+00:00:50,730 --> 00:00:55,890
+If I saved this by hitting control ENTRAR we see Max 27 so we're there.
+
+11
+00:00:55,890 --> 00:00:58,570
+So this is the first task solved.
+
+12
+00:00:58,860 --> 00:01:02,990
+The second task was to output my age multiplied by free.
+
+13
+00:01:03,180 --> 00:01:05,040
+Well that's really easy to do.
+
+14
+00:01:05,040 --> 00:01:10,710
+Alig and use double curly braces to introduce interpellation syntax and then a year I referred to my
+
+15
+00:01:10,740 --> 00:01:17,810
+H property which I already store youtoo the first exercise we finished and I simply multiplied by free.
+
+16
+00:01:17,850 --> 00:01:23,940
+Does how easy we can output a JSA expression or the result of this expression as you will see when I
+
+17
+00:01:23,940 --> 00:01:24,600
+hit enter.
+
+18
+00:01:24,600 --> 00:01:26,100
+We see 81.
+
+19
+00:01:26,130 --> 00:01:30,170
+Well I still got some time to get to that point here.
+
+20
+00:01:30,180 --> 00:01:37,320
+This is how easy we use a javascript expression but when the cold embraces the word exercise does something
+
+21
+00:01:37,320 --> 00:01:39,190
+or requires something similar.
+
+22
+00:01:39,270 --> 00:01:48,490
+But here I don't want to output a simple calculation in here instead of what I call a function.
+
+23
+00:01:48,530 --> 00:01:55,100
+So let's first add a method to the methods array down here where the methods object excuse me and choose
+
+24
+00:01:55,100 --> 00:01:56,510
+any name you like.
+
+25
+00:01:56,540 --> 00:02:08,460
+I'm going to name it random and this will be a function where I simply return Marth random does that
+
+26
+00:02:08,470 --> 00:02:11,520
+allows me up here to call this function.
+
+27
+00:02:11,590 --> 00:02:13,930
+And I've been hitting control enter.
+
+28
+00:02:13,990 --> 00:02:18,710
+We see a random number each changing each time as I repeatedly.
+
+29
+00:02:18,820 --> 00:02:20,890
+Well reload this application or reload.
+
+30
+00:02:20,890 --> 00:02:23,160
+This page does how easy it is.
+
+31
+00:02:23,170 --> 00:02:28,340
+The key thing to take away here is that random function call here.
+
+32
+00:02:28,510 --> 00:02:34,490
+Just as an average Chalons expression like in the second exercise there we execute the code right but
+
+33
+00:02:34,490 --> 00:02:35,620
+when you call the braces.
+
+34
+00:02:35,620 --> 00:02:37,080
+Now we're calling a function.
+
+35
+00:02:37,120 --> 00:02:44,130
+But in both exercise or both tasks we actually rends up javascript code between the quali braces.
+
+36
+00:02:44,230 --> 00:02:49,470
+Doesn't matter if it is a function call or the code or the calculation itself.
+
+37
+00:02:49,720 --> 00:02:50,980
+Now it's getting interesting.
+
+38
+00:02:50,980 --> 00:02:55,720
+We're leaving the world of this curly brace interpellation syntax instead.
+
+39
+00:02:55,780 --> 00:02:59,840
+Here I now want to search an image on Google and output it here.
+
+40
+00:02:59,840 --> 00:03:01,080
+My image tag.
+
+41
+00:03:01,360 --> 00:03:02,990
+Well what could be output.
+
+42
+00:03:03,250 --> 00:03:05,120
+Well I will be there untreated.
+
+43
+00:03:05,170 --> 00:03:12,680
+And simply search for Buquet as on the images and let's pick what it is looks really awesome.
+
+44
+00:03:12,680 --> 00:03:19,750
+Let's pick this one I now want to output this image of goods I could simply add my link here hit Control
+
+45
+00:03:19,750 --> 00:03:24,200
+enter and well yeah we all see it.
+
+46
+00:03:24,200 --> 00:03:25,680
+It's a bit too big.
+
+47
+00:03:25,710 --> 00:03:28,060
+So yes that would be the image.
+
+48
+00:03:28,230 --> 00:03:34,580
+Maybe we should add some style here to make this more visible.
+
+49
+00:03:34,590 --> 00:03:37,880
+So let's add a width and height here.
+
+50
+00:03:41,540 --> 00:03:41,950
+Yeah.
+
+51
+00:03:42,080 --> 00:03:42,920
+That looks better.
+
+52
+00:03:42,920 --> 00:03:46,130
+Of course the dimensions are now messed up but at least we see it.
+
+53
+00:03:46,400 --> 00:03:49,540
+But anyway that's not how I want to add this image.
+
+54
+00:03:49,550 --> 00:03:51,470
+I don't want to paste your link in here.
+
+55
+00:03:51,470 --> 00:03:57,320
+Instead I want to store it here in a property in my data field image which is a string holding this
+
+56
+00:03:57,640 --> 00:03:59,950
+u r l and then up here.
+
+57
+00:03:59,960 --> 00:04:03,010
+I simply want to bind this source attribute.
+
+58
+00:04:03,020 --> 00:04:06,490
+Now we learn that it won't work if I use diabolically braces here.
+
+59
+00:04:06,500 --> 00:04:08,170
+This is not how it works.
+
+60
+00:04:08,210 --> 00:04:10,320
+This will resolve to an error.
+
+61
+00:04:10,340 --> 00:04:11,200
+We can try it out.
+
+62
+00:04:11,210 --> 00:04:16,740
+If I add image here what we don't see the image clearly because again this is not how it works.
+
+63
+00:04:16,760 --> 00:04:21,650
+We can't use to call the brace and text here in an aged female attribute.
+
+64
+00:04:21,710 --> 00:04:26,260
+We therefore have to bind it using we bind like this.
+
+65
+00:04:26,570 --> 00:04:34,320
+This outhouse view Chia's that this source attribute here is no longer directly controlled by age team
+
+66
+00:04:34,340 --> 00:04:40,760
+also to say but instead that now view as controls and sets the value dynamically.
+
+67
+00:04:40,760 --> 00:04:46,730
+This allows me to pass the source of this dynamic value which here is the image property between the
+
+68
+00:04:46,730 --> 00:04:49,880
+quotation marks important no call the braces here.
+
+69
+00:04:49,940 --> 00:04:56,320
+Since we already are in the UK as the world due to this heavy bind directive here with that set up of
+
+70
+00:04:56,320 --> 00:05:02,240
+a now it control enter we now see the image again but setting it dynamically fruiterer's laying down
+
+71
+00:05:02,240 --> 00:05:04,880
+there for the last exercise.
+
+72
+00:05:04,880 --> 00:05:10,100
+We're kind of doing the same but now way have the value of this input.
+
+73
+00:05:10,100 --> 00:05:17,270
+And again the first idea might be to use the curly braces here and output name and that of course won't
+
+74
+00:05:17,270 --> 00:05:22,450
+work we see curly braces named on there now because again this is not how it works.
+
+75
+00:05:22,460 --> 00:05:24,770
+We can't use curly braces here.
+
+76
+00:05:24,770 --> 00:05:32,650
+Instead we will again use we bind to bind this value attribute using the bind directive NUJ as today
+
+77
+00:05:32,690 --> 00:05:38,660
+for now make this dynamic and allowing us to now simply pass the property name between the quotation
+
+78
+00:05:38,660 --> 00:05:39,210
+marks.
+
+79
+00:05:39,320 --> 00:05:44,390
+Thus upon hitting control enter we now see my real name down there.
+
+80
+00:05:44,390 --> 00:05:51,410
+This word the first exercise and outputting data should have been too complicated but yet it's very
+
+81
+00:05:51,410 --> 00:05:57,020
+important to get this right to understand these core mechanics because we're going to use them throughout
+
+82
+00:05:57,030 --> 00:05:57,720
+this course.
+
+83
+00:05:57,830 --> 00:06:03,340
+And if you get some issues here now is the time to get 100 percent clear about what you're doing.
+
+84
+00:06:03,470 --> 00:06:09,230
+Because we will need this and everything else kind of builds up on that that let's continue with the
+
+85
+00:06:09,230 --> 00:06:10,270
+next lectures.
+

@@ -1,0 +1,56 @@
+1
+00:00:02,080 --> 00:00:08,710
+I think this is a good place to stop and have a look at how data or information travels and a beautiful
+
+2
+00:00:08,800 --> 00:00:09,900
+application.
+
+3
+00:00:10,060 --> 00:00:14,110
+We've got a couple of components here apparent and free child components.
+
+4
+00:00:14,200 --> 00:00:22,450
+Now generally if we want to reach out from one child to the other that does not work because our communication
+
+5
+00:00:22,540 --> 00:00:28,870
+is uni directional which means it only travels from parents to children or from children to the parent
+
+6
+00:00:28,900 --> 00:00:31,380
+but not from a child to an average child.
+
+7
+00:00:31,720 --> 00:00:41,710
+So instead we have to take the route that our parent gifts as some method we can execute when we execute
+
+8
+00:00:41,710 --> 00:00:43,990
+this method provided by the parent.
+
+9
+00:00:44,020 --> 00:00:48,790
+It was provided by a prop this will run in the parent.
+
+10
+00:00:48,820 --> 00:00:53,480
+Alternatively we would use a custom event to which the parent listened listens.
+
+11
+00:00:53,500 --> 00:00:55,580
+That is all possible.
+
+12
+00:00:55,960 --> 00:01:03,310
+And then the parent can pass the updated data to the child number three desist as uni directional data
+
+13
+00:01:03,310 --> 00:01:03,770
+flow.
+
+14
+00:01:03,790 --> 00:01:05,070
+I was talking about.
+

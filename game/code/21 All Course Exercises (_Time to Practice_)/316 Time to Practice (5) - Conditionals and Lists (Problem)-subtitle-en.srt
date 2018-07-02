@@ -1,0 +1,100 @@
+1
+00:00:02,090 --> 00:00:03,730
+It's exercise time again.
+
+2
+00:00:03,770 --> 00:00:08,100
+We learned about conditionals and loops or lists with the vord.
+
+3
+00:00:08,120 --> 00:00:10,480
+Now it's time to practice that too.
+
+4
+00:00:10,670 --> 00:00:11,100
+Yeah.
+
+5
+00:00:11,180 --> 00:00:12,710
+Really get into using that.
+
+6
+00:00:12,800 --> 00:00:15,830
+And feel 100 percent safe about doing so.
+
+7
+00:00:15,830 --> 00:00:18,270
+The first exercise is set up here.
+
+8
+00:00:18,380 --> 00:00:25,250
+Once you hook up this button you see here to target the display of the two paragraphs and do DUDAS both
+
+9
+00:00:25,250 --> 00:00:28,930
+by using B if and we show to understand the difference.
+
+10
+00:00:28,970 --> 00:00:35,770
+Side note if you plan on using the owls V OWLS is not available on the show.
+
+11
+00:00:35,810 --> 00:00:37,090
+You can't use it on that.
+
+12
+00:00:37,130 --> 00:00:39,180
+It only works with we.
+
+13
+00:00:39,530 --> 00:00:41,560
+Well that is the first exercise.
+
+14
+00:00:41,630 --> 00:00:47,630
+The second one is about creating a list output and an ordered list of ary elements of your choice.
+
+15
+00:00:47,630 --> 00:00:52,750
+So basically create a new Airey and loop through it and create the last of that era.
+
+16
+00:00:52,760 --> 00:00:59,870
+Here in the HTL code also print the index of each element in the word exercise.
+
+17
+00:00:59,930 --> 00:01:06,650
+I want you to loop through this object here you see here and I want you to print all the key value pairs
+
+18
+00:01:06,710 --> 00:01:11,650
+as well as the index of each key value pair in the fourth exercise.
+
+19
+00:01:11,690 --> 00:01:17,780
+Also once you print an object this one here but I only want you to print the values important to create
+
+20
+00:01:17,780 --> 00:01:20,490
+a nested loop for this data array.
+
+21
+00:01:20,690 --> 00:01:28,580
+And as we not only have nested arrays you also might need to figure out a way to determine the current
+
+22
+00:01:28,580 --> 00:01:33,710
+value of the outer loop is an array for which you can create a nested loop or not.
+
+23
+00:01:33,710 --> 00:01:35,340
+So these are the four exercises.
+
+24
+00:01:35,360 --> 00:01:36,260
+Have fun with them.
+
+25
+00:01:36,260 --> 00:01:37,970
+I see a solution that you.
+

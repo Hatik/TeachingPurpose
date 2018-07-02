@@ -1,0 +1,88 @@
+1
+00:00:02,010 --> 00:00:04,110
+Until now we have worked in chairs.
+
+2
+00:00:04,110 --> 00:00:09,220
+Fiddle Well maybe you follow along on your local set up as I showed it in the first section of this
+
+3
+00:00:09,240 --> 00:00:10,070
+course.
+
+4
+00:00:10,380 --> 00:00:17,310
+But no matter if you did that or if we use that that is really just a set up which works for very simple
+
+5
+00:00:17,340 --> 00:00:20,850
+and small applications like the app we built before.
+
+6
+00:00:20,850 --> 00:00:26,460
+It's not a set up you when we use for medium sized or certainly not for big projects.
+
+7
+00:00:26,520 --> 00:00:30,370
+So in this course module will do the translation.
+
+8
+00:00:30,490 --> 00:00:37,080
+We all take the basics we learn thus far all the basics about view chairs and now we'll put them into
+
+9
+00:00:37,110 --> 00:00:41,990
+work in bigger projects or in medium sized projects to begin with to do that.
+
+10
+00:00:42,000 --> 00:00:43,400
+We need a different set up.
+
+11
+00:00:43,410 --> 00:00:45,730
+We'll move away from Che's Fedele.
+
+12
+00:00:45,780 --> 00:00:50,780
+It's great for showcasing basic things but we're leaving this world now.
+
+13
+00:00:50,850 --> 00:00:54,420
+Now we want to dive into components into building bigger applications.
+
+14
+00:00:54,420 --> 00:01:01,730
+Building our application up from different parts and pieces and for debt we will need a more elaborate
+
+15
+00:01:01,970 --> 00:01:06,200
+process which sounds bigger than it is but we need some additional tools.
+
+16
+00:01:06,240 --> 00:01:10,050
+We need some additional features and chase fiddle just doesn't offer them.
+
+17
+00:01:10,140 --> 00:01:15,990
+Especially it will get more and more different to kind of understand what's going on if you only have
+
+18
+00:01:16,230 --> 00:01:18,290
+this small of an editor.
+
+19
+00:01:18,300 --> 00:01:25,230
+So with that in this march we'll have a look at which workflow is we could use when using or when working
+
+20
+00:01:25,230 --> 00:01:28,190
+with you just how Mujeres supports us with that.
+
+21
+00:01:28,260 --> 00:01:30,710
+And what's so special about these workflows.
+
+22
+00:01:30,780 --> 00:01:31,500
+Let's dive in.
+

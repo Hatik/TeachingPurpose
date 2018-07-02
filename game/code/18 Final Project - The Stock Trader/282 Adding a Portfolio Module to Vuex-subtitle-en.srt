@@ -1,0 +1,532 @@
+1
+00:00:02,030 --> 00:00:07,300
+Time to make the Bible work for Dad we'll need a portfolio and some stayed for that portfolio.
+
+2
+00:00:07,340 --> 00:00:10,460
+So let's work on this next in this module folder.
+
+3
+00:00:10,460 --> 00:00:17,240
+I'll add a portfolio dot J as fall because I want to set up its own module in our view x store.
+
+4
+00:00:17,360 --> 00:00:19,350
+And there we will have a state of course.
+
+5
+00:00:19,350 --> 00:00:22,790
+And now what is the state of our portfolio.
+
+6
+00:00:23,150 --> 00:00:25,880
+Well we certainly want to have some funds to work with.
+
+7
+00:00:25,880 --> 00:00:27,100
+I'll set this to 10000.
+
+8
+00:00:27,100 --> 00:00:31,840
+You might use of course a different amount and we'll have some stocks in our portfolio.
+
+9
+00:00:31,850 --> 00:00:34,910
+So stocks here refers to the stocks in our portfolio.
+
+10
+00:00:34,940 --> 00:00:37,190
+Not to all the stocks available.
+
+11
+00:00:37,520 --> 00:00:43,960
+We don't need some mutations of course mutations again are what allows us to change our state.
+
+12
+00:00:44,150 --> 00:00:46,850
+And here I want to be able to buy a stock.
+
+13
+00:00:46,880 --> 00:00:56,000
+So does this one action I set up and does action therefore has the state of mutations get that and then
+
+14
+00:00:56,060 --> 00:01:03,260
+I know I'll get an object as the second argument and I'll use destructuring to pull out the stock ID
+
+15
+00:01:03,620 --> 00:01:06,920
+the quantity and the stock price.
+
+16
+00:01:06,920 --> 00:01:10,690
+Now where do these free names and this object come from.
+
+17
+00:01:10,700 --> 00:01:13,780
+How do I know that I will have these free properties.
+
+18
+00:01:14,030 --> 00:01:15,580
+Well that's basically my order.
+
+19
+00:01:15,620 --> 00:01:20,600
+If we have a look at the stock that you fall in the stocks folder does how we set up our order with
+
+20
+00:01:20,600 --> 00:01:23,560
+a stock ID a stock price and quantity.
+
+21
+00:01:23,720 --> 00:01:29,720
+And now that is what I'm pulling out of my object here because I know I will get an order if I need
+
+22
+00:01:29,720 --> 00:01:32,200
+to commit a buy stock mutation.
+
+23
+00:01:32,450 --> 00:01:34,620
+So they avoid it can use that.
+
+24
+00:01:34,730 --> 00:01:42,080
+Now in this method I first want to check if at all if do have this stock in my stocks great because
+
+25
+00:01:42,080 --> 00:01:42,280
+of it.
+
+26
+00:01:42,290 --> 00:01:43,270
+Do we have it.
+
+27
+00:01:43,280 --> 00:01:44,410
+I wanna add it.
+
+28
+00:01:44,420 --> 00:01:50,360
+And I don't want to create a new item India re sulfurous check if I do ever record by accessing my state
+
+29
+00:01:50,390 --> 00:01:51,300
+and my stock.
+
+30
+00:01:51,300 --> 00:01:57,140
+So this area up here and then executing find a method which allows you to find something in the array
+
+31
+00:01:57,440 --> 00:02:02,690
+find takes a function as an argument where the element will be passed in automatically so this will
+
+32
+00:02:02,690 --> 00:02:07,470
+automatically loop for all my elements and then execute a function for each of the elements.
+
+33
+00:02:07,760 --> 00:02:12,590
+And then I want to check if element ID equals stock ID.
+
+34
+00:02:12,590 --> 00:02:17,360
+Keep in mind if you write this in one line there's always the implicit return statement in front of
+
+35
+00:02:17,360 --> 00:02:17,650
+it.
+
+36
+00:02:17,750 --> 00:02:24,620
+So this will return true if the ID of the element I'm currently at in my loop matches the idea of the
+
+37
+00:02:24,620 --> 00:02:25,000
+stock.
+
+38
+00:02:25,000 --> 00:02:25,920
+I want to buy.
+
+39
+00:02:26,120 --> 00:02:28,710
+So if my aere is empty this will never match.
+
+40
+00:02:28,790 --> 00:02:34,940
+But if my aere does have this stock already it will match at some point and there Fred will then return.
+
+41
+00:02:34,940 --> 00:02:41,630
+This will return true or false which again will lead for the find method to return this stock in my
+
+42
+00:02:41,630 --> 00:02:48,150
+aere and I know if recked court is set that I already do have my.
+
+43
+00:02:48,200 --> 00:02:55,030
+Or do I have this stock in my aere and therefore I don't want to push a new item on desire Instead
+
+44
+00:02:55,040 --> 00:03:01,670
+I want to take this record which is the stock which was found in my array and updated the quantity to
+
+45
+00:03:01,670 --> 00:03:06,260
+be the old quantity Plus the new quantity.
+
+46
+00:03:06,260 --> 00:03:08,350
+I'm getting a new order.
+
+47
+00:03:08,420 --> 00:03:12,200
+However if this is not the case then I know it's a new record.
+
+48
+00:03:12,200 --> 00:03:18,320
+In this case I want to take my state buy stocks there and push a new object on it.
+
+49
+00:03:18,320 --> 00:03:24,700
+This new object will have an ID of stock ID and a quantity of quantity.
+
+50
+00:03:24,740 --> 00:03:28,930
+So that's the date I want to store it in this stocks in my portfolio.
+
+51
+00:03:29,060 --> 00:03:34,190
+The idea and the quantity with that I got all the data I will need later on to also find out what's
+
+52
+00:03:34,190 --> 00:03:37,530
+the price and what's the total value and so on.
+
+53
+00:03:37,910 --> 00:03:41,840
+So that's the buy stock action or mutation I should say.
+
+54
+00:03:42,050 --> 00:03:46,030
+We also need a method to sell stocks here.
+
+55
+00:03:46,140 --> 00:03:49,470
+Will also get a state and I will also get an order.
+
+56
+00:03:49,490 --> 00:03:51,950
+Of course the order will have the same fields.
+
+57
+00:03:51,980 --> 00:03:53,860
+As for buying a stock.
+
+58
+00:03:54,050 --> 00:03:58,670
+So all the relevant data which allows me to update my state now.
+
+59
+00:03:58,700 --> 00:04:05,930
+There I will first find the stock buy I do it in my erate because I only get stock ideas so I need to
+
+60
+00:04:05,930 --> 00:04:15,650
+find it in my array and then I want to check if my record quantity is greater than the quantity of what
+
+61
+00:04:15,650 --> 00:04:16,670
+I want to sell.
+
+62
+00:04:16,700 --> 00:04:23,390
+Then this is of course possible and I therefore want to update my record quantity to be the old quantity
+
+63
+00:04:23,390 --> 00:04:25,530
+mine honesty quantity of the order.
+
+64
+00:04:25,820 --> 00:04:32,930
+But if I try to sell more than I do have or expected the amount of what I have to be precise I want
+
+65
+00:04:32,930 --> 00:04:34,440
+to remove it from the array.
+
+66
+00:04:34,580 --> 00:04:41,320
+So there are one or splice and find the position of my record index of record here.
+
+67
+00:04:42,990 --> 00:04:44,250
+And that's what I want.
+
+68
+00:04:44,250 --> 00:04:51,090
+So this will now give me back and you are able to update the array with out that item inside of it.
+
+69
+00:04:51,090 --> 00:04:56,490
+And of course they only want to splice this item was old they removed this item which now actually is
+
+70
+00:04:56,490 --> 00:04:58,480
+completely sold.
+
+71
+00:04:58,830 --> 00:05:06,570
+Of course I'll also need to upgrade my funds so I'll check my funds here and I will add something equal
+
+72
+00:05:06,570 --> 00:05:12,740
+to the stock price times quantity and I need to do the same here when I buy a stock actually.
+
+73
+00:05:12,750 --> 00:05:14,840
+So here I also want to update the funds.
+
+74
+00:05:14,850 --> 00:05:22,470
+But of course here I want to update them Duby be Waldie funds minus stock price times quantity with
+
+75
+00:05:22,470 --> 00:05:25,460
+the Advocaat buy and sell in place.
+
+76
+00:05:25,470 --> 00:05:30,250
+Now let's quickly finished is by adding the action we need.
+
+77
+00:05:30,270 --> 00:05:31,410
+That is only one.
+
+78
+00:05:31,410 --> 00:05:38,480
+These sell stock action because buys stock is located in my in my stocks module.
+
+79
+00:05:38,640 --> 00:05:46,350
+So here I will help myself stock action which actually also I can use the method syntax for that too
+
+80
+00:05:46,350 --> 00:05:50,610
+of course which gets me my commitment method has that order.
+
+81
+00:05:51,120 --> 00:05:57,510
+And that here I simply want to commit sells stock order.
+
+82
+00:05:57,510 --> 00:06:03,410
+Now you could of course all the ad buys stock action here if you think that's makes more sense or whatever.
+
+83
+00:06:03,410 --> 00:06:04,790
+I think you could argue for both.
+
+84
+00:06:04,820 --> 00:06:07,880
+I'll leave it in my stocks Marchal for now.
+
+85
+00:06:08,360 --> 00:06:14,870
+And we want to set up the Garris year of course now gathers data simply an object and therefore getting
+
+86
+00:06:14,870 --> 00:06:16,750
+my data or what.
+
+87
+00:06:16,760 --> 00:06:17,990
+Which getters do I need.
+
+88
+00:06:17,990 --> 00:06:19,300
+Let's start with dead.
+
+89
+00:06:19,580 --> 00:06:22,830
+Well one to be able to get my current portfolio of stocks.
+
+90
+00:06:22,850 --> 00:06:28,450
+So I definitely want to get my stock portfolio and I want to get my funds.
+
+91
+00:06:28,670 --> 00:06:30,700
+Let's start with the stock portfolio.
+
+92
+00:06:30,770 --> 00:06:40,050
+There we get the state and we can also inject the other getters into this and there are then returns
+
+93
+00:06:40,060 --> 00:06:42,440
+state stocks.
+
+94
+00:06:42,700 --> 00:06:50,350
+And now I somehow need to since I only have the IDs in my stocks an array I need to access the stocks
+
+95
+00:06:50,440 --> 00:06:56,750
+on these stocks module that is why I inject that to get yours here to find out.
+
+96
+00:06:56,770 --> 00:06:59,580
+The idea of my or D payment.
+
+97
+00:06:59,590 --> 00:07:07,120
+So all of the stocks I have in my portfolio I can use the map method for that map allows me to transform
+
+98
+00:07:07,180 --> 00:07:09,190
+each element in my array.
+
+99
+00:07:09,510 --> 00:07:12,900
+So all this will automatically input the Kurd element.
+
+100
+00:07:12,910 --> 00:07:20,050
+I am looping through kind of implicitly into those callback function and in there I can now set up into
+
+101
+00:07:20,050 --> 00:07:22,180
+what I want to transform this element.
+
+102
+00:07:22,170 --> 00:07:25,820
+We're currently at and this will be run for all elements in my array again.
+
+103
+00:07:26,170 --> 00:07:33,400
+So here I again want to fetch the record for data I will use my getters that refers to my store getters
+
+104
+00:07:33,410 --> 00:07:39,440
+so my of my overall store and there I can find or can use the stock scatter which of course is to get
+
+105
+00:07:39,440 --> 00:07:42,230
+her set up here in the stocks module.
+
+106
+00:07:42,460 --> 00:07:50,440
+So you can access this like this and here find allows me to again find an element where I check if the
+
+107
+00:07:50,440 --> 00:07:57,940
+element ID matches my stock ID non-important stock it refers to the stock we're currently at in this
+
+108
+00:07:57,940 --> 00:08:02,590
+map Meffert whereas element ID refers to the element of those stocks.
+
+109
+00:08:02,590 --> 00:08:08,210
+Aere in my stocks modules of all these stocks not just the ones in my portfolio.
+
+110
+00:08:08,380 --> 00:08:15,220
+So you're basically finding the relevant records and then for each record I want to return a new object
+
+111
+00:08:15,410 --> 00:08:18,660
+that is what the elements in my array will get transformed to.
+
+112
+00:08:18,910 --> 00:08:28,700
+And the year I return ID which is stock ID on one asset the quantity which is stock quantity and I want
+
+113
+00:08:28,700 --> 00:08:34,820
+to set the name which is the name of this record because I am not storing this in my local stocks every
+
+114
+00:08:34,820 --> 00:08:42,410
+year and price which is the price on the record because again in the local stocks I only have itin quantity
+
+115
+00:08:42,470 --> 00:08:44,000
+which is why I keep them here.
+
+116
+00:08:44,120 --> 00:08:48,670
+But then I'm reaching out to my overall stocks in you all to get name and price.
+
+117
+00:08:48,830 --> 00:08:57,170
+And here I'm basically creating a new array where I mapped all these values so where I expanded my object
+
+118
+00:08:57,410 --> 00:09:02,650
+in this area to not only have ID in quantity but not also name and price and I'm returning it here.
+
+119
+00:09:02,870 --> 00:09:05,170
+So therefore I'm returning it.
+
+120
+00:09:05,180 --> 00:09:12,960
+Overall in this Geter year and regarding funds well funds only needs to state like this and the some
+
+121
+00:09:12,960 --> 00:09:18,730
+we want to return state funds of course referring to the funds in my state here.
+
+122
+00:09:18,740 --> 00:09:21,010
+So with that in place Let's export it.
+
+123
+00:09:21,020 --> 00:09:23,460
+And then in the next budget let's hook it all up.
+
+124
+00:09:23,540 --> 00:09:31,100
+So we want to export to state the mutations the actions and of course the gatherer's with that.
+
+125
+00:09:31,100 --> 00:09:32,530
+That was quite a lot of work.
+
+126
+00:09:32,540 --> 00:09:34,910
+Of course there are different ways to set this up.
+
+127
+00:09:34,910 --> 00:09:39,560
+This is always a question where we want to store things how we want to handle things.
+
+128
+00:09:39,560 --> 00:09:45,530
+I try to show one set up where we all needed to reach out to a number Marchal so that we also can see
+
+129
+00:09:45,530 --> 00:09:46,590
+how that would work.
+
+130
+00:09:46,610 --> 00:09:49,060
+And of course this is not absolutely necessary.
+
+131
+00:09:49,070 --> 00:09:53,240
+You could simply store your stocks differently enough to talking.
+
+132
+00:09:53,240 --> 00:09:58,790
+Let's move onto the next one where we use all these things to hook everything up and enable buying and
+
+133
+00:09:58,790 --> 00:09:59,970
+selling stocks.
+

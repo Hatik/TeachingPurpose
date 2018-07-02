@@ -1,0 +1,216 @@
+1
+00:00:01,850 --> 00:00:08,150
+So we built our first application and hopefully you saw how easy it is to get started with U-2s.
+
+2
+00:00:08,240 --> 00:00:13,650
+This is where we are at now and of course we're getting started but we'll leave there soon and thereafter
+
+3
+00:00:13,730 --> 00:00:19,070
+we start diving super deep into it starting with how we can interact with the DOM how we can output
+
+4
+00:00:19,070 --> 00:00:24,410
+data which different ways we have how we can bind to HDMI attributes how we can listen to events and
+
+5
+00:00:24,410 --> 00:00:26,720
+much much more.
+
+6
+00:00:26,720 --> 00:00:32,780
+These are actually multiple molecules in this course and you will get a very first great impression
+
+7
+00:00:32,870 --> 00:00:36,100
+or understanding of how Mujeres works.
+
+8
+00:00:36,240 --> 00:00:39,310
+Well thereafter it's time to deeply dive into the view.
+
+9
+00:00:39,320 --> 00:00:41,720
+Instead it's this core object.
+
+10
+00:00:41,720 --> 00:00:47,350
+Each view application in the end or which or whatever you're creating uses.
+
+11
+00:00:47,390 --> 00:00:50,110
+How does it work which lifecycle does it follow.
+
+12
+00:00:50,120 --> 00:00:52,420
+How can you use it to your advantage.
+
+13
+00:00:52,730 --> 00:00:54,050
+Well then it's time to leave.
+
+14
+00:00:54,070 --> 00:01:00,320
+Chase fil-A which will use for the first sections and really learn about how you could set up more professional
+
+15
+00:01:00,320 --> 00:01:03,050
+workflows will use the views sealife or that.
+
+16
+00:01:03,140 --> 00:01:05,780
+But that really isn't that Ziel doing all the work.
+
+17
+00:01:05,780 --> 00:01:12,350
+It's just a Selye which provides some ease to use and quickly to get started with templates for example
+
+18
+00:01:12,350 --> 00:01:13,910
+then using web peg in the end.
+
+19
+00:01:13,910 --> 00:01:19,980
+We will talk in greater detail about this in the section of course with the more professional workflow
+
+20
+00:01:19,980 --> 00:01:22,300
+set up we can dive into components.
+
+21
+00:01:22,340 --> 00:01:24,270
+A key concept up us.
+
+22
+00:01:24,410 --> 00:01:31,640
+You build up your application from components you can create reusable parts containing a template and
+
+23
+00:01:31,640 --> 00:01:36,350
+business logic which you can use in different places in Europe really powerful.
+
+24
+00:01:36,350 --> 00:01:42,230
+And I will actually have multiple modules here about basics about how you can communicate between components
+
+25
+00:01:42,530 --> 00:01:44,540
+and some advanced concepts.
+
+26
+00:01:44,930 --> 00:01:51,530
+Well with all these core features being set we will then have a look at forums how can we handle user
+
+27
+00:01:51,590 --> 00:01:57,830
+input how can we use different form elements and how can we create our own form control thereafter we'll
+
+28
+00:01:57,830 --> 00:02:00,300
+have a look at directives folders and make sense.
+
+29
+00:02:00,320 --> 00:02:01,780
+What are all these things.
+
+30
+00:02:01,880 --> 00:02:03,080
+How can they help you.
+
+31
+00:02:03,080 --> 00:02:05,580
+How would you use them in your application.
+
+32
+00:02:05,930 --> 00:02:08,120
+Well we're getting really advanced here.
+
+33
+00:02:08,180 --> 00:02:11,200
+And then we're going to have a look at animations and transitions.
+
+34
+00:02:11,240 --> 00:02:16,370
+You want to make your application beautiful and you will learn how you chase makes that's very easy
+
+35
+00:02:16,550 --> 00:02:23,090
+how it supports us any mating dynamic content or switching from one component to another.
+
+36
+00:02:23,570 --> 00:02:27,350
+Well with that we're really diving super deep into it.
+
+37
+00:02:27,560 --> 00:02:31,940
+But until now we always stayed in our view JSA application.
+
+38
+00:02:32,110 --> 00:02:35,870
+What if we need to reach out to a server to store something in a database.
+
+39
+00:02:36,050 --> 00:02:41,030
+Well we can't do that and we will learn how we can access the HTP from within a beauteous application
+
+40
+00:02:41,300 --> 00:02:43,160
+in this part of the course.
+
+41
+00:02:43,400 --> 00:02:48,470
+They are after time to have a look at what you would need to create bigger applications namely single
+
+42
+00:02:48,470 --> 00:02:49,970
+page applications.
+
+43
+00:02:49,970 --> 00:02:52,160
+For that we will need routing.
+
+44
+00:02:52,250 --> 00:02:56,840
+And of course they have a whole module dedicated to word where you will learn how the router works how
+
+45
+00:02:56,840 --> 00:03:03,230
+to set it up how to use child Rodd's how to pass parameters and much more that belongs in a world of
+
+46
+00:03:03,230 --> 00:03:09,590
+single page applications and kind of like so does the state management will have a look at then managing
+
+47
+00:03:09,590 --> 00:03:14,620
+the state and more complex applications can quickly become a problem as you will see there.
+
+48
+00:03:14,780 --> 00:03:20,390
+And I will also provide a solution view x a great additional package which makes this easy.
+
+49
+00:03:20,450 --> 00:03:25,070
+That concludes the single page application part and will then have a look at deployment.
+
+50
+00:03:25,070 --> 00:03:28,640
+How can we actually ship our application to a server.
+
+51
+00:03:28,850 --> 00:03:30,670
+Does this sound right to me.
+
+52
+00:03:30,680 --> 00:03:34,660
+It does and I can't wait to dive deeper into that adduces soon.
+
+53
+00:03:34,670 --> 00:03:39,350
+Let's next have a look at which resources this course gives you to make your progress.
+
+54
+00:03:39,350 --> 00:03:42,580
+Besides watching these videos as easy as possible.
+

@@ -1,0 +1,80 @@
+1
+00:00:02,310 --> 00:00:10,650
+Welcome to this module authentication is something which plays an important role in almost any web application
+
+2
+00:00:11,160 --> 00:00:12,620
+authentication.
+
+3
+00:00:12,660 --> 00:00:20,040
+Also to a great deal happens on the backend on the server and therefore is not really relevant to you.
+
+4
+00:00:20,140 --> 00:00:28,530
+Yes but there actually is something special about authentication and single page applications.
+
+5
+00:00:28,650 --> 00:00:31,620
+And that again is where View comes in.
+
+6
+00:00:31,620 --> 00:00:40,230
+We won't focus on validating user passwords on the server sending confirmation emails or storing data
+
+7
+00:00:40,230 --> 00:00:43,480
+in the database because that all happens on the server.
+
+8
+00:00:43,530 --> 00:00:47,210
+And that of course greatly depends on the kind of service or language you're using.
+
+9
+00:00:47,250 --> 00:00:52,260
+Are you using ph p.m.-I sequel or are you using node and Mongo D-B node.
+
+10
+00:00:52,280 --> 00:00:58,810
+In my sequel whatever it is this is something a dedicated node HP and so on Klores should teach you
+
+11
+00:00:59,280 --> 00:01:07,830
+but I will show you how to add all indication to the Front-End how to get a so-called token more about
+
+12
+00:01:07,830 --> 00:01:13,440
+this in the next lecture from the back at how to store and manage that token how to integrate it with
+
+13
+00:01:13,620 --> 00:01:19,230
+us how to protect route's against unwanted excess and much more.
+
+14
+00:01:19,230 --> 00:01:26,100
+So this is the goal of this Marchal show you how to integrate off indication as a Demel back and I will
+
+15
+00:01:26,100 --> 00:01:32,400
+use firebase for the reasons I mentioned a few seconds ago about how you need to adjust back at depending
+
+16
+00:01:32,400 --> 00:01:38,850
+on the server side language with firebase authentication is easy but it actually gives us exactly the
+
+17
+00:01:38,850 --> 00:01:42,940
+API we would have with any cost of back end to.
+
+18
+00:01:43,080 --> 00:01:50,430
+So what I show you here does not only work with firebase but with any back and now how however does
+
+19
+00:01:50,460 --> 00:01:52,350
+authentication don't work.
+
+20
+00:01:52,470 --> 00:01:56,850
+That is super important and something I will explain in the next lecture.
+

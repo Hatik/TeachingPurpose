@@ -1,0 +1,96 @@
+1
+00:00:01,700 --> 00:00:09,230
+As a side note what you can also do is you could remove the contents slot here and also remove the name
+
+2
+00:00:09,230 --> 00:00:15,590
+for a second slot and then you would have a set up where you have one named slot the title and one unnamed
+
+3
+00:00:15,590 --> 00:00:19,120
+slot viewed as well treat the unnamed slot.
+
+4
+00:00:19,130 --> 00:00:20,860
+SD default slot.
+
+5
+00:00:20,990 --> 00:00:28,270
+So everything we're passing in which doesn't have a name slot assigned like title which has one Sodhi
+
+6
+00:00:28,280 --> 00:00:32,480
+paragraph for example which doesn't have a name slot assigned to it.
+
+7
+00:00:32,600 --> 00:00:36,320
+Such content will automatically be rendered in the default slot.
+
+8
+00:00:36,410 --> 00:00:43,310
+So saving this will yield the same result as before simply by taking advantage of future as default
+
+9
+00:00:43,310 --> 00:00:47,580
+behavior which renders unassigned content in the default slot here.
+
+10
+00:00:48,500 --> 00:00:55,220
+Speaking of defaults we learned how to render content in a default slot but we also can set up some
+
+11
+00:00:55,220 --> 00:00:57,620
+default content to be displayed.
+
+12
+00:00:57,980 --> 00:01:02,460
+Let's say we're not sure if we receive a third element.
+
+13
+00:01:02,690 --> 00:01:09,380
+Let's say we have a span here and in this span we want to have some such subtitle slot.
+
+14
+00:01:09,440 --> 00:01:15,230
+So here this name is subtitle and we don't know if we get some data passed in or not.
+
+15
+00:01:15,230 --> 00:01:17,900
+And actually turns out we're not getting it here right.
+
+16
+00:01:17,900 --> 00:01:21,500
+We only assign something to title and then to that the default slot.
+
+17
+00:01:21,530 --> 00:01:26,110
+We're not assigning something to the subtitle slot for such a case.
+
+18
+00:01:26,150 --> 00:01:28,220
+We could set up the subtitle here.
+
+19
+00:01:28,370 --> 00:01:33,940
+So let's give it some styling so that we can really see the difference and make it a bit Reya.
+
+20
+00:01:34,140 --> 00:01:40,040
+If any are saved us we see the subtitle here and there's just the default content which we simply introduce
+
+21
+00:01:40,370 --> 00:01:44,050
+by writing it between the opening and closing slot tag.
+
+22
+00:01:44,160 --> 00:01:50,090
+Whenever we do insert content this default content here in the middle will get replaced.
+
+23
+00:01:50,180 --> 00:01:55,850
+But it is displayed in our case where we don't have data being passed out from its outside.
+
+24
+00:01:55,850 --> 00:01:58,640
+So in cases where it does slot is an occupied.
+

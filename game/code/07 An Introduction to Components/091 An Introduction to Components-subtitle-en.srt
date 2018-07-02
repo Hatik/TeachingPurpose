@@ -1,0 +1,248 @@
+1
+00:00:01,840 --> 00:00:08,140
+I'm back in chess fiddle and even though I said we would use the seal from now on we will but this simple
+
+2
+00:00:08,140 --> 00:00:12,130
+introduction to come communes is best done here or it's very easy done here.
+
+3
+00:00:12,130 --> 00:00:17,320
+Asked Is this the environment you saw before it and as it will all be very little code.
+
+4
+00:00:17,320 --> 00:00:20,410
+I want to show you but the code that does show is very important.
+
+5
+00:00:20,410 --> 00:00:22,120
+Consider this application.
+
+6
+00:00:22,120 --> 00:00:27,700
+We get a normal instance where we select a certain place in the dorm with the app selector but then
+
+7
+00:00:27,700 --> 00:00:32,090
+we override it with our own template down there where I basically say service status.
+
+8
+00:00:32,140 --> 00:00:34,850
+And then I use the status data property here.
+
+9
+00:00:35,050 --> 00:00:39,260
+That's a normal instance nothing could ish about that.
+
+10
+00:00:39,320 --> 00:00:45,160
+Now let's say we wanted to place this service status in various places here in the app as I showed you
+
+11
+00:00:45,160 --> 00:00:46,150
+in the last module.
+
+12
+00:00:46,160 --> 00:00:47,780
+That's not that easy to do.
+
+13
+00:00:47,980 --> 00:00:53,050
+If I repeat my app here besides that that it's not valid HD Maltzahn have multiple IDs.
+
+14
+00:00:53,200 --> 00:00:57,670
+You will also see it's only print that once and that does not because I'm using a DVR.
+
+15
+00:00:57,880 --> 00:01:05,320
+If I were to use class here and changes to dot app to select that by class you still see it's only getting
+
+16
+00:01:05,320 --> 00:01:09,610
+used to once the second usage down there is getting a minute.
+
+17
+00:01:09,600 --> 00:01:11,520
+That is because we're creating a view.
+
+18
+00:01:11,560 --> 00:01:15,970
+Instance here and with that and since we will only select the first element.
+
+19
+00:01:16,040 --> 00:01:19,610
+So this death here this day of up here.
+
+20
+00:01:19,610 --> 00:01:24,640
+Now we want to repeat this in our application because we've got multiple place where we do want to use
+
+21
+00:01:24,640 --> 00:01:25,380
+it.
+
+22
+00:01:25,450 --> 00:01:27,370
+That's actually easy to do.
+
+23
+00:01:27,640 --> 00:01:35,050
+I'll restructure it renamed this back to ID and then I'll get rid of the second instance but now I want
+
+24
+00:01:35,050 --> 00:01:41,170
+to indeed use a component which means I want to create a re-usable piece of not only template but of
+
+25
+00:01:41,170 --> 00:01:41,800
+our view.
+
+26
+00:01:41,800 --> 00:01:49,990
+Instance component basically extends the new instance and we can treat a new component by using the
+
+27
+00:01:49,990 --> 00:01:55,750
+view object and then running the component method on that behind the scenes.
+
+28
+00:01:55,750 --> 00:02:01,940
+This will give us a new instance Kind of but with some extra features.
+
+29
+00:02:02,020 --> 00:02:08,200
+Now the first argument and view component is the tag name which you want to use to enter a component.
+
+30
+00:02:08,440 --> 00:02:12,660
+You can't think of a component as our own age Tamal element we're creating.
+
+31
+00:02:12,820 --> 00:02:18,460
+So here I will set up component to use let's say my component like this.
+
+32
+00:02:18,460 --> 00:02:23,740
+This will allow me to enter my component in the code like this.
+
+33
+00:02:23,740 --> 00:02:29,170
+So creating or using my own HDMI element which I'm creating with that therefore makes sure to not use
+
+34
+00:02:29,170 --> 00:02:30,520
+an existing one.
+
+35
+00:02:30,520 --> 00:02:36,040
+Also make sure to add a prefix to make your component unique so that you don't interfere with any third
+
+36
+00:02:36,040 --> 00:02:42,430
+party packages you might use or existing or possibly future aged female elements because you certainly
+
+37
+00:02:42,430 --> 00:02:44,190
+don't want to overwrite them.
+
+38
+00:02:44,230 --> 00:02:50,750
+So maybe use your company company name as a prefix or at least something like app or my.
+
+39
+00:02:51,040 --> 00:02:54,610
+So that's the selector by which we're able to use this.
+
+40
+00:02:54,640 --> 00:02:58,330
+The second argument is the actual object which represents a component.
+
+41
+00:02:58,480 --> 00:03:03,730
+And this is generally the same object as the object we're passing here to our view instance.
+
+42
+00:03:03,730 --> 00:03:11,590
+Therefore I can copy data template to this object here to use that and I will change this to a hash
+
+43
+00:03:11,590 --> 00:03:15,240
+tag so that we will again select this part in the dawn.
+
+44
+00:03:15,460 --> 00:03:20,010
+But this will not work as intended.
+
+45
+00:03:20,020 --> 00:03:25,840
+The reason for this is the data object and the component component basically extends the view instance
+
+46
+00:03:26,110 --> 00:03:32,440
+and therefore if we set up data like this we kind of interfere with the average data properties our
+
+47
+00:03:32,440 --> 00:03:34,080
+data objects.
+
+48
+00:03:34,270 --> 00:03:41,650
+Hence you chaps will actually give us an error or if data is an object it's fine or it's normal to use
+
+49
+00:03:41,650 --> 00:03:45,290
+it as an object in our root instance.
+
+50
+00:03:45,460 --> 00:03:53,090
+But in any component this shall actually be a function where we then return a new object holding the
+
+51
+00:03:53,090 --> 00:03:53,640
+data.
+
+52
+00:03:53,680 --> 00:03:59,710
+So this data object we use for is not basically returned in a function.
+
+53
+00:03:59,740 --> 00:04:06,050
+So by wrapping it in a function we make sure we're not interfering with our data.
+
+54
+00:04:06,400 --> 00:04:13,720
+So with this set up for now in control enter we see the service status critical here and we see that
+
+55
+00:04:13,750 --> 00:04:16,480
+our component is now used successfully.
+
+56
+00:04:16,480 --> 00:04:23,440
+So we're now able to output it because we can now also repeat that if we would have it in multiple places
+
+57
+00:04:24,130 --> 00:04:28,060
+like this and that is what makes components so cool.
+
+58
+00:04:28,060 --> 00:04:31,330
+You have your contained new instance your contain code.
+
+59
+00:04:31,330 --> 00:04:36,540
+Of course there you could also have methods computed all the things you already learn about.
+
+60
+00:04:36,580 --> 00:04:43,450
+Which is why I taught them first but now you have it contained in this component which you can enter
+
+61
+00:04:43,540 --> 00:04:49,670
+as often as you want into your template here into your code to reuse it.
+
+62
+00:04:49,720 --> 00:04:53,740
+And that gives you a very powerful tool to build your web pages.
+

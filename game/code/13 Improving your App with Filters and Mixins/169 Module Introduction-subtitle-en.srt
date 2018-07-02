@@ -1,0 +1,40 @@
+1
+00:00:02,150 --> 00:00:10,050
+Welcome to a new module after learning about directives for rooms components and the view chairs templates
+
+2
+00:00:10,040 --> 00:00:17,600
+and text in general I now want to dive into to average nice features future as officers which in some
+
+3
+00:00:17,600 --> 00:00:21,660
+cases can be really helpful filters and mix in.
+
+4
+00:00:21,830 --> 00:00:28,190
+Now both topics still pick up for its own course module because it will see we can walk through it pretty
+
+5
+00:00:28,190 --> 00:00:28,840
+fast.
+
+6
+00:00:28,850 --> 00:00:30,950
+That doesn't mean that they're worthless.
+
+7
+00:00:31,040 --> 00:00:31,930
+Not at all.
+
+8
+00:00:32,030 --> 00:00:38,570
+You will see that filters used rightly as well as Mexicans can really help you structure your app and
+
+9
+00:00:38,600 --> 00:00:40,980
+output content in the way you want output.
+
+10
+00:00:41,150 --> 00:00:42,920
+I want to start with Salter's.
+

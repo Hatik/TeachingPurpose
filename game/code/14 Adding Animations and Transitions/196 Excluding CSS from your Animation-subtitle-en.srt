@@ -1,0 +1,88 @@
+1
+00:00:02,230 --> 00:00:06,970
+Now with the current state here we're not executing any information we're not executing any code besides
+
+2
+00:00:07,000 --> 00:00:08,620
+logging to the console.
+
+3
+00:00:08,710 --> 00:00:13,330
+But you see that all these events get admitted and our hooks get cold.
+
+4
+00:00:13,330 --> 00:00:17,060
+Now before we start adding some challenge of code I want to highlight something.
+
+5
+00:00:17,320 --> 00:00:19,140
+We're not using CSSA right.
+
+6
+00:00:19,180 --> 00:00:24,490
+We're doing everything for javascript which is why we need to call the done function down there.
+
+7
+00:00:24,610 --> 00:00:30,900
+Now if we don't use VSS You might also tell you chess we don't get an error if we don't tell it.
+
+8
+00:00:31,090 --> 00:00:37,180
+But if we do tell it it can step skip the step of determining whether we do have a SEUS estimation attached
+
+9
+00:00:37,180 --> 00:00:37,830
+or not.
+
+10
+00:00:37,870 --> 00:00:43,530
+Because keep in mind if we don't have names set up that doesn't mean it doesn't look for Jesus classes
+
+11
+00:00:43,540 --> 00:00:44,350
+to attach.
+
+12
+00:00:44,380 --> 00:00:50,290
+It means it looks to attach a and Jervy interactive and so on and it will find that these classes don't
+
+13
+00:00:50,290 --> 00:00:56,740
+exist but we can skip this checking if we know well we won't attach ones because we don't want to use
+
+14
+00:00:56,740 --> 00:00:57,560
+them here.
+
+15
+00:00:57,910 --> 00:01:02,630
+So you can tell it by adding Kolins see us as false.
+
+16
+00:01:02,770 --> 00:01:09,010
+Now Colin CSSA instead of just c s s because we want to pass a boolean here and not pass false as a
+
+17
+00:01:09,010 --> 00:01:09,760
+string.
+
+18
+00:01:09,760 --> 00:01:12,280
+This is why we need to use attribute binding.
+
+19
+00:01:12,280 --> 00:01:17,880
+Now with falles being passed here this means don't look for X years as classes.
+
+20
+00:01:17,890 --> 00:01:19,030
+We don't use them.
+
+21
+00:01:19,030 --> 00:01:24,610
+So you may skip the step and you immediately execute these hooks here so that we can take your word
+
+22
+00:01:24,670 --> 00:01:25,550
+with javascript.
+

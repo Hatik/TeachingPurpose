@@ -1,0 +1,236 @@
+1
+00:00:01,760 --> 00:00:10,930
+Now what is a palter a filter is basically a little syntax feature you can use your template to transform
+
+2
+00:00:10,930 --> 00:00:12,950
+some output in the template.
+
+3
+00:00:13,000 --> 00:00:14,110
+And that is important.
+
+4
+00:00:14,140 --> 00:00:17,350
+A filter helps you transform output in the data.
+
+5
+00:00:17,350 --> 00:00:23,620
+It doesn't transform the data itself it only transforms what the user is see as a typical example and
+
+6
+00:00:23,620 --> 00:00:29,680
+actually a folder we will build is a folder which takes and put a string let's say and turns it all
+
+7
+00:00:29,680 --> 00:00:37,180
+to uppercase letters important future S doesn't ship with built in filters and therefore all the folders
+
+8
+00:00:37,180 --> 00:00:39,910
+we need have to be both on our own.
+
+9
+00:00:39,940 --> 00:00:42,930
+I will show you how to build such a filter now and thereafter.
+
+10
+00:00:42,980 --> 00:00:49,690
+I'll also show you an alternative to folders and explain WHY DOES alternative times may be the better
+
+11
+00:00:49,690 --> 00:00:52,870
+choice but let's start with building our own fault tree.
+
+12
+00:00:53,300 --> 00:01:01,960
+So I want to build a Voltar So let's say here in my application here I have some data and in this data
+
+13
+00:01:01,960 --> 00:01:05,650
+of course I returned my data object as always in this object.
+
+14
+00:01:05,650 --> 00:01:10,330
+I get some text when output this text could be simply b.
+
+15
+00:01:10,450 --> 00:01:11,380
+Hello there.
+
+16
+00:01:12,270 --> 00:01:15,820
+Now what I want to do is I want to output this text here.
+
+17
+00:01:15,900 --> 00:01:21,330
+And of course I can use string interpolation Forder without having double curly braces and with my server
+
+18
+00:01:21,330 --> 00:01:22,390
+running we see Hello.
+
+19
+00:01:22,420 --> 00:01:26,080
+They're not too spectacular has nothing to do with folders.
+
+20
+00:01:26,110 --> 00:01:29,940
+Now I want to turn this text to be all uppercase.
+
+21
+00:01:30,090 --> 00:01:36,330
+Important thing is I don't want to make it uppercase in the state property itself text should stay as
+
+22
+00:01:36,330 --> 00:01:37,140
+it is.
+
+23
+00:01:37,230 --> 00:01:44,130
+I want to give it back in the uppercase for in the template only for that we will create a folder and
+
+24
+00:01:44,130 --> 00:01:51,100
+we do create such a folder by adding the folders property here to our object.
+
+25
+00:01:51,120 --> 00:01:56,380
+This will create a new faulter which we can use in this component's template.
+
+26
+00:01:56,490 --> 00:01:57,130
+Important.
+
+27
+00:01:57,150 --> 00:02:02,130
+This will register this folder locally so it can actually only be used in this template and the template
+
+28
+00:02:02,130 --> 00:02:09,920
+of this component of this instance you can of course also register a filter globally with a view filter.
+
+29
+00:02:09,930 --> 00:02:14,990
+Now if you were just of globally you have as a first argument the name of the folder.
+
+30
+00:02:15,000 --> 00:02:20,350
+Let's name it to lowercase for example.
+
+31
+00:02:20,530 --> 00:02:22,350
+And I will work on this in a second.
+
+32
+00:02:22,580 --> 00:02:28,520
+And here in our local filter we have the key as the name for the folder.
+
+33
+00:02:28,540 --> 00:02:30,680
+I'll name it to uppercase.
+
+34
+00:02:30,950 --> 00:02:36,060
+So like this maybe to uppercase of course would have also used the camel case and text with all the
+
+35
+00:02:36,100 --> 00:02:37,370
+four components.
+
+36
+00:02:37,520 --> 00:02:44,050
+And now of FOTR is only a function and we can use such a string key name for a function.
+
+37
+00:02:44,060 --> 00:02:50,200
+Again the alternative would be to use to uppercase like this.
+
+38
+00:02:50,220 --> 00:02:57,990
+Now this function here always gets a value Asti input the value will be the data we want to transform
+
+39
+00:02:58,170 --> 00:03:03,000
+and it will show you how to pass the data there in a second but be aware that each filter will get a
+
+40
+00:03:03,000 --> 00:03:04,770
+value because that is what folder's.
+
+41
+00:03:04,770 --> 00:03:11,630
+Therefore transform some data that value can then be used to do any operation on it.
+
+42
+00:03:11,850 --> 00:03:16,710
+And then the end we have to return the transformed value or could be the same value if you don't want
+
+43
+00:03:16,710 --> 00:03:19,400
+to do anything but then the filter are that useful.
+
+44
+00:03:19,620 --> 00:03:24,410
+So here I want to simply say return value to uppercase.
+
+45
+00:03:24,480 --> 00:03:30,480
+This will turn it to all being uppercase to all characters being uppercase and will return the update
+
+46
+00:03:30,480 --> 00:03:31,530
+value.
+
+47
+00:03:31,530 --> 00:03:38,020
+I can then use this folder in this template since it is a local folder by adding the pipe symbol here.
+
+48
+00:03:38,040 --> 00:03:43,030
+This might resemble or two pipes if you know English too and it works very much the same.
+
+49
+00:03:43,200 --> 00:03:44,650
+And then a fault or name.
+
+50
+00:03:44,730 --> 00:03:49,650
+So here there would be two uppercase like that for example.
+
+51
+00:03:49,650 --> 00:03:53,760
+Now with this register here I can now hit save.
+
+52
+00:03:54,180 --> 00:04:00,540
+And we see Hello there in all uppercase and now with that we created our own fault or this is how easy
+
+53
+00:04:00,540 --> 00:04:05,690
+it is just the function getting a value and returning the transformed value.
+
+54
+00:04:05,760 --> 00:04:11,040
+It gets the value automatically because we added here with the pipe symbol and that will give you chance
+
+55
+00:04:11,220 --> 00:04:18,190
+to take the piece in front of the pipe and put it or pass it as a value to dysfunction to the apprecate
+
+56
+00:04:18,240 --> 00:04:19,410
+function.
+
+57
+00:04:19,440 --> 00:04:21,310
+That is why we create such a folder.
+
+58
+00:04:21,330 --> 00:04:27,520
+Let me next show you how you create a global folder how to register globally as we do here.
+
+59
+00:04:27,720 --> 00:04:29,970
+And then how to change multiple folders.
+

@@ -1,0 +1,76 @@
+1
+00:00:01,290 --> 00:00:05,510
+You also get the alternative of setting up a template.
+
+2
+00:00:05,550 --> 00:00:10,280
+You want to attach or remove so I could use template here.
+
+3
+00:00:10,280 --> 00:00:16,510
+This is HVM L5 code and the template tag doesn't get rendered in the dawn.
+
+4
+00:00:16,650 --> 00:00:18,640
+You won't see a template there.
+
+5
+00:00:18,690 --> 00:00:25,530
+So if by now at the inside a template paragraph here and rendered as you see inside a template.
+
+6
+00:00:25,530 --> 00:00:31,110
+But if we inspect that you don't see a wrapping template element over there.
+
+7
+00:00:31,110 --> 00:00:32,200
+Do you see that.
+
+8
+00:00:32,220 --> 00:00:34,630
+So this is how a template works.
+
+9
+00:00:34,650 --> 00:00:42,280
+This allows us to attach the IV Tudor's template here to now also toggle days.
+
+10
+00:00:42,410 --> 00:00:45,840
+And now you ask what's the difference to you first version.
+
+11
+00:00:46,080 --> 00:00:52,320
+Well we can wrap multiple elements in here like a heading for example.
+
+12
+00:00:52,320 --> 00:00:54,680
+Notice that they are not nested in each other.
+
+13
+00:00:54,690 --> 00:00:59,930
+And since we can only attach we if to one element while we can attach to multiple ones.
+
+14
+00:01:00,150 --> 00:01:07,770
+But we can't say we if on this element and also have it affect the next one which is not nested inside.
+
+15
+00:01:08,160 --> 00:01:14,640
+I can simply wrap it in a template which won't be visible in the end but to group all the elements which
+
+16
+00:01:14,640 --> 00:01:16,670
+I want you grouped together with that we have.
+
+17
+00:01:16,710 --> 00:01:22,110
+The alternative would of course be a div but maybe you don't want a day if you don't want to have the
+
+18
+00:01:22,260 --> 00:01:29,990
+side effects of introduces then template we have would be a valid option to droop multiple elements.
+
+19
+00:01:30,030 --> 00:01:34,480
+You want to show or hide or ADD or detach to be precise to Gebre.
+

@@ -1,0 +1,228 @@
+1
+00:00:02,190 --> 00:00:09,000
+Now we all really learn a lot about some built in Belyaev years before we move towards this array here
+
+2
+00:00:09,240 --> 00:00:15,100
+where we can add multiple hobbies which of course is interesting when it comes to a validation perspective.
+
+3
+00:00:15,450 --> 00:00:19,410
+Let's move to this check box and let's do two things.
+
+4
+00:00:19,410 --> 00:00:29,670
+I want to make sure that it is required but only if let's say the country is not any country of your
+
+5
+00:00:29,670 --> 00:00:36,180
+choice so let's say if it's not Germany just picking a random country because Will I'm going from there
+
+6
+00:00:36,360 --> 00:00:42,150
+let's say if it is Germany then you don't have to tick that box because for some complex legal reasons
+
+7
+00:00:42,150 --> 00:00:48,720
+which we have in Germany we are not allowed to force you to accept the terms something like that.
+
+8
+00:00:48,990 --> 00:00:58,340
+So we essentially have a required if condition or to be very precise are required unless condition you're
+
+9
+00:00:58,350 --> 00:01:04,930
+required to check this unless you picked Germany in a totally different input.
+
+10
+00:01:04,980 --> 00:01:12,330
+Now I think that's also an interesting case and it's surprisingly easy to implement.
+
+11
+00:01:12,450 --> 00:01:14,590
+So how can we implement that.
+
+12
+00:01:14,610 --> 00:01:18,910
+Let's first start with a general required you'll forward a checkbox.
+
+13
+00:01:18,990 --> 00:01:27,120
+All named is turd's this rule and ultimately simply required the required validate or the normal one.
+
+14
+00:01:27,120 --> 00:01:34,560
+Now with that set up I can go up to my template and dare on days checkbox input going to distributor's
+
+15
+00:01:34,560 --> 00:01:35,660
+over multiple lines.
+
+16
+00:01:35,820 --> 00:01:42,290
+I want to listen for the change event which is fired whenever we click this and put this checkbox.
+
+17
+00:01:42,420 --> 00:01:47,800
+And I then want to trigger Dolor Send be turd's was the name of the validation group dollar assigned
+
+18
+00:01:47,810 --> 00:01:48,590
+touched.
+
+19
+00:01:48,810 --> 00:01:51,610
+Ask Before touch not touched.
+
+20
+00:01:52,170 --> 00:01:58,560
+So it is just a method I want to execute now to see if something changes I'll add my old class to does
+
+21
+00:01:58,650 --> 00:02:00,750
+my class binding to this wrapping div.
+
+22
+00:02:00,930 --> 00:02:07,260
+Well at the invalid class if bowlers send b terms has donors sign error.
+
+23
+00:02:07,680 --> 00:02:10,510
+With that let's go back and let's see if Dad works.
+
+24
+00:02:10,530 --> 00:02:17,280
+Right now it's not marked as invalid because we have set this up to only be marked as invalid if we
+
+25
+00:02:17,280 --> 00:02:21,330
+have an error and an error is only fired once we had a chance to click.
+
+26
+00:02:21,480 --> 00:02:26,400
+But if I do click here and I uncheck this it's marked as invalid.
+
+27
+00:02:26,500 --> 00:02:33,280
+Although the side node for this specific case it might be more helpful to not check for a dollar or
+
+28
+00:02:33,390 --> 00:02:39,120
+an error but Dollar Sign invalid to mark it as a Mellot right from the start.
+
+29
+00:02:39,120 --> 00:02:43,180
+When we load this page so that it's obvious we need to check this.
+
+30
+00:02:43,200 --> 00:02:46,440
+So this is rooking But this is the normal required validator.
+
+31
+00:02:46,440 --> 00:02:48,490
+Now we want to use this other one.
+
+32
+00:02:48,540 --> 00:02:53,450
+First of all let's import it required unless it's to name.
+
+33
+00:02:53,790 --> 00:02:57,330
+And this allows us to connect as with some other value.
+
+34
+00:02:57,330 --> 00:03:05,970
+So now all still named is required but all assigned required unless as a value and just as same as this
+
+35
+00:03:05,970 --> 00:03:07,020
+is a function.
+
+36
+00:03:07,050 --> 00:03:15,900
+Now for this function ask before we receive access to the new instance and now here we can return true
+
+37
+00:03:15,900 --> 00:03:16,890
+or false.
+
+38
+00:03:17,010 --> 00:03:24,420
+If a return true here we go back you'll see it that's not always treated as correct no matter what I
+
+39
+00:03:24,420 --> 00:03:28,350
+do for return false is always treated as invalid.
+
+40
+00:03:28,350 --> 00:03:31,100
+Therefore to go back you see it's always red.
+
+41
+00:03:31,630 --> 00:03:35,060
+Gore's hard coding true or false doesn't make much sense.
+
+42
+00:03:35,100 --> 00:03:41,190
+But we can now check if we em and now we have to check the name of this dropdown.
+
+43
+00:03:41,220 --> 00:03:45,930
+So Dad was country were binding to a property named country.
+
+44
+00:03:46,050 --> 00:03:55,530
+We want a check of country is essentially not equal to Germany because that is the value we have for
+
+45
+00:03:55,590 --> 00:03:57,600
+this option which is treated as invalid.
+
+46
+00:03:57,600 --> 00:03:58,470
+As I said.
+
+47
+00:03:58,770 --> 00:04:08,490
+So we simply check if we m country is the property name if it is equal to Germany what this means is
+
+48
+00:04:08,490 --> 00:04:15,640
+that if countries Germany debt is required because here we have required unless So unless the country
+
+49
+00:04:15,640 --> 00:04:17,510
+is Germany it is required.
+
+50
+00:04:17,640 --> 00:04:23,130
+So they're required validator to normal required validator will be attached if the country was selected
+
+51
+00:04:23,130 --> 00:04:24,280
+as not Germany.
+
+52
+00:04:24,300 --> 00:04:30,240
+So if that if we go back and reload this page you'll see it's still red at the beginning.
+
+53
+00:04:30,260 --> 00:04:34,380
+Check it it's fine though because it works as a normal required validator.
+
+54
+00:04:34,380 --> 00:04:40,920
+Now if we switch to a country to Germany though you'll see it becomes black in all cases because now
+
+55
+00:04:40,920 --> 00:04:42,510
+it's not required anymore.
+
+56
+00:04:42,780 --> 00:04:47,530
+So this is required if not for a nice validator which all this shows you.
+
+57
+00:04:47,520 --> 00:04:50,010
+Another powerful feature of Yulee date.
+

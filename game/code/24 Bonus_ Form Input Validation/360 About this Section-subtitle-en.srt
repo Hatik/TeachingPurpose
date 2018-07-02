@@ -1,0 +1,52 @@
+1
+00:00:02,810 --> 00:00:04,410
+Welcome to this module.
+
+2
+00:00:04,430 --> 00:00:06,880
+Great to have you here in this module.
+
+3
+00:00:06,950 --> 00:00:11,250
+We'll have a look at validation input validation.
+
+4
+00:00:11,330 --> 00:00:17,930
+This module takes the same project and uses the same project as we used in the X years and authentication
+
+5
+00:00:17,930 --> 00:00:18,850
+module.
+
+6
+00:00:18,890 --> 00:00:22,130
+You don't necessarily need to complete these modules.
+
+7
+00:00:22,130 --> 00:00:25,370
+Just be aware that it basically builds up on them.
+
+8
+00:00:25,370 --> 00:00:31,340
+It used the same project and therefore if there are some features in that module which you don't understand
+
+9
+00:00:31,430 --> 00:00:36,960
+features in the project code you find attached to this module then you might get back to the bone as
+
+10
+00:00:36,980 --> 00:00:42,770
+modules about X years and off indication to learn how this was build up from the ground.
+
+11
+00:00:43,010 --> 00:00:48,470
+You can still dive into this module without watching them if you only want to see the validation part.
+
+12
+00:00:48,470 --> 00:00:54,070
+Just make sure that you dig through the source code to understand what the project does with that.
+
+13
+00:00:54,080 --> 00:00:54,770
+Let's start.
+

@@ -1,0 +1,44 @@
+1
+00:00:01,700 --> 00:00:07,380
+Need to wrap up there's part here about the VCL Sea-Lion and there's template we're using here for the
+
+2
+00:00:07,380 --> 00:00:08,710
+rest of the course.
+
+3
+00:00:08,760 --> 00:00:15,140
+You also got a novel script besides NPM run death which we use before and that is NPM run built.
+
+4
+00:00:15,150 --> 00:00:20,940
+Now this will build it for production which means it will now actually create the disk folder as you
+
+5
+00:00:20,940 --> 00:00:25,580
+can see which holds your bundle and it will also have some optimizations in place there.
+
+6
+00:00:25,650 --> 00:00:29,880
+So many fly it as you can see it's magnified now and so on.
+
+7
+00:00:30,030 --> 00:00:31,830
+So this is how you want to run this command.
+
+8
+00:00:31,830 --> 00:00:38,190
+If you actually want to deploy your application also feel free to play around with the other templates
+
+9
+00:00:38,370 --> 00:00:40,850
+but that was the basic introduction to it.
+
+10
+00:00:40,860 --> 00:00:43,940
+This will be the template we'll use for the rest of the course.
+
+11
+00:00:44,010 --> 00:00:47,370
+And with that see you in the section about component's.
+

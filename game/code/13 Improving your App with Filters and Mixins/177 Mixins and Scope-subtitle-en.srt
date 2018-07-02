@@ -1,0 +1,132 @@
+1
+00:00:01,710 --> 00:00:04,260
+Not you conclude this part and ends.
+
+2
+00:00:04,300 --> 00:00:06,790
+Let's answer one important question.
+
+3
+00:00:06,970 --> 00:00:13,540
+Is the data here this object the fruit mix and is this object actually shared between the components
+
+4
+00:00:13,540 --> 00:00:15,940
+which added or not.
+
+5
+00:00:15,940 --> 00:00:19,120
+Because right now of course we share the methods and so on.
+
+6
+00:00:19,210 --> 00:00:24,310
+But if we change the data something we don't do right now we only have to compute a property we don't
+
+7
+00:00:24,310 --> 00:00:25,730
+change the original data.
+
+8
+00:00:25,900 --> 00:00:27,180
+If we change this.
+
+9
+00:00:27,190 --> 00:00:33,610
+Is this reflected in all components or is a new instance of this object created for each component very
+
+10
+00:00:33,610 --> 00:00:35,120
+Pastis Maxine.
+
+11
+00:00:35,170 --> 00:00:39,580
+Now let's find out by adding something in our Apter view file.
+
+12
+00:00:39,730 --> 00:00:47,620
+Let's simply add a new button here above our list where I say add new item.
+
+13
+00:00:47,630 --> 00:00:57,270
+Now all I want to do here is on click is I want to access my fruit's I can not not with this though.
+
+14
+00:00:57,310 --> 00:01:03,850
+I know I can do that because I get it added with the mix in this area here fruits and I want to push
+
+15
+00:01:03,910 --> 00:01:06,910
+a new item on it and the new item symbol.
+
+16
+00:01:06,910 --> 00:01:09,540
+It simply is Berrys.
+
+17
+00:01:09,830 --> 00:01:20,420
+No one is safe this let's see if both lists get adjusted or only the first one you see various are only
+
+18
+00:01:20,420 --> 00:01:22,160
+added to the first list.
+
+19
+00:01:22,400 --> 00:01:26,090
+So this object this fruit makes in is not shared.
+
+20
+00:01:26,090 --> 00:01:30,500
+It's not the same place in memory which we then use as a mixin and seperate components.
+
+21
+00:01:30,650 --> 00:01:32,760
+Instead it is really replicated.
+
+22
+00:01:32,760 --> 00:01:39,800
+So each component which gets this as it makes in gets a fresh copy of this object and we're not sharing
+
+23
+00:01:39,800 --> 00:01:40,400
+one.
+
+24
+00:01:40,400 --> 00:01:46,280
+This means it's safe for you to access the data unmanipulated without affecting other places in your
+
+25
+00:01:46,280 --> 00:01:47,340
+application.
+
+26
+00:01:47,360 --> 00:01:53,240
+If you want to affect Arald places in your application consider simply using something like event bus.
+
+27
+00:01:53,240 --> 00:01:58,730
+I show you all here in the last module about components where you would use a view instance which you
+
+28
+00:01:58,730 --> 00:02:05,360
+then basically can access on your application to call method Stehr or also change the data stored there.
+
+29
+00:02:05,360 --> 00:02:10,880
+This would be an option or you could of course also use a normal javascript object which you just import
+
+30
+00:02:11,170 --> 00:02:18,470
+not add as a mixin but just use in your code like this fruit makes an and then access the fields there.
+
+31
+00:02:18,470 --> 00:02:20,440
+This is how you can use the same component.
+
+32
+00:02:20,450 --> 00:02:27,230
+Excuse me the same object if you use the mix in aere you chaps will create a copy for you so that you
+
+33
+00:02:27,230 --> 00:02:30,980
+can safely edited and don't influence other components.
+

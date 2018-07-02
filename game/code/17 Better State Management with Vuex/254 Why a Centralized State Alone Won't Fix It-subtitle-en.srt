@@ -1,0 +1,124 @@
+1
+00:00:01,820 --> 00:00:07,920
+The last one you we put our central story into place that's created already improves our application.
+
+2
+00:00:07,920 --> 00:00:12,660
+Now let me show you where this solution starts getting some flaws.
+
+3
+00:00:13,080 --> 00:00:15,660
+We output the store here in the counter.
+
+4
+00:00:15,660 --> 00:00:20,260
+Now let's add a second to file all named and never countered.
+
+5
+00:00:20,380 --> 00:00:28,380
+So a second component and generally excuse me it should be named and number Risaldar you.
+
+6
+00:00:28,800 --> 00:00:34,550
+And generally I want to copy the code from result but counter here.
+
+7
+00:00:34,710 --> 00:00:37,930
+Shelby does store counter times too.
+
+8
+00:00:37,980 --> 00:00:46,290
+So I simply multiplied with two and I want to do the same thing in my average solve multiplied with
+
+9
+00:00:46,290 --> 00:00:47,690
+two here two.
+
+10
+00:00:48,180 --> 00:00:49,910
+So I do have a calculation here.
+
+11
+00:00:49,920 --> 00:00:52,650
+Now in two different components.
+
+12
+00:00:52,650 --> 00:01:05,760
+Now if I simply import is new resoled year to sody and number result and also add a year app and number
+
+13
+00:01:05,760 --> 00:01:07,340
+result as a component
+
+14
+00:01:09,970 --> 00:01:12,160
+then you will quickly see what the issue is.
+
+15
+00:01:12,160 --> 00:01:21,510
+So app and number resolved like this is save this you now see it correctly updates.
+
+16
+00:01:21,500 --> 00:01:22,800
+That's not the issue.
+
+17
+00:01:23,150 --> 00:01:28,440
+But we already have the problem that we duplicate our code here.
+
+18
+00:01:28,640 --> 00:01:36,800
+So in result and in Navarrete solved we do have the same method to your for retrieving our account.
+
+19
+00:01:37,160 --> 00:01:40,970
+The additional problem is here we have a very simple calculation.
+
+20
+00:01:40,970 --> 00:01:47,120
+Now what if that became a longer and longer and then we were to use that in multiple components we would
+
+21
+00:01:47,120 --> 00:01:53,850
+quickly face the problem that we have duplicated code all over the place and that never is a good sign.
+
+22
+00:01:54,050 --> 00:02:01,220
+So whilst it works fine here it does reach its limits in bigger application where we do more with the
+
+23
+00:02:01,220 --> 00:02:06,370
+state or all of the stored state we get here than just output it.
+
+24
+00:02:06,680 --> 00:02:14,060
+As soon as we start doing some calculations on it changing it and then do with it in multiple components.
+
+25
+00:02:14,060 --> 00:02:21,500
+This really reaches its limits because then we repeat ourselves too often and it's hard to manage this
+
+26
+00:02:21,500 --> 00:02:27,170
+because if we do have an error or an hour a calculation hard to do here but in a more complex calculation
+
+27
+00:02:27,170 --> 00:02:28,610
+that is certainly possible.
+
+28
+00:02:28,760 --> 00:02:30,320
+While we do have such an error.
+
+29
+00:02:30,410 --> 00:02:34,760
+We would have to change it in like three 10 100 files.
+
+30
+00:02:34,790 --> 00:02:35,910
+Not really much fun.
+
+31
+00:02:36,050 --> 00:02:39,170
+So let's have a look which better solution we may use.
+

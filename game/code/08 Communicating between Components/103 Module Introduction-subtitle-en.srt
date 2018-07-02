@@ -1,0 +1,36 @@
+1
+00:00:01,650 --> 00:00:06,450
+Until now we already learned a lot about the basics of computing how to create them how to use them
+
+2
+00:00:06,450 --> 00:00:08,040
+how to set them up.
+
+3
+00:00:08,040 --> 00:00:13,680
+Now I want to dive deeper into how components can communicate with each other so that we not just have
+
+4
+00:00:13,680 --> 00:00:20,430
+contained pieces of code where we can use all the chair's features but well don't really have connections
+
+5
+00:00:20,430 --> 00:00:26,670
+between the components but such that we do have such connections that we can communicate across components
+
+6
+00:00:26,850 --> 00:00:30,670
+something every real application will need for sure.
+
+7
+00:00:30,810 --> 00:00:36,930
+Now in order to do this I set up a basic application here and you will find the attached to this lecture
+
+8
+00:00:37,200 --> 00:00:42,490
+and beginning with the next lecture we will dive into that and learn how we can communicate across two
+
+9
+00:00:42,500 --> 00:00:43,850
+different pieces there.
+

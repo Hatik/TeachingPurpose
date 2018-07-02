@@ -1,0 +1,88 @@
+1
+00:00:01,840 --> 00:00:09,610
+To retrieve such a dynamic parameter here I can simply go to my user component and here let's say I
+
+2
+00:00:09,610 --> 00:00:11,280
+went to outpolled reloaded.
+
+3
+00:00:11,290 --> 00:00:21,710
+ID so here loaded ID I'll move it a bug above the button here and I'll add my data method to store the
+
+4
+00:00:21,740 --> 00:00:26,350
+property or odious idea I'm getting in a property ID.
+
+5
+00:00:26,720 --> 00:00:39,000
+And this shall now be this route Perens ID does how you access your data your wizard D or you access
+
+6
+00:00:39,120 --> 00:00:45,290
+route object dollar sign route again provided by View Chia's so router as the router itself where we
+
+7
+00:00:45,290 --> 00:00:49,000
+could navigate and so on and all US and rowdiest the active route.
+
+8
+00:00:49,010 --> 00:00:53,990
+So the route which was loaded and this route happens to have a Perens object.
+
+9
+00:00:54,050 --> 00:01:00,440
+Again you can visit DMU router documentation to learn more about all away Lebel objects or properties
+
+10
+00:01:00,440 --> 00:01:03,360
+in general on the route object.
+
+11
+00:01:03,410 --> 00:01:10,940
+Now Perrin's again is an object which holds key value pairs all of the parameters we're passing in the
+
+12
+00:01:10,940 --> 00:01:11,670
+road.
+
+13
+00:01:11,690 --> 00:01:17,960
+Now we only have one key set up ID here which is why we can access it like this.
+
+14
+00:01:17,960 --> 00:01:23,050
+And your ID now and that allows me to dynamic the output here.
+
+15
+00:01:23,090 --> 00:01:29,160
+So by simply putting ID between call the braces and now you always see loaded IDs 10.
+
+16
+00:01:29,180 --> 00:01:33,110
+And if I manually change this year you'll see now it's 5.
+
+17
+00:01:33,140 --> 00:01:36,490
+This is how you can access the parameter you're passing.
+
+18
+00:01:36,560 --> 00:01:42,740
+How you can pass it dynamically in the first place and then output it like this in your template.
+
+19
+00:01:42,800 --> 00:01:48,650
+You don't have a problem with accessing it on your route because this component will only be created
+
+20
+00:01:48,650 --> 00:01:50,460
+once your route has been loaded.
+
+21
+00:01:50,570 --> 00:01:56,960
+So this ID parameter will always be available when you access it here but there is a case where you
+
+22
+00:01:56,960 --> 00:02:00,990
+will encounter a problem and we'll have a look at this case in the next video.
+

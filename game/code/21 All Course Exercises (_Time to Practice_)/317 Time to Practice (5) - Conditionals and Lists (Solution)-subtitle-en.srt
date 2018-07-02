@@ -1,0 +1,492 @@
+1
+00:00:01,720 --> 00:00:05,240
+That start with exercise number one and hook up a button.
+
+2
+00:00:05,240 --> 00:00:11,520
+This button here toggle the displaying of the two paragraphs to be straight forward.
+
+3
+00:00:11,570 --> 00:00:17,130
+I'm going to set up my data property here and I will create a new property choose any name you want.
+
+4
+00:00:17,150 --> 00:00:24,100
+I'll name it is shown and I'll initially set it to true next.
+
+5
+00:00:24,140 --> 00:00:32,810
+I will add the Tudor's first paragraph and set it equal to what is shown on the second paragraph.
+
+6
+00:00:32,810 --> 00:00:36,800
+I'll set up the else and that is only one way of doing it.
+
+7
+00:00:36,800 --> 00:00:42,420
+You could also say if not is shown that would be the same.
+
+8
+00:00:42,580 --> 00:00:45,820
+But let's go with reality here and on the button.
+
+9
+00:00:45,820 --> 00:00:54,680
+Well I would set up a click listener with the syntax here and I will simply switch is shown to what
+
+10
+00:00:54,730 --> 00:00:55,930
+currently not is.
+
+11
+00:00:55,930 --> 00:00:59,690
+So I will reverse that from true to false and vice versa.
+
+12
+00:01:00,130 --> 00:01:02,710
+For now had control enter and hit this button.
+
+13
+00:01:02,770 --> 00:01:06,900
+You see I can toggle between the two paragraphs exactly what I wanted.
+
+14
+00:01:06,970 --> 00:01:11,210
+The exercise also says to solve this with we show.
+
+15
+00:01:11,500 --> 00:01:17,620
+And if you want to do it with the show I will basically copy the two paragraphs to show both.
+
+16
+00:01:17,980 --> 00:01:24,990
+I can simply save the show but as I mentioned in the exercise video V else does not work for is shown
+
+17
+00:01:25,090 --> 00:01:28,730
+which is why we don't see or mean now a second time instead.
+
+18
+00:01:28,900 --> 00:01:35,500
+Here we will have to fall back to the solution of simply reversing the condition and saying OK only
+
+19
+00:01:35,500 --> 00:01:38,290
+showed as if is shown as false.
+
+20
+00:01:38,290 --> 00:01:40,880
+Now you can see toggling works for both.
+
+21
+00:01:41,050 --> 00:01:49,680
+But of course if we inspect this you'll see if we shrink this down a bit you see that here we still
+
+22
+00:01:49,680 --> 00:01:57,330
+see do you ever see me paragraph but the display set to non whereas directly below the button where
+
+23
+00:01:57,330 --> 00:01:59,780
+we would theoretically have such a paragraph.
+
+24
+00:01:59,790 --> 00:02:05,220
+We don't see it because this first paragraph uses V.F. and therefore is completely removed from the
+
+25
+00:02:05,220 --> 00:02:05,770
+dawn.
+
+26
+00:02:05,820 --> 00:02:11,050
+That is the key difference to take away here as was also explained in the lectures for this module
+
+27
+00:02:14,080 --> 00:02:18,330
+an exercise Number two we want to leave fruit any area of our choice.
+
+28
+00:02:18,340 --> 00:02:25,720
+So I will create a new area and name it every here in the data property and I will simply store some
+
+29
+00:02:26,230 --> 00:02:30,010
+names here so I'll store my name because I like it.
+
+30
+00:02:30,190 --> 00:02:38,320
+So you should Nike like your name I guess on some of our names which are totally up to you then here
+
+31
+00:02:38,350 --> 00:02:39,780
+in this unordered list.
+
+32
+00:02:39,820 --> 00:02:41,270
+We want to output them all.
+
+33
+00:02:41,290 --> 00:02:46,560
+And of course the best way to Edis you is way to be honest would be to use simply.
+
+34
+00:02:46,610 --> 00:02:48,160
+Well right Max.
+
+35
+00:02:48,190 --> 00:02:49,730
+And then when you list them for an hour.
+
+36
+00:02:49,740 --> 00:02:55,270
+We don't want to hardcoded of course we want to use these four here to loop through this area.
+
+37
+00:02:55,630 --> 00:03:01,870
+Then the text as we learn that is element this name is totally up to you choose whatever name you like
+
+38
+00:03:02,200 --> 00:03:09,850
+in aere with aere referring to this array property of our view instance and we can then output aliment
+
+39
+00:03:09,850 --> 00:03:10,750
+here.
+
+40
+00:03:11,350 --> 00:03:17,740
+Now we not only Shelbourne the element which would work if you had control and true but also the index
+
+41
+00:03:17,950 --> 00:03:18,700
+to do this.
+
+42
+00:03:18,700 --> 00:03:26,380
+I enclose the element in parentheses and add a second kind of argument here which I'll call index again.
+
+43
+00:03:26,390 --> 00:03:29,450
+Also this name is up to you only the order here matters.
+
+44
+00:03:29,470 --> 00:03:32,540
+First one is yellow and second one is the next.
+
+45
+00:03:32,620 --> 00:03:37,780
+And I can then output let's say separated by a dash in next year as well.
+
+46
+00:03:37,780 --> 00:03:41,620
+And after hitting control enter we see the index next to the name.
+
+47
+00:03:41,800 --> 00:03:45,690
+So this was exercise number two in exercise and are free.
+
+48
+00:03:45,700 --> 00:03:49,680
+We want to loop for this object and print all the key value pairs here.
+
+49
+00:03:49,690 --> 00:03:51,890
+We also want to print the index.
+
+50
+00:03:52,210 --> 00:03:54,960
+Well first let's create the object I'll name it.
+
+51
+00:03:55,000 --> 00:04:01,470
+My object here it obviously is an object and I can simply copy and paste this.
+
+52
+00:04:01,480 --> 00:04:03,410
+So let's do it like this.
+
+53
+00:04:03,520 --> 00:04:07,770
+And now split this up over multiple lines to make it a bit easier to read I guess.
+
+54
+00:04:07,840 --> 00:04:10,910
+So this is the object for which I want to loop.
+
+55
+00:04:10,960 --> 00:04:14,220
+I can also use the form for this.
+
+56
+00:04:14,230 --> 00:04:16,830
+So let's set it up on this list item.
+
+57
+00:04:17,170 --> 00:04:23,260
+But now I can output the value of each key by saying value in my object.
+
+58
+00:04:23,410 --> 00:04:28,710
+Beauty has automatically detects that is as an object and it could output value.
+
+59
+00:04:28,840 --> 00:04:29,980
+If I had control ENTRAR.
+
+60
+00:04:29,990 --> 00:04:35,410
+Now we see this list down there but we are not only interested in the value we also want to get the
+
+61
+00:04:35,410 --> 00:04:37,690
+key name and the index.
+
+62
+00:04:37,750 --> 00:04:45,120
+So time to enclose the value in parentheses and then here we would have values still as the first argument.
+
+63
+00:04:45,160 --> 00:04:51,560
+The key name as the second one again all these names are totally up to you only the order matters.
+
+64
+00:04:51,640 --> 00:04:52,560
+And then the index.
+
+65
+00:04:52,570 --> 00:04:53,010
+I'll name it.
+
+66
+00:04:53,030 --> 00:04:58,940
+I'm here to mix things up as the first argument I can then output value.
+
+67
+00:05:01,720 --> 00:05:07,890
+Key name and the index in the end here like this.
+
+68
+00:05:08,160 --> 00:05:13,890
+For now hit Control enter we see Lord of the Rings which has the title has the index of 0 the name which
+
+69
+00:05:13,890 --> 00:05:16,750
+is do you offer an X of 1 and so on.
+
+70
+00:05:16,800 --> 00:05:21,940
+This is how we can loop for an object again butis is automatically detecting whether it's an area or
+
+71
+00:05:21,940 --> 00:05:28,590
+object which influences which values or which data we can extract from it all the elements in the index.
+
+72
+00:05:28,590 --> 00:05:34,650
+In the case of an array and value key name and index in the case of an object and that how we can use
+
+73
+00:05:34,650 --> 00:05:37,690
+this information to output it like we do here.
+
+74
+00:05:37,920 --> 00:05:39,560
+Time for the last exercise.
+
+75
+00:05:39,630 --> 00:05:49,890
+Printing this object here and then also printing this data aere in this object that will be a bit more
+
+76
+00:05:49,890 --> 00:05:56,460
+complex since we get this nested array but not every field in this object is a nested array so we can't
+
+77
+00:05:56,490 --> 00:06:00,770
+blindly loop through all the properties of this object.
+
+78
+00:06:00,780 --> 00:06:07,590
+But let's create your object first ultimate test data like that and also split that up over multiple
+
+79
+00:06:07,590 --> 00:06:08,260
+lines.
+
+80
+00:06:09,830 --> 00:06:12,190
+And now we want to create a loop.
+
+81
+00:06:12,320 --> 00:06:22,250
+Well first I can create my list item here with the 4 and I can output the values of this object so value
+
+82
+00:06:22,250 --> 00:06:24,090
+in test data.
+
+83
+00:06:24,770 --> 00:06:31,940
+And that would then be like that if I had control ENTRAR we see test object and the array being printed
+
+84
+00:06:31,970 --> 00:06:33,300
+as a string here.
+
+85
+00:06:33,680 --> 00:06:37,300
+That's nice but I want to loop through that array.
+
+86
+00:06:37,490 --> 00:06:45,170
+So I will actually split this up over multiple lines because here I want to conditionally output the
+
+87
+00:06:45,170 --> 00:06:45,680
+values.
+
+88
+00:06:45,710 --> 00:06:53,900
+If there is a need for it I'll add some deaths here and on these steps I want to loop through the elements
+
+89
+00:06:54,170 --> 00:06:55,430
+in value.
+
+90
+00:06:55,620 --> 00:07:01,290
+Value of course refers to the individual value of each key value pair in my object.
+
+91
+00:07:01,310 --> 00:07:03,140
+So does this reference.
+
+92
+00:07:03,410 --> 00:07:10,640
+And this can be an array like in the case of data but it could also not be one in the case of name.
+
+93
+00:07:10,640 --> 00:07:16,570
+Turns out the name is a string which actually can be treated as an array as it is a chain of characters.
+
+94
+00:07:16,850 --> 00:07:21,360
+But to make it really clear that this will not always work.
+
+95
+00:07:21,410 --> 00:07:27,370
+I'll also add an ID which is a number which clearly is not an Array no matter how you look at it.
+
+96
+00:07:27,440 --> 00:07:31,610
+But I also don't want to treat name as an array.
+
+97
+00:07:31,640 --> 00:07:33,690
+How do we do that.
+
+98
+00:07:33,830 --> 00:07:39,440
+We kind of need to conditionally output this def here.
+
+99
+00:07:39,470 --> 00:07:49,510
+I will do it with template tags and I will say that inside these template tags I want to output this
+
+100
+00:07:49,510 --> 00:08:00,400
+loop and I can't check with the array object and the is a helper method where I pass value as an argument.
+
+101
+00:08:00,440 --> 00:08:05,590
+This checks of value is an array and only if it is I will reach this for loop.
+
+102
+00:08:05,630 --> 00:08:09,130
+I'll add a number template below where I add the else.
+
+103
+00:08:09,170 --> 00:08:12,310
+This has to be the same element type as a side note.
+
+104
+00:08:12,310 --> 00:08:15,150
+So if you use template up here this also has to be a template.
+
+105
+00:08:15,190 --> 00:08:23,000
+And here I want to output the value like debt with debt if I then also print my aliment here in this
+
+106
+00:08:23,000 --> 00:08:23,400
+day.
+
+107
+00:08:23,430 --> 00:08:31,440
+And now that control enter we see that this now works we check if it is an array and only if it is an
+
+108
+00:08:31,440 --> 00:08:32,100
+array.
+
+109
+00:08:32,190 --> 00:08:36,160
+Do we print the values in this inner for loop.
+
+110
+00:08:36,200 --> 00:08:44,110
+Otherwise we simply output it here with the else block with this value string into place here.
+
+111
+00:08:44,130 --> 00:08:49,000
+So this is how we mix V.F. and the four conditionally sure.
+
+112
+00:08:49,070 --> 00:08:51,080
+Attached is lead for a loop or.
+
+113
+00:08:51,150 --> 00:08:57,480
+These elements created with the for loop so that this V for a loop also only gets executed if it can
+
+114
+00:08:57,480 --> 00:08:58,190
+be executed.
+
+115
+00:08:58,230 --> 00:09:06,660
+If we actually do have an array like we do here for this value when it is this Dedo property here of
+
+116
+00:09:06,690 --> 00:09:13,210
+our object that concludes the conditionals and last module.
+
+117
+00:09:13,230 --> 00:09:18,210
+I hope you feel confident using V.F. and before in the end it's really straightforward syntax.
+
+118
+00:09:18,250 --> 00:09:26,140
+Yours see a more complicated use case here with nested loops at conditional checking the easier set
+
+119
+00:09:26,140 --> 00:09:26,780
+ups.
+
+120
+00:09:26,790 --> 00:09:27,460
+See above.
+
+121
+00:09:27,470 --> 00:09:32,370
+Here are probably the more common ones but it's good to know them all and feel confident using them
+
+122
+00:09:32,460 --> 00:09:34,270
+which I sure hope you do right now.
+
+123
+00:09:34,380 --> 00:09:36,240
+Let's continue with the next videos.
+

@@ -1,0 +1,60 @@
+1
+00:00:01,540 --> 00:00:08,650
+In order to make sure our components get not destroyed or the namak components here I can wrap this
+
+2
+00:00:08,830 --> 00:00:12,630
+component in keep alive so this is a new research.
+
+3
+00:00:12,650 --> 00:00:19,480
+Keyword a new reserved component kind of into which you can wrap component and ask that name applies.
+
+4
+00:00:19,480 --> 00:00:20,520
+Keep alive.
+
+5
+00:00:20,620 --> 00:00:24,030
+Now make sure that this component is kept alive.
+
+6
+00:00:24,280 --> 00:00:29,460
+So if I say if there's loads I go to new increased to counter I never get away.
+
+7
+00:00:29,470 --> 00:00:32,410
+We don't see destroyed because it wasn't.
+
+8
+00:00:32,440 --> 00:00:33,940
+The counter is still there.
+
+9
+00:00:33,940 --> 00:00:36,580
+And with that we preserve the state.
+
+10
+00:00:36,730 --> 00:00:39,550
+This is how we can use keep alive to do that.
+
+11
+00:00:39,790 --> 00:00:46,900
+But now you would correctly say well maybe I want to react to the fact that I navigate away before we
+
+12
+00:00:46,900 --> 00:00:49,590
+could use the destroyed lifecycle.
+
+13
+00:00:49,810 --> 00:00:51,830
+But now that's no longer called.
+
+14
+00:00:51,860 --> 00:00:54,690
+Do we have our lifecycle hooks we can use.
+
+15
+00:00:54,790 --> 00:00:56,120
+Let's have a look at the next video.
+

@@ -1,0 +1,96 @@
+1
+00:00:01,640 --> 00:00:07,750
+One more word to this event last year of course it would also be possible in the main chase follow we
+
+2
+00:00:07,760 --> 00:00:15,700
+create this new instance to add a method to your cell let's say name it change age.
+
+3
+00:00:16,100 --> 00:00:26,330
+And in this method to basically said this emit let's say we have to pass the age to the change age method
+
+4
+00:00:26,830 --> 00:00:32,610
+imitate event which is called age was edited as well and past age here.
+
+5
+00:00:32,660 --> 00:00:38,270
+So now we have Diomed logic in the event bus and then the user edit component I'm going to comment this
+
+6
+00:00:38,270 --> 00:00:39,450
+out too.
+
+7
+00:00:39,530 --> 00:00:48,560
+I can now simply use the event bus and call change H there and past is user age.
+
+8
+00:00:48,560 --> 00:00:53,810
+We updated here in the user edit component like this.
+
+9
+00:00:53,810 --> 00:00:59,580
+With this set up if I reload the app it still works as before.
+
+10
+00:00:59,690 --> 00:01:05,660
+And why didn't I show this to you because I want to show you that you can use such a view instance like
+
+11
+00:01:05,690 --> 00:01:10,150
+event bus you're generally to store some centralized code.
+
+12
+00:01:10,160 --> 00:01:15,180
+You want to access from different places in your app like here where we admit this event.
+
+13
+00:01:15,410 --> 00:01:21,650
+This makes especially sense if you have some code which you don't want to duplicate in different places
+
+14
+00:01:21,890 --> 00:01:24,680
+but instead what you want to store centrally.
+
+15
+00:01:24,710 --> 00:01:26,960
+You don't need to emit events all the time.
+
+16
+00:01:26,960 --> 00:01:32,350
+This could be any code here accessible from anywhere in your application.
+
+17
+00:01:32,390 --> 00:01:39,110
+As long as you import it and then well access to the methods you provide on this bus and the same would
+
+18
+00:01:39,110 --> 00:01:41,150
+be true for data you provide there.
+
+19
+00:01:41,240 --> 00:01:47,510
+If you set up some data properties here as a side note you're not as a function but directly set as
+
+20
+00:01:47,510 --> 00:01:53,930
+an object as it is a new instance if you set up some data properties here you can also access that from
+
+21
+00:01:53,960 --> 00:01:55,910
+all over your application.
+
+22
+00:01:56,300 --> 00:02:04,730
+So it's perfectly fine to use such a new view instance to centralize certain tasks submit data transport
+
+23
+00:02:04,730 --> 00:02:11,960
+data across your application and therefore outsource certain pieces of your code into such a central
+
+24
+00:02:11,960 --> 00:02:12,760
+place.
+

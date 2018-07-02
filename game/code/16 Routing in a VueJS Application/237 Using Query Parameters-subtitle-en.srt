@@ -1,0 +1,156 @@
+1
+00:00:02,130 --> 00:00:07,590
+So far we learned how to navigate how to use name drought's and how to pass parameters how to have nested
+
+2
+00:00:07,590 --> 00:00:14,160
+routes but sometimes you also have some query parameters query parameters are the parameters you have
+
+3
+00:00:14,230 --> 00:00:19,670
+the end of your you are always at the end separated with a question mark and then something like equals
+
+4
+00:00:19,680 --> 00:00:23,830
+100 B equals hello or something like this.
+
+5
+00:00:23,910 --> 00:00:30,120
+This would be a query parameter and this is mostly optional data you pass with or out for example a
+
+6
+00:00:30,130 --> 00:00:32,300
+stored retry redirection route.
+
+7
+00:00:32,310 --> 00:00:37,650
+If you redirect the user to log in first and then want to redirect him to his or a traditional route
+
+8
+00:00:37,980 --> 00:00:42,330
+or something like this to pass such query parameters.
+
+9
+00:00:42,330 --> 00:00:48,030
+You can either go to your route to where you set up the path directly and at questionmark.
+
+10
+00:00:48,040 --> 00:00:50,750
+E Akos 100 for example.
+
+11
+00:00:51,000 --> 00:00:59,460
+Or if you use the object syntax like we do here in user detail you can add a number property Judah's
+
+12
+00:00:59,460 --> 00:01:01,490
+object which is called query.
+
+13
+00:01:01,500 --> 00:01:04,200
+This again takes an object as a value.
+
+14
+00:01:04,230 --> 00:01:09,600
+And here you set up key value pairs where you set up your query parameters with because a query parameter
+
+15
+00:01:09,600 --> 00:01:12,470
+always is a key like a.
+
+16
+00:01:12,540 --> 00:01:14,310
+And then the value like 100.
+
+17
+00:01:14,310 --> 00:01:17,070
+And this is exactly what you set up in this object.
+
+18
+00:01:17,070 --> 00:01:29,640
+So let's do this let's say low cal should be a string N and then let's all the set Q equal to 100 to
+
+19
+00:01:29,640 --> 00:01:30,290
+a number.
+
+20
+00:01:30,390 --> 00:01:37,350
+So this shall has these two things as query parameters to the user DTL route or to the user added route
+
+21
+00:01:37,350 --> 00:01:38,240
+excuse me.
+
+22
+00:01:38,370 --> 00:01:44,650
+And if an hour choose a user and click Edit user you now see we have a local equal and and q equals
+
+23
+00:01:44,670 --> 00:01:45,470
+100.
+
+24
+00:01:45,480 --> 00:01:48,890
+So these are to query parameters I set up here.
+
+25
+00:01:48,930 --> 00:01:52,690
+So this extra data now to extract as extra data.
+
+26
+00:01:52,710 --> 00:01:55,420
+Let's do it on the added user template here.
+
+27
+00:01:55,560 --> 00:02:00,840
+Here again I will not set it up in the reactive way with a white shirt because I know this will always
+
+28
+00:02:00,840 --> 00:02:03,280
+be recreated but could of course do this.
+
+29
+00:02:03,450 --> 00:02:09,180
+But here we want to output a locale which I can again access on my loaded route.
+
+30
+00:02:09,180 --> 00:02:12,280
+And then its not parents but instead its query.
+
+31
+00:02:12,420 --> 00:02:21,570
+And then I know I stored it in a key named local and for the analytics parameter and thats lets name
+
+32
+00:02:21,570 --> 00:02:22,690
+it which was Q..
+
+33
+00:02:22,740 --> 00:02:24,740
+I simply access Q here.
+
+34
+00:02:25,020 --> 00:02:28,390
+Well and with that to place you already see it reloaded here.
+
+35
+00:02:28,650 --> 00:02:34,480
+And if what change my query parameter here to 105 we see that reflected here too because the page were
+
+36
+00:02:34,550 --> 00:02:35,170
+loaded.
+
+37
+00:02:35,280 --> 00:02:40,650
+If you do have links which allow you to reload the page without destroying this component forest you
+
+38
+00:02:40,650 --> 00:02:45,420
+want to set up a watch to dynamically update us as learned to have normal parameters.
+
+39
+00:02:45,520 --> 00:02:51,850
+And all of this you're also able to send query parameters and to use them and not just normal parameters.
+

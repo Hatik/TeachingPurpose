@@ -1,0 +1,128 @@
+1
+00:00:02,070 --> 00:00:07,610
+You should feel a bit more confident with these first syntax with the double curly braces here.
+
+2
+00:00:07,620 --> 00:00:10,970
+We used quite a lot and I think it's clear what it does.
+
+3
+00:00:11,280 --> 00:00:13,860
+What if you wanted to do something else.
+
+4
+00:00:14,100 --> 00:00:16,540
+Let's say we have a link property.
+
+5
+00:00:16,590 --> 00:00:24,270
+And as the name applies if stories are linked to let's say Google or come now here in the paragraph
+
+6
+00:00:24,570 --> 00:00:31,420
+we might not only want to say hello we also might want to output this link so we could enter anger or
+
+7
+00:00:31,420 --> 00:00:38,370
+attack here and call it Google since this link leads to Google and then we could try the following use
+
+8
+00:00:38,370 --> 00:00:40,730
+our double curly braces here in.
+
+9
+00:00:40,760 --> 00:00:43,430
+RATH attribute to that output.
+
+10
+00:00:43,450 --> 00:00:48,790
+De-link if I had control ENTRAR we got our link here.
+
+11
+00:00:48,990 --> 00:00:58,160
+But if I click on it well you see it's not going to google at all what it actually does is it encodes
+
+12
+00:00:58,350 --> 00:01:04,370
+curly braces and tries to goad to call the raise call raise whitespace link whitespace quality grows
+
+13
+00:01:04,410 --> 00:01:08,160
+Calabresi so it tries to parse this as a link.
+
+14
+00:01:08,520 --> 00:01:12,630
+That is the normal thing to happen because your task doesn't work like that.
+
+15
+00:01:12,690 --> 00:01:18,060
+We can't use Cauley braces in any age female element attribute.
+
+16
+00:01:18,120 --> 00:01:20,530
+So this does not work.
+
+17
+00:01:20,640 --> 00:01:28,820
+We can't only use D-school braces in the place where we would normally use text not on HVM out elements.
+
+18
+00:01:29,100 --> 00:01:32,580
+What if we still wanted to buy this link dynamically.
+
+19
+00:01:32,580 --> 00:01:36,610
+That is certainly a use case you will oftentimes see in your application.
+
+20
+00:01:36,870 --> 00:01:37,410
+No worries.
+
+21
+00:01:37,440 --> 00:01:38,820
+You can do this.
+
+22
+00:01:39,120 --> 00:01:47,670
+We can bind it dynamically by removing Luling for now and then introducing a directive Buga US ships
+
+23
+00:01:47,670 --> 00:01:57,270
+with this directive is called We bind and does directive tells UK us hey don't use the normal attribute
+
+24
+00:01:57,270 --> 00:01:57,960
+here.
+
+25
+00:01:58,050 --> 00:02:03,600
+Don't use it like a normal H.T. mail at attribute instead bind it.
+
+26
+00:02:03,600 --> 00:02:10,860
+We do pass the argument to the Byne directive by adding a colon and the argument we do pass is then
+
+27
+00:02:10,860 --> 00:02:12,990
+the name of the attribute we want to bind.
+
+28
+00:02:13,020 --> 00:02:19,350
+So Rathi or by setting it up like this we can now pass a link here between quotation marks.
+
+29
+00:02:19,350 --> 00:02:20,840
+No call the braces still.
+
+30
+00:02:20,860 --> 00:02:27,070
+There's a steel link we don't need calling braces because we now already are in Buga as template language.
+
+31
+00:02:27,450 --> 00:02:35,460
+And with this if I now had control and I now tried this while you see I've now taken to Google because
+
+32
+00:02:35,460 --> 00:02:40,680
+now it binds to this state a dynamically Juta does the bind directive.
+

@@ -1,0 +1,44 @@
+1
+00:00:01,670 --> 00:00:06,890
+So after learning about forms and the last module Let's go back to something which we actually have
+
+2
+00:00:06,890 --> 00:00:12,260
+used to a lot for the course but haven't really put focus on directives.
+
+3
+00:00:12,280 --> 00:00:19,250
+There are these tiny commands starting with the we and then a dash you put on DOM elements like we bind
+
+4
+00:00:19,250 --> 00:00:21,960
+or V on that are assembled in directives.
+
+5
+00:00:22,130 --> 00:00:27,620
+And this march we'll have a look at some of the bold indirect of those we already know them all pretty
+
+6
+00:00:27,620 --> 00:00:33,050
+much but then we mostly will have a look at how we could build our own directive if you need such a
+
+7
+00:00:33,050 --> 00:00:35,900
+low level access to certain dorm elements.
+
+8
+00:00:35,900 --> 00:00:40,840
+Normally I would use a component if you want to but parts of the application and make it reactive.
+
+9
+00:00:40,880 --> 00:00:46,700
+Implement your own code but from time to time you only want to place a tiny command on some HDMI element
+
+10
+00:00:46,880 --> 00:00:48,390
+to control its behavior.
+
+11
+00:00:48,410 --> 00:00:50,900
+And that is what we're going to have a look at and this much to.
+

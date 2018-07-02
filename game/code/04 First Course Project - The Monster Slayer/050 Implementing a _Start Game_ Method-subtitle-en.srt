@@ -1,0 +1,104 @@
+1
+00:00:02,030 --> 00:00:08,760
+We want to make this start new game button work and then display these action buttons to do so we need
+
+2
+00:00:08,760 --> 00:00:11,310
+to hook it up to a band listener.
+
+3
+00:00:11,400 --> 00:00:14,580
+So here on the button we start a new game on it.
+
+4
+00:00:14,580 --> 00:00:16,530
+We want to listen to the click event.
+
+5
+00:00:16,600 --> 00:00:25,280
+And I can do this with the on click or shortcut just at click to listen to a click event.
+
+6
+00:00:25,290 --> 00:00:31,530
+Now here I want to execute the code where I want to run the code which should get executed when we ever
+
+7
+00:00:31,590 --> 00:00:33,260
+whenever we click this button.
+
+8
+00:00:33,330 --> 00:00:34,710
+Now I could simply set.
+
+9
+00:00:34,740 --> 00:00:37,690
+Game is running to true here.
+
+10
+00:00:38,010 --> 00:00:40,660
+But actually that's not all I want to do here.
+
+11
+00:00:40,720 --> 00:00:43,500
+Hands since I can only write one expression here.
+
+12
+00:00:43,510 --> 00:00:47,010
+And anyway I shouldn't to put too much code in my template.
+
+13
+00:00:47,310 --> 00:00:53,700
+I will simply execute the start game Meffert putting you reference here like this.
+
+14
+00:00:54,060 --> 00:01:03,090
+And in my app yes I'd therefore add my methods object to the instance and here at the start game function
+
+15
+00:01:03,210 --> 00:01:04,640
+like this.
+
+16
+00:01:05,190 --> 00:01:06,500
+So this is to start.
+
+17
+00:01:06,500 --> 00:01:15,010
+Game function here and in this function I want to set this game is running to true.
+
+18
+00:01:15,330 --> 00:01:21,870
+I also want to set the player health to 100 in case you already had a game running before and wasn't
+
+19
+00:01:21,870 --> 00:01:23,120
+100 anymore.
+
+20
+00:01:23,460 --> 00:01:30,280
+And the same is of course true for you monster health which should now also be 100 again.
+
+21
+00:01:30,450 --> 00:01:33,410
+So this is the start game function.
+
+22
+00:01:33,450 --> 00:01:39,900
+And if we save this now and reload the application and it clicks start you game it correctly switches
+
+23
+00:01:39,900 --> 00:01:42,340
+to displaying the other buttons instead.
+
+24
+00:01:42,390 --> 00:01:43,400
+Great.
+
+25
+00:01:43,440 --> 00:01:46,790
+So the game is running deep layers are initialized.
+
+26
+00:01:46,800 --> 00:01:51,230
+Time to make these action buttons work and actually start hitting each other.
+

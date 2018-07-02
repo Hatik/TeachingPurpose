@@ -1,0 +1,192 @@
+1
+00:00:01,780 --> 00:00:04,860
+Nodded we understood why we might need such a development server.
+
+2
+00:00:04,860 --> 00:00:09,960
+The question is how should I develop and workflow look like or what is the development workflow in the
+
+3
+00:00:10,050 --> 00:00:17,460
+beginning until now our workflow was basically paced in the script implored at the top descript import
+
+4
+00:00:17,490 --> 00:00:24,090
+to the U.K.'s package and then ride our chess code which is possible because we imported the script
+
+5
+00:00:24,540 --> 00:00:25,590
+and that works.
+
+6
+00:00:25,600 --> 00:00:32,520
+That is fine for simple applications and more complex one you probably have multiple script imports
+
+7
+00:00:32,880 --> 00:00:36,120
+and you might have multiple packages you use.
+
+8
+00:00:36,120 --> 00:00:39,240
+You want to bundle them together you want to build them.
+
+9
+00:00:39,240 --> 00:00:41,180
+You might want to use ESX.
+
+10
+00:00:41,190 --> 00:00:42,300
+As I explained earlier.
+
+11
+00:00:42,300 --> 00:00:47,720
+So you might not want to use these five limitations Instead you want to use ESX and Hathi to both pro-ISIS
+
+12
+00:00:47,730 --> 00:00:49,350
+compile it.
+
+13
+00:00:49,350 --> 00:00:55,740
+So we have our code here and when we ship it on the production server where the user is able to see
+
+14
+00:00:55,740 --> 00:01:02,170
+it we want to transform it before doing so we want to apply some special features use some special features
+
+15
+00:01:02,170 --> 00:01:08,070
+that develop and workflow can offer us those special features would be that we can compile single file
+
+16
+00:01:08,070 --> 00:01:15,330
+templates in a beauteous application that we haven't talked about single file templates yet single file
+
+17
+00:01:15,330 --> 00:01:23,490
+templates are a powerful alternative to using the property and inferring a template from the DOM or
+
+18
+00:01:23,490 --> 00:01:24,930
+the template property.
+
+19
+00:01:24,930 --> 00:01:31,230
+And actually I will only use single file templates for all the rest of the course but no worries I will
+
+20
+00:01:31,230 --> 00:01:34,200
+dive deeper into them and explain how they work.
+
+21
+00:01:34,230 --> 00:01:37,260
+So we have these single file templates as the name implies.
+
+22
+00:01:37,260 --> 00:01:45,990
+It's basically the template outsourced into a separate file and the workflow we'll be using has a certain
+
+23
+00:01:46,080 --> 00:01:53,590
+let's say tool in it which understands such single file templates and then is able to compile them.
+
+24
+00:01:53,670 --> 00:02:00,090
+And I mean with that compelled him during the development workflow so that the app we ship already has
+
+25
+00:02:00,090 --> 00:02:06,060
+decompiled templates so any template transformed into javascript code which is then executable in the
+
+26
+00:02:06,060 --> 00:02:08,650
+browser that is different from the current approach.
+
+27
+00:02:08,790 --> 00:02:10,880
+I touched on this in the last module.
+
+28
+00:02:10,890 --> 00:02:15,920
+Right now we're using a set up where everything gets compiled in the browser.
+
+29
+00:02:15,990 --> 00:02:22,200
+We're shipping strings or does element selector and we're leaving it to you as to select these parts
+
+30
+00:02:22,260 --> 00:02:27,040
+in a dorm at runtime and compile it from the natives down there.
+
+31
+00:02:27,060 --> 00:02:33,450
+Now with that approach we're able to compile it on our machine which makes it much faster and smaller
+
+32
+00:02:33,690 --> 00:02:38,810
+because we're able to get rid of this compiler and we are shipping the finished code.
+
+33
+00:02:38,820 --> 00:02:40,770
+But for dad we need such a workflow.
+
+34
+00:02:40,770 --> 00:02:42,430
+There is no way around that.
+
+35
+00:02:42,600 --> 00:02:48,420
+That will also allow us to use case insensitive component selectors and I come back to the component
+
+36
+00:02:48,420 --> 00:02:55,410
+sections and we could apply some preprocessors like be able to use iOS 6 code or to compile SAS to see
+
+37
+00:02:55,410 --> 00:02:57,220
+assess if you want to compile that.
+
+38
+00:02:57,420 --> 00:03:03,780
+As I mentioned earlier having these features not only makes our code more fun to write and gives us
+
+39
+00:03:03,780 --> 00:03:10,320
+some additional help or well allows us to use next gen javascript features for example but since we
+
+40
+00:03:10,320 --> 00:03:17,400
+used single file templates it will also allow us to significantly shrink the size of the chest killed
+
+41
+00:03:17,400 --> 00:03:18,490
+we shipped to the server.
+
+42
+00:03:18,510 --> 00:03:22,830
+Since you can get rid of this compiler since no compilation happens in a browser.
+
+43
+00:03:22,900 --> 00:03:27,690
+Yes of course the real rendering will always happen there but it already has to compile templates and
+
+44
+00:03:27,690 --> 00:03:31,160
+compiled just means transformed to a shell script.
+
+45
+00:03:31,230 --> 00:03:38,090
+So we have this side effect and all of that are good reasons why we might want to use such a workflow.
+
+46
+00:03:38,100 --> 00:03:40,290
+It allows us to write better code.
+
+47
+00:03:40,350 --> 00:03:44,540
+It allows us to use our features to shrink the size to bundle it all together.
+
+48
+00:03:44,640 --> 00:03:49,050
+Really all the things we need for medium sized and bigger applications.
+

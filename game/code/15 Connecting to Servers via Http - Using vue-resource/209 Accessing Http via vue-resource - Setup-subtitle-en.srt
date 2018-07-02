@@ -1,0 +1,204 @@
+1
+00:00:01,580 --> 00:00:08,590
+Now for accessing HTP the first important thing to realize is you saw it throughout the course you chase
+
+2
+00:00:08,600 --> 00:00:15,060
+a normal child with code you can mix it where you can embed in your normal javascript code flow.
+
+3
+00:00:15,410 --> 00:00:20,690
+And that allows you to use any of your favorite Paychex libraries.
+
+4
+00:00:20,690 --> 00:00:24,650
+So if you want to use Cheikh Where is Ajax function do it.
+
+5
+00:00:24,650 --> 00:00:32,720
+If you get some amber Jake Weary two of our Ajax library which allows you to send HTP request in the
+
+6
+00:00:32,720 --> 00:00:34,500
+way you want to send them do it.
+
+7
+00:00:34,540 --> 00:00:39,280
+Use it like that and you are fine to use it in your view Cheras code too.
+
+8
+00:00:39,350 --> 00:00:46,970
+Now I will show you a special package written for you chairs which makes making HTP requests very easy
+
+9
+00:00:46,970 --> 00:00:52,490
+which closely embedded into your view instance and gives you some other nice features.
+
+10
+00:00:52,490 --> 00:00:57,260
+It's called view resource and we'll have a look at it in this video.
+
+11
+00:00:57,260 --> 00:01:02,840
+The package I'll be using the resource can be found by googling simply google for view resource and
+
+12
+00:01:02,840 --> 00:01:10,180
+you should find this official Get up repository there you will also find salvation steps for different
+
+13
+00:01:10,180 --> 00:01:10,510
+set up.
+
+14
+00:01:10,510 --> 00:01:15,910
+So for example by simply using a CD and if you want to dump it into your index him file or if you want
+
+15
+00:01:15,910 --> 00:01:21,220
+to install it with NPM like we will do in our web Pech project where we manage all our dependencies
+
+16
+00:01:21,220 --> 00:01:26,110
+and bundle everything with web pack and then you also see some examples and the documentation here and
+
+17
+00:01:26,110 --> 00:01:31,120
+I can all you recommend diving into that documentation though of course I will get you from the most
+
+18
+00:01:31,120 --> 00:01:37,390
+important parts here in this module but it's always nice to really understand what's going on and to
+
+19
+00:01:37,390 --> 00:01:38,840
+dive in deeper.
+
+20
+00:01:39,130 --> 00:01:40,810
+So as we're going to use.
+
+21
+00:01:40,840 --> 00:01:44,100
+Let's start by installing it into our project.
+
+22
+00:01:44,200 --> 00:01:46,690
+Now I already have a brand new project set up.
+
+23
+00:01:46,690 --> 00:01:51,880
+It starts as all my projects started here in the last modules is empty.
+
+24
+00:01:51,880 --> 00:01:57,580
+The only thing I do have is some bootstrap classes and the after view file and hence I also do import
+
+25
+00:01:57,670 --> 00:02:01,060
+bootstrap here in the next HVM a file that is all.
+
+26
+00:02:01,090 --> 00:02:04,320
+Now since I want to install the resource here.
+
+27
+00:02:04,510 --> 00:02:10,590
+I'm not going to use the CDN but instead I want to install it via NPM and let web peg Bamidele this
+
+28
+00:02:10,600 --> 00:02:11,830
+then in the end.
+
+29
+00:02:11,920 --> 00:02:19,120
+So let the peg handle this so I can simply type NPM install and then if we have a look view resource
+
+30
+00:02:19,390 --> 00:02:27,730
+though I will also add save to make sure it's installed as production dependency view resource like
+
+31
+00:02:27,730 --> 00:02:28,650
+this.
+
+32
+00:02:28,660 --> 00:02:35,380
+Now what this will do is pull it down and load it or stored it into my node modules folder which is
+
+33
+00:02:35,380 --> 00:02:39,410
+hidden by my ID but which does exist here too in this project.
+
+34
+00:02:39,610 --> 00:02:42,640
+And once it is installed looks good no errors.
+
+35
+00:02:42,910 --> 00:02:51,160
+I have to add it or I have to configure it and add it to my stack here to my application to be able
+
+36
+00:02:51,160 --> 00:02:52,450
+to use it.
+
+37
+00:02:52,450 --> 00:02:57,490
+Now this is done by using a new method on the global view object.
+
+38
+00:02:57,740 --> 00:03:06,790
+I can use you and then use now use basically tells you just to add a plug in to the core.
+
+39
+00:03:06,790 --> 00:03:08,140
+The U.K.'s functionality.
+
+40
+00:03:08,140 --> 00:03:10,610
+So the core functionality is now extended.
+
+41
+00:03:10,840 --> 00:03:17,530
+And the thing I want to use is the new resource as a side note you can find these steps year too if
+
+42
+00:03:17,530 --> 00:03:24,100
+you scroll down to configuration there you will see that is how you should install it when using weapons.
+
+43
+00:03:24,190 --> 00:03:26,670
+And there you see this view use command.
+
+44
+00:03:26,860 --> 00:03:28,940
+You also see that we need to import it.
+
+45
+00:03:29,050 --> 00:03:30,360
+So let's quickly do that.
+
+46
+00:03:30,370 --> 00:03:31,960
+I'll add it here.
+
+47
+00:03:31,960 --> 00:03:37,560
+Import view resources from view resource just like that.
+
+48
+00:03:37,750 --> 00:03:42,340
+And then we pass these newly imported resource as an argument to use.
+
+49
+00:03:42,340 --> 00:03:48,970
+And now it's enabled and we're able to access all the methods the resource gives us directly on our
+
+50
+00:03:48,970 --> 00:03:54,940
+view instance and it will show you in the next video where we can actually start setting up our little
+
+51
+00:03:54,940 --> 00:03:58,240
+test application here and send HTP requests.
+

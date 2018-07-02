@@ -1,0 +1,32 @@
+1
+00:00:02,070 --> 00:00:09,090
+Welcome to and of course Marchal now that we had a detailed look at the general Dohm interaction with
+
+2
+00:00:09,180 --> 00:00:16,020
+the chairs How connected to the dorm how to work with the template how to listen to events and so on.
+
+3
+00:00:16,050 --> 00:00:22,920
+It's now time to dive into a little bit more advanced concepts with conditionals and lists which means
+
+4
+00:00:23,280 --> 00:00:29,420
+what if you only wanted to show a certain part of your page under certain circumstances.
+
+5
+00:00:29,460 --> 00:00:35,120
+Well for that we got some tools in the pocket which make that very easy.
+
+6
+00:00:35,280 --> 00:00:39,830
+And if you want to output let's say an array of data in a list or something like that.
+
+7
+00:00:39,900 --> 00:00:42,200
+Well you Cesca to for that too.
+
+8
+00:00:42,210 --> 00:00:46,790
+So let's dive into this and learn how we can work with conditionals and lists.
+

@@ -1,0 +1,36 @@
+1
+00:00:01,820 --> 00:00:03,280
+How do we use slots.
+
+2
+00:00:03,290 --> 00:00:04,310
+Very simple.
+
+3
+00:00:04,580 --> 00:00:09,110
+All they do is indie Chalte component where I want to receive data.
+
+4
+00:00:09,160 --> 00:00:14,590
+I add does slot not Sloat slot component kind of.
+
+5
+00:00:14,780 --> 00:00:21,440
+No this is a reserve the word Buquet as will the text and if I now save this we now see the quote now
+
+6
+00:00:21,470 --> 00:00:28,550
+a slot here is taking over and now renders the content we're passing from outside so it renders this
+
+7
+00:00:28,700 --> 00:00:29,170
+part.
+
+8
+00:00:29,170 --> 00:00:36,530
+Between the opening and closing select are here this is now what this slot does which allows us to pass
+
+9
+00:00:36,530 --> 00:00:40,760
+in data from outside and render it in the shell component.
+

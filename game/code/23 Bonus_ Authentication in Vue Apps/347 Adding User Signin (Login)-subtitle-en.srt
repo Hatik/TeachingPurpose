@@ -1,0 +1,140 @@
+1
+00:00:02,480 --> 00:00:05,660
+In the last lecture we learn how to sign users up.
+
+2
+00:00:05,870 --> 00:00:13,190
+Let's now sign users in for Dad of course need to go to the sign in page and there I also want to send
+
+3
+00:00:13,190 --> 00:00:16,400
+the request whenever we submit this form.
+
+4
+00:00:16,640 --> 00:00:23,210
+So I will import exis from and now from my own AXS instance.
+
+5
+00:00:23,340 --> 00:00:24,590
+Let's move up a little bit.
+
+6
+00:00:24,590 --> 00:00:32,410
+An X is imported from years off and then here I also need to send a post request to a different end
+
+7
+00:00:32,440 --> 00:00:33,540
+point though.
+
+8
+00:00:33,750 --> 00:00:38,510
+Now for that let's find out to which you are all we need to send this information.
+
+9
+00:00:38,570 --> 00:00:43,490
+I'll go back to the firebase documentation and we're interested in signing a user in with email and
+
+10
+00:00:43,490 --> 00:00:44,500
+password.
+
+11
+00:00:44,600 --> 00:00:48,340
+Here we get to your URL and it's actually the same as before.
+
+12
+00:00:48,440 --> 00:00:55,790
+But the part at the end differs we still senti API key but we use varify password instead of the other
+
+13
+00:00:56,020 --> 00:00:57,590
+end point we used before.
+
+14
+00:00:58,040 --> 00:01:02,480
+We still need to pass e-mail password and return secure token here as a payload.
+
+15
+00:01:02,480 --> 00:01:04,170
+So that didn't change.
+
+16
+00:01:04,430 --> 00:01:10,820
+So if we go back to our application what I do is I will copy the post request from the Sign-Up of you
+
+17
+00:01:10,820 --> 00:01:16,960
+fall with then and catch block and added to design in on segment method.
+
+18
+00:01:17,450 --> 00:01:24,290
+But now grab the verify password part and exchange Sign-Up new user with that.
+
+19
+00:01:24,290 --> 00:01:25,910
+And now that actually should be all.
+
+20
+00:01:25,910 --> 00:01:32,360
+Now we're sending a post request which is the method we should use as suggested or as written in the
+
+21
+00:01:32,360 --> 00:01:33,740
+documentation.
+
+22
+00:01:33,740 --> 00:01:39,540
+We're sending a post request to this very fine password endpoint which should allow us to log in.
+
+23
+00:01:39,860 --> 00:01:42,340
+Let's save this and see it in action.
+
+24
+00:01:42,350 --> 00:01:44,700
+All go back to our application here.
+
+25
+00:01:44,750 --> 00:01:46,500
+Click on sign in.
+
+26
+00:01:46,520 --> 00:01:51,450
+Now we need to enter of course the same e-mail and password you used for signing up.
+
+27
+00:01:51,520 --> 00:01:56,400
+And if I hit summit we actually get back a successful response.
+
+28
+00:01:56,400 --> 00:02:03,030
+So this worked and then the day that we again have this ID token field with the token the user id the
+
+29
+00:02:03,030 --> 00:02:07,700
+e-mail of the user when the token is going to expire and so on.
+
+30
+00:02:07,980 --> 00:02:12,930
+So we got all these things we now can sign up and sign in.
+
+31
+00:02:12,960 --> 00:02:21,780
+Now it's our task to finally store that token somewhere in our application so that we can really well
+
+32
+00:02:21,840 --> 00:02:25,400
+work with it and also use it for authenticating.
+
+33
+00:02:25,530 --> 00:02:32,130
+Because even though we can sign in of course the request on the dashboard page still fails because we're
+
+34
+00:02:32,130 --> 00:02:34,820
+not passing the token to the back end there.
+
+35
+00:02:35,040 --> 00:02:38,560
+So let's think about token storage in the next lectures is.
+

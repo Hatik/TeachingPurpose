@@ -1,0 +1,128 @@
+1
+00:00:01,910 --> 00:00:08,930
+So we learned about an alternative to using L Where d l property to House view chairs which part of
+
+2
+00:00:08,930 --> 00:00:12,980
+the HVM all code to take and create the template automatically.
+
+3
+00:00:13,100 --> 00:00:17,480
+We can also do that manually by using the template property.
+
+4
+00:00:17,690 --> 00:00:22,860
+That being said most of the time you'll probably use L since this allows you to write your page all
+
+5
+00:00:23,020 --> 00:00:29,000
+well directly in your age all code in your editor whereas template would be a string hence facing some
+
+6
+00:00:29,000 --> 00:00:29,850
+limitations.
+
+7
+00:00:29,900 --> 00:00:31,640
+It's hard to write multi-line.
+
+8
+00:00:31,700 --> 00:00:36,510
+You might not get your ID supporters with syntax highlighting and so on.
+
+9
+00:00:36,560 --> 00:00:39,950
+So that is some of the nasty limitations you got there.
+
+10
+00:00:39,950 --> 00:00:43,950
+We also get some Avro limitations when it comes to templates in general.
+
+11
+00:00:43,960 --> 00:00:50,210
+And that affects both the template property and this string template or the template derived from our
+
+12
+00:00:50,390 --> 00:00:52,890
+HVM all code with T.L. property.
+
+13
+00:00:53,090 --> 00:00:57,770
+But I will come back to that and most important to a possible solution.
+
+14
+00:00:57,770 --> 00:01:05,600
+When we have a look at components and specifically in the next module when we have a look at which build
+
+15
+00:01:05,630 --> 00:01:13,160
+tools view chess offer us offers us what I want to say right now is that there are two worlds of chess.
+
+16
+00:01:13,160 --> 00:01:17,270
+One word has a compiler built in which runs in the browser.
+
+17
+00:01:17,280 --> 00:01:24,130
+This is the word which supports our templates no matter if we use a template property or the property.
+
+18
+00:01:24,200 --> 00:01:29,040
+This word basically takes our template and recompiles it in the browser to render the DOM.
+
+19
+00:01:29,120 --> 00:01:36,140
+That means it has to respect some DOM limitations like case insensitive names of elements Electress
+
+20
+00:01:36,140 --> 00:01:40,070
+that would be one not compact does when we talk about components.
+
+21
+00:01:40,070 --> 00:01:45,160
+We also get a number worship of the compiler or Susanin of view chess with our compiler.
+
+22
+00:01:45,320 --> 00:01:48,210
+So they're the compiler is stripped out.
+
+23
+00:01:48,230 --> 00:01:49,610
+And how can we do that.
+
+24
+00:01:49,800 --> 00:01:56,480
+Well we have to compile our templates during the bulk process so that when we ship our application we
+
+25
+00:01:56,540 --> 00:02:01,560
+only have compiled javascript code which can get which can get executed whenever.
+
+26
+00:02:01,610 --> 00:02:06,080
+Well we need to rerun the dom or whenever you just decide to rerun under.
+
+27
+00:02:06,080 --> 00:02:07,930
+This is what it does at runtime anyways.
+
+28
+00:02:07,940 --> 00:02:13,910
+And the average case but with the precompiled Worsham it's smaller and faster and we will learn how
+
+29
+00:02:13,910 --> 00:02:18,100
+we can use that recompiled version in the next course module.
+
+30
+00:02:18,110 --> 00:02:23,330
+Now I just wanted to highlight that we face some limitations when using these templates no matter if
+
+31
+00:02:23,330 --> 00:02:29,660
+you use L or template but especially if you use template we would have to specify everything as a string
+
+32
+00:02:30,080 --> 00:02:33,320
+which really makes things a little bit more complicated.
+

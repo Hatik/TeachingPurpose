@@ -1,0 +1,72 @@
+1
+00:00:01,880 --> 00:00:06,850
+Let's enhance this little application a little more let's say we have a title.
+
+2
+00:00:06,870 --> 00:00:10,370
+Age One title and here I will output title.
+
+3
+00:00:10,420 --> 00:00:15,970
+Remember it is just hello world in say hello I will obviously do the same.
+
+4
+00:00:15,970 --> 00:00:25,300
+Even though I call a function now in this function Let's say I will set this title equal to just hello
+
+5
+00:00:25,480 --> 00:00:28,560
+like this if I now control.
+
+6
+00:00:28,600 --> 00:00:35,610
+Well we see Hello twice obviously because when we execute say hello we're overwriting the value of tile
+
+7
+00:00:35,620 --> 00:00:37,400
+we're setting it to just hello.
+
+8
+00:00:37,510 --> 00:00:40,410
+So we're outputting hello in both places.
+
+9
+00:00:40,420 --> 00:00:47,980
+Now what if intertidal we wanted to stick to the first initial value title had and don't want to change
+
+10
+00:00:47,980 --> 00:00:53,120
+it is if it changes later in our code like it does here we can do this.
+
+11
+00:00:53,130 --> 00:01:00,430
+There is another directive you ships with which we can attach to an HDMI element which holds interpellation
+
+12
+00:01:00,430 --> 00:01:08,890
+like this one which is called B once by adding this tube element all the content inside of this element
+
+13
+00:01:09,160 --> 00:01:16,090
+will only be rendered once it will not be updated if it changes later on like here where we change it
+
+14
+00:01:16,180 --> 00:01:18,450
+in a later place.
+
+15
+00:01:18,490 --> 00:01:21,700
+If I now had control enter U.S. Hello world.
+
+16
+00:01:21,790 --> 00:01:28,450
+Because it keeps the initial value it doesn't that just once it is overridden you may have examples
+
+17
+00:01:28,450 --> 00:01:33,910
+in your application where you want this behavior and once then makes it very easy to stick to the initial
+
+18
+00:01:33,910 --> 00:01:39,080
+value and not use any other values this property might take at a later point of time.
+

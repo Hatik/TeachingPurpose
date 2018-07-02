@@ -1,0 +1,164 @@
+1
+00:00:02,920 --> 00:00:09,350
+In the last lecture we moved our code to reach out to the Web to us to the actions.
+
+2
+00:00:09,430 --> 00:00:15,820
+Now I want to add a mutation which actually locks our user in Ultimate off user.
+
+3
+00:00:16,180 --> 00:00:19,990
+And dare I will receive the state by default.
+
+4
+00:00:19,990 --> 00:00:26,190
+And the second argument I will receive in this method will be my user data.
+
+5
+00:00:26,190 --> 00:00:28,190
+Let's name it like this.
+
+6
+00:00:28,230 --> 00:00:35,850
+I will then said state ID token equal to user data and there I expect to have a token property.
+
+7
+00:00:35,940 --> 00:00:46,370
+It will be our job to pass on and stayed user id does should be user data user id lets say.
+
+8
+00:00:46,450 --> 00:00:49,810
+Now I expect these two fields on that user data object.
+
+9
+00:00:49,810 --> 00:00:52,070
+So its my job to pass it on.
+
+10
+00:00:52,150 --> 00:01:00,190
+We do pass it on by committing days off user mutation in our then blocks for both signing up and signing
+
+11
+00:01:00,190 --> 00:01:00,750
+in.
+
+12
+00:01:01,030 --> 00:01:06,700
+So let's expand these and not only log something to the console though it will still do that.
+
+13
+00:01:07,060 --> 00:01:11,220
+But let's also commit off user here.
+
+14
+00:01:12,580 --> 00:01:19,130
+Now there I need to pass a javascript object and we just saw what we need to set up there a token and
+
+15
+00:01:19,130 --> 00:01:28,030
+the user id property because I try to access DS in the off user mutation the tokened field therefore
+
+16
+00:01:28,060 --> 00:01:30,450
+has to be extracted from the response.
+
+17
+00:01:30,500 --> 00:01:35,250
+Their response is actually response objects so we have a data field there.
+
+18
+00:01:35,470 --> 00:01:42,190
+And then if you remember our early console locks there will be an ID token field which is basically
+
+19
+00:01:42,190 --> 00:01:44,720
+a data sent back from firebase.
+
+20
+00:01:44,740 --> 00:01:51,790
+Now the user ID can also be extracted from rest data and there if you remember our earlier console locks
+
+21
+00:01:52,120 --> 00:01:56,970
+firebase stores the user id in a field named local ID.
+
+22
+00:01:57,220 --> 00:01:59,910
+These are the two fields I'm interested in for now.
+
+23
+00:02:00,370 --> 00:02:06,760
+All Take this then block and use the exact same one for logging users in.
+
+24
+00:02:06,760 --> 00:02:09,920
+Now with that we should have a way of storing the token.
+
+25
+00:02:10,060 --> 00:02:16,210
+Let's see if that works I'll go back to the application and create yet another user with test free let's
+
+26
+00:02:16,210 --> 00:02:24,370
+say let's add a valid password and hit submit while we get the console log to find out if it works I'll
+
+27
+00:02:24,370 --> 00:02:29,950
+use my view dev tools which I mentioned earlier in the course which allow me to look into that store
+
+28
+00:02:30,520 --> 00:02:32,650
+if we access this and go to the store.
+
+29
+00:02:32,690 --> 00:02:40,480
+Can we see the all user action was dispatched and our state now indeed knows and ID token and a user
+
+30
+00:02:40,480 --> 00:02:48,910
+ID so this now works we're storing the state up for a signing in lets go to sign for signing up excuse
+
+31
+00:02:48,910 --> 00:02:49,030
+me.
+
+32
+00:02:49,030 --> 00:02:55,030
+Let's now go to sign in and reload so that we lose our state because it's only stored in javascript
+
+33
+00:02:55,030 --> 00:02:58,470
+and that is lost if we reload the page.
+
+34
+00:02:58,480 --> 00:03:03,170
+Now let me log in with a valid user here and it is also works.
+
+35
+00:03:03,220 --> 00:03:11,010
+We commit all user and we don't do show or to store the token and user ID.
+
+36
+00:03:11,500 --> 00:03:14,920
+So this is all working and that's great.
+
+37
+00:03:14,950 --> 00:03:22,000
+Now the next step is to take advantage of this token to appended to requests going out to protect the
+
+38
+00:03:22,000 --> 00:03:29,590
+resources before we then later also dive into how we can utilize to tokened so that we actually change
+
+39
+00:03:29,590 --> 00:03:34,590
+what we see in the header for example sign ups and in that we only see that if we got no token.
+
+40
+00:03:34,870 --> 00:03:40,990
+So the next thing however is to make sure we attach the token to outgoing requests which need it.
+
+41
+00:03:41,020 --> 00:03:43,100
+Let's do that in the next lecture.
+

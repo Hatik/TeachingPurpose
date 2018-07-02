@@ -1,0 +1,268 @@
+1
+00:00:02,160 --> 00:00:07,530
+So we installed the resource we set it up to be usable though we don't use it yet.
+
+2
+00:00:07,560 --> 00:00:13,560
+Now in order to be able to use it we also need some server where we can send our data to right because
+
+3
+00:00:13,560 --> 00:00:18,660
+we want to reach out to the web so we probably need some server on the web where we can store our data
+
+4
+00:00:18,660 --> 00:00:20,830
+or we can fetch data.
+
+5
+00:00:20,880 --> 00:00:27,270
+Now the bad thing is setting up such a server on our own is a little bit too much work for this course.
+
+6
+00:00:27,270 --> 00:00:33,190
+The great thing is there are services we can easily leverage now use firebase for this.
+
+7
+00:00:33,330 --> 00:00:40,050
+So you may simply google for firebase again and then it's firebase not cool calm and a service by Google
+
+8
+00:00:40,050 --> 00:00:46,480
+which you may test freely check out their official pages to learn more how long it is free and what
+
+9
+00:00:46,480 --> 00:00:48,360
+it will cost you something in the end.
+
+10
+00:00:48,360 --> 00:00:56,370
+But the things we're going to do here are free and then you basically need to well sign up or get to
+
+11
+00:00:56,370 --> 00:01:02,700
+your console if you already Arsen up and I will quickly do this and then meet you in this firebase console
+
+12
+00:01:02,760 --> 00:01:05,370
+where you are able to create new projects.
+
+13
+00:01:05,370 --> 00:01:10,370
+So I'm now in the firebase console and here you can create new firebase projects.
+
+14
+00:01:10,370 --> 00:01:12,810
+And what is firebase to begin with.
+
+15
+00:01:12,900 --> 00:01:20,640
+Firebase is something or a service you can use as the back end for your native app for your web app.
+
+16
+00:01:20,640 --> 00:01:22,330
+It has database functionality.
+
+17
+00:01:22,350 --> 00:01:25,120
+It has authentication functionality and much more.
+
+18
+00:01:25,140 --> 00:01:31,120
+Definitely check out the official box to learn how it works what it has what it costs and so on.
+
+19
+00:01:31,140 --> 00:01:32,730
+There is no firebase tutorial.
+
+20
+00:01:32,760 --> 00:01:37,810
+I'm only using it as it is a simple back and for our HTP tests here.
+
+21
+00:01:38,100 --> 00:01:45,060
+So to create such a back and click on Create project and then I'll give it any name of well my or your
+
+22
+00:01:45,060 --> 00:01:46,050
+choice.
+
+23
+00:01:46,050 --> 00:01:48,620
+Pick your country and create the project.
+
+24
+00:01:48,660 --> 00:01:55,440
+This will once it is created take you to your project dashboard and on this dashboard you got a lot
+
+25
+00:01:55,440 --> 00:02:00,250
+of different things like you can store set up storage for files and other things.
+
+26
+00:02:00,300 --> 00:02:07,620
+Now for showing how HTP works I will only use the database because our own only want to store data in
+
+27
+00:02:07,620 --> 00:02:08,790
+the database here.
+
+28
+00:02:08,930 --> 00:02:14,100
+Now the first important thing you got to do for the testing year only for the testing is that on the
+
+29
+00:02:14,100 --> 00:02:19,320
+rules in the database section you should said read and write both to truth so that everyone is able
+
+30
+00:02:19,320 --> 00:02:23,850
+to read and write so that we don't have to authenticate ourselves published this and then you should
+
+31
+00:02:23,850 --> 00:02:25,830
+be able to access this without problems.
+
+32
+00:02:25,830 --> 00:02:29,420
+Now keep in mind these are not the settings you want to have in a production app.
+
+33
+00:02:29,430 --> 00:02:34,380
+And again you definitely need to dive into the documentation if you want to use firebase for a production
+
+34
+00:02:34,380 --> 00:02:34,690
+app.
+
+35
+00:02:34,700 --> 00:02:36,210
+This is only for testing.
+
+36
+00:02:36,570 --> 00:02:43,660
+Now this will allow us to write to this database which already looks like a bird like Mongo database
+
+37
+00:02:43,680 --> 00:02:49,480
+so like Mongo D-B for example where we have key value pairs though right now it is empty.
+
+38
+00:02:49,620 --> 00:02:52,690
+This year is going to be all we need to access though.
+
+39
+00:02:52,890 --> 00:02:58,290
+And in order to be able to access it I will go back to my applet view file and the first thing I want
+
+40
+00:02:58,290 --> 00:03:01,360
+to do is I want to be able to store some data there.
+
+41
+00:03:01,380 --> 00:03:07,770
+So we're going to set this up now and the next video then we'll actually send this request so to store
+
+42
+00:03:07,770 --> 00:03:13,410
+it all quickly set up a div with a class for in groups or this bootstrap class terrible have a label
+
+43
+00:03:13,880 --> 00:03:21,270
+where is a user name and then they're offering my input with class form and control which is of type
+
+44
+00:03:21,270 --> 00:03:26,080
+text where I want to enter my user name and then I'm simply going to copy those.
+
+45
+00:03:26,080 --> 00:03:35,790
+Once you're you also set up something for let's say your email address type text as well and then a
+
+46
+00:03:35,790 --> 00:03:44,760
+button type button button primary where I say submit and then I'll go down to my view object your are
+
+47
+00:03:44,790 --> 00:03:47,090
+two of you instant set up my data.
+
+48
+00:03:47,090 --> 00:03:50,740
+I want to use and it is data here.
+
+49
+00:03:50,840 --> 00:03:58,020
+I want to have the same two fields that I want to have username and email though I will group it together
+
+50
+00:03:58,020 --> 00:03:59,640
+in a user object.
+
+51
+00:03:59,640 --> 00:04:06,270
+So hirable have a user name empty at the beginning and email empty at the beginning and then we'll learn
+
+52
+00:04:06,270 --> 00:04:13,080
+how to bind this with we model of where I will now bind to use or drug user name and on my email I will
+
+53
+00:04:13,080 --> 00:04:16,140
+bind to user dot email of course.
+
+54
+00:04:16,140 --> 00:04:24,480
+Now that I'm able to submit some data and you well send it well almost though I of course also need
+
+55
+00:04:24,480 --> 00:04:30,510
+to set up my methods where I will say submit and here for an hour will simply log in to the console
+
+56
+00:04:30,510 --> 00:04:36,840
+log my user year and that ad to click on the button here and execute submit.
+
+57
+00:04:36,840 --> 00:04:42,360
+Now let's see this in the running application just to see if everything works before then in the next
+
+58
+00:04:42,360 --> 00:04:43,080
+module.
+
+59
+00:04:43,110 --> 00:04:52,590
+I will actually use this to send some data and yet this does not work because there should be this user.
+
+60
+00:04:52,740 --> 00:04:59,610
+And then if I had over a hoodie application and I enter some data here test that test dot com and open
+
+61
+00:04:59,610 --> 00:05:06,450
+up the console we see now that the user view gets printed with email and user name fields the center
+
+62
+00:05:06,450 --> 00:05:10,410
+here is just added by chairs to be able to listen to changes to that.
+
+63
+00:05:10,440 --> 00:05:13,960
+But here we see the field we set up with the values we entered.
+
+64
+00:05:14,040 --> 00:05:16,110
+So this looks good with dad.
+
+65
+00:05:16,110 --> 00:05:17,520
+We set up our application.
+
+66
+00:05:17,520 --> 00:05:18,600
+We set up firebase.
+
+67
+00:05:18,600 --> 00:05:22,110
+Let's now use all the things we set up here to actually send the request.
+

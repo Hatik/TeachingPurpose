@@ -1,0 +1,112 @@
+1
+00:00:02,280 --> 00:00:05,180
+So let's add HTP functionalities.
+
+2
+00:00:05,220 --> 00:00:12,870
+But first and soling view resource I once thought of NPM so and pre-install minus minus save view resource
+
+3
+00:00:12,870 --> 00:00:13,610
+here.
+
+4
+00:00:14,160 --> 00:00:18,840
+And this will again added to our dependencies in this project here.
+
+5
+00:00:18,960 --> 00:00:22,600
+And then in remaindered J S file I want to import it up here.
+
+6
+00:00:22,620 --> 00:00:30,430
+So import view resource here from view resource like that.
+
+7
+00:00:30,720 --> 00:00:33,740
+And then of course as the router we have to use it.
+
+8
+00:00:33,740 --> 00:00:41,870
+So we have to add that here view resource like this that we're now able to send requests.
+
+9
+00:00:41,880 --> 00:00:48,780
+Now I'm one of use or set up my bag and I will use firebase again because that really works well and
+
+10
+00:00:48,780 --> 00:00:49,430
+it's free.
+
+11
+00:00:49,440 --> 00:00:53,140
+So it's a great back and forth little testing applications like these.
+
+12
+00:00:53,450 --> 00:00:59,810
+And there I want to go to my console and now the goal was to create a new project all named viewed as
+
+13
+00:00:59,890 --> 00:01:05,490
+a stock trader could choose any name of your ball if you were liking basically.
+
+14
+00:01:05,670 --> 00:01:13,220
+So here I will choose my country then and create this project and I'll see you once I'm in the console.
+
+15
+00:01:13,220 --> 00:01:18,900
+So inside the project now and the first thing is I'll use the database so here in the rules of the database
+
+16
+00:01:19,190 --> 00:01:23,380
+I again friend read and write access to everyone.
+
+17
+00:01:23,390 --> 00:01:25,150
+So everyone is able to do that.
+
+18
+00:01:25,310 --> 00:01:29,540
+Not the production settings you want to use but great for testing thereafter.
+
+19
+00:01:29,610 --> 00:01:31,280
+Does this to you or else we'll use.
+
+20
+00:01:31,280 --> 00:01:40,290
+I'm going to copy this because now in my set up here I want to set up these main you are.
+
+21
+00:01:40,370 --> 00:01:42,010
+We're always reaching out to.
+
+22
+00:01:42,110 --> 00:01:46,970
+So here I will simply said you HTP which I can access after adding You resource.
+
+23
+00:01:46,970 --> 00:01:53,880
+So after using your resource here and on the options I want to set my route you are l to this link.
+
+24
+00:01:53,900 --> 00:02:00,070
+I just copied so of that I make sure that all requests will be sent to this link here.
+
+25
+00:02:00,140 --> 00:02:04,220
+And then I add different things which need to be added different.
+
+26
+00:02:04,310 --> 00:02:08,510
+The deposits deposit after dismayed domain here basically.
+
+27
+00:02:08,810 --> 00:02:11,560
+So that's the set up with Dad looks good.
+
+28
+00:02:11,600 --> 00:02:13,990
+Let's now work on storing our data.
+

@@ -1,0 +1,80 @@
+1
+00:00:01,810 --> 00:00:03,460
+Well we really achieved a lot.
+
+2
+00:00:03,460 --> 00:00:06,080
+It was quite a long module quite a big project.
+
+3
+00:00:06,100 --> 00:00:09,580
+Some errors were made but I think that's not too bad.
+
+4
+00:00:09,580 --> 00:00:15,790
+I left them intentionally because is where you can also learn a lot because you see some of the tiny
+
+5
+00:00:15,790 --> 00:00:22,590
+little mistakes you make here and there which really can take some time but which are having a big impact
+
+6
+00:00:22,600 --> 00:00:24,760
+even though they might look tiny in one place.
+
+7
+00:00:24,850 --> 00:00:27,380
+Anyways it's a great project here.
+
+8
+00:00:27,400 --> 00:00:30,370
+It uses many of the things we learn throughout this course.
+
+9
+00:00:30,370 --> 00:00:36,680
+Animation routeing view x statements last conditionals and much more.
+
+10
+00:00:36,700 --> 00:00:39,490
+So really a lot of the future has features.
+
+11
+00:00:39,490 --> 00:00:42,400
+Of course it doesn't use every single feature.
+
+12
+00:00:42,400 --> 00:00:48,190
+Of course there are no nested routes for example because it's pretty impossible to create such a big
+
+13
+00:00:48,190 --> 00:00:53,610
+project and then still make it work and of course this project is already pretty long.
+
+14
+00:00:53,650 --> 00:00:55,480
+It's a challenge for you though.
+
+15
+00:00:55,570 --> 00:00:58,060
+Set your own project set your own goals.
+
+16
+00:00:58,060 --> 00:01:04,530
+Look at some popular web apps and try rebuilding them with viewed as a tool to learn here.
+
+17
+00:01:04,720 --> 00:01:08,860
+That's something no one can teach you but how you will learn the most.
+
+18
+00:01:09,010 --> 00:01:12,770
+And with that I really can say I hope you enjoyed it.
+
+19
+00:01:13,030 --> 00:01:14,800
+And we're not done yet.
+
+20
+00:01:14,830 --> 00:01:19,670
+We still have to have a look at how we can deploy this project in the next course.
+

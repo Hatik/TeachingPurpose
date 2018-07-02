@@ -1,0 +1,196 @@
+1
+00:00:01,570 --> 00:00:09,250
+Well in order to be able to navigate a want to include some links obviously and for dads to be included.
+
+2
+00:00:09,250 --> 00:00:15,340
+All quickly create a new component which I'll simply name heterodox view and in there I simply want
+
+3
+00:00:15,340 --> 00:00:21,970
+to have a template and now I will grab some nice links from them get bootstrapped DOT COM components
+
+4
+00:00:22,480 --> 00:00:23,930
+and they're from their ass.
+
+5
+00:00:23,980 --> 00:00:26,250
+I like is Pildes look here.
+
+6
+00:00:26,260 --> 00:00:32,500
+So I will quickly copy this snippet over to my template and there I want to have two links.
+
+7
+00:00:32,500 --> 00:00:34,570
+For now I want to have my home link.
+
+8
+00:00:34,570 --> 00:00:35,270
+That's correct.
+
+9
+00:00:35,290 --> 00:00:36,520
+And then use relink.
+
+10
+00:00:36,790 --> 00:00:41,530
+I don't want to have the active gloss on it though because I don't know if it will always be active.
+
+11
+00:00:41,530 --> 00:00:46,190
+We'll come back to marking a link as active in one of the next videos too.
+
+12
+00:00:46,210 --> 00:00:50,160
+So now I got those feelings with my anchor tags though.
+
+13
+00:00:50,260 --> 00:00:52,090
+I don't want to use them like this.
+
+14
+00:00:52,090 --> 00:00:56,600
+I don't want to use the Rapha attribute because that would always send the request to the server.
+
+15
+00:00:56,620 --> 00:01:01,960
+And even though that would be handled correctly I don't want to do it like this because first of all
+
+16
+00:01:01,960 --> 00:01:09,280
+that would limit the way how I can set up the links I wisit and it will come back to this and it will
+
+17
+00:01:09,280 --> 00:01:11,670
+also mean I always sent the request.
+
+18
+00:01:11,680 --> 00:01:17,140
+But if I'm already on the page and I click on this it would be better if the request doesn't get sent
+
+19
+00:01:17,140 --> 00:01:20,700
+in the first place because I know I don't want to leave the application.
+
+20
+00:01:20,890 --> 00:01:27,700
+Well for days if your chest gives us a nice little alternative to using an anchor tag at all so we're
+
+21
+00:01:27,700 --> 00:01:35,830
+going to remove it and instead use a component the router ships with it's called router link and it
+
+22
+00:01:35,830 --> 00:01:37,980
+will render a anchor tag India end.
+
+23
+00:01:38,020 --> 00:01:44,770
+So you wrap your content with this router link here but it allows you to set it up differently than
+
+24
+00:01:44,770 --> 00:01:46,150
+the normal anchor tag.
+
+25
+00:01:46,510 --> 00:01:49,990
+What you do set up here for example is you pastie to attribute.
+
+26
+00:01:49,990 --> 00:01:54,160
+You can also dynamically Bida by adding a colon in front of it of course we will see this in one of
+
+27
+00:01:54,160 --> 00:01:58,550
+the next use two and then two is simply the payoff you want to navigate.
+
+28
+00:01:58,560 --> 00:02:05,950
+You can either be a relative path like user now it'll always be appended to the current or L or slash
+
+29
+00:02:05,950 --> 00:02:12,220
+user or splash home or just slash in this case to append it to the end of your domain instead of the
+
+30
+00:02:12,220 --> 00:02:13,310
+end of your current.
+
+31
+00:02:13,420 --> 00:02:18,550
+You are out and year we would have Slash user for example.
+
+32
+00:02:18,550 --> 00:02:26,080
+Now by setting it up like this if we go back to our application and well maybe also included here that
+
+33
+00:02:26,080 --> 00:02:34,930
+would also help souls who quickly import the header from components after you file and then registred
+
+34
+00:02:35,020 --> 00:02:37,070
+as a local component to your.
+
+35
+00:02:37,270 --> 00:02:40,300
+So app hador Shelby our header.
+
+36
+00:02:40,600 --> 00:02:45,440
+And now I want to add it above my loaded component lets say like this.
+
+37
+00:02:45,460 --> 00:02:50,410
+With that in place we now see are links here and you see it works.
+
+38
+00:02:50,500 --> 00:02:54,790
+If we inspect scheduling here we see it as an anchor tag.
+
+39
+00:02:54,790 --> 00:02:55,900
+This is what I told you.
+
+40
+00:02:55,900 --> 00:02:57,990
+It gets replaced by a anchor tag.
+
+41
+00:02:58,010 --> 00:03:05,250
+Even though we use router link in our in our code you also see that it has this class attached to it.
+
+42
+00:03:05,260 --> 00:03:08,820
+This route will in act of class but only if it is active.
+
+43
+00:03:08,950 --> 00:03:14,770
+We're going to take advantage of this class soon for now the great thing is we got to our working routing
+
+44
+00:03:15,010 --> 00:03:19,870
+and the interesting thing is if you click this link it's actually not reloading the page.
+
+45
+00:03:19,870 --> 00:03:24,340
+You can tell by it not playing this reload animation up there.
+
+46
+00:03:24,340 --> 00:03:30,320
+It doesn't do that because since we used router link there's implicit click listener attached to it.
+
+47
+00:03:30,340 --> 00:03:34,920
+So if you click on it it doesn't do the default behavior of sending a request.
+
+48
+00:03:34,960 --> 00:03:38,410
+Instead it simply listens to the click and loads the correct route.
+
+49
+00:03:38,440 --> 00:03:42,940
+Which is one of the big advantages of using router link instead of the normal anchor tag.
+

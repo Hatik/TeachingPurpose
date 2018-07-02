@@ -1,0 +1,308 @@
+1
+00:00:01,570 --> 00:00:08,310
+So we want to build this new directive which warrants merks kind of like a B on so directives and here
+
+2
+00:00:08,320 --> 00:00:09,280
+directive.
+
+3
+00:00:09,310 --> 00:00:19,960
+Well you may choose any name I will choose Custom on as the name and in my custom on directive I have
+
+4
+00:00:19,960 --> 00:00:25,780
+my bind to work here that's my important book in this case here I do have my element and my binding
+
+5
+00:00:25,780 --> 00:00:28,990
+these are the two arguments I will need to access.
+
+6
+00:00:28,990 --> 00:00:32,560
+Now let me quickly add a button here.
+
+7
+00:00:34,170 --> 00:00:42,220
+And I will add a method in my object your methods where I will say clicked and here I don't want to
+
+8
+00:00:42,240 --> 00:00:43,090
+follow an alert.
+
+9
+00:00:43,140 --> 00:00:45,960
+So it's not really about the function we execute here.
+
+10
+00:00:45,960 --> 00:00:48,180
+It is about being able to execute one.
+
+11
+00:00:48,420 --> 00:00:51,950
+So I learned I was collect nice.
+
+12
+00:00:51,960 --> 00:00:54,430
+So this is a function.
+
+13
+00:00:54,600 --> 00:01:00,190
+Now I don't want to use my directive we custom on like this.
+
+14
+00:01:00,400 --> 00:01:02,870
+And then here I will execute collect.
+
+15
+00:01:02,980 --> 00:01:05,450
+So I pass a reference to this function.
+
+16
+00:01:05,450 --> 00:01:07,680
+I don't want to execute.
+
+17
+00:01:08,050 --> 00:01:15,810
+Now therefore what I can do is here in the element I want to listen to any event.
+
+18
+00:01:15,820 --> 00:01:18,020
+Now I'm not specifying which you went right now.
+
+19
+00:01:18,040 --> 00:01:22,310
+Let's start simple by forcing that to be a click event.
+
+20
+00:01:22,570 --> 00:01:24,030
+How can I do this.
+
+21
+00:01:24,250 --> 00:01:32,200
+Well keep in mind the element is my native h m l element and therefore of course I have access to on
+
+22
+00:01:32,200 --> 00:01:41,680
+click like this and on click now takes a function which should get executed whenever we click on this
+
+23
+00:01:41,680 --> 00:01:42,730
+element.
+
+24
+00:01:42,730 --> 00:01:50,470
+Now what I can do here is I can say execute my binding value of which I know it will be a reference
+
+25
+00:01:50,470 --> 00:01:53,210
+to a function so I can execute like a function.
+
+26
+00:01:53,650 --> 00:01:54,940
+Let's see if this works.
+
+27
+00:01:54,970 --> 00:01:59,580
+If I now go back and hit click me we see I was clicked was that easy.
+
+28
+00:01:59,590 --> 00:02:00,360
+It is.
+
+29
+00:02:00,370 --> 00:02:04,270
+So that is really how easy it is to get started with this.
+
+30
+00:02:04,270 --> 00:02:06,790
+Now let's find it a little bit.
+
+31
+00:02:06,850 --> 00:02:11,770
+First of all not really connected to this directive but I want to give it a spot and some styling to
+
+32
+00:02:11,800 --> 00:02:13,690
+make it look nicer.
+
+33
+00:02:13,690 --> 00:02:18,290
+Second of all I don't want to listen to you on click here.
+
+34
+00:02:18,490 --> 00:02:24,130
+Instead I want to be able to listen to any event and I want to set about flexible event listener for
+
+35
+00:02:24,130 --> 00:02:25,120
+that.
+
+36
+00:02:25,120 --> 00:02:31,440
+Therefore I'm going to copy it or comment out that and instead I want to add an event listener here.
+
+37
+00:02:31,660 --> 00:02:33,680
+And how do you add an event listener.
+
+38
+00:02:33,970 --> 00:02:38,380
+Well we have to specify the type of the wind as a string.
+
+39
+00:02:38,770 --> 00:02:41,900
+And then the second argument is the function we want to execute.
+
+40
+00:02:42,190 --> 00:02:49,920
+While that's pretty easy the type is something we can extract because that is simply our binding arg.
+
+41
+00:02:49,990 --> 00:02:57,280
+Now we're not passing this yet but I can pass it with a colon click for example and then as I can hear
+
+42
+00:02:57,280 --> 00:02:59,650
+at the type here this will be converted to a string.
+
+43
+00:02:59,650 --> 00:03:02,030
+So it is absolutely fine to use it like this.
+
+44
+00:03:02,410 --> 00:03:05,440
+And then I want to execute my function.
+
+45
+00:03:05,530 --> 00:03:09,910
+I'm just extracting this and separate constants to make it really clear what happens here.
+
+46
+00:03:09,910 --> 00:03:15,900
+So this is my conc my my binding value which again will be a reference to a function I can execute.
+
+47
+00:03:16,030 --> 00:03:17,950
+So will execute the function here.
+
+48
+00:03:17,980 --> 00:03:20,960
+Important don't pass parentheses here.
+
+49
+00:03:21,010 --> 00:03:24,130
+You want to just pass the reference to the event listener.
+
+50
+00:03:24,130 --> 00:03:28,960
+Javascript will execute this automatically for you once you do click.
+
+51
+00:03:28,960 --> 00:03:34,450
+Now with this let me try this modified code still works like a charm.
+
+52
+00:03:34,450 --> 00:03:35,480
+Awesome.
+
+53
+00:03:35,530 --> 00:03:38,670
+Now with that we already finished the exercise.
+
+54
+00:03:38,680 --> 00:03:44,990
+Now I want to try something else and also add a little depth here which I give some style.
+
+55
+00:03:45,010 --> 00:03:51,940
+Let's say some with 100 pixels and height 100 pixels and so that we can see the background color of
+
+56
+00:03:52,300 --> 00:03:54,470
+light green.
+
+57
+00:03:55,000 --> 00:03:58,860
+So this day of year and year I one to listen to mouse enter.
+
+58
+00:03:59,220 --> 00:04:09,490
+So to do that all restructure this into multiple lines here I want to have my custom on directive and
+
+59
+00:04:09,490 --> 00:04:22,240
+I want to listen to you mouse entry year and execute a function I will pass where I will create Maoz
+
+60
+00:04:22,240 --> 00:04:23,870
+entry for that.
+
+61
+00:04:23,920 --> 00:04:31,110
+And here I simply want to console log mouse entered
+
+62
+00:04:33,920 --> 00:04:42,850
+and I also want to provide a number of function mouse leaf and you guess what I want to enter there
+
+63
+00:04:42,850 --> 00:04:46,850
+or out of their mouths leafed.
+
+64
+00:04:46,900 --> 00:04:52,520
+Now of course I also will hope to zap some mouse enter here and want to execute mouse entry.
+
+65
+00:04:52,540 --> 00:05:01,270
+So this newly created function and I also want to hook up my other listener the custom on Maoz leave
+
+66
+00:05:01,360 --> 00:05:03,980
+and execute mouse leave here.
+
+67
+00:05:04,940 --> 00:05:08,930
+And don't put the parentheses here like this.
+
+68
+00:05:08,930 --> 00:05:11,280
+Now let's see there isn't a console.
+
+69
+00:05:11,470 --> 00:05:13,790
+The clearer this was entered.
+
+70
+00:05:13,980 --> 00:05:15,320
+Miles entered Musli.
+
+71
+00:05:15,470 --> 00:05:17,720
+So this is really flexible as you can see.
+
+72
+00:05:17,720 --> 00:05:21,230
+We can listen to multiple events can of course so click here.
+
+73
+00:05:21,230 --> 00:05:26,720
+That is how this works and how easy it was to trade our cast in their act of which kind of works like
+
+74
+00:05:26,810 --> 00:05:35,630
+the on just by using native Dom javascript things like eventless not here passing an argument and passing
+
+75
+00:05:35,720 --> 00:05:42,920
+a value the function which should get executed or the reference to this function really short and hopefully
+
+76
+00:05:42,920 --> 00:05:50,690
+dead showed you how you can use the features native elements of your native javascript office you to
+
+77
+00:05:50,690 --> 00:05:52,520
+build powerful directives.
+

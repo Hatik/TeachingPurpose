@@ -1,0 +1,40 @@
+1
+00:00:01,880 --> 00:00:05,450
+With that we learned all about the basics of components.
+
+2
+00:00:05,460 --> 00:00:10,590
+We learned how to create them how to contain them in single files how to make sure that the styling
+
+3
+00:00:10,590 --> 00:00:12,510
+gets only applied to that component.
+
+4
+00:00:12,630 --> 00:00:18,420
+How to register them locally and globally what are the advantages of single file templates art how to
+
+5
+00:00:18,420 --> 00:00:22,260
+structure our project and how to choose the selector names.
+
+6
+00:00:22,260 --> 00:00:28,050
+A lot of very useful things you can now work with these components and use all the features you learned
+
+7
+00:00:28,050 --> 00:00:34,210
+in the early or modules in those cores like outputting data there and so on just like you did before.
+
+8
+00:00:34,230 --> 00:00:41,100
+Now in components now in the next much I want to dive deeper into components and learn how we can communicate
+
+9
+00:00:41,100 --> 00:00:44,580
+across components to send data from a parent to a child.
+
+10
+00:00:44,670 --> 00:00:48,360
+And the other way around let's dive into this in the next module.
+

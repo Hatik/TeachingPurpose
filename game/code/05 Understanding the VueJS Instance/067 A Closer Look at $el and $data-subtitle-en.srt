@@ -1,0 +1,260 @@
+1
+00:00:02,200 --> 00:00:04,420
+In Alaska would you maybe you already saw it.
+
+2
+00:00:04,520 --> 00:00:10,460
+If I open up the console again and we inspect this instance we see a couple of properties here which
+
+3
+00:00:10,460 --> 00:00:18,290
+clearly are were created by us for example children which is an empty array L which clearly refers to
+
+4
+00:00:18,290 --> 00:00:26,330
+this def which actually represents our instance or it represents our HMO code of this instance and also
+
+5
+00:00:26,420 --> 00:00:29,580
+data year and some other things.
+
+6
+00:00:29,660 --> 00:00:33,160
+These are actually properties we can use.
+
+7
+00:00:33,440 --> 00:00:39,040
+And whilst I won't go through all of them some of them are also pretty self-explanatory and some I'll
+
+8
+00:00:39,100 --> 00:00:43,780
+color later when we come to components and more advanced objects.
+
+9
+00:00:43,880 --> 00:00:51,470
+I want to go through some Specifically I want to talk about dollar sign L dollar sign data and dollar
+
+10
+00:00:51,470 --> 00:00:52,880
+sign refs here.
+
+11
+00:00:53,060 --> 00:00:57,140
+So let's have a look at that dollar sign.
+
+12
+00:00:57,160 --> 00:01:00,990
+L It is pretty clear it refers to our template.
+
+13
+00:01:00,990 --> 00:01:04,120
+It refers to our HMO code of that instance.
+
+14
+00:01:04,140 --> 00:01:09,960
+So as you see it refers to Diest death and it is as native h t m l element.
+
+15
+00:01:09,960 --> 00:01:11,670
+Nothing special about it.
+
+16
+00:01:11,700 --> 00:01:17,850
+So this is how view chance keeps track of what our aged e-mail code is or where it is instance lefse
+
+17
+00:01:18,980 --> 00:01:23,880
+dollar assigned data is an object which holds our data properties.
+
+18
+00:01:24,180 --> 00:01:27,850
+This is another way of accessing the data from outside.
+
+19
+00:01:28,110 --> 00:01:37,770
+So while I can access the data by directly typing on one title I could also type dolar data title because
+
+20
+00:01:37,920 --> 00:01:44,550
+Dollard data is the data block we passed here accessible from outside.
+
+21
+00:01:44,550 --> 00:01:52,320
+I can prove this if I create a new variable data and set this equal to exactly the properties we have
+
+22
+00:01:52,320 --> 00:01:53,020
+here.
+
+23
+00:01:54,260 --> 00:01:58,100
+Like this.
+
+24
+00:01:58,320 --> 00:02:01,340
+And then here I said data equal to data.
+
+25
+00:02:01,350 --> 00:02:03,850
+Now referring to is very like that.
+
+26
+00:02:03,870 --> 00:02:12,160
+Outside of that instance I can now down here check if the data stored in the dollar sign data property
+
+27
+00:02:12,160 --> 00:02:21,240
+created by View chase equals the data variable I created up here well let's see the action if I had
+
+28
+00:02:21,240 --> 00:02:25,250
+control and remove that semi-colon here.
+
+29
+00:02:25,260 --> 00:02:31,830
+So if I had control again and I open up I can so we see true here and this true refers to the only console
+
+30
+00:02:31,830 --> 00:02:34,770
+lock we have to this one here.
+
+31
+00:02:34,780 --> 00:02:42,630
+Sell the dollar sign data object is data object is stored in our view chair's instance actually still
+
+32
+00:02:42,630 --> 00:02:43,950
+is a state of object.
+
+33
+00:02:43,950 --> 00:02:51,660
+We set up up here and this is by the way another way of how you may initialize the data or in your instances
+
+34
+00:02:52,020 --> 00:02:55,530
+you don't have to write everything in dis object.
+
+35
+00:02:55,530 --> 00:03:01,040
+You may also create that data variable before creating your view instance and then simply pass it as
+
+36
+00:03:01,070 --> 00:03:03,480
+the value for this key value pair here.
+
+37
+00:03:03,510 --> 00:03:05,510
+That is perfectly fine as you see here.
+
+38
+00:03:05,550 --> 00:03:07,350
+It works in the same way.
+
+39
+00:03:07,800 --> 00:03:10,730
+And this is one of the key things I want you to understand.
+
+40
+00:03:10,920 --> 00:03:14,340
+View chest doesn't create its own enclosed world.
+
+41
+00:03:14,490 --> 00:03:16,070
+It's normal Javascript code.
+
+42
+00:03:16,110 --> 00:03:22,470
+It lifts any Chalion code and it's able to interact with the child script code around it as you can
+
+43
+00:03:22,470 --> 00:03:27,540
+see here we can use a normal chair variable to populate our data.
+
+44
+00:03:27,720 --> 00:03:30,670
+We can access the instance from outside like here.
+
+45
+00:03:30,810 --> 00:03:35,280
+We can use the proxied properties of the view instance from outside.
+
+46
+00:03:35,280 --> 00:03:42,140
+We can use multiple view instances we can throw in normal Chalis strip code we're like this time or
+
+47
+00:03:42,150 --> 00:03:42,920
+we don't exist.
+
+48
+00:03:42,940 --> 00:03:46,290
+If you instance data we can do all of that.
+
+49
+00:03:46,320 --> 00:03:51,650
+Of course you want to make sure that we don't mess with things under control of future.
+
+50
+00:03:51,650 --> 00:03:52,070
+Yes.
+
+51
+00:03:52,080 --> 00:03:59,790
+So if we control a part of the HTML code like this one with UJA as you probably don't want to it with
+
+52
+00:04:00,030 --> 00:04:07,140
+vanilla javascript code too because it could mess up the reactivity of view as if it controls a certain
+
+53
+00:04:07,140 --> 00:04:07,960
+part there.
+
+54
+00:04:08,070 --> 00:04:15,180
+If it renders something with with and you try to access them with the code you might say when it doesn't
+
+55
+00:04:15,180 --> 00:04:16,710
+exist or something like that.
+
+56
+00:04:16,710 --> 00:04:18,370
+So that's something to watch out for.
+
+57
+00:04:18,570 --> 00:04:24,690
+But generally there's nothing wrong with mixing your normal javascript code and UJA as you don't have
+
+58
+00:04:24,690 --> 00:04:28,230
+to create at Eugenius only application.
+
+59
+00:04:28,230 --> 00:04:34,310
+You can always follow it in if you only want to control parts or if you only need certain things of
+
+60
+00:04:34,370 --> 00:04:34,810
+you.
+
+61
+00:04:34,870 --> 00:04:41,280
+Yes I'm just emphasizing this because it is important to understand what we will learn how to build
+
+62
+00:04:41,500 --> 00:04:42,150
+new chairs.
+
+63
+00:04:42,180 --> 00:04:44,300
+Only applications in this course too.
+
+64
+00:04:44,310 --> 00:04:48,350
+Right now we're still in the stage where we only are controlling parts of the HCM page.
+
+65
+00:04:48,360 --> 00:04:53,260
+Keep this in mind and that is perfectly valid and something you will see in a lot of applications.
+

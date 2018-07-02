@@ -1,0 +1,120 @@
+1
+00:00:01,800 --> 00:00:03,160
+Indus routeing watch.
+
+2
+00:00:03,200 --> 00:00:08,690
+So far we learn a lot about how the router works how we can set up routes we can configure them to our
+
+3
+00:00:08,690 --> 00:00:14,300
+needs how we can pass data how we can load different routes how we can navigate there by clicking links
+
+4
+00:00:14,540 --> 00:00:17,510
+or directly from code and so on.
+
+5
+00:00:17,710 --> 00:00:25,160
+Now I want to dive in some advanced topics or some additional things we can use to really get our routing
+
+6
+00:00:25,160 --> 00:00:30,350
+to do what we want and to really fulfill any needs our application could have.
+
+7
+00:00:30,590 --> 00:00:33,500
+Let's start by having a look at transitions.
+
+8
+00:00:33,590 --> 00:00:38,900
+So how we may animate the switching from one route to another route.
+
+9
+00:00:39,070 --> 00:00:43,190
+Now we already learn about transitions in this course or about any missions.
+
+10
+00:00:43,310 --> 00:00:49,850
+And the cool thing is if we have a look at our router here we can simply wrap around of you with this
+
+11
+00:00:49,850 --> 00:00:56,870
+transition component here because it's only one element so no transition group here only one element
+
+12
+00:00:56,930 --> 00:01:02,870
+because you want to transition between the components which get loaded in this router view if you want
+
+13
+00:01:02,870 --> 00:01:03,920
+to do that for this.
+
+14
+00:01:03,920 --> 00:01:08,840
+For the average high road reviews too we would wrap them in transition blocks as well.
+
+15
+00:01:08,870 --> 00:01:15,140
+So this will now transition or any made to switching off this route and I can show that by setting up
+
+16
+00:01:15,140 --> 00:01:20,890
+a simple animation here using various simple slide animation.
+
+17
+00:01:20,890 --> 00:01:26,630
+Let's say now we already saw how to set this up in the animation section.
+
+18
+00:01:26,720 --> 00:01:30,460
+So I will quickly copy in some code and then be back once I'm done.
+
+19
+00:01:32,140 --> 00:01:38,140
+So I copied in some CSL style to have a nice slide animation which also has some fading included.
+
+20
+00:01:38,380 --> 00:01:47,050
+And then I want to set the mode to out in so that the old component is first removed before the new
+
+21
+00:01:47,060 --> 00:01:48,030
+one is added.
+
+22
+00:01:48,250 --> 00:01:49,420
+Well let's have a look.
+
+23
+00:01:49,420 --> 00:01:56,800
+By going to our main page and now click on user you see now we have this transition.
+
+24
+00:01:56,800 --> 00:02:00,780
+And of course if you want a different transition you can configure it differently.
+
+25
+00:02:00,850 --> 00:02:08,920
+But what this shows you is how easy it is to actually enable navigation or an able transition combined
+
+26
+00:02:08,920 --> 00:02:10,300
+with navigation.
+
+27
+00:02:10,300 --> 00:02:15,820
+Important thing is wrap the router view for which you want to any made with transition and then set
+
+28
+00:02:15,820 --> 00:02:21,160
+up the transition as you learn that with name with your class as possible you have javascript hooks
+
+29
+00:02:21,520 --> 00:02:27,740
+with the mode and so on all the things you'll learn about animations will work just fine with routing.
+
+30
+00:02:27,790 --> 00:02:32,560
+So simply wrap your router view with the transition component and you're good to go.
+

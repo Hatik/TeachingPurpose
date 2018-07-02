@@ -1,0 +1,72 @@
+1
+00:00:01,720 --> 00:00:06,310
+So will learn the basics about animating our eloquence here.
+
+2
+00:00:06,310 --> 00:00:12,960
+Now let me read a bit deeper into what as we can configure to really fine tune these to our needs.
+
+3
+00:00:13,060 --> 00:00:17,350
+I'm going to copy this transition up here and copy it.
+
+4
+00:00:17,350 --> 00:00:22,280
+And here we all use the F again because that's the more often use case.
+
+5
+00:00:22,600 --> 00:00:26,130
+And now let's say I in general he said show too true.
+
+6
+00:00:26,260 --> 00:00:32,920
+Now if I do this of course and a lot as we see all three elements now maybe we want to.
+
+7
+00:00:32,950 --> 00:00:39,910
+Any made this element when the page is loaded first because all the elements could also transition smoothly
+
+8
+00:00:39,910 --> 00:00:41,550
+in such a case right.
+
+9
+00:00:41,560 --> 00:00:47,410
+If you wisit this page you probably want to animate some element to really give the user the impression
+
+10
+00:00:47,410 --> 00:00:49,540
+of hey I landed on this page.
+
+11
+00:00:49,870 --> 00:00:53,130
+Well I'll demonstrate this with this first element here.
+
+12
+00:00:54,460 --> 00:01:00,240
+To tell future has to also animate the initial attaching to the dawn.
+
+13
+00:01:00,250 --> 00:01:05,670
+You can add the appear attribute to the transition component here to this wrapper.
+
+14
+00:01:05,860 --> 00:01:12,670
+By doing so if I reload this you see again this move fully animates in down there.
+
+15
+00:01:12,760 --> 00:01:15,040
+And that is exactly the behavior we want here.
+
+16
+00:01:15,070 --> 00:01:20,320
+You wanted to animate and because you want to alter any made this initial attachment to the dorm and
+
+17
+00:01:20,320 --> 00:01:26,470
+not only the one if by trigger this button here and hence you get the well-behaved we already know but
+
+18
+00:01:26,560 --> 00:01:28,140
+also the initial loading.
+

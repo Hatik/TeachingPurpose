@@ -1,0 +1,60 @@
+1
+00:00:01,760 --> 00:00:08,990
+An import note regarding the naming of your props here I'm using name now I could also use Of course
+
+2
+00:00:09,290 --> 00:00:10,490
+my name.
+
+3
+00:00:10,490 --> 00:00:15,760
+Case sensitive here because I have a capital and inside of that I'm there for all.
+
+4
+00:00:15,890 --> 00:00:18,280
+Just the output here in my template.
+
+5
+00:00:18,380 --> 00:00:24,570
+And then any user component I can use my name with capital and here to know if I saved this.
+
+6
+00:00:24,680 --> 00:00:27,250
+It still works as you will see if I reload.
+
+7
+00:00:27,620 --> 00:00:29,110
+So that still worked.
+
+8
+00:00:29,210 --> 00:00:33,570
+However it only works because I'm using a single file template here.
+
+9
+00:00:33,590 --> 00:00:38,060
+If you try to use this in another template and we're not doing this in discourse because this is the
+
+10
+00:00:38,060 --> 00:00:44,510
+best solution to be honest then you can't use it because the DOM implications because Saddam restrictions
+
+11
+00:00:44,780 --> 00:00:50,180
+of having case insensitive attributes and elements applies.
+
+12
+00:00:50,360 --> 00:00:57,320
+So a case sensitive attributes like this will only work if you make sure that you're using a template
+
+13
+00:00:57,380 --> 00:01:03,140
+which supports this like a single file template we're using here which again gets compiled to shallow
+
+14
+00:01:03,140 --> 00:01:04,790
+script curing people process.
+
+15
+00:01:04,810 --> 00:01:07,890
+Anyways that's just something I wanted to highlight.
+

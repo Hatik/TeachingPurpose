@@ -1,0 +1,28 @@
+1
+00:00:01,730 --> 00:00:03,480
+That is first direct to people out here.
+
+2
+00:00:03,520 --> 00:00:04,280
+It's very nice.
+
+3
+00:00:04,270 --> 00:00:08,160
+It shows us how to use arguments modifiers and the value.
+
+4
+00:00:08,410 --> 00:00:12,700
+It shows us how to use all that together to build our own global directive.
+
+5
+00:00:12,940 --> 00:00:18,370
+And the next thing I want to show you how to create a local directive which is only usable in one instance
+
+6
+00:00:18,370 --> 00:00:25,000
+and one component and also how to create a even more powerful or feature rich directive.
+
+7
+00:00:25,030 --> 00:00:26,600
+So let's work on that next.
+

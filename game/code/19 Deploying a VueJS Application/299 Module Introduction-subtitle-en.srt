@@ -1,0 +1,64 @@
+1
+00:00:02,290 --> 00:00:04,140
+We get her finished application.
+
+2
+00:00:04,140 --> 00:00:06,940
+Now we probably all want to deploy it.
+
+3
+00:00:07,230 --> 00:00:10,850
+So it is the application running in development mode.
+
+4
+00:00:11,280 --> 00:00:16,140
+Now if we have a look at our application here and the center does this the terminal where I run this
+
+5
+00:00:16,440 --> 00:00:22,770
+we don't only have access to does NPM run def command be able to get the package done Jason where all
+
+6
+00:00:22,770 --> 00:00:25,750
+our scripts we can run through NPM are stored.
+
+7
+00:00:25,750 --> 00:00:31,860
+Ed we see we're having the DAPH command which we used all the time but we also have deep belt Command
+
+8
+00:00:32,190 --> 00:00:34,650
+which runs the production workflow.
+
+9
+00:00:34,650 --> 00:00:38,810
+So with NPM run build we're not starting a development server.
+
+10
+00:00:38,940 --> 00:00:42,850
+Instead we're preparing the whole project for deployment.
+
+11
+00:00:43,020 --> 00:00:48,630
+Therefore this process will not keep running it finishes because no server was started but this will
+
+12
+00:00:48,630 --> 00:00:49,880
+give us a new folder.
+
+13
+00:00:49,920 --> 00:00:57,000
+The disk folder which holds our build cheapass file the file we will need to deploy together with our
+
+14
+00:00:57,000 --> 00:01:01,840
+index h him a file to make our application work on a server.
+
+15
+00:01:02,250 --> 00:01:08,430
+Now in this module I will show you how to prepare your application for deployment.
+
+16
+00:01:08,460 --> 00:01:10,250
+And then finally deploy it.
+

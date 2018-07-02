@@ -1,0 +1,164 @@
+1
+00:00:02,230 --> 00:00:06,490
+In a class with you we have to pass a dynamic element and our link.
+
+2
+00:00:06,740 --> 00:00:12,260
+And that led to a POV which had to be a construct like this not to get that convenient especially if
+
+3
+00:00:12,260 --> 00:00:19,400
+that gets longer thankfully viewed Chasse or the router offers a better possibility or or a better way
+
+4
+00:00:19,400 --> 00:00:20,410
+of doing that.
+
+5
+00:00:20,570 --> 00:00:28,040
+We can give our routes names so any routes that js file I can assign a name to just route by simply
+
+6
+00:00:28,040 --> 00:00:32,600
+adding name here and all name and user added for example.
+
+7
+00:00:32,600 --> 00:00:34,810
+Now choose any name you like.
+
+8
+00:00:34,820 --> 00:00:36,820
+This is just one example here.
+
+9
+00:00:36,920 --> 00:00:39,930
+So user added this now the name of this route.
+
+10
+00:00:40,160 --> 00:00:47,120
+And I can now identify this route by name which means that on any page wherever I set up a link for
+
+11
+00:00:47,120 --> 00:00:52,900
+example in user detail I can now change this to pass an object instead of a string.
+
+12
+00:00:52,910 --> 00:00:54,750
+Of course you need to Colan for that.
+
+13
+00:00:54,830 --> 00:00:57,030
+Otherwise you're not able to pass an object.
+
+14
+00:00:57,120 --> 00:01:03,250
+And in this object you've got a couple of properties to define which path you want to navigate to.
+
+15
+00:01:03,280 --> 00:01:08,330
+They could set up payoff here and do the same thing from before.
+
+16
+00:01:08,360 --> 00:01:14,240
+Well would not really save you some time but you can add power if you're just that you know that but
+
+17
+00:01:14,240 --> 00:01:20,590
+you can also say name and the name was used were added as a string.
+
+18
+00:01:20,990 --> 00:01:30,650
+Now this is the name of course I set up here and now view chess will automatically populate this real
+
+19
+00:01:30,650 --> 00:01:34,700
+path then with the parfit extract from this name drought.
+
+20
+00:01:34,700 --> 00:01:37,530
+This is the cool thing we don't have to type the full path.
+
+21
+00:01:37,790 --> 00:01:41,700
+I can now pass a second argument here which is to name parents.
+
+22
+00:01:41,700 --> 00:01:43,900
+Does that keep you chairs will recognize.
+
+23
+00:01:44,090 --> 00:01:50,100
+Which again is an object where I can now pass key value pairs of the parameters I want to pass to this
+
+24
+00:01:50,120 --> 00:01:50,810
+POV.
+
+25
+00:01:50,960 --> 00:01:55,090
+Because of course this specific part your needs to get that ID.
+
+26
+00:01:55,160 --> 00:02:03,890
+So in my parens optic here is simply say id and this is now route parents Id like is much easier if
+
+27
+00:02:03,890 --> 00:02:07,920
+I now save this and go to just slash user one.
+
+28
+00:02:08,090 --> 00:02:13,030
+You see if we click Edit user it still goes to User 1 added.
+
+29
+00:02:13,250 --> 00:02:16,700
+But now we had much less effort in setting this up.
+
+30
+00:02:16,700 --> 00:02:20,110
+It's much easier to edit and to manage.
+
+31
+00:02:20,270 --> 00:02:25,780
+The important thing here is you could use this set up in any router link.
+
+32
+00:02:25,850 --> 00:02:32,390
+You can always pass an object to as you saw you could also use an object just to just set the path and
+
+33
+00:02:32,390 --> 00:02:39,840
+it's the same object you can pass when having your routing happen in code like we do here.
+
+34
+00:02:39,920 --> 00:02:48,530
+When I push this path I could instead also pass an object and set up the path like this or you use a
+
+35
+00:02:48,530 --> 00:02:49,700
+named road here.
+
+36
+00:02:49,790 --> 00:02:54,920
+So if I gave my hone route a name here let's say I assigned the name
+
+37
+00:02:57,510 --> 00:03:05,350
+Hoenn to it then I can go here and simply use name home just like this and I could pass parents here
+
+38
+00:03:05,350 --> 00:03:07,230
+to have this route expected once.
+
+39
+00:03:07,420 --> 00:03:10,290
+And you will see if I now reload this and click go to home.
+
+40
+00:03:10,300 --> 00:03:11,280
+It still works.
+
+41
+00:03:11,380 --> 00:03:19,090
+Now with a name drought and passing an object to powerful features which make routing much more convenient.
+

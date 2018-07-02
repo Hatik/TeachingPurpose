@@ -1,0 +1,84 @@
+1
+00:00:01,710 --> 00:00:08,550
+In the last modules we learn so much about component's time to bring it all together and build something
+
+2
+00:00:08,550 --> 00:00:09,430
+great with it.
+
+3
+00:00:09,450 --> 00:00:11,250
+A nice little application.
+
+4
+00:00:11,460 --> 00:00:14,220
+This is what we're going to build a quotes application.
+
+5
+00:00:14,250 --> 00:00:18,110
+You'll see I really like quotes now in this application.
+
+6
+00:00:18,150 --> 00:00:23,850
+We start with a quote and then we can add a new code like that.
+
+7
+00:00:23,850 --> 00:00:27,770
+So once we added You see we get 2 of 10 and the quote is added.
+
+8
+00:00:27,810 --> 00:00:38,190
+Now if I add a couple of our quotes here until we reach 10 quotes there you will quickly see that once
+
+9
+00:00:38,190 --> 00:00:44,220
+I try to add the 11th one I get an error that I should first delete some quotes so that we're not getting
+
+10
+00:00:44,220 --> 00:00:45,560
+too crowded here.
+
+11
+00:00:45,840 --> 00:00:51,780
+Well I can do the quotes by simply clicking on them and then you'll see it up it's up there and I can
+
+12
+00:00:51,780 --> 00:00:53,870
+start adding new ones again.
+
+13
+00:00:54,180 --> 00:00:58,930
+So whilst we only have one page here we're already using a lot of feature this year.
+
+14
+00:00:58,980 --> 00:01:05,670
+With that tracking of our estate the possibility to add and delete keywords and dynamically adding them
+
+15
+00:01:05,670 --> 00:01:07,310
+to our Dom here.
+
+16
+00:01:07,650 --> 00:01:13,270
+Well with that I'd say let's dive in and build this project together.
+
+17
+00:01:13,290 --> 00:01:19,970
+Of course if you want feel free to try out to achieve the same without watching me give you the solution
+
+18
+00:01:19,970 --> 00:01:20,680
+first.
+
+19
+00:01:20,880 --> 00:01:25,330
+You'll learn all the things you need here but of course all of you are free to join me on the solution.
+
+20
+00:01:25,470 --> 00:01:27,840
+And then stop at some point continue on your own.
+
+21
+00:01:27,870 --> 00:01:33,330
+Whatever works for you you'll find the set up for this project attached to this lecture.
+

@@ -1,0 +1,100 @@
+1
+00:00:01,870 --> 00:00:10,120
+There also is one little extra I wanted to show you if you have to find some errors and you're debugging
+
+2
+00:00:10,120 --> 00:00:12,930
+your app you'll learn how to debug that earlier.
+
+3
+00:00:13,090 --> 00:00:16,620
+But there is a nice tool especially when using view x.
+
+4
+00:00:16,660 --> 00:00:18,970
+It's called The View developer tools.
+
+5
+00:00:19,000 --> 00:00:25,010
+Simply google for it and you should find it and grome store kind of you can then add it to your browser.
+
+6
+00:00:25,030 --> 00:00:26,720
+I already did this.
+
+7
+00:00:26,860 --> 00:00:31,370
+And once you added it you can open it in your developer tools here under View.
+
+8
+00:00:31,710 --> 00:00:38,260
+Now the nice thing is these developer tools show you all your components and you can inspect your components.
+
+9
+00:00:38,260 --> 00:00:41,740
+For example you loaded with the data they currently have.
+
+10
+00:00:41,740 --> 00:00:46,110
+See if it's computed or not so you can really dive into that.
+
+11
+00:00:46,230 --> 00:00:53,010
+But what you can also do is you can go to the view x tab here and the nice thing is if I buy it a new
+
+12
+00:00:53,010 --> 00:00:54,890
+entry gets added by stock.
+
+13
+00:00:54,900 --> 00:01:02,860
+We see the time I can now also if y decreases go back to the portfolio and sell this.
+
+14
+00:01:02,970 --> 00:01:04,320
+Now we sell stock
+
+15
+00:01:08,960 --> 00:01:13,250
+like this and I can always reword it like that.
+
+16
+00:01:13,340 --> 00:01:21,680
+So you can always switch back to older States to basically see you or do time travel through your different
+
+17
+00:01:21,680 --> 00:01:22,900
+states you had.
+
+18
+00:01:23,060 --> 00:01:24,650
+So that's really nice.
+
+19
+00:01:24,650 --> 00:01:32,360
+You can always use this tool to do something but then still have a look at how it looked before you
+
+20
+00:01:32,360 --> 00:01:35,050
+did this or even reworked it.
+
+21
+00:01:35,090 --> 00:01:42,560
+So that's a nice tool to analyze your view explo your payload the data you sent how your application
+
+22
+00:01:42,560 --> 00:01:44,570
+looked at a certain point of time.
+
+23
+00:01:44,660 --> 00:01:49,710
+And together with the other thing of analyzing your component Stehr which you already had a look at.
+
+24
+00:01:49,820 --> 00:01:51,610
+This really is a powerful tool.
+
+25
+00:01:51,680 --> 00:01:57,080
+You want to make sure to use when developing view as viewed as applications.
+

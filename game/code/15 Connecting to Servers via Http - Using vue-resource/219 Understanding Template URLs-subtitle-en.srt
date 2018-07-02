@@ -1,0 +1,268 @@
+1
+00:00:02,240 --> 00:00:08,070
+Now that we learn about resources and so on it's all the time to learn about how we can make our Eurail
+
+2
+00:00:08,160 --> 00:00:17,190
+more flexible at say for example here right now we always have data that Jason hardcoded in here.
+
+3
+00:00:17,190 --> 00:00:22,740
+Now what if we wanted to replace this dynamically then we could simply wrap it and call the braces and
+
+4
+00:00:22,830 --> 00:00:24,780
+name it node for example.
+
+5
+00:00:24,780 --> 00:00:26,040
+And now this is a variable.
+
+6
+00:00:26,040 --> 00:00:30,260
+We can replace all leave everything as it is here.
+
+7
+00:00:30,390 --> 00:00:34,480
+Do you LS set up here will override at forward the saving action.
+
+8
+00:00:34,740 --> 00:00:39,880
+But now for getting well-baby I want to get it from the alternative or the data node.
+
+9
+00:00:39,930 --> 00:00:42,330
+So it would be nice if I could exchange this.
+
+10
+00:00:42,540 --> 00:00:52,140
+Therefore I will add a new input field above my Get Data button input type form class form control type
+
+11
+00:00:52,380 --> 00:00:57,280
+text of course and then some line breaks to separated from the button.
+
+12
+00:00:57,540 --> 00:01:04,950
+And then here I want to bind with the model to a node property which of course add here and which should
+
+13
+00:01:04,950 --> 00:01:06,870
+be data by default.
+
+14
+00:01:06,870 --> 00:01:10,990
+Now I want a user to be able to enter any note here.
+
+15
+00:01:11,040 --> 00:01:12,750
+And of course only if it exists.
+
+16
+00:01:12,870 --> 00:01:18,600
+Will the HCB request that then be sent to this and point and fetch data from there.
+
+17
+00:01:18,660 --> 00:01:25,410
+So to achieve this we somehow need to change the way we fetch our data and make this more flexible.
+
+18
+00:01:25,560 --> 00:01:27,800
+No I will use a resource for this again.
+
+19
+00:01:28,020 --> 00:01:31,260
+So here all I will do is I will say Get data.
+
+20
+00:01:31,290 --> 00:01:41,280
+For example this shell have a method of get and now view resource generally supports the set up of your.
+
+21
+00:01:41,300 --> 00:01:43,230
+You're out as templates.
+
+22
+00:01:43,260 --> 00:01:47,240
+So with flexible parts like this here if you want to learn more.
+
+23
+00:01:47,250 --> 00:01:50,960
+Again a great start is on The View resource.
+
+24
+00:01:50,970 --> 00:01:57,960
+Get her page and then they're under on the route page actually you will find is your templates link
+
+25
+00:01:58,410 --> 00:02:05,580
+which will take you to this page here which basically describes as you are template standard which explains
+
+26
+00:02:05,580 --> 00:02:12,120
+you how you can set up flexible pieces in your view or else which may be exchanged at all of the features
+
+27
+00:02:12,120 --> 00:02:15,420
+described here will work with you resource.
+
+28
+00:02:15,420 --> 00:02:20,350
+Now we're using these symbols use case here where we simply have a variable thing in you or all that
+
+29
+00:02:20,400 --> 00:02:23,780
+which we can exchange for some real data.
+
+30
+00:02:23,970 --> 00:02:27,050
+So this case here on the documentation here.
+
+31
+00:02:27,180 --> 00:02:30,820
+But more interesting this case here in our code.
+
+32
+00:02:31,050 --> 00:02:34,820
+So we need to replace this node variable dynamically.
+
+33
+00:02:34,840 --> 00:02:35,830
+Now we can do this.
+
+34
+00:02:35,940 --> 00:02:41,240
+I'm going to replace my HTP request here in fecche data.
+
+35
+00:02:41,520 --> 00:02:48,870
+And instead I now also want to use this resource and now it gets data at this new resource adjusts it
+
+36
+00:02:48,950 --> 00:02:49,680
+up.
+
+37
+00:02:49,800 --> 00:02:54,840
+Now get data that doesn't have it's own you are also using the default Eurail and you could have used
+
+38
+00:02:54,840 --> 00:02:55,910
+this with D.
+
+39
+00:02:56,050 --> 00:02:58,160
+This he gets request as well.
+
+40
+00:02:58,170 --> 00:03:04,710
+Just as a side note but you're in this resource you were always set up for all resources we do have
+
+41
+00:03:04,710 --> 00:03:07,500
+a flexible piece in our Eurail node.
+
+42
+00:03:07,740 --> 00:03:14,910
+Now we can override this by simply passing an object as the first argument where we then specify each
+
+43
+00:03:15,000 --> 00:03:16,540
+variable we do have an hour.
+
+44
+00:03:16,540 --> 00:03:22,920
+You are all so Note for example as a key and then as a value the value which should really be entered
+
+45
+00:03:22,920 --> 00:03:23,860
+into you will.
+
+46
+00:03:23,870 --> 00:03:30,550
+Once it is sent Does this year this node referring to our node property where we store the user input.
+
+47
+00:03:30,570 --> 00:03:36,600
+So what this will do is it will take our you are all down there and replace the note key with this value
+
+48
+00:03:36,600 --> 00:03:37,680
+we set up here.
+
+49
+00:03:37,830 --> 00:03:43,350
+And if we would have multiple pieces here like with a slash and then and number of pieces that we could
+
+50
+00:03:43,350 --> 00:03:47,570
+simply add a number here and replace this to and so on.
+
+51
+00:03:47,670 --> 00:03:52,600
+And you can again consult the page I showed you before to learn more about how you can structure this
+
+52
+00:03:52,800 --> 00:03:56,780
+and which operators and so on you have in your toolset.
+
+53
+00:03:57,050 --> 00:03:59,650
+So this will now replace this note part.
+
+54
+00:03:59,660 --> 00:04:06,950
+Here with this value we pass here and then we could also pass our arguments but we don't need to it's
+
+55
+00:04:06,960 --> 00:04:10,760
+a get request so that looks fine.
+
+56
+00:04:10,820 --> 00:04:13,760
+Now of course we here again want to use then.
+
+57
+00:04:13,950 --> 00:04:16,500
+And basically I want to use the same code as before.
+
+58
+00:04:16,500 --> 00:04:23,400
+So we're just going to copy that because that code will work fine and all in to do is uncomment is of
+
+59
+00:04:23,400 --> 00:04:28,200
+course and with this emplace this should now work well.
+
+60
+00:04:28,530 --> 00:04:33,810
+It's the same functionality as before but now with our own resource which has the great advantage of
+
+61
+00:04:33,810 --> 00:04:35,380
+being flexible.
+
+62
+00:04:35,400 --> 00:04:37,940
+So let me reload the page and get the data.
+
+63
+00:04:38,250 --> 00:04:41,490
+And we see it worked when we fetch it from data.
+
+64
+00:04:41,490 --> 00:04:49,270
+Now let's fetch from the alternative node by entering alternative and your looks good.
+
+65
+00:04:49,460 --> 00:04:54,630
+And this is where I want to conclude this section because now we really learn a lot.
+
+66
+00:04:54,680 --> 00:05:01,790
+And this is the final piece where you have the ability to exchange pieces into your l.
+
+67
+00:05:01,810 --> 00:05:03,440
+You are sending your request to.
+

@@ -1,0 +1,28 @@
+1
+00:00:02,270 --> 00:00:09,260
+Know thus far we only have to look at the case that we have the element we animated in and then we want
+
+2
+00:00:09,260 --> 00:00:11,990
+to remove this element like this.
+
+3
+00:00:11,990 --> 00:00:14,350
+Now this is only one use case.
+
+4
+00:00:14,370 --> 00:00:21,560
+Oftentimes you also want to switch or switch between two elements so that as soon as the one element
+
+5
+00:00:21,590 --> 00:00:25,270
+is removed you start intimating in another one.
+
+6
+00:00:25,280 --> 00:00:30,410
+This would be a typical use case and now I want to show you how to set up such a transition from one
+
+7
+00:00:30,410 --> 00:00:31,920
+element to another one.
+

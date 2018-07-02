@@ -1,0 +1,156 @@
+1
+00:00:01,750 --> 00:00:08,140
+When working with you when there are a couple of things you oftentimes encounter in real applications
+
+2
+00:00:08,430 --> 00:00:13,480
+which you need to solve and as you learn chess makes solving these things easier.
+
+3
+00:00:13,540 --> 00:00:19,390
+But what do you what are these things let's enhance our application here by taking this paragraph where
+
+4
+00:00:19,390 --> 00:00:24,560
+we output the coordinates and I want to create kind of a dead spot.
+
+5
+00:00:24,730 --> 00:00:27,040
+So we're all entering a span.
+
+6
+00:00:27,340 --> 00:00:33,520
+And once I hover over days I don't want to update the coordinates.
+
+7
+00:00:33,520 --> 00:00:39,580
+Now of course right now if I saved is it is still updated because this span is part of this paragraph
+
+8
+00:00:39,840 --> 00:00:48,790
+on which I'm listening to any mouse moves I can now set up my own event here and I will call it mouse
+
+9
+00:00:48,850 --> 00:00:50,540
+move as well.
+
+10
+00:00:50,770 --> 00:00:55,010
+And here I'm simply one to execute nothing.
+
+11
+00:00:55,270 --> 00:01:02,320
+Well one solution would be to still execute a function here so I'll name it dummy and add a down year
+
+12
+00:01:02,350 --> 00:01:04,330
+in the methods object.
+
+13
+00:01:06,980 --> 00:01:09,720
+Dummy of course would be a function.
+
+14
+00:01:10,190 --> 00:01:11,640
+And in this function.
+
+15
+00:01:11,690 --> 00:01:17,330
+All I want to do is I want to fetch the event which gets passed automatically and here I quit cold stop
+
+16
+00:01:18,650 --> 00:01:28,740
+propagation to make sure that it does not propagate up to elements holding this element this span here.
+
+17
+00:01:29,150 --> 00:01:36,410
+If an out of control you'll see that once a hover over to that spot the coordinates no longer get well
+
+18
+00:01:36,500 --> 00:01:42,460
+updated because now we're stopping the propagation which means only handle the element here.
+
+19
+00:01:42,500 --> 00:01:48,850
+And this handler don't let it propagate up to any elements which might hold this element.
+
+20
+00:01:49,220 --> 00:01:53,800
+Yeah we could do it like this but we can even get a bit easier than that.
+
+21
+00:01:53,990 --> 00:02:03,170
+I can remove these dummy here and I can simply execute nothing here but use a so-called modifier event
+
+22
+00:02:03,230 --> 00:02:04,080
+modifier.
+
+23
+00:02:04,100 --> 00:02:07,360
+It allows me to modify the behavior of this event.
+
+24
+00:02:07,370 --> 00:02:09,710
+That's where the name comes from clever huh.
+
+25
+00:02:10,040 --> 00:02:16,520
+Here I add such a modifier by adding a dot after the name of the event which I pass as an argument to
+
+26
+00:02:16,520 --> 00:02:19,310
+be on anti-money for a one to use.
+
+27
+00:02:19,310 --> 00:02:23,200
+Here is Stob for stop propagation.
+
+28
+00:02:23,270 --> 00:02:29,960
+If I now had control enter we see the same behavior as before even though I don't even execute a function
+
+29
+00:02:29,960 --> 00:02:33,150
+here because verruca SNL does this for me.
+
+30
+00:02:33,200 --> 00:02:40,190
+It kind of has this interim mediate function which is between my function no function in this case and
+
+31
+00:02:40,250 --> 00:02:46,190
+this time when the event is emitted or when we get DB and it then runs this little function which simply
+
+32
+00:02:46,190 --> 00:02:50,120
+doesn't one thing it stops the propagation of the U-bend.
+
+33
+00:02:50,390 --> 00:02:52,280
+We also get other modifiers.
+
+34
+00:02:52,280 --> 00:02:59,450
+The Probably most important second one being pre-event for running prevent default so running stop propagation
+
+35
+00:02:59,450 --> 00:03:02,380
+with the stop modifier and prevent default.
+
+36
+00:03:02,480 --> 00:03:07,290
+The two common methods you have when working with the default event object.
+
+37
+00:03:07,430 --> 00:03:11,800
+These are available with these modifiers like Dot stop here.
+
+38
+00:03:11,810 --> 00:03:17,780
+You can also change them just as a side note by adding dot prebend here as well which won't do anything
+
+39
+00:03:17,780 --> 00:03:21,420
+here but you could add them or change up just like dat.
+

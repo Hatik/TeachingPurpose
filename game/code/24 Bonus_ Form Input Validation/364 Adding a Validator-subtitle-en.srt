@@ -1,0 +1,492 @@
+1
+00:00:02,190 --> 00:00:04,610
+In the last lecture we installed you'll the date.
+
+2
+00:00:04,630 --> 00:00:06,160
+Let's now use it.
+
+3
+00:00:06,160 --> 00:00:10,930
+First of all I'm going to restart NPM run death to bring my development server back up.
+
+4
+00:00:11,140 --> 00:00:15,210
+And let's now understand how we use this Vueling date package.
+
+5
+00:00:15,220 --> 00:00:17,650
+We'll start with a simple validation.
+
+6
+00:00:17,920 --> 00:00:25,720
+Let's say we want to ensure that our e-mail address here is not empty and there is also a valid email
+
+7
+00:00:25,720 --> 00:00:26,370
+address.
+
+8
+00:00:26,500 --> 00:00:29,060
+This is a very common validation of course.
+
+9
+00:00:29,110 --> 00:00:31,330
+So it makes up for a great example.
+
+10
+00:00:31,360 --> 00:00:38,460
+So we're talking about this input here this input with the ID email which is of type email and bound
+
+11
+00:00:38,460 --> 00:00:40,460
+to this e-mail property.
+
+12
+00:00:40,510 --> 00:00:48,610
+In my view instance in my view component here now we first of all need to unlock the Bula date package
+
+13
+00:00:49,210 --> 00:00:57,030
+and for that I'll go to my main dot J.S. fall where we start the application and then we'll import Yula
+
+14
+00:00:57,040 --> 00:00:59,600
+date from Vueling day to year.
+
+15
+00:00:59,620 --> 00:01:05,570
+So from this package we just installed as a nextstep offer all these imports.
+
+16
+00:01:05,710 --> 00:01:13,370
+I will use my view package itself with the U.S. method to use this Vueling date package.
+
+17
+00:01:13,390 --> 00:01:19,050
+This is how you inject or add a lot of third party packages into view.
+
+18
+00:01:19,060 --> 00:01:25,480
+With that we can now use Vueling date features in our view components and instances and I want to use
+
+19
+00:01:25,480 --> 00:01:29,720
+such a feature in these Sign-Up that you follow those Sign-Up component.
+
+20
+00:01:29,860 --> 00:01:36,650
+Now that we use Voula date we can add a special property to the component.
+
+21
+00:01:36,730 --> 00:01:45,070
+So next to data methods computed and so on we can now add validations this otherwise would have been
+
+22
+00:01:45,070 --> 00:01:48,870
+an unknown property view by default doesn't notice one.
+
+23
+00:01:48,970 --> 00:01:51,380
+But thanks to you date it now does.
+
+24
+00:01:51,610 --> 00:01:57,460
+And now invalidations you can set up the validations you want to use in your form for dead.
+
+25
+00:01:57,460 --> 00:02:01,210
+You use some keys to identify your form controls.
+
+26
+00:02:01,210 --> 00:02:03,160
+Now here that's important.
+
+27
+00:02:03,160 --> 00:02:05,830
+This has to be named email.
+
+28
+00:02:06,100 --> 00:02:10,200
+It has to have the same name as the property you are binding to.
+
+29
+00:02:10,240 --> 00:02:16,830
+With the model that's required by Bula date so that it can automatically synchronized this and knows
+
+30
+00:02:16,840 --> 00:02:18,540
+Venda value changes.
+
+31
+00:02:18,550 --> 00:02:24,460
+So if you name the value in your data method which you return their email if you name the property e-mail
+
+32
+00:02:24,460 --> 00:02:30,370
+there I mean then you have to name this property in the validations object you're also e-mail.
+
+33
+00:02:30,430 --> 00:02:35,380
+So I'll use e-mail and this stand alone of course won't do anything.
+
+34
+00:02:35,380 --> 00:02:41,740
+Email now takes a javascript object where we configure the validators we want to register for Disease
+
+35
+00:02:41,800 --> 00:02:50,080
+Control and for that I want to import some validators because DB Yulee date Peche whilst allowing us
+
+36
+00:02:50,080 --> 00:02:55,160
+to create our own validators all the ships with a lot of very common ones.
+
+37
+00:02:55,210 --> 00:03:03,370
+So I simply have to import them into my component file here and I'll import them from Bula date slash
+
+38
+00:03:03,460 --> 00:03:07,880
+Lipp slash validators from this package.
+
+39
+00:03:07,900 --> 00:03:14,740
+I can now install or import a couple of built in validators a full list of built in validators can be
+
+40
+00:03:14,740 --> 00:03:17,430
+found on the Bewley date documentation page.
+
+41
+00:03:17,560 --> 00:03:25,630
+If you scroll down to built in validators I'm interested in two validators here the required validator
+
+42
+00:03:25,780 --> 00:03:32,830
+which simply checks if the field is not empty and the email validator which checks if it's a valid email
+
+43
+00:03:32,830 --> 00:03:36,360
+address with these two built in validators.
+
+44
+00:03:36,400 --> 00:03:44,100
+Or that I can now assign them to my email control here and I do this by simply adding them as properties
+
+45
+00:03:44,320 --> 00:03:46,880
+so I can add a required property here.
+
+46
+00:03:47,080 --> 00:03:49,520
+And I binded to required.
+
+47
+00:03:49,540 --> 00:03:59,580
+So to this required import and I can also set my email property and bind it to email.
+
+48
+00:03:59,590 --> 00:04:01,420
+Now it's actually up to you.
+
+49
+00:04:01,510 --> 00:04:02,290
+What's your name.
+
+50
+00:04:02,290 --> 00:04:06,520
+These first parameters you could have used rec and mail here.
+
+51
+00:04:06,670 --> 00:04:12,790
+But a typical pattern is to use the validator names here because that then allows you to take advantage
+
+52
+00:04:12,820 --> 00:04:18,760
+of the next generation javascript feature where you can omit the value because of the key name is equal
+
+53
+00:04:18,760 --> 00:04:19,700
+to the value.
+
+54
+00:04:19,780 --> 00:04:23,320
+It will automatically expanded into this key value pair.
+
+55
+00:04:23,350 --> 00:04:28,700
+So now does this the same syntax as before or has the same result we assigned required to required an
+
+56
+00:04:28,750 --> 00:04:31,650
+email to email but it's a bit shorter.
+
+57
+00:04:31,780 --> 00:04:35,990
+Now if that does two validators are registered for this email.
+
+58
+00:04:36,280 --> 00:04:44,710
+And with that we can now connect this e-mail validation rule we set up in our javascript code to our
+
+59
+00:04:44,710 --> 00:04:48,380
+template because that is something we haven't done yet.
+
+60
+00:04:48,480 --> 00:04:52,440
+This alone what we did thus far wouldn't do anything.
+
+61
+00:04:52,600 --> 00:04:57,400
+How would Bewley date know to which input in our team code.
+
+62
+00:04:57,580 --> 00:04:59,250
+It showed connectors.
+
+63
+00:04:59,500 --> 00:05:05,750
+You could argue that since we named this well here it should pick input with the ID email but that would
+
+64
+00:05:05,750 --> 00:05:11,240
+be really arbitrarily because it would really force us to use the same naming everywhere.
+
+65
+00:05:11,240 --> 00:05:13,760
+And it doesn't make this assumption.
+
+66
+00:05:13,970 --> 00:05:21,370
+We manually have to connect it and connecting it is super super simple you connected.
+
+67
+00:05:21,490 --> 00:05:26,770
+Besides registering via modeling here we also register the input event.
+
+68
+00:05:26,980 --> 00:05:34,180
+Now the input event is part of what we model listens to but we can also registred stand alone next to
+
+69
+00:05:34,180 --> 00:05:42,380
+it now and here we can access the special dollar sign the property and that is a reserved word a dollar
+
+70
+00:05:42,390 --> 00:05:42,820
+sign.
+
+71
+00:05:42,830 --> 00:05:45,730
+B is X-post by the Bewley date package.
+
+72
+00:05:45,850 --> 00:05:50,640
+Just like you have dollar sign event as a reserve name for the incoming event data.
+
+73
+00:05:51,010 --> 00:05:57,640
+So dollar signs the Says access to the validators to the validation rules and all the behind the scenes
+
+74
+00:05:57,640 --> 00:06:07,300
+validation Vully date does all dollar assign the we can now access any validation rule or control to
+
+75
+00:06:07,300 --> 00:06:08,270
+be precise.
+
+76
+00:06:08,290 --> 00:06:16,810
+We set up if we stroll down to our javascript code invalidations that's only one email so we can access
+
+77
+00:06:16,900 --> 00:06:19,730
+email on dollar sign VI.
+
+78
+00:06:19,900 --> 00:06:26,470
+So let's access email and now on this we can call a method which is dollar sign.
+
+79
+00:06:26,470 --> 00:06:28,810
+Don't forget this dollar sign.
+
+80
+00:06:28,810 --> 00:06:31,070
+Touch make sure to execute.
+
+81
+00:06:31,490 --> 00:06:38,470
+Now don't assign touch as a method which is automatically exposed and added by the Bewley date package.
+
+82
+00:06:38,470 --> 00:06:40,790
+So we just target our email control.
+
+83
+00:06:40,810 --> 00:06:47,830
+We can then execute dollar assigned touch and this will inform Bula date that it should check if the
+
+84
+00:06:47,950 --> 00:06:55,240
+input on which we registered this code with the input event if Dad fulfills the requirements of the
+
+85
+00:06:55,240 --> 00:07:01,840
+email validation rule which is that we should have required input so that it should be non-empty and
+
+86
+00:07:01,840 --> 00:07:04,150
+that it should be an email.
+
+87
+00:07:04,150 --> 00:07:08,980
+Now how can we find out if that actually is the case.
+
+88
+00:07:08,980 --> 00:07:10,700
+If that actually works
+
+89
+00:07:15,090 --> 00:07:19,360
+well let's simply try by temporarily outputting something melodeon.
+
+90
+00:07:19,650 --> 00:07:30,460
+I'll add a div below the input and then they're all simply output dollar sign the and let's see what's
+
+91
+00:07:30,460 --> 00:07:31,820
+inside of this object.
+
+92
+00:07:31,960 --> 00:07:33,180
+Now let's save this.
+
+93
+00:07:33,310 --> 00:07:39,750
+Let's go back to our application and then there you now see this object melodeon put.
+
+94
+00:07:39,790 --> 00:07:42,990
+That is what dollar signs the holds.
+
+95
+00:07:43,150 --> 00:07:49,780
+Now it's a bit hard to read but what you see is that here indeed we got this email property which is
+
+96
+00:07:49,780 --> 00:07:56,140
+only present because we added such a validation rule you'll see that required is false which means this
+
+97
+00:07:56,140 --> 00:07:57,710
+validator is not Matt.
+
+98
+00:07:57,760 --> 00:08:06,040
+It's empty email actually is true but that simply is the starting value for this validator it will quickly
+
+99
+00:08:06,040 --> 00:08:08,500
+change once you start typing.
+
+100
+00:08:08,500 --> 00:08:14,400
+And now if I do type A T here which is not a valid email address see the required.
+
+101
+00:08:14,400 --> 00:08:21,010
+Now it's true because we meet the criteria of having some value in there but email is false because
+
+102
+00:08:21,010 --> 00:08:28,390
+obviously this is not a valid email address and we get some Avri utility properties ex by Bula date
+
+103
+00:08:28,840 --> 00:08:34,120
+like this dollar sign envelop property which is true because it isn't valid dollars and dirty which
+
+104
+00:08:34,120 --> 00:08:35,860
+means yet we did touch it.
+
+105
+00:08:35,860 --> 00:08:42,250
+So we had a chance to added dollar sign error which is true which means we have an error or it's not
+
+106
+00:08:42,250 --> 00:08:47,930
+equal to invalid error will actually only be true if dirty and invalid are true.
+
+107
+00:08:47,950 --> 00:08:54,250
+So if we had a chance to touch it because that allows us to provide a better user experience by not
+
+108
+00:08:54,970 --> 00:09:00,280
+marking is as false just because it's invalid it's always invalid at the start.
+
+109
+00:09:00,280 --> 00:09:05,950
+Error also means that we had a chance to correct it pending means that we're currently evaluating the
+
+110
+00:09:05,950 --> 00:09:07,060
+validity of this.
+
+111
+00:09:07,060 --> 00:09:10,300
+This is more important for asynchronous validators.
+
+112
+00:09:10,300 --> 00:09:17,400
+And then here we see Perens which is a Listy validators we assigned required which then simply is what
+
+113
+00:09:17,400 --> 00:09:23,380
+is validated returns us and we'll dive deeper into this once we write our own validators and then again
+
+114
+00:09:23,380 --> 00:09:26,470
+we got invalid dirty and error for the overall form.
+
+115
+00:09:26,470 --> 00:09:32,540
+So not just for this e-mail but for all validators we just heard it here it is of course the only one.
+
+116
+00:09:32,650 --> 00:09:38,440
+But if we had more validation rules this would give us information about whether they all together are
+
+117
+00:09:38,500 --> 00:09:40,230
+invalid or not.
+
+118
+00:09:40,310 --> 00:09:46,120
+Now I'm not talking about this if I completest to a real email address you'll see now we passed required
+
+119
+00:09:46,210 --> 00:09:53,310
+we pass the e-mail therefore invalid is false an error is false and we would have a valid input.
+
+120
+00:09:53,320 --> 00:09:55,790
+This is how validation works.
+
+121
+00:09:55,840 --> 00:10:02,720
+Now outputting the information like this below the input probably is not the best possible user experience.
+
+122
+00:10:02,770 --> 00:10:06,940
+So let's find out how we can take advantage of the information we got here.
+
+123
+00:10:06,940 --> 00:10:12,260
+Q style our input differently and possibly show a warning message.
+

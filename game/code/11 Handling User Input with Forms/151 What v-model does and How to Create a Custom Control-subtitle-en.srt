@@ -1,0 +1,156 @@
+1
+00:00:01,900 --> 00:00:08,590
+Thus far we always used default inputs default controls HVM all gives us there is nothing wrong with
+
+2
+00:00:08,590 --> 00:00:09,010
+that.
+
+3
+00:00:09,010 --> 00:00:11,710
+Chances are high that this will cover all you need.
+
+4
+00:00:11,950 --> 00:00:13,980
+But let's say you want to build your own.
+
+5
+00:00:13,990 --> 00:00:16,260
+You want to build your own input here.
+
+6
+00:00:16,300 --> 00:00:20,390
+I want to build a little switch which I can toggle between on and off.
+
+7
+00:00:20,740 --> 00:00:25,210
+And to do this I will build my own component which has this logic in it.
+
+8
+00:00:25,210 --> 00:00:31,000
+Let's start with that to build our own component which works as the input.
+
+9
+00:00:31,030 --> 00:00:34,260
+We have to understand what would be more the behind the scenes.
+
+10
+00:00:34,270 --> 00:00:35,820
+I'll explain that here.
+
+11
+00:00:35,920 --> 00:00:37,910
+The user data field.
+
+12
+00:00:38,740 --> 00:00:41,860
+We model does two things behind the scenes.
+
+13
+00:00:41,860 --> 00:00:44,860
+It binds to the value with Colon value.
+
+14
+00:00:44,890 --> 00:00:49,010
+Or of course the long form would be the bind value.
+
+15
+00:00:49,300 --> 00:00:56,380
+So it binds the value of that and it binds it of course to user data e-mail.
+
+16
+00:00:56,440 --> 00:01:05,430
+It also simply gives as the input listener or of course add change.
+
+17
+00:01:05,530 --> 00:01:12,090
+If we use the modifier the lazy modifier but here all use an input which is the default.
+
+18
+00:01:12,280 --> 00:01:18,650
+And here it then listens to changes where it then simply says user data.
+
+19
+00:01:18,890 --> 00:01:22,620
+Email equal to you event.
+
+20
+00:01:22,810 --> 00:01:29,110
+That's the normal event Didon kind of creates for us the normal javascript event that we want to get
+
+21
+00:01:29,110 --> 00:01:35,950
+access to this element which was the root for this event to target this input field and then value.
+
+22
+00:01:36,010 --> 00:01:41,350
+Now with this setup what we will see is that if I go back and I enter the email address here it still
+
+23
+00:01:41,370 --> 00:01:42,510
+appears down there.
+
+24
+00:01:42,610 --> 00:01:44,650
+So we get the same behavior as before.
+
+25
+00:01:44,830 --> 00:01:47,810
+If I remove the M It also updates there.
+
+26
+00:01:47,920 --> 00:01:49,460
+So I get the same behavior.
+
+27
+00:01:49,480 --> 00:01:51,810
+Now that's my manual the model.
+
+28
+00:01:51,820 --> 00:01:54,640
+It's the same thing the model does behind the scenes.
+
+29
+00:01:54,640 --> 00:02:00,970
+But just now in the longer form I'll leave it like this so that we can always see that now that we know
+
+30
+00:02:00,970 --> 00:02:07,360
+how Bimala works behind the scenes we know how our own component has to work to be able to be usable
+
+31
+00:02:07,360 --> 00:02:08,770
+with the model.
+
+32
+00:02:08,770 --> 00:02:15,220
+It has to have a proper named value so that the modeless able to pass a value into our component and
+
+33
+00:02:15,220 --> 00:02:20,450
+it has to emit an event called input to allow the model to react to that.
+
+34
+00:02:20,800 --> 00:02:26,170
+Well with these two information pieces we can create our own component.
+
+35
+00:02:26,170 --> 00:02:28,310
+I'll name it switch.
+
+36
+00:02:28,520 --> 00:02:35,530
+So switch view fall we'll House said here I'll have a template and I'll need a script and I'll also
+
+37
+00:02:35,530 --> 00:02:41,180
+need some styling abse style like that that let's work on our own component.
+
+38
+00:02:41,230 --> 00:02:46,450
+Set up a nice little template html template and silent and then at the chambres of logic to make it
+
+39
+00:02:46,450 --> 00:02:47,390
+work correctly.
+

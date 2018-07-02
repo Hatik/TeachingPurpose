@@ -1,0 +1,228 @@
+1
+00:00:02,130 --> 00:00:07,340
+In the last lecture we saw how we can add a validator and which information we get.
+
+2
+00:00:07,390 --> 00:00:09,550
+Now let's work on the user experience.
+
+3
+00:00:09,590 --> 00:00:15,200
+I'm going to get rid of this Thaller assign the output melodeon part and instead I want to style the
+
+4
+00:00:15,200 --> 00:00:16,470
+input differently.
+
+5
+00:00:16,550 --> 00:00:25,270
+If it is invalid before this you can of course use any styling rule you want whatever fits your needs.
+
+6
+00:00:25,550 --> 00:00:32,210
+What I'll do is I conditionally want to add a class to the wrapping div which contains both my label
+
+7
+00:00:32,270 --> 00:00:33,290
+and my input.
+
+8
+00:00:33,470 --> 00:00:35,370
+If this is invalid.
+
+9
+00:00:35,630 --> 00:00:39,420
+So here all bind clause with Colon clause.
+
+10
+00:00:39,650 --> 00:00:47,540
+And I want to bind it to a javascript object where I set the invalid property and therefore C is as
+
+11
+00:00:47,540 --> 00:00:57,590
+class if dollar assigned B email error or is true error and not invalid because there are also takes
+
+12
+00:00:57,590 --> 00:01:01,940
+into account whether the user had a chance to edit the value or not.
+
+13
+00:01:01,940 --> 00:01:04,920
+So whatever the form is touched or not.
+
+14
+00:01:05,260 --> 00:01:09,570
+Now that alone won't do much or at least you won't see much.
+
+15
+00:01:09,590 --> 00:01:16,370
+So in order to see something I also should prepare an invalid style.
+
+16
+00:01:16,550 --> 00:01:23,960
+So scroll down to my scopes Stahl's here and I'll add a new style below.
+
+17
+00:01:24,140 --> 00:01:28,660
+All these input Starling's here maybe here.
+
+18
+00:01:28,850 --> 00:01:30,380
+Sishen doesn't really matter.
+
+19
+00:01:30,620 --> 00:01:37,450
+And if we have to put a clause which is on the wrapping div and does all ZOA has invalid clause.
+
+20
+00:01:37,490 --> 00:01:40,410
+So there is no whitespace between these two classes.
+
+21
+00:01:40,700 --> 00:01:48,020
+Then any input which is nested inside of this should receive a border which is one pixel's solid and
+
+22
+00:01:48,030 --> 00:01:53,720
+red and that say a background color of some light red.
+
+23
+00:01:53,720 --> 00:02:00,650
+So maybe let pick this rose see Selman color here whatever you like.
+
+24
+00:02:00,930 --> 00:02:03,760
+Is de-value for invalid input.
+
+25
+00:02:04,010 --> 00:02:06,410
+And I also want to store the label differently.
+
+26
+00:02:06,440 --> 00:02:13,010
+So copy the rule and also style any label in such input group there.
+
+27
+00:02:13,070 --> 00:02:16,410
+I don't want to style border or background color.
+
+28
+00:02:16,490 --> 00:02:19,980
+Instead I want to style the text color and set it to red.
+
+29
+00:02:20,300 --> 00:02:25,220
+If we now save as updated styling and we go back you see everything looks normal.
+
+30
+00:02:25,370 --> 00:02:33,330
+But if I type here and I enter t you see now it becomes invalid because now was touched but it is invalid.
+
+31
+00:02:33,770 --> 00:02:37,460
+If I complete this to a valid value though it's gone.
+
+32
+00:02:37,730 --> 00:02:44,570
+So now we give the user some visual feedback only once he had a chance to do something though not when
+
+33
+00:02:44,570 --> 00:02:49,970
+the page first loads as you can see and that of course is a good user experience.
+
+34
+00:02:49,970 --> 00:02:53,110
+Now we can also add a user or error message.
+
+35
+00:02:53,210 --> 00:03:04,820
+So below does email input we could add a paragraph where we say please provide a valid email address
+
+36
+00:03:05,870 --> 00:03:13,620
+and then we could check if we want to show this with we if and we could even show it if Dollar Sign
+
+37
+00:03:13,620 --> 00:03:16,310
+the e-mail error is true.
+
+38
+00:03:16,340 --> 00:03:20,330
+So any error case you would now also show this message.
+
+39
+00:03:20,330 --> 00:03:24,410
+So as soon as I start typing here we see that message.
+
+40
+00:03:24,950 --> 00:03:31,160
+We could also only showed us if it's an invalid e-mail though so that we don't show it just because
+
+41
+00:03:31,160 --> 00:03:35,650
+the field is empty but only if it's a valid e-mail address.
+
+42
+00:03:35,730 --> 00:03:45,590
+This could be done if we actually check e-mail referring to this e-mail rule now is not true because
+
+43
+00:03:45,590 --> 00:03:51,080
+you saw in the last lecture that this is true if it is valid so not true means it's not valid.
+
+44
+00:03:51,080 --> 00:03:57,940
+Now you see if it is page reloads and I start typing and reverse this.
+
+45
+00:03:58,070 --> 00:04:01,280
+Now you don't see the error message even though an error is there.
+
+46
+00:04:01,310 --> 00:04:06,920
+If I filled something in though which also is a valid email address I get this error message.
+
+47
+00:04:07,100 --> 00:04:12,560
+So you can find to this your need and you could of course there for all to put multiple messages like
+
+48
+00:04:12,830 --> 00:04:15,850
+this field must not be empty.
+
+49
+00:04:16,040 --> 00:04:20,180
+If they're required validator is not true.
+
+50
+00:04:20,180 --> 00:04:24,020
+So now we would show two error messages in this case.
+
+51
+00:04:24,440 --> 00:04:27,360
+And you see must not be empty right from the start.
+
+52
+00:04:27,470 --> 00:04:33,110
+If I start typing We only see that with the e-mail address for the move that we're back to must not
+
+53
+00:04:33,110 --> 00:04:34,000
+be empty.
+
+54
+00:04:34,250 --> 00:04:38,330
+So this is how you can control the error messages.
+
+55
+00:04:38,330 --> 00:04:43,810
+This is of course purely optional but it shows you what you can do with this validation package.
+
+56
+00:04:43,850 --> 00:04:50,960
+You can really decide how you want to adjust the styling of your input how you want to provide feedback
+
+57
+00:04:51,140 --> 00:04:53,750
+to the user depending on his inputs.
+

@@ -1,0 +1,104 @@
+1
+00:00:01,810 --> 00:00:06,730
+The cool thing about this routeing section is all the things you learn before it will work just like
+
+2
+00:00:06,730 --> 00:00:12,470
+you learned it but now you are able to simply switch out different components in your application through
+
+3
+00:00:12,530 --> 00:00:16,900
+the router and therefore load different pieces dynamically.
+
+4
+00:00:16,900 --> 00:00:18,810
+So where do we start.
+
+5
+00:00:18,820 --> 00:00:26,290
+I do have a nice application here as you already know it mostly with bootstrap aborted in this age time
+
+6
+00:00:26,290 --> 00:00:32,560
+of fall and then in this after you fall just a relatively empty template but you see already also created
+
+7
+00:00:32,560 --> 00:00:37,360
+some components which will use you'll find to start a project attached to this lecture.
+
+8
+00:00:37,390 --> 00:00:44,260
+I did create a couple of components which are pretty much empty and only display what they contain basically
+
+9
+00:00:44,530 --> 00:00:47,130
+so that we are able to select the user and so on.
+
+10
+00:00:47,260 --> 00:00:52,780
+I created these components because for routeing it's all about dynamically switching these components.
+
+11
+00:00:52,870 --> 00:00:57,150
+These components can kind of represent our pages if you want to look at it like this.
+
+12
+00:00:57,250 --> 00:01:02,390
+And therefore it's key to have multiple of them so that we can demonstrate this.
+
+13
+00:01:02,740 --> 00:01:04,740
+Well let's start simple.
+
+14
+00:01:04,870 --> 00:01:12,180
+And let's actually begin with setting up our application here and at some routes to it.
+
+15
+00:01:12,340 --> 00:01:19,180
+For that we need the view router like in the last lecture or the last module excuse me where we use
+
+16
+00:01:19,180 --> 00:01:21,730
+the view resource package.
+
+17
+00:01:21,730 --> 00:01:27,460
+Now I'm going to install a third party package the router because it's not included in VHS by default
+
+18
+00:01:27,490 --> 00:01:34,330
+because veejays in its core maybe use like we used to before to only dump in certain widgets or pieces
+
+19
+00:01:34,330 --> 00:01:37,930
+into existing applications into multi-page applications.
+
+20
+00:01:38,110 --> 00:01:41,830
+But with this package we can now enable single page features.
+
+21
+00:01:42,130 --> 00:01:51,220
+So your NPM and then install mine's mine is saved to save as a production dependency view rowdier now
+
+22
+00:01:51,250 --> 00:01:52,530
+by hitting enter.
+
+23
+00:01:52,570 --> 00:02:00,430
+This will pull down the router install it and is finished and it automatically installs the 2.0 version
+
+24
+00:02:00,430 --> 00:02:05,710
+all throughout which is the one for the chest 2.0 which we are of course using in this course.
+
+25
+00:02:05,860 --> 00:02:08,920
+So the router was installed here.
+
+26
+00:02:09,770 --> 00:02:14,320
+And with that router installed it's time to set up some routes in the next video.
+

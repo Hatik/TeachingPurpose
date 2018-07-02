@@ -1,0 +1,176 @@
+1
+00:00:02,070 --> 00:00:10,550
+Well to implementor's properness bar all add a new component I'll name it header that you sort of file
+
+2
+00:00:10,550 --> 00:00:12,700
+is named heterodoxy view and then there.
+
+3
+00:00:12,720 --> 00:00:20,870
+I want to set up this component or copy in the prepared template which you find attached to this file.
+
+4
+00:00:20,880 --> 00:00:23,490
+It's basically the normal bootstrap progress bar.
+
+5
+00:00:23,520 --> 00:00:27,770
+So you can also head over to get bootstrapped dot com and fetch it there.
+
+6
+00:00:27,820 --> 00:00:31,400
+This is the progress bar without any content though.
+
+7
+00:00:31,770 --> 00:00:37,840
+The State of the progress bar is controlled by controlling the width of it.
+
+8
+00:00:38,010 --> 00:00:40,680
+You will see this in a second.
+
+9
+00:00:40,680 --> 00:00:47,520
+Now with this progress bar is set up I can go back to my apt audio file and here I want to import this.
+
+10
+00:00:47,550 --> 00:00:55,410
+So here I will import my header and add a new component app hador which uses this imported tatter.
+
+11
+00:00:55,890 --> 00:01:01,340
+And then in the view here I can simply add AB header like this.
+
+12
+00:01:03,570 --> 00:01:12,960
+Now for this to look good I also should give this a class of row here though and also wrap this in a
+
+13
+00:01:12,960 --> 00:01:16,470
+def spanning the full width.
+
+14
+00:01:16,540 --> 00:01:20,190
+So let me quickly do that at this end.
+
+15
+00:01:20,210 --> 00:01:27,480
+Now that's simply save us and we see the progress bar though it's empty of course because as I said
+
+16
+00:01:27,810 --> 00:01:36,460
+we have to adjust the width of this inner div here to control how far does progress bar has moved now.
+
+17
+00:01:36,510 --> 00:01:41,310
+We don't have any with set up right now so we don't see any change there.
+
+18
+00:01:41,310 --> 00:01:47,460
+For now let's change this to set the progress.
+
+19
+00:01:47,460 --> 00:01:55,560
+I'll add my script part to the single file where I export my default object here does the instance and
+
+20
+00:01:55,560 --> 00:01:57,100
+I'll set up my props.
+
+21
+00:01:57,240 --> 00:01:59,110
+And I want to get two props.
+
+22
+00:01:59,250 --> 00:02:04,670
+The quote count and the maximum number of quotes Max quotes.
+
+23
+00:02:05,210 --> 00:02:09,470
+I'll take care about passing this information pieces in a second.
+
+24
+00:02:09,480 --> 00:02:11,250
+I first want to use it.
+
+25
+00:02:11,760 --> 00:02:20,700
+I want to output some text in the progress bar the number of quotes to do so I will simply output the
+
+26
+00:02:20,790 --> 00:02:27,550
+code count and then also the maximum number of quotes.
+
+27
+00:02:27,580 --> 00:02:30,200
+Now notice it does slash year.
+
+28
+00:02:30,240 --> 00:02:31,780
+It's not a dividing that.
+
+29
+00:02:31,800 --> 00:02:34,650
+That's no operation no arithmetic operation.
+
+30
+00:02:34,650 --> 00:02:37,910
+We do have two different pieces of string interpellation.
+
+31
+00:02:37,980 --> 00:02:42,360
+That's just some text which will be displayed so that we see 5 of 10.
+
+32
+00:02:42,360 --> 00:02:50,310
+For example I also need to set the width and I will do this in a few lines and we can clearly see this.
+
+33
+00:02:50,440 --> 00:02:53,840
+I would bind to the style attribute with Colon style.
+
+34
+00:02:53,860 --> 00:02:55,820
+We learned this earlier too.
+
+35
+00:02:56,170 --> 00:03:03,840
+And here I want to dynamically set the width so with property off there is where the style of this does.
+
+36
+00:03:03,970 --> 00:03:05,590
+How do I set this.
+
+37
+00:03:06,190 --> 00:03:12,630
+Well I want to calculate the quote count divided by the maximum number of quotes.
+
+38
+00:03:12,820 --> 00:03:17,670
+So if we have five quotes and the maximum is 10 that would be top 5.
+
+39
+00:03:18,010 --> 00:03:25,990
+So I have to multiply with 100 to have 50 and then only two expressed as in percentages or 8 percent.
+
+40
+00:03:26,110 --> 00:03:28,450
+So I need to add plus percent.
+
+41
+00:03:28,470 --> 00:03:33,940
+This will be converted to a string and attach percent the percentage sign at the end.
+
+42
+00:03:34,030 --> 00:03:39,730
+So that in the end this will result to a style of with and then let's say 50 percent.
+
+43
+00:03:39,730 --> 00:03:43,960
+In the case of 5 items this is what will result from the spining.
+
+44
+00:03:43,960 --> 00:03:49,250
+Now to make sure that both quote count and maximum quotes gets passed correctly.
+

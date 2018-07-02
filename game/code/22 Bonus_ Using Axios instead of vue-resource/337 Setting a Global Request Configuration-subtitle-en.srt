@@ -1,0 +1,288 @@
+1
+00:00:02,390 --> 00:00:06,790
+We learned about the basics of using Access with GET and POST.
+
+2
+00:00:06,800 --> 00:00:14,120
+Now one thing we do right now is we read was the same base your l like this one here.
+
+3
+00:00:14,120 --> 00:00:20,360
+Actually we reused the same entire Eurail else older users Chaisson us the same and sign up and dashboard
+
+4
+00:00:20,360 --> 00:00:21,210
+component.
+
+5
+00:00:21,380 --> 00:00:27,260
+But let's pretend that this would be different and that we only had the same base your L though what
+
+6
+00:00:27,260 --> 00:00:29,920
+I will show you would all the work if you copy everything.
+
+7
+00:00:30,230 --> 00:00:34,930
+What I want to show you is that you can set up a base your L when using x.
+
+8
+00:00:34,930 --> 00:00:42,290
+Yes let's do this in the main door Jaspal simply because it runs as the first fall before our component
+
+9
+00:00:42,290 --> 00:00:43,700
+code runs.
+
+10
+00:00:43,700 --> 00:00:51,380
+So here I will import x years from x Yes and you could outsource the logic I'm writing here into a separate
+
+11
+00:00:51,380 --> 00:00:53,140
+file if you wanted to.
+
+12
+00:00:53,150 --> 00:00:58,540
+Now as I mentioned earlier you don't need to and you can't use you use here.
+
+13
+00:00:58,550 --> 00:01:01,420
+So what do we do instead is we just x x Yes.
+
+14
+00:01:01,550 --> 00:01:05,260
+And now we want to set a base u r l on x yes.
+
+15
+00:01:05,360 --> 00:01:13,220
+You can simply access the defaults object as the name suggests doesn't an object x is ships with which
+
+16
+00:01:13,220 --> 00:01:17,450
+allows you to set up some default settings and the settings you set up here.
+
+17
+00:01:17,480 --> 00:01:24,500
+It could also be set up as request specific settings by passing a second or third argument to to request
+
+18
+00:01:24,650 --> 00:01:26,480
+this javascript object.
+
+19
+00:01:26,480 --> 00:01:33,230
+So there you could set up options for this specific request here we're setting up clonal options which
+
+20
+00:01:33,230 --> 00:01:35,570
+will be applied to any request.
+
+21
+00:01:35,570 --> 00:01:38,420
+Now what can we do on this default object.
+
+22
+00:01:38,670 --> 00:01:45,530
+A full list of things you can configure it can of course be found on the access documentation there
+
+23
+00:01:45,530 --> 00:01:51,850
+if you scroll down you'll find details about the request configuration you can apply.
+
+24
+00:01:51,970 --> 00:01:55,020
+I will focus on the base you are.
+
+25
+00:01:55,090 --> 00:01:57,700
+There is one key you can set up here.
+
+26
+00:01:57,730 --> 00:02:04,540
+You can set base you are out with you are all being capital case characteris and then you set as equal
+
+27
+00:02:04,540 --> 00:02:05,550
+to a string.
+
+28
+00:02:05,690 --> 00:02:09,610
+Here I will cut this code to cut the string.
+
+29
+00:02:09,680 --> 00:02:16,660
+So really remove it from my dashboard and you fall and enter it into this space you are all in the manger.
+
+30
+00:02:16,660 --> 00:02:17,390
+Yes.
+
+31
+00:02:17,560 --> 00:02:22,310
+And I'll also go to the sign up of you fall and get rid of this your L here too.
+
+32
+00:02:22,620 --> 00:02:23,800
+So that in both Falls.
+
+33
+00:02:23,800 --> 00:02:29,620
+I only have deposit I want to access and since that's the same payoff we could actually also extract
+
+34
+00:02:29,620 --> 00:02:30,040
+that.
+
+35
+00:02:30,130 --> 00:02:35,290
+But I'll leave it there for demo purposes so that we don't just have empty requests here.
+
+36
+00:02:35,620 --> 00:02:40,400
+So we now get the base you are all set up here and that's all we need to do.
+
+37
+00:02:40,540 --> 00:02:46,710
+As I mentioned earlier Access which you import here is the same shared instance across all your files.
+
+38
+00:02:46,870 --> 00:02:52,720
+So setting's you set in the main dodgiest file will effect the x' instance Euston dashboard sign up
+
+39
+00:02:52,780 --> 00:02:59,290
+or any Arab place in Europe so that we can go back to our application and we can already see it if I
+
+40
+00:02:59,290 --> 00:03:00,300
+reload.
+
+41
+00:03:00,580 --> 00:03:02,030
+We don't get an error or.
+
+42
+00:03:02,140 --> 00:03:07,330
+Well obviously we would get one if we would now target an invalid you are l.
+
+43
+00:03:07,420 --> 00:03:09,930
+So that's the first important thing I wanted to mention.
+
+44
+00:03:09,970 --> 00:03:17,170
+You can set up configurations either on a request level or as shown here on a global level and feel
+
+45
+00:03:17,170 --> 00:03:23,150
+free to dive into the next year's documentation to learn about all possible things you can set up here.
+
+46
+00:03:24,600 --> 00:03:29,780
+One common configuration I want to share with you is the configuration of headers.
+
+47
+00:03:29,830 --> 00:03:34,620
+They are on the default object to make it or to configure it for every request.
+
+48
+00:03:34,620 --> 00:03:37,700
+You can also set up default headers.
+
+49
+00:03:37,800 --> 00:03:40,730
+Actually you can add something to the default headers.
+
+50
+00:03:40,740 --> 00:03:46,050
+Exes will always set up some the full headers but if you want to pass some specific headers you can
+
+51
+00:03:46,050 --> 00:03:50,070
+set them up here and access will merge them there on headers.
+
+52
+00:03:50,060 --> 00:03:55,430
+You actually got the choice between a couple of header specifications or targets.
+
+53
+00:03:55,590 --> 00:04:01,620
+You can't use common to set up headers which should be applied to any request no matter which type it
+
+54
+00:04:01,620 --> 00:04:07,540
+is there or you can then set up your own header by adding a new property like this.
+
+55
+00:04:07,590 --> 00:04:10,010
+For example you offer I sation header.
+
+56
+00:04:10,030 --> 00:04:15,820
+You're free to add any header you want and then set this to something.
+
+57
+00:04:15,880 --> 00:04:21,140
+This could be a good way to pass some generic token to the back packet on every request.
+
+58
+00:04:21,520 --> 00:04:27,850
+If you got more specific read needs you can also target headers but there for example just target gets
+
+59
+00:04:27,850 --> 00:04:34,590
+requests by targeting get and then adding some specific header here.
+
+60
+00:04:35,020 --> 00:04:38,350
+So then you could also set up something like this.
+
+61
+00:04:40,030 --> 00:04:47,890
+With that in place if we now go back to the application and I reload this page you'll see it works as
+
+62
+00:04:47,920 --> 00:04:48,740
+before.
+
+63
+00:04:48,850 --> 00:04:54,240
+But if we inspect the network tab here where we can see is quite interesting.
+
+64
+00:04:55,210 --> 00:05:03,970
+There if I inspect this request to users Jason and they go to header's you can see that on the request
+
+65
+00:05:03,970 --> 00:05:07,630
+hetero's at the bottom does offer a say she wants passed.
+
+66
+00:05:07,780 --> 00:05:12,950
+And since this was a get request you can also see that excerpts will set to application.
+
+67
+00:05:12,970 --> 00:05:19,190
+Jason that's very interesting and this is a novel cool way of setting some global conflict.
+
+68
+00:05:19,440 --> 00:05:24,280
+So overall the key takeaway of this lecture is you can set up conflagration defaults.
+
+69
+00:05:24,300 --> 00:05:31,440
+You could also set all these things on a request level on a per request level by passing it as an additional
+
+70
+00:05:31,470 --> 00:05:33,590
+argument to your request Moffats.
+
+71
+00:05:33,780 --> 00:05:40,380
+But being able to set up some global conflict can save you a lot of time and make your code easier to
+
+72
+00:05:40,380 --> 00:05:41,110
+maintain.
+

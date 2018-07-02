@@ -1,0 +1,272 @@
+1
+00:00:01,790 --> 00:00:04,870
+Let's start with the first exercise here.
+
+2
+00:00:05,030 --> 00:00:08,410
+This clearly is a case where we need to create a computer prop..
+
+3
+00:00:08,450 --> 00:00:16,070
+So let's add the computed object here to our view instance the computed object then Asti data object
+
+4
+00:00:16,340 --> 00:00:19,740
+takes key value pairs where the key is our property name.
+
+5
+00:00:19,760 --> 00:00:27,200
+Result but the value is not directly the value but instead a function which will return as the value
+
+6
+00:00:27,250 --> 00:00:29,290
+resoled should eventually have.
+
+7
+00:00:29,570 --> 00:00:37,310
+So here the eventual value offer is solid shell depend on value on this value property here.
+
+8
+00:00:37,700 --> 00:00:44,000
+I want to check whatever value is lets say equal to 37 in this case or not.
+
+9
+00:00:44,000 --> 00:00:46,780
+So I will return this check.
+
+10
+00:00:46,790 --> 00:00:51,690
+This value equals 37 and output done.
+
+11
+00:00:51,710 --> 00:00:59,810
+If we actually do fulfill this requirement and not there yet our wise and of course feel free to choose
+
+12
+00:00:59,900 --> 00:01:06,980
+any adverse set up or number you want to keep Pardus that we're using this dependency on value here.
+
+13
+00:01:06,980 --> 00:01:11,740
+With this I can hit Control enter here to see not there yet.
+
+14
+00:01:11,750 --> 00:01:15,390
+And now let's change his to actually B-37.
+
+15
+00:01:15,650 --> 00:01:21,500
+So I'll push this up to 35 and then add two more and we see done.
+
+16
+00:01:21,530 --> 00:01:28,720
+This is our computer property working and feel free to make this more complex and any way you imagine.
+
+17
+00:01:28,790 --> 00:01:32,610
+But generally this is how you always use computed properties.
+
+18
+00:01:32,690 --> 00:01:39,080
+Having a function that is important which returns the actual value this result property in this case
+
+19
+00:01:39,080 --> 00:01:40,230
+will eventually have.
+
+20
+00:01:40,370 --> 00:01:46,910
+And in this function you may use any code you want and importantly which is why it is so powerful when
+
+21
+00:01:46,910 --> 00:01:53,930
+using dependencies you may use any other property or data field you want but you don't have to use a
+
+22
+00:01:53,930 --> 00:01:54,950
+computer property.
+
+23
+00:01:54,980 --> 00:02:00,620
+Could also simply be a normal arithmetic calculation if for some reason you need that functionality.
+
+24
+00:02:00,620 --> 00:02:03,720
+It could be a random number if you need that functionality.
+
+25
+00:02:03,740 --> 00:02:05,760
+So what ever you need here.
+
+26
+00:02:05,820 --> 00:02:12,760
+These second exercise here wants me to watch for changes in the result properties.
+
+27
+00:02:12,770 --> 00:02:18,920
+So in this computed property we can also watch such a computer property not just normal properties.
+
+28
+00:02:18,920 --> 00:02:21,370
+We can watch any property at the end.
+
+29
+00:02:21,650 --> 00:02:29,210
+So let's add the watch object to our view Cheras instance and then as a key we specify the name of the
+
+30
+00:02:29,210 --> 00:02:30,800
+property we want to watch.
+
+31
+00:02:30,800 --> 00:02:34,470
+Result here referring to this resoled property.
+
+32
+00:02:34,520 --> 00:02:37,250
+We set up here as a computer property.
+
+33
+00:02:37,340 --> 00:02:43,160
+So again this is really important first then you can watch any property computed or not and then the
+
+34
+00:02:43,160 --> 00:02:48,940
+value here is the function which should get executed whenever a result changes.
+
+35
+00:02:48,950 --> 00:02:55,730
+So here I don't want to reset the value property this one year after 5 seconds.
+
+36
+00:02:55,910 --> 00:03:03,500
+So I will simply call set to time out second argument will be five thousand forty five seconds and then
+
+37
+00:03:03,500 --> 00:03:06,870
+he or I will have my function which should get executed.
+
+38
+00:03:07,070 --> 00:03:16,030
+Now as I mentioned in the last video we will have to bind our this variable so var VM is the variable
+
+39
+00:03:16,040 --> 00:03:18,620
+I'll create for this which is equal to this.
+
+40
+00:03:18,650 --> 00:03:25,610
+So did I still get access to these to these instance with the proxy properties like result and values
+
+41
+00:03:25,650 --> 00:03:28,070
+specifically asked in here.
+
+42
+00:03:28,070 --> 00:03:36,600
+I will need to set the M value referring to this value property near equal to zero again.
+
+43
+00:03:36,930 --> 00:03:42,070
+Let's say control enter and to correct this mistake here.
+
+44
+00:03:42,080 --> 00:03:43,870
+We of course need a colon after watch.
+
+45
+00:03:43,880 --> 00:03:45,750
+So control enter again.
+
+46
+00:03:46,310 --> 00:03:53,930
+And now let's see I can add 5 and we don't see a change after 5 seconds here because the result here
+
+47
+00:03:54,020 --> 00:03:56,320
+wasn't changed but yes it was re-evaluated.
+
+48
+00:03:56,330 --> 00:04:01,640
+It was recalculated because we changed value but result is still not there yet.
+
+49
+00:04:01,790 --> 00:04:06,710
+So let's change it to 37 then and wait for 5 seconds.
+
+50
+00:04:09,530 --> 00:04:10,360
+Here we go.
+
+51
+00:04:10,480 --> 00:04:14,030
+It jumped back to zero and that all the research is solid.
+
+52
+00:04:14,150 --> 00:04:19,820
+So we can get this kind of circle that we're watching with salt which depends on value where we don't
+
+53
+00:04:19,820 --> 00:04:24,880
+reset value which also resets result as it depends on value.
+
+54
+00:04:24,950 --> 00:04:32,170
+So you can also create kind of infinite dependencies here infinite circlets So watch out for that.
+
+55
+00:04:32,180 --> 00:04:41,090
+For example if I were to watch this result here and change resolved when ever for example value is equal
+
+56
+00:04:41,090 --> 00:04:46,830
+to zero then I would continuously execute this code and get into a never ending loop.
+
+57
+00:04:46,850 --> 00:04:48,890
+So you may want to watch out for this.
+
+58
+00:04:49,000 --> 00:04:56,620
+The use case here works works perfectly fine since we only reset if we reach 37 like we do here.
+
+59
+00:04:56,730 --> 00:05:01,100
+Is it again here we go.
+
+60
+00:05:01,100 --> 00:05:09,770
+So this has been the exercise on computer properties and watch I hope you were able to get a bed batter
+
+61
+00:05:09,830 --> 00:05:12,150
+into using these two features.
+
+62
+00:05:12,150 --> 00:05:17,960
+I understand they're friends that on the one we simply calculate a property whereas on the other watch
+
+63
+00:05:18,170 --> 00:05:23,210
+we simply react to some changes and we don't necessarily have to change a property there even though
+
+64
+00:05:23,210 --> 00:05:24,630
+we do so here.
+
+65
+00:05:24,710 --> 00:05:27,290
+But you don't have to you could run any code here.
+
+66
+00:05:27,620 --> 00:05:30,290
+And this is the important thing to understand.
+
+67
+00:05:30,290 --> 00:05:35,870
+It's important that you feel comfortable using these features as these two features computed and watch
+
+68
+00:05:36,200 --> 00:05:45,280
+really make your application much more reactive and allow you to create very flexible and reactive applications.
+

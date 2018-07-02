@@ -1,0 +1,72 @@
+1
+00:00:01,970 --> 00:00:05,490
+These mutations do face one big issue.
+
+2
+00:00:05,540 --> 00:00:07,800
+Or maybe it's a big issue maybe it's not.
+
+3
+00:00:07,910 --> 00:00:10,120
+They always have to be synchronous.
+
+4
+00:00:10,160 --> 00:00:16,610
+So you may not run or you must not run any asynchronous task in sets up such a mutation.
+
+5
+00:00:16,640 --> 00:00:23,780
+So if in a year you want to set a time out and do something for a couple of seconds or more realistically
+
+6
+00:00:23,960 --> 00:00:25,190
+reach out to a server.
+
+7
+00:00:25,220 --> 00:00:26,700
+This will not work.
+
+8
+00:00:26,760 --> 00:00:36,800
+A mutation always has to be synchronous our Y is the main benefit of it having easy to track adjustment
+
+9
+00:00:36,860 --> 00:00:43,610
+of your state so knowing when your state gets changed gets lost because if that happens asynchronously
+
+10
+00:00:43,880 --> 00:00:51,020
+you can't track which mutation was responsible for which change because the state might change and then
+
+11
+00:00:51,020 --> 00:00:56,360
+change again from a natural mutation which actually was started first but happened to be asynchronous
+
+12
+00:00:56,570 --> 00:01:01,530
+and just took longer than in-between mutation which was synchronous.
+
+13
+00:01:01,550 --> 00:01:08,600
+So your state gets change from different sources and you can tell if the order of changes Majesty order
+
+14
+00:01:08,600 --> 00:01:13,000
+of mutations because some mutations might take longer than avarice.
+
+15
+00:01:13,040 --> 00:01:14,660
+So that is a problem.
+
+16
+00:01:14,660 --> 00:01:21,690
+We want to have this reliability in that we know when we run a mutation does change just to state immediately
+
+17
+00:01:22,070 --> 00:01:27,320
+but on the other hand we also need the functionality to be able to run async tasks.
+
+18
+00:01:27,320 --> 00:01:32,480
+So how do we combine both asynchronous tasks with mutations.
+

@@ -1,0 +1,216 @@
+1
+00:00:02,070 --> 00:00:07,990
+The other thing I wanted to touch on our DS selectors here how should you name them.
+
+2
+00:00:08,040 --> 00:00:10,300
+Should you have a dash in there.
+
+3
+00:00:10,320 --> 00:00:14,820
+Could you use app headers so our case sensitive name.
+
+4
+00:00:14,850 --> 00:00:21,720
+The answer is yes you can use case sensitive selectors because since we're using a single file component
+
+5
+00:00:21,960 --> 00:00:28,400
+we don't have this Dom restriction restriction that the Dom is case insensitive.
+
+6
+00:00:28,410 --> 00:00:35,160
+If you were to use a number template like with this template property where you pass the string or by
+
+7
+00:00:35,160 --> 00:00:41,460
+inferring the template with L as learned early on the chords you would have these restrictions because
+
+8
+00:00:41,490 --> 00:00:47,880
+there we use the native Dom as our template and when doing so we have to respect the limitations of
+
+9
+00:00:47,880 --> 00:00:52,080
+the Dom and not knowing about cases is one such limitation.
+
+10
+00:00:52,320 --> 00:00:55,140
+Here we are using a single file template or component.
+
+11
+00:00:55,140 --> 00:01:01,510
+In this case and there it is getting compacted Shavar script but it runs in the browser anyways.
+
+12
+00:01:01,650 --> 00:01:10,320
+Hence we can use case sensitive selectors because javascript is case sensitive and our template here
+
+13
+00:01:10,320 --> 00:01:15,130
+will be stored as a string kind of and therefore this is not a problem.
+
+14
+00:01:15,390 --> 00:01:19,110
+So we could name this app header if we don't use a dash of course.
+
+15
+00:01:19,110 --> 00:01:24,650
+We could also remove the quotation marks and you will now see that if I changed this to app had header
+
+16
+00:01:24,660 --> 00:01:32,220
+up here too and I did save my server is still running and well we update as it still works we still
+
+17
+00:01:32,220 --> 00:01:34,070
+see the header.
+
+18
+00:01:34,080 --> 00:01:41,700
+The interesting thing is if I change this back to L-pad or with a dash and I still have had a capital
+
+19
+00:01:41,700 --> 00:01:45,510
+case down there you will see it still runs.
+
+20
+00:01:45,510 --> 00:01:49,350
+That is because Mujeres will automatically give us access to D.
+
+21
+00:01:49,500 --> 00:01:52,620
+Well hyphenated word of our select are here.
+
+22
+00:01:52,710 --> 00:01:58,560
+So by splitting it when we have such a capital case and giving us access to the same selector with a
+
+23
+00:01:58,560 --> 00:01:59,760
+dash in between.
+
+24
+00:01:59,820 --> 00:02:04,440
+But there is no reason to use that if you want to have your selectors like this.
+
+25
+00:02:04,440 --> 00:02:06,600
+That's perfectly fine though.
+
+26
+00:02:06,630 --> 00:02:14,310
+It's pretty common to use a set up where you have dashes instead because in the end that resembles the
+
+27
+00:02:14,310 --> 00:02:20,220
+normal AGM all tags where you also have dashes and which of course are not case sensitive because the
+
+28
+00:02:20,220 --> 00:02:21,210
+Dom isn't.
+
+29
+00:02:21,480 --> 00:02:24,710
+So here this is the classical set up you see.
+
+30
+00:02:24,780 --> 00:02:31,500
+But I want to make you aware that you can use the average set up and what you can always do is you can
+
+31
+00:02:31,500 --> 00:02:40,800
+simply rely on view Chia's giving you this hyphenated word not the selector like we saw before with
+
+32
+00:02:40,810 --> 00:02:48,310
+AB header in camel case down there but using a dash in between up here this is what view Chesed does
+
+33
+00:02:48,310 --> 00:02:49,720
+automatically for you.
+
+34
+00:02:49,720 --> 00:02:56,110
+And with that you are able to maybe use this more Javascript like style with camel case property names
+
+35
+00:02:56,200 --> 00:03:02,800
+in your javascript code while still using the DOM style of having a dash in between in your template
+
+36
+00:03:03,010 --> 00:03:05,040
+so there would be another option.
+
+37
+00:03:05,200 --> 00:03:14,170
+As a side note with ESX you also got the option to not have a property not not have a value here but
+
+38
+00:03:14,230 --> 00:03:16,580
+only specify service.
+
+39
+00:03:16,600 --> 00:03:23,610
+For example what this will do is pick your service variable or at the Optik we're importing up here
+
+40
+00:03:23,950 --> 00:03:29,250
+and it will be behind the scenes automatically create a key value pair where both is service.
+
+41
+00:03:29,290 --> 00:03:31,350
+So this is what is done behind the scenes.
+
+42
+00:03:31,360 --> 00:03:32,510
+That's not you chaps.
+
+43
+00:03:32,590 --> 00:03:39,310
+This is ESX which again we can use because it gets transported to IAS 5 indice workflow so we could
+
+44
+00:03:39,310 --> 00:03:40,740
+use this shortcut.
+
+45
+00:03:40,900 --> 00:03:46,250
+Then of course you would need to adjust our selector here and we can use service with a lower case s
+
+46
+00:03:46,270 --> 00:03:48,570
+to let us again do that.
+
+47
+00:03:48,580 --> 00:03:49,040
+Chessman.
+
+48
+00:03:49,060 --> 00:03:52,400
+Behind the scenes and you see it still works.
+
+49
+00:03:52,480 --> 00:03:58,900
+But now with this difference selector where we use the shortcut of using the name of the property.
+
+50
+00:03:58,930 --> 00:04:06,580
+This of course has the disadvantage that we don't have app Dasch something or app something but only
+
+51
+00:04:06,580 --> 00:04:12,590
+service which might not be a unique selector but I wanted to show you this option too.
+
+52
+00:04:12,600 --> 00:04:19,630
+Again the classic thing or the normal thing you do is you use these selectors like this with a dash
+
+53
+00:04:19,630 --> 00:04:26,650
+in between or like this and let you say S entered a dash and always use the dash word in other selector
+
+54
+00:04:26,710 --> 00:04:28,750
+in the template but you don't have to.
+

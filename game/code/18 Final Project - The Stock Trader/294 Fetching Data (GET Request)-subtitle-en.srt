@@ -1,0 +1,244 @@
+1
+00:00:01,890 --> 00:00:07,570
+Now when loading stocks I will of course trigger it here in the header but I don't want to execute all
+
+2
+00:00:07,580 --> 00:00:14,140
+the logic here because when loading starts we actually do change our state because we basically set
+
+3
+00:00:14,230 --> 00:00:18,210
+our old state to the new state we just fetch from the database.
+
+4
+00:00:18,550 --> 00:00:24,160
+So first of all I'll add a click listener here to load the data and I'll name and load data.
+
+5
+00:00:24,340 --> 00:00:31,690
+Of course I also need to have a method here load data maybe and in load data.
+
+6
+00:00:31,690 --> 00:00:37,220
+I now want to execute a load data action in my store.
+
+7
+00:00:37,360 --> 00:00:41,100
+Now that action doesn't exist yet.
+
+8
+00:00:41,140 --> 00:00:45,220
+Never in stocks here nor in portfolio.
+
+9
+00:00:45,310 --> 00:00:53,560
+So let's add one the thing why it doesn't exist yet is where the reason is that this really influenzas
+
+10
+00:00:53,560 --> 00:00:55,590
+both portfolio and stocks.
+
+11
+00:00:55,600 --> 00:00:58,660
+We changed the state in both pieces.
+
+12
+00:00:58,660 --> 00:01:03,220
+Therefore I will treat a new file in the store itself acts and actions.
+
+13
+00:01:03,220 --> 00:01:08,820
+J.S. here where I wanna trigger the respective committees I need.
+
+14
+00:01:09,010 --> 00:01:12,460
+I need an action because it will run asynchronously.
+
+15
+00:01:12,460 --> 00:01:19,120
+So in here I will export a constant and late name and load data.
+
+16
+00:01:19,120 --> 00:01:25,640
+For example this will be the name of the action and this shall be a function where of course I do get
+
+17
+00:01:25,640 --> 00:01:27,200
+my commit function.
+
+18
+00:01:27,200 --> 00:01:32,370
+I'm not getting any payload because I'm passing one and says Here I want to reach out to the server
+
+19
+00:01:33,290 --> 00:01:37,250
+so I will use view now to be able to use view of course.
+
+20
+00:01:37,250 --> 00:01:39,260
+All I need to imported.
+
+21
+00:01:39,570 --> 00:01:42,230
+Otherwise we don't have access to it in this file.
+
+22
+00:01:42,260 --> 00:01:43,430
+View HTP.
+
+23
+00:01:43,430 --> 00:01:44,680
+Now without a dollar sign.
+
+24
+00:01:44,690 --> 00:01:48,600
+Because we're accessing it directly on the view object itself.
+
+25
+00:01:49,670 --> 00:01:55,980
+Get and of course you also need to read to reach out to data don't Jason.
+
+26
+00:01:56,060 --> 00:01:58,340
+Now once we get it I want to execute.
+
+27
+00:01:58,400 --> 00:02:00,350
+Then because we do have a promise here.
+
+28
+00:02:00,350 --> 00:02:07,190
+Keep this in mind and there I simply want to extract the data and transform it into a charitable object
+
+29
+00:02:07,550 --> 00:02:10,210
+which also gives us back a promise so we need to call.
+
+30
+00:02:10,220 --> 00:02:15,780
+Then again this is what we learned in the new resource module in this course.
+
+31
+00:02:15,800 --> 00:02:19,560
+And then I got my extracted data here.
+
+32
+00:02:19,790 --> 00:02:22,930
+Or let's just name it data that short I guess.
+
+33
+00:02:23,450 --> 00:02:30,250
+And with that data I first want to check if we actually do have any data so if data.
+
+34
+00:02:30,260 --> 00:02:34,780
+Otherwise there's nothing we can do with it because if we click load and there is no data on the server
+
+35
+00:02:34,880 --> 00:02:38,870
+Well then I don't want to try to set my state to it.
+
+36
+00:02:38,870 --> 00:02:46,640
+So in this case I will get my stocks from data and then the stocks field because this if you have a
+
+37
+00:02:46,640 --> 00:02:48,650
+look at it is how it's set up in data.
+
+38
+00:02:48,650 --> 00:02:49,820
+We get those stocks.
+
+39
+00:02:49,820 --> 00:02:56,600
+Note We also got stock portfolio and funds so that will be what I also extract funds from Damodara funds
+
+40
+00:02:57,110 --> 00:03:07,600
+and also my stock portfolio from data stock portfolio like this post that I extracted all the data from
+
+41
+00:03:07,600 --> 00:03:12,400
+the body I got back with the request or with the response.
+
+42
+00:03:12,730 --> 00:03:20,130
+I want to create a new portfolio with this new object where I simply store stock portfolio and funds.
+
+43
+00:03:20,290 --> 00:03:28,480
+And this of course is the state I set up in the portfolio Chia's file with funds and my stocks so the
+
+44
+00:03:28,480 --> 00:03:38,510
+last step and then is to commit to mutations the first mutation is set stocks I do to have that here
+
+45
+00:03:38,600 --> 00:03:45,550
+where I simply well exchange my stocks and I will need the same for portfolio so year.
+
+46
+00:03:45,560 --> 00:03:50,750
+I also want to add said portfolio to be able to override that.
+
+47
+00:03:50,750 --> 00:03:54,420
+Whenever we do actually hit that load button.
+
+48
+00:03:54,740 --> 00:04:01,580
+So said portfolio also takes the state and this new portfolio I'll pass with the commit function and
+
+49
+00:04:01,580 --> 00:04:06,380
+then I want to set state funds equal to portfolio funds.
+
+50
+00:04:06,380 --> 00:04:17,690
+I don't want to set state stocks desir of stocks in my portfolio to portfolio stock portfolio or for
+
+51
+00:04:17,730 --> 00:04:19,670
+us to want to check if that exists.
+
+52
+00:04:19,760 --> 00:04:28,040
+If this is empty in this case I want to set it to an empty array Otherwise I'm checking if it exists.
+
+53
+00:04:28,040 --> 00:04:29,450
+If yes I will set it to it.
+
+54
+00:04:29,450 --> 00:04:30,720
+I'll revise to an empty array.
+
+55
+00:04:30,740 --> 00:04:32,120
+That is how I should say it.
+
+56
+00:04:32,450 --> 00:04:34,340
+So I get said portfolio No.
+
+57
+00:04:34,360 --> 00:04:39,850
+2 with that I can only commit set stocks and pass along my stocks.
+
+58
+00:04:39,980 --> 00:04:52,550
+But I can also execute set or commit said portfolio and pass along my portfolio like this.
+
+59
+00:04:52,550 --> 00:04:55,020
+So this is my load data action.
+
+60
+00:04:55,190 --> 00:04:58,380
+Now of course in the header we're not using it.
+
+61
+00:04:58,430 --> 00:05:01,350
+So let's have our it is all up and tested in the next video.
+

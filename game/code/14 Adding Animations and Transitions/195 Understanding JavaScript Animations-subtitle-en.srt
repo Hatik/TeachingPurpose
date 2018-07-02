@@ -1,0 +1,424 @@
+1
+00:00:01,930 --> 00:00:07,480
+So I will add a new horizontal line because we're now leaving DC s s world though of course we could
+
+2
+00:00:07,490 --> 00:00:07,920
+mix that.
+
+3
+00:00:07,930 --> 00:00:11,950
+I'm just emphasizing this because that is perfectly fine.
+
+4
+00:00:11,950 --> 00:00:17,760
+Maybe you want to play the animation freesias s and only listen to the end of it in the after enter
+
+5
+00:00:17,800 --> 00:00:18,060
+hook.
+
+6
+00:00:18,070 --> 00:00:21,740
+We just saw and execute some Charvis code once the animation finishes.
+
+7
+00:00:21,850 --> 00:00:27,100
+That's perfectly fine and not that uncommon but here I want to use all these hooks to really play the
+
+8
+00:00:27,100 --> 00:00:28,200
+whole animation.
+
+9
+00:00:28,480 --> 00:00:33,970
+So I get my horse on line here and I will add a new button with Button classes button and Button primary
+
+10
+00:00:33,970 --> 00:00:35,670
+to give it some nice styling.
+
+11
+00:00:35,740 --> 00:00:42,760
+And here I will load or remove the element just so that I don't trigger everything with this show thing
+
+12
+00:00:42,760 --> 00:00:44,000
+up there.
+
+13
+00:00:44,110 --> 00:00:52,360
+Now here I want to add a click listener and toggle a new property called load like before show and I
+
+14
+00:00:52,360 --> 00:00:55,580
+will simply add this new load property.
+
+15
+00:00:55,660 --> 00:01:01,060
+I will set show to false initially so that we don't see all the drives from before but that we can now
+
+16
+00:01:01,060 --> 00:01:06,190
+focus on this one here load which is the new one we will use for all the cellos Scripturally but things
+
+17
+00:01:06,190 --> 00:01:11,340
+here then I'll add two line breaks to just have some space here.
+
+18
+00:01:11,410 --> 00:01:16,900
+And then of course the transition component again which I just explained does have DS specific event
+
+19
+00:01:16,980 --> 00:01:17,940
+limits.
+
+20
+00:01:18,280 --> 00:01:24,610
+Now in their eyes still want to have a div but now lets set it up a bit differently lets give it our
+
+21
+00:01:24,610 --> 00:01:35,290
+own style here lets say with a width of 100 pixels and a height of 100 pixels and a background color
+
+22
+00:01:35,560 --> 00:01:37,740
+of light green.
+
+23
+00:01:38,000 --> 00:01:43,240
+And if we save this and go to the application we should see this and read right now this doesn't work
+
+24
+00:01:43,540 --> 00:01:50,480
+because now I will also need to attach we to it and point is to load to conditionally.
+
+25
+00:01:50,680 --> 00:01:54,170
+Well at Hach were detected after reloading here.
+
+26
+00:01:54,190 --> 00:01:56,320
+Now this works but now we want to animate it.
+
+27
+00:01:56,350 --> 00:01:57,860
+Frood Shala script.
+
+28
+00:01:57,990 --> 00:02:00,700
+So we get our day off year which you can attach and detach.
+
+29
+00:02:00,700 --> 00:02:07,460
+Nothing spectacular here we did that before but now when I use javascript to do that now for that lets
+
+30
+00:02:07,510 --> 00:02:09,910
+see which hooks get executed.
+
+31
+00:02:09,910 --> 00:02:11,440
+We saw it on a slide.
+
+32
+00:02:11,680 --> 00:02:18,370
+We got a couple of events we can listen to the first one is with at as we do listen to all the events
+
+33
+00:02:18,520 --> 00:02:25,960
+before enter that this is a custom event emitted by this transition component Boucek ships with in the
+
+34
+00:02:25,960 --> 00:02:29,970
+quotation marks we specify which function or method we want to execute.
+
+35
+00:02:30,100 --> 00:02:34,870
+And we will execute a before entry method which of course it will have yet to create.
+
+36
+00:02:35,140 --> 00:02:41,230
+Then we get the enter Meffert or the entry event being emitted here.
+
+37
+00:02:41,230 --> 00:02:47,390
+Then we also got the after entry event which is executed once the animation finishes.
+
+38
+00:02:47,390 --> 00:02:52,950
+After enter and we get Enter canceled.
+
+39
+00:02:53,110 --> 00:03:00,740
+Now I know I already said this but you can use all these hooks on the S S and you missions up here.
+
+40
+00:03:00,850 --> 00:03:08,620
+For example if you added to lets say the first one you're at d enter D after Enter event listener you
+
+41
+00:03:08,620 --> 00:03:12,350
+could execute some code once every whenever D.C.'s estimation finishes.
+
+42
+00:03:12,370 --> 00:03:16,660
+So that is perfectly valid and something you will probably also use from time to time because you want
+
+43
+00:03:16,660 --> 00:03:22,430
+to execute some Chalis code upon finishing some animation back to this year.
+
+44
+00:03:22,810 --> 00:03:27,850
+Now we get these enter hooks and we get the same for leaving.
+
+45
+00:03:27,880 --> 00:03:35,020
+So we get before four leaf year and I want to execute before I leave this method which of course all
+
+46
+00:03:35,020 --> 00:03:39,240
+to have to add that we get just delete the event being executed or emitted.
+
+47
+00:03:39,240 --> 00:03:44,470
+I should say that we get off to leave where I want to execute after I leave.
+
+48
+00:03:44,520 --> 00:03:51,550
+And finally we get leave canceled where I want to execute leave can select this.
+
+49
+00:03:51,750 --> 00:03:55,710
+So these are now all the event listeners being set up listening to all the events.
+
+50
+00:03:55,710 --> 00:04:00,450
+This transition component does emit from time to time during the animations.
+
+51
+00:04:00,780 --> 00:04:02,220
+And now lets add them.
+
+52
+00:04:02,220 --> 00:04:09,780
+So in my view instance I'll add my methods here and here I got four ENTRAR and then before ENTRAR we
+
+53
+00:04:09,870 --> 00:04:15,120
+actually do receive a certain argument.
+
+54
+00:04:15,120 --> 00:04:20,080
+The argument we get here is the element on which this animation is performed.
+
+55
+00:04:20,190 --> 00:04:22,260
+So we can use this element here.
+
+56
+00:04:22,350 --> 00:04:24,940
+I simply want to lock before enter here.
+
+57
+00:04:24,960 --> 00:04:30,220
+Sort of you can see that we reached this hook and then we get the enter method.
+
+58
+00:04:30,370 --> 00:04:33,320
+Now enter Meffert which is where the animation really plays.
+
+59
+00:04:33,360 --> 00:04:38,400
+Also gets the element we need this element of course to be able to really change it to work with it.
+
+60
+00:04:38,640 --> 00:04:45,270
+But this also gets another method the done where argument I should say the done argument here which
+
+61
+00:04:45,360 --> 00:04:48,570
+actually is a function we can execute like this.
+
+62
+00:04:48,570 --> 00:04:50,420
+Now why would we execute it.
+
+63
+00:04:50,550 --> 00:04:58,080
+Well first I will log entry here but now why would we execute done earlier than is needed to tell you
+
+64
+00:04:58,080 --> 00:04:58,590
+chess.
+
+65
+00:04:58,590 --> 00:05:06,570
+Once this animation finishes when using C S S animations Well it can determine this from the timing
+
+66
+00:05:06,580 --> 00:05:09,850
+we set up here on the transition already animation property.
+
+67
+00:05:10,170 --> 00:05:13,150
+But when using shallow script we have no such timing.
+
+68
+00:05:13,260 --> 00:05:19,110
+You could say well it should be finished whenever all the code and enter is executed but maybe you have
+
+69
+00:05:19,110 --> 00:05:23,910
+some asynchronous code there then this wouldn't work anymore because then it would be executed before
+
+70
+00:05:23,910 --> 00:05:25,660
+the asynchronous code finished.
+
+71
+00:05:25,860 --> 00:05:30,380
+So you need to call down to really tell you cheers when you are done.
+
+72
+00:05:30,480 --> 00:05:35,260
+You dont need to call done if you do use C-s as animations.
+
+73
+00:05:35,400 --> 00:05:40,770
+So if we were to use the Add entrail listener here hear an execute enter a year where we do have some
+
+74
+00:05:40,770 --> 00:05:46,680
+CSSA animations being used well and view task is still able to determine when this animation ends.
+
+75
+00:05:46,710 --> 00:05:52,380
+From your osiers esque code but if you don't have any C S S code set up as we do here.
+
+76
+00:05:52,590 --> 00:05:58,040
+Well then it's not able to do so therefore you need to tell it with the done function being executed.
+
+77
+00:05:59,450 --> 00:06:06,110
+Well once we are done we got the after entry method we execute up there and after ENTRAR also receives
+
+78
+00:06:06,110 --> 00:06:06,820
+the element.
+
+79
+00:06:06,950 --> 00:06:08,480
+All these hooks do that.
+
+80
+00:06:08,510 --> 00:06:16,820
+So hirable and so log off to enter to see that we reach that and then we get Enter cancelled of course.
+
+81
+00:06:16,820 --> 00:06:23,170
+Here we also get the element on which we cancel this animation and it will also execute and canceled
+
+82
+00:06:23,180 --> 00:06:23,820
+here.
+
+83
+00:06:24,140 --> 00:06:27,790
+Now these are all the asty element hooks.
+
+84
+00:06:27,800 --> 00:06:32,730
+Now let's add the hour once we get the four or leave of course all the with the element.
+
+85
+00:06:32,810 --> 00:06:41,550
+And here I want to cancel LOC before I leave like this thereafter we also got the leave hook.
+
+86
+00:06:41,600 --> 00:06:46,610
+And here again we get it done function because as with adding it we want to know what we're doing once
+
+87
+00:06:46,610 --> 00:06:49,570
+we're done leaving it or removing it I should say.
+
+88
+00:06:49,850 --> 00:06:52,720
+So here I will console log leave.
+
+89
+00:06:52,880 --> 00:06:56,690
+And then of course we get all also often leave being executed here.
+
+90
+00:06:56,690 --> 00:07:02,170
+I want to console mark after leave therefore.
+
+91
+00:07:02,930 --> 00:07:13,400
+And then I also get leave canceled where we also get the element and then we log leave cancelled like
+
+92
+00:07:13,400 --> 00:07:14,540
+this.
+
+93
+00:07:14,540 --> 00:07:17,040
+Now these are all the hooks which get executed.
+
+94
+00:07:17,240 --> 00:07:23,540
+And we should already be able to see all of that by simply saving this going to the application opening
+
+95
+00:07:23,540 --> 00:07:25,250
+up our console here.
+
+96
+00:07:25,250 --> 00:07:26,630
+Reloading this.
+
+97
+00:07:26,780 --> 00:07:28,250
+And now let's remove it.
+
+98
+00:07:28,340 --> 00:07:35,460
+We see before we leave and leave and we don't see after leave before I forget to call.
+
+99
+00:07:35,570 --> 00:07:39,340
+Done here in this leaf hook just was explaining it and then forgot it.
+
+100
+00:07:39,410 --> 00:07:42,140
+But the great thing is you now see that it is important.
+
+101
+00:07:42,230 --> 00:07:44,480
+So let's try this again.
+
+102
+00:07:45,450 --> 00:07:48,380
+Remove it now easy before leave leave and after leave.
+
+103
+00:07:48,400 --> 00:07:49,860
+And if I add it again.
+
+104
+00:07:49,910 --> 00:07:56,140
+The MCP before enter enter and after enter you can see the canceled hooks being called right now because
+
+105
+00:07:56,140 --> 00:07:59,280
+since all everything happens instantly I can't cancel it.
+
+106
+00:07:59,320 --> 00:08:01,060
+We'll come to business segment though.
+

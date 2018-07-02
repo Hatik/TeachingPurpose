@@ -1,0 +1,216 @@
+1
+00:00:01,340 --> 00:00:04,340
+So we want to face this alert in and out.
+
+2
+00:00:04,370 --> 00:00:05,450
+How does this work.
+
+3
+00:00:05,450 --> 00:00:06,520
+Let's start with faith.
+
+4
+00:00:06,530 --> 00:00:07,100
+Enter.
+
+5
+00:00:07,100 --> 00:00:12,600
+Remember this is D.C.'s S-Class which is only attached for one frame at the beginning.
+
+6
+00:00:12,620 --> 00:00:15,370
+So here we should set our initial stage.
+
+7
+00:00:15,380 --> 00:00:16,640
+We want to have.
+
+8
+00:00:17,000 --> 00:00:20,850
+Now since you want to fade it in it should initially be transparent.
+
+9
+00:00:20,940 --> 00:00:23,930
+Therefore here I will set the opacity to zero.
+
+10
+00:00:23,960 --> 00:00:24,710
+And that is all.
+
+11
+00:00:24,710 --> 00:00:28,930
+I'm not setting up any transition year or something like this because keep in mind disclosable will
+
+12
+00:00:28,950 --> 00:00:31,480
+immediately be removed after one frame.
+
+13
+00:00:31,580 --> 00:00:34,760
+So if I would set up a transition here that wouldn't work.
+
+14
+00:00:35,060 --> 00:00:39,510
+The place to set up the transition is your fate and act of class here.
+
+15
+00:00:39,530 --> 00:00:41,870
+I want to transition my opacity.
+
+16
+00:00:41,870 --> 00:00:47,330
+You could also transition all if you wanted but we only want to transition the opacities are just fine
+
+17
+00:00:47,750 --> 00:00:50,260
+and I want to transition over one second let's say.
+
+18
+00:00:50,360 --> 00:00:52,650
+Pick any time frame you want to pick.
+
+19
+00:00:53,000 --> 00:00:55,250
+Now this will animate it.
+
+20
+00:00:55,250 --> 00:00:58,700
+Now I'm not setting a pace that he won here and that is important.
+
+21
+00:00:58,860 --> 00:01:04,970
+Oh basically one is the default anyways because keep in mind opacity Zero Year will be removed after
+
+22
+00:01:04,970 --> 00:01:05,580
+one frame.
+
+23
+00:01:05,600 --> 00:01:09,660
+So we don't need to overwrite it it by default is fully opaque.
+
+24
+00:01:09,710 --> 00:01:13,390
+So we do have we don't have to specify one here.
+
+25
+00:01:13,640 --> 00:01:19,490
+And indeed if we were to set your pace to one here the thing that would happen is that we would instantly
+
+26
+00:01:19,580 --> 00:01:26,130
+overwrite our initial state of zero which yes was removed but it was there when we added this transitional
+
+27
+00:01:26,130 --> 00:01:30,790
+opacity thing year because that gets added right before this gets removed.
+
+28
+00:01:30,890 --> 00:01:34,960
+So we would remove this or override this immediately to 1.
+
+29
+00:01:35,000 --> 00:01:38,850
+Therefore we wouldn't see any fading because the opacity would always be one.
+
+30
+00:01:38,990 --> 00:01:42,970
+So it's important to not set it here only set up the transition here.
+
+31
+00:01:43,610 --> 00:01:49,480
+Well and for leaving here we could set opacity to one though that is the default already.
+
+32
+00:01:49,490 --> 00:01:50,770
+So I'm going to comment it out.
+
+33
+00:01:50,770 --> 00:01:57,130
+We don't need to set it for Faid leave active though we again should set up the transition.
+
+34
+00:01:57,170 --> 00:02:02,500
+And now here it is important that we also set up the pace at your 0.
+
+35
+00:02:02,600 --> 00:02:05,020
+Remember the default already is 1.
+
+36
+00:02:05,150 --> 00:02:11,220
+So by setting up both the transition and the opacity of zero we tell at least any made whenever the
+
+37
+00:02:11,280 --> 00:02:12,460
+opacity changes.
+
+38
+00:02:12,500 --> 00:02:15,430
+Oh and look here it changes G-0.
+
+39
+00:02:15,580 --> 00:02:18,180
+This is how we can control this.
+
+40
+00:02:18,350 --> 00:02:21,600
+And now with that set up and the name being added here.
+
+41
+00:02:21,870 --> 00:02:28,040
+Hence making sure as fate enter and so on get attached by the U.K.'s future as is now able to sniff
+
+42
+00:02:28,040 --> 00:02:32,600
+DCs as classis finds out that the transition length is one second.
+
+43
+00:02:32,600 --> 00:02:38,600
+We don't have any mation so it uses transition with animation of course I'm referring to Theseus as
+
+44
+00:02:38,630 --> 00:02:43,870
+an animation property which would be an alternative to transitioning here and it does the same for the
+
+45
+00:02:43,870 --> 00:02:47,660
+Leaving hand knows how to how long it should attached.
+
+46
+00:02:47,740 --> 00:02:50,390
+As classes well and with dad.
+
+47
+00:02:50,420 --> 00:02:51,180
+Let's see.
+
+48
+00:02:51,290 --> 00:02:53,030
+Let's have a look at the running application.
+
+49
+00:02:53,030 --> 00:03:00,410
+Make sure your development server is running and you need to this and now you see it fades in and it
+
+50
+00:03:00,410 --> 00:03:01,400
+fades out.
+
+51
+00:03:01,670 --> 00:03:06,430
+And now we already set up our first animation for a single element.
+
+52
+00:03:06,470 --> 00:03:07,850
+But how cool is that.
+
+53
+00:03:07,910 --> 00:03:13,970
+Now in a next venue Let's have a look at how this would work if we wouldn't use the transmission property
+
+54
+00:03:13,970 --> 00:03:19,580
+here but instead see it as animations which is the alternative to transitioning single properties.
+

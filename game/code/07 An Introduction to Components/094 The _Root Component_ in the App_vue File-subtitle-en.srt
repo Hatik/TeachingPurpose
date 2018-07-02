@@ -1,0 +1,188 @@
+1
+00:00:02,080 --> 00:00:08,140
+I'm back in the project we create a before it's actually in the same state as before I replaced by template
+
+2
+00:00:08,140 --> 00:00:12,260
+to only display Hello World and export an empty object.
+
+3
+00:00:12,260 --> 00:00:18,820
+Remember this will get compiled to a shallow script template Plus the new chess code where we don't
+
+4
+00:00:18,820 --> 00:00:24,220
+have any years since the object is empty but there could be some code and then were rendering this year
+
+5
+00:00:24,310 --> 00:00:31,180
+with the render method which basically is a beauteous method allowing us to override the template we
+
+6
+00:00:31,180 --> 00:00:35,870
+select here with the selector and then place our compiled template there.
+
+7
+00:00:35,920 --> 00:00:43,300
+So just an alternative to template to mention to say again but a better alternative because here we
+
+8
+00:00:43,300 --> 00:00:45,610
+render decompiled Javascript code.
+
+9
+00:00:45,710 --> 00:00:53,050
+Therefore we don't face the limitations template has like it having to be a string and Aberlour limitations
+
+10
+00:00:53,530 --> 00:00:55,420
+given by the DOM for example.
+
+11
+00:00:55,420 --> 00:01:01,720
+So this is the best way to write your templates as you get the maximum flexibility and I'll come back
+
+12
+00:01:01,720 --> 00:01:06,040
+to one specific piece of flexibility in the next videos.
+
+13
+00:01:06,040 --> 00:01:08,770
+Note that right now I'm not using a component.
+
+14
+00:01:08,830 --> 00:01:11,940
+This is a normal object and I'm rendering it here.
+
+15
+00:01:12,070 --> 00:01:14,220
+So I'm not doing anything here.
+
+16
+00:01:14,230 --> 00:01:16,480
+I'm not having a component here.
+
+17
+00:01:16,930 --> 00:01:22,630
+I know you can remove this export object and it still works because I still have to object to your DD
+
+18
+00:01:22,630 --> 00:01:23,120
+template.
+
+19
+00:01:23,130 --> 00:01:29,210
+I mean but I want to reintroduce the export object now in this object.
+
+20
+00:01:29,260 --> 00:01:32,730
+I want to set up my data and this shall be a function.
+
+21
+00:01:32,740 --> 00:01:35,210
+Let me show you what happens if it is not a function.
+
+22
+00:01:35,350 --> 00:01:39,830
+By the way this is not a component but it's a separate object which we're exporting here.
+
+23
+00:01:39,850 --> 00:01:40,170
+Right.
+
+24
+00:01:40,180 --> 00:01:41,650
+It's a separate object.
+
+25
+00:01:41,650 --> 00:01:43,390
+And we're rendering this object here.
+
+26
+00:01:43,390 --> 00:01:48,610
+So it has the same limitations as a component has because we kind of use it as a component even though
+
+27
+00:01:48,610 --> 00:01:51,620
+we don't have selector for that component.
+
+28
+00:01:51,730 --> 00:01:56,770
+But we're using it to reply as place our normal template here in an overview instance.
+
+29
+00:01:56,770 --> 00:02:05,560
+So if I set up data like this as a normal object and a set status to critical and then I print server
+
+30
+00:02:05,830 --> 00:02:06,690
+status
+
+31
+00:02:09,330 --> 00:02:13,040
+status here like that for now safeties.
+
+32
+00:02:13,170 --> 00:02:19,050
+You see we don't see it here but if I open up the console you see that data option should be a function.
+
+33
+00:02:19,380 --> 00:02:21,870
+So that doesn't really work.
+
+34
+00:02:21,870 --> 00:02:26,110
+Instead we shall set it up as a function as we learned.
+
+35
+00:02:26,270 --> 00:02:33,360
+And that in year return an object inclosing our status if I do this you now see the service status critical
+
+36
+00:02:33,360 --> 00:02:33,910
+here.
+
+37
+00:02:34,140 --> 00:02:36,510
+So that's generally how we work with that.
+
+38
+00:02:36,510 --> 00:02:42,410
+So far that's not totally new we learn about is single file components before.
+
+39
+00:02:42,510 --> 00:02:47,270
+Now let's also use them to create components now.
+
+40
+00:02:47,280 --> 00:02:51,650
+So I'm already exporting an object here and that is fine.
+
+41
+00:02:51,650 --> 00:02:58,590
+Does kind of now my route view instance which gets rendered here it's like a component which I don't
+
+42
+00:02:58,590 --> 00:03:06,710
+place with a selector but instead simply like a replacement for the instance object in here because
+
+43
+00:03:06,770 --> 00:03:09,660
+you're I use the render function to replace everything.
+
+44
+00:03:09,660 --> 00:03:17,040
+So I kind of need an alternative different place Verres set up my rude instance data efforts and so
+
+45
+00:03:17,040 --> 00:03:17,370
+on.
+
+46
+00:03:17,430 --> 00:03:18,660
+And this is in the App Store.
+
+47
+00:03:18,710 --> 00:03:19,600
+You fall.
+

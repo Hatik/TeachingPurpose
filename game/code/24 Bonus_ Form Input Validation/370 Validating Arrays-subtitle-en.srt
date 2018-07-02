@@ -1,0 +1,404 @@
+1
+00:00:02,130 --> 00:00:05,010
+So we learn a lot about built in validators.
+
+2
+00:00:05,010 --> 00:00:10,690
+Let's now work on da array here where we validate hobbies.
+
+3
+00:00:10,890 --> 00:00:13,560
+Learn how we can validate a race.
+
+4
+00:00:13,560 --> 00:00:15,300
+It's actually straightforward.
+
+5
+00:00:15,600 --> 00:00:20,190
+First of all in this validations property all add a new key.
+
+6
+00:00:20,280 --> 00:00:21,990
+And as always I'll pick the key name.
+
+7
+00:00:21,990 --> 00:00:30,240
+I also point to with we model I'd say but we don't actually do that here we manage desir in this key
+
+8
+00:00:30,240 --> 00:00:31,160
+here however.
+
+9
+00:00:31,170 --> 00:00:34,750
+So I'll use haave inputs as a key here invalidations too.
+
+10
+00:00:34,800 --> 00:00:37,940
+So that really Dave can match the two.
+
+11
+00:00:38,460 --> 00:00:47,120
+And then I will said Hobby poncey are equal to a javascript object and I can define some validators
+
+12
+00:00:47,130 --> 00:00:49,430
+which are applied to the whole array.
+
+13
+00:00:49,530 --> 00:00:55,080
+This mostly makes sense for a minimum length for maximum length to define how many elements desir must
+
+14
+00:00:55,080 --> 00:01:02,460
+have or should have at a maximum all add a min Lang validator used to mingle and function we already
+
+15
+00:01:02,460 --> 00:01:06,120
+import and say I want to have at least one element.
+
+16
+00:01:06,360 --> 00:01:11,360
+Now more interesting is a special property we can now add dollar sign each.
+
+17
+00:01:11,640 --> 00:01:17,370
+As you've probably already noticed dollar assigned properties are always properties provided by View
+
+18
+00:01:17,400 --> 00:01:19,900
+or some package dollar sign.
+
+19
+00:01:19,920 --> 00:01:25,950
+Each is kind of a placeholder for all these dynamic elements we can add to the array because when we
+
+20
+00:01:25,950 --> 00:01:31,140
+create this validation logic we of course don't know for sure how many elements to use We're just going
+
+21
+00:01:31,140 --> 00:01:32,510
+to have.
+
+22
+00:01:32,580 --> 00:01:39,900
+So don't assign each debt all the hold a javascript object and then there we can now reference the data
+
+23
+00:01:39,900 --> 00:01:42,000
+in all our inputs.
+
+24
+00:01:42,120 --> 00:01:49,780
+So in hobby input here I'm actually storing new elements in on at hobby in this method and it does have
+
+25
+00:01:49,780 --> 00:01:56,040
+value property which will be bound to y of the model in my array up here.
+
+26
+00:01:56,070 --> 00:02:03,290
+You see I'm binding with we model to the value on how we input which I get out of this V for loop.
+
+27
+00:02:03,840 --> 00:02:05,490
+So it's this value property.
+
+28
+00:02:05,520 --> 00:02:08,120
+And also what a bind to value.
+
+29
+00:02:08,310 --> 00:02:14,790
+And this again holds a javascript object which now just defines validation rules as we did it on any
+
+30
+00:02:14,790 --> 00:02:15,650
+average value.
+
+31
+00:02:15,660 --> 00:02:19,220
+So as we did it on email or age and so on.
+
+32
+00:02:19,440 --> 00:02:24,810
+And now here we can say this should be required and maybe we also want to have a minimum length here.
+
+33
+00:02:24,810 --> 00:02:29,790
+Now here we are referring to the minimum amount of characters that say what we should have at least
+
+34
+00:02:29,790 --> 00:02:31,620
+have 5 characters.
+
+35
+00:02:31,740 --> 00:02:34,000
+That's the set up the javascript code.
+
+36
+00:02:34,020 --> 00:02:36,020
+Now we need to connect it.
+
+37
+00:02:36,240 --> 00:02:43,960
+So any array in the template I have first of all want to hook up my input with ADD blur and they are
+
+38
+00:02:43,960 --> 00:02:45,310
+all reach out to Dolorosa.
+
+39
+00:02:45,350 --> 00:02:48,210
+We don't you Harbi inputs.
+
+40
+00:02:48,270 --> 00:02:50,730
+That's the identifier we created.
+
+41
+00:02:50,760 --> 00:02:53,000
+There two dollar side each.
+
+42
+00:02:53,250 --> 00:03:00,480
+And now on each all pass the index of the element we're currently at and they get the index from before
+
+43
+00:03:00,720 --> 00:03:03,720
+I'm extracting it here as a second argument.
+
+44
+00:03:03,720 --> 00:03:11,420
+So this is the element I now want to touch So there to be precise I want to touch the value element
+
+45
+00:03:11,760 --> 00:03:15,900
+because you radically in disarray we could of course have multiple inputs.
+
+46
+00:03:15,900 --> 00:03:23,210
+That is why we still inside each have the option to add multiple keys like we did with value.
+
+47
+00:03:23,490 --> 00:03:27,440
+So value is d well value or a validator.
+
+48
+00:03:27,450 --> 00:03:35,070
+I now want to touch with Dollar Sign touch so that this gets validated to see whether we have an error
+
+49
+00:03:35,070 --> 00:03:36,090
+or not.
+
+50
+00:03:36,150 --> 00:03:39,800
+I'll add something to the def which wraps my label in input.
+
+51
+00:03:39,840 --> 00:03:48,270
+I'll add this good old class binding where I said the invalid class if dollar signs the hobby inputs
+
+52
+00:03:49,350 --> 00:03:54,660
+dollar sign each then the index if that has an error.
+
+53
+00:03:55,020 --> 00:04:03,180
+And there I could of course also reach out to value or I check if any element in does array element
+
+54
+00:04:03,270 --> 00:04:04,100
+has an error.
+
+55
+00:04:04,110 --> 00:04:05,750
+Here we only have one input.
+
+56
+00:04:05,760 --> 00:04:09,020
+But again we could have many or multiple such inputs.
+
+57
+00:04:09,570 --> 00:04:16,260
+Now we also added validation for the array as a whole the array as a whole of course is not synchronized
+
+58
+00:04:16,260 --> 00:04:17,620
+with the model.
+
+59
+00:04:17,760 --> 00:04:25,170
+But what I can do is I can of course output some helper text below my list of hobbies maybe I could
+
+60
+00:04:25,170 --> 00:04:25,870
+output.
+
+61
+00:04:26,010 --> 00:04:33,520
+You have to specify at least and now a dynamic amount hobby's.
+
+62
+00:04:33,780 --> 00:04:44,850
+This should only be shown with with if Dolor signed V Harbi inputs referring to our hobby it puts key
+
+63
+00:04:44,850 --> 00:04:51,910
+here under the nation's if that's has an invalid.
+
+64
+00:04:51,970 --> 00:04:54,440
+So all falls Minn. property.
+
+65
+00:04:54,520 --> 00:04:59,370
+So we check for whether this is not true then we want to show the error message.
+
+66
+00:04:59,470 --> 00:05:01,930
+And of course you want to output the amount of hobbies.
+
+67
+00:05:02,080 --> 00:05:02,500
+So here.
+
+68
+00:05:02,530 --> 00:05:12,620
+Alexis Dolorosa be all the inputs then are assigned parents and their men LAN and they're the admin
+
+69
+00:05:12,680 --> 00:05:13,910
+property.
+
+70
+00:05:13,930 --> 00:05:15,540
+Let's see this in action.
+
+71
+00:05:15,620 --> 00:05:21,220
+Let's save this and go back to our application and here we don't see this error message.
+
+72
+00:05:21,220 --> 00:05:23,380
+So we'll have to check what's wrong there.
+
+73
+00:05:23,540 --> 00:05:27,750
+If I add a hobby though validation for dad is working.
+
+74
+00:05:27,770 --> 00:05:30,850
+It only becomes valid if I have at least five characters.
+
+75
+00:05:31,130 --> 00:05:36,140
+But what's wrong with the overall validation where we want to output the minimum amount of characters
+
+76
+00:05:36,140 --> 00:05:37,100
+on hobby inputs.
+
+77
+00:05:37,100 --> 00:05:38,510
+Why is this not working.
+
+78
+00:05:40,290 --> 00:05:47,990
+Noter reason why we don't see this error message actually is that mid-length length one is never invalid
+
+79
+00:05:48,000 --> 00:05:51,070
+if we add a hobby we fulfill the criteria.
+
+80
+00:05:51,180 --> 00:05:54,670
+If you move it we're back to the untouched state.
+
+81
+00:05:54,750 --> 00:05:56,540
+So instead I'll set this to 2.
+
+82
+00:05:56,610 --> 00:06:02,220
+And now if we go back and add a hobby you'll see that we all get this message should we need to hobbies.
+
+83
+00:06:02,310 --> 00:06:05,780
+And only if I add a second one this disappears for remove it.
+
+84
+00:06:05,820 --> 00:06:07,810
+We're back to the message.
+
+85
+00:06:07,900 --> 00:06:12,720
+And of course validation on the individual hobby also still works.
+
+86
+00:06:12,720 --> 00:06:15,150
+So this is all working.
+
+87
+00:06:15,450 --> 00:06:21,320
+And of course I can also go down and add required here on hobby inputs.
+
+88
+00:06:21,360 --> 00:06:29,310
+So on the overall array to make sure we also are not allowed to have zero hobby's in this case we would
+
+89
+00:06:29,310 --> 00:06:35,280
+not see the error message but still have this overall Alimentarius overall control.
+
+90
+00:06:35,280 --> 00:06:36,620
+Treat it as invalid.
+
+91
+00:06:36,630 --> 00:06:39,530
+As long as no value was entered.
+
+92
+00:06:39,630 --> 00:06:46,410
+So now with that we got a great array under control of Vueling date which we can always validate to
+
+93
+00:06:46,410 --> 00:06:48,810
+see whether we entered something good.
+
+94
+00:06:48,810 --> 00:06:55,950
+Now let's complete it by adding a number error message where we say please add hobbies and then I want
+
+95
+00:06:55,960 --> 00:07:05,010
+to put this if we have entered non hobby at all so enter or access dollars send v. hobby inputs required
+
+96
+00:07:05,010 --> 00:07:06,300
+if this is not true.
+
+97
+00:07:06,480 --> 00:07:09,370
+Then I want to see this message if I add one this disappears.
+
+98
+00:07:09,390 --> 00:07:11,120
+But we need to add to that.
+
+99
+00:07:11,190 --> 00:07:13,110
+Again this is not all gone.
+
+100
+00:07:13,110 --> 00:07:16,730
+So now we got a great array validation in place here.
+
+101
+00:07:16,860 --> 00:07:17,540
+Let's move on.
+

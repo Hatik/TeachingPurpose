@@ -1,0 +1,204 @@
+1
+00:00:01,850 --> 00:00:06,350
+Time we're number exercise this time about styles and classes.
+
+2
+00:00:06,480 --> 00:00:08,970
+We learn about them in the last lectures.
+
+3
+00:00:08,970 --> 00:00:15,070
+Now it's time to really work on them yourselves so that you get comfortable using them.
+
+4
+00:00:15,250 --> 00:00:16,840
+Here's the setup I'm using.
+
+5
+00:00:17,040 --> 00:00:19,830
+I prepared some styles on the right here.
+
+6
+00:00:19,830 --> 00:00:25,230
+Disaffected Dave which is this death year which basically is a day of we're a block with a black border
+
+7
+00:00:25,530 --> 00:00:27,700
+and then a highlight in a shooting class.
+
+8
+00:00:27,800 --> 00:00:33,540
+We all need these classes for the very first exercise where I want to start to affect by clicking the
+
+9
+00:00:33,540 --> 00:00:36,900
+start button and what should the effect be.
+
+10
+00:00:36,900 --> 00:00:44,410
+I want to alternate between highlight and shrink classes on this death and we can alternate by using
+
+11
+00:00:44,410 --> 00:00:45,780
+the set entrail function.
+
+12
+00:00:45,780 --> 00:00:52,020
+It works kind of as I said timeout but whereas said timeout finishes after three seconds set it will
+
+13
+00:00:52,020 --> 00:00:55,940
+fire as every two seconds one second whatever we set up.
+
+14
+00:00:55,950 --> 00:01:02,070
+So this allows us to then kind of come up with the idea how we could switch these classes and there
+
+15
+00:01:02,070 --> 00:01:03,940
+might also be more than one way to do that.
+
+16
+00:01:03,940 --> 00:01:05,820
+To be honest.
+
+17
+00:01:05,820 --> 00:01:08,640
+So this is the first exercise we'll do.
+
+18
+00:01:08,670 --> 00:01:15,870
+DS second the exercise then once you do you create a couple of CNS classes on your own so be creative
+
+19
+00:01:15,900 --> 00:01:20,400
+create whatever you want and attach them to this day if you're dead.
+
+20
+00:01:20,550 --> 00:01:23,180
+Why are the Arison text that's important.
+
+21
+00:01:23,220 --> 00:01:27,730
+So uses some decks you learn about to attach Roscius as classes here.
+
+22
+00:01:28,140 --> 00:01:35,550
+Also feel free to mix the different styles of using a property which refers to a class name and maybe
+
+23
+00:01:35,550 --> 00:01:41,190
+a property which refers to an object where we have the key as a class name and the value which is true
+
+24
+00:01:41,190 --> 00:01:45,580
+or false which Well decides whether this diskless should be attached.
+
+25
+00:01:46,640 --> 00:01:50,200
+The word exercise lets the user enter a class.
+
+26
+00:01:50,200 --> 00:01:53,690
+So you should all create them still's that they that they are available.
+
+27
+00:01:53,750 --> 00:02:00,740
+But then we want to use this input to well attach this class so come up with an idea of how you might
+
+28
+00:02:00,740 --> 00:02:07,760
+do that to listen to the user input and then attach the respective class to the staff and the fourth
+
+29
+00:02:07,760 --> 00:02:11,390
+example we will still let the user enter a class.
+
+30
+00:02:11,420 --> 00:02:13,670
+And I also want to let the user enter.
+
+31
+00:02:13,670 --> 00:02:16,800
+True or false for another class.
+
+32
+00:02:16,820 --> 00:02:23,930
+So did we maybe you is airy syntax word first element might be declasse to user entrance.
+
+33
+00:02:24,080 --> 00:02:27,770
+And the second one might be a class set up by you.
+
+34
+00:02:27,770 --> 00:02:31,160
+Where do users then only able to switch between true or false.
+
+35
+00:02:31,180 --> 00:02:35,930
+So that is the next exercise here.
+
+36
+00:02:35,990 --> 00:02:44,060
+Number five I want to repeat the exercise from number three but now with the values for styles and set
+
+37
+00:02:44,060 --> 00:02:44,980
+of class names.
+
+38
+00:02:45,020 --> 00:02:50,810
+So the user is still able to enter something here but the something is no longer a class name of a class
+
+39
+00:02:50,810 --> 00:02:51,660
+you created.
+
+40
+00:02:51,860 --> 00:02:58,670
+But the value of a style you predefined For example you could just add background color to this div
+
+41
+00:02:58,970 --> 00:03:02,240
+and let the user set the background color style.
+
+42
+00:03:02,240 --> 00:03:08,200
+Also feel free with playing around with different ways of adding this style to this.
+
+43
+00:03:08,990 --> 00:03:11,380
+And on exercise number 6.
+
+44
+00:03:11,420 --> 00:03:17,510
+I want to create a simple progress bar with set interwove which firers Let's say every half a second
+
+45
+00:03:17,900 --> 00:03:22,440
+and then the style bindings to increase the width of our progress bar.
+
+46
+00:03:22,520 --> 00:03:25,230
+We don't have to make that too complicated.
+
+47
+00:03:25,310 --> 00:03:29,600
+But yeah let's let's try to implement a basic bar here.
+
+48
+00:03:30,020 --> 00:03:33,500
+These are the exercises in the next what you're going through.
+
+49
+00:03:33,500 --> 00:03:40,040
+Possible solutions so that you can compare your solutions to mine and see if you got stuck anywhere
+
+50
+00:03:40,130 --> 00:03:45,550
+or if you get up with another idea which obviously can work just fine too.
+
+51
+00:03:45,560 --> 00:03:46,560
+So there.
+

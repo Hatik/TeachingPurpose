@@ -1,0 +1,124 @@
+1
+00:00:01,730 --> 00:00:08,860
+An author adding our own value here between the quotation marks and our own argument after the colon
+
+2
+00:00:09,340 --> 00:00:11,740
+I also want to add a modifier.
+
+3
+00:00:11,740 --> 00:00:13,160
+Now how do you do that.
+
+4
+00:00:14,020 --> 00:00:17,030
+Let's first think about what this modifier could do here.
+
+5
+00:00:17,380 --> 00:00:21,320
+Let's say you want to change the style delayed.
+
+6
+00:00:21,400 --> 00:00:25,450
+So we want to wait let's say three seconds before changing the style.
+
+7
+00:00:25,450 --> 00:00:28,940
+We only want to do that though if I add the delayed modifier.
+
+8
+00:00:28,960 --> 00:00:31,500
+So Dot delayed of course that doesn't exist yet.
+
+9
+00:00:31,510 --> 00:00:34,950
+But now we can create such a modifier to handle this case.
+
+10
+00:00:35,200 --> 00:00:41,500
+So in the main js file I therefore want to check if we get these modifiers set up.
+
+11
+00:00:41,560 --> 00:00:46,660
+I will therefore set a variable of delay which is zero by default.
+
+12
+00:00:46,690 --> 00:00:53,100
+So to have no delay and then I want to check if our binding has modifiers.
+
+13
+00:00:53,220 --> 00:00:56,550
+No modifiers is an array and there I want to check.
+
+14
+00:00:56,560 --> 00:00:57,570
+Or an object.
+
+15
+00:00:57,580 --> 00:01:02,550
+I should say excuse me and then I want to check if we have the delayed key here.
+
+16
+00:01:02,640 --> 00:01:07,700
+So I'm checking if Diski key exists and the modifiers array if that is something we do have.
+
+17
+00:01:07,990 --> 00:01:14,950
+And if we do have delayed edit then I want to set a delay to 0 0 0 two or three seconds.
+
+18
+00:01:15,070 --> 00:01:22,060
+That allows me to now add a set timeout function where I will wait for the delay duration which is 0
+
+19
+00:01:22,060 --> 00:01:25,550
+initially but can be 3000 if we add them all that fire.
+
+20
+00:01:25,960 --> 00:01:32,800
+And in the callback function here well there I simply want to execute this code I had outside of the
+
+21
+00:01:32,800 --> 00:01:35,390
+callback or outside of the time one function before.
+
+22
+00:01:35,740 --> 00:01:41,200
+Now with that we see if I reload this it takes a couple of seconds before the styling is applied.
+
+23
+00:01:41,200 --> 00:01:44,200
+Because we do have to delight modifier added.
+
+24
+00:01:44,230 --> 00:01:51,080
+Now of course if I remove the delayed modifier here and safe to say again you're now see it is simply
+
+25
+00:01:51,080 --> 00:01:59,050
+a threat because now again we don't have a delay only if I add delayed here do we get this an important
+
+26
+00:01:59,760 --> 00:02:00,730
+modifier.
+
+27
+00:02:00,730 --> 00:02:05,980
+Here is an object because of course you can add multiple modifiers by changing multiple model for us
+
+28
+00:02:05,980 --> 00:02:06,650
+like this.
+
+29
+00:02:06,700 --> 00:02:09,430
+So a number modifier by DOT and number.
+
+30
+00:02:09,700 --> 00:02:16,000
+But here we only have one and I can use it by simply accessing it here as a property which will only
+
+31
+00:02:16,000 --> 00:02:22,320
+give me true if it is set and that is why I can use my own modifier here on my own directive.
+

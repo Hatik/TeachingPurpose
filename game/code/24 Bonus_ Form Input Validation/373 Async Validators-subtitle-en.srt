@@ -1,0 +1,436 @@
+1
+00:00:02,250 --> 00:00:08,160
+So he got a custom validator but how can we now turn this into an asynchronous one.
+
+2
+00:00:08,220 --> 00:00:10,370
+Actually this is really simple.
+
+3
+00:00:10,770 --> 00:00:16,800
+We just have to return a promise and deal with data then able to automatically handle this.
+
+4
+00:00:16,800 --> 00:00:23,000
+Now first of all I'll check if Velle is equal to an empty string in which case I'll immediately return
+
+5
+00:00:23,010 --> 00:00:31,500
+True and true and not false because it does validate or does not care about whether it's empty or not
+
+6
+00:00:31,500 --> 00:00:36,560
+it doesn't treat MTSO bad debts not its job and that's important.
+
+7
+00:00:36,600 --> 00:00:42,330
+So this returns true if it's empty because then we don't care if it's unique or not.
+
+8
+00:00:42,400 --> 00:00:47,170
+Ivor validators like required have to take care about whether it's empty or not.
+
+9
+00:00:47,460 --> 00:00:52,500
+I just want to make sure I don't run my async code which potentially hits my server.
+
+10
+00:00:52,500 --> 00:01:00,660
+If we got no value anyways so we got a value we can simply return a promise so we can simply return
+
+11
+00:01:00,660 --> 00:01:02,360
+a new promise here.
+
+12
+00:01:02,730 --> 00:01:11,900
+And as you know a promise gets a function which gets to arguments resolve and reject and inside this
+
+13
+00:01:11,890 --> 00:01:14,780
+function which we passed to the promise constructor.
+
+14
+00:01:14,870 --> 00:01:22,520
+We can then call resolve to simulate that we got a value and here we simply have to resolve to either
+
+15
+00:01:22,550 --> 00:01:24,050
+true or false.
+
+16
+00:01:24,050 --> 00:01:27,670
+So what we previously all the return synchronously.
+
+17
+00:01:27,680 --> 00:01:34,640
+So here I can resolve if value is equal to test at test dot com to make this more interesting.
+
+18
+00:01:34,700 --> 00:01:44,200
+I'll add set timeout here wait for one second and after this second I'll execute dysfunction inside
+
+19
+00:01:44,210 --> 00:01:46,440
+said time mode where I'd then called resolve.
+
+20
+00:01:46,550 --> 00:01:49,290
+So now this already is asynchronous.
+
+21
+00:01:49,490 --> 00:01:56,630
+We now go back to the application and or test 2 and adjust my validator to check if it's not equal to
+
+22
+00:01:56,630 --> 00:01:58,310
+test the tests that come.
+
+23
+00:01:58,310 --> 00:02:02,840
+So now test tube should pass for now enter test tube again.
+
+24
+00:02:02,960 --> 00:02:04,270
+Nothing changes.
+
+25
+00:02:04,430 --> 00:02:11,570
+If I switch to test though after one second it does becomes invalid because now we found out hey it's
+
+26
+00:02:11,570 --> 00:02:14,700
+invalid because said it is done.
+
+27
+00:02:14,750 --> 00:02:19,930
+That's nice but we actually got it back in on firebase where we store email addresses.
+
+28
+00:02:20,270 --> 00:02:26,840
+So let's use that back and back and firebase and there I need to adjust something in the database to
+
+29
+00:02:26,840 --> 00:02:33,020
+be able to carry the data I want to carry I in the end want to find out whether one of my users here
+
+30
+00:02:33,110 --> 00:02:34,280
+has the e-mail address.
+
+31
+00:02:34,280 --> 00:02:41,750
+We already registered for this and this is firebase specific all needs to create a so-called index in
+
+32
+00:02:41,750 --> 00:02:49,320
+my rules set here for dead I'll go into rules and I'll add a key for users referring to my users.
+
+33
+00:02:49,320 --> 00:02:53,360
+Note and then all this is a javascript object then.
+
+34
+00:02:53,510 --> 00:03:00,240
+And then there are at the special dot index on key and again this is just exclusive to firebase it tells
+
+35
+00:03:00,240 --> 00:03:05,170
+firebase hey there is a key in my users which I want to be able to query.
+
+36
+00:03:05,490 --> 00:03:11,600
+So here is key then simply is an array actually a can to find multiple keys here.
+
+37
+00:03:11,640 --> 00:03:13,580
+Or simply define e-mail.
+
+38
+00:03:13,590 --> 00:03:20,290
+So now I can search by e-mail once I publish this I can search by e-mail in all my user objects here.
+
+39
+00:03:20,340 --> 00:03:28,860
+So your email with that you can go back to our view code and now write the code to actually reach out
+
+40
+00:03:28,860 --> 00:03:33,270
+to our server and see if a certain e-mail address is already taken.
+
+41
+00:03:33,270 --> 00:03:40,830
+So here instead of returning my own promise I can simply return to assault of an actual request for
+
+42
+00:03:40,830 --> 00:03:41,130
+debt.
+
+43
+00:03:41,160 --> 00:03:50,110
+I will import x yes and in case you didn't watch my x yes module X is just an alternative to view resource.
+
+44
+00:03:50,130 --> 00:03:57,000
+It allows us to make Ajax requests and in Maine J.S. we can figure it out to always use our firebase
+
+45
+00:03:57,010 --> 00:03:58,810
+database with this space.
+
+46
+00:03:58,960 --> 00:04:04,950
+Well in case you don't have to set up go for the actual section first to be able to follow along in
+
+47
+00:04:04,950 --> 00:04:08,120
+your code until then you can of course watch me do it here.
+
+48
+00:04:08,160 --> 00:04:10,870
+It'll work in the same way for your own back.
+
+49
+00:04:10,860 --> 00:04:14,850
+And so I want to use this Axxess instance for it.
+
+50
+00:04:14,850 --> 00:04:22,230
+I need to import that in my script section in the Sign-Up file so I'll import exile's from X years and
+
+51
+00:04:22,230 --> 00:04:29,070
+then X-ists as learned in that section simply has a get method which allows me to send a get request
+
+52
+00:04:29,730 --> 00:04:33,780
+I want to send this to slash users dot Jason dot.
+
+53
+00:04:33,810 --> 00:04:40,430
+Jason is firebase specific and slash users is enough because dbase path is to find and mange.
+
+54
+00:04:40,460 --> 00:04:41,020
+Yes.
+
+55
+00:04:42,300 --> 00:04:46,380
+And now here I don't just want to reach out to it like this.
+
+56
+00:04:46,380 --> 00:04:48,930
+I of course want to order my data.
+
+57
+00:04:48,930 --> 00:04:55,860
+I want to see if this email address exists to folders on firebase I need to pass a query parameter.
+
+58
+00:04:55,860 --> 00:05:01,560
+This is how it works and firebase might work differently for your own back end d query parameter.
+
+59
+00:05:01,560 --> 00:05:04,090
+I need to add here as ordered by.
+
+60
+00:05:04,350 --> 00:05:11,190
+And that should be e-mail between double quotation marks that's important email then refers to this
+
+61
+00:05:11,280 --> 00:05:16,500
+email note here in my users and I will then change their criteria.
+
+62
+00:05:16,770 --> 00:05:22,570
+It's equal to and here the email address now has to be passed.
+
+63
+00:05:22,590 --> 00:05:26,390
+So this should now be well whatever user entered.
+
+64
+00:05:27,900 --> 00:05:32,880
+Then access gives me a promise and I'll not return the result of that promise because that would not
+
+65
+00:05:32,880 --> 00:05:33,830
+be true or false.
+
+66
+00:05:33,840 --> 00:05:43,750
+But the HTP response so the then block here all and said For now I have a look at that response and
+
+67
+00:05:43,750 --> 00:05:50,710
+then return false which will be wrapped into a promise and therefore it can now be used by Buli date.
+
+68
+00:05:50,710 --> 00:05:55,980
+It will always invalidate there's input though it will always return false.
+
+69
+00:05:56,080 --> 00:05:57,280
+We'll fix this soon.
+
+70
+00:05:57,460 --> 00:06:01,700
+Now with that one more thing we have to do their value here.
+
+71
+00:06:01,720 --> 00:06:04,280
+All has to be rapid when double quotation marks.
+
+72
+00:06:04,300 --> 00:06:06,920
+So equal two equals double quotation mark.
+
+73
+00:06:07,090 --> 00:06:09,440
+And then also closing double quotation mark.
+
+74
+00:06:09,490 --> 00:06:13,410
+After Divell you and now we can go back to our application.
+
+75
+00:06:13,650 --> 00:06:18,070
+Open the developer tools here so that we can see the javascript console.
+
+76
+00:06:18,070 --> 00:06:26,590
+Now if I enter email address here I actually get an offer I just request here because I in the authorization
+
+77
+00:06:26,590 --> 00:06:31,100
+section required all users to log in to send HTP requests.
+
+78
+00:06:31,120 --> 00:06:33,420
+Does the file under the rules of the database.
+
+79
+00:06:33,520 --> 00:06:38,470
+I don't actually want this to be the case for read requests anymore so I'll switch just back to just.
+
+80
+00:06:38,470 --> 00:06:43,600
+True which means everyone may read and getting the email address is just reading it.
+
+81
+00:06:44,020 --> 00:06:53,030
+So with that if we go back to our application if I reload it and I try to use one more time.
+
+82
+00:06:53,140 --> 00:06:59,440
+Now we get back a response and your response is the object where do e-mail address matches.
+
+83
+00:06:59,440 --> 00:07:05,320
+Now if I do enter email address which we don't have though I actually get back an empty object.
+
+84
+00:07:05,650 --> 00:07:10,620
+So if we get back an empty object we know the email address is still available.
+
+85
+00:07:10,900 --> 00:07:18,640
+So let's return a check which checks if response data datas words empty object would be stored if it
+
+86
+00:07:18,640 --> 00:07:20,200
+is an empty object.
+
+87
+00:07:20,200 --> 00:07:24,170
+Now how do we find out if it is an empty object.
+
+88
+00:07:24,210 --> 00:07:30,720
+We can simply take advantage of a built in method on the object object in javascript.
+
+89
+00:07:30,720 --> 00:07:37,650
+There is a key method which we can use on the response data and this will give us back an array of all
+
+90
+00:07:37,650 --> 00:07:40,560
+the keys this object has now here.
+
+91
+00:07:40,710 --> 00:07:48,570
+If the length is equal to zero we know it's an empty object and then we want return true because that
+
+92
+00:07:48,570 --> 00:07:52,860
+means the user picked the email address for which we don't find data on the server.
+
+93
+00:07:52,890 --> 00:08:00,330
+So now if we go back to our application manager test this becomes invalid Phedre a valid one though
+
+94
+00:08:00,660 --> 00:08:02,170
+it stays valid.
+
+95
+00:08:02,250 --> 00:08:04,280
+We go back to Test 2 which is taken.
+
+96
+00:08:04,510 --> 00:08:06,300
+It's marked as invalid.
+
+97
+00:08:06,630 --> 00:08:12,210
+So now with that we get our own asynchronous validator which really reaches out to the back end and
+
+98
+00:08:12,210 --> 00:08:14,300
+checks our emails there.
+
+99
+00:08:14,310 --> 00:08:16,420
+Now one important note here.
+
+100
+00:08:16,500 --> 00:08:23,760
+Currently we're validating on the blur event so whenever I lose focus on this input that means we don't
+
+101
+00:08:23,760 --> 00:08:29,300
+send dead many requests to the backend only after the user entered something.
+
+102
+00:08:29,310 --> 00:08:33,850
+If you were to use the input event which is fired on every keystroke.
+
+103
+00:08:34,200 --> 00:08:40,170
+Well there is the danger of you spamming your back end with your requests because a request gets sent
+
+104
+00:08:40,200 --> 00:08:44,600
+whenever does validator runs and on input it runs on every keystroke.
+
+105
+00:08:44,880 --> 00:08:51,490
+So if you have on keystroke validation you probably want to add some additional logic like that.
+
+106
+00:08:51,510 --> 00:08:58,950
+The bounce method from the low dash library to group your requests and not send one on every request
+
+107
+00:08:59,160 --> 00:09:05,840
+but actually add some delay in between so that you don't hit your server with too many requests.
+
+108
+00:09:05,970 --> 00:09:12,480
+But with that we know how asynchronous validation works and that's another extremely useful thing we
+
+109
+00:09:12,480 --> 00:09:14,150
+can add to our toolbox.
+

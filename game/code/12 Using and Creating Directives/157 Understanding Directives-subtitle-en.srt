@@ -1,0 +1,192 @@
+1
+00:00:01,680 --> 00:00:05,130
+Well I'm back in my editor and this is a brand new project.
+
+2
+00:00:05,130 --> 00:00:10,560
+The only thing I did again is I ordered bootstrap year to get some basic styling and I set up some columns
+
+3
+00:00:10,560 --> 00:00:10,790
+here.
+
+4
+00:00:10,800 --> 00:00:12,980
+But besides that that's all it did.
+
+5
+00:00:13,190 --> 00:00:21,300
+And there at first when I look at some built in directives of UJA ships with now we already know a lot
+
+6
+00:00:21,300 --> 00:00:29,570
+of them like the earth the for the blind directives are generally always identified like this.
+
+7
+00:00:29,580 --> 00:00:34,160
+You have to be at the beginning and the miners and then the name of the directive.
+
+8
+00:00:34,170 --> 00:00:37,230
+So divi mines part is not part of the directive name.
+
+9
+00:00:37,290 --> 00:00:43,100
+That just tells Mujeres that this is not a normal attribute in normal HVM l attribute it should ignore.
+
+10
+00:00:43,230 --> 00:00:46,010
+But instead the this is a directive it should handle.
+
+11
+00:00:46,170 --> 00:00:51,540
+So the name follows after the dash and then we could have some for example the text correct.
+
+12
+00:00:51,540 --> 00:00:57,480
+That's a in one text directive takes a string as a put Therefore the single quotation marks between
+
+13
+00:00:57,480 --> 00:01:02,130
+the outer quotation marks which only marked the javascript expression Kanno entered there.
+
+14
+00:01:02,250 --> 00:01:04,320
+And here it could add some text.
+
+15
+00:01:04,320 --> 00:01:09,040
+So now after saving this we should see some text here.
+
+16
+00:01:09,080 --> 00:01:13,910
+Even though I didn't enter anything between the opening and closing paragraph tag just by using the
+
+17
+00:01:13,910 --> 00:01:22,360
+text I can also duplicators to use the H M L to put some H I'll kill.
+
+18
+00:01:22,390 --> 00:01:24,600
+That's also a string.
+
+19
+00:01:24,730 --> 00:01:32,130
+But now we could use these strong tag and close it of course and then we could put some strong text.
+
+20
+00:01:32,130 --> 00:01:35,200
+Now if I say this and go to my app you'll see it's bold.
+
+21
+00:01:35,200 --> 00:01:40,570
+Be careful when using this directive you should sanitize your output to make sure you're not getting
+
+22
+00:01:40,570 --> 00:01:46,420
+a victim of cross-site scripting attacks because you can output H.T. molecules there.
+
+23
+00:01:46,420 --> 00:01:49,200
+And that of course could all be malicious script tags.
+
+24
+00:01:49,210 --> 00:01:51,360
+So that's something to watch out for.
+
+25
+00:01:51,370 --> 00:01:52,700
+These are bold interactive.
+
+26
+00:01:52,720 --> 00:01:53,650
+Important thing.
+
+27
+00:01:53,710 --> 00:01:59,290
+You identify them by having the B minus at the beginning not just build in ones directives in general
+
+28
+00:01:59,410 --> 00:02:01,510
+knowledge both our own directives.
+
+29
+00:02:01,840 --> 00:02:05,470
+So here I will simply add a horizontal line then copy this whole row.
+
+30
+00:02:05,500 --> 00:02:10,800
+Because now here I want to set out set up some custom directives all use.
+
+31
+00:02:10,900 --> 00:02:15,640
+Now I'll be able to build a simple custom directive which shows how to generally use them and which
+
+32
+00:02:15,640 --> 00:02:21,460
+feature such a directive has let's say I have a paragraph with some text where I say color does.
+
+33
+00:02:21,490 --> 00:02:28,750
+And my goal was to add a directive which gives states some coloring so some background color for example
+
+34
+00:02:29,180 --> 00:02:33,910
+of course I could use a symbol style for days like background color and then set the color.
+
+35
+00:02:34,090 --> 00:02:39,310
+But here I want to show how a directive works and coloring it highlighting it is actually a great use
+
+36
+00:02:39,310 --> 00:02:44,620
+case because it shows many of the features that elective office us or we can implement a custom directive
+
+37
+00:02:44,620 --> 00:02:45,480
+I should say.
+
+38
+00:02:45,790 --> 00:02:47,900
+So how do we create such a directive.
+
+39
+00:02:48,100 --> 00:02:50,250
+Well we get two options of doing so.
+
+40
+00:02:50,320 --> 00:02:57,730
+The first one is to register it globally just like with components we can use the you and then the directive
+
+41
+00:02:57,730 --> 00:03:03,990
+like this here the first argument is de-select or the name of the directive.
+
+42
+00:03:04,880 --> 00:03:07,170
+And that is without the B minus thing.
+
+43
+00:03:07,370 --> 00:03:14,600
+So here we could have highlight this will create a global directive called highlight which you don't
+
+44
+00:03:14,600 --> 00:03:18,600
+use by adding V minors highlight to an element.
+
+45
+00:03:18,620 --> 00:03:22,410
+So the minuses always need to inform veejay as to this is a directive.
+
+46
+00:03:22,520 --> 00:03:28,790
+The name then Justice Depart without the B minus and then the second argument is do you object configuring
+
+47
+00:03:28,790 --> 00:03:29,920
+the directive.
+
+48
+00:03:29,930 --> 00:03:32,180
+Now how do we configure such a directive.
+

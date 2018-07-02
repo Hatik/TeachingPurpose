@@ -1,0 +1,152 @@
+1
+00:00:01,940 --> 00:00:06,610
+So in the last one year we decided on our general plan for the next three years.
+
+2
+00:00:06,620 --> 00:00:11,020
+Let's start with creating our components or the components here identified thus far.
+
+3
+00:00:11,300 --> 00:00:16,430
+For that UltraTech components folder and of course you could also create a different folder structure
+
+4
+00:00:16,520 --> 00:00:19,470
+where you structure by feature for example.
+
+5
+00:00:19,640 --> 00:00:24,850
+But I'll stick to this since this looks about right for the size of this application.
+
+6
+00:00:24,890 --> 00:00:30,530
+So here in this component's folder we'll certainly want a home that you file for this home page we're
+
+7
+00:00:30,530 --> 00:00:31,400
+landing on.
+
+8
+00:00:31,640 --> 00:00:36,990
+We want a heterodox view for let's say and then all create two subfolder in there.
+
+9
+00:00:37,010 --> 00:00:44,000
+The first one all name portfolio and the second folder all name stocks.
+
+10
+00:00:44,000 --> 00:00:51,470
+So for these two main features we have in our app in the portfolio folder here I want to create my portfolio
+
+11
+00:00:51,770 --> 00:00:58,910
+view files that is main page and also create a stock view files for the individual stock on this portfolio
+
+12
+00:00:58,910 --> 00:01:00,050
+page.
+
+13
+00:01:00,050 --> 00:01:07,570
+Now any stocks file folder here all treater stocks that you file and I'll create a stock that you fall
+
+14
+00:01:07,560 --> 00:01:08,320
+here too.
+
+15
+00:01:08,480 --> 00:01:14,870
+Now the stock files here will have some shared code so you could also create one component and then
+
+16
+00:01:14,870 --> 00:01:16,840
+simply control what should be displayed.
+
+17
+00:01:17,060 --> 00:01:22,040
+But as it turns out there are quite a lot of differences even though on the first look they look very
+
+18
+00:01:22,040 --> 00:01:22,780
+similar.
+
+19
+00:01:22,910 --> 00:01:28,840
+So whilst you could make it work to use one single component and adjusted to the context you're loading
+
+20
+00:01:28,840 --> 00:01:29,460
+into it.
+
+21
+00:01:29,750 --> 00:01:37,430
+I'm going to choose the more explicit the more wealth specific Routier of creating two different components
+
+22
+00:01:37,430 --> 00:01:42,320
+for Dad but you can of course and that might be extra challenge use one and the same combo and for that
+
+23
+00:01:42,740 --> 00:01:44,210
+anyways We'll come back to this.
+
+24
+00:01:44,300 --> 00:01:49,470
+Let's continue with setting up our app year with all these components here in place.
+
+25
+00:01:49,730 --> 00:01:55,720
+I think a good start as before we are working on the individual components to simply market them.
+
+26
+00:01:56,050 --> 00:02:01,850
+So let's give each of them a template and I'm only up to age one tech where I say do you home component
+
+27
+00:02:01,880 --> 00:02:06,180
+and so on so that when we implement routing I can see if that works.
+
+28
+00:02:06,290 --> 00:02:12,670
+So I'm going to copy that code from here into my header where I of course want to say the header component.
+
+29
+00:02:12,920 --> 00:02:16,070
+Then here we got the stocks component.
+
+30
+00:02:16,070 --> 00:02:19,900
+Here we got the stock's stock component.
+
+31
+00:02:20,360 --> 00:02:23,920
+And here we got the portfolio component.
+
+32
+00:02:23,930 --> 00:02:30,380
+Well I didn't know you need to fold a stock component because we won't see that for now but anyways
+
+33
+00:02:30,470 --> 00:02:34,480
+the portfolio stocks of goods are now all components have a template at least.
+
+34
+00:02:34,580 --> 00:02:39,530
+And with that let's say now have the components sketched out of the main components created even though
+
+35
+00:02:39,530 --> 00:02:41,190
+they didn't do much right now.
+
+36
+00:02:41,280 --> 00:02:45,830
+And then next week let's have a look at how we could set up the routes and that of course is as always
+
+37
+00:02:45,830 --> 00:02:51,320
+a challenge where you try to come up with the possible routing set up on your own before we Densa that
+
+38
+00:02:51,320 --> 00:02:53,000
+up to gabber next video.
+

@@ -1,0 +1,276 @@
+1
+00:00:01,910 --> 00:00:08,110
+Know when to use folders like this it seems very useful and that is we can use it to transform certain
+
+2
+00:00:08,110 --> 00:00:08,920
+outputs.
+
+3
+00:00:08,920 --> 00:00:14,560
+Think about formatting a date by putting let's say a date folder which you create your own where you
+
+4
+00:00:14,560 --> 00:00:18,320
+then are able to configure the date or how it should be displayed.
+
+5
+00:00:18,650 --> 00:00:24,850
+But oftentimes you think that a folder might solve a certain solution and there is a better alternative
+
+6
+00:00:24,850 --> 00:00:28,020
+a way lable and that would be a computed property.
+
+7
+00:00:28,120 --> 00:00:30,120
+Let me show you an example.
+
+8
+00:00:30,250 --> 00:00:34,870
+Imagine we have an array of fruits here.
+
+9
+00:00:34,870 --> 00:00:37,260
+Now there we may happen Apple.
+
+10
+00:00:37,720 --> 00:00:42,510
+We may have a banana and we may have a mango.
+
+11
+00:00:42,830 --> 00:00:45,050
+Hope that is to name and a Malen.
+
+12
+00:00:45,140 --> 00:00:53,210
+So we've got four fruit items there now it would be convenient to now be able to have it output as a
+
+13
+00:00:53,210 --> 00:00:56,460
+list here and then FELTER when we type in the input field.
+
+14
+00:00:56,510 --> 00:01:03,980
+So let's do this all at a horizontal line on the input where I want to blind to or with we model to
+
+15
+00:01:04,070 --> 00:01:07,260
+the folder Text property which I'll also create.
+
+16
+00:01:07,400 --> 00:01:11,320
+So here we got faulter text which is empty at the beginning.
+
+17
+00:01:11,760 --> 00:01:19,860
+And with that filtered text here I want to filter does an ordered list where I loop with we 4 and loop
+
+18
+00:01:19,860 --> 00:01:24,010
+for my root in fruit's like this.
+
+19
+00:01:24,020 --> 00:01:27,020
+This allows me to output fruit here.
+
+20
+00:01:27,020 --> 00:01:31,780
+Now we have a look at what we see of course is our four fruits that is normal.
+
+21
+00:01:31,790 --> 00:01:36,620
+Future has killed us but learned we're not using any folders here now would be convenient to somehow
+
+22
+00:01:36,680 --> 00:01:45,410
+add a folder here to say only output these fruits which match our filtered text so if we entered in
+
+23
+00:01:45,410 --> 00:01:50,520
+there we only want the added fruit which starts with the Amlet say so but that we mean to say.
+
+24
+00:01:50,540 --> 00:01:55,080
+And then here this filter somehow pipe filter after fruits.
+
+25
+00:01:55,130 --> 00:02:01,620
+Now the issue of such a faulter is that this is very safe optimal from a performance perspective you
+
+26
+00:02:01,690 --> 00:02:07,340
+chances not able to handle this greatly in the background as it is not able to detect when it should
+
+27
+00:02:07,340 --> 00:02:12,680
+rerun the fault or not actually it will rerun the folder up on each rendering of the dawn.
+
+28
+00:02:12,680 --> 00:02:18,560
+This of course is a huge performance hit because maybe you didn't change there's input here but still
+
+29
+00:02:18,560 --> 00:02:21,550
+it needs to rerun the Voltar because it doesn't know that.
+
+30
+00:02:21,680 --> 00:02:24,360
+So this really is bad for performance.
+
+31
+00:02:24,410 --> 00:02:31,160
+Hence floaters have been kind of limited in what they can do in view chess 2.0 that was different in
+
+32
+00:02:31,250 --> 00:02:33,630
+Bucharest 1.0 as a side note.
+
+33
+00:02:33,920 --> 00:02:40,430
+So what could we do in such a case where we want to fold an existing list we can use a computer property
+
+34
+00:02:40,490 --> 00:02:43,790
+we already learned about these early on the course.
+
+35
+00:02:43,790 --> 00:02:49,520
+The great thing about computer properties is viewed as knows what such a property depends and therefore
+
+36
+00:02:49,550 --> 00:02:51,200
+only recalculates it.
+
+37
+00:02:51,350 --> 00:02:56,630
+If something changes in the things we can use and those properties were in this method it is then in
+
+38
+00:02:56,630 --> 00:02:57,370
+the end.
+
+39
+00:02:57,650 --> 00:02:59,880
+So let me demonstrate this here.
+
+40
+00:02:59,900 --> 00:03:09,430
+I want to add a new property faltered fruit's this is actually a methadose or do properties are and
+
+41
+00:03:09,430 --> 00:03:12,710
+you're a one to return my roots IRET.
+
+42
+00:03:12,970 --> 00:03:18,860
+And since it is an array I can call the faulter method on this iOS 6 method the folder method.
+
+43
+00:03:18,860 --> 00:03:24,910
+Now take cycle back which is executed on each element into cerate the element is then passed automatically
+
+44
+00:03:24,910 --> 00:03:27,480
+as an argument to this callback.
+
+45
+00:03:27,490 --> 00:03:32,770
+Now in this cold case I have to return all them elements and when I keep in this new area I'm generating
+
+46
+00:03:32,850 --> 00:03:35,350
+this folder fruits array that is it is a method.
+
+47
+00:03:35,350 --> 00:03:40,300
+But keep in mind behind the scenes view cheapass will treat a property based on this method which is
+
+48
+00:03:40,300 --> 00:03:46,600
+then recreated whenever some input changes so whenever fruit's changes or as it will soon implemented
+
+49
+00:03:46,660 --> 00:03:48,160
+filter text.
+
+50
+00:03:48,160 --> 00:03:53,650
+So here I want to return each element which matches this faulter text.
+
+51
+00:03:53,680 --> 00:04:00,310
+So the text entry per user does computer property will only be recalculated a folder or text or fruit's
+
+52
+00:04:00,310 --> 00:04:01,420
+changes.
+
+53
+00:04:01,420 --> 00:04:03,290
+Therefore it's very performant.
+
+54
+00:04:03,310 --> 00:04:11,640
+It's not doing any unnecessary calculations and I can simply loop through my filtered fruits here.
+
+55
+00:04:11,650 --> 00:04:15,130
+That's a great alternative to a filter.
+
+56
+00:04:15,160 --> 00:04:21,670
+Now if we have a look this still works but if I enter M for mango or Mallan we only see these two if
+
+57
+00:04:21,670 --> 00:04:27,100
+I enter a free app and we only see this if I have a lowercase a we see banana and mango because these
+
+58
+00:04:27,100 --> 00:04:28,660
+two have a lowercase.
+
+59
+00:04:29,050 --> 00:04:36,460
+If I now enter a and we see only banana and mango because these are the only two words which have a
+
+60
+00:04:36,480 --> 00:04:38,270
+and character sequence in them.
+
+61
+00:04:38,470 --> 00:04:42,450
+So this shows you how to create a bad or faulter with view chairs.
+
+62
+00:04:42,460 --> 00:04:44,660
+This is not using View chess folders at all.
+
+63
+00:04:44,680 --> 00:04:50,570
+We do that with the uppercase folder but for more complex transformations you want to use a computer
+
+64
+00:04:50,590 --> 00:04:53,200
+property and that is something to keep in mind.
+
+65
+00:04:53,230 --> 00:04:59,360
+Folders can be a nice solution but oftentimes computer properties are the better solution.
+
+66
+00:04:59,410 --> 00:05:03,970
+They can be more fine tuned to your needs and they are more performant.
+
+67
+00:05:04,000 --> 00:05:06,110
+So keep this in mind when working with folders.
+
+68
+00:05:06,220 --> 00:05:12,070
+You may of course use the normal filter here but again definitely think about using a computed property
+
+69
+00:05:12,130 --> 00:05:12,920
+instead.
+

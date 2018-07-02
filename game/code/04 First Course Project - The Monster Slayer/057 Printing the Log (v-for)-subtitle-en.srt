@@ -1,0 +1,100 @@
+1
+00:00:02,060 --> 00:00:06,490
+So we're adding actions turns to dust turns every day.
+
+2
+00:00:06,620 --> 00:00:08,400
+We want to output this on our page.
+
+3
+00:00:08,400 --> 00:00:12,200
+No because having it in the code alone doesn't do that much.
+
+4
+00:00:12,290 --> 00:00:20,840
+So in the next AGM or page I'll go to this Lockes area where I have a list item and now a way to output
+
+5
+00:00:20,930 --> 00:00:27,950
+data which is an array or which is a list is of course to use the before directive beauteous officers
+
+6
+00:00:28,330 --> 00:00:35,360
+with that directive we can loop through all items in an array for example by running turn in Turin's
+
+7
+00:00:35,600 --> 00:00:36,110
+here.
+
+8
+00:00:36,110 --> 00:00:43,050
+Turtles of course refers to my Turin's data field or property here in this data object.
+
+9
+00:00:43,340 --> 00:00:49,210
+And turn is a name of my choice so I can name this whatever I like.
+
+10
+00:00:49,220 --> 00:00:54,890
+Now that I loop through that I can output it here with stricken translation by saying turn and then
+
+11
+00:00:54,890 --> 00:01:01,410
+accessing text which I know will be available sends We passed some tags here.
+
+12
+00:01:01,460 --> 00:01:07,780
+For example when we create a new entry in the log with base let's save it and reload.
+
+13
+00:01:07,970 --> 00:01:11,740
+And if I now start a game an attack we see that this works.
+
+14
+00:01:11,780 --> 00:01:17,630
+It could use some improved styling and all of four other attacks it only works regarding the monster
+
+15
+00:01:17,630 --> 00:01:24,170
+damage because we're not logging the user damage yet but we can see that outputting it a here clearly
+
+16
+00:01:24,170 --> 00:01:30,870
+works though if we restart we see that we get this empty box here even though the log is empty.
+
+17
+00:01:31,070 --> 00:01:37,850
+So it would be nice in the next HDMI code to only show this section if we actually do have entries in
+
+18
+00:01:37,850 --> 00:01:39,980
+the log to do that.
+
+19
+00:01:39,980 --> 00:01:46,850
+I'll add divi if here to only conditionally attached this aged team out section and all its children
+
+20
+00:01:47,150 --> 00:01:52,070
+to the dawn and to condition of one to check is if turns out of length.
+
+21
+00:01:52,070 --> 00:01:59,370
+So if this array has a length greater than zero if not then it is empty then I don't want to attach
+
+22
+00:01:59,390 --> 00:02:01,960
+this section because I don't want to show it a lot.
+
+23
+00:02:01,970 --> 00:02:07,580
+Then with this let's save and reload you'll see the boxes gone.
+
+24
+00:02:07,700 --> 00:02:11,160
+But as soon as I attack it's back and we're seeing the log.
+
+25
+00:02:11,420 --> 00:02:17,560
+Well next let's finish it by hooking up the other buttons and improving the styling here a little bit.
+

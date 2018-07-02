@@ -1,0 +1,32 @@
+1
+00:00:01,550 --> 00:00:07,910
+That was a lot about slots slots help you to distribute your content and Avro components.
+
+2
+00:00:07,910 --> 00:00:15,120
+It's especially useful if you want to build reusable widgets let's say like a slide show where you have
+
+3
+00:00:15,130 --> 00:00:21,470
+a frame for each slide and then you want to switch between slides and each slide might have its individual
+
+4
+00:00:21,480 --> 00:00:28,640
+HDMI code lay out but you want to use the same frame Welford that you could use slots to make sure the
+
+5
+00:00:28,640 --> 00:00:34,760
+content you want to pass into that frame you're aged him I lay out its distribution exactly the way
+
+6
+00:00:34,820 --> 00:00:38,720
+you want to distribution inside of your slideshow frame component.
+
+7
+00:00:38,870 --> 00:00:40,780
+So that would be an example of use case.
+
+8
+00:00:40,910 --> 00:00:43,040
+And here you learn how to use slots.
+

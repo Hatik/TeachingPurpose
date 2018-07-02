@@ -1,0 +1,36 @@
+1
+00:00:02,270 --> 00:00:09,190
+In this module we had a detailed look at conditionals V if we show and list with the four.
+
+2
+00:00:09,310 --> 00:00:11,080
+You'll learn how all of that works.
+
+3
+00:00:11,110 --> 00:00:12,860
+What to watch out for.
+
+4
+00:00:12,880 --> 00:00:19,370
+What additional features you may use and how that really is used in a real application.
+
+5
+00:00:19,390 --> 00:00:27,870
+With that we made another important step because now the base template syntax of beauty as is set.
+
+6
+00:00:27,910 --> 00:00:35,350
+So now in the next module I want to take a more theoretical approach and have a deeper look at The View.
+
+7
+00:00:35,350 --> 00:00:41,000
+Instance at this thing we're working with all the time how that works behind the scenes.
+
+8
+00:00:41,050 --> 00:00:48,730
+What's so special about it how it is created by View chess and how we may take advantage of it even
+
+9
+00:00:48,730 --> 00:00:49,490
+more.
+

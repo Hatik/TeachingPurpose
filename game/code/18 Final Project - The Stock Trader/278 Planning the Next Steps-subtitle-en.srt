@@ -1,0 +1,68 @@
+1
+00:00:02,180 --> 00:00:08,890
+Get your head are in place now how you proceed depends on how you work on such projects.
+
+2
+00:00:09,240 --> 00:00:16,980
+Generally I also do make a plan before starting but here I think it's a great chance for a great thing
+
+3
+00:00:17,250 --> 00:00:23,040
+to finish the things we see so the portfolio the stocks component here.
+
+4
+00:00:23,040 --> 00:00:30,240
+So these stock Pardie these parts of the application so that we can see which features will these components
+
+5
+00:00:30,240 --> 00:00:32,980
+have in the end so that we're able to then arrive.
+
+6
+00:00:33,000 --> 00:00:36,390
+How should you manage to state for that and so on.
+
+7
+00:00:36,390 --> 00:00:43,590
+Therefore what I want to work on next is the stock's component which includes not only the grid of stocks
+
+8
+00:00:43,590 --> 00:00:46,730
+but of course also the individual stock items.
+
+9
+00:00:46,740 --> 00:00:50,250
+So that's your next challenge start working on that.
+
+10
+00:00:50,250 --> 00:00:57,150
+Keep in mind that the stock's component is only a grade for the individual stock and the individual
+
+11
+00:00:57,150 --> 00:01:03,570
+stock has features like the name of the stock it has the price and you all that want to take into account
+
+12
+00:01:03,840 --> 00:01:06,050
+that you get an input field and a buy button.
+
+13
+00:01:06,060 --> 00:01:11,400
+And of course you only want to let the user buy if the input fuel does not empty and if a valid number
+
+14
+00:01:11,400 --> 00:01:14,310
+was entered and if the number is greater than zero.
+
+15
+00:01:14,310 --> 00:01:16,860
+So these are kinds of things to keep in mind with that.
+
+16
+00:01:16,860 --> 00:01:17,550
+Good luck.
+
+17
+00:01:17,550 --> 00:01:19,900
+I'll start working on this in the next video.
+

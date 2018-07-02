@@ -1,0 +1,48 @@
+1
+00:00:01,390 --> 00:00:05,460
+Similar only to d the f directive.
+
+2
+00:00:05,700 --> 00:00:12,270
+Why have you not want to output a list item here but you wanted to output a heading where you output
+
+3
+00:00:12,310 --> 00:00:21,290
+the ingredient name let's say followed by a paragraph where you output the index Well you could loop
+
+4
+00:00:21,770 --> 00:00:24,810
+by using a template for that just as before.
+
+5
+00:00:24,830 --> 00:00:32,360
+The template tag won't get rendered but if we replace the for on that template just like that just like
+
+6
+00:00:32,360 --> 00:00:39,310
+before and B if then it will render everything inside of this template just like it renders it up here
+
+7
+00:00:39,370 --> 00:00:42,230
+where we place it directly on the item.
+
+8
+00:00:42,230 --> 00:00:46,690
+So here I could basically copy this loop here.
+
+9
+00:00:50,130 --> 00:00:57,810
+Rename this to index though since I use index down here and if I now had control enter you see meat
+
+10
+00:00:57,830 --> 00:01:00,210
+0 fruit 1 cookies 2.
+
+11
+00:01:00,510 --> 00:01:07,650
+So this is another way of using the form with a template to use multiple of non nested elements with
+
+12
+00:01:07,650 --> 00:01:08,420
+this loop.
+

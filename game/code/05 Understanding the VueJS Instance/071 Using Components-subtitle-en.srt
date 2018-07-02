@@ -1,0 +1,244 @@
+1
+00:00:02,120 --> 00:00:03,130
+Well now did we.
+
+2
+00:00:03,130 --> 00:00:09,610
+And last week you learned about this template option and that we can mount our instance like this.
+
+3
+00:00:09,950 --> 00:00:12,210
+Well we can continue with that thought.
+
+4
+00:00:12,380 --> 00:00:15,600
+What if we wanted to create a reusable component.
+
+5
+00:00:15,610 --> 00:00:21,040
+Hugh Eleazer does template in multiple places because maybe it would be something more than chess Telo
+
+6
+00:00:21,050 --> 00:00:26,300
+let's say would be a complex template displaying something what you want to display in several places
+
+7
+00:00:26,360 --> 00:00:28,190
+on our page.
+
+8
+00:00:28,200 --> 00:00:36,860
+Now if you want to do that well one thing we could do of course was we could simply say that we don't
+
+9
+00:00:36,860 --> 00:00:47,960
+want to append to a child to get element by free but instead all comment this out here for now and I'll
+
+10
+00:00:48,060 --> 00:01:00,520
+at the Al ref here again to select Let's say every thing which has this selector of Hello.
+
+11
+00:01:00,770 --> 00:01:07,970
+So this element of course doesn't exist but I'm trying to replace the template of every hello element
+
+12
+00:01:08,390 --> 00:01:09,870
+with this template.
+
+13
+00:01:10,070 --> 00:01:15,290
+So let's insert some Hello elements here is one and then a one.
+
+14
+00:01:15,290 --> 00:01:19,500
+And of course this is no official HDMI element but let's see if this works.
+
+15
+00:01:19,580 --> 00:01:24,660
+If I hit Control enter it only replaces the first occurrence.
+
+16
+00:01:25,010 --> 00:01:28,070
+What if we changed it to use the class hello.
+
+17
+00:01:28,250 --> 00:01:32,970
+If we didn't say div class hello like this.
+
+18
+00:01:34,010 --> 00:01:35,590
+And we repeat this
+
+19
+00:01:38,790 --> 00:01:43,580
+if I now enter also only one hello.
+
+20
+00:01:44,040 --> 00:01:48,730
+And if I remove both of them as well as is unnecessary death here.
+
+21
+00:01:48,780 --> 00:01:50,880
+Well then there is no halo of course.
+
+22
+00:01:51,120 --> 00:01:57,300
+So this does not work with this element it only takes the first one so I'll revert does but it would
+
+23
+00:01:57,300 --> 00:02:00,460
+still be nice to have such a reusable component wouldn't it.
+
+24
+00:02:00,720 --> 00:02:09,240
+Well we can create such a component and I can create it by simply going up there and registering one
+
+25
+00:02:09,570 --> 00:02:11,870
+with the new component.
+
+26
+00:02:12,120 --> 00:02:18,030
+This allows me to create a new component which can then reuse in all my Alber view instances and all
+
+27
+00:02:18,030 --> 00:02:20,400
+the templates of these instances.
+
+28
+00:02:20,400 --> 00:02:23,830
+The component takes as a first argument the selector of the component.
+
+29
+00:02:23,860 --> 00:02:24,470
+Let's name it.
+
+30
+00:02:24,480 --> 00:02:25,280
+Hello.
+
+31
+00:02:25,560 --> 00:02:31,560
+And the second argument is a challenge of object which is similar to the object we passed to have you
+
+32
+00:02:31,560 --> 00:02:32,730
+instance but not equal.
+
+33
+00:02:32,730 --> 00:02:34,840
+For example data is used differently.
+
+34
+00:02:35,100 --> 00:02:40,050
+And I'll come back to that in the component section in this course where we will delve much deeper into
+
+35
+00:02:40,050 --> 00:02:44,590
+components and learn how we can utilize them much better then by doing so.
+
+36
+00:02:44,730 --> 00:02:49,930
+But these are the first steps with them so I will show you how to use it like this.
+
+37
+00:02:50,290 --> 00:02:51,590
+So let's have a template.
+
+38
+00:02:51,870 --> 00:02:58,700
+Where are we now again have this H-1 Hello element here which I want to reuse.
+
+39
+00:02:59,250 --> 00:03:05,830
+And now I can use discompose and I treat it here I registered it globally by running view component
+
+40
+00:03:05,830 --> 00:03:07,720
+so I can now use it everywhere.
+
+41
+00:03:07,740 --> 00:03:14,090
+For example here in app 2 because free will get replaced with its own template entirely.
+
+42
+00:03:14,090 --> 00:03:19,030
+So that would not be a good example but an app too we don't do that so let's enter Hello here.
+
+43
+00:03:19,050 --> 00:03:26,390
+This new element which is the default element but the one we just created and indeed we see halo over
+
+44
+00:03:26,390 --> 00:03:28,600
+there and if I enter a number.
+
+45
+00:03:28,670 --> 00:03:29,110
+Hello.
+
+46
+00:03:29,150 --> 00:03:31,100
+In this apt to death.
+
+47
+00:03:31,300 --> 00:03:36,430
+Well then we see two ELO's and the third one is on the from the third instance down here.
+
+48
+00:03:36,770 --> 00:03:43,730
+So that we now get a reusable component with its own template using the same template property as we
+
+49
+00:03:43,940 --> 00:03:45,240
+do down here.
+
+50
+00:03:45,350 --> 00:03:52,310
+But now utilizing us or giving us the possibility to use that all over the place in our application
+
+51
+00:03:52,940 --> 00:03:58,850
+now that has some limitations and outcome come to these limitations in the next video and especially
+
+52
+00:03:58,850 --> 00:04:04,730
+in the components section where we dive deeper into that and learn how to really use components and
+
+53
+00:04:04,730 --> 00:04:07,750
+how we can utilize them better than we're doing here.
+
+54
+00:04:07,880 --> 00:04:09,880
+But it is important for you to take away.
+
+55
+00:04:09,920 --> 00:04:16,910
+There is a way to create such reusable parts in your application to give them their own templates to
+
+56
+00:04:16,910 --> 00:04:22,610
+give them their own select or buy which you can then enter them that again of course has no built in
+
+57
+00:04:22,680 --> 00:04:29,630
+select or hello doesn't exist there is no halo element we just told view chairs who replace every hello
+
+58
+00:04:29,630 --> 00:04:36,830
+element with this template and how it differs to a normal view instance where only the first occurrence
+
+59
+00:04:36,890 --> 00:04:43,040
+is replaced and where we can use it as a reusable selector with the component we can.
+
+60
+00:04:43,040 --> 00:04:48,800
+But again we'll delve deeper into this in the components section that I'll get rid of it here.
+
+61
+00:04:49,920 --> 00:04:54,420
+So that we revert to the no component state again and can continue with that.
+

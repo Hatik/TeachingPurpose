@@ -1,0 +1,108 @@
+1
+00:00:02,610 --> 00:00:05,250
+Were successful Here's my solution.
+
+2
+00:00:05,460 --> 00:00:11,730
+As you can see my app we've got a lot leaner and I got four new files folder headers server details
+
+3
+00:00:11,760 --> 00:00:13,590
+and servers to view.
+
+4
+00:00:13,650 --> 00:00:19,860
+I'm importing all these files here in my app file and then on in years I'm exporting a default object
+
+5
+00:00:19,880 --> 00:00:21,320
+where it is set up my components.
+
+6
+00:00:21,360 --> 00:00:23,090
+So I'm registering it locally.
+
+7
+00:00:23,090 --> 00:00:29,570
+Again it would have been perfectly fine if you were to use view component and registered them globally
+
+8
+00:00:29,790 --> 00:00:35,320
+but I just choose the local registration as I'm only using them in the app view file here anyways.
+
+9
+00:00:35,640 --> 00:00:40,510
+I set up my selector this year as keys in this property or in this object.
+
+10
+00:00:40,650 --> 00:00:44,970
+And then I assigned the imported objects as values.
+
+11
+00:00:44,990 --> 00:00:49,100
+This is my set up here now in my component's year.
+
+12
+00:00:49,110 --> 00:00:56,280
+I basically only export these rows and columns and then the content from the well-meanin fall we used
+
+13
+00:00:56,280 --> 00:00:59,080
+before I did the header and footer.
+
+14
+00:00:59,130 --> 00:01:06,640
+Now for the servers I only imported the column because I wanted to keep the row here in my app you fall.
+
+15
+00:01:06,660 --> 00:01:10,020
+Since I group servers and service detail to Gebert in one row.
+
+16
+00:01:10,020 --> 00:01:15,290
+So I wanted to keep the row in this main component in the main file here.
+
+17
+00:01:15,550 --> 00:01:21,490
+Therefore servers and server details only have the column in their template.
+
+18
+00:01:21,540 --> 00:01:27,930
+And regarding the servers it would have theoretically made sense to also make the individual server
+
+19
+00:01:27,930 --> 00:01:29,420
+its own component.
+
+20
+00:01:29,430 --> 00:01:33,100
+So do you list them here to have a separate component for that.
+
+21
+00:01:33,420 --> 00:01:39,270
+But we would have a problem with passing the current index down to this individual component.
+
+22
+00:01:39,480 --> 00:01:46,080
+We could loop through all the service we did that before but then it's kind of hard to adjust the number
+
+23
+00:01:46,080 --> 00:01:49,380
+of the server in this server itself.
+
+24
+00:01:49,380 --> 00:01:54,910
+So we will learn how to pass data from a parent to a child component in the next module.
+
+25
+00:01:54,930 --> 00:02:02,070
+Until then I'll stick to this solution and this really is it now in the next years I want to go into
+
+26
+00:02:02,070 --> 00:02:09,030
+some possible improvements regarding the file structure and how you pick the right names for your selectors
+
+27
+00:02:09,330 --> 00:02:10,440
+as we do here.
+

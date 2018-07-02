@@ -1,0 +1,160 @@
+1
+00:00:01,440 --> 00:00:07,910
+So I want to be able to click a list item here and load the appropriate user detail component and pass
+
+2
+00:00:07,910 --> 00:00:09,340
+the parameter to it.
+
+3
+00:00:09,610 --> 00:00:15,730
+Well nothing easier than that in user start of you fall which is where I have these list items I will
+
+4
+00:00:15,730 --> 00:00:20,240
+simply replace replace a list item with router link against you.
+
+5
+00:00:20,440 --> 00:00:25,060
+Well used as router link component of your router ships with.
+
+6
+00:00:25,060 --> 00:00:29,260
+So let me quickly replace all of that with this.
+
+7
+00:00:29,770 --> 00:00:33,600
+And of course I still want to use the list item.
+
+8
+00:00:33,670 --> 00:00:38,350
+So therefore I will quickly add Ptak equals list item there.
+
+9
+00:00:39,240 --> 00:00:46,200
+So if there's my rattlings are now set up of course I also need to add the two tag or two attribute
+
+10
+00:00:46,200 --> 00:00:47,270
+to be precise.
+
+11
+00:00:47,370 --> 00:00:51,710
+So quickly restructure that so that this becomes easy to read.
+
+12
+00:00:51,930 --> 00:00:55,870
+And the first Routier shell navigate to what now.
+
+13
+00:00:56,250 --> 00:00:59,580
+Well it should navigate to slash user.
+
+14
+00:00:59,640 --> 00:01:02,460
+This is my main route here.
+
+15
+00:01:02,580 --> 00:01:09,270
+And then for user 1 it Shell add slash 1 to it.
+
+16
+00:01:09,330 --> 00:01:12,820
+So a user start this will go to slash user 1.
+
+17
+00:01:13,080 --> 00:01:17,120
+And of course a real application you might dynamically folder from an air raid.
+
+18
+00:01:17,340 --> 00:01:21,320
+And keep in mind you can bind this dynamically by using colons.
+
+19
+00:01:21,340 --> 00:01:24,790
+Now you could bind it to a property which contains this POV.
+
+20
+00:01:25,620 --> 00:01:31,700
+So this is the first user you're here I'll use the static setup without binding a to a property.
+
+21
+00:01:31,950 --> 00:01:34,880
+And now I do have three different routes.
+
+22
+00:01:34,890 --> 00:01:36,870
+Now let's see this in action if I load this.
+
+23
+00:01:36,870 --> 00:01:38,300
+Now click on this.
+
+24
+00:01:38,310 --> 00:01:44,320
+We load user 1 user to user free as we can see in the URL.
+
+25
+00:01:44,430 --> 00:01:45,240
+That's great.
+
+26
+00:01:45,240 --> 00:01:50,920
+Now let's also extract the data in the user Dettol component to do this.
+
+27
+00:01:50,940 --> 00:01:56,020
+I go to the user detail component of course here all the Raptors in a div.
+
+28
+00:01:56,310 --> 00:02:06,610
+And now I want to extract the user data so the paragraph user loaded has ID and then output the ID here.
+
+29
+00:02:06,630 --> 00:02:14,460
+Now I could again store days in a property but since this actually is a route which will not be updated
+
+30
+00:02:14,460 --> 00:02:22,560
+without me navigating back to another route I can simply say don't assign route Perens ID.
+
+31
+00:02:22,740 --> 00:02:24,030
+Let's see this in action.
+
+32
+00:02:24,750 --> 00:02:28,870
+Has one has to has three.
+
+33
+00:02:28,880 --> 00:02:34,970
+Again I don't need to watch these changes because if I am on these user detail component there is no
+
+34
+00:02:34,970 --> 00:02:38,600
+way for me to click anywhere to load the user id to.
+
+35
+00:02:38,690 --> 00:02:44,980
+And if I manually enter it here it will get reloaded anyways so therefore I don't need to have my set
+
+36
+00:02:45,020 --> 00:02:51,050
+up here where I watch for changes in the route parens because that could not happen.
+
+37
+00:02:51,110 --> 00:02:56,270
+The combo will get regraded anyways because I have to navigate away and then reload it because in clicking
+
+38
+00:02:56,270 --> 00:02:57,150
+and Huling.
+
+39
+00:02:57,410 --> 00:03:04,670
+So this is how this works and how now I use a nested component with parameters to extract parameters
+
+40
+00:03:04,880 --> 00:03:07,510
+and am nested in a natural component.
+

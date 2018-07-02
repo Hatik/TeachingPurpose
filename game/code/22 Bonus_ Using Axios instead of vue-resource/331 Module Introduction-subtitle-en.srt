@@ -1,0 +1,64 @@
+1
+00:00:02,370 --> 00:00:04,170
+Welcome to this module.
+
+2
+00:00:04,370 --> 00:00:12,790
+This module is about X years popular package for making H-2 repeated requests from javascript applications.
+
+3
+00:00:12,920 --> 00:00:14,510
+So it's not specific to view.
+
+4
+00:00:14,540 --> 00:00:20,300
+You can use it in any javascript application but of course beauty has uses Javascript and therefore
+
+5
+00:00:20,300 --> 00:00:23,810
+you may use X years in new applications.
+
+6
+00:00:23,810 --> 00:00:29,680
+It's essentially an alternative to the new resource which you learn about early Endace course.
+
+7
+00:00:29,870 --> 00:00:32,810
+And here's one thing I definitely want to point out.
+
+8
+00:00:32,810 --> 00:00:35,930
+There is nothing wrong with using view resource.
+
+9
+00:00:36,130 --> 00:00:42,950
+I covered it in this course because it is also a popular pick for applications but if you don't like
+
+10
+00:00:42,950 --> 00:00:48,080
+it or if you want to use Access because you know it from other applications or because it looks interesting
+
+11
+00:00:48,080 --> 00:00:49,730
+to you feel free to do so.
+
+12
+00:00:49,730 --> 00:00:50,910
+Both are fine.
+
+13
+00:00:50,930 --> 00:00:55,560
+None of them is secure or not recommended or anything like that.
+
+14
+00:00:55,610 --> 00:00:57,370
+You may choose whichever you want.
+
+15
+00:00:57,380 --> 00:01:03,800
+So with that let's cover access let's learn how it works and how we may integrate it into a view application
+
+16
+00:01:04,160 --> 00:01:05,290
+in this module.
+

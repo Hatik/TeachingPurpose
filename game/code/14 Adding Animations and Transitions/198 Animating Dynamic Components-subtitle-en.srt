@@ -1,0 +1,296 @@
+1
+00:00:02,160 --> 00:00:04,260
+Well we've already achieved a lot here.
+
+2
+00:00:04,260 --> 00:00:06,810
+We learn a lot about animations and transitions.
+
+3
+00:00:06,810 --> 00:00:12,660
+Number four I come to animating groups of elements which you can do right now the best you can do is
+
+4
+00:00:12,660 --> 00:00:17,720
+switch between two or multiple elements but only one may be displayed at all times.
+
+5
+00:00:17,720 --> 00:00:24,420
+So before we come to do a different component which allows us to animate different pieces or elements
+
+6
+00:00:24,420 --> 00:00:26,570
+no code at the same time.
+
+7
+00:00:26,700 --> 00:00:33,840
+Let me show you a different thing or a different part of chess which we may animate or which we may
+
+8
+00:00:33,840 --> 00:00:34,890
+transition.
+
+9
+00:00:35,130 --> 00:00:38,850
+We transition between different aged female elements right now.
+
+10
+00:00:38,980 --> 00:00:45,000
+But there's one thing we learned about in the component section which would be for purrfect to transition
+
+11
+00:00:45,000 --> 00:00:45,810
+between.
+
+12
+00:00:46,020 --> 00:00:50,330
+I'm not talking about components because we could use them like normal HTL elements here.
+
+13
+00:00:50,400 --> 00:00:57,780
+I'm talking about dynamic components so dynamic components would also make up for a great transition
+
+14
+00:00:57,780 --> 00:00:58,560
+task.
+
+15
+00:00:58,560 --> 00:00:59,900
+Now let's do this.
+
+16
+00:01:00,000 --> 00:01:04,450
+For this I will first quickly add two new components.
+
+17
+00:01:04,620 --> 00:01:10,480
+Danger alert component and you might be able to guess what this will hold.
+
+18
+00:01:10,590 --> 00:01:17,910
+It will hold a time soup's a template where I will simply have a bootstrap class with alert and then
+
+19
+00:01:17,970 --> 00:01:19,530
+alert danger.
+
+20
+00:01:19,550 --> 00:01:21,950
+This is dangerous maybe.
+
+21
+00:01:21,990 --> 00:01:30,880
+In Juris and I don't need any script here because well I don't want to have any specific logic in there.
+
+22
+00:01:30,900 --> 00:01:37,590
+I only want to have the template to demonstrate this and I will also have my success alert.
+
+23
+00:01:37,740 --> 00:01:40,160
+Let's say success alert the view.
+
+24
+00:01:40,620 --> 00:01:45,780
+So here we would then have our template where we say this is successful like this.
+
+25
+00:01:45,780 --> 00:01:55,470
+Now I get two new components and I want to switch between them here by having a look at my dynamic components
+
+26
+00:01:55,740 --> 00:01:57,710
+to use dynamic components.
+
+27
+00:01:57,720 --> 00:02:04,300
+I first need to register them as components and I'll do those locally here in my view instance.
+
+28
+00:02:04,320 --> 00:02:12,540
+So I'll add my components key here to register both my danger alert which I need to import then and
+
+29
+00:02:12,570 --> 00:02:16,690
+my success alert which I'll also need to import.
+
+30
+00:02:16,690 --> 00:02:20,040
+So let me add these imports up here real quick.
+
+31
+00:02:20,040 --> 00:02:26,540
+So here we need to import the danger alert from the danger alert.
+
+32
+00:02:26,550 --> 00:02:28,590
+Does the file end down there.
+
+33
+00:02:28,590 --> 00:02:35,160
+We all want to import the success alert and that allows me to hook them up to my properties down there
+
+34
+00:02:35,160 --> 00:02:37,180
+into component's object.
+
+35
+00:02:37,210 --> 00:02:42,190
+Hearable have the danger alert and of course also the success alert.
+
+36
+00:02:42,600 --> 00:02:45,030
+Now both components are available.
+
+37
+00:02:45,030 --> 00:02:52,530
+I will add a new property here to my data object which is de-selected component and by default that
+
+38
+00:02:52,530 --> 00:03:00,110
+Shelby let me also change these names to be app dange or.
+
+39
+00:03:00,130 --> 00:03:06,040
+Now that I think about it that would be more in line to also have this app prefix.
+
+40
+00:03:06,040 --> 00:03:11,830
+So here de-select de-selected component shall be ab success alert with dashes in between.
+
+41
+00:03:11,830 --> 00:03:16,780
+Because again this is what new chess enables us to use when setting up our property names like this
+
+42
+00:03:16,780 --> 00:03:18,260
+down there.
+
+43
+00:03:18,290 --> 00:03:25,090
+So now this is the default selected component for my dynamic component added to component keyword and
+
+44
+00:03:25,090 --> 00:03:31,300
+then with Colon is dynamically bound to selected component like that.
+
+45
+00:03:31,300 --> 00:03:36,540
+Now I also want to add a button which allows me to switch between both.
+
+46
+00:03:36,760 --> 00:03:44,350
+So hirable have my button with Button button primary and Hiro simply want to toss all my components.
+
+47
+00:03:44,350 --> 00:03:48,910
+Of course you could also use a drop down instead of a but I'm going to use it like this.
+
+48
+00:03:49,150 --> 00:03:51,450
+And here I simply want to have a click listener.
+
+49
+00:03:52,240 --> 00:04:02,760
+Where I check if selected component equals AB success alert if that is the case then I want a set selected
+
+50
+00:04:02,790 --> 00:04:10,600
+component and now this is getting really long pole chess for days does danger alert overwise separate
+
+51
+00:04:10,620 --> 00:04:11,860
+with the colon here.
+
+52
+00:04:12,070 --> 00:04:20,120
+I want to set selected component equal to app success alert.
+
+53
+00:04:20,140 --> 00:04:23,190
+So it is just hogging between the two components.
+
+54
+00:04:23,200 --> 00:04:25,960
+I'm importing here now.
+
+55
+00:04:25,990 --> 00:04:29,680
+If I go to the application I can see this done here.
+
+56
+00:04:29,890 --> 00:04:31,520
+I can switch between both.
+
+57
+00:04:31,780 --> 00:04:37,720
+And I should maybe go to my success alert and change this to success to make it dream.
+
+58
+00:04:37,810 --> 00:04:41,670
+Also add a horizontal line but now it really looks great.
+
+59
+00:04:41,920 --> 00:04:42,790
+So this works.
+
+60
+00:04:42,790 --> 00:04:46,160
+Now I want to animate is not new animated.
+
+61
+00:04:46,420 --> 00:04:54,040
+I'll go back in my application and in here of course I wrap this in a transition element like we learned
+
+62
+00:04:54,040 --> 00:04:54,910
+before.
+
+63
+00:04:55,240 --> 00:04:57,520
+So here tips like this.
+
+64
+00:04:57,520 --> 00:05:04,500
+What I want to do though is I now want to transition my component our my dynamic component.
+
+65
+00:05:04,680 --> 00:05:11,670
+Now can you do this just by using name Faid for example again to use this fade animation or is set up.
+
+66
+00:05:11,770 --> 00:05:19,290
+And now if we load again we already see we get this working though we get this ugly champ again.
+
+67
+00:05:19,310 --> 00:05:24,830
+So to avoid this are against demotes to out in ask before.
+
+68
+00:05:25,040 --> 00:05:30,440
+And now we're able to use this just like we used to two divs before but now there's a dynamic component
+
+69
+00:05:30,530 --> 00:05:35,870
+and here of course we could have multiple dynamic components because it will ensure that only one is
+
+70
+00:05:35,870 --> 00:05:41,480
+loaded at a time and that's the only thing transition cares about not between how many elements you're
+
+71
+00:05:41,570 --> 00:05:45,650
+switching but that in the end you're only displaying one at a time.
+
+72
+00:05:45,890 --> 00:05:48,670
+Well we're going to leave this one at a time.
+
+73
+00:05:48,680 --> 00:05:54,350
+So in with the next release though where we will have a look at how we can animate lace or generally
+
+74
+00:05:54,440 --> 00:05:55,530
+groups of items.
+

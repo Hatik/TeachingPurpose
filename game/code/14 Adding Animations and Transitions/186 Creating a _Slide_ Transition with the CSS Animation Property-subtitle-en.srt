@@ -1,0 +1,192 @@
+1
+00:00:01,800 --> 00:00:04,850
+So we now want to use animation instead of transmission.
+
+2
+00:00:04,890 --> 00:00:06,670
+Let's say we want to slide this in.
+
+3
+00:00:06,720 --> 00:00:12,180
+We could also achieve a slide in effect with the transmission property but for demo purposes let's use
+
+4
+00:00:12,180 --> 00:00:13,360
+animation.
+
+5
+00:00:13,620 --> 00:00:19,260
+I need to set up these slide entry class there for I haven't attached it up there yet but I will do
+
+6
+00:00:19,260 --> 00:00:20,650
+so in a second.
+
+7
+00:00:20,880 --> 00:00:27,670
+Slide enter here we will have slide enter active and then we will also need slide leave.
+
+8
+00:00:27,690 --> 00:00:30,170
+And of course slide leef active.
+
+9
+00:00:30,200 --> 00:00:37,610
+So these are DCs ASC clauses which you could now use by setting up a name of slide here.
+
+10
+00:00:37,720 --> 00:00:40,810
+I'll leave it at fate for now though.
+
+11
+00:00:40,890 --> 00:00:45,990
+Now these classes don't do that much right now for any nations to be playable.
+
+12
+00:00:45,990 --> 00:00:51,720
+I also need to set up some key frames with key frames and I will have a slide in any nation and then
+
+13
+00:00:51,720 --> 00:00:53,420
+I'll slide out animation.
+
+14
+00:00:53,430 --> 00:00:56,660
+Now here you could specify the individual percentages.
+
+15
+00:00:56,700 --> 00:01:04,850
+I'm going to say from and to to keep it real simple and I want to start sliding it in with transforms
+
+16
+00:01:04,860 --> 00:01:12,420
+so when I move it in its position here with translate y on the y axis and then I want to move it by
+
+17
+00:01:12,420 --> 00:01:20,930
+20 pixels and 2 is where I want to end and I want to and a real position of the element hands translate
+
+18
+00:01:20,930 --> 00:01:26,140
+y Shelby set to Ciro which is the position the element really has the document flow.
+
+19
+00:01:26,490 --> 00:01:33,290
+Well and for that basically copy that forty's slide out animation sales slide out like this.
+
+20
+00:01:35,490 --> 00:01:49,130
+And then all in do here is moved is like that and then renamed us from into loops from 2 to also slide
+
+21
+00:01:49,130 --> 00:01:54,620
+it out on the y axis again so that we have a nice sliding animation of course set up any animation you
+
+22
+00:01:54,620 --> 00:01:55,580
+want.
+
+23
+00:01:55,580 --> 00:01:58,470
+Now with these tricky frames you're configured.
+
+24
+00:01:58,760 --> 00:02:02,180
+I can now set up these slide class up here.
+
+25
+00:02:02,180 --> 00:02:09,380
+Now on Slide enter I could set up transform and then translate Y and then 20 pixels because that is
+
+26
+00:02:09,380 --> 00:02:13,490
+our beginning stage here though as I do set it up as a key frame here.
+
+27
+00:02:13,490 --> 00:02:15,340
+I don't really need to set it up here again.
+
+28
+00:02:15,380 --> 00:02:17,480
+It wouldn't hurt but it also isn't needed.
+
+29
+00:02:17,570 --> 00:02:23,700
+So now special starting state again because we do set up the starting state here in the keyframes Since
+
+30
+00:02:23,750 --> 00:02:27,770
+will use the CSSA animation in slide interactive.
+
+31
+00:02:27,770 --> 00:02:33,620
+I now want to play this animation so the animation Shelby slide in referring to Diski frame here of
+
+32
+00:02:33,620 --> 00:02:34,380
+course.
+
+33
+00:02:34,580 --> 00:02:41,470
+Over one second let's say we have that ease out using function 2 and a bit slower than we start.
+
+34
+00:02:41,600 --> 00:02:47,090
+And importantly we need to set up forwards so that the element stays in the finishing position off this
+
+35
+00:02:47,090 --> 00:02:53,380
+animation and doesn't snap back to the start well and we're leaving here there.
+
+36
+00:02:53,390 --> 00:02:59,870
+I want to use no initial state because I no need to the starting position of the element is the default
+
+37
+00:02:59,870 --> 00:03:06,320
+position Alte element but I want to animation for the time where this active class is attached.
+
+38
+00:03:06,350 --> 00:03:15,760
+And here I want to slide it in excuse me I want to use slide out or one second with ease out again and
+
+39
+00:03:15,770 --> 00:03:17,800
+forwards to keep it down there.
+
+40
+00:03:17,950 --> 00:03:21,830
+And with that if we save this we can now go up here.
+
+41
+00:03:21,880 --> 00:03:23,620
+Copy that.
+
+42
+00:03:23,620 --> 00:03:29,800
+That they have in this transition now add a second one with the slide class and let's reload this and
+
+43
+00:03:29,800 --> 00:03:34,070
+showed us this slides up and slice down.
+
+44
+00:03:34,100 --> 00:03:35,920
+Now this all really looks great.
+
+45
+00:03:35,920 --> 00:03:44,050
+We see now we're using a C S S and you mation to use it or to animate this though it's a bit too bad
+
+46
+00:03:44,070 --> 00:03:49,510
+or I don't like that it instantly slides down and appears like that would be nicer if it would also
+
+47
+00:03:49,510 --> 00:03:52,190
+become transparent over the time period.
+
+48
+00:03:52,390 --> 00:03:56,500
+So in the next you let's see how we can mix transition and animation.
+

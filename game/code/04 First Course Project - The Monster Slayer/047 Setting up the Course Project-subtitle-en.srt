@@ -1,0 +1,124 @@
+1
+00:00:02,020 --> 00:00:05,140
+So where are you successful let's build it together.
+
+2
+00:00:05,410 --> 00:00:12,970
+These are the assets you got these asphalt 40 foundation grid I'm using and my own see us fall forward
+
+3
+00:00:13,050 --> 00:00:16,130
+Stults all use for this project here.
+
+4
+00:00:16,180 --> 00:00:21,040
+Then I got the index page Steimle fall with obviously the AGM all killed and now it's time to add a
+
+5
+00:00:21,040 --> 00:00:27,050
+script we could it in line here at the end of this or simply add a new script file.
+
+6
+00:00:27,070 --> 00:00:33,780
+So I'll add a new app dot js file which of course I need to import in my index HVM I'll follow.
+
+7
+00:00:33,810 --> 00:00:34,630
+Now and Here.
+
+8
+00:00:34,870 --> 00:00:41,540
+So here are all imported script source equals app dot J.S. with this.
+
+9
+00:00:41,570 --> 00:00:45,270
+I can now write my app here in the app yes file.
+
+10
+00:00:45,620 --> 00:00:50,610
+And for writing this of course we have to consider which features do we have.
+
+11
+00:00:50,960 --> 00:00:57,020
+Well if we have a look at the application we get our health bars so we certainly need to control the
+
+12
+00:00:57,020 --> 00:00:58,400
+health of each player.
+
+13
+00:00:58,490 --> 00:01:04,620
+So probably makes sense to kind of yeah I have two properties for that.
+
+14
+00:01:04,810 --> 00:01:10,070
+We conditionally don't want to change the style depending on that health and we want to output it as
+
+15
+00:01:10,070 --> 00:01:12,480
+a net number as text here.
+
+16
+00:01:12,500 --> 00:01:19,760
+We also got these buttons here for which we need some methods to execute when we click on them to start
+
+17
+00:01:19,760 --> 00:01:27,020
+a new game and to have our special things we can do here like attacks special attack heal and give up
+
+18
+00:01:27,680 --> 00:01:34,820
+and then we might need some additional functions for example to render or to simulate the monster attack
+
+19
+00:01:34,820 --> 00:01:39,780
+turn to generate a random number to add a turn to days.
+
+20
+00:01:39,830 --> 00:01:45,090
+Logwood outputting down there which we as a side note also need to store in some kind of array.
+
+21
+00:01:45,410 --> 00:01:49,710
+And yup this looks like the things we will need for days.
+
+22
+00:01:50,000 --> 00:01:57,710
+Now I want to start simple by setting up the player health and outputting it there and adding a conditional
+
+23
+00:01:57,710 --> 00:01:59,710
+style depending on the player health.
+
+24
+00:01:59,750 --> 00:02:06,530
+So that later on when we add functions to change this we can directly see this being reflected in our
+
+25
+00:02:06,530 --> 00:02:10,330
+application to execute this application.
+
+26
+00:02:10,340 --> 00:02:17,580
+You can simply double click on the index file and executed in the browser like this.
+
+27
+00:02:17,600 --> 00:02:23,350
+Now this is not how it will look in the end does this just without any javascript code added to it later
+
+28
+00:02:23,350 --> 00:02:28,850
+in of course we will have more complex setups where we use a little development server to host our application
+
+29
+00:02:28,850 --> 00:02:29,740
+on the local machine.
+
+30
+00:02:29,750 --> 00:02:33,730
+But right now we don't need that and can work with this perfectly fine.
+
+31
+00:02:33,890 --> 00:02:35,290
+So let's dive into that.
+

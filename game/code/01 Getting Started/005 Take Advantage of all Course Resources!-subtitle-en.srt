@@ -1,0 +1,108 @@
+1
+00:00:02,090 --> 00:00:08,440
+Froths course you get a lot of videos where I will explain all the concepts in detail but sometimes
+
+2
+00:00:08,440 --> 00:00:09,820
+you need a bit more than that.
+
+3
+00:00:09,880 --> 00:00:11,570
+You don't only want to watch me code.
+
+4
+00:00:11,620 --> 00:00:13,030
+You want to code yourself.
+
+5
+00:00:13,180 --> 00:00:19,000
+Well it's for that reason that we will build for projects for all the course practicing the different
+
+6
+00:00:19,000 --> 00:00:20,200
+concepts we all learn.
+
+7
+00:00:20,200 --> 00:00:25,870
+So they are scattered out from the cores and we will well finally conclude this course with Boling our
+
+8
+00:00:25,870 --> 00:00:30,100
+final project which is a complete single page application in the end.
+
+9
+00:00:30,430 --> 00:00:37,090
+But besides these projects I also got a lot of quicker exercises mixed in so little exercises where
+
+10
+00:00:37,090 --> 00:00:42,320
+you practice single key concepts of that module the exercises place then.
+
+11
+00:00:42,490 --> 00:00:48,220
+So together with the projects and the exercises usually have a lot of coding challenges for the course
+
+12
+00:00:48,550 --> 00:00:54,840
+which allow you to practice the things you will see in the videos on your own.
+
+13
+00:00:54,880 --> 00:00:59,620
+But besides that of course you can all find all the source code attached to the last lecture in each
+
+14
+00:00:59,620 --> 00:01:00,240
+module.
+
+15
+00:01:00,250 --> 00:01:05,070
+So if you want to have a look at the code we worked through in the video to get over that is where we
+
+16
+00:01:05,120 --> 00:01:07,500
+you would go to see it in action.
+
+17
+00:01:07,930 --> 00:01:14,050
+Well and finally there's always the Q&amp;A section where you can and should ask questions if you were in
+
+18
+00:01:14,050 --> 00:01:15,420
+doubt about something.
+
+19
+00:01:15,430 --> 00:01:21,730
+Now there are a lot of students and myself helping you there and replying to your questions but always
+
+20
+00:01:21,730 --> 00:01:28,090
+keep in mind asking questions is great but also consider answering the questions of our students.
+
+21
+00:01:28,090 --> 00:01:33,400
+This really is how you'll learn the most because you really have to challenge the things you've learned
+
+22
+00:01:33,440 --> 00:01:36,150
+and reiterate them in such a case.
+
+23
+00:01:36,160 --> 00:01:39,790
+So I strongly recommend answering questions too.
+
+24
+00:01:39,820 --> 00:01:41,660
+This will give you the most.
+
+25
+00:01:41,890 --> 00:01:46,330
+Well and with that I'd say let's have a look at how we could set up this project locally if you don't
+
+26
+00:01:46,330 --> 00:01:50,370
+want to use chairs fiddle in the first course much saltier and thereafter.
+
+27
+00:01:50,380 --> 00:01:53,600
+Time to get started and I've super deep interview Chaz.
+

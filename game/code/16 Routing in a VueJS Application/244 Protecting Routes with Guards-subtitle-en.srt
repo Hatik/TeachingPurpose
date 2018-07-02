@@ -1,0 +1,60 @@
+1
+00:00:02,030 --> 00:00:10,850
+Now speaking of navigation controls we're already deeply in the routeing topic and there's one thing
+
+2
+00:00:11,120 --> 00:00:13,570
+which you will need from time to time.
+
+3
+00:00:13,580 --> 00:00:19,970
+You want to control if a user is allowed to enter a certain route or if he's allowed to leave it.
+
+4
+00:00:20,360 --> 00:00:28,010
+Let's say if we load the user detail page here and then we click on edit we want to control whether
+
+5
+00:00:28,010 --> 00:00:30,440
+the user was allowed to visit the page.
+
+6
+00:00:30,620 --> 00:00:33,890
+Let's say with arbitrary user is locked in check.
+
+7
+00:00:34,340 --> 00:00:39,960
+And then if the user was an user at a page we want to control if he's allowed to leave by let's say
+
+8
+00:00:39,950 --> 00:00:47,810
+in a flowing in a button in here where our eyes simply want to say confirm So let's say some edits were
+
+9
+00:00:47,810 --> 00:00:54,560
+made and only after this button was clicked do we want to let the user navigate away our wise if changes
+
+10
+00:00:54,560 --> 00:00:55,310
+were confirmed.
+
+11
+00:00:55,310 --> 00:01:00,120
+For example we want to at least ask the user if he wants to navigate away.
+
+12
+00:01:00,290 --> 00:01:06,310
+So we get these two checks before a user enters or out and after he will read once he wants to leave
+
+13
+00:01:06,420 --> 00:01:06,860
+out.
+
+14
+00:01:07,010 --> 00:01:08,540
+Let him put it like this.
+
+15
+00:01:08,600 --> 00:01:10,940
+Let's have a look at these two cases and the next video is.
+

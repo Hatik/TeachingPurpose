@@ -1,0 +1,232 @@
+1
+00:00:02,080 --> 00:00:05,140
+I created this monocles folder in the last video.
+
+2
+00:00:05,490 --> 00:00:07,610
+What's the idea behind modules.
+
+3
+00:00:07,720 --> 00:00:14,800
+The idea behind modules is that in our store here we may have certain parts which belong to different
+
+4
+00:00:14,800 --> 00:00:20,650
+parts of our application for example to counter the counter and all the related getters and actions
+
+5
+00:00:20,650 --> 00:00:25,550
+belong to our account or don't you follow our in number we saw you fall and so on.
+
+6
+00:00:25,990 --> 00:00:29,950
+But de-value here for example is only used an hour after you fall.
+
+7
+00:00:29,950 --> 00:00:35,690
+Now I will admit that is a bit of a constructed example because it's very short but you will see it
+
+8
+00:00:35,710 --> 00:00:41,380
+in the final application we build in the next march Lindis course where we will actually have a separation
+
+9
+00:00:41,380 --> 00:00:46,350
+which makes much more sense anyways to show the idea behind modules.
+
+10
+00:00:46,570 --> 00:00:53,350
+It would be an idea to split up these stored up chairs file into two different modules where each module
+
+11
+00:00:53,350 --> 00:00:58,360
+has its own getters and mutations and state and so on.
+
+12
+00:00:58,360 --> 00:01:02,290
+So for days I will create two new files in this modules folder.
+
+13
+00:01:02,290 --> 00:01:04,750
+The first one all name countercharge.
+
+14
+00:01:04,790 --> 00:01:05,520
+Yes.
+
+15
+00:01:05,620 --> 00:01:08,490
+And the second one will get the name value.
+
+16
+00:01:08,620 --> 00:01:12,810
+Yes lets start encountered Dutchesse file here.
+
+17
+00:01:12,880 --> 00:01:18,400
+I want to create a constant named state and that is an object.
+
+18
+00:01:18,400 --> 00:01:24,490
+It actually is the same object as here though of course I'm only interested in the counter so I'll pull
+
+19
+00:01:24,490 --> 00:01:27,810
+that out of here and instead added here.
+
+20
+00:01:27,820 --> 00:01:30,210
+So counter initially is 0.
+
+21
+00:01:30,520 --> 00:01:33,620
+That is my state in our store.
+
+22
+00:01:33,640 --> 00:01:36,540
+We also got some getters related to our counter.
+
+23
+00:01:36,580 --> 00:01:44,190
+So let's copy them or cut them and let's create a new constant here gathers getters snarls as an object
+
+24
+00:01:44,330 --> 00:01:47,800
+where we do have our getters inside.
+
+25
+00:01:47,830 --> 00:01:50,830
+Now we can do the same for our mutations.
+
+26
+00:01:50,860 --> 00:02:00,040
+So let's fetch them to you here and let's add our Konst mutations which is an object which now holds
+
+27
+00:02:00,170 --> 00:02:01,920
+holds our mutations.
+
+28
+00:02:02,260 --> 00:02:05,780
+Well you guessed it we can do the same for our actions.
+
+29
+00:02:05,800 --> 00:02:08,360
+Let's fetch our actions from there.
+
+30
+00:02:08,590 --> 00:02:17,480
+And now let's add a new Konst actions file a constant here at the actions in there and the actions are
+
+31
+00:02:17,480 --> 00:02:18,920
+finished.
+
+32
+00:02:18,920 --> 00:02:25,600
+Next we want to export that all in a default object so that we only have one export in the whole file.
+
+33
+00:02:25,790 --> 00:02:31,730
+And this object has the state and I'm using this E-6 shortcut where this will automatically be expanded
+
+34
+00:02:31,730 --> 00:02:38,060
+to state state but since it has the same name I can't just use state here and just use mutations and
+
+35
+00:02:38,060 --> 00:02:45,290
+so on to use all these constants to automatically create key value pairs where the key is state mutations
+
+36
+00:02:45,320 --> 00:02:46,060
+and so on.
+
+37
+00:02:46,130 --> 00:02:52,050
+And the value is the stayed constant mutations constant and so on.
+
+38
+00:02:52,070 --> 00:02:58,700
+So all the added getters here of course and with that I'm exporting an object with all my counter laded
+
+39
+00:02:58,970 --> 00:03:02,000
+view x components let's say.
+
+40
+00:03:02,000 --> 00:03:07,670
+Now any store that genius fall I'll leave the value part in your for now.
+
+41
+00:03:07,700 --> 00:03:18,800
+We could outsource it into dis valued Shiahs file your could hold value view X parts but leave it in
+
+42
+00:03:18,800 --> 00:03:23,760
+the central file because I want to show something else with that file later on.
+
+43
+00:03:24,230 --> 00:03:31,730
+However since I now Agah exported so much or outsource so much into my counter chess file I somehow
+
+44
+00:03:31,730 --> 00:03:37,340
+need to merge it into Does central store in the end because one thing doesn't change.
+
+45
+00:03:37,340 --> 00:03:44,540
+We have one central story even though I do have a state here in my counter-charges fall that is only
+
+46
+00:03:44,540 --> 00:03:46,140
+kind of temporarily.
+
+47
+00:03:46,280 --> 00:03:51,890
+I want to merge it into the central store in the end because data something will always have a central
+
+48
+00:03:51,900 --> 00:03:54,040
+storage with a central state.
+
+49
+00:03:54,050 --> 00:03:56,890
+How do I get my counter-charges state.
+
+50
+00:03:56,900 --> 00:04:03,590
+My counter Chaske getters and so on back into the store that Che's fall in my central store by simply
+
+51
+00:04:03,590 --> 00:04:07,280
+adding a new property at the end modules.
+
+52
+00:04:07,610 --> 00:04:13,100
+Now module's is a jealous crypt object and here I simply add all the modules I have.
+
+53
+00:04:13,220 --> 00:04:22,600
+Now I have only one but that's better than nothing so let's import counter from module's counter.
+
+54
+00:04:22,610 --> 00:04:28,460
+So from this count Cheras file and then again I could say counter cole and counter but since the name
+
+55
+00:04:28,460 --> 00:04:33,220
+and value is equal I can simply say counter L-EB is 6 handle this.
+
+56
+00:04:33,410 --> 00:04:40,040
+And with this demarche is now important and if I hit save you will see that if this reloads it still
+
+57
+00:04:40,040 --> 00:04:49,810
+works as before but now with this split up over multiple modules which already makes it easier to read.
+
+58
+00:04:50,000 --> 00:04:53,370
+But it can improve this even more as you will learn in the next video.
+

@@ -1,0 +1,92 @@
+1
+00:00:01,860 --> 00:00:07,650
+We're already a good chunk from the Course you'll learn a lot about you chessboards different features
+
+2
+00:00:07,830 --> 00:00:12,030
+how to enhance both animations how to use components and much more.
+
+3
+00:00:12,030 --> 00:00:13,950
+Now we're nearing the end though.
+
+4
+00:00:14,190 --> 00:00:21,420
+Whilst that is true time wise there are big important chunks of a feature as beauty as offerings years
+
+5
+00:00:21,750 --> 00:00:22,430
+to come.
+
+6
+00:00:22,440 --> 00:00:27,210
+For example HTP until now we were contained in our application.
+
+7
+00:00:27,210 --> 00:00:32,130
+We weren't able to reach out to a server though typically in a lot of applications.
+
+8
+00:00:32,130 --> 00:00:34,730
+You from time to time need to reach out to a server.
+
+9
+00:00:34,740 --> 00:00:40,410
+You need to fetch some resource Snee to fetch some data or store some data out there especially when
+
+10
+00:00:40,410 --> 00:00:46,200
+building single page applications something will really dive into in the next Martial's in the last
+
+11
+00:00:46,200 --> 00:00:52,050
+motions of course especially when doing that but not limited to this use case you oftentimes need to
+
+12
+00:00:52,050 --> 00:00:53,560
+make such requests.
+
+13
+00:00:53,640 --> 00:00:58,590
+Now a lot of the requests you do make all requests and single page applications as a side note but a
+
+14
+00:00:58,590 --> 00:01:03,500
+lot of requests in the normal service side application may want to be done.
+
+15
+00:01:03,510 --> 00:01:09,390
+Why are checks which means in the background behind the scenes you don't necessarily want to send the
+
+16
+00:01:09,390 --> 00:01:16,230
+request and get back to page you want to stay on the current page and only reload parts of it or reload
+
+17
+00:01:16,230 --> 00:01:21,720
+some data or store some data while keeping the user on the page and not reloading it in the browser
+
+18
+00:01:21,870 --> 00:01:23,760
+or navigating to another one.
+
+19
+00:01:23,760 --> 00:01:28,530
+This is especially true for a single page applications where the whole purpose is to stay on one single
+
+20
+00:01:28,530 --> 00:01:28,970
+page.
+
+21
+00:01:29,220 --> 00:01:31,470
+But it's true for other applications too.
+
+22
+00:01:31,500 --> 00:01:38,960
+Therefore in this module we will dive into how we can use HTP or how we can access the web from the
+
+23
+00:01:39,190 --> 00:01:39,780
+US.
+

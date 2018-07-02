@@ -1,0 +1,160 @@
+1
+00:00:01,620 --> 00:00:07,630
+Back and chase fuddle time to understand what happens behind the scenes when we create a new view instance
+
+2
+00:00:07,930 --> 00:00:13,750
+like we do here with the new View keyword of course I already explained that it takes a template and
+
+3
+00:00:13,750 --> 00:00:16,220
+updates of Dom based on that template.
+
+4
+00:00:16,270 --> 00:00:23,260
+But behind the scenes it follows from a complex lifecycle update into which we may tap in to execute
+
+5
+00:00:23,260 --> 00:00:24,250
+certain code.
+
+6
+00:00:24,340 --> 00:00:25,890
+Let's have a look at this lifecycle.
+
+7
+00:00:25,960 --> 00:00:31,290
+The view chase instance life cycle starts with the new View constructor there.
+
+8
+00:00:31,330 --> 00:00:36,770
+We then execute the first lifecycle method to which we can listen ravelled showed us a second before
+
+9
+00:00:36,810 --> 00:00:37,500
+create.
+
+10
+00:00:37,520 --> 00:00:43,690
+This is as the same applies for the view instance is created thereafter it initializes the data and
+
+11
+00:00:43,690 --> 00:00:50,170
+events we pass to the object or with the object to the view instance and then creates the instance and
+
+12
+00:00:50,230 --> 00:00:57,370
+Kosti created lifecycle hook method to which we can alter lists or into which we can also tap in Thereafter
+
+13
+00:00:57,460 --> 00:01:05,550
+it compounds the template or it derives the template from our aged team all killed if we use Al or mounted
+
+14
+00:01:05,920 --> 00:01:10,600
+so it never uses the template provided in the template property or the one it derives.
+
+15
+00:01:10,600 --> 00:01:15,280
+We saw that before in action then before MT is reached.
+
+16
+00:01:15,310 --> 00:01:22,600
+DS is asked to name a Bligh's called right before it this template which is rendered is mounted to the
+
+17
+00:01:22,600 --> 00:01:24,970
+real Dom is written to the real Dom.
+
+18
+00:01:24,970 --> 00:01:26,780
+So it's not there yet.
+
+19
+00:01:27,870 --> 00:01:34,490
+Now we replace the element soda's element in the view instance with the compiled template.
+
+20
+00:01:34,500 --> 00:01:40,890
+It's still not mounted but now Buquet us compiled a template inserted all the values for the string
+
+21
+00:01:40,890 --> 00:01:43,650
+and tribulations set up all the bindings.
+
+22
+00:01:43,650 --> 00:01:47,150
+So converted it to real h code so to say.
+
+23
+00:01:47,310 --> 00:01:49,070
+But still behind the scenes.
+
+24
+00:01:49,350 --> 00:01:51,280
+But now we mounted to the dawn.
+
+25
+00:01:51,300 --> 00:01:57,270
+So we take this compile template which is except the VHDL code we will see in the dorm and he writes
+
+26
+00:01:57,270 --> 00:01:58,470
+it to the dawn.
+
+27
+00:01:58,470 --> 00:02:04,190
+Now our view instance is hooked up to the dorm and is or can be seen there.
+
+28
+00:02:04,650 --> 00:02:06,120
+It's not done though.
+
+29
+00:02:06,480 --> 00:02:13,920
+We get an ongoing lifecycle which we can tap into multiple times which is if some data changes and the
+
+30
+00:02:13,920 --> 00:02:20,310
+DOM is re rendered here we get the before update lifecycle look right the four be re rendered.
+
+31
+00:02:20,390 --> 00:02:26,010
+So after we saw that the data changed but before that Dom is re rendered or a part of the dom I should
+
+32
+00:02:26,010 --> 00:02:33,310
+say and the updated lifecycle which is obviously called after this part in the dorm was updated.
+
+33
+00:02:33,390 --> 00:02:39,200
+We also got the before destroy life cycle right for an instance is destroyed.
+
+34
+00:02:39,240 --> 00:02:43,140
+I will show you how the instance may get destroyed in a second.
+
+35
+00:02:43,350 --> 00:02:49,170
+This is the beauty of lifecycle and it then ends with the destroyed lifecycle hook into which we can
+
+36
+00:02:49,170 --> 00:02:52,790
+tap in right after the instance was destroyed.
+
+37
+00:02:53,310 --> 00:02:59,370
+All these methods here can be used to execute some code in the different phases of the lifecycle for
+
+38
+00:02:59,370 --> 00:03:01,990
+example whenever we want to execute the code.
+
+39
+00:03:02,100 --> 00:03:08,040
+Once the DOM were a part of the Dom has been updated we could do an updated lifecycle look well let's
+
+40
+00:03:08,040 --> 00:03:10,070
+see it in action in the next lecture.
+

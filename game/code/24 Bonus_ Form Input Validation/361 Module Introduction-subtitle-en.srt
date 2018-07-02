@@ -1,0 +1,56 @@
+1
+00:00:02,320 --> 00:00:09,330
+Well come to this module as announced in the previous video does Marchal builds up on the authentication
+
+2
+00:00:09,330 --> 00:00:13,310
+and Access Module in a way that we use the same project.
+
+3
+00:00:13,320 --> 00:00:17,140
+You can still dive into this march without going through these first.
+
+4
+00:00:17,280 --> 00:00:23,290
+But then of course some things like usage of access might be new to you in this module however.
+
+5
+00:00:23,340 --> 00:00:26,180
+Focus on validating user input.
+
+6
+00:00:26,360 --> 00:00:31,980
+In his view course we already have a whole section where we talk about forums how we can create custom
+
+7
+00:00:31,980 --> 00:00:34,510
+controls all these things.
+
+8
+00:00:34,680 --> 00:00:36,090
+That's all nice.
+
+9
+00:00:36,090 --> 00:00:42,900
+But one thing we haven't really touched on is how you can validate what the user enters if it is correct
+
+10
+00:00:42,990 --> 00:00:46,870
+F-8 fulfills your requirements in this module.
+
+11
+00:00:46,920 --> 00:00:53,850
+I'll show you a third party package which offers such validation functionality because the view itself
+
+12
+00:00:54,120 --> 00:00:55,910
+doesn't have it built into it.
+
+13
+00:00:56,160 --> 00:01:01,490
+So with that let's start and let's see how we can find out if our users entered the data.
+
+14
+00:01:01,530 --> 00:01:02,700
+We expect to get.
+

@@ -1,0 +1,140 @@
+1
+00:00:02,380 --> 00:00:06,320
+In order to work with X-ists we need an application.
+
+2
+00:00:06,370 --> 00:00:12,970
+And I actually created a very simple new application which you can find attached to this project simply
+
+3
+00:00:12,970 --> 00:00:14,930
+download and extract that run.
+
+4
+00:00:14,940 --> 00:00:19,750
+NPM install in the extract folder and then run and run death.
+
+5
+00:00:19,750 --> 00:00:26,330
+I used DB use Seelye and the web page simple template to create an application.
+
+6
+00:00:26,340 --> 00:00:30,030
+Now once you open the application it should look like this.
+
+7
+00:00:30,030 --> 00:00:34,360
+It's a Web page where you have a sign up a sign it and a dashboard page.
+
+8
+00:00:34,380 --> 00:00:36,090
+All of these links work by default.
+
+9
+00:00:36,090 --> 00:00:38,150
+You can also go back to the welcome page.
+
+10
+00:00:38,430 --> 00:00:45,190
+Now one important note here this page of course looks like you can actually sign up and sign in.
+
+11
+00:00:45,240 --> 00:00:49,170
+Right now though you can't that's something important.
+
+12
+00:00:49,170 --> 00:00:54,640
+We will however in a later module also add authentication logic to this.
+
+13
+00:00:54,660 --> 00:00:57,170
+That's another part of the course update.
+
+14
+00:00:57,230 --> 00:01:03,100
+Additionally will also make sure that we validate the user input in this form year.
+
+15
+00:01:03,330 --> 00:01:07,550
+For now however I will focus on the axioms.
+
+16
+00:01:07,560 --> 00:01:11,100
+So on the send data to HTP part.
+
+17
+00:01:11,100 --> 00:01:14,290
+So that is what we'll cover in this module.
+
+18
+00:01:14,370 --> 00:01:19,190
+That's the application we got it's finished from you all perspective.
+
+19
+00:01:19,200 --> 00:01:22,230
+But of course it doesn't have a lot of logic in there.
+
+20
+00:01:22,230 --> 00:01:29,100
+Now what I want to do in this module is I want to add some code here in my Sign-Up though you fall where
+
+21
+00:01:29,100 --> 00:01:38,330
+we fetch a lot of user data and add code to actually send dead data to the backend to some server essentially.
+
+22
+00:01:38,320 --> 00:01:42,560
+And I want to do this with access now as a back end.
+
+23
+00:01:42,660 --> 00:01:49,080
+I want to use firebase you can of course use any back and any restfully API but firebase is that easy
+
+24
+00:01:49,080 --> 00:01:51,480
+to use rest API essentially.
+
+25
+00:01:51,510 --> 00:01:57,180
+So what you can do is you can simply go to the consul there and even use an existing project or add
+
+26
+00:01:57,210 --> 00:01:58,260
+a new one.
+
+27
+00:01:58,850 --> 00:02:05,780
+And once you did create this new project make sure to go to database on your firebase back end there.
+
+28
+00:02:05,780 --> 00:02:10,160
+Pick the real time database they nowadays have an option year but let's stick to that.
+
+29
+00:02:10,160 --> 00:02:15,610
+Click on get started and there's one important configuration you need to set under rules.
+
+30
+00:02:15,650 --> 00:02:19,660
+Make sure to set both read and write access to true.
+
+31
+00:02:19,850 --> 00:02:22,630
+That basically grants everyone read and write access.
+
+32
+00:02:22,640 --> 00:02:27,070
+You probably don't want this for your production application but we want this now.
+
+33
+00:02:27,200 --> 00:02:33,730
+We will in one of the next modules though change this to only grant access to any kind its users.
+
+34
+00:02:33,740 --> 00:02:39,860
+So with that let's go back to our application and let's start working on our view application.
+
+35
+00:02:39,860 --> 00:02:43,190
+Over the next lectures let's use xes stair.
+

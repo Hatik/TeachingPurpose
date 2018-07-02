@@ -1,0 +1,272 @@
+1
+00:00:01,820 --> 00:00:04,210
+Which features could I add to my directive.
+
+2
+00:00:04,490 --> 00:00:10,940
+Well I want to show how to use multiple modifiers and how to pass more complex data than just a string
+
+3
+00:00:10,940 --> 00:00:11,550
+here.
+
+4
+00:00:11,810 --> 00:00:13,890
+Let's start with the model model for us.
+
+5
+00:00:14,180 --> 00:00:21,590
+Let's say a one at a modifier word is not only has the possibility you get added delayed but also to
+
+6
+00:00:21,620 --> 00:00:22,300
+blink.
+
+7
+00:00:22,370 --> 00:00:31,260
+So to alternate between two states one sigh Well have it set it up so I can add Don't blink here.
+
+8
+00:00:31,590 --> 00:00:36,200
+Now in order to be able to use this I also need to check this of course in my code.
+
+9
+00:00:36,210 --> 00:00:45,930
+So hirable add another if check where I check if binding modifiers has this Blinkx key here.
+
+10
+00:00:45,930 --> 00:00:53,040
+Now if I do have this I want to set up this time out and then the interval inside of this time out.
+
+11
+00:00:53,250 --> 00:00:59,490
+Otherwise in the else block if we don't have this modifier I just want to use the timeout as with that
+
+12
+00:00:59,490 --> 00:01:00,030
+before.
+
+13
+00:01:00,030 --> 00:01:02,850
+So this code will remain untouched.
+
+14
+00:01:02,850 --> 00:01:10,740
+Now what I want to do here in the blink case well here I simply want to alternate between two colors.
+
+15
+00:01:10,770 --> 00:01:14,410
+So I will create new variables and I use the VAR before.
+
+16
+00:01:14,430 --> 00:01:22,210
+But since views 6 code I can also use LET here let ISDE ESX variable which is block skilled.
+
+17
+00:01:22,230 --> 00:01:26,580
+That is a difference and you want to check out that 6 tutorial to learn more about it.
+
+18
+00:01:26,640 --> 00:01:28,450
+You could still use Wardo.
+
+19
+00:01:28,590 --> 00:01:36,060
+So let here just to alternate This allows me to define a new variable and I will set up the main color
+
+20
+00:01:36,060 --> 00:01:36,700
+here.
+
+21
+00:01:37,020 --> 00:01:39,940
+The main color shall be green.
+
+22
+00:01:39,960 --> 00:01:46,700
+Let's say then I will set up my second color and this shall be blue.
+
+23
+00:01:46,730 --> 00:01:50,390
+Because again when I blink I want to switch between both colors.
+
+24
+00:01:50,960 --> 00:01:54,010
+I can also say the main colors should be what the user passes.
+
+25
+00:01:54,020 --> 00:01:56,380
+So let's say binding value.
+
+26
+00:01:56,600 --> 00:01:58,850
+I still do pass a color here red.
+
+27
+00:01:58,880 --> 00:01:59,720
+So let's use that.
+
+28
+00:01:59,720 --> 00:02:00,440
+Why not.
+
+29
+00:02:00,680 --> 00:02:01,850
+So now I get two colors.
+
+30
+00:02:01,880 --> 00:02:06,930
+The second color is hardcoded the first color is set the settable by the user the main color that is.
+
+31
+00:02:07,220 --> 00:02:14,110
+I also want to have a current color and at the beginning this shall be my main color here like dat.
+
+32
+00:02:15,010 --> 00:02:16,720
+OK so with that that's now.
+
+33
+00:02:16,720 --> 00:02:19,290
+Copy that says time out code.
+
+34
+00:02:19,300 --> 00:02:26,500
+But inside there to make it blink I also need to set an interval soil execute set interval interval
+
+35
+00:02:26,530 --> 00:02:27,750
+like this.
+
+36
+00:02:28,060 --> 00:02:34,870
+And there let's set up the duration it should take or how long it should take for it to keep one state
+
+37
+00:02:34,870 --> 00:02:36,550
+before it alternates again.
+
+38
+00:02:36,550 --> 00:02:40,650
+Let's set this to one second so that we can clearly see this is of course totally up to you.
+
+39
+00:02:40,780 --> 00:02:44,530
+And you could also make the cell from outside I will soon show you how.
+
+40
+00:02:44,530 --> 00:02:46,510
+So here is set interval.
+
+41
+00:02:46,510 --> 00:02:50,410
+Then takes a callback which is executed every one second.
+
+42
+00:02:50,590 --> 00:02:54,730
+But it only starts after these three seconds though because it is nested inside the set.
+
+43
+00:02:54,730 --> 00:03:02,660
+Time out and here I want to check if the current color equals the second color.
+
+44
+00:03:02,770 --> 00:03:07,870
+If that is the case then the current color is the main color because it obviously is the second color
+
+45
+00:03:07,870 --> 00:03:08,260
+right now.
+
+46
+00:03:08,260 --> 00:03:12,950
+So I wanted to switch it otherwise I want to do the opposite then current color.
+
+47
+00:03:12,960 --> 00:03:14,760
+Shelby the second color.
+
+48
+00:03:14,920 --> 00:03:17,110
+So that basically will switch my colors.
+
+49
+00:03:17,110 --> 00:03:18,750
+That's all I'm doing here.
+
+50
+00:03:18,910 --> 00:03:21,310
+And that of course shall not be if statement.
+
+51
+00:03:21,460 --> 00:03:23,310
+That's a normal ordinary statement.
+
+52
+00:03:23,400 --> 00:03:24,850
+So like this.
+
+53
+00:03:24,850 --> 00:03:27,220
+This will change my colors.
+
+54
+00:03:27,820 --> 00:03:33,890
+The next line then decides whether it shall change the background color or not.
+
+55
+00:03:33,940 --> 00:03:39,400
+So I will take this code which is currently outside of the interval and put it inside of the interval.
+
+56
+00:03:39,400 --> 00:03:44,880
+So this is of course needed because you still are able to set back on as argument here as we do.
+
+57
+00:03:45,070 --> 00:03:48,040
+So that will determine what color should be alternated.
+
+58
+00:03:48,240 --> 00:03:54,130
+Now of course they all need to change this the background color should now be set to the current color
+
+59
+00:03:54,220 --> 00:03:59,480
+as should be the color in case we're not passing the background argument with this someplace.
+
+60
+00:03:59,500 --> 00:04:01,010
+Let's see if that works.
+
+61
+00:04:01,180 --> 00:04:05,200
+It should start up there free seconds and it alternates.
+
+62
+00:04:05,200 --> 00:04:09,320
+It took an initial of one second because we set up the interval to be 1 second.
+
+63
+00:04:09,460 --> 00:04:11,980
+But as you can see it now blinks.
+
+64
+00:04:12,100 --> 00:04:12,700
+Awesome.
+
+65
+00:04:12,700 --> 00:04:14,430
+This is where you want it.
+
+66
+00:04:14,440 --> 00:04:22,060
+Now let's see how we can control both colors and not just one as well as the duration of this blinking
+
+67
+00:04:22,060 --> 00:04:22,370
+intro.
+
+68
+00:04:22,370 --> 00:04:25,600
+Well I'll show you how to do all these things in the next video.
+

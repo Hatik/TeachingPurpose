@@ -1,0 +1,176 @@
+1
+00:00:02,010 --> 00:00:04,390
+Well we already learned a lot about in here.
+
+2
+00:00:04,440 --> 00:00:10,320
+We'll learn about how to set up routes how to use nest rods how to pass parameters how to react to changes
+
+3
+00:00:10,320 --> 00:00:14,660
+to a parameter how to use query parameters and much more.
+
+4
+00:00:14,670 --> 00:00:17,790
+There's still some things to come and I want to start with.
+
+5
+00:00:17,790 --> 00:00:23,920
+One nice feature you honesty won't need all the time but which can be very nice if you do need it.
+
+6
+00:00:24,150 --> 00:00:28,850
+You can not only name your routes but also your outdrew the use.
+
+7
+00:00:28,860 --> 00:00:30,710
+Where would you use that.
+
+8
+00:00:30,720 --> 00:00:34,260
+Now we do have a nice looking header here like this one.
+
+9
+00:00:34,260 --> 00:00:40,530
+Now let's say we want to attach it at the bottom if we are in the user area for some reason we want
+
+10
+00:00:40,530 --> 00:00:43,070
+to have the header on the bottom there.
+
+11
+00:00:43,410 --> 00:00:51,690
+So in our home component excuse me in our app component I will no longer include the app like this instead
+
+12
+00:00:51,750 --> 00:00:59,490
+I want to have a second router view where the app Hatteras loaded though it may be in different positions
+
+13
+00:00:59,550 --> 00:01:02,430
+depending on which route we're visiting.
+
+14
+00:01:02,430 --> 00:01:05,100
+For this I'll actually replicate this one more time.
+
+15
+00:01:05,130 --> 00:01:14,280
+And now we can give our router views here names like hador top for example and down there that could
+
+16
+00:01:14,280 --> 00:01:17,920
+be had for Bawden and the medlars views.
+
+17
+00:01:17,970 --> 00:01:22,920
+Unnamed this will be the default router view where everything will be loaded where we don't assign a
+
+18
+00:01:22,920 --> 00:01:24,810
+specific name explicitly.
+
+19
+00:01:24,870 --> 00:01:26,480
+How do we assign names.
+
+20
+00:01:26,690 --> 00:01:28,870
+Well and you route's chase file.
+
+21
+00:01:28,950 --> 00:01:38,440
+I can now add a new parameter or a new property year components and therefore I will remove component
+
+22
+00:01:38,620 --> 00:01:42,870
+because now we're loading multiple components components as an object.
+
+23
+00:01:43,060 --> 00:01:51,740
+And here I do have my default component which is simply my home component but I also do have my header
+
+24
+00:01:51,790 --> 00:02:02,530
+top component hador top and this now refers to does named router view here so this header top here has
+
+25
+00:02:02,530 --> 00:02:06,360
+to match this name and this shall be my header which I.
+
+26
+00:02:06,360 --> 00:02:08,470
+First of all have to import.
+
+27
+00:02:08,500 --> 00:02:15,640
+So let me quickly do that to load my header here and now I'm setting this up to work like this if I
+
+28
+00:02:15,640 --> 00:02:18,150
+reload the page and I go to home.
+
+29
+00:02:18,150 --> 00:02:19,570
+We see the header here.
+
+30
+00:02:19,750 --> 00:02:25,360
+But if I go to user it's gone because there are not including it yet we don't see an error here.
+
+31
+00:02:25,370 --> 00:02:27,250
+This is just how it works.
+
+32
+00:02:27,610 --> 00:02:29,550
+And it's not loaded at the bottom.
+
+33
+00:02:29,570 --> 00:02:36,370
+Now for the user I want to load it at the bottom so therefore I will grab this components set up here
+
+34
+00:02:36,730 --> 00:02:39,460
+add it here for my user route as well.
+
+35
+00:02:39,460 --> 00:02:47,440
+The default Now here is of course user nested routes still work but the header bottom shall now be populated
+
+36
+00:02:47,440 --> 00:02:48,930
+with the header.
+
+37
+00:02:48,970 --> 00:02:53,950
+Now this will lead to your head or being at the bottom for use user related routes and it being at the
+
+38
+00:02:53,950 --> 00:02:57,580
+top for a home related role or the other routes.
+
+39
+00:02:57,580 --> 00:03:04,350
+Now of course this specific use case doesn't provide the best user experience but I think you see where
+
+40
+00:03:04,440 --> 00:03:07,190
+this could be useful or be where you could use that.
+
+41
+00:03:07,270 --> 00:03:12,100
+Basically whenever you want to switch your layout around depending on the route you were at and then
+
+42
+00:03:12,100 --> 00:03:18,490
+named route reviews make it easy for you to reserve certain spots in your lay out in your code and your
+
+43
+00:03:18,490 --> 00:03:25,180
+HMO code to dynamically render pieces of your application there depending on which route you're navigating
+
+44
+00:03:25,180 --> 00:03:25,490
+to.
+

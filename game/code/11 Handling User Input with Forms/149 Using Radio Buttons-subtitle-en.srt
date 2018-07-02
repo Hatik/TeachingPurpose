@@ -1,0 +1,136 @@
+1
+00:00:01,720 --> 00:00:09,160
+Well after having a look at checkboxes Let's move on to well kind of their sibling radio buttons the
+
+2
+00:00:09,160 --> 00:00:14,200
+difference of course is that we may only select one radio button and a group of radio buttons.
+
+3
+00:00:14,200 --> 00:00:16,530
+So right now it's not working correctly.
+
+4
+00:00:16,600 --> 00:00:22,690
+So we want to ensure that we can only select one and then that we store the value off the select radio
+
+5
+00:00:22,690 --> 00:00:24,560
+button in some property.
+
+6
+00:00:24,700 --> 00:00:26,940
+Let's use VHS has to help us there.
+
+7
+00:00:27,100 --> 00:00:33,610
+Well restoring the general there so let's go down to our data field here and simply add gender here
+
+8
+00:00:33,710 --> 00:00:37,590
+and I'll set it to mail by default since well I am male of course.
+
+9
+00:00:37,580 --> 00:00:38,840
+Choose your favorite gender.
+
+10
+00:00:38,830 --> 00:00:40,780
+Nowadays you get a lot of options here.
+
+11
+00:00:41,020 --> 00:00:47,570
+So with the generous set year we want to go to the radio about this year and now the important thing
+
+12
+00:00:47,570 --> 00:00:49,890
+is how do we bind them again.
+
+13
+00:00:49,900 --> 00:00:54,680
+I set them up in a bootstrap style wrapped by a label to have the styling they do have.
+
+14
+00:00:55,030 --> 00:00:58,960
+But the modeless of course also added to the input again.
+
+15
+00:00:58,960 --> 00:01:06,080
+So we always added to the input here not to the wrapping label not to the rep and give to the input.
+
+16
+00:01:06,370 --> 00:01:09,740
+And here I want to bind to gender just like that.
+
+17
+00:01:09,760 --> 00:01:17,800
+Now I can copy this same code to my radio button doing this actually use a lot of things in the background
+
+18
+00:01:18,750 --> 00:01:19,540
+first.
+
+19
+00:01:19,650 --> 00:01:24,490
+You just now know as both radio buttons belong to the same group.
+
+20
+00:01:24,490 --> 00:01:28,810
+So if we saved as we can already see that I could only select one of the two.
+
+21
+00:01:28,810 --> 00:01:33,550
+Now because again Mujeres recognizes they're bound to the same model.
+
+22
+00:01:33,580 --> 00:01:37,000
+So they are a group so only one of them is selectable.
+
+23
+00:01:37,030 --> 00:01:38,600
+That's the first important thing.
+
+24
+00:01:38,620 --> 00:01:46,120
+The second important thing is that UJA as automatically stores the value of the selected radio button
+
+25
+00:01:46,350 --> 00:01:47,020
+devalues.
+
+26
+00:01:47,020 --> 00:01:52,300
+We set up here of course with the normal value attribute in our gender properties.
+
+27
+00:01:52,390 --> 00:01:59,350
+And I can show this by simply outputting gender here like that if I do it like this we can see that
+
+28
+00:01:59,350 --> 00:02:00,630
+male is selected now.
+
+29
+00:02:00,670 --> 00:02:07,470
+And now watch the area down there it switches to female and back back to male female back to male.
+
+30
+00:02:07,480 --> 00:02:12,810
+So this is how easy it is to bind radio buttons and of course you could bind more than two.
+
+31
+00:02:12,820 --> 00:02:19,600
+The key thing here is to use the same model which are binding and your chest will handle the rest like
+
+32
+00:02:19,660 --> 00:02:22,600
+grouping assigning the value correctly.
+
+33
+00:02:22,600 --> 00:02:27,670
+That is how we use radio buttons and their futures form and how we can use the property as we switch
+
+34
+00:02:27,670 --> 00:02:28,750
+between the buttons.
+

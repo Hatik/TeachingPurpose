@@ -1,0 +1,152 @@
+1
+00:00:01,640 --> 00:00:06,420
+Let's Hans's a bit further let's say we not only want to set the background color we want to let the
+
+2
+00:00:06,420 --> 00:00:11,870
+user decide if you want to set the background or the default the text color.
+
+3
+00:00:12,000 --> 00:00:17,040
+So the user has to explicitly state that you want to change the background color otherwise only the
+
+4
+00:00:17,040 --> 00:00:19,800
+text color will be changed to do this.
+
+5
+00:00:19,830 --> 00:00:21,480
+We need to pass an argument.
+
+6
+00:00:21,660 --> 00:00:23,980
+So I'm thinking about the following syntax.
+
+7
+00:00:24,150 --> 00:00:28,050
+We get a value of that but an argument passed with a colon.
+
+8
+00:00:28,050 --> 00:00:30,650
+That is how all views directives work.
+
+9
+00:00:30,660 --> 00:00:32,170
+The BIND would be one example.
+
+10
+00:00:32,170 --> 00:00:36,600
+There we have to shorten with just call it that won't work here because we need to specify a name of
+
+11
+00:00:36,600 --> 00:00:37,570
+course.
+
+12
+00:00:37,710 --> 00:00:42,900
+Colon we pass an argument and the argument could be background like that.
+
+13
+00:00:42,900 --> 00:00:47,390
+Now that's no string that's a normal text in our template here.
+
+14
+00:00:47,550 --> 00:00:52,160
+This is something which will be treated as an argument that in our directive.
+
+15
+00:00:52,530 --> 00:00:59,880
+So in our maintenance file in this directive I will comment on this code again because now I want to
+
+16
+00:00:59,880 --> 00:01:05,440
+check if my argument on the binding I can access this with Arek.
+
+17
+00:01:05,640 --> 00:01:11,760
+If this is now background now here it has to be treated as a string because data as to what this will
+
+18
+00:01:11,760 --> 00:01:13,650
+be can work behind the scenes.
+
+19
+00:01:13,920 --> 00:01:16,960
+So our IT ISN'T number thing we can access on our binding.
+
+20
+00:01:16,980 --> 00:01:20,430
+We already saw value to get the part between the quotation marks.
+
+21
+00:01:20,430 --> 00:01:24,030
+Now with Arek we can get the info after a colon.
+
+22
+00:01:24,060 --> 00:01:26,370
+So it's Baghran in this case.
+
+23
+00:01:26,370 --> 00:01:31,400
+And here I want to check Well if the binding argument is background then I want to set the elements
+
+24
+00:01:31,400 --> 00:01:41,370
+style background color to the binding value and otherwise I want to set the elements style color so
+
+25
+00:01:41,370 --> 00:01:44,580
+the text color to binding got value.
+
+26
+00:01:44,580 --> 00:01:51,890
+Now if I save this we still see the red background because indeed I do pass the background color here
+
+27
+00:01:51,910 --> 00:01:53,070
+the background art.
+
+28
+00:01:53,370 --> 00:02:02,500
+But if I were to remove this art this argument we see that now the text color is red.
+
+29
+00:02:02,560 --> 00:02:04,290
+So this is how we can switch between that.
+
+30
+00:02:04,330 --> 00:02:13,780
+No argument means we're ending up in this block with an argument background will end up in the background
+
+31
+00:02:13,790 --> 00:02:18,400
+color case you need to refresh this because the hods reloading is not handling this correctly but it
+
+32
+00:02:18,400 --> 00:02:19,640
+does work as it should.
+
+33
+00:02:19,690 --> 00:02:21,910
+We're in our running code.
+
+34
+00:02:21,910 --> 00:02:25,260
+This is how we can use arguments and values.
+
+35
+00:02:25,480 --> 00:02:28,870
+Now let's also have a look at how we can add our own modifiers.
+
+36
+00:02:28,900 --> 00:02:31,500
+The first two will we happen working with directives.
+
+37
+00:02:31,540 --> 00:02:35,180
+Remember that we got arguments the value and modifiers.
+
+38
+00:02:35,200 --> 00:02:37,800
+So let's have a look at the last two words in the next video.
+

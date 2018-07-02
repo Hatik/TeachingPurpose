@@ -1,0 +1,144 @@
+1
+00:00:01,610 --> 00:00:06,280
+In the last lecture we saw how we can create a mix and outsource it in a new file and then use it in
+
+2
+00:00:06,280 --> 00:00:07,460
+two different places.
+
+3
+00:00:07,480 --> 00:00:12,610
+That of course is a huge thing because it allows us to create reusable code snippets or data pieces
+
+4
+00:00:12,640 --> 00:00:16,740
+or whatever which we then can use across our application.
+
+5
+00:00:16,780 --> 00:00:20,700
+We see it here with the lists which I can now filter and so on.
+
+6
+00:00:20,710 --> 00:00:27,550
+Now the interesting thing is we also see in the App Store view file that was our mix in the fruit mix
+
+7
+00:00:27,550 --> 00:00:32,790
+and has the data property itself that adds something to our data property.
+
+8
+00:00:32,890 --> 00:00:39,130
+We still seem to have that text which is exclusively in the apt view file work correctly as we can tell
+
+9
+00:00:39,130 --> 00:00:39,860
+here.
+
+10
+00:00:40,150 --> 00:00:48,310
+So view as cleverly merge our mix into our existing view instance and the merging process generally
+
+11
+00:00:48,640 --> 00:00:52,580
+is such that it doesn't destroy the data in our view in a sense.
+
+12
+00:00:52,600 --> 00:00:58,990
+So if you extends the view component is the part was always right but it tries to add new things added
+
+13
+00:00:59,080 --> 00:01:05,230
+item in to the existing instance that is important take away that it doesn't destroy anything there.
+
+14
+00:01:05,440 --> 00:01:12,700
+Now it also has for some things like lifecycle hooks the behavior that we are able to provide a lifecycle
+
+15
+00:01:12,700 --> 00:01:18,580
+hook and mix in and in our component or instance and both will get executed even if it's the same name
+
+16
+00:01:18,880 --> 00:01:23,470
+then the order is mixed in first there after that component.
+
+17
+00:01:23,650 --> 00:01:25,270
+Let me show you what I mean.
+
+18
+00:01:25,570 --> 00:01:30,780
+I will add a new method here to my mix in here.
+
+19
+00:01:31,470 --> 00:01:36,120
+And it's the creative method soda's created lifecycle hook of 1 to print.
+
+20
+00:01:36,150 --> 00:01:45,030
+True Yate here and that means that now already if I up the console and I reload we see created twice
+
+21
+00:01:45,090 --> 00:01:48,600
+because we used to make it in twice it as to create a method here.
+
+22
+00:01:48,630 --> 00:01:54,090
+Therefore both the Apter view file and to component and the list that you file both execute this created
+
+23
+00:01:54,090 --> 00:01:56,680
+lifecycle look because the mix in adds it.
+
+24
+00:01:56,940 --> 00:02:00,920
+Now let's say our root root component here also.
+
+25
+00:02:00,960 --> 00:02:01,730
+Or just list.
+
+26
+00:02:01,860 --> 00:02:04,420
+Excuse me also has its own lifecycle hook.
+
+27
+00:02:04,620 --> 00:02:11,820
+So here the same name created we print inside a list created Hoek.
+
+28
+00:02:11,850 --> 00:02:19,700
+Now with that if I save this if I reload the app we see created created that inside list talk.
+
+29
+00:02:19,920 --> 00:02:24,620
+This was the order I was talking about mix in first then the components.
+
+30
+00:02:24,660 --> 00:02:26,990
+So the component always has to last word.
+
+31
+00:02:27,040 --> 00:02:29,730
+It's able to override changes introduced by the mix.
+
+32
+00:02:29,750 --> 00:02:35,430
+And because that generally as I've said before follows the behavior that the mixing is not able to destroy
+
+33
+00:02:35,460 --> 00:02:38,880
+anything the component always acts last.
+
+34
+00:02:38,880 --> 00:02:45,000
+This is how we can add make sense to components how we can add functionality how it cleverly gets merged
+
+35
+00:02:45,240 --> 00:02:48,560
+and how a component always still has to control.
+
+36
+00:02:48,570 --> 00:02:55,530
+Let me next dive into global make sense what they are and when and how you might use those.
+

@@ -1,0 +1,56 @@
+1
+00:00:02,180 --> 00:00:08,810
+So with the addition of asynchronous validation and The Last Lecture we added a number extremely useful
+
+2
+00:00:08,810 --> 00:00:11,280
+tool to our toolset.
+
+3
+00:00:11,300 --> 00:00:19,460
+Now we can really handle for validation with ease and we can make sure that we always submit forms which
+
+4
+00:00:19,520 --> 00:00:28,810
+are valid and which therefore pass data onto our back end or whatever we're doing with it that we need.
+
+5
+00:00:28,820 --> 00:00:31,930
+I hope you saw the many features Vueling date offers.
+
+6
+00:00:31,940 --> 00:00:36,020
+Now one important note Bula date is only one option.
+
+7
+00:00:36,020 --> 00:00:44,210
+There are Obert validation packages like the validate links can be found in the last lecture of this
+
+8
+00:00:44,210 --> 00:00:45,450
+module.
+
+9
+00:00:45,520 --> 00:00:49,040
+Date is a very powerful and still simple to use package though.
+
+10
+00:00:49,220 --> 00:00:51,470
+So I can only recommend using it.
+
+11
+00:00:51,620 --> 00:00:53,790
+And with that feel free to play around with that.
+
+12
+00:00:53,800 --> 00:00:59,420
+Add it to your next View project dive into the Vully date documentation which I showed you at build
+
+13
+00:00:59,480 --> 00:01:02,250
+awesome forums that only are valid.
+
+14
+00:01:02,330 --> 00:01:03,280
+If you want it.
+

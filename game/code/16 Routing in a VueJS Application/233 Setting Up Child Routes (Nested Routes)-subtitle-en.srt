@@ -1,0 +1,224 @@
+1
+00:00:01,940 --> 00:00:08,270
+Until now we're loading the different users here year our header by having two different lanes where
+
+2
+00:00:08,300 --> 00:00:11,830
+a hard code the user ID that's not very realistic.
+
+3
+00:00:11,900 --> 00:00:16,990
+It would be more realistic to have like a list of users we can choose from and click them.
+
+4
+00:00:17,210 --> 00:00:20,570
+And I also get these extra components we haven't used yet.
+
+5
+00:00:20,600 --> 00:00:22,670
+Turns out end users start component.
+
+6
+00:00:22,700 --> 00:00:24,410
+I do have such a list.
+
+7
+00:00:24,530 --> 00:00:28,530
+So now time to change this and use this list instead.
+
+8
+00:00:28,760 --> 00:00:36,130
+So I will remove the second link in my head a year and go back to just slash user here.
+
+9
+00:00:36,290 --> 00:00:43,040
+If I click on user and forgetable also adjust my user route to just be slash user here or just use that
+
+10
+00:00:43,070 --> 00:00:51,590
+as apothegm And so that my usual component now gets loaded I also will remove all that can't and except
+
+11
+00:00:51,590 --> 00:00:53,370
+for the Navigate to home button.
+
+12
+00:00:53,420 --> 00:00:56,730
+But no worries will soon start working with parameterless again.
+
+13
+00:00:56,750 --> 00:01:00,910
+I just want this to work fine again like this.
+
+14
+00:01:01,070 --> 00:01:07,730
+And now I want to implement some child routes some nested drought's because all the other user components
+
+15
+00:01:07,790 --> 00:01:12,380
+start editing in detail Shippy nested inside the usual component.
+
+16
+00:01:12,380 --> 00:01:15,020
+They all belong to the user feature.
+
+17
+00:01:15,320 --> 00:01:19,820
+So they certainly should not be nested inside the home component or anything like that.
+
+18
+00:01:19,820 --> 00:01:25,520
+Instead I now want to have some routes in my user component so that we can load different components
+
+19
+00:01:25,580 --> 00:01:33,350
+inside their well to do this I need to configure my supper cards here and I can do this by adding a
+
+20
+00:01:33,350 --> 00:01:37,280
+new property to the route which should have some nested routes.
+
+21
+00:01:37,280 --> 00:01:44,750
+It's called Children and this is again an area of routes which will now be nested after or inside of
+
+22
+00:01:44,750 --> 00:01:45,740
+this route route.
+
+23
+00:01:45,740 --> 00:01:52,070
+So inside slash user they are four in there we again specify a couple of javascript objects where each
+
+24
+00:01:52,070 --> 00:01:53,290
+has a POV.
+
+25
+00:01:53,600 --> 00:01:58,840
+And the important thing is if you now have a path which starts with a slash.
+
+26
+00:01:58,980 --> 00:02:05,840
+This will again be appended directly after your domain so example dot com slash whatever you type here.
+
+27
+00:02:06,020 --> 00:02:10,530
+If you leave a way to slash though it will be appended to dispatch.
+
+28
+00:02:10,550 --> 00:02:14,660
+So the path of your parent route so choose whatever you want.
+
+29
+00:02:14,660 --> 00:02:20,090
+You can technically nest them with deep pockets starting after your domain.
+
+30
+00:02:20,090 --> 00:02:26,640
+Or you can ask them technically and logically by also having your POV reflect the nesting.
+
+31
+00:02:26,720 --> 00:02:32,030
+But you don't need to do that maybe you have a use case where they should be nested technically in the
+
+32
+00:02:32,030 --> 00:02:36,820
+component and the user component but that shouldn't be reflected in the path here.
+
+33
+00:02:36,830 --> 00:02:40,690
+I would choose the approach where I will append them to slash user.
+
+34
+00:02:40,850 --> 00:02:44,420
+So here I want to load an empty path actually.
+
+35
+00:02:44,450 --> 00:02:52,210
+So just slash the user to load my user start component which of course I need to import.
+
+36
+00:02:52,340 --> 00:03:00,010
+So that will be user start and I can already import user detail.
+
+37
+00:03:00,230 --> 00:03:00,980
+Whoops.
+
+38
+00:03:00,980 --> 00:03:08,310
+User detail and user added just like that user added.
+
+39
+00:03:08,580 --> 00:03:15,240
+And then you're a news user start but then it will have two routes the first one share load a specific
+
+40
+00:03:15,260 --> 00:03:22,000
+ID and the second one also uses the ID but then loads the added page.
+
+41
+00:03:22,090 --> 00:03:27,820
+I'm not nesting does in user detail component here because I don't want to load it on the same page
+
+42
+00:03:27,850 --> 00:03:29,740
+as user detail.
+
+43
+00:03:29,860 --> 00:03:35,420
+So here I now have my three subcomponents to my user component.
+
+44
+00:03:35,710 --> 00:03:40,720
+Now of course we also need a place to load them because they won't be loaded in our router view here
+
+45
+00:03:40,720 --> 00:03:44,760
+in the airport view file because that is our routes router.
+
+46
+00:03:44,770 --> 00:03:46,590
+But now we got nested routes.
+
+47
+00:03:46,810 --> 00:03:48,400
+So we have to set up a new router.
+
+48
+00:03:48,450 --> 00:03:50,670
+You are a user of your file.
+
+49
+00:03:50,800 --> 00:03:57,440
+So here I will simply add a your horizontal line to differentiate that and that have router view there.
+
+50
+00:03:57,550 --> 00:04:05,610
+And now this will allow me to load this router view or to load the sub routes we can already see this
+
+51
+00:04:05,620 --> 00:04:11,680
+if I reload as we see the user start component is selected by default because I set it up to have an
+
+52
+00:04:11,680 --> 00:04:18,520
+empty path after a slash user which is where I'm at right now and if I were to enter one year we see
+
+53
+00:04:18,520 --> 00:04:19,790
+the user details page.
+
+54
+00:04:19,810 --> 00:04:27,180
+Of course the one that's not extracted right now but we see this works so that we now improve this.
+
+55
+00:04:27,180 --> 00:04:35,560
+Now I want to make DS list items here clickable to actually load and never nested component namely the
+
+56
+00:04:35,560 --> 00:04:37,250
+detailed component let's say.
+

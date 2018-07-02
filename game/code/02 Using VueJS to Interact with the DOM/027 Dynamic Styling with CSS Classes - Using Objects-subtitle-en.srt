@@ -1,0 +1,72 @@
+1
+00:00:01,860 --> 00:00:06,280
+So we saw how we could attach and detach see us as classes conditionally.
+
+2
+00:00:06,540 --> 00:00:11,350
+What if you don't want to store this object here in your aged Yamal template code.
+
+3
+00:00:11,460 --> 00:00:20,160
+It's very simple here but imagine we would also have these blue class here for WCA SS class and said
+
+4
+00:00:20,160 --> 00:00:22,340
+just the opposite of a tetrad.
+
+5
+00:00:22,560 --> 00:00:26,900
+If I now control this you see you can toggle between blue and red here.
+
+6
+00:00:27,120 --> 00:00:29,930
+But now this object grows Robert big.
+
+7
+00:00:30,210 --> 00:00:35,940
+Well I could go down to my view instance and create a new computer property for dead since it will depend
+
+8
+00:00:35,940 --> 00:00:38,840
+on my attach red property it needs to be computed.
+
+9
+00:00:39,090 --> 00:00:41,730
+So here I could call this day of classes.
+
+10
+00:00:42,030 --> 00:00:48,150
+And this of course is a function as all computer properties which should return me a javascript object
+
+11
+00:00:48,330 --> 00:00:49,540
+namely the object.
+
+12
+00:00:49,560 --> 00:00:58,740
+I set up here so in here I will simply have read attach red and then blue which is the opposite.
+
+13
+00:00:58,740 --> 00:01:04,770
+Now that of course won't work because keep in mind here in our chairs code in the Chalis code we have
+
+14
+00:01:04,770 --> 00:01:07,940
+to access the properties with this at the beginning.
+
+15
+00:01:08,310 --> 00:01:15,450
+Now if that change in place I can simply replace my object here with day of classes and if I save this
+
+16
+00:01:15,870 --> 00:01:22,300
+you see the same behavior as before but now outsourced in a property in this case in a computed property.
+
+17
+00:01:22,410 --> 00:01:27,720
+If you wouldn't have this dependency of course you wouldn't need to use a computer property and our
+
+18
+00:01:27,720 --> 00:01:33,160
+template is much cleaner again due you days being stored in our javascript code now.
+

@@ -1,0 +1,228 @@
+1
+00:00:01,630 --> 00:00:07,660
+Although you're not limited to looping through arrays of single elements you could also loop through
+
+2
+00:00:07,750 --> 00:00:13,150
+arrays which hold objects or you can also loop through objects.
+
+3
+00:00:13,150 --> 00:00:19,460
+Let me show you above this template here since this really populates the whole field.
+
+4
+00:00:19,930 --> 00:00:26,830
+All enter is you code a horizontal line above and below so that we can clearly see it here.
+
+5
+00:00:26,890 --> 00:00:36,310
+I want to output an ordered list with a list item obviously where I will use my FOR loop as before.
+
+6
+00:00:36,520 --> 00:00:43,360
+Now I want to loop through persons so I will loop through person in persons and then I could output
+
+7
+00:00:44,350 --> 00:00:47,800
+person referring to is person variable created by the chairs.
+
+8
+00:00:47,800 --> 00:00:54,790
+Automatically here since I named it like that person Dadds name for example if I had to enter we see
+
+9
+00:00:54,790 --> 00:01:00,760
+Maxson and I hear that should straight forward is the same use such as before just using objects now.
+
+10
+00:01:00,760 --> 00:01:04,080
+But since XTi property is there like it always do.
+
+11
+00:01:04,200 --> 00:01:06,280
+There's nothing special about that.
+
+12
+00:01:06,280 --> 00:01:13,060
+Now let's say I don't want to use this default loop but instead I want to loop through all the key value
+
+13
+00:01:13,060 --> 00:01:18,010
+pairs in that object like an A for Eneloop and normal javascript.
+
+14
+00:01:18,050 --> 00:01:21,290
+That's how I want to create a span for each key value pair.
+
+15
+00:01:21,310 --> 00:01:28,810
+And here it can use a nested for loop with feet before I can nest them as much as I want and then looping
+
+16
+00:01:28,810 --> 00:01:35,360
+through it is as simple as extracting the value in persons.
+
+17
+00:01:35,560 --> 00:01:37,310
+So in person excuse me.
+
+18
+00:01:37,330 --> 00:01:43,840
+So person here refers to the person up here in the hour since I gave it that name and where in this
+
+19
+00:01:43,840 --> 00:01:48,490
+current iteration since we're in that specific list item and value.
+
+20
+00:01:48,490 --> 00:01:54,820
+Well that name was chosen by me but it will automatically be the value of each property.
+
+21
+00:01:54,820 --> 00:02:01,710
+So I could output value here just like that if I now had control enter.
+
+22
+00:02:01,870 --> 00:02:09,610
+We see Max 27 Reddon not very nicely formatted but you do see that these are the values of all the properties
+
+23
+00:02:09,730 --> 00:02:11,530
+of these persons here.
+
+24
+00:02:11,770 --> 00:02:16,180
+So that is how we can loop through properties of objects.
+
+25
+00:02:16,600 --> 00:02:24,580
+Now as with arrays where we could also retrieve the index for looping through objects we can also not
+
+26
+00:02:24,580 --> 00:02:28,850
+only retrieve the value of a property but by adding parentheses.
+
+27
+00:02:28,960 --> 00:02:33,140
+Also the key as with arrays the ordering here is important.
+
+28
+00:02:33,220 --> 00:02:37,810
+The names of these variables which are traded automatically are chosen by me.
+
+29
+00:02:37,810 --> 00:02:44,670
+I could also named as V and k just like that but the order is important.
+
+30
+00:02:44,680 --> 00:02:49,810
+The first one and if you don't add parentheses the only one as before will always be the value of the
+
+31
+00:02:49,810 --> 00:02:50,810
+property.
+
+32
+00:02:50,830 --> 00:02:54,970
+The second one key in this case will be the name of the property.
+
+33
+00:02:55,000 --> 00:02:56,070
+The key name.
+
+34
+00:02:56,410 --> 00:03:00,820
+So I could say key colon.
+
+35
+00:03:00,890 --> 00:03:02,000
+And then the value.
+
+36
+00:03:02,060 --> 00:03:05,910
+And if I now hit enter you see it looks a little bit nicer.
+
+37
+00:03:06,200 --> 00:03:14,570
+If we make this a difference instead of a span Well then we clearly can see Name age color for all the
+
+38
+00:03:14,900 --> 00:03:15,590
+persons.
+
+39
+00:03:15,590 --> 00:03:21,860
+So now we're looping through all the key value pairs extracting both key and value value against the
+
+40
+00:03:21,860 --> 00:03:28,970
+first element though and then outputting it here by using the variable names we chose between the parentheses.
+
+41
+00:03:29,300 --> 00:03:36,710
+Finally if we all want to get the number of iteration we can access the index by passing a third kind
+
+42
+00:03:36,710 --> 00:03:37,830
+of argument here.
+
+43
+00:03:37,850 --> 00:03:41,010
+So adding a third variable between the parentheses.
+
+44
+00:03:41,270 --> 00:03:44,700
+This will be simply the index of the current iteration.
+
+45
+00:03:45,050 --> 00:03:53,330
+So here I can finally then output in parentheses after the value for example between quali braces as
+
+46
+00:03:53,360 --> 00:03:54,400
+always.
+
+47
+00:03:55,300 --> 00:04:00,950
+The index like that fortunately a bit hard to read that doesn't make it easier.
+
+48
+00:04:00,970 --> 00:04:02,840
+So if I had to enter a final time.
+
+49
+00:04:02,980 --> 00:04:04,450
+Well we see the index here.
+
+50
+00:04:04,450 --> 00:04:12,380
+0 1 2 0 1 2 as we loop through the property or the key value pairs in our objects here.
+
+51
+00:04:12,670 --> 00:04:15,450
+That is the the for loop.
+
+52
+00:04:15,460 --> 00:04:20,440
+Keep in mind using all these fields here between parentheses is optional.
+
+53
+00:04:20,440 --> 00:04:27,280
+You can always go with the default by just extracting one element which in the case of looping through
+
+54
+00:04:27,280 --> 00:04:29,050
+objects happens to be the value.
+
+55
+00:04:29,170 --> 00:04:33,610
+And in the case of normal arrays happens to be the element value.
+
+56
+00:04:33,670 --> 00:04:40,090
+So always the value basically but you can extend it with parentheses to get more information out of
+
+57
+00:04:40,090 --> 00:04:41,570
+the object you're looping through.
+

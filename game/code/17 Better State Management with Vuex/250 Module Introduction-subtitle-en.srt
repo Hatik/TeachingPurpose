@@ -1,0 +1,48 @@
+1
+00:00:01,690 --> 00:00:08,320
+All almost Then we learn a lot about the chase for this course a lot about its basics.
+
+2
+00:00:08,330 --> 00:00:13,570
+It's Centex it's a search and two different pieces or different features.
+
+3
+00:00:13,570 --> 00:00:21,250
+It offers us now and the last March when we had a look at routeing we really made a major step towards
+
+4
+00:00:21,250 --> 00:00:27,280
+building large applications with view chairs or single page applications to begin with but that also
+
+5
+00:00:27,280 --> 00:00:29,640
+tend to be Robert big applications.
+
+6
+00:00:29,860 --> 00:00:37,300
+Now if we talk about bigger applications there's one additional thing we haven't discussed yet that
+
+7
+00:00:37,300 --> 00:00:39,730
+is a better way of State Management.
+
+8
+00:00:39,730 --> 00:00:46,300
+We touched on state management and other modules when we used custom events to pass data from a child
+
+9
+00:00:46,300 --> 00:00:52,680
+to a parent could a component or props to do it the other way or when we use the event bus in this module.
+
+10
+00:00:52,690 --> 00:00:58,600
+We'll learn about yet the number possibility of managing our state one which is especially suited for
+
+11
+00:00:58,660 --> 00:01:04,410
+bigger applications where all the other ways will give you some problems sooner or later.
+
+12
+00:01:04,480 --> 00:01:10,150
+So let's have a look at this pattern or this state management system which is called view x.
+

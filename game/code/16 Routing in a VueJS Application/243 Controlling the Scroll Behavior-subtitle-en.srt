@@ -1,0 +1,180 @@
+1
+00:00:01,750 --> 00:00:06,760
+Configuring the scrolling behavior in a view chair as we're in the app using the view router is really
+
+2
+00:00:06,760 --> 00:00:07,840
+simple.
+
+3
+00:00:07,840 --> 00:00:14,900
+We go to the main chairs follow we set up the router and then we can pass a number property the scroll
+
+4
+00:00:14,920 --> 00:00:19,340
+behavior property that actually is a method to be precise.
+
+5
+00:00:19,450 --> 00:00:22,450
+And you we can configure how we want it to behave.
+
+6
+00:00:22,450 --> 00:00:23,970
+This method has free arguments.
+
+7
+00:00:23,970 --> 00:00:30,370
+Two from enties save position in case we were using the back button and the user scroll down a bit.
+
+8
+00:00:30,460 --> 00:00:35,220
+The browser automatically saves to position and we can use that position here too.
+
+9
+00:00:35,350 --> 00:00:44,200
+Now this function expects to get back ever an object where we have the x and y coordinate where we didn't
+
+10
+00:00:44,200 --> 00:00:53,670
+specify where to go for example x 0 and Y is zero or as or so the tag we had before.
+
+11
+00:00:53,660 --> 00:00:59,380
+So this idea of some element let's try with this x and y is set to zero.
+
+12
+00:00:59,380 --> 00:01:05,920
+So dabblings crawled top that scroll down a bit by setting us to seven hundred seven hundred let's say
+
+13
+00:01:05,920 --> 00:01:07,560
+the y coordinate.
+
+14
+00:01:07,570 --> 00:01:08,830
+Now if I go to home.
+
+15
+00:01:08,830 --> 00:01:13,900
+Well we don't really see it there because these pages aren't long enough.
+
+16
+00:01:13,900 --> 00:01:19,360
+But if I click on a user and edit user you'll see we're now scroll down and that's not because of this
+
+17
+00:01:19,360 --> 00:01:21,020
+hash tag data thing.
+
+18
+00:01:21,070 --> 00:01:26,230
+This just happened because we use the View chance Roger and efferent only works if we don't load the
+
+19
+00:01:26,230 --> 00:01:27,490
+page by entering the euro.
+
+20
+00:01:27,500 --> 00:01:30,130
+But all three are in the application.
+
+21
+00:01:30,190 --> 00:01:31,660
+We're still getting pushdown.
+
+22
+00:01:31,660 --> 00:01:37,540
+So this is because we set the scroll position to be this far down.
+
+23
+00:01:37,540 --> 00:01:39,900
+Now the alternative is to use a select or.
+
+24
+00:01:39,910 --> 00:01:41,230
+So if we have one.
+
+25
+00:01:41,230 --> 00:01:44,740
+So first I'd check if the route I to navigate to.
+
+26
+00:01:44,950 --> 00:01:52,360
+If this has these hash property being set so if this is not MTSO if it does exist in which case I want
+
+27
+00:01:52,360 --> 00:02:00,580
+to return an object whereas say select or and now I use this hash which is a string if it exists this
+
+28
+00:02:00,640 --> 00:02:03,240
+string we set up here.
+
+29
+00:02:03,250 --> 00:02:04,800
+Excuse me here.
+
+30
+00:02:05,020 --> 00:02:07,570
+This string will be solved.
+
+31
+00:02:07,600 --> 00:02:13,540
+This will give me this place to navigate to but only if we do have it.
+
+32
+00:02:13,570 --> 00:02:15,760
+Otherwise I will scroll scroll down.
+
+33
+00:02:16,060 --> 00:02:20,280
+So if I save this now and head over to the application click Edit user.
+
+34
+00:02:20,290 --> 00:02:26,530
+We're still going down but this time due to this hash value being set which I can easily demonstrate
+
+35
+00:02:26,530 --> 00:02:31,660
+by commenting out the average part navigating back and reloading does clicking edit user again we're
+
+36
+00:02:31,660 --> 00:02:34,990
+still down there even though I commented out this other part.
+
+37
+00:02:35,200 --> 00:02:41,180
+So that's how we can use d or how we can set the scrolling behavior and how we can use our hash values
+
+38
+00:02:41,320 --> 00:02:42,760
+if we do have any.
+
+39
+00:02:42,940 --> 00:02:49,360
+Finally some step you might want to include is you want to check if safe position is set because if
+
+40
+00:02:49,360 --> 00:02:54,940
+the user navigated back with the back button it's probably not the desired behavior to scroll him all
+
+41
+00:02:54,940 --> 00:03:00,100
+the way down app or whatever you maybe just want to scroll him to the position he was at.
+
+42
+00:03:00,100 --> 00:03:02,020
+So you can simply return to a safe position.
+
+43
+00:03:02,020 --> 00:03:07,900
+In this case and only if this is not said do we check if the hash is set and only if does not set then
+
+44
+00:03:07,900 --> 00:03:11,550
+we maybe scroll him up all the way to the top of the page.
+
+45
+00:03:12,870 --> 00:03:19,230
+And with that we should have a fine navigation or a fine scroll behavior control in place.
+

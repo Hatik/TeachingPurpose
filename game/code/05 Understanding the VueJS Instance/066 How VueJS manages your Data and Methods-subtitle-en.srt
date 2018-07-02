@@ -1,0 +1,184 @@
+1
+00:00:01,840 --> 00:00:08,460
+And The Last Lecture I mentioned that view as proxies the properties we set up here on the data field
+
+2
+00:00:08,970 --> 00:00:14,500
+and it does the same for the methods and computer properties so we can access them from outside like
+
+3
+00:00:14,500 --> 00:00:21,640
+here is setting the title and I can also call is show method for example.
+
+4
+00:00:21,640 --> 00:00:27,800
+So if I want to do this and I had control enter you will see that after three seconds I get this alert
+
+5
+00:00:29,550 --> 00:00:35,970
+and now it is updated and not changed by a timer because after changing the title here I called the
+
+6
+00:00:35,970 --> 00:00:38,880
+show method which changes the title again.
+
+7
+00:00:39,540 --> 00:00:45,540
+So this does proxying because in theory we're not creating this new instance.
+
+8
+00:00:45,540 --> 00:00:50,220
+Yes we're calling it we're trading with the constructor but it's just an object shipped with the chairs
+
+9
+00:00:50,250 --> 00:00:50,970
+framework.
+
+10
+00:00:51,030 --> 00:00:57,540
+The core object of that framework that is and we don't know which properties this has or we can find
+
+11
+00:00:57,540 --> 00:01:03,330
+out from the API reference but it clearly does not have the properties we set up here in the object
+
+12
+00:01:03,330 --> 00:01:04,880
+be passed to the constructor.
+
+13
+00:01:04,920 --> 00:01:07,860
+That's just an argument we give to the constructor right.
+
+14
+00:01:08,130 --> 00:01:15,240
+But behind the scenes when creating a instance you chaps will take our object you pass in here and then
+
+15
+00:01:15,240 --> 00:01:22,740
+it will take our data properties and our methods and we'll kind of use them as native properties on
+
+16
+00:01:22,740 --> 00:01:25,150
+the View instance object itself.
+
+17
+00:01:25,200 --> 00:01:27,490
+So we'll kind of copy them.
+
+18
+00:01:27,510 --> 00:01:29,940
+It doesn't bit more than that behind the scenes.
+
+19
+00:01:29,940 --> 00:01:35,880
+It actually sets up a kind of a watcher for each of those properties which makes sure that it recognizes
+
+20
+00:01:36,150 --> 00:01:43,170
+whenever one of these properties is changed so that it knows when to update dom or when to do anything.
+
+21
+00:01:43,200 --> 00:01:48,160
+So it not only takes them and allows us to work with them like in normal dummy javascript.
+
+22
+00:01:48,210 --> 00:01:55,910
+It also has as Watcher layer where it recognizes that something changed and is able to work with that.
+
+23
+00:01:56,130 --> 00:01:58,410
+This has an important implication.
+
+24
+00:01:58,630 --> 00:02:04,920
+We're able to access our properties like that from outside but we're not able to create a new property
+
+25
+00:02:04,920 --> 00:02:11,410
+like this if I set VM one new Purab prob. is equal to it's new.
+
+26
+00:02:11,880 --> 00:02:17,400
+Then I can set it this will work as a normal Chulbul script I can add a property like this.
+
+27
+00:02:17,880 --> 00:02:21,630
+But what I can do is I can't use it in my view instance.
+
+28
+00:02:21,630 --> 00:02:29,640
+It's not reactive view Chasse's is not watching it because it only will create does proxying it will
+
+29
+00:02:29,640 --> 00:02:36,540
+only create these watchers for everything we pass in this object upon creation with constructors.
+
+30
+00:02:36,540 --> 00:02:40,370
+So everything we pass in this object we pass to the constructor.
+
+31
+00:02:40,650 --> 00:02:47,790
+Every other property we add there after We'll be there as you can clearly tell if we printed to the
+
+32
+00:02:47,790 --> 00:02:48,710
+console.
+
+33
+00:02:48,810 --> 00:02:51,840
+So its output is here and open up the console.
+
+34
+00:02:51,840 --> 00:02:58,460
+You see the view instance here you can see it get a lot of properties here and you can see.
+
+35
+00:02:58,460 --> 00:03:04,500
+Here are our proxied properties with getters and setters desaster So what Sure effect that was talking
+
+36
+00:03:04,500 --> 00:03:05,120
+off.
+
+37
+00:03:05,520 --> 00:03:07,330
+And here you see this new prop.
+
+38
+00:03:07,440 --> 00:03:13,170
+It doesn't have to schedule or Satar and that is because we didn't pass it up on creation of the instance
+
+39
+00:03:13,400 --> 00:03:18,090
+there for view chess did not set up these getters and setters and therefore it is not a watching that
+
+40
+00:03:18,390 --> 00:03:24,180
+these getters and setters you see here all over the place are basically views as tool of understanding
+
+41
+00:03:24,180 --> 00:03:29,020
+when ever we access a property or get the value from it makes sense I guess.
+
+42
+00:03:29,310 --> 00:03:35,250
+So this is important to understand this proxying of properties that view chess watches them for us that
+
+43
+00:03:35,250 --> 00:03:41,760
+we can access them from outside of the instance by directly accessing them on our VM variable where
+
+44
+00:03:41,760 --> 00:03:48,090
+we store the instance but that we cannot add new properties or that we can add them but they won't work
+
+45
+00:03:48,120 --> 00:03:55,130
+as normal properties we pass in this data property here or as methods when creating this new instance.
+
+46
+00:03:55,200 --> 00:03:59,090
+That is really important to understand and to keep in mind.
+

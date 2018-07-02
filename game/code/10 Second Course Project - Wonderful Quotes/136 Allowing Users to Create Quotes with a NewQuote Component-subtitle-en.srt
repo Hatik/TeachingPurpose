@@ -1,0 +1,192 @@
+1
+00:00:01,720 --> 00:00:10,360
+Were able to display that quote here next I want to implement the method to add new quotes now for Dad.
+
+2
+00:00:10,370 --> 00:00:12,360
+I'll first add a new component.
+
+3
+00:00:12,500 --> 00:00:21,150
+The new coach don't view file or copy the code from the quote read here and inserted there.
+
+4
+00:00:21,530 --> 00:00:26,280
+And now how he should is behave or what do we need in this new quote file.
+
+5
+00:00:26,500 --> 00:00:29,350
+Well first of all I don't need to import the quote.
+
+6
+00:00:29,540 --> 00:00:33,650
+Second I don't need props and I won't have components in there too.
+
+7
+00:00:33,680 --> 00:00:36,340
+So let's empty this object for now.
+
+8
+00:00:36,350 --> 00:00:38,660
+Now what shall we have in a template.
+
+9
+00:00:38,690 --> 00:00:51,070
+I want to have a row and in this row I also want to have a div with a class of call as 8 and some offsetting
+
+10
+00:00:51,130 --> 00:01:05,820
+for nice or styling column as an offset to call X as 12 call M.D 6 and call M.D of set free.
+
+11
+00:01:05,840 --> 00:01:12,230
+Now that is all brand new to you that are just bootstrap styles to make the grid look possibly as good
+
+12
+00:01:12,230 --> 00:01:17,990
+as possible on all different device sizes and withs mainly.
+
+13
+00:01:17,990 --> 00:01:30,660
+So inside here I want to have my label code and I want to have my text area.
+
+14
+00:01:31,110 --> 00:01:35,900
+Now for that to work I need to read everything here.
+
+15
+00:01:36,660 --> 00:01:38,330
+Enough for him.
+
+16
+00:01:38,400 --> 00:01:43,610
+Now we have learned about foreigns and I will come to them in the next course module.
+
+17
+00:01:43,620 --> 00:01:46,350
+Here is a very very simple preview.
+
+18
+00:01:46,350 --> 00:01:47,700
+It's not that hard.
+
+19
+00:01:47,940 --> 00:01:54,680
+So we have our default HMO reform task with our Cullom in there with the code label and the text area
+
+20
+00:01:54,690 --> 00:02:02,670
+field and that text area gets a class of form control bootstrap styling and on the wrapping div we have
+
+21
+00:02:02,670 --> 00:02:03,670
+a form group.
+
+22
+00:02:03,720 --> 00:02:05,650
+Also a bootstrap style here.
+
+23
+00:02:05,700 --> 00:02:11,220
+A bootstrap class to get to some styling on that text area.
+
+24
+00:02:11,230 --> 00:02:16,140
+Europe want to set up three rows so that's a normal aged male attribute.
+
+25
+00:02:16,410 --> 00:02:20,390
+And then I will binded with you were binding to quote.
+
+26
+00:02:20,460 --> 00:02:23,940
+This is how you work with forms in future as you use that.
+
+27
+00:02:23,970 --> 00:02:27,550
+The mall thing and I'll come back to this in the next chord section.
+
+28
+00:02:27,600 --> 00:02:33,170
+We already learned about two binding though so it should be Robert easy to understand what's happening
+
+29
+00:02:33,180 --> 00:02:33,840
+here.
+
+30
+00:02:33,870 --> 00:02:44,010
+We need to set up the state of function return an object and in this object here there we want to bind
+
+31
+00:02:44,230 --> 00:02:50,310
+what we want to set up these quote property which is empty string initially to which rebinding binding
+
+32
+00:02:50,310 --> 00:02:51,960
+from the text area.
+
+33
+00:02:51,960 --> 00:02:57,540
+So this will get set with ENTRAR whenever we enter something here in this text area.
+
+34
+00:02:57,990 --> 00:02:59,650
+Well that's one thing.
+
+35
+00:02:59,670 --> 00:03:05,670
+The second thing is I'll copy this column here and there.
+
+36
+00:03:05,700 --> 00:03:12,890
+I only want to have a button with the button and Button primary bootstrap classes attached to it where
+
+37
+00:03:12,900 --> 00:03:16,170
+I say add quote no on there.
+
+38
+00:03:16,170 --> 00:03:27,130
+I simply want to add to click listener and say create new execute this method and I will add the preven
+
+39
+00:03:27,220 --> 00:03:33,040
+modifier to prevent the default behavior because I don't want to submit the form when I send the request
+
+40
+00:03:33,040 --> 00:03:34,980
+to the server that will reload the page.
+
+41
+00:03:34,990 --> 00:03:36,130
+I don't want that.
+
+42
+00:03:36,130 --> 00:03:42,490
+Instead I want to prevent a default and only execute to create new method which I'll now add here in
+
+43
+00:03:42,490 --> 00:03:45,220
+the methods key or object.
+
+44
+00:03:45,280 --> 00:03:55,060
+Here I'll have my create new Mefford ear sextile and in there all I want to do is I want to emit this
+
+45
+00:03:55,060 --> 00:03:57,500
+new quote.
+
+46
+00:03:57,520 --> 00:03:59,270
+Now we solve that the.
+
+47
+00:03:59,300 --> 00:04:02,870
+But I'll come back to this in the next with you when I finally will send.
+
+48
+00:04:02,890 --> 00:04:05,830
+To quote created here to the parent component.
+

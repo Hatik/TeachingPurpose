@@ -1,0 +1,132 @@
+1
+00:00:01,770 --> 00:00:07,890
+Important for configuring a directive are five hooks such a directive has kind of like lifecycle hooks
+
+2
+00:00:07,890 --> 00:00:08,750
+on a component.
+
+3
+00:00:08,810 --> 00:00:15,150
+A director has also five methods we can hook in to perform things with the elementary directive sets
+
+4
+00:00:15,150 --> 00:00:21,810
+on the first took SD bind hook this is fired as soon as our directive is bound to the element.
+
+5
+00:00:21,810 --> 00:00:27,210
+So as soon as we get access to the element therefore here we get free arguments passed into this method
+
+6
+00:00:27,330 --> 00:00:34,950
+d l argument refers to the elementary directive sits on the binding argument refers to the way this
+
+7
+00:00:34,950 --> 00:00:39,930
+directive is set up so which arguments we may pass which modify as you may pass to where we will see
+
+8
+00:00:39,930 --> 00:00:44,070
+all of that and the node refers to the node and the DOM.
+
+9
+00:00:44,130 --> 00:00:45,940
+Thats something you will really use.
+
+10
+00:00:46,110 --> 00:00:52,310
+Especially important the latter two arguments binding and the node should be treated as read Olea don't
+
+11
+00:00:52,320 --> 00:00:58,070
+change anything there inside of your directive because that really are things controlled by the UJA
+
+12
+00:00:58,070 --> 00:01:01,500
+us and not something you should change at runtime.
+
+13
+00:01:01,590 --> 00:01:07,140
+So this bind hook here are curus once the directive is attached to the element there after we get the
+
+14
+00:01:07,140 --> 00:01:08,320
+inserted took.
+
+15
+00:01:08,400 --> 00:01:11,610
+This of course as soon as it is inserted in the dawn.
+
+16
+00:01:11,610 --> 00:01:14,840
+So as soon as this element alters part of the dawn.
+
+17
+00:01:14,850 --> 00:01:18,320
+But who can access it in the first book already thats important to understand.
+
+18
+00:01:18,420 --> 00:01:23,160
+We needed to be inserted in a dom to be able to style it or do anything with it.
+
+19
+00:01:23,160 --> 00:01:26,590
+It will reflect these changes once that is inserted anyways.
+
+20
+00:01:26,790 --> 00:01:33,420
+And then we get the same arguments then we get update updates called and every component updates though
+
+21
+00:01:33,420 --> 00:01:36,530
+important to children of that component haven't been updated yet.
+
+22
+00:01:36,600 --> 00:01:39,870
+And we also get an extra argument old node.
+
+23
+00:01:40,110 --> 00:01:45,610
+Well since it updated we got the new node in the virtual dorm and the old node again.
+
+24
+00:01:45,630 --> 00:01:49,190
+Both should be treated as read only as should be binding.
+
+25
+00:01:49,230 --> 00:01:53,290
+We also got component updated that is called once the commission has been updated.
+
+26
+00:01:53,310 --> 00:01:57,990
+Anti-children into components so once everything has been updated the arguments are the same as in the
+
+27
+00:01:57,990 --> 00:02:00,380
+update method and we get unbind.
+
+28
+00:02:00,420 --> 00:02:05,850
+That is when average directive would be removed and there we also got the element the binding and the
+
+29
+00:02:05,850 --> 00:02:07,010
+current virtual node.
+
+30
+00:02:07,110 --> 00:02:13,170
+These are the five hooks I'm going to say right away you're going to use bind and update the most often
+
+31
+00:02:13,260 --> 00:02:18,600
+and actually I will show the whole example with just the bind name which is the important one because
+
+32
+00:02:18,600 --> 00:02:24,840
+that is the one where triggering whatever your directive should trigger when applied to an element right.
+
+33
+00:02:24,930 --> 00:02:26,070
+So let's see this an act.
+

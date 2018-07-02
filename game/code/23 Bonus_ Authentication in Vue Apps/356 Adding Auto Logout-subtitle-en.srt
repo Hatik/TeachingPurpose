@@ -1,0 +1,276 @@
+1
+00:00:02,410 --> 00:00:09,640
+Let's start working on our auto log out functionality so that if we have a token that expired because
+
+2
+00:00:09,640 --> 00:00:12,610
+the user stayed in the app for more than one hour.
+
+3
+00:00:12,640 --> 00:00:14,870
+He's automatically locked out.
+
+4
+00:00:14,890 --> 00:00:21,790
+Now one important word firebase also gives you this refreshed token which we saw earlier in the console
+
+5
+00:00:21,790 --> 00:00:22,350
+log.
+
+6
+00:00:22,450 --> 00:00:27,330
+We can still see it if we quickly do log in here on the response data.
+
+7
+00:00:27,460 --> 00:00:35,400
+We got this refreshed token unlike the ID token this never expires and you can always use stet to send
+
+8
+00:00:35,400 --> 00:00:42,130
+it to a specific API endpoint one which you can find in the documentation exchange a refreshed token
+
+9
+00:00:42,130 --> 00:00:46,720
+for an I.D. token to get a new ID token.
+
+10
+00:00:46,750 --> 00:00:51,610
+Now this allows you to theoretically create an infinite session.
+
+11
+00:00:51,610 --> 00:00:58,440
+This approach of course obviously is a bit less secure than when not using this refresh token because
+
+12
+00:00:58,440 --> 00:01:01,170
+it's the refresh token it's a valid forever.
+
+13
+00:01:01,330 --> 00:01:05,380
+Anyone with the refreshed token can generate new ID tokens.
+
+14
+00:01:05,800 --> 00:01:09,220
+One important word here though of course it's not that easy to get.
+
+15
+00:01:09,230 --> 00:01:12,980
+Do you refresh token though you store it in local storage.
+
+16
+00:01:13,000 --> 00:01:14,740
+We'll do this in a second.
+
+17
+00:01:14,740 --> 00:01:20,500
+And there you can only exit with cross-site scripting attacks which view prevents by default.
+
+18
+00:01:20,680 --> 00:01:24,880
+So it's less secure but not in secure per say.
+
+19
+00:01:24,920 --> 00:01:29,160
+Still I won't use that refreshed token thing here.
+
+20
+00:01:29,200 --> 00:01:35,350
+You could of course implemented with the help of the documentation by sending it to this point here
+
+21
+00:01:35,350 --> 00:01:41,830
+and getting a new ID token but for our needs here the relevant thing is that the ID token alone if we're
+
+22
+00:01:41,830 --> 00:01:47,100
+not using the refreshed token will expire after one hour and can't be use anymore.
+
+23
+00:01:47,350 --> 00:01:54,640
+So I want to implement some functionality which automatically locks user out one CD token became invalid
+
+24
+00:01:55,210 --> 00:02:01,360
+and we actually get the expiration time here as an argument in the response to read now it's always
+
+25
+00:02:01,450 --> 00:02:03,280
+free to 600 seconds.
+
+26
+00:02:03,310 --> 00:02:07,930
+But if that should ever change in the future we could still work with it because we can extract that
+
+27
+00:02:07,930 --> 00:02:09,670
+from the response.
+
+28
+00:02:09,670 --> 00:02:14,070
+Now this is the thing the information we have.
+
+29
+00:02:14,170 --> 00:02:18,400
+How can we now automatically lock the user out.
+
+30
+00:02:19,000 --> 00:02:22,320
+Let's move to our store in there.
+
+31
+00:02:22,360 --> 00:02:29,440
+We got our action where we locked a user in or when we sign the user up where we get the token and we
+
+32
+00:02:29,440 --> 00:02:35,400
+need to set some timer here which automatically dispatch us an action once.
+
+33
+00:02:35,410 --> 00:02:39,480
+Well once the time is over once the data is invalid.
+
+34
+00:02:39,850 --> 00:02:46,750
+So for that I'll add a new action maybe at the top which all names set log out timer
+
+35
+00:02:49,330 --> 00:02:57,130
+now in set log a timer I will still pull out the commit method from this context object and I will receive
+
+36
+00:02:57,130 --> 00:03:03,630
+a payload the expiration time sort of time until the token is invalid.
+
+37
+00:03:03,700 --> 00:03:06,100
+Dan and here are a whole set timeout.
+
+38
+00:03:07,560 --> 00:03:11,220
+And I will pass expiration time as a second value.
+
+39
+00:03:11,220 --> 00:03:16,760
+However that would be in seconds but we need to measure this in multi seconds for a set time.
+
+40
+00:03:16,950 --> 00:03:19,470
+So I will multiply with 1000.
+
+41
+00:03:19,470 --> 00:03:24,000
+This will also automatically convert this string number to a real number.
+
+42
+00:03:24,270 --> 00:03:28,920
+And then I want to execute this arrow function after this time period in there.
+
+43
+00:03:28,920 --> 00:03:32,160
+I simply want to commit log out.
+
+44
+00:03:32,160 --> 00:03:36,890
+I want to log out once this time is over.
+
+45
+00:03:37,020 --> 00:03:42,760
+Now to be able to check this all temporarily leave out time times thousands.
+
+46
+00:03:42,930 --> 00:03:47,600
+So different than 600 will be used which is 3.6 seconds.
+
+47
+00:03:47,610 --> 00:03:50,550
+So we should quickly see a log out works.
+
+48
+00:03:50,580 --> 00:03:53,580
+Now of course I need to dispatch said log out timer.
+
+49
+00:03:53,760 --> 00:03:56,670
+So I'll do this from the log in Methot.
+
+50
+00:03:56,760 --> 00:04:00,630
+We can also pull out the dispatch method from this context object.
+
+51
+00:04:00,630 --> 00:04:07,050
+As you already learned and I will dispatch this here and that then block all dispatch said log out timer
+
+52
+00:04:07,400 --> 00:04:15,600
+and I of course need to pass on response data expires in was the name of the property which Holsteins
+
+53
+00:04:15,720 --> 00:04:23,310
+time and the same and the sign up method there I already have the dispatch method available.
+
+54
+00:04:23,340 --> 00:04:31,590
+I need to call set log or time or here queue and pass on rest's data expires in year two with all that
+
+55
+00:04:31,710 --> 00:04:35,670
+saved let's go back and let's sign in in our application.
+
+56
+00:04:35,670 --> 00:04:43,280
+We should instantly be locked out or not instantly but after 3.6 seconds so let's wait
+
+57
+00:04:46,620 --> 00:04:49,010
+unknown mutation type log out.
+
+58
+00:04:49,290 --> 00:04:52,740
+Well there is a tiny problem.
+
+59
+00:04:52,950 --> 00:04:56,990
+Dictation I want to execute is of course called Colyer off data.
+
+60
+00:04:57,060 --> 00:04:59,250
+We could see that something happened there.
+
+61
+00:04:59,270 --> 00:05:01,660
+So chances are high it'll work.
+
+62
+00:05:01,770 --> 00:05:07,020
+So let's log in again let's wait for this short time period again.
+
+63
+00:05:08,940 --> 00:05:11,170
+And you'll see we were locked out.
+
+64
+00:05:12,070 --> 00:05:14,470
+So with this we added all the log out.
+
+65
+00:05:14,470 --> 00:05:21,240
+Now let me go back and multiply it is expiration time with 1 1000 again to turn this into milliseconds
+
+66
+00:05:21,250 --> 00:05:23,210
+and therefore into the right value.
+
+67
+00:05:23,410 --> 00:05:25,640
+And with that we add all alog out.
+
+68
+00:05:25,690 --> 00:05:32,410
+Now in the next lecture Let's have a look at our log in so that we also can persist a valid token across
+
+69
+00:05:32,440 --> 00:05:33,670
+page reloads.
+

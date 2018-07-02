@@ -1,0 +1,284 @@
+1
+00:00:02,550 --> 00:00:08,820
+In the last lecture we sent a GET request and now I just want to show you how we could get the data
+
+2
+00:00:08,820 --> 00:00:11,160
+we get your to to screen for that.
+
+3
+00:00:11,220 --> 00:00:17,780
+First of all as a data method in our view component does special data method.
+
+4
+00:00:17,940 --> 00:00:25,750
+When we return the data object we want to use in this data object I will store my e-mail address and
+
+5
+00:00:25,800 --> 00:00:27,280
+an empty string initially.
+
+6
+00:00:27,330 --> 00:00:32,670
+Of course you could output all the data we get back but I would just want to demonstrate how we access
+
+7
+00:00:32,670 --> 00:00:35,420
+the data etic sambal oft email address.
+
+8
+00:00:35,420 --> 00:00:39,520
+You can of course that always applied as to the Amur fields you get back to.
+
+9
+00:00:39,930 --> 00:00:50,130
+So let's say here in paragraph we want to say your mail address email address of course and then here
+
+10
+00:00:50,190 --> 00:00:55,140
+I want to output e-mail referring to that data field.
+
+11
+00:00:55,140 --> 00:01:01,440
+Now the goal is to set this email field to the data we get back from the server here in the then block
+
+12
+00:01:01,530 --> 00:01:03,920
+because that is where we have access to the data.
+
+13
+00:01:04,050 --> 00:01:07,020
+And that's important because it's sometimes messed up.
+
+14
+00:01:07,230 --> 00:01:16,370
+You can't set this email equal to response e-mail or something like that because you only have X through
+
+15
+00:01:16,380 --> 00:01:22,520
+a response inside this function and then block because this is async code does function here and that
+
+16
+00:01:22,520 --> 00:01:25,150
+then block runs sometime in the future.
+
+17
+00:01:25,290 --> 00:01:31,560
+The code right after X diskette is executed immediately after this is done without waiting for this
+
+18
+00:01:31,590 --> 00:01:33,000
+future response.
+
+19
+00:01:33,000 --> 00:01:37,100
+So only access data inside of this function.
+
+20
+00:01:37,110 --> 00:01:42,810
+So with that all create a function here and there won't just console lock the response even though I
+
+21
+00:01:42,810 --> 00:01:48,620
+was still all to do that but instead I want to set this email equal to something from the response.
+
+22
+00:01:48,630 --> 00:01:57,270
+Now as you learn our response actually holds a javascript object in that day field where we have a lot
+
+23
+00:01:57,270 --> 00:02:00,820
+of information about the users we stored.
+
+24
+00:02:00,960 --> 00:02:06,840
+Actually we get a lot of these cryptic keys where then the user data is the value of these keys.
+
+25
+00:02:06,900 --> 00:02:13,060
+So what we probably have to do is we have to loop through all these keys to get e-mail addresses.
+
+26
+00:02:13,230 --> 00:02:14,880
+And that's right addresses.
+
+27
+00:02:14,910 --> 00:02:19,590
+We have more than one user at least theoretically because we were posting data.
+
+28
+00:02:19,590 --> 00:02:25,920
+So we're storing more than one user still if we want to get only one e-mail address let's say the first
+
+29
+00:02:25,920 --> 00:02:31,030
+one let's simply call the word does object into an array.
+
+30
+00:02:31,030 --> 00:02:32,970
+Does Optik we get back for this.
+
+31
+00:02:32,970 --> 00:02:36,630
+First of all all extracted data from rest data.
+
+32
+00:02:36,630 --> 00:02:43,840
+Just a little line to make the following line up a shorter there after all loop through my keys.
+
+33
+00:02:43,860 --> 00:02:51,160
+So for key in data I now want to store that in an array.
+
+34
+00:02:51,440 --> 00:02:57,080
+So there I'll try a new user array an empty array at the beginning and then it will simply call users
+
+35
+00:02:57,260 --> 00:03:01,350
+Porsche in here and access data for a given key.
+
+36
+00:03:01,490 --> 00:03:06,180
+Dad will be the value for these cryptic keys to push that into the array.
+
+37
+00:03:06,380 --> 00:03:09,980
+However I will fine tune this a little bit.
+
+38
+00:03:10,280 --> 00:03:13,790
+I will create a new constant user in here.
+
+39
+00:03:15,220 --> 00:03:20,940
+And this will be data key because it is the user data.
+
+40
+00:03:21,310 --> 00:03:28,460
+But then I'll also add a new property to the user user ID that's a property which didn't exist before.
+
+41
+00:03:28,640 --> 00:03:34,820
+Which should be that cryptic string so that we don't lose that let's say and then it can say users Lorsch
+
+42
+00:03:35,030 --> 00:03:36,500
+user.
+
+43
+00:03:36,590 --> 00:03:44,480
+Now let me console log users offered this for Lou and then I'll also said this email equal to users.
+
+44
+00:03:44,480 --> 00:03:50,870
+The first element let's say email like this with all these changes in place if we now save this and
+
+45
+00:03:50,870 --> 00:03:59,200
+go back to our application and I reload this page simply go back there you'll see reload the e-mail
+
+46
+00:03:59,200 --> 00:04:00,460
+address here.
+
+47
+00:04:00,760 --> 00:04:06,820
+And now if we reload this page one more time you'll see that here it got Yukon's locks.
+
+48
+00:04:06,910 --> 00:04:12,810
+The original data we get back from AXS does object where we have this data object.
+
+49
+00:04:12,940 --> 00:04:16,540
+Does this the data object we access you're in our code.
+
+50
+00:04:16,720 --> 00:04:18,180
+Rest data.
+
+51
+00:04:18,580 --> 00:04:20,650
+And then this is an object right.
+
+52
+00:04:20,650 --> 00:04:24,040
+It's not an array it's an object where we have keys.
+
+53
+00:04:24,070 --> 00:04:29,920
+These cryptic strings and values which is our actual user data for that given ID.
+
+54
+00:04:30,160 --> 00:04:35,190
+I do now loop through these keys with the for loop here.
+
+55
+00:04:36,560 --> 00:04:42,950
+And then I create a new array where I extract that user data and also add an ID to each user in that
+
+56
+00:04:42,980 --> 00:04:43,830
+array.
+
+57
+00:04:43,880 --> 00:04:47,510
+So that is what we can see in the array we output here at the bottom.
+
+58
+00:04:47,510 --> 00:04:49,030
+It's an array of objects.
+
+59
+00:04:49,070 --> 00:04:50,270
+The object is D.
+
+60
+00:04:50,300 --> 00:04:55,150
+Well let's say right side of is data object.
+
+61
+00:04:55,150 --> 00:05:01,730
+And here we got our idea to so that this doesn't get lost because this could be information we need
+
+62
+00:05:01,940 --> 00:05:07,480
+to for example map a post created by that user in the future or something like that.
+
+63
+00:05:07,940 --> 00:05:12,340
+So this is how we can extract data when using X years.
+
+64
+00:05:12,470 --> 00:05:16,570
+And I just wanted to show this little demo so that this is crystal clear.
+
+65
+00:05:16,640 --> 00:05:22,360
+And you know how to not only store data on a server but that you really ought to know how to extract
+
+66
+00:05:22,360 --> 00:05:22,940
+it.
+
+67
+00:05:22,940 --> 00:05:29,870
+Of course the exact steps differ by the format of the data you're back and returns to you firebase happens
+
+68
+00:05:29,870 --> 00:05:37,220
+to return this object with these cryptic keys and then the value your back end might return a different
+
+69
+00:05:37,220 --> 00:05:38,000
+format.
+
+70
+00:05:38,030 --> 00:05:45,110
+So the general idea of accessing rest data and then transforming it to your needs still is always the
+
+71
+00:05:45,110 --> 00:05:45,900
+same though.
+

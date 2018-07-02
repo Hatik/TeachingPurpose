@@ -1,0 +1,128 @@
+1
+00:00:01,810 --> 00:00:08,340
+Great so we learn how to use slots and how to be careful about where things gets changed.
+
+2
+00:00:08,340 --> 00:00:15,130
+So regarding the styling which has changed by a child and all the average safety UJA relate to things
+
+3
+00:00:15,340 --> 00:00:21,180
+which are changed or applied in the parent component where the template is actually set up.
+
+4
+00:00:21,340 --> 00:00:26,280
+Now what if we wanted to kind of do this a bit differently here.
+
+5
+00:00:26,710 --> 00:00:31,240
+Let's say I'm still passing my title and I'm passing my paragraph.
+
+6
+00:00:31,510 --> 00:00:37,920
+But then here in my template I'm going to have them rendered in two different places.
+
+7
+00:00:37,990 --> 00:00:45,220
+So let's say here in this div I have a number div and in there I'm one to have my title because this
+
+8
+00:00:45,220 --> 00:00:49,660
+has a class title let's say which will receive some special styling.
+
+9
+00:00:49,990 --> 00:00:57,870
+Let's say title would simply have and style of attack league.
+
+10
+00:00:58,320 --> 00:01:02,390
+And thereafter we would have a horizontal line and then we would have to content.
+
+11
+00:01:02,580 --> 00:01:09,570
+So I somehow want two different slots one for the title and then one slot for the content.
+
+12
+00:01:09,570 --> 00:01:11,180
+How can we achieve this.
+
+13
+00:01:11,610 --> 00:01:19,430
+Well if I say that like Dad we simply have it twice and one time we tell a one time not because now
+
+14
+00:01:19,430 --> 00:01:23,230
+with two slots the content is simply inserted twice.
+
+15
+00:01:23,240 --> 00:01:24,840
+It could be the behavior we want.
+
+16
+00:01:24,840 --> 00:01:28,590
+Baby you want to render it twice but here I want to split it up.
+
+17
+00:01:28,610 --> 00:01:33,140
+I want to render the title in the first slot and the paragraph in the second slot.
+
+18
+00:01:33,140 --> 00:01:42,720
+So how do edge chief that well we Kensit up named slots so I can give this slot a name of let's say
+
+19
+00:01:42,720 --> 00:01:47,260
+title and the slot will receive a name of content.
+
+20
+00:01:47,580 --> 00:01:54,710
+And then in the parent component where a half the content when I pass I can go here and add a new attribute.
+
+21
+00:01:54,720 --> 00:02:01,740
+This would be a slot equals title so slot of course is not an official aged Yamal attribute that's an
+
+22
+00:02:01,740 --> 00:02:10,080
+attribute implemented or introduced by viewed shapes and known by chess and chess will detectors slot
+
+23
+00:02:10,420 --> 00:02:15,710
+attribute and the nearest that deep part when quotation marks is the name of the slot.
+
+24
+00:02:15,720 --> 00:02:17,520
+It should render this content.
+
+25
+00:02:17,640 --> 00:02:20,340
+So in this case this first slot.
+
+26
+00:02:20,340 --> 00:02:26,430
+Now let's also set this up for in a paragraph where I say slot equals content and finally save this
+
+27
+00:02:27,750 --> 00:02:29,420
+and let it reload.
+
+28
+00:02:29,530 --> 00:02:31,950
+We now see it split up as I wanted it.
+
+29
+00:02:31,990 --> 00:02:36,040
+I do have my quote up here and then I do half the content.
+
+30
+00:02:36,040 --> 00:02:40,940
+It's not a wonderful anymore to be very honest but it behaves exactly how it should.
+
+31
+00:02:40,950 --> 00:02:47,020
+It distributes our content in two different slots and we tell it how to distribute that by setting up
+
+32
+00:02:47,020 --> 00:02:47,850
+names.
+

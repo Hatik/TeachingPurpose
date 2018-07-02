@@ -1,0 +1,76 @@
+1
+00:00:01,960 --> 00:00:09,370
+I always set up some classes in DC s s file here here here I got my player turn monster current classes
+
+2
+00:00:09,430 --> 00:00:13,170
+which colored the background in different colors red and bluish.
+
+3
+00:00:13,170 --> 00:00:20,560
+Basically I want to attach these classes to my list item here by eneral.
+
+4
+00:00:20,680 --> 00:00:24,300
+Put this there were multiple lines so that it's easier to read.
+
+5
+00:00:24,330 --> 00:00:34,850
+So by simply adding a binding to class your with the colon at the beginning to bind tudy class property
+
+6
+00:00:35,150 --> 00:00:37,660
+class attributes to be precise.
+
+7
+00:00:37,780 --> 00:00:46,880
+I don't want to bind an object where I either attached a player return let's say or the Monster Tour
+
+8
+00:00:46,890 --> 00:00:52,760
+and class these are the classes set up in the C S S file and deconditioned for the player turn class
+
+9
+00:00:52,820 --> 00:00:56,620
+is in turn is player is true.
+
+10
+00:00:56,630 --> 00:01:05,190
+This is why I do have is is player field here which I said true for each player action and force and
+
+11
+00:01:05,200 --> 00:01:11,380
+you monstre a tax function and therefore the monster term should be attached.
+
+12
+00:01:11,380 --> 00:01:14,810
+If turn is player is not true.
+
+13
+00:01:14,890 --> 00:01:19,200
+Hence the exclamation mark with that if I save it and reload.
+
+14
+00:01:19,240 --> 00:01:24,110
+We now see we get some color coloring here get nicer styles.
+
+15
+00:01:24,310 --> 00:01:30,070
+And with that we get a finished application with all the functionality I wanted to have with the working
+
+16
+00:01:30,070 --> 00:01:30,770
+buttons.
+
+17
+00:01:30,850 --> 00:01:32,550
+Some nice styling.
+
+18
+00:01:32,710 --> 00:01:37,490
+Everything handled conditionally and dynamically by View chess.
+
+19
+00:01:37,570 --> 00:01:42,160
+And I hope you saw how easy it was to create this application with a view chaffs.
+

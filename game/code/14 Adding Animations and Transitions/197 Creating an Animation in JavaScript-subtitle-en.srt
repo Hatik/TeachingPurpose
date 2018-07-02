@@ -1,0 +1,300 @@
+1
+00:00:02,350 --> 00:00:07,450
+Now that we are taking or Witch-Hollow stript time to execute some code so that we can actually see
+
+2
+00:00:07,460 --> 00:00:13,960
+animation now the place to animate is enter into leaf function because these are the functions which
+
+3
+00:00:13,960 --> 00:00:18,480
+get executed after the initial states have been settled before enter and before leave.
+
+4
+00:00:18,790 --> 00:00:20,380
+And well before we're done.
+
+5
+00:00:20,680 --> 00:00:28,100
+So here in Antar besides logging this I want to grow the width of this death.
+
+6
+00:00:28,180 --> 00:00:31,780
+So I want to grow it to the right make it a bit broader.
+
+7
+00:00:31,780 --> 00:00:36,590
+And upon leaving I want to make it smaller let's say these are the two animations I want to play for
+
+8
+00:00:37,360 --> 00:00:45,850
+now what I will do to play this is I will set up variable round here with the last keyword is 6 syntax
+
+9
+00:00:46,360 --> 00:00:47,380
+and then I'll set up intro.
+
+10
+00:00:47,380 --> 00:00:55,270
+Well said intro well because I want to grow it in steps of course and not instantly make it pop from
+
+11
+00:00:55,360 --> 00:00:57,690
+normal size to broader.
+
+12
+00:00:57,760 --> 00:01:04,600
+So here we do we need Central will to play or to change something over some time and I want to set it
+
+13
+00:01:04,630 --> 00:01:11,380
+in an interval of let's say 20 milliseconds so every 20 milliseconds I want to change this div now in
+
+14
+00:01:11,380 --> 00:01:16,780
+this function here and the first argument of set interval I execute the code at one a change every 20
+
+15
+00:01:16,780 --> 00:01:18,740
+seconds milliseconds.
+
+16
+00:01:18,760 --> 00:01:25,690
+So here I want to exit my excess my element there to style and then let's say the width and I want to
+
+17
+00:01:25,690 --> 00:01:27,140
+set you with two.
+
+18
+00:01:27,160 --> 00:01:37,740
+Now you want to deal with it right now has plus something which depends on the round we are currently
+
+19
+00:01:37,740 --> 00:01:38,350
+in.
+
+20
+00:01:38,730 --> 00:01:48,260
+So I want to bind the two element style with the curve with plus round times 10 let's say.
+
+21
+00:01:48,270 --> 00:01:54,200
+So in round one we add 10 pixels and round two we add 20 pixels and so on.
+
+22
+00:01:54,210 --> 00:01:59,730
+Now this will make it grow exponentially though because it would take the old width and then add ever
+
+23
+00:01:59,730 --> 00:02:00,930
+higher numbers to it.
+
+24
+00:02:01,020 --> 00:02:03,140
+So that's not really that's not what I want.
+
+25
+00:02:03,480 --> 00:02:11,100
+Instead I will save a new property which will name element with and I'll set it to 100 because I want
+
+26
+00:02:11,100 --> 00:02:13,930
+to have 100 pixels being the default.
+
+27
+00:02:13,950 --> 00:02:17,400
+This means I can now use this year this element the width.
+
+28
+00:02:17,790 --> 00:02:25,740
+And now I will make it grow from 100 to 110 from 100 to 120 because this will always stay constant It
+
+29
+00:02:25,740 --> 00:02:26,720
+never changes.
+
+30
+00:02:26,730 --> 00:02:29,860
+It's only the width which is attached attached here.
+
+31
+00:02:29,880 --> 00:02:31,770
+Just that year excuse me.
+
+32
+00:02:31,800 --> 00:02:37,380
+So let's put this into parentheses to execute this calculation first before we then convert it into
+
+33
+00:02:37,380 --> 00:02:38,780
+a string and add pixels.
+
+34
+00:02:38,780 --> 00:02:45,490
+And yet because we need to set it in pixels in the end and not as a number this shot changed to styling.
+
+35
+00:02:45,510 --> 00:02:52,860
+Then of course we also need to increase the round by one so that this round variable increases and we
+
+36
+00:02:52,860 --> 00:02:54,570
+want to set up an exit condition.
+
+37
+00:02:54,570 --> 00:03:01,020
+So if round is greater than 20 if we execute it to 20 times let's say then I want to clear the entire
+
+38
+00:03:01,020 --> 00:03:05,650
+well with the clear integral method and passing the interval which is stored in a constant.
+
+39
+00:03:05,940 --> 00:03:10,860
+And I want to call down here and don't want to call it outside of that because that was what that is
+
+40
+00:03:10,860 --> 00:03:16,500
+what I was talking before about I don't want to execute or don't want to mark this as finished once
+
+41
+00:03:16,500 --> 00:03:20,760
+this code has been executed because we do have an asynchronous operation there.
+
+42
+00:03:20,790 --> 00:03:23,920
+Therefore Dangi all be executed once we really are done.
+
+43
+00:03:23,970 --> 00:03:28,310
+Once we reach this exit condition here now does this looks good.
+
+44
+00:03:28,320 --> 00:03:31,650
+But we should also set the initial with fear before entering.
+
+45
+00:03:31,860 --> 00:03:37,620
+So here we should set element with two 100.
+
+46
+00:03:37,640 --> 00:03:45,300
+We don't really change it but just to make sure that it really is 100 and then we want to set the element
+
+47
+00:03:45,300 --> 00:03:48,320
+style the with to this element.
+
+48
+00:03:48,360 --> 00:03:55,230
+With Plus pixels so that we reset it to 100 before adding it to a dog.
+
+49
+00:03:55,250 --> 00:04:01,130
+Because if we added up before and removed it this might have been in a different state especially if
+
+50
+00:04:01,130 --> 00:04:03,090
+we cancel some animation in between.
+
+51
+00:04:03,170 --> 00:04:07,870
+So therefore we want to make sure that we reset everything here before Andrew.
+
+52
+00:04:08,300 --> 00:04:15,170
+Well and with that set up we can of course also go to you before we leave down there but we also want
+
+53
+00:04:15,170 --> 00:04:17,450
+to configure it though here.
+
+54
+00:04:17,540 --> 00:04:27,870
+We definitely want to set the elements style with to save 300 pixels like this does us very little bit
+
+55
+00:04:27,930 --> 00:04:36,430
+in the end ofter our entire animation here because we animated up all the way to 20 pixels at you 20
+
+56
+00:04:36,450 --> 00:04:39,580
+times 10 plus 100 or so to 300 pixels.
+
+57
+00:04:39,720 --> 00:04:46,320
+Well and for animating it out I can simply copy the code from the ENTRAR function here override to done
+
+58
+00:04:46,320 --> 00:04:49,930
+function because you want to call this an our exit condition here too.
+
+59
+00:04:50,130 --> 00:04:56,850
+And the only thing I need to change here is that I want to of course decrease the width though this
+
+60
+00:04:56,910 --> 00:04:59,550
+element with will always be 100.
+
+61
+00:04:59,820 --> 00:05:05,910
+So for this to work we should also add something here and before I leave and set this element with to
+
+62
+00:05:05,970 --> 00:05:14,290
+300 and then we can also override this year to use this element with plus pixels here again.
+
+63
+00:05:14,310 --> 00:05:18,520
+So now it also makes sense to reset this to 100 and before enter.
+
+64
+00:05:18,660 --> 00:05:21,350
+Let's see if this works as it should.
+
+65
+00:05:21,390 --> 00:05:22,350
+We have a look at this.
+
+66
+00:05:22,350 --> 00:05:31,630
+Any application we can load that to grow it and then shrink it load it and get loaded and shrink it.
+
+67
+00:05:31,690 --> 00:05:36,560
+And you see if we loaded for the first time we get this ugly chump because then our initial With doesn't
+
+68
+00:05:36,560 --> 00:05:38,210
+fit the with it should have.
+
+69
+00:05:38,210 --> 00:05:43,670
+Once it is attached to the Dom and we can easily fix this by going to our code and set to work to free
+
+70
+00:05:43,670 --> 00:05:47,800
+hundreds here and now you see that looks pretty good.
+
+71
+00:05:47,810 --> 00:05:53,000
+Now we get the animations we wanted now all done through Javascript.
+
+72
+00:05:53,030 --> 00:05:59,270
+And just to highlight this once more you can mix javascript animations and see as animations.
+
+73
+00:05:59,390 --> 00:06:05,510
+Here I just wanted to show the world he did the extreme opposite by just using Chavez.
+
+74
+00:06:05,630 --> 00:06:08,850
+Mixing it is fine if you do use only javascript.
+
+75
+00:06:08,870 --> 00:06:15,840
+Consider using this C-s as attributes here though to tell you chess that it may skip DC s s detection.
+

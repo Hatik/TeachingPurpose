@@ -1,0 +1,44 @@
+1
+00:00:02,590 --> 00:00:05,810
+Well come one important note about this module.
+
+2
+00:00:05,810 --> 00:00:12,490
+This module is about authentication and to really follow through to US Marshals smoothly.
+
+3
+00:00:12,530 --> 00:00:17,980
+I strongly recommend going for the X years module first because just like D.
+
+4
+00:00:18,010 --> 00:00:25,430
+X yes bonus module this module was added after the course was released to add some extra content to
+
+5
+00:00:25,430 --> 00:00:26,450
+the course.
+
+6
+00:00:26,450 --> 00:00:33,620
+It actually used the same project as I use in the X years module and it uses ERYXIAS for reaching out
+
+7
+00:00:33,620 --> 00:00:34,450
+to the Web.
+
+8
+00:00:34,610 --> 00:00:39,320
+So if you already know this or if you're willing to dig through the code on your own you may skip the
+
+9
+00:00:39,320 --> 00:00:40,490
+Access Module.
+
+10
+00:00:40,540 --> 00:00:47,270
+Otherwise I recommend at least going through the access martial of skipping fluid so of you know what
+
+11
+00:00:47,270 --> 00:00:49,820
+we're actually working on in this module.
+

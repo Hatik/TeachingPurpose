@@ -1,0 +1,32 @@
+1
+00:00:01,640 --> 00:00:06,580
+In this module we had a look at directives both built in ones and custom ones.
+
+2
+00:00:06,650 --> 00:00:12,440
+We learned that it is key to have the v dash at the beginning and then the name of the director follows.
+
+3
+00:00:12,440 --> 00:00:18,650
+You also learn how to create global and local directives how to pass arguments and modifiers and how
+
+4
+00:00:18,650 --> 00:00:24,890
+to pass a value both a simple value like a string or a more complex value like an object like we do
+
+5
+00:00:24,890 --> 00:00:27,620
+here in the second directive from the local one.
+
+6
+00:00:27,720 --> 00:00:32,510
+With that you should be prepared to create your own directive and play around with the different hooks
+
+7
+00:00:32,510 --> 00:00:37,430
+and the different things you can Pasztor you can do with the element and said so on and so on.
+
+8
+00:00:37,460 --> 00:00:42,010
+And with that let's continue to observe features namely FOTR s next.
+

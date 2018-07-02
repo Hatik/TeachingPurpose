@@ -1,0 +1,120 @@
+1
+00:00:01,970 --> 00:00:05,560
+Back with the summer exercise we'll learn about computer properties.
+
+2
+00:00:05,570 --> 00:00:11,880
+Another key feature of future areas which makes reacting to data changes and updating related already
+
+3
+00:00:11,980 --> 00:00:13,590
+pending values.
+
+4
+00:00:13,590 --> 00:00:14,830
+Very very easy.
+
+5
+00:00:14,870 --> 00:00:21,110
+So this is something you will use a lot as it really makes your application more dynamic and more flexible.
+
+6
+00:00:21,410 --> 00:00:27,650
+So therefore it's also important to really understand how to work with it and to get these core mechanics
+
+7
+00:00:27,650 --> 00:00:28,810
+set.
+
+8
+00:00:28,820 --> 00:00:31,450
+So here I'm prepared to exercise this.
+
+9
+00:00:31,460 --> 00:00:37,820
+And even though it's only two it shouldn't really get you into computer properties and watching properties
+
+10
+00:00:37,880 --> 00:00:38,930
+as well.
+
+11
+00:00:39,120 --> 00:00:46,910
+And the first exercise I want you to train or to practice the computer properties we have to but this
+
+12
+00:00:46,910 --> 00:00:53,020
+year at five and add one and we have a current value which initially set to Ciro.
+
+13
+00:00:53,050 --> 00:01:00,060
+But this year as you can see increment or increase the value property but you were 5 or 1 and then a
+
+14
+00:01:00,060 --> 00:01:06,850
+year I want to show a result down here which doesn't exist yet which ever is says not not there yet
+
+15
+00:01:06,860 --> 00:01:12,950
+or whatever you like as long as the value is let's say not equal to 37 of course feel free to choose
+
+16
+00:01:12,950 --> 00:01:21,200
+your own check or your own threshold and then print done whenever the value is equal to 37 or as above
+
+17
+00:01:21,350 --> 00:01:23,390
+whatever your condition is.
+
+18
+00:01:23,390 --> 00:01:28,670
+The key thing here of course is not the value to which you're limiting or what which you're reacting
+
+19
+00:01:28,670 --> 00:01:36,050
+here but that the result property we're going to trade will depend on this value property.
+
+20
+00:01:36,080 --> 00:01:39,610
+That's a typical use case for a computed property.
+
+21
+00:01:40,100 --> 00:01:48,140
+Well the second exercise then is that I want to watch for changes in the result which we are yet to
+
+22
+00:01:48,140 --> 00:01:49,060
+create.
+
+23
+00:01:49,280 --> 00:01:56,960
+And once it does change I want to reset the value after five seconds and here as a hint the function
+
+24
+00:01:56,960 --> 00:02:02,810
+for setting this timer would be set time Howard with 5000 milliseconds as the second argument and the
+
+25
+00:02:02,810 --> 00:02:06,440
+function would run to a code as the first argument.
+
+26
+00:02:06,470 --> 00:02:09,520
+Side note again this will then take a closure.
+
+27
+00:02:09,560 --> 00:02:16,760
+So you will have to bind this that this keyword to a new variable to be able to access it inside of
+
+28
+00:02:16,760 --> 00:02:19,050
+the callback function in set time.
+
+29
+00:02:19,050 --> 00:02:21,570
+And with that then the next to you.
+
+30
+00:02:21,650 --> 00:02:26,850
+We can solve this Sigebert if you are not sure or if you simply want to compare solutions.
+

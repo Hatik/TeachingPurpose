@@ -1,0 +1,356 @@
+1
+00:00:02,000 --> 00:00:09,140
+To conclude this routing module I now want to go into an advanced topic which can really improve your
+
+2
+00:00:09,140 --> 00:00:11,190
+bigger applications.
+
+3
+00:00:11,270 --> 00:00:12,870
+Consider our application.
+
+4
+00:00:12,890 --> 00:00:18,380
+It's very simple but there's one thing we can notice right now.
+
+5
+00:00:18,440 --> 00:00:25,520
+If we never click on user all the code behind this link so all the components be created for it and
+
+6
+00:00:25,520 --> 00:00:27,900
+so on will never be loaded.
+
+7
+00:00:27,920 --> 00:00:29,910
+We won't use them at all.
+
+8
+00:00:30,050 --> 00:00:34,880
+So it might be unnecessary to load them at the beginning of the application.
+
+9
+00:00:34,880 --> 00:00:37,590
+Now it does of course not matter for our tiny application here.
+
+10
+00:00:37,610 --> 00:00:42,800
+But we're a bigger application with lots of code and lots of different features.
+
+11
+00:00:42,830 --> 00:00:47,720
+This might really make a difference if you're using a set up like we do with web page where we bundle
+
+12
+00:00:47,720 --> 00:00:53,840
+everything together into one file then this Esti disadvantaged and whilst limiting the number of HTP
+
+13
+00:00:53,840 --> 00:00:59,420
+requests you send you might limited too much because you're bundled therefore is really big.
+
+14
+00:00:59,690 --> 00:01:05,380
+So you want to find the right balance and having a big all in one bundle and loading stuff.
+
+15
+00:01:05,390 --> 00:01:12,650
+You only need at certain points of time only at these points of time with WePay we can actually do this
+
+16
+00:01:12,950 --> 00:01:17,570
+and you may simply google for lazy loading plus your preferred build system.
+
+17
+00:01:17,570 --> 00:01:20,270
+If you want to find out how to set it up there.
+
+18
+00:01:20,300 --> 00:01:24,590
+But a web pick is pretty common pretty popular so I will show it with this.
+
+19
+00:01:24,590 --> 00:01:25,980
+So I always said it.
+
+20
+00:01:26,000 --> 00:01:27,220
+It's called lazy loading.
+
+21
+00:01:27,220 --> 00:01:33,620
+What I'm talking about lazy loading means we only need or we only load parts of the application when
+
+22
+00:01:33,620 --> 00:01:34,650
+we need it.
+
+23
+00:01:34,970 --> 00:01:39,600
+So back to our routing file how can we prepare this for lazy loading.
+
+24
+00:01:39,620 --> 00:01:45,410
+Right now everything is loaded eagerly which means all the time because we added import statements at
+
+25
+00:01:45,410 --> 00:01:50,660
+the top and everything which you import at the top will always be included in the bundle no matter if
+
+26
+00:01:50,660 --> 00:01:52,390
+you use it or not.
+
+27
+00:01:52,400 --> 00:02:00,980
+So we have to transfer these import statements year into a number of syntax.
+
+28
+00:02:01,350 --> 00:02:02,590
+So I will get rid of them.
+
+29
+00:02:02,600 --> 00:02:09,670
+I will always import home and hetter but now I'm one to lazy load the average for imports decent X-No
+
+30
+00:02:09,680 --> 00:02:15,220
+might look a bit strange but it's something you really just have to keep in mind it's a syntax that
+
+31
+00:02:15,240 --> 00:02:22,490
+webpage will recognize will therefore not include it in the initial Bonnell but instead will create
+
+32
+00:02:22,490 --> 00:02:26,420
+several Abre bundles to send text and talking about looks like this.
+
+33
+00:02:26,420 --> 00:02:31,750
+We create a constant user to all fit the name we use down there so that we don't have to adjust our
+
+34
+00:02:31,750 --> 00:02:38,450
+code down there and then user simply is a E6 function of where you pass resolve as a callback in there
+
+35
+00:02:38,450 --> 00:02:40,180
+as a function in there.
+
+36
+00:02:40,460 --> 00:02:46,490
+And in this function we don't want to call require any sure and now this is really just some code where
+
+37
+00:02:46,490 --> 00:02:49,060
+Pegwell be able to execute and to recognize.
+
+38
+00:02:49,310 --> 00:02:52,790
+So require ensure And this now takes an array.
+
+39
+00:02:53,090 --> 00:02:57,820
+And in this array we set up the path to the component we want to load.
+
+40
+00:02:57,860 --> 00:03:03,080
+So dot slash components slash user and then use or not view.
+
+41
+00:03:03,160 --> 00:03:04,990
+So like before an import statement.
+
+42
+00:03:05,000 --> 00:03:13,040
+Now nested in there does the first argument desire the second argument is a number function where in
+
+43
+00:03:13,040 --> 00:03:19,940
+the body of this function we use the result function we passed in as an argument to call.
+
+44
+00:03:19,960 --> 00:03:28,810
+Require components user user view again now this might look strange what's happening here.
+
+45
+00:03:28,830 --> 00:03:37,310
+It's some syntax web page recognizers and it basically touts web pick whenever we want to load something
+
+46
+00:03:37,310 --> 00:03:40,610
+which lifts and displays components user user view.
+
+47
+00:03:40,670 --> 00:03:47,050
+And we do want to you load it for example once you visit the route route using our user component here.
+
+48
+00:03:47,060 --> 00:03:55,280
+So whatever we do this execute this function here which is basically like a promise which means it resolves
+
+49
+00:03:55,280 --> 00:03:55,910
+the payoff.
+
+50
+00:03:55,910 --> 00:03:57,890
+You should then really use.
+
+51
+00:03:57,890 --> 00:04:04,160
+Now if you would have just require like this at the top then Web Peg would see this in the same way
+
+52
+00:04:04,200 --> 00:04:09,960
+it imports import syntax just a different syntax and would immediately load the file.
+
+53
+00:04:10,160 --> 00:04:16,390
+But by having it in this asynchronous function here which has to be solved before it gets executed WePay
+
+54
+00:04:16,460 --> 00:04:23,090
+is only doing this if we actually need that file and it will create appropriate bundles to be loaded
+
+55
+00:04:23,100 --> 00:04:29,030
+at this point of time during the whole process so that everything will work smoothly without us editing
+
+56
+00:04:29,060 --> 00:04:30,490
+anything here.
+
+57
+00:04:31,190 --> 00:04:38,330
+So with that I can now copy this and yes this arguably gets longer but it's worth that to save performance
+
+58
+00:04:38,330 --> 00:04:48,950
+in bigger applications for users start for example then for user added and also for user detail like
+
+59
+00:04:48,950 --> 00:04:49,690
+this.
+
+60
+00:04:49,970 --> 00:04:55,430
+And now if we save this and we reload the application we see it still works.
+
+61
+00:04:55,430 --> 00:04:56,450
+Does looks good.
+
+62
+00:04:56,720 --> 00:04:59,070
+But how can we tell if something changed.
+
+63
+00:04:59,450 --> 00:05:03,680
+Well let's open the developer tools and go to the network tab here.
+
+64
+00:05:03,950 --> 00:05:08,410
+If we get there and reload the application you see a couple of files are loaded.
+
+65
+00:05:08,420 --> 00:05:13,670
+Most importantly or build file which is really big because it includes all the warnings all the source
+
+66
+00:05:13,670 --> 00:05:16,310
+maps everything and it's not mini fight at all.
+
+67
+00:05:16,310 --> 00:05:18,330
+So don't be worried about that.
+
+68
+00:05:18,470 --> 00:05:25,040
+Now let me clear doesn't that for a tap and if I now click on user you see there were two new panels
+
+69
+00:05:25,040 --> 00:05:25,810
+downloaded.
+
+70
+00:05:25,810 --> 00:05:27,140
+They're small each.
+
+71
+00:05:27,320 --> 00:05:33,020
+If I click on the individual user a new banlieu us downloaded and if I click on added user yet another
+
+72
+00:05:33,020 --> 00:05:34,620
+banlieu was downloaded.
+
+73
+00:05:34,880 --> 00:05:38,120
+I think you're seeing the theme here.
+
+74
+00:05:38,120 --> 00:05:46,790
+These are the extra bundles where Pech created because all these routes here we set up here are now
+
+75
+00:05:46,790 --> 00:05:54,710
+loaded laser Evely and this is how we can utilize this feature to make sure that in bigger applications
+
+76
+00:05:54,800 --> 00:05:58,530
+we only load parts of the application when we need is.
+
+77
+00:05:58,940 --> 00:06:05,690
+As a side note if you want to group certain pieces together into one SAP bundle like that we don't want
+
+78
+00:06:05,690 --> 00:06:09,470
+to have four user bundles we want to store them in one extra bundle.
+
+79
+00:06:09,470 --> 00:06:17,310
+You can group them by passing an additional on an argument here to our require and sure functions.
+
+80
+00:06:17,300 --> 00:06:25,240
+So besides the Airi and this Colback here we don't also have a third argument which is to group name.
+
+81
+00:06:25,250 --> 00:06:27,500
+For example user.
+
+82
+00:06:27,500 --> 00:06:35,120
+Now if we passed that to all our user related routes we set up here or the component imports if we do
+
+83
+00:06:35,120 --> 00:06:43,150
+this and then let's go back to our home page first cleared the console click user reload for a build.
+
+84
+00:06:43,490 --> 00:06:46,250
+But now you see we're not fetching any other files.
+
+85
+00:06:46,250 --> 00:06:47,560
+It stays at this one Follett's.
+
+86
+00:06:47,570 --> 00:06:53,780
+Of course not Ole's is bigger because this file now includes all our user related files or pieces but
+
+87
+00:06:53,840 --> 00:06:59,200
+that might be might make sense maybe you don't want to have a separate panel for every component but
+
+88
+00:06:59,200 --> 00:07:03,520
+you just once grouped them together and with dead you can do that using laser loading.
+
+89
+00:07:03,560 --> 00:07:06,040
+And really therefore optimizing your application.
+

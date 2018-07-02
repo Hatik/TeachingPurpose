@@ -1,0 +1,48 @@
+1
+00:00:01,840 --> 00:00:08,410
+While you're amazing I really really have to say that you worked your way through this course and we
+
+2
+00:00:08,410 --> 00:00:11,360
+all know that was a lot of content.
+
+3
+00:00:11,380 --> 00:00:18,900
+I'm very very confident that you feel confident in UK US now and that you feel confident about bolding
+
+4
+00:00:18,950 --> 00:00:20,780
+future as applications now.
+
+5
+00:00:20,950 --> 00:00:25,690
+What are the next steps the next steps are to continue practicing.
+
+6
+00:00:25,690 --> 00:00:27,420
+Set your own challenges.
+
+7
+00:00:27,550 --> 00:00:32,010
+Think about some apps some example apps you could build and then build them with.
+
+8
+00:00:32,010 --> 00:00:39,490
+If you just dive into the official documentation and the API references to really learn about the last
+
+9
+00:00:39,490 --> 00:00:43,830
+missing or very advanced pieces you might find there.
+
+10
+00:00:43,900 --> 00:00:46,630
+Understand all the concepts work together.
+
+11
+00:00:46,720 --> 00:00:54,450
+And with that you're on the great road to success and to really be a successful future developer.
+
+12
+00:00:54,490 --> 00:00:56,190
+I wish you all the best.
+

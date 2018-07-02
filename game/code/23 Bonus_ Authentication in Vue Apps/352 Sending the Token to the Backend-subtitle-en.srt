@@ -1,0 +1,276 @@
+1
+00:00:02,810 --> 00:00:08,940
+So a lot of viewer X magic was done over the last lectures a lot of things that don't really are connected
+
+2
+00:00:08,940 --> 00:00:11,700
+to a vindication at least not directly.
+
+3
+00:00:11,790 --> 00:00:19,620
+The core issue we have is that damn token which we need to offene kid ourselves d off object on firebase
+
+4
+00:00:19,920 --> 00:00:25,950
+isn't available because we've got a token we got it in the store but we're not passing it on with our
+
+5
+00:00:25,950 --> 00:00:29,180
+age to the requests to our firebase database.
+
+6
+00:00:29,190 --> 00:00:31,390
+Time to change to it now.
+
+7
+00:00:31,410 --> 00:00:39,590
+The cool thing is passing on the token is actually super simple in story user where we exercise or elsewhere
+
+8
+00:00:39,600 --> 00:00:47,670
+we need the token we can also extract the current state from our context object and the state is of
+
+9
+00:00:47,670 --> 00:00:50,660
+course where we store the token.
+
+10
+00:00:50,700 --> 00:00:58,320
+Now here we can simply check if state ID token is set.
+
+11
+00:00:58,540 --> 00:01:03,800
+So if this field is not now and if this were null.
+
+12
+00:01:03,810 --> 00:01:05,490
+So I'm adding exclamation mark.
+
+13
+00:01:05,680 --> 00:01:10,010
+We could just return and not make as HTP request.
+
+14
+00:01:10,150 --> 00:01:15,790
+In all other cases we know we have the token and now we simply have to append something to that.
+
+15
+00:01:15,790 --> 00:01:20,530
+You are L and that of course now again depends on the back end you're using.
+
+16
+00:01:20,530 --> 00:01:26,680
+Some might require you to send and offer a cessation header which contains the token firebase requires
+
+17
+00:01:26,680 --> 00:01:33,610
+you to pass an additional query per an off off equals is what you have to add.
+
+18
+00:01:33,820 --> 00:01:42,400
+And then you set as equal to state ID tokens so to that token you got and all do the exact same thing
+
+19
+00:01:42,820 --> 00:01:44,900
+for my request.
+
+20
+00:01:45,160 --> 00:01:53,580
+So for fetching users here they're all replaced this with global access post my ID token check post
+
+21
+00:01:53,600 --> 00:01:58,590
+and again placed with get of course because I have a get request and that is all.
+
+22
+00:01:58,590 --> 00:02:02,650
+Now the user data here this argument of course also has to be removed.
+
+23
+00:02:02,650 --> 00:02:04,010
+It's a get request.
+
+24
+00:02:04,240 --> 00:02:11,350
+But with that we're now passing on the token for firebase as a query per annum for your own back and
+
+25
+00:02:11,470 --> 00:02:12,690
+maybe differently.
+
+26
+00:02:12,790 --> 00:02:18,280
+The key thing is we're extracting it from the state from the store therefore and we're appending it
+
+27
+00:02:18,310 --> 00:02:26,080
+to our request with dad if we now go back and I sign up again where we should then also store the user
+
+28
+00:02:26,080 --> 00:02:35,500
+data for use now unused email address enter h here some password maybe a heartbeat except the terms
+
+29
+00:02:35,500 --> 00:02:36,780
+and I hit submit.
+
+30
+00:02:36,790 --> 00:02:44,080
+Now you see we get two successful responses and now you can also see in your firebase database if you
+
+31
+00:02:44,080 --> 00:02:45,270
+click on data.
+
+32
+00:02:45,560 --> 00:02:47,530
+Then we've got new users here.
+
+33
+00:02:47,680 --> 00:02:50,400
+That's the user I just created.
+
+34
+00:02:50,440 --> 00:02:52,390
+So this is now working.
+
+35
+00:02:52,390 --> 00:02:56,370
+Now we're finally using that token for something good.
+
+36
+00:02:56,650 --> 00:03:03,910
+Now if you go back to the application to the dashboard there we still get an error though because we
+
+37
+00:03:04,090 --> 00:03:10,960
+essentially have an error in the state and we all tried to read the property e-mail in the at a point
+
+38
+00:03:10,960 --> 00:03:11,310
+of time.
+
+39
+00:03:11,320 --> 00:03:14,980
+We don't have it yet because we tried to output it right from the start.
+
+40
+00:03:14,980 --> 00:03:16,840
+Even if we have no e-mail yet.
+
+41
+00:03:16,930 --> 00:03:19,070
+Now let's fix this quickly too.
+
+42
+00:03:19,340 --> 00:03:22,060
+Well that's first of all work on that e-mail thing.
+
+43
+00:03:22,270 --> 00:03:28,690
+A nice fix is to go to the e-mail property at there where we try to fetch it on a user even if you don't
+
+44
+00:03:28,690 --> 00:03:29,780
+might be null.
+
+45
+00:03:29,830 --> 00:03:42,200
+Let's simply return either this store gatherer's user ever falls if debt is falsie.
+
+46
+00:03:42,210 --> 00:03:50,490
+So that will be the case as long as users null or return our original code if user is set.
+
+47
+00:03:50,520 --> 00:03:56,220
+So this should prevent this error not notice status not the find error is stemming from the storage
+
+48
+00:03:56,230 --> 00:04:04,470
+last fall in fetch user I'm accessing state ID token but I forgot to all to extract state from this
+
+49
+00:04:04,470 --> 00:04:05,880
+context object.
+
+50
+00:04:05,880 --> 00:04:11,020
+So let me quickly do this year as soon as I do this.
+
+51
+00:04:11,040 --> 00:04:16,040
+If I now reload this page you'll see I still got the error because I messed up.
+
+52
+00:04:16,050 --> 00:04:19,570
+Of course I want to check if not does story get a user.
+
+53
+00:04:19,560 --> 00:04:23,540
+So if this is faulty and as I explained it but didn't code it.
+
+54
+00:04:23,820 --> 00:04:31,010
+So now if that's saved now if a reload U.S. falls here now it never updates though.
+
+55
+00:04:31,060 --> 00:04:32,990
+The reason for that is makes sense though.
+
+56
+00:04:33,070 --> 00:04:36,770
+I reloaded the app and they are for our token was lost.
+
+57
+00:04:36,790 --> 00:04:41,330
+Let me stay in the app and quickly log in and now go to dashboard.
+
+58
+00:04:41,530 --> 00:04:48,030
+And now you see it correctly switches and of course since outputting fault isn't too pretty.
+
+59
+00:04:48,040 --> 00:04:55,920
+We can also use the F on the paragraph and check that the only output is if e-mail is true ish.
+
+60
+00:04:55,930 --> 00:04:59,440
+So as long as it is false the whole paragraph will be hidden.
+
+61
+00:04:59,440 --> 00:05:01,020
+So now I have a reloaders.
+
+62
+00:05:01,450 --> 00:05:02,720
+We don't even see that.
+
+63
+00:05:02,860 --> 00:05:09,030
+If I do sign in or However I again go back to dashboard it appears after it loaded it.
+
+64
+00:05:09,310 --> 00:05:11,100
+So now all of that is working.
+
+65
+00:05:11,170 --> 00:05:17,620
+Now we're using this token we're passing it on and therefore we get off indication implemented.
+
+66
+00:05:17,740 --> 00:05:20,270
+There are still things we can improve though.
+
+67
+00:05:20,380 --> 00:05:26,800
+For example updating the header depending on the authentication state and preventing us from accessing
+
+68
+00:05:26,800 --> 00:05:28,420
+dashboard in the first place.
+
+69
+00:05:28,510 --> 00:05:35,710
+If we're not of indicated Let's start with is access prevention disk guard in the next lecture.
+

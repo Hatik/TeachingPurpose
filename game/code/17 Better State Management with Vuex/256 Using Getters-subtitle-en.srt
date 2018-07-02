@@ -1,0 +1,128 @@
+1
+00:00:01,750 --> 00:00:05,330
+So we want to outsource this calculation here into a Gadar.
+
+2
+00:00:05,530 --> 00:00:11,500
+Let's go back to our store js file and here we can add a new property besides the state.
+
+3
+00:00:11,560 --> 00:00:17,310
+We now also get some getters and that of course old is a reserved word kind of it's a property of X
+
+4
+00:00:17,350 --> 00:00:18,160
+we'll look for it.
+
+5
+00:00:18,160 --> 00:00:22,370
+So you must name us get her essence cannot be named differently.
+
+6
+00:00:22,600 --> 00:00:27,870
+So getters is then again an object where we can set up as many letters as you want.
+
+7
+00:00:27,870 --> 00:00:30,930
+And now you are free to choose which ever name you want to use.
+
+8
+00:00:31,090 --> 00:00:39,130
+For example here double counter could be the name for the gander and double Kountry actually is a function
+
+9
+00:00:39,510 --> 00:00:42,380
+where we do get the state as an argument.
+
+10
+00:00:42,400 --> 00:00:48,730
+This is passed automatically by viewer X when this function is executed which is also done by view X
+
+11
+00:00:49,600 --> 00:00:55,660
+and in the body of this function here we can do whatever we want to do with the state.
+
+12
+00:00:56,080 --> 00:01:03,130
+So if our goal is to basically double the counter then we would need to return of course because you
+
+13
+00:01:03,130 --> 00:01:10,870
+want to access this value in the end state counter times two that's all.
+
+14
+00:01:10,870 --> 00:01:16,860
+Now with this get in place we now need to exit together in our components.
+
+15
+00:01:17,230 --> 00:01:23,770
+Well we can do so by going to the component and here we still keep the counter computed property.
+
+16
+00:01:24,010 --> 00:01:33,700
+But now here I simply return this store getters double counter and executed though that is something
+
+17
+00:01:33,790 --> 00:01:36,110
+you X will do for me.
+
+18
+00:01:36,190 --> 00:01:42,460
+Now with this set up I can simply copy this go over to my average result and insert that here.
+
+19
+00:01:42,580 --> 00:01:46,650
+And yes I know character wise this didn't get shorter.
+
+20
+00:01:46,660 --> 00:01:51,190
+Keep in mind this double aid calculation is only an example.
+
+21
+00:01:51,220 --> 00:01:55,200
+We're talking about an application where you have more complex code.
+
+22
+00:01:55,450 --> 00:02:02,370
+But having such application here as an example would then again pull the focus from you x.
+
+23
+00:02:02,380 --> 00:02:04,560
+So that is why I decided to use this.
+
+24
+00:02:04,810 --> 00:02:11,560
+So now we're using getters and both resoled components to get our counter and it's Indes getter where
+
+25
+00:02:11,560 --> 00:02:13,080
+we now run the calculation.
+
+26
+00:02:13,090 --> 00:02:18,520
+And again this could be a more complicated calculation if we saved this and have a look at our running
+
+27
+00:02:18,520 --> 00:02:19,620
+application.
+
+28
+00:02:19,720 --> 00:02:26,890
+You see it still works as before but now with Geter is in place and while we didn't save that many characters
+
+29
+00:02:26,890 --> 00:02:27,330
+here.
+
+30
+00:02:27,340 --> 00:02:29,490
+Actually I think we're using more now.
+
+31
+00:02:29,800 --> 00:02:35,260
+I think you are able to see that if we would have multiple components and more complex calculations
+
+32
+00:02:35,620 --> 00:02:37,980
+this would really save us some time.
+

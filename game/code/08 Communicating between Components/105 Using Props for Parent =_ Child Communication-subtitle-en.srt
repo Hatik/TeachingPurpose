@@ -1,0 +1,168 @@
+1
+00:00:01,770 --> 00:00:07,400
+For transferring data from the parent to the child we use something called props.
+
+2
+00:00:07,440 --> 00:00:14,010
+If you come from reality as you already know props it's a short form for properties and it basically
+
+3
+00:00:14,010 --> 00:00:16,590
+means properties set from outside.
+
+4
+00:00:16,590 --> 00:00:23,400
+So from the parent in order to tell our child to use or detailed component here that it will receive
+
+5
+00:00:23,400 --> 00:00:30,700
+data from outside that it will receive such props as deep props property to it to this object.
+
+6
+00:00:30,720 --> 00:00:32,830
+That's a property we haven't seen before.
+
+7
+00:00:33,210 --> 00:00:39,660
+This happens to be an array and in this array we specify a couple of strings wherein each string we
+
+8
+00:00:39,660 --> 00:00:43,570
+define a property which should be settable from outside.
+
+9
+00:00:43,830 --> 00:00:46,860
+So let's say name can be set from outside.
+
+10
+00:00:46,860 --> 00:00:47,850
+Important.
+
+11
+00:00:47,850 --> 00:00:54,270
+This name we give it here inside of the string has to match the property we're using in our template
+
+12
+00:00:54,480 --> 00:01:00,390
+because behind the scenes this will create a new property we can use just like a property we set up
+
+13
+00:01:00,390 --> 00:01:05,310
+in our data object but now implicitly because it will be passed from outside.
+
+14
+00:01:05,550 --> 00:01:07,720
+So this will give us access to name.
+
+15
+00:01:07,740 --> 00:01:11,640
+Of course we're still not passing it in order to pass it.
+
+16
+00:01:11,640 --> 00:01:20,640
+I will go to my user component and here for user detail I can now simply say name equals and then whatever
+
+17
+00:01:20,670 --> 00:01:22,250
+I want to pass.
+
+18
+00:01:22,300 --> 00:01:24,870
+Now here's something we have to watch out for.
+
+19
+00:01:24,900 --> 00:01:29,900
+I can use it like it is and old pass Max here so I'm not passing the name.
+
+20
+00:01:29,910 --> 00:01:31,350
+I'm changing with the button.
+
+21
+00:01:31,380 --> 00:01:34,680
+I'm hard coding a name I'm passing here Max.
+
+22
+00:01:35,010 --> 00:01:39,310
+If we save this and go back you see Max is actually displayed here.
+
+23
+00:01:39,330 --> 00:01:41,310
+So this works.
+
+24
+00:01:41,310 --> 00:01:43,760
+However it's not dynamic.
+
+25
+00:01:43,980 --> 00:01:53,430
+If I pass name here hence referring to my name property data property you will see it now print name
+
+26
+00:01:53,490 --> 00:01:58,610
+so it prints the string name and not the value of the name property.
+
+27
+00:01:58,620 --> 00:02:01,940
+This is because if using a name like this.
+
+28
+00:02:01,980 --> 00:02:07,660
+So just using the property we set up here will not be dynamic.
+
+29
+00:02:07,680 --> 00:02:11,730
+It will only pass the string to make it dynamic.
+
+30
+00:02:11,730 --> 00:02:13,060
+I use a colon.
+
+31
+00:02:13,260 --> 00:02:20,010
+So the BIND would be the alternative but I'm using the shorthand with this I'm now referring to the
+
+32
+00:02:20,010 --> 00:02:27,150
+Name property here like we do with all attributes we're binding to with colon and then name so source
+
+33
+00:02:27,150 --> 00:02:32,190
+on the image would have been in an a number use case where we used to call and to make it dynamic.
+
+34
+00:02:32,190 --> 00:02:36,420
+And we're doing the same here with our prop 1 to do this.
+
+35
+00:02:36,480 --> 00:02:38,000
+You now see next year.
+
+36
+00:02:38,040 --> 00:02:42,300
+And once I click on change my name you'll see a change to Anna.
+
+37
+00:02:42,300 --> 00:02:49,130
+Now we're passing a dynamic property using this per Obs concept important.
+
+38
+00:02:49,320 --> 00:02:51,920
+You need to call in here to make it dynamic.
+
+39
+00:02:52,050 --> 00:02:57,860
+And of course the name here has to be the same as the name you're setting up in this array here.
+
+40
+00:02:57,930 --> 00:03:04,140
+Otherwise you just know what to do with the attributes you are adding to use or detail here and what
+
+41
+00:03:04,140 --> 00:03:04,680
+it does.
+
+42
+00:03:04,680 --> 00:03:07,770
+I'm passing data from the parent to the child.
+

@@ -1,0 +1,52 @@
+1
+00:00:02,270 --> 00:00:04,780
+So we get the basics about using eggs.
+
+2
+00:00:04,790 --> 00:00:10,540
+Let's now have a look at how we could structure all our view X-related code namely the code in the store
+
+3
+00:00:10,550 --> 00:00:13,170
+the chairs fall with different thoughts.
+
+4
+00:00:13,220 --> 00:00:18,350
+Something we want to do for bigger applications because if have all the state getters mutations and
+
+5
+00:00:18,350 --> 00:00:19,750
+actions in one file.
+
+6
+00:00:19,850 --> 00:00:26,170
+This fall will quickly croak pretty big and that's something we do not necessarily want.
+
+7
+00:00:26,720 --> 00:00:33,190
+Important in the end of this module you'll find a lecturer or an article where I will link to fubar
+
+8
+00:00:33,190 --> 00:00:36,860
+resources and also discuss an alternative set up.
+
+9
+00:00:36,860 --> 00:00:38,850
+Q Which to the one I show you here.
+
+10
+00:00:38,870 --> 00:00:44,190
+The one to show you here is the one you will see in almost all official examples and so on.
+
+11
+00:00:44,190 --> 00:00:46,200
+So that is why I chose this one.
+
+12
+00:00:46,610 --> 00:00:54,740
+So for this example the first one to use something called modules are the modules folder and in the
+
+13
+00:00:54,740 --> 00:00:58,930
+next video I will explain what modules actually are.
+

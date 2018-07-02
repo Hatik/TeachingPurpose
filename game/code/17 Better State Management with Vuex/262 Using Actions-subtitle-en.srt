@@ -1,0 +1,252 @@
+1
+00:00:01,760 --> 00:00:06,550
+So we face the problem that all our mutations here have to run synchronously.
+
+2
+00:00:06,560 --> 00:00:15,970
+Now let's say whenever I click the buttons here on my counter components I want to wait for let's say
+
+3
+00:00:16,060 --> 00:00:19,300
+a second before they actually update the counter.
+
+4
+00:00:19,300 --> 00:00:25,600
+Now I couldn't do that with just mutations but I can add actions actions of course the number research
+
+5
+00:00:25,630 --> 00:00:27,310
+property here in our store.
+
+6
+00:00:27,310 --> 00:00:34,150
+And actually one of the last ones and here we now set up again functions were methods which are our
+
+7
+00:00:34,150 --> 00:00:40,510
+actions for example increment liked mutation but there is no conflict because it's a different object
+
+8
+00:00:40,960 --> 00:00:44,080
+and increment takes the context as an argument.
+
+9
+00:00:44,080 --> 00:00:47,640
+Context will be passed by you X automatically.
+
+10
+00:00:47,890 --> 00:00:55,870
+And context basically just gives us access to the commit method where we then can commit for example
+
+11
+00:00:56,200 --> 00:00:56,920
+increment.
+
+12
+00:00:56,920 --> 00:01:02,410
+Now that would make much sense here because we're not doing any async task or anything like that.
+
+13
+00:01:02,560 --> 00:01:08,950
+So we're really just having an extra step where we commit our mutation instead of doing it directly
+
+14
+00:01:09,130 --> 00:01:11,160
+inside of that component.
+
+15
+00:01:11,170 --> 00:01:18,310
+Now does context object we're actually passing to our action here has to come at method because it has
+
+16
+00:01:18,310 --> 00:01:21,180
+a lot of method and properties of our story.
+
+17
+00:01:21,340 --> 00:01:29,310
+It's not exactly the same as our store we'll see that when we come to modules in one of the later videos.
+
+18
+00:01:29,500 --> 00:01:34,360
+So it's not exactly the same but it does have to commit mass for each a change.
+
+19
+00:01:34,390 --> 00:01:37,380
+It does give us access to our getters and so on.
+
+20
+00:01:37,390 --> 00:01:44,320
+So we do have access to our store in general just not to all features but to all we tactically need
+
+21
+00:01:44,320 --> 00:01:44,950
+here.
+
+22
+00:01:45,100 --> 00:01:51,450
+So we can commit therefore also you could use Naprosyn TX and if you only want to use the commit method
+
+23
+00:01:51,520 --> 00:02:00,160
+in this context object you can use the six feature of destructuring by passing this as an argument.
+
+24
+00:02:00,280 --> 00:02:01,100
+And this will now.
+
+25
+00:02:01,120 --> 00:02:07,480
+The structure should be in parentheses though and this will now do you structure do you object we get
+
+26
+00:02:07,510 --> 00:02:14,050
+automatically and will only pull out the commit method in there all Avernus a last but since we don't
+
+27
+00:02:14,050 --> 00:02:15,440
+need them that's fine.
+
+28
+00:02:15,460 --> 00:02:19,980
+So that's just a quicker way of only getting one property of an object you get as an argument.
+
+29
+00:02:20,050 --> 00:02:22,220
+If you only need that one property.
+
+30
+00:02:22,420 --> 00:02:25,280
+So here we can then call it increment.
+
+31
+00:02:25,540 --> 00:02:31,780
+Now whilst we do not really save anything by having an action which does this synchronously it still
+
+32
+00:02:31,810 --> 00:02:39,490
+is a good practice to have actions to commit your mutations and really mutate or commit them directly
+
+33
+00:02:39,490 --> 00:02:42,270
+from within your components though that is possible.
+
+34
+00:02:42,280 --> 00:02:48,010
+And if you never have any asynchronous tasks you might directly want to use your mutations as we do
+
+35
+00:02:48,010 --> 00:02:51,600
+right now in our counter components here.
+
+36
+00:02:52,030 --> 00:02:58,270
+But if you have at least a couple of or at least one Asen task you might want to consider creating only
+
+37
+00:02:58,270 --> 00:03:04,860
+actions for all these mutations even if they are not using any azing code anywhere just to have this
+
+38
+00:03:04,870 --> 00:03:10,450
+clear pattern that you always dispatch actions and not sometimes directly commit a mutation a component
+
+39
+00:03:10,630 --> 00:03:12,500
+and sometimes dispatch an action.
+
+40
+00:03:12,580 --> 00:03:15,340
+But that's just some additional thought.
+
+41
+00:03:15,430 --> 00:03:20,390
+Now before diving too deep into any best practices let's understand what we're doing here.
+
+42
+00:03:20,530 --> 00:03:22,130
+So I'll add a detriment.
+
+43
+00:03:23,490 --> 00:03:31,960
+Mutation or action you excuse me and then I want to add async increment action and async increment of
+
+44
+00:03:31,960 --> 00:03:32,470
+course.
+
+45
+00:03:32,500 --> 00:03:34,990
+She'll also get the commit method.
+
+46
+00:03:34,990 --> 00:03:37,190
+So it's exactly the same as before.
+
+47
+00:03:37,360 --> 00:03:44,580
+But now here I want to set a time out and wait for one second and then the call back off this time.
+
+48
+00:03:44,590 --> 00:03:50,260
+So in this function in here there are what I call commit increment.
+
+49
+00:03:50,290 --> 00:03:56,470
+So does the same as the normal increment action but now it does does asynchronously after one second
+
+50
+00:03:56,770 --> 00:04:00,970
+which is the again great advantage of using actions.
+
+51
+00:04:00,970 --> 00:04:03,080
+They may run asynchronous code.
+
+52
+00:04:03,460 --> 00:04:05,930
+So here I'll do the same for detriment.
+
+53
+00:04:06,100 --> 00:04:13,210
+And now in a narrow counter I want to use these new actions instead of the other ones and generally
+
+54
+00:04:13,300 --> 00:04:19,210
+I will have to replace map mutations with some way of getting access to my actions because as I just
+
+55
+00:04:19,210 --> 00:04:23,550
+said before I no longer want to use mutations directly in the components.
+
+56
+00:04:23,590 --> 00:04:26,430
+Instead I always want to use actions though.
+
+57
+00:04:26,470 --> 00:04:32,470
+Again just to highlight that you only need to do it for asynchronous tasks for other tasks you may still
+
+58
+00:04:32,470 --> 00:04:36,500
+use mutations and directly commit them from in here.
+
+59
+00:04:36,700 --> 00:04:38,640
+So what can we do here.
+
+60
+00:04:38,650 --> 00:04:42,740
+We right now have mutations but now we want to get our reactions.
+
+61
+00:04:43,060 --> 00:04:50,990
+Well turns out you X also has map actions in it's bag of useful tools and map actions.
+
+62
+00:04:50,990 --> 00:04:55,210
+Works like that though really just like Map mutations.
+
+63
+00:04:55,330 --> 00:04:57,550
+But of course now with the actions.
+

@@ -1,0 +1,44 @@
+1
+00:00:02,010 --> 00:00:05,680
+Well that was quite a big module but it was important.
+
+2
+00:00:05,830 --> 00:00:12,360
+You now hopefully get a better understanding on how the view in science works how view chairs works
+
+3
+00:00:12,360 --> 00:00:18,270
+behind the scenes how it creates these instances how the lifecycle of such instance looks like and how
+
+4
+00:00:18,270 --> 00:00:19,960
+we may use that.
+
+5
+00:00:20,040 --> 00:00:28,230
+With that you will really get a lot of tools already in your pocket to use chairs with you know how
+
+6
+00:00:28,230 --> 00:00:34,290
+to use it with template you know how it works behind the scenes you know how it basically works with
+
+7
+00:00:34,290 --> 00:00:34,980
+that.
+
+8
+00:00:34,980 --> 00:00:42,510
+We can now make the next big step and move on to a different set up a more complex set up a real development
+
+9
+00:00:42,510 --> 00:00:49,470
+work flow on our machine before we then dive into more advanced topics like components routeing animations
+
+10
+00:00:49,500 --> 00:00:51,390
+and much much more.
+
+11
+00:00:51,390 --> 00:00:52,520
+So let's move on.
+

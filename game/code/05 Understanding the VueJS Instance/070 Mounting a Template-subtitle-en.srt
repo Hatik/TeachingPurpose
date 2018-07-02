@@ -1,0 +1,340 @@
+1
+00:00:01,840 --> 00:00:02,800
+You're still with me.
+
+2
+00:00:02,800 --> 00:00:03,680
+Great.
+
+3
+00:00:04,030 --> 00:00:09,070
+Almost at the end I think we got a lot of a better understanding of what did you instance does and how
+
+4
+00:00:09,070 --> 00:00:11,250
+we can work with it.
+
+5
+00:00:11,290 --> 00:00:14,440
+I get a couple of topics I still want to cover though.
+
+6
+00:00:14,440 --> 00:00:18,720
+And one of the most important ones is how it uses its template.
+
+7
+00:00:18,880 --> 00:00:25,200
+We already learned that it takes its H.T. molecule here and creates a template which it stores internally
+
+8
+00:00:25,220 --> 00:00:30,700
+it basically behind the scenes converts it to challenge script since it's quicker to run through a script
+
+9
+00:00:30,700 --> 00:00:33,700
+than the native Daun it uses this template.
+
+10
+00:00:33,940 --> 00:00:41,170
+And then it's a where wedge string which gal. do we use stare at which position and so on and it's able
+
+11
+00:00:41,170 --> 00:00:46,420
+to update the template whenever we change something which is reflected in there and on the other hand
+
+12
+00:00:46,420 --> 00:00:51,940
+it won't updated if we change some property which is never output or never listened to.
+
+13
+00:00:51,940 --> 00:00:58,030
+So then is able to update us if it needs to and we'll write it to the native Dom the one we're seeing
+
+14
+00:00:58,030 --> 00:01:04,770
+here in the browser and change or make the necessary changes regarding this template.
+
+15
+00:01:04,840 --> 00:01:10,930
+It automatically picks the team all code contained in this app one death.
+
+16
+00:01:10,930 --> 00:01:17,470
+Since this is what we tell it here with d l property we're told hey the element you should choose is
+
+17
+00:01:17,500 --> 00:01:19,000
+app one.
+
+18
+00:01:19,030 --> 00:01:20,680
+Now guess what you can also do the following.
+
+19
+00:01:20,680 --> 00:01:22,730
+We can remove the element here.
+
+20
+00:01:22,870 --> 00:01:25,380
+Now no element at all if it had control enter.
+
+21
+00:01:25,420 --> 00:01:32,020
+It's therefore gone with CD Cauley Brace's because now it's not controlled by the U.K.'s anymore and
+
+22
+00:01:32,020 --> 00:01:37,980
+I can't instead go below the creation of this view instance.
+
+23
+00:01:37,980 --> 00:01:44,960
+Keep in mind it's stored in the VM one variable and it can also call the one dollar sign.
+
+24
+00:01:44,980 --> 00:01:48,120
+MT You probably see a pattern here.
+
+25
+00:01:48,150 --> 00:01:55,080
+The property is prefixed with Dollar Sign already native viewed shape's methods and properties we can
+
+26
+00:01:55,080 --> 00:01:58,870
+use Dolorosa and mount is not actually a property it's a method.
+
+27
+00:01:59,040 --> 00:02:07,710
+And it allows us to do the same SDL property if set like here does automatically we can't pass the element
+
+28
+00:02:07,800 --> 00:02:10,440
+where we want to mount our application.
+
+29
+00:02:10,800 --> 00:02:17,960
+And I can do this just the same way as I would do it on the Select or the L property I passed the CSA
+
+30
+00:02:17,960 --> 00:02:20,920
+as selector of the place I want to Mounty up at.
+
+31
+00:02:20,960 --> 00:02:23,780
+So hash tag app 1 if I now had control enter.
+
+32
+00:02:23,880 --> 00:02:25,160
+It works again.
+
+33
+00:02:25,170 --> 00:02:31,110
+So the only difference here is basically that the French syntax behind the scenes it works the same
+
+34
+00:02:31,650 --> 00:02:36,270
+the property well makes it easier for us if we know where to mount it.
+
+35
+00:02:36,330 --> 00:02:38,250
+Use the L property because.
+
+36
+00:02:38,260 --> 00:02:40,710
+Well this is just what it is meant for.
+
+37
+00:02:40,710 --> 00:02:41,150
+Right.
+
+38
+00:02:41,190 --> 00:02:47,220
+It does the same as if we had one dollar and mount it automatically but you might have a use case where
+
+39
+00:02:47,220 --> 00:02:53,730
+you want to configure and set up your view instance but you don't know yet where to mount it or the
+
+40
+00:02:53,970 --> 00:02:55,050
+object.
+
+41
+00:02:55,110 --> 00:03:00,630
+About element where you want to mount it doesn't exist yet in such a case you could create and execute
+
+42
+00:03:00,630 --> 00:03:01,520
+some other code.
+
+43
+00:03:01,680 --> 00:03:07,860
+And once you know where to mount it you can call the variable name where you stored your instance Barroso
+
+44
+00:03:07,930 --> 00:03:15,170
+mount and as an argument passed the selector leading to the element where you do want to mounded.
+
+45
+00:03:15,360 --> 00:03:19,100
+There is also one other thing you can do with templates and instances.
+
+46
+00:03:19,230 --> 00:03:25,020
+I'm going to create a new Dith name with an idea of app free and that doesn't contain anything.
+
+47
+00:03:25,050 --> 00:03:26,350
+It's empty.
+
+48
+00:03:26,370 --> 00:03:29,290
+I'll also treat a new instance down here.
+
+49
+00:03:29,370 --> 00:03:31,050
+New view.
+
+50
+00:03:31,620 --> 00:03:35,930
+And in this instance I will do something we haven't seen yet.
+
+51
+00:03:35,940 --> 00:03:39,060
+I'll use a new property template.
+
+52
+00:03:39,390 --> 00:03:46,560
+And now we always used the HTL code we already had an hour document in our age HTML file and told you
+
+53
+00:03:46,600 --> 00:03:49,360
+chairs Hey take control over this part.
+
+54
+00:03:49,380 --> 00:03:54,830
+Like for example the app to part here we can also do it the other way around.
+
+55
+00:03:54,840 --> 00:03:58,350
+We can create our own template here as a string.
+
+56
+00:03:58,470 --> 00:04:04,280
+And I would come to some of the limitations we now face soon so we can create a template here and output
+
+57
+00:04:04,320 --> 00:04:07,930
+age one tech or say hello like dead.
+
+58
+00:04:08,310 --> 00:04:11,680
+Keep in mind you can't write a multi-line string that simple here.
+
+59
+00:04:11,680 --> 00:04:17,640
+So I'll keep a very simple template here and again I'll come back to some of the limitations in a second.
+
+60
+00:04:17,720 --> 00:04:21,820
+With that I created a new view in sense with its own template.
+
+61
+00:04:21,990 --> 00:04:29,260
+It's now not driving it from my code because I don't want to tell it to do so I haven't set up a l element.
+
+62
+00:04:29,550 --> 00:04:33,240
+Instead it has its own element its own template excuse me.
+
+63
+00:04:33,540 --> 00:04:45,070
+I can now say the free Towler assign mount and then pass app free like this and if I had control ENTRAR
+
+64
+00:04:45,460 --> 00:04:52,180
+with a hashtag with the hash tag in front of this head control enter we see Hello down there.
+
+65
+00:04:52,470 --> 00:04:57,550
+So here we now see a template I set up here.
+
+66
+00:04:57,600 --> 00:05:03,080
+We're not using the template we're not inferring it from our document.
+
+67
+00:05:03,180 --> 00:05:06,610
+Instead we're setting it up in the view instance with that.
+
+68
+00:05:06,630 --> 00:05:15,110
+I could even render or call mount like this with no argument and this would render it treated offscreen.
+
+69
+00:05:15,150 --> 00:05:23,670
+I could now call document get element by id and free and call append called Does this vanilla javascript
+
+70
+00:05:23,680 --> 00:05:33,240
+here nothing future as specific and append my VM free variable to this new instance and here d l property
+
+71
+00:05:33,670 --> 00:05:37,550
+this will now be the template of this instance.
+
+72
+00:05:37,560 --> 00:05:40,320
+If I hit enter you see Hello again.
+
+73
+00:05:40,320 --> 00:05:43,910
+So now what I did is I created this instance off screen.
+
+74
+00:05:43,950 --> 00:05:47,550
+It has its own template so it doesn't need anything else than that.
+
+75
+00:05:47,670 --> 00:05:55,710
+And then I can append it somewhere in my AGM code with a normal HVM or normal javascript function here
+
+76
+00:05:55,710 --> 00:06:02,040
+append child and pastie property which happens to keep my compiled template.
+
+77
+00:06:02,070 --> 00:06:04,040
+In this instance.
+
+78
+00:06:04,290 --> 00:06:07,010
+Now we're getting into into pretty advanced stuff.
+
+79
+00:06:07,020 --> 00:06:09,120
+And I want to make a catch here.
+
+80
+00:06:09,150 --> 00:06:11,380
+These are things I want you to know.
+
+81
+00:06:11,460 --> 00:06:19,710
+The most common use case is to use the all property like here or to use the mount like here doing it
+
+82
+00:06:19,710 --> 00:06:21,840
+this way is pretty uncommon.
+
+83
+00:06:21,840 --> 00:06:27,810
+And one of the reasons why this is not that super common is that view chase offers us so much greater
+
+84
+00:06:27,810 --> 00:06:34,380
+ways of using it like with your property or as we will soon learn with components before going there.
+
+85
+00:06:34,380 --> 00:06:40,110
+Let me also explain why using a template like this has some limitations which could be problematic.
+

@@ -1,0 +1,296 @@
+1
+00:00:01,480 --> 00:00:04,180
+Time to recalculate all stock prices here.
+
+2
+00:00:04,510 --> 00:00:06,370
+And for Dad we want to hook up our.
+
+3
+00:00:06,400 --> 00:00:11,260
+And they button D and they button can be found in the header.
+
+4
+00:00:11,380 --> 00:00:14,290
+And therefore I'll add some methods.
+
+5
+00:00:14,320 --> 00:00:18,630
+Tudor's head are here sort of them able to actually Eustice or name it.
+
+6
+00:00:18,640 --> 00:00:21,540
+And Dave the method dispatch should trigger.
+
+7
+00:00:21,880 --> 00:00:24,610
+And here I basically want to call action.
+
+8
+00:00:24,640 --> 00:00:38,030
+I do have in my story in my stocks Jr's fall to be precise and the stocks module for that I will map
+
+9
+00:00:38,030 --> 00:00:41,810
+the actions because later on all the actions were saving and loading.
+
+10
+00:00:41,810 --> 00:00:44,990
+So here it really makes sense to map all actions.
+
+11
+00:00:45,110 --> 00:00:55,600
+So import map actions from the X here and then in Meffert all distributed out with the spread operator
+
+12
+00:00:55,600 --> 00:01:03,840
+again map actions and map actions here takes an array because I want to keep your actual names and empty
+
+13
+00:01:03,850 --> 00:01:04,360
+action.
+
+14
+00:01:04,370 --> 00:01:08,500
+I'm now interested in is named randomise stocks.
+
+15
+00:01:08,510 --> 00:01:14,090
+This one here so I can simply copy that name here as a string as always.
+
+16
+00:01:14,210 --> 00:01:20,540
+And this allows me in any day to simply call this randomise stocks this action.
+
+17
+00:01:20,540 --> 00:01:23,590
+I know which will be available because we're mapping it here.
+
+18
+00:01:24,050 --> 00:01:29,660
+So this will now execute this action the stocks chase follow our store folder.
+
+19
+00:01:29,840 --> 00:01:34,810
+However dare we do commit random stocks but there we don't do anything.
+
+20
+00:01:34,820 --> 00:01:39,070
+So let's now implement the logic to actually recalculate stock prices.
+
+21
+00:01:39,200 --> 00:01:41,290
+How can we recalculate them.
+
+22
+00:01:41,540 --> 00:01:46,460
+Well first we want to access our stocks and then we want to do something for each stock.
+
+23
+00:01:46,460 --> 00:01:52,220
+Now here's stocks of course refers to all our stocks not just the ones in our portfolio there.
+
+24
+00:01:52,330 --> 00:01:58,400
+I don't want to pass this callback function for each expects So this function here will be executed
+
+25
+00:01:58,400 --> 00:02:00,620
+for each stock in this rate.
+
+26
+00:02:00,620 --> 00:02:06,530
+Stock will then be automatically passed as an argument and then we can basically transform it here or
+
+27
+00:02:06,530 --> 00:02:09,430
+do whatever we like with it here.
+
+28
+00:02:09,440 --> 00:02:17,990
+So you're a one asset stock price to a new price this new price is generally random but this would be
+
+29
+00:02:17,990 --> 00:02:21,690
+a random number between 0 and 0.9 9.
+
+30
+00:02:21,710 --> 00:02:23,590
+Not really the kind of price I want.
+
+31
+00:02:23,810 --> 00:02:30,670
+Instead I only want to use the old price and then increase or decrease it a little bit.
+
+32
+00:02:31,010 --> 00:02:35,750
+So I will say stock rise times this but that of course does make sense.
+
+33
+00:02:35,750 --> 00:02:38,940
+It makes more sense if I say one plus random.
+
+34
+00:02:38,960 --> 00:02:46,720
+So now I have my old stock price times one point zero to one point nine nine nine.
+
+35
+00:02:46,760 --> 00:02:51,210
+So everything between keeping the current price and doubling it is possible.
+
+36
+00:02:51,350 --> 00:02:55,010
+Now that of course only gives us upside potential.
+
+37
+00:02:55,010 --> 00:02:59,120
+So I will deduct 0.5 from that.
+
+38
+00:02:59,120 --> 00:03:05,900
+So now we're multiplying the old price of something between 0.5 and 1.5.
+
+39
+00:03:06,230 --> 00:03:09,760
+Arguably that's a pretty huge swing for one day.
+
+40
+00:03:09,800 --> 00:03:16,160
+But I think it's fine for this application and you may of course fine tune this to your needs but I
+
+41
+00:03:16,170 --> 00:03:20,800
+only want to write the next best finance algorithm here.
+
+42
+00:03:20,870 --> 00:03:22,280
+So that's fine for me.
+
+43
+00:03:22,280 --> 00:03:29,090
+The one thing I want to do though is I won around D-New stock price so that I simply have an try again
+
+44
+00:03:29,810 --> 00:03:33,860
+with that I got a new stock price automatically applied.
+
+45
+00:03:33,980 --> 00:03:40,610
+And now what do we need to do to also reflect this change in our portfolio and all the stocks we have
+
+46
+00:03:40,610 --> 00:03:41,960
+in there.
+
+47
+00:03:41,960 --> 00:03:42,620
+Nothing.
+
+48
+00:03:42,890 --> 00:03:45,430
+That's the awesome thing about you x.
+
+49
+00:03:45,440 --> 00:03:47,600
+It's a lot of work to set it up.
+
+50
+00:03:47,600 --> 00:03:53,480
+But in moments like these you really see why it's so awesome to use in bigger applications.
+
+51
+00:03:53,480 --> 00:03:57,010
+We have one state and this is only one place where we alter it.
+
+52
+00:03:57,020 --> 00:04:02,180
+But with all these getters and everything does make sure it gets updated every hour where it needs to
+
+53
+00:04:02,180 --> 00:04:03,220
+get updated.
+
+54
+00:04:03,230 --> 00:04:08,810
+So if this in place we can go to the header and hook up our button here to any day.
+
+55
+00:04:08,840 --> 00:04:15,010
+So this and a button gets a click listener and chords and they that's the name of the function we chose
+
+56
+00:04:15,010 --> 00:04:19,340
+them there and execute the method as a chest see that.
+
+57
+00:04:19,490 --> 00:04:24,330
+And with that we should have everything in place to now reload the application hit any day.
+
+58
+00:04:24,470 --> 00:04:28,620
+And as you can see recalculate all our stock prices here.
+
+59
+00:04:28,910 --> 00:04:30,740
+So that looks pretty good.
+
+60
+00:04:30,890 --> 00:04:32,310
+Let's reload again.
+
+61
+00:04:34,980 --> 00:04:36,530
+Now looks good to me.
+
+62
+00:04:36,600 --> 00:04:38,700
+Of course we got pretty huge swings here.
+
+63
+00:04:38,760 --> 00:04:40,710
+But generally it works as intended.
+
+64
+00:04:40,710 --> 00:04:47,610
+Now let's see if a boy one hundred of BMW stocks here and it half and they here we see the price update
+
+65
+00:04:47,610 --> 00:04:48,520
+here too.
+
+66
+00:04:49,080 --> 00:04:52,030
+But swings are too big for me.
+
+67
+00:04:52,050 --> 00:04:53,410
+I made a comeback.
+
+68
+00:04:53,640 --> 00:04:57,320
+Let's sell them 100 here.
+
+69
+00:04:57,660 --> 00:05:05,280
+And I made a decent profit here and this is how this works how it is managed in this global store and
+
+70
+00:05:05,280 --> 00:05:11,010
+therefore everywhere it updates and we don't need to manually take care that if we want to change in
+
+71
+00:05:11,010 --> 00:05:16,860
+one place we always update it in a natural place that's done automatically with this construct of getters
+
+72
+00:05:16,860 --> 00:05:18,800
+and mutations and so on.
+
+73
+00:05:19,110 --> 00:05:26,190
+Well if that's the missing things really only are animations between our routes here and of course making
+
+74
+00:05:26,190 --> 00:05:28,040
+the save and load button work.
+

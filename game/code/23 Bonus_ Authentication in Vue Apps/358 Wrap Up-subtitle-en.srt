@@ -1,0 +1,44 @@
+1
+00:00:02,600 --> 00:00:08,330
+So Overton's module we added a lot of features which are typical to user authentication.
+
+2
+00:00:08,330 --> 00:00:16,250
+All of them running in our view application we got this token which we fetch which we get when signing
+
+3
+00:00:16,250 --> 00:00:22,760
+up and signing in which we store in both Buick's and the more persistent local storage we get all the
+
+4
+00:00:22,760 --> 00:00:25,040
+log out and log in functionality.
+
+5
+00:00:25,250 --> 00:00:32,090
+We got a UI that takes our authentication status into account by updating the header and blocking access
+
+6
+00:00:32,090 --> 00:00:34,280
+to dashboard if we're not offene catered.
+
+7
+00:00:34,520 --> 00:00:42,350
+And with that we got a lot of useful features implemented into our application into our demo application
+
+8
+00:00:42,350 --> 00:00:43,120
+here.
+
+9
+00:00:43,220 --> 00:00:48,200
+Now feel free to play around with that and enhance it adjust to your needs.
+
+10
+00:00:48,290 --> 00:00:54,920
+And of course added to your next project because these are all powerful and very interesting features
+
+11
+00:00:55,280 --> 00:00:58,880
+which you might need in a lot of web apps you're building.
+

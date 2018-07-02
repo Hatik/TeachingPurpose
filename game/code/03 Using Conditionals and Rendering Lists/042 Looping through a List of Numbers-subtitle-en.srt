@@ -1,0 +1,44 @@
+1
+00:00:01,660 --> 00:00:07,150
+What if you only want to output a list of numbers let's say you want to output the numbers 1 to 10 that
+
+2
+00:00:07,150 --> 00:00:09,080
+is very easy to do.
+
+3
+00:00:09,100 --> 00:00:18,070
+You can output these numbers with a span let's say with before and then an in ten and again is up to
+
+4
+00:00:18,070 --> 00:00:18,650
+you.
+
+5
+00:00:18,790 --> 00:00:23,550
+But 10 of course clearly does not refer to a property in my view chess instance.
+
+6
+00:00:23,830 --> 00:00:31,300
+Instead if you specify a number here you chaps will simply lube frood the whole range of integers starting
+
+7
+00:00:31,300 --> 00:00:35,020
+at 1 and going all the way up to his final number here.
+
+8
+00:00:35,350 --> 00:00:41,830
+So then I could output any here again and is a name of your choice and you see one two three four five
+
+9
+00:00:41,830 --> 00:00:47,200
+six seven eight nine 10 over there on the right as we loop through this range of numbers.
+
+10
+00:00:47,240 --> 00:00:52,930
+It's a very short and quick and convenient syntax if you know that all you want to do is loop through
+
+11
+00:00:52,930 --> 00:00:55,020
+these numbers from 1 to 10.
+

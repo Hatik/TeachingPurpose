@@ -1,0 +1,300 @@
+1
+00:00:02,300 --> 00:00:05,870
+I mentioned is third property I want to talk about.
+
+2
+00:00:06,080 --> 00:00:14,210
+It's there's a graph propertied the chess exposes to us that actually is something we haven't talked
+
+3
+00:00:14,210 --> 00:00:15,820
+about yet.
+
+4
+00:00:15,860 --> 00:00:20,880
+It's something you want to use careful but which can really do the thing you were looking for.
+
+5
+00:00:20,900 --> 00:00:25,170
+If in my age will kill it I want to get the current content off this button.
+
+6
+00:00:25,190 --> 00:00:27,310
+This show paragraph button.
+
+7
+00:00:27,540 --> 00:00:34,130
+It's right now a bit hard for me to do in normal in vanilla javascript which as a side note I can always
+
+8
+00:00:34,130 --> 00:00:41,270
+mix in I could select it with a query selector let's say in view chance I can and I can access it very
+
+9
+00:00:41,270 --> 00:00:46,750
+easily with the following syntax though I can simply place the ref key on it.
+
+10
+00:00:46,790 --> 00:00:49,310
+That is not an official HGL attribute.
+
+11
+00:00:49,310 --> 00:00:51,970
+This is a key added by chance.
+
+12
+00:00:51,980 --> 00:00:54,400
+Notice it doesn't have a colon at the beginning.
+
+13
+00:00:54,410 --> 00:00:57,740
+It's not a directive it's not using the bind directive.
+
+14
+00:00:57,890 --> 00:01:02,500
+It doesn't need to because it isn't a native HD attribute anyways.
+
+15
+00:01:02,790 --> 00:01:10,220
+So a ref is yeah kind of a key which is also recognized by the UK as on any element you may place it
+
+16
+00:01:10,220 --> 00:01:16,130
+on any element any age Humala element and I can set it equal to any name I like.
+
+17
+00:01:16,160 --> 00:01:17,720
+I named my button.
+
+18
+00:01:17,720 --> 00:01:21,100
+But again this is a string you can choose.
+
+19
+00:01:21,290 --> 00:01:22,560
+This is one.
+
+20
+00:01:22,570 --> 00:01:29,900
+So we may want to go into our app one the instance here inside of this instance as well as outside of
+
+21
+00:01:29,900 --> 00:01:30,490
+it.
+
+22
+00:01:30,710 --> 00:01:38,060
+I do have access to all my refs I register with this ref key I can register as many as I want with the
+
+23
+00:01:38,060 --> 00:01:40,380
+dollar sign Raf's property.
+
+24
+00:01:40,670 --> 00:01:50,360
+So let's say here when clicking does show button or when I execute a show functus function I want to
+
+25
+00:01:50,450 --> 00:01:58,900
+first console log does ref attributes so that we learn more about it this ref property.
+
+26
+00:01:59,090 --> 00:02:05,060
+So here are log this refs and now I had control ENTRAR open up the console here.
+
+27
+00:02:05,060 --> 00:02:13,150
+Clear does and let's click Show paragraph here we see the pattern it was printed before when we changed
+
+28
+00:02:13,150 --> 00:02:16,360
+the title when it called show from outside.
+
+29
+00:02:16,360 --> 00:02:19,420
+This is clearly an object representing my pattern.
+
+30
+00:02:19,420 --> 00:02:25,510
+It is not the native element though it is a javascript object where I have a key which is named my button.
+
+31
+00:02:25,510 --> 00:02:28,840
+This clearly is the name I chose for the reference up here.
+
+32
+00:02:29,320 --> 00:02:30,810
+And the button itself now.
+
+33
+00:02:30,850 --> 00:02:37,570
+Well this looks like a normal button element and that is does this a normal javascript or a normal HDMI
+
+34
+00:02:37,570 --> 00:02:40,150
+element used in javascript.
+
+35
+00:02:40,150 --> 00:02:46,540
+Now since this is the case this means that on this refs I can access all references I registered using
+
+36
+00:02:46,540 --> 00:02:55,110
+the name I set up as a property my Bucknall like this for example know this also means that here I could
+
+37
+00:02:55,110 --> 00:03:04,140
+say this dollar sign drafts my button in or text equals test flight control ENTRAR dysfunction will
+
+38
+00:03:04,140 --> 00:03:06,270
+get executed in a few seconds anyways.
+
+39
+00:03:07,940 --> 00:03:09,880
+You now see it was renamed to test.
+
+40
+00:03:09,920 --> 00:03:14,410
+So I am able to access my HDMI elements just like that.
+
+41
+00:03:14,630 --> 00:03:20,600
+Now what if I do this on an element which is already under control of view jazz or the content of this
+
+42
+00:03:20,600 --> 00:03:26,710
+element is under control a future as because I'm outputting the content here with title with is string
+
+43
+00:03:26,710 --> 00:03:28,490
+and tribulation.
+
+44
+00:03:28,520 --> 00:03:36,570
+So if I named as heading here for example and I do update the title here frood future Chaisson to show
+
+45
+00:03:36,570 --> 00:03:38,450
+Methot recognized this.
+
+46
+00:03:38,790 --> 00:03:46,250
+So what if I say before it does or here fires in my normal Charvel script code simply accesses view
+
+47
+00:03:46,290 --> 00:03:52,770
+instance all my refs I just said you can use Dolorosa and refs inside of the instance and outside as
+
+48
+00:03:52,830 --> 00:03:53,890
+well.
+
+49
+00:03:54,000 --> 00:03:59,810
+And then here I Axxess heading does the name I chose for is H1 tag.
+
+50
+00:03:59,970 --> 00:04:08,280
+I can then said enter text here to something else and if I had control enter we see it is changed to
+
+51
+00:04:08,280 --> 00:04:09,970
+something else here.
+
+52
+00:04:10,020 --> 00:04:16,380
+Now after three seconds it's changed to view instance updated because the stringers appellation appear
+
+53
+00:04:16,470 --> 00:04:17,580
+still holds.
+
+54
+00:04:17,580 --> 00:04:19,250
+This is not overwritten.
+
+55
+00:04:19,290 --> 00:04:21,350
+Why is it not overwritten.
+
+56
+00:04:21,390 --> 00:04:25,320
+That is something I will dive in deeper in with the next videos.
+
+57
+00:04:25,350 --> 00:04:31,450
+Generally we have to keep in mind that view as text is code it controls does HDL code.
+
+58
+00:04:31,650 --> 00:04:36,990
+And as I explained earlier and of course it takes a template or it creates a template based on this
+
+59
+00:04:36,990 --> 00:04:38,560
+HVM all code.
+
+60
+00:04:38,580 --> 00:04:44,970
+Now if we access the element like we do here we're changing the directory in the dorm but we're not
+
+61
+00:04:44,970 --> 00:04:47,880
+changing the template up future yes.
+
+62
+00:04:47,970 --> 00:04:54,990
+Therefore when Ebbert a view Cheras really renders the dawn for us it takes its old template as it always
+
+63
+00:04:54,990 --> 00:05:01,050
+does and then rerun the DOM based on this template so it overrides our change we made here and that
+
+64
+00:05:01,050 --> 00:05:06,630
+is something very important to keep in mind you are able to interact with each team of elements using
+
+65
+00:05:06,630 --> 00:05:10,530
+the ref key and the and refs property here.
+
+66
+00:05:10,830 --> 00:05:12,510
+But if you change something there.
+
+67
+00:05:12,540 --> 00:05:15,440
+Be aware that this is not reactive.
+
+68
+00:05:15,600 --> 00:05:20,200
+This is not part of the UK as this instance does is directly in the dorm.
+
+69
+00:05:20,190 --> 00:05:22,800
+So your changes may be overwritten.
+
+70
+00:05:23,250 --> 00:05:24,860
+That's really important.
+
+71
+00:05:24,870 --> 00:05:30,330
+It may be convenient to use a reference though if you want to get some value if you want to get the
+
+72
+00:05:30,330 --> 00:05:34,970
+current value off something if you need to access a native element.
+
+73
+00:05:35,040 --> 00:05:40,080
+Then there's this for you and much easier than using the query selector as and with this method you
+
+74
+00:05:40,080 --> 00:05:43,150
+simply place ref on an element and there you go.
+
+75
+00:05:43,270 --> 00:05:45,640
+X is for the dollar send Raf's property.
+

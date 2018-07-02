@@ -1,0 +1,52 @@
+1
+00:00:01,680 --> 00:00:04,040
+We're almost done we're able to attack and heal.
+
+2
+00:00:04,050 --> 00:00:09,840
+Now we want to implement the method to give up what should happen if we click this button while we want
+
+3
+00:00:09,840 --> 00:00:14,330
+to set gamest running to false because it isn't running anymore.
+
+4
+00:00:14,880 --> 00:00:19,190
+And then there's this all all come back that is later on.
+
+5
+00:00:19,200 --> 00:00:22,760
+But for now this is really all I can see it in action.
+
+6
+00:00:22,860 --> 00:00:26,570
+If I fight a little bit and then give up it's over.
+
+7
+00:00:26,610 --> 00:00:28,370
+We can start a new one.
+
+8
+00:00:28,440 --> 00:00:35,660
+Go back to 100 and start fighting again like that wonderful with dad.
+
+9
+00:00:35,700 --> 00:00:38,170
+All our action buttons are hooked up.
+
+10
+00:00:38,190 --> 00:00:42,290
+I now want to work on this section which doesn't display anything yet.
+
+11
+00:00:42,360 --> 00:00:49,290
+I want to show a log showing as precisely how much damage we dealt how much damage we healed or how
+
+12
+00:00:49,290 --> 00:00:51,750
+much damage we got by the monster.
+
+13
+00:00:51,960 --> 00:00:57,560
+So let's implement this logging functionality next to wrap up and finish this project.
+

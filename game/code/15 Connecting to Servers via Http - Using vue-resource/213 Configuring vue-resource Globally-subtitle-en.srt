@@ -1,0 +1,136 @@
+1
+00:00:02,240 --> 00:00:05,840
+So will learn how to send posts and get requests.
+
+2
+00:00:05,850 --> 00:00:10,650
+One thing we do right now though is we repeat ourselves here.
+
+3
+00:00:10,710 --> 00:00:16,620
+We do have you all copied and pasted into each of our functions and you post the get function if we
+
+4
+00:00:16,620 --> 00:00:21,090
+were to add more requests or more places where we do these requests.
+
+5
+00:00:21,090 --> 00:00:23,990
+We would repeat this Eurail all the time.
+
+6
+00:00:24,040 --> 00:00:30,840
+Now you are l doesn't change that much though so would be great to have kind of a global place to set
+
+7
+00:00:30,840 --> 00:00:32,780
+this up for each HTP request.
+
+8
+00:00:32,820 --> 00:00:36,470
+In this application this might of course be different in your application.
+
+9
+00:00:36,810 --> 00:00:41,940
+So we actually do have such a central place where we can set up our up location.
+
+10
+00:00:41,940 --> 00:00:44,430
+You are all or you are all we want to use.
+
+11
+00:00:44,600 --> 00:00:50,040
+So I'm going to copy the URL and the place I am talking about is in the manger the chips fall where
+
+12
+00:00:50,040 --> 00:00:59,090
+we set up our view resource or we add the resource to our instance here after adding it with the you
+
+13
+00:00:59,090 --> 00:01:01,860
+use I can call you HTP.
+
+14
+00:01:02,010 --> 00:01:07,500
+And now important with outhaul are assigned dollar sign is only needed when accessing it from inside
+
+15
+00:01:07,500 --> 00:01:13,590
+your view instance if you access it on the global view object then this is without a dollar sign.
+
+16
+00:01:13,800 --> 00:01:19,710
+And here we can set up some Global Options again to learn more about these Global Options dive into
+
+17
+00:01:19,710 --> 00:01:22,940
+the official view resource documentation.
+
+18
+00:01:23,010 --> 00:01:30,540
+And there you will find the API docs where you can learn more about which options you can set where
+
+19
+00:01:30,810 --> 00:01:33,210
+and how to configure it at all.
+
+20
+00:01:33,210 --> 00:01:39,930
+Now what I can show you here is you got access to the root key on your Global Options and the root key
+
+21
+00:01:40,140 --> 00:01:44,580
+basically just is your main You are all you're going to use.
+
+22
+00:01:44,580 --> 00:01:52,140
+So by setting up this all requests will be sent to you well and then in your methods you can simply
+
+23
+00:01:52,140 --> 00:01:53,840
+append things to that Ural.
+
+24
+00:01:53,880 --> 00:01:57,260
+For example nothing because the euro already includes everything I need.
+
+25
+00:01:57,360 --> 00:02:04,020
+But if you had some other service and then you have some supper out like send data or something like
+
+26
+00:02:04,020 --> 00:02:09,120
+that then you could append and like this or Again if you are a cumbrous everything you need just send
+
+27
+00:02:09,120 --> 00:02:10,610
+the empty string.
+
+28
+00:02:10,620 --> 00:02:17,300
+Now with this set up you will see if I now reload this and get data again it still works.
+
+29
+00:02:17,340 --> 00:02:24,210
+But now we have a central place where it is stored and you can set up our things to on this global view
+
+30
+00:02:24,210 --> 00:02:24,910
+object.
+
+31
+00:02:25,020 --> 00:02:31,560
+For example you could also set up some default headers here if you needed that if you wanted to set
+
+32
+00:02:31,560 --> 00:02:34,390
+the content type for each request or something like that.
+
+33
+00:02:34,470 --> 00:02:41,010
+That can all be done under colonial view HTP object here on the options object I should say and that
+
+34
+00:02:41,010 --> 00:02:46,130
+is a convenient way of centralizing certain things which are always equal.
+

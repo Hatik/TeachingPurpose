@@ -1,0 +1,196 @@
+1
+00:00:01,990 --> 00:00:08,920
+Let's start with working on the quote grid component here of course we'll also have my template and
+
+2
+00:00:08,920 --> 00:00:12,150
+then some script.
+
+3
+00:00:12,200 --> 00:00:14,750
+I also want to have a style here.
+
+4
+00:00:14,780 --> 00:00:16,550
+So let me add that too.
+
+5
+00:00:16,910 --> 00:00:23,210
+And what I want to do is in the template remember here in the fall we do have a container where we will
+
+6
+00:00:23,210 --> 00:00:26,680
+nest everything in the end so a bootstrap class container.
+
+7
+00:00:27,080 --> 00:00:28,010
+So in there.
+
+8
+00:00:28,020 --> 00:00:32,680
+I therefore want to create a row div with a class row.
+
+9
+00:00:32,720 --> 00:00:38,300
+This then hold my quotes now in here.
+
+10
+00:00:38,390 --> 00:00:42,350
+I will have my code component and I will of course use the force.
+
+11
+00:00:42,350 --> 00:00:46,580
+So a for loop to replicate it as often as needed.
+
+12
+00:00:46,580 --> 00:00:48,890
+Inside of that row.
+
+13
+00:00:49,010 --> 00:00:54,980
+Now what that also means is that I need to be able to get this array of codes from outside.
+
+14
+00:00:55,240 --> 00:01:04,600
+So in the script tag here I will export a default object and this default object your shell have some
+
+15
+00:01:04,600 --> 00:01:11,050
+props namely the quotes which are passed from outside so that I have access to them what the quotes
+
+16
+00:01:11,050 --> 00:01:17,350
+are whaleboat I can then lube fruit as soon as I have my code component and that is then what I'll work
+
+17
+00:01:17,350 --> 00:01:18,400
+on next.
+
+18
+00:01:18,520 --> 00:01:27,400
+So I'll copy this set up here and here in my single quote component I want to set up the panel body
+
+19
+00:01:27,490 --> 00:01:28,820
+script hearer's style.
+
+20
+00:01:28,830 --> 00:01:33,980
+You're excuse me because I will use this class here it's a bootstrap class and I want to modify it a
+
+21
+00:01:33,980 --> 00:01:34,590
+bit.
+
+22
+00:01:34,600 --> 00:01:40,740
+Specifically I'll change the font family to use the one I imported in the next age table file.
+
+23
+00:01:40,780 --> 00:01:49,130
+That's Arizona and I can do this by setting up Arie's So when you're like this and as a fallback style
+
+24
+00:01:49,160 --> 00:01:51,210
+simply have cursive.
+
+25
+00:01:51,830 --> 00:01:55,660
+I also want to set the font size to 24 pixels.
+
+26
+00:01:55,880 --> 00:01:58,790
+And I picked a color code which I found.
+
+27
+00:01:59,030 --> 00:01:59,760
+OK.
+
+28
+00:01:59,810 --> 00:02:02,440
+And of course stold is to your needs.
+
+29
+00:02:02,480 --> 00:02:07,590
+Now that is my single quote style for the panel body.
+
+30
+00:02:07,610 --> 00:02:18,540
+I also will add a quote class here where I simply want to set the cursor to be a pointer and when hovering
+
+31
+00:02:18,630 --> 00:02:26,460
+over it is I want to change the background color to does reddish look so that we can see we can deleted
+
+32
+00:02:26,580 --> 00:02:27,550
+with this.
+
+33
+00:02:27,810 --> 00:02:29,970
+Well that's just the styling.
+
+34
+00:02:30,210 --> 00:02:32,640
+Let's work on the actual quote.
+
+35
+00:02:33,210 --> 00:02:41,650
+Well here I actually you won't need an object all I want to have in here is not even the row.
+
+36
+00:02:42,180 --> 00:02:53,310
+It's really just a class A def of a class call and now let's say as six coal empty four and call Elgie
+
+37
+00:02:53,400 --> 00:02:59,310
+free for some well different style and different few ports.
+
+38
+00:02:59,340 --> 00:03:06,160
+And then in there I'll use the bootstrap classes panel and panel default to get this panel look basically.
+
+39
+00:03:06,270 --> 00:03:09,450
+So that gives it this round these round corners and so on.
+
+40
+00:03:09,630 --> 00:03:17,280
+And then there I will have a div with my panel body and all of my code class.
+
+41
+00:03:17,280 --> 00:03:23,850
+Now in that depth I simply want to have a slot because the code content should come from outside so
+
+42
+00:03:23,850 --> 00:03:30,310
+that the thing passing in the content is the thing deciding how it should look like here.
+
+43
+00:03:30,330 --> 00:03:36,690
+I'm only getting it creating the place where it will be rendered in the end but it should be the holder
+
+44
+00:03:36,690 --> 00:03:39,790
+of that Condon who decides how that should look like.
+
+45
+00:03:39,830 --> 00:03:44,960
+Now the holder of the content of course is to quote grid's year there.
+
+46
+00:03:44,970 --> 00:03:51,820
+I already have my quotes and the single quote component now being created I can next loop through all
+
+47
+00:03:51,870 --> 00:03:57,630
+words to render that single quote for each loop and pass the content to it.
+
+48
+00:03:57,630 --> 00:03:59,820
+Now try implementing that on your own.
+
+49
+00:03:59,820 --> 00:04:01,560
+I'll be back with that in the next video.
+

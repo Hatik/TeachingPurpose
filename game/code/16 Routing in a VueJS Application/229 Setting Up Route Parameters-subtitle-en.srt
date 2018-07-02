@@ -1,0 +1,104 @@
+1
+00:00:02,480 --> 00:00:08,030
+So far we learn a lot about routing but all our routes were fairly static.
+
+2
+00:00:08,120 --> 00:00:12,150
+We didn't have any dynamic pieces in these routes.
+
+3
+00:00:12,170 --> 00:00:18,630
+If we have a look at this especially for the user it would make sense that we want to pass an idea in
+
+4
+00:00:18,630 --> 00:00:21,330
+the Ural in our path here.
+
+5
+00:00:21,440 --> 00:00:22,390
+So the wizard.
+
+6
+00:00:22,450 --> 00:00:28,160
+Let's say users last 10 and then we load this or we are able to use this idea on the component which
+
+7
+00:00:28,160 --> 00:00:29,200
+gets loaded.
+
+8
+00:00:29,480 --> 00:00:37,220
+Well let's have a look at passing such IDs in this module or in this video to pass any dynamic piece
+
+9
+00:00:37,250 --> 00:00:39,680
+or segment in your path.
+
+10
+00:00:39,680 --> 00:00:40,840
+You simply add it.
+
+11
+00:00:40,850 --> 00:00:46,220
+But then if a colon in front of it and then a name of your choice for example I.D. It will be this name
+
+12
+00:00:46,220 --> 00:00:49,040
+by which you able to later retrieve it.
+
+13
+00:00:49,040 --> 00:00:55,070
+This will now tell the router that the user component chip is loaded whenever you visit users flash
+
+14
+00:00:55,190 --> 00:01:00,060
+something whereas something will be interpreted as the ID.
+
+15
+00:01:00,080 --> 00:01:06,150
+You can also make this more complex so will come back to us by adding for example flash details thereafter.
+
+16
+00:01:06,170 --> 00:01:10,470
+It's simply a flexible element you embed in your you are l.
+
+17
+00:01:10,490 --> 00:01:18,320
+Now with that added I'll go to my header and right now user doesn't really pass this idea here though.
+
+18
+00:01:18,470 --> 00:01:20,520
+All simulated by hard coding.
+
+19
+00:01:20,510 --> 00:01:29,810
+Ten in here will change this in the future if I do it like this and I now reload the page and click
+
+20
+00:01:29,810 --> 00:01:32,510
+on user you see the Eurail now it's user 10.
+
+21
+00:01:32,540 --> 00:01:36,430
+And we still go to user page because it does match this path.
+
+22
+00:01:36,650 --> 00:01:41,810
+If I remove 10 year it doesn't work because that doesn't work anymore that doesn't exist anymore.
+
+23
+00:01:41,810 --> 00:01:44,860
+Our path leading to user component is user.
+
+24
+00:01:44,900 --> 00:01:52,400
+And then something dynamic like the 10 here now that we're passing this now since it is dynamic it would
+
+25
+00:01:52,490 --> 00:01:55,700
+also make sense that we're able to retrieve it dynamically.
+
+26
+00:01:55,700 --> 00:01:57,250
+So let's have a look at this now.
+

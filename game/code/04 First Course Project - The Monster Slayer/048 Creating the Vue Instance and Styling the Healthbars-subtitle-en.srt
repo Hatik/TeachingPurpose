@@ -1,0 +1,228 @@
+1
+00:00:01,990 --> 00:00:05,560
+As I said I want to start by setting up deep layer health.
+
+2
+00:00:05,570 --> 00:00:11,850
+But the very first thing of course is that I create a new instance I can do this because of my index
+
+3
+00:00:11,850 --> 00:00:13,360
+age and I'm awful up here.
+
+4
+00:00:13,430 --> 00:00:17,220
+I'm imploding viewed from a CDN.
+
+5
+00:00:17,260 --> 00:00:25,680
+So here with this new instance I now want to control the element with the idea of app disasters.
+
+6
+00:00:25,730 --> 00:00:31,260
+Dave repping my whole app so that we can use this as a template.
+
+7
+00:00:31,660 --> 00:00:35,030
+And then I need to store some data in this instance.
+
+8
+00:00:35,170 --> 00:00:42,580
+For example the player health all go into name and player health and this should be 100 initially and
+
+9
+00:00:42,580 --> 00:00:47,590
+the same is true for the monster health let's say should also be 100.
+
+10
+00:00:48,070 --> 00:00:52,450
+So this is the basic data I'm managing for now.
+
+11
+00:00:52,480 --> 00:01:00,070
+One thing we will probably also need since we can click Start a new game is to track if a new game or
+
+12
+00:01:00,070 --> 00:01:02,200
+if a game is running or not.
+
+13
+00:01:02,230 --> 00:01:03,160
+So I will add.
+
+14
+00:01:03,160 --> 00:01:11,170
+Game is running here true and set it to false initially so that initially we don't have a running game
+
+15
+00:01:11,370 --> 00:01:18,460
+so do it by checking does property here we can see if we should display the start a new game button
+
+16
+00:01:18,550 --> 00:01:21,580
+or our action buttons like attack and heal.
+
+17
+00:01:21,700 --> 00:01:29,110
+Well with this data and place we can actually work on our template a little more and start displaying
+
+18
+00:01:29,170 --> 00:01:36,450
+the health let's say the easiest thing is dead inside of our health bars here we simply outpoured the
+
+19
+00:01:36,470 --> 00:01:48,050
+player health here and in the monster area we also output the monster health if y is safe days and reloaders
+
+20
+00:01:48,130 --> 00:01:52,060
+application we should now see the numbers inside our health bars.
+
+21
+00:01:52,060 --> 00:01:59,140
+That is great but I also want to just deal with that health bar of d in our health bar off this green
+
+22
+00:01:59,140 --> 00:02:00,600
+area here.
+
+23
+00:02:00,820 --> 00:02:06,550
+Now to justice you'll see that the health bar generally has this green background here.
+
+24
+00:02:06,700 --> 00:02:10,560
+It is nested in this outer a health class here.
+
+25
+00:02:10,570 --> 00:02:16,150
+And if we have a look at the C S s style we see that initially it has a wealth of 80 percent that we
+
+26
+00:02:16,150 --> 00:02:20,160
+have set up a transition that it's move fully moves when we change the width.
+
+27
+00:02:20,380 --> 00:02:27,900
+And now we want to change that with we want to change that with to our actual health which is 100 at
+
+28
+00:02:27,910 --> 00:02:31,430
+the beginning as we just set it up for that.
+
+29
+00:02:31,450 --> 00:02:36,990
+We clearly can use the style help our view chase offers us.
+
+30
+00:02:37,000 --> 00:02:43,120
+So I'm going to restructure this a bit so that it's easier to read and hear of what to bind to the style
+
+31
+00:02:43,120 --> 00:02:46,020
+property as explained in the last lectures.
+
+32
+00:02:46,060 --> 00:02:52,420
+It's no issue that we have style here and now blind to it behind the scenes you chaps will merge this
+
+33
+00:02:52,420 --> 00:02:59,190
+to Gabr So here in binding to style and I pass a javascript objects here to describe the style I want
+
+34
+00:02:59,190 --> 00:03:03,760
+to attach I want to change the width like this.
+
+35
+00:03:03,880 --> 00:03:08,670
+And we don't have to enclose it in single quotation marks to be precise.
+
+36
+00:03:08,950 --> 00:03:17,590
+And I want to set the value depending on the player health here and now how should we use that if I
+
+37
+00:03:17,590 --> 00:03:19,220
+set it to 100 like this.
+
+38
+00:03:19,220 --> 00:03:26,900
+This would be treated as pixels but I want to set it to percentages so I will add percentage here.
+
+39
+00:03:27,130 --> 00:03:34,980
+This will make sure should be in single quotes though that the width of this day of year will be 100
+
+40
+00:03:34,990 --> 00:03:39,170
+percent and 100 percent of what of its view container.
+
+41
+00:03:39,190 --> 00:03:45,370
+So if the outer Def and the outer day will be days how far here.
+
+42
+00:03:45,370 --> 00:03:54,390
+So if we save this and reload now we see now it's the full width of that because we set it to 100 percent
+
+43
+00:03:54,390 --> 00:04:01,470
+initially instead of 80 percent which we had our wise side note correctly you might say but our deaf
+
+44
+00:04:01,500 --> 00:04:07,770
+also has D.C.'s S-Class health bar and that doesn't help or is said to 80 percent with.
+
+45
+00:04:07,770 --> 00:04:10,000
+So why is it now 100 percent.
+
+46
+00:04:10,020 --> 00:04:17,460
+Just when we change the inner one you have to keep in mind the outer day of the great health bar we
+
+47
+00:04:17,460 --> 00:04:24,720
+saw before it was 80 percent of the size of d day of holding dead health bar which has this column here.
+
+48
+00:04:24,720 --> 00:04:28,570
+But now the entire health bar makes up 100 percent of the outer one.
+
+49
+00:04:28,590 --> 00:04:34,680
+Therefore even though the outer one doesn't completely fill the width of its holding element day distaff
+
+50
+00:04:34,950 --> 00:04:39,750
+the inner one now makes up the full width of the health bar and that is what we need.
+
+51
+00:04:39,750 --> 00:04:42,340
+So this is how we set this up.
+
+52
+00:04:42,450 --> 00:04:50,340
+Now with that I can simply copy that to my monster health bar down here where I also have the stylus
+
+53
+00:04:50,610 --> 00:04:54,140
+just wrapped together by my idea here.
+
+54
+00:04:54,270 --> 00:04:59,940
+And you know of course I want to use the monster health and not deep layer health with that we're putting
+
+55
+00:04:59,940 --> 00:05:05,640
+the health and we're adjusting the health bar is the next step is to be able to actually start a new
+
+56
+00:05:05,640 --> 00:05:12,780
+game and well start setting up these actions so that we can do more than just view our health and this
+
+57
+00:05:12,780 --> 00:05:14,460
+non working application.
+

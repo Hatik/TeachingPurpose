@@ -1,0 +1,84 @@
+1
+00:00:02,110 --> 00:00:10,660
+Before diving deeper into how we can make our properties work closer together let's have a look at working
+
+2
+00:00:10,660 --> 00:00:11,860
+with the template again.
+
+3
+00:00:11,950 --> 00:00:13,520
+We saw how we could output data.
+
+4
+00:00:13,540 --> 00:00:18,820
+For example here with string of tribulation where we output the name we saw we could listen to events
+
+5
+00:00:18,820 --> 00:00:25,740
+like with key up for example one of the wants to do both at the same time two way data binding that
+
+6
+00:00:25,760 --> 00:00:32,530
+would be for example here I get this input field and I want to populate this input field with the name
+
+7
+00:00:32,530 --> 00:00:33,340
+of the user.
+
+8
+00:00:33,340 --> 00:00:39,040
+So with my name in this case here on the same time whenever I change it in the input field I want to
+
+9
+00:00:39,100 --> 00:00:44,130
+update the data property and updated everywhere I outputted in my code.
+
+10
+00:00:44,140 --> 00:00:49,750
+For example in this paragraph turns out it's really easy to set us up with huge.
+
+11
+00:00:49,870 --> 00:00:56,810
+All we need to do is add the the model directive to the input element of the model directive tells you
+
+12
+00:00:56,810 --> 00:01:03,790
+to set up two way data binding for days input here and then between the quotation marks the property
+
+13
+00:01:03,790 --> 00:01:07,570
+which you want to bind in both directions the name in this case.
+
+14
+00:01:07,990 --> 00:01:11,450
+So what this will do is it will on one hand.
+
+15
+00:01:11,600 --> 00:01:14,880
+Easy as you can see here output the name in the input field.
+
+16
+00:01:15,040 --> 00:01:21,490
+But then whenever I change it here it will listen to these changes and update the name property in my
+
+17
+00:01:21,490 --> 00:01:27,970
+view instance that's reflecting the change in all the places where all also the name instance like in
+
+18
+00:01:27,970 --> 00:01:29,140
+this paragraph.
+
+19
+00:01:29,470 --> 00:01:34,960
+While this is the missing piece when we are talking about data binding where we were able to use the
+
+20
+00:01:34,960 --> 00:01:42,460
+interplay in the bind syntax to bind two attributes divi on syntax to listen to events.
+
+21
+00:01:42,460 --> 00:01:47,010
+Well now we can also use Q8 binding to do both at the same time.
+

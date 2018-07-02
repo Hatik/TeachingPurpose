@@ -1,0 +1,112 @@
+1
+00:00:02,160 --> 00:00:07,030
+For example one important thing about events is the default event object.
+
+2
+00:00:07,050 --> 00:00:08,530
+We can listen to you.
+
+3
+00:00:08,670 --> 00:00:14,820
+There is this event object created by a a script or by the dorm which holds some information for example
+
+4
+00:00:14,820 --> 00:00:19,810
+on a click event that holds the coordinates of where does click event happened.
+
+5
+00:00:19,820 --> 00:00:26,790
+Now let's say we want to access this information because we might be interested in outputting that data.
+
+6
+00:00:27,210 --> 00:00:36,540
+So I'll quickly add a new paragraph here where I will say coordinates and I want to output the coordinates
+
+7
+00:00:36,540 --> 00:00:46,710
+here so that will output the x coordinate and then let's say next to it it will output a y coordinate.
+
+8
+00:00:46,710 --> 00:00:54,990
+Now of course these two don't exist so quick so quickly set them up here X and Y and then up and hovering
+
+9
+00:00:55,020 --> 00:00:56,150
+over this paragraph.
+
+10
+00:00:56,190 --> 00:00:58,540
+I want to update these two values.
+
+11
+00:00:58,620 --> 00:01:03,230
+So here I can say we on Mouaz move.
+
+12
+00:01:04,940 --> 00:01:12,440
+And execute up they'd coordinates Well let me quickly write this math down here.
+
+13
+00:01:12,460 --> 00:01:14,860
+Update coordinates.
+
+14
+00:01:15,190 --> 00:01:21,850
+And now I would need access to the coordinates I would need access to this event object which gets created
+
+15
+00:01:21,880 --> 00:01:30,490
+automatically turns out it not only gets created automatically by Thornbury by javascript it also gets
+
+16
+00:01:30,490 --> 00:01:38,880
+passed automatically to each function we execute frood is the future as the on binding your view chaced
+
+17
+00:01:38,890 --> 00:01:40,600
+dusters for us.
+
+18
+00:01:40,600 --> 00:01:43,750
+So here I can conveniently execute event.
+
+19
+00:01:43,840 --> 00:01:47,830
+And of course this should be a function tiny mistake here.
+
+20
+00:01:47,950 --> 00:01:58,000
+So I can conveniently pass event here and then here I can say this X equals event client X as it turns
+
+21
+00:01:58,000 --> 00:01:59,190
+out to be.
+
+22
+00:01:59,410 --> 00:02:08,500
+And to this why you went client y blind X inclined y you're already for properties names of event object
+
+23
+00:02:08,500 --> 00:02:11,090
+has nothing to do with Buquet us on.
+
+24
+00:02:11,110 --> 00:02:15,730
+I also renamed as to update coordinates as I call it pure.
+
+25
+00:02:16,000 --> 00:02:20,890
+You now see once I hover over it these coordinates here update.
+
+26
+00:02:20,980 --> 00:02:24,280
+This is a how we can listen to something else ten than a click.
+
+27
+00:02:24,370 --> 00:02:32,050
+But be very importantly it shows us how we can past this event object which again is created automatically
+
+28
+00:02:32,290 --> 00:02:34,450
+and use it as we do here.
+
